@@ -1,0 +1,41 @@
+{
+  "id": "1052",
+  "filename": "1052_imap_email_reading",
+  "description": "Reads emails from an IMAP server, allowing users to automate email management and streamline communication processes.",
+  "content": {
+    "nodes": [
+      {
+        "name": "IMAP Email",
+        "type": "n8n-nodes-base.emailReadImap",
+        "position": [
+          760,
+          400
+        ],
+        "parameters": {
+          "options": {
+            "allowUnauthorizedCerts": false
+          }
+        },
+        "credentials": {
+          "imap": "imap_creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {}
+  },
+  "title": "Automate email reading from IMAP for efficient management",
+  "nodes_count": 1,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [],
+  "services": [
+    "Email Trigger (IMAP)"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [],
+  "workflow_complexity": 1,
+  "external_integrations_count": 1
+}

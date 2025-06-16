@@ -1,0 +1,139 @@
+{
+  "id": "1056",
+  "filename": "1056_create_test_table_in_cratedb",
+  "description": "Triggers a manual execution to create a test table in CrateDB and populates it with sample data for testing purposes.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          550,
+          400
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "CrateDB",
+        "type": "n8n-nodes-base.crateDb",
+        "position": [
+          750,
+          400
+        ],
+        "parameters": {
+          "query": "CREATE TABLE test (id INT, name STRING);",
+          "operation": "executeQuery"
+        },
+        "credentials": {
+          "crateDb": "cratedb_creds"
+        },
+        "typeVersion": 1,
+        "alwaysOutputData": true
+      },
+      {
+        "name": "CrateDB1",
+        "type": "n8n-nodes-base.crateDb",
+        "position": [
+          1150,
+          400
+        ],
+        "parameters": {
+          "table": "test",
+          "columns": "id, name"
+        },
+        "credentials": {
+          "crateDb": "cratedb_creds"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          950,
+          400
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "id",
+                "value": 0
+              }
+            ],
+            "string": [
+              {
+                "name": "name",
+                "value": "n8n"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1,
+        "alwaysOutputData": false
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "CrateDB1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "CrateDB": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "CrateDB",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create a test table in CrateDB with sample data",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "services": [
+    "CrateDB",
+    "Edit Fields (Set)",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Executequery",
+    "Set Data"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 4,
+  "external_integrations_count": 3
+}

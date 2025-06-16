@@ -1,0 +1,153 @@
+{
+  "id": "156",
+  "filename": "156_fetch_xml_to_dropbox",
+  "description": "Retrieves XML data from a URL, modifies the title, converts it to XML format, and saves the file to Dropbox for easy access and sharing.",
+  "content": {
+    "nodes": [
+      {
+        "name": "To JSON",
+        "type": "n8n-nodes-base.xml",
+        "position": [
+          700,
+          300
+        ],
+        "parameters": {
+          "options": {}
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Change title",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          900,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "slideshow.title",
+                "value": "New Title Name"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Get XML Data",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          500,
+          300
+        ],
+        "parameters": {
+          "url": "https://httpbin.org/xml",
+          "responseFormat": "string"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Dropbox",
+        "type": "n8n-nodes-base.dropbox",
+        "position": [
+          1300,
+          300
+        ],
+        "parameters": {
+          "path": "/my-xml-file.xml",
+          "fileContent": "={{$node[\"To XML\"].data[\"data\"]}}"
+        },
+        "credentials": {
+          "dropboxApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "To XML",
+        "type": "n8n-nodes-base.xml",
+        "position": [
+          1100,
+          300
+        ],
+        "parameters": {
+          "mode": "jsonToxml",
+          "options": {}
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "To XML": {
+        "main": [
+          [
+            {
+              "node": "Dropbox",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "To JSON": {
+        "main": [
+          [
+            {
+              "node": "Change title",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Change title": {
+        "main": [
+          [
+            {
+              "node": "To XML",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Get XML Data": {
+        "main": [
+          [
+            {
+              "node": "To JSON",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Fetch XML Data, Update Title, and Save to Dropbox",
+  "nodes_count": 5,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "services": [
+    "Dropbox",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "XML"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Dropbox API Key"
+  ],
+  "workflow_complexity": 5,
+  "external_integrations_count": 4
+}

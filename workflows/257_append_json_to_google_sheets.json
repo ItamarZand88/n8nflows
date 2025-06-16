@@ -1,0 +1,107 @@
+{
+  "id": "257",
+  "filename": "257_append_json_to_google_sheets",
+  "description": "Reads user data from a JSON file and appends it to a specified Google Sheets document for easy tracking and management.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Google Sheets1",
+        "type": "n8n-nodes-base.googleSheets",
+        "notes": "Append data to sheet",
+        "position": [
+          980,
+          -120
+        ],
+        "parameters": {
+          "range": "A:C",
+          "options": {
+            "usePathForKeyRow": true
+          },
+          "sheetId": "qwertz",
+          "operation": "append",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": {
+            "id": "2",
+            "name": "google_sheets_oauth"
+          }
+        },
+        "notesInFlow": true,
+        "typeVersion": 1
+      },
+      {
+        "name": "read json file",
+        "type": "n8n-nodes-base.readBinaryFile",
+        "position": [
+          620,
+          -120
+        ],
+        "parameters": {
+          "filePath": "/username/users_spreadsheet.json"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "move binary data 2",
+        "type": "n8n-nodes-base.moveBinaryData",
+        "position": [
+          800,
+          -120
+        ],
+        "parameters": {
+          "options": {}
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "read json file": {
+        "main": [
+          [
+            {
+              "node": "move binary data 2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "move binary data 2": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Append user data from JSON file to Google Sheets",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "services": [
+    "Convert to/from binary data",
+    "Google Sheets",
+    "Read Binary File"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Append"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

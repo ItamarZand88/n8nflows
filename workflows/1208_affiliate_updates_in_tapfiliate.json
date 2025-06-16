@@ -1,0 +1,139 @@
+{
+  "id": "1208",
+  "filename": "1208_affiliate_updates_in_tapfiliate",
+  "description": "Triggers a process to create a new affiliate in Tapfiliate, updates their metadata, and manages program affiliation seamlessly.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Tapfiliate2",
+        "type": "n8n-nodes-base.tapfiliate",
+        "position": [
+          870,
+          300
+        ],
+        "parameters": {
+          "resource": "programAffiliate",
+          "programId": "testing-program-5",
+          "affiliateId": "={{$node[\"Tapfiliate\"].json[\"id\"]}}",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "tapfiliateApi": "Tapfiliate API credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Tapfiliate1",
+        "type": "n8n-nodes-base.tapfiliate",
+        "position": [
+          670,
+          300
+        ],
+        "parameters": {
+          "resource": "affiliateMetadata",
+          "metadataUi": {
+            "metadataValues": [
+              {
+                "key": "tag",
+                "value": "n8n"
+              }
+            ]
+          },
+          "affiliateId": "={{$json[\"id\"]}}"
+        },
+        "credentials": {
+          "tapfiliateApi": "Tapfiliate API credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Tapfiliate",
+        "type": "n8n-nodes-base.tapfiliate",
+        "position": [
+          470,
+          300
+        ],
+        "parameters": {
+          "email": "n8ndocsburner@gmail.com",
+          "lastname": "Ryan",
+          "firstname": "Jack",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "tapfiliateApi": "Tapfiliate API credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          270,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Tapfiliate": {
+        "main": [
+          [
+            {
+              "node": "Tapfiliate1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Tapfiliate1": {
+        "main": [
+          [
+            {
+              "node": "Tapfiliate2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Tapfiliate",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate affiliate metadata updates in Tapfiliate",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Sales"
+  ],
+  "services": [
+    "Manual",
+    "Tapfiliate"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage affiliateMetadata",
+    "Manage programAffiliate"
+  ],
+  "setup_requirements": [
+    "Tapfiliate API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 2
+}

@@ -1,0 +1,132 @@
+{
+  "id": "1204",
+  "filename": "1204_create_update_discourse_posts",
+  "description": "Triggers a new Discourse post creation, updates it, and retrieves the post details, streamlining community engagement.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          270,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Discourse",
+        "type": "n8n-nodes-base.discourse",
+        "position": [
+          470,
+          300
+        ],
+        "parameters": {
+          "title": "[Created] Discourse node",
+          "content": "Thank you Ricardo for creating the Discourse node.",
+          "additionalFields": {
+            "category": 4
+          }
+        },
+        "credentials": {
+          "discourseApi": "n8n Discourse Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Discourse1",
+        "type": "n8n-nodes-base.discourse",
+        "position": [
+          670,
+          300
+        ],
+        "parameters": {
+          "postId": "={{$json[\"id\"]}}",
+          "content": "Thank you Ricardo for creating the Discourse node. We can now create, update and retrieve posts using n8n.",
+          "operation": "update",
+          "updateFields": {}
+        },
+        "credentials": {
+          "discourseApi": "n8n Discourse Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Discourse2",
+        "type": "n8n-nodes-base.discourse",
+        "position": [
+          870,
+          300
+        ],
+        "parameters": {
+          "postId": "={{$json[\"id\"]}}",
+          "operation": "get"
+        },
+        "credentials": {
+          "discourseApi": "n8n Discourse Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Discourse": {
+        "main": [
+          [
+            {
+              "node": "Discourse1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Discourse1": {
+        "main": [
+          [
+            {
+              "node": "Discourse2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Discourse",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create and Update Discourse Posts Automatically",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "services": [
+    "Discourse",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Discourse API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 2
+}

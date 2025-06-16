@@ -1,0 +1,82 @@
+{
+  "id": "187",
+  "filename": "187_quickbooks_invoices_for_onfleet_tasks",
+  "description": "Automatically generates invoices in QuickBooks Online whenever a new task is created in Onfleet, streamlining your billing process.",
+  "content": {
+    "name": "Create a QuickBooks invoice on a new Onfleet Task creation",
+    "nodes": [
+      {
+        "name": "Onfleet Trigger",
+        "type": "n8n-nodes-base.onfleetTrigger",
+        "position": [
+          460,
+          300
+        ],
+        "webhookId": "6d6a2bee-f83e-4ebd-a1d5-8708c34393dc",
+        "parameters": {
+          "triggerOn": "taskCreated",
+          "additionalFields": {}
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "QuickBooks Online",
+        "type": "n8n-nodes-base.quickbooks",
+        "position": [
+          680,
+          300
+        ],
+        "parameters": {
+          "Line": [],
+          "resource": "invoice",
+          "operation": "create",
+          "additionalFields": {
+            "Balance": 0,
+            "TxnDate": "",
+            "ShipAddr": "",
+            "BillEmail": ""
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Onfleet Trigger": {
+        "main": [
+          [
+            {
+              "node": "QuickBooks Online",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create QuickBooks invoices for new Onfleet tasks",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Finance & Accounting",
+    "Miscellaneous"
+  ],
+  "services": [
+    "Onfleet",
+    "QuickBooks Online"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Onfleet Event"
+  ],
+  "actions": [
+    "Create",
+    "Manage invoice"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

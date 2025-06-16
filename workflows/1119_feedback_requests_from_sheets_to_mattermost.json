@@ -1,0 +1,117 @@
+{
+  "id": "1119",
+  "filename": "1119_feedback_requests_from_sheets_to_mattermost",
+  "description": "Triggers on a specific date to send feedback requests in Mattermost based on session details pulled from Google Sheets, enhancing team communication.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "mode": "custom",
+                "cronExpression": "0 0 17 28 9 *"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Google Sheets",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "range": "Sessions!A:D",
+          "options": {},
+          "sheetId": "1nlnsTQKGgQZN-Rtd07K9bn0ROm0aFBC2O4kzM2YaTBI",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": "n8ndocsburner-googlesheets"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "message": "= Hey @channel, we hope you had a great time at **{{$node[\"Google Sheets\"].json[\"Session\"]}}**.\nLet us know how we did by sharing your feedback with us on the link below!",
+          "channelId": "={{$node[\"Google Sheets\"].json[\"Mattermost Channel ID\"]}}",
+          "attachments": [
+            {
+              "title": "=Feedback Form - {{$node[\"Google Sheets\"].json[\"Session\"]}}",
+              "title_link": "={{$node[\"Google Sheets\"].json[\"Feedback Form Link\"]}}"
+            }
+          ],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": "mm_failedmachine"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Google Sheets": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate feedback requests in Mattermost from Google Sheets data",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "services": [
+    "Cron",
+    "Google Sheets",
+    "Mattermost"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Mattermost API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

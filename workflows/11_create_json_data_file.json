@@ -1,0 +1,89 @@
+{
+  "id": "11",
+  "filename": "11_create_json_data_file",
+  "description": "Generates example JSON data and saves it as a binary file, streamlining data handling for development purposes.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Write Binary File",
+        "type": "n8n-nodes-base.writeBinaryFile",
+        "position": [
+          800,
+          350
+        ],
+        "parameters": {
+          "fileName": "test.json"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Make Binary",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          600,
+          350
+        ],
+        "parameters": {
+          "functionCode": "items[0].binary = {\n  data: {\n    data: new Buffer(JSON.stringify(items[0].json, null, 2)).toString('base64')\n  }\n};\nreturn items;"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Create Example Data",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          390,
+          350
+        ],
+        "parameters": {
+          "functionCode": "items[0].json = {\n  \"text\": \"asdf\",\n  \"number\": 1\n};\nreturn items;"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Make Binary": {
+        "main": [
+          [
+            {
+              "node": "Write Binary File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Create Example Data": {
+        "main": [
+          [
+            {
+              "node": "Make Binary",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create and Save JSON Data as a File",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Function",
+    "Write Binary File"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 3,
+  "external_integrations_count": 2
+}

@@ -1,0 +1,242 @@
+{
+  "id": "1160",
+  "filename": "1160_invite_users_to_matrix_room",
+  "description": "Triggers on manual execution to invite users to a Matrix room and sends a welcome message if they are not already members, enhancing community engagement.",
+  "content": {
+    "id": "83",
+    "name": "Create a room, invite members from a different room, and send a message in the room we created",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          240,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Matrix",
+        "type": "n8n-nodes-base.matrix",
+        "position": [
+          400,
+          300
+        ],
+        "parameters": {
+          "resource": "room",
+          "roomName": "n8n",
+          "roomAlias": "discussion-n8n"
+        },
+        "credentials": {
+          "matrixApi": "matrix"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          840,
+          300
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$node[\"Matrix1\"].json[\"user_id\"]}}",
+                "value2": "={{$node[\"Matrix2\"].json[\"user_id\"]}}",
+                "operation": "notEqual"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Matrix3",
+        "type": "n8n-nodes-base.matrix",
+        "position": [
+          990,
+          200
+        ],
+        "parameters": {
+          "roomId": "={{$node[\"Matrix\"].json[\"room_id\"]}}",
+          "userId": "={{$node[\"IF\"].json[\"user_id\"]}}",
+          "resource": "room",
+          "operation": "invite"
+        },
+        "credentials": {
+          "matrixApi": "matrix"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Matrix4",
+        "type": "n8n-nodes-base.matrix",
+        "position": [
+          1140,
+          200
+        ],
+        "parameters": {
+          "text": "Welcome to n8n!",
+          "roomId": "={{$node[\"Matrix\"].json[\"room_id\"]}}"
+        },
+        "credentials": {
+          "matrixApi": "matrix"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          990,
+          400
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Matrix1",
+        "type": "n8n-nodes-base.matrix",
+        "position": [
+          540,
+          300
+        ],
+        "parameters": {
+          "resource": "account"
+        },
+        "credentials": {
+          "matrixApi": "matrix"
+        },
+        "typeVersion": 1,
+        "continueOnFail": true
+      },
+      {
+        "name": "Matrix2",
+        "type": "n8n-nodes-base.matrix",
+        "position": [
+          690,
+          300
+        ],
+        "parameters": {
+          "roomId": "!cMUIsUgevrhCoeMkSG:matrix.org",
+          "filters": {},
+          "resource": "roomMember"
+        },
+        "credentials": {
+          "matrixApi": "matrix"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Matrix3",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Matrix": {
+        "main": [
+          [
+            {
+              "node": "Matrix1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Matrix1": {
+        "main": [
+          [
+            {
+              "node": "Matrix2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Matrix2": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Matrix3": {
+        "main": [
+          [
+            {
+              "node": "Matrix4",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Matrix",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Invite users and send welcome messages in Matrix rooms",
+  "nodes_count": 8,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "services": [
+    "If",
+    "Manual",
+    "Matrix",
+    "No Operation, do nothing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Invite",
+    "Manage account",
+    "Manage room",
+    "Manage roomMember"
+  ],
+  "setup_requirements": [
+    "Matrix API Key"
+  ],
+  "workflow_complexity": 8,
+  "external_integrations_count": 4
+}

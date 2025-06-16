@@ -1,0 +1,90 @@
+{
+  "id": "153",
+  "filename": "153_onfleet_tasks_for_shopify_fulfillments",
+  "description": "Automatically generates Onfleet delivery tasks whenever a new fulfillment is created in Shopify, streamlining order processing and delivery management.",
+  "content": {
+    "id": 13,
+    "name": "Creating an Onfleet Task for a new Shopify Fulfillment",
+    "nodes": [
+      {
+        "name": "Shopify Trigger",
+        "type": "n8n-nodes-base.shopifyTrigger",
+        "position": [
+          240,
+          440
+        ],
+        "webhookId": "576e8785-bbb4-426b-a922-da671efced68",
+        "parameters": {
+          "topic": "fulfillments/create"
+        },
+        "credentials": {
+          "shopifyApi": {
+            "id": "6",
+            "name": "Shopify account"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Onfleet",
+        "type": "n8n-nodes-base.onfleet",
+        "position": [
+          460,
+          440
+        ],
+        "parameters": {
+          "operation": "create",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "onfleetApi": {
+            "id": "2",
+            "name": "Onfleet API Key"
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Shopify Trigger": {
+        "main": [
+          [
+            {
+              "node": "Onfleet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create Onfleet Tasks for New Shopify Fulfillments",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Miscellaneous",
+    "Sales"
+  ],
+  "services": [
+    "Onfleet",
+    "Shopify"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Shopify Event"
+  ],
+  "actions": [
+    "Create",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Onfleet API Key",
+    "Shopify API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

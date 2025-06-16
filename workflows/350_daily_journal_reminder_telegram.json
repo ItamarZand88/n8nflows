@@ -1,0 +1,108 @@
+{
+  "id": "350",
+  "filename": "350_daily_journal_reminder_telegram",
+  "description": "Triggers every morning to send a formatted reminder for users to reflect on their previous day's activities through Telegram.",
+  "content": {
+    "id": 1,
+    "name": "Daily Journal Reminder",
+    "nodes": [
+      {
+        "name": "Morning reminder",
+        "type": "n8n-nodes-base.cron",
+        "notes": "Trigger very morning",
+        "position": [
+          220,
+          60
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 6
+              }
+            ]
+          }
+        },
+        "notesInFlow": true,
+        "typeVersion": 1,
+        "alwaysOutputData": true
+      },
+      {
+        "name": "format reminder",
+        "type": "n8n-nodes-base.functionItem",
+        "position": [
+          460,
+          60
+        ],
+        "parameters": {
+          "functionCode": "\n// Creates message with todays date\nconst today = new Date()\nconst yesterday = new Date(today)\n\nyesterday.setDate(yesterday.getDate() - 1)\nconst message = `What did you do: ${yesterday.toISOString().split('T')[0]}`\n\nreturn {message};"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Send journal reminder",
+        "type": "n8n-nodes-base.telegram",
+        "position": [
+          700,
+          60
+        ],
+        "parameters": {
+          "text": "={{$node[\"format reminder\"].json[\"message\"]}}",
+          "chatId": "666884239",
+          "additionalFields": {}
+        },
+        "credentials": {},
+        "typeVersion": 1
+      }
+    ],
+    "active": true,
+    "settings": {},
+    "connections": {
+      "format reminder": {
+        "main": [
+          [
+            {
+              "node": "Send journal reminder",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Morning reminder": {
+        "main": [
+          [
+            {
+              "node": "format reminder",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send Daily Journal Reminders via Telegram",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "services": [
+    "Cron",
+    "Function Item",
+    "Telegram"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

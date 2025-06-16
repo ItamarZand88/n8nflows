@@ -1,0 +1,70 @@
+{
+  "id": "1010",
+  "filename": "1010_trigger_rundeck_job_execution",
+  "description": "Allows users to manually trigger a Rundeck job execution by clicking a button, streamlining task management and execution processes.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Rundeck",
+        "type": "n8n-nodes-base.rundeck",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "jobid": "f02c7661-6f75-4ffe-958c-c0ed5f9bc9e6"
+        },
+        "credentials": {
+          "rundeckApi": "rundeck_creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Rundeck",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Trigger Rundeck job execution with a manual click",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Manual",
+    "Rundeck"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Rundeck API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

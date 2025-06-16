@@ -1,0 +1,144 @@
+{
+  "id": "1232",
+  "filename": "1232_currency_transfer_automation_wise",
+  "description": "Creates a currency transfer quote, executes the transfer, and manages the process automatically using Wise API for efficient financial transactions.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Wise",
+        "type": "n8n-nodes-base.wise",
+        "position": [
+          470,
+          320
+        ],
+        "parameters": {
+          "amount": 500,
+          "resource": "quote",
+          "operation": "create",
+          "profileId": 16138858,
+          "sourceCurrency": "EUR",
+          "targetCurrency": "EUR",
+          "targetAccountId": 147767974
+        },
+        "credentials": {
+          "wiseApi": "Wise API Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Wise1",
+        "type": "n8n-nodes-base.wise",
+        "position": [
+          660,
+          320
+        ],
+        "parameters": {
+          "quoteId": "={{$json[\"id\"]}}",
+          "resource": "transfer",
+          "operation": "create",
+          "profileId": 16138858,
+          "targetAccountId": 147767974,
+          "additionalFields": {
+            "reference": "Thank you for the contribution"
+          }
+        },
+        "credentials": {
+          "wiseApi": "Wise API Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Wise2",
+        "type": "n8n-nodes-base.wise",
+        "position": [
+          870,
+          320
+        ],
+        "parameters": {
+          "resource": "transfer",
+          "operation": "execute",
+          "profileId": 16138858,
+          "transferId": "={{$json[\"id\"]}}"
+        },
+        "credentials": {
+          "wiseApi": "Wise API Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Wise3",
+        "type": "n8n-nodes-base.wise",
+        "position": [
+          1070,
+          320
+        ],
+        "parameters": {
+          "resource": "transfer",
+          "transferId": "={{$node[\"Wise1\"].json[\"id\"]}}"
+        },
+        "credentials": {
+          "wiseApi": "Wise API Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Wise": {
+        "main": [
+          [
+            {
+              "node": "Wise1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Wise1": {
+        "main": [
+          [
+            {
+              "node": "Wise2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Wise2": {
+        "main": [
+          [
+            {
+              "node": "Wise3",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate currency transfers using Wise API",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Finance & Accounting"
+  ],
+  "services": [
+    "Wise"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Execute",
+    "Manage quote",
+    "Manage transfer"
+  ],
+  "setup_requirements": [
+    "Wise API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 1
+}

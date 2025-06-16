@@ -1,0 +1,73 @@
+{
+  "id": "8",
+  "filename": "8_create_task_in_todoist",
+  "description": "Manually triggers the creation of a new task in Todoist, allowing users to quickly add tasks as needed for better task management.",
+  "content": {
+    "id": "100",
+    "name": "Create a new task in Todoist",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          550,
+          250
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Todoist",
+        "type": "n8n-nodes-base.todoist",
+        "position": [
+          750,
+          250
+        ],
+        "parameters": {
+          "content": "",
+          "options": {}
+        },
+        "credentials": {
+          "todoistApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Todoist",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create a new task in Todoist with a manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes"
+  ],
+  "services": [
+    "Manual",
+    "Todoist"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Todoist API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

@@ -1,0 +1,114 @@
+{
+  "id": "1198",
+  "filename": "1198_daily_weather_updates_to_pushover",
+  "description": "Automatically retrieves the daily weather for Berlin and sends a push notification with the current temperature to your device each morning.",
+  "content": {
+    "id": "91",
+    "name": "Send daily weather updates via a push notification",
+    "nodes": [
+      {
+        "name": "Pushover",
+        "type": "n8n-nodes-base.pushover",
+        "position": [
+          970,
+          300
+        ],
+        "parameters": {
+          "message": "=Hey! The temperature outside is {{$node[\"OpenWeatherMap\"].json[\"main\"][\"temp\"]}}°C.",
+          "userKey": "",
+          "priority": 0,
+          "additionalFields": {
+            "title": "Today's Weather"
+          }
+        },
+        "credentials": {
+          "pushoverApi": "pushover"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          570,
+          300
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 9
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "OpenWeatherMap",
+        "type": "n8n-nodes-base.openWeatherMap",
+        "position": [
+          770,
+          300
+        ],
+        "parameters": {
+          "cityName": "berlin"
+        },
+        "credentials": {
+          "openWeatherMapApi": "owm"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "OpenWeatherMap",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "OpenWeatherMap": {
+        "main": [
+          [
+            {
+              "node": "Pushover",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send daily weather updates via Pushover notifications",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "services": [
+    "Cron",
+    "OpenWeatherMap",
+    "Pushover"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "OpenWeatherMap API Key",
+    "Pushover API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

@@ -1,0 +1,110 @@
+{
+  "id": "66",
+  "filename": "66_daily_weather_updates_to_line",
+  "description": "Automatically retrieves the daily temperature for Berlin and sends a message via Line at 9 AM, keeping you informed about the weather.",
+  "content": {
+    "id": "114",
+    "name": "Send daily weather updates via a message in Line",
+    "nodes": [
+      {
+        "name": "Line",
+        "type": "n8n-nodes-base.line",
+        "position": [
+          890,
+          380
+        ],
+        "parameters": {
+          "message": "=Hey! The temperature outside is {{$node[\"OpenWeatherMap\"].json[\"main\"][\"temp\"]}}°C.",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "lineNotifyOAuth2Api": "line-credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          490,
+          380
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 9
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "OpenWeatherMap",
+        "type": "n8n-nodes-base.openWeatherMap",
+        "position": [
+          690,
+          380
+        ],
+        "parameters": {
+          "cityName": "berlin"
+        },
+        "credentials": {
+          "openWeatherMapApi": "owm"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "OpenWeatherMap",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "OpenWeatherMap": {
+        "main": [
+          [
+            {
+              "node": "Line",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send daily weather updates via Line messages",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "services": [
+    "Cron",
+    "Line",
+    "OpenWeatherMap"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Line Account",
+    "OpenWeatherMap API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

@@ -1,0 +1,77 @@
+{
+  "id": "28",
+  "filename": "28_notify_mattermost_on_n8n_start",
+  "description": "Automatically sends a message to a Mattermost channel when your n8n instance is initiated, keeping your team informed of system status.",
+  "content": {
+    "nodes": [
+      {
+        "name": "n8n Trigger",
+        "type": "n8n-nodes-base.n8nTrigger",
+        "position": [
+          450,
+          200
+        ],
+        "parameters": {
+          "events": [
+            "init"
+          ]
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          650,
+          200
+        ],
+        "parameters": {
+          "message": "=Your n8n instance started at {{$json[\"timestamp\"]}}",
+          "channelId": "toyi3uoycf8rirtm7d5jm15sso",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": "Mattermost Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "n8n Trigger": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Notify Mattermost on n8n Instance Start",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Mattermost",
+    "n8n"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New n8n Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mattermost API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

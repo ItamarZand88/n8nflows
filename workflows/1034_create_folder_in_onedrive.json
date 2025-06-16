@@ -1,0 +1,75 @@
+{
+  "id": "1034",
+  "filename": "1034_create_folder_in_onedrive",
+  "description": "Triggers a manual event to create a new folder named 'n8n-rocks' in Microsoft OneDrive, streamlining your file organization.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Microsoft OneDrive",
+        "type": "n8n-nodes-base.microsoftOneDrive",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "name": "n8n-rocks",
+          "options": {},
+          "resource": "folder",
+          "operation": "create"
+        },
+        "credentials": {
+          "microsoftOneDriveOAuth2Api": "n8n-docs-creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Microsoft OneDrive",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create a new folder in Microsoft OneDrive with a click",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "services": [
+    "Manual",
+    "Microsoft OneDrive"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Manage folder"
+  ],
+  "setup_requirements": [
+    "Microsoft OneDrive Account"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

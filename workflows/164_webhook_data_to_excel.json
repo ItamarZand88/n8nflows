@@ -1,0 +1,131 @@
+{
+  "id": "164",
+  "filename": "164_webhook_data_to_excel",
+  "description": "Receives data via a webhook, processes it into a structured list, and exports it as an Excel file for easy sharing and analysis.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          340,
+          0
+        ],
+        "webhookId": "c1616754-4dec-4b00-a8b5-d1cb5f75bf11",
+        "parameters": {
+          "path": "c1616754-4dec-4b00-a8b5-d1cb5f75bf11",
+          "options": {},
+          "httpMethod": "POST",
+          "responseMode": "responseNode"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Item Lists",
+        "type": "n8n-nodes-base.itemLists",
+        "position": [
+          560,
+          0
+        ],
+        "parameters": {
+          "options": {},
+          "fieldToSplitOut": "=body"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Spreadsheet File",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          780,
+          0
+        ],
+        "parameters": {
+          "options": {},
+          "operation": "toFile",
+          "fileFormat": "xlsx"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Respond to Webhook",
+        "type": "n8n-nodes-base.respondToWebhook",
+        "position": [
+          1020,
+          0
+        ],
+        "parameters": {
+          "options": {
+            "responseHeaders": {
+              "entries": [
+                {
+                  "name": "content-disposition",
+                  "value": "=attachment; filename=\"{{$node[\"Webhook\"].json[\"query\"][\"filename\"]? $node[\"Webhook\"].json[\"query\"][\"filename\"] : \"Export\"}}.xlsx\""
+                }
+              ]
+            }
+          },
+          "respondWith": "binary"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "Item Lists",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Item Lists": {
+        "main": [
+          [
+            {
+              "node": "Spreadsheet File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Spreadsheet File": {
+        "main": [
+          [
+            {
+              "node": "Respond to Webhook",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Export data from webhook to Excel file",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "services": [
+    "Item Lists",
+    "Spreadsheet File",
+    "Webhook"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Tofile"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 4,
+  "external_integrations_count": 3
+}

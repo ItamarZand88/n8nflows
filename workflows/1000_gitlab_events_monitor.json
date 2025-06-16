@@ -1,0 +1,44 @@
+{
+  "id": "1000",
+  "filename": "1000_gitlab_events_monitor",
+  "description": "Triggers automation for any event in the n8n-docs GitLab repository, enabling seamless integration with other services for enhanced workflow management.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Gitlab Trigger",
+        "type": "n8n-nodes-base.gitlabTrigger",
+        "position": [
+          460,
+          480
+        ],
+        "webhookId": "0e855b27-6465-42be-9610-c61b2e09cef9",
+        "parameters": {
+          "owner": "n8n-io",
+          "events": [
+            "*"
+          ],
+          "repository": "n8n-docs"
+        },
+        "credentials": {
+          "gitlabApi": "gitlab_creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {}
+  },
+  "title": "Monitor GitLab repository for all events",
+  "nodes_count": 1,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [],
+  "services": [],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
+  "workflow_complexity": 1,
+  "external_integrations_count": 0
+}

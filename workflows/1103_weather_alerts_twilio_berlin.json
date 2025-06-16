@@ -1,0 +1,161 @@
+{
+  "id": "1103",
+  "filename": "1103_weather_alerts_twilio_berlin",
+  "description": "Automatically checks the current temperature in Berlin and sends a Twilio SMS alert if it feels like 18°C or colder, helping users dress appropriately.",
+  "content": {
+    "id": "69",
+    "name": "Creating your first workflow",
+    "nodes": [
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          240,
+          250
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {}
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "OpenWeatherMap",
+        "type": "n8n-nodes-base.openWeatherMap",
+        "position": [
+          450,
+          250
+        ],
+        "parameters": {
+          "cityName": "berlin,de"
+        },
+        "credentials": {
+          "openWeatherMapApi": "Weather"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          650,
+          250
+        ],
+        "parameters": {
+          "conditions": {
+            "number": [
+              {
+                "value1": "={{$node[\"OpenWeatherMap\"].json[\"main\"][\"feels_like\"]}}",
+                "value2": 18
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Twilio",
+        "type": "n8n-nodes-base.twilio",
+        "position": [
+          850,
+          150
+        ],
+        "parameters": {
+          "to": "",
+          "from": "",
+          "message": "=Wear a sweater today, it is {{$node[\"OpenWeatherMap\"].json[\"main\"][\"feels_like\"]}}°C outside right now."
+        },
+        "credentials": {
+          "twilioApi": "Twilio"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          850,
+          350
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      }
+    ],
+    "active": true,
+    "settings": {},
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Twilio",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "OpenWeatherMap",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "OpenWeatherMap": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send Weather Alerts via Twilio for Berlin's Temperature",
+  "nodes_count": 5,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "services": [
+    "Cron",
+    "If",
+    "No Operation, do nothing",
+    "OpenWeatherMap",
+    "Twilio"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "OpenWeatherMap API Key",
+    "Twilio API Key"
+  ],
+  "workflow_complexity": 5,
+  "external_integrations_count": 5
+}

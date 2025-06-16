@@ -1,0 +1,99 @@
+{
+  "id": "113",
+  "filename": "113_textract_analysis_from_s3",
+  "description": "Triggers document analysis by AWS Textract when a file is uploaded to S3, enabling quick extraction of text and data from images.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "AWS Textract",
+        "type": "n8n-nodes-base.awsTextract",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {},
+        "credentials": {
+          "aws": {
+            "id": "12",
+            "name": "AWS account"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "AWS S3",
+        "type": "n8n-nodes-base.awsS3",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "fileKey": "Rechnung.jpg",
+          "bucketName": "textract-demodata"
+        },
+        "credentials": {
+          "aws": {
+            "id": "12",
+            "name": "AWS account"
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "AWS S3": {
+        "main": [
+          [
+            {
+              "node": "AWS Textract",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "AWS S3",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate document analysis using AWS Textract from S3",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Utility"
+  ],
+  "services": [
+    "AWS S3",
+    "AWS Textract",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

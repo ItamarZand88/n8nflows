@@ -1,0 +1,81 @@
+{
+  "id": "989",
+  "filename": "989_fetch_facebook_user_details",
+  "description": "Triggers on manual execution to retrieve the first and last name of the authenticated Facebook user via the Graph API.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Facebook Graph API",
+        "type": "n8n-nodes-base.facebookGraphApi",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "node": "me",
+          "options": {
+            "fields": {
+              "field": [
+                {
+                  "name": "last_name"
+                },
+                {
+                  "name": "first_name"
+                }
+              ]
+            }
+          }
+        },
+        "credentials": {
+          "facebookGraphApi": "graph_credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Facebook Graph API",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Fetch Facebook user profile details on demand",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Facebook Graph",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Facebook Graph API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

@@ -1,0 +1,112 @@
+{
+  "id": "46",
+  "filename": "46_publish_release_stories_storyblok",
+  "description": "Triggers manually to fetch all stories that start with 'release' from Storyblok and publishes them automatically, streamlining content management.",
+  "content": {
+    "id": "110",
+    "name": "Get all the stories starting with `release` and publish them",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Storyblok",
+        "type": "n8n-nodes-base.storyblok",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "space": 96940,
+          "source": "managementApi",
+          "filters": {
+            "starts_with": "release"
+          },
+          "operation": "getAll"
+        },
+        "credentials": {
+          "storyblokManagementApi": "storyblok-tanay"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Storyblok1",
+        "type": "n8n-nodes-base.storyblok",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "space": "={{$node[\"Storyblok\"].parameter[\"space\"]}}",
+          "source": "managementApi",
+          "options": {},
+          "storyId": "={{$node[\"Storyblok\"].json[\"id\"]}}",
+          "operation": "publish"
+        },
+        "credentials": {
+          "storyblokManagementApi": "storyblok-tanay"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Storyblok": {
+        "main": [
+          [
+            {
+              "node": "Storyblok1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Storyblok",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate publishing of stories starting with 'release' in Storyblok",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing"
+  ],
+  "services": [
+    "Manual",
+    "Storyblok"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall",
+    "Publish"
+  ],
+  "setup_requirements": [
+    "Storyblok API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 2
+}

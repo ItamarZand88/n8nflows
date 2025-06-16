@@ -1,0 +1,47 @@
+{
+  "id": "1025",
+  "filename": "1025_new_keap_contacts_notifications",
+  "description": "Triggers when a new contact is added in Keap, allowing for immediate follow-up actions or notifications to your team.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Keap Trigger",
+        "type": "n8n-nodes-base.keapTrigger",
+        "position": [
+          440,
+          320
+        ],
+        "webhookId": "1df33e6f-7e5c-4d70-b90d-d5666aaf63e7",
+        "parameters": {
+          "eventId": "contact.add"
+        },
+        "credentials": {
+          "keapOAuth2Api": "keap_creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {}
+  },
+  "title": "Automate notifications for new Keap contacts",
+  "nodes_count": 1,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Sales"
+  ],
+  "services": [
+    "Keap"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Keap Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Keap Account"
+  ],
+  "workflow_complexity": 1,
+  "external_integrations_count": 1
+}

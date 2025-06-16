@@ -1,0 +1,72 @@
+{
+  "id": "1005",
+  "filename": "1005_get_all_invoices_from_invoice_ninja",
+  "description": "Triggers manually to fetch all invoices from Invoice Ninja, helping you keep track of your billing and financial records efficiently.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          220,
+          310
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Invoice Ninja",
+        "type": "n8n-nodes-base.invoiceNinja",
+        "position": [
+          410,
+          310
+        ],
+        "parameters": {
+          "options": {},
+          "operation": "getAll"
+        },
+        "credentials": {
+          "invoiceNinjaApi": "invoice_ninja_creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Invoice Ninja",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Retrieve all invoices from Invoice Ninja",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Finance & Accounting"
+  ],
+  "services": [
+    "Invoice Ninja",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Invoice Ninja API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

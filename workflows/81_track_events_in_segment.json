@@ -1,0 +1,77 @@
+{
+  "id": "81",
+  "filename": "81_track_events_in_segment",
+  "description": "Triggers event tracking in Segment when executed manually, allowing for easy data collection and analysis of user interactions.",
+  "content": {
+    "id": "122",
+    "name": "Track an event in Segment",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Segment",
+        "type": "n8n-nodes-base.segment",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "event": "",
+          "resource": "track"
+        },
+        "credentials": {
+          "segmentApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Segment",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Track events in Segment on manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Analytics",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Manual",
+    "Segment"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage track"
+  ],
+  "setup_requirements": [
+    "Segment API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

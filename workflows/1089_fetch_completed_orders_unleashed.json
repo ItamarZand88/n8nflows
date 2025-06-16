@@ -1,0 +1,78 @@
+{
+  "id": "1089",
+  "filename": "1089_fetch_completed_orders_unleashed",
+  "description": "Triggers a manual event to retrieve all completed orders from Unleashed Software, helping you keep track of sales and inventory efficiently.",
+  "content": {
+    "name": "",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          390,
+          220
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Unleashed Software",
+        "type": "n8n-nodes-base.unleashedSoftware",
+        "position": [
+          600,
+          220
+        ],
+        "parameters": {
+          "filters": {
+            "orderStatus": [
+              "Completed"
+            ]
+          },
+          "returnAll": true
+        },
+        "credentials": {
+          "unleashedSoftwareApi": "unleashed"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Unleashed Software",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Fetch completed orders from Unleashed Software",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Sales"
+  ],
+  "services": [
+    "Manual",
+    "Unleashed Software"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Unleashed Software API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

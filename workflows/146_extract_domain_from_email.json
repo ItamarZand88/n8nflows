@@ -1,0 +1,100 @@
+{
+  "id": "146",
+  "filename": "146_extract_domain_from_email",
+  "description": "Triggers manually to extract and return the domain name from a specified email address for easy data processing.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          240,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Extract domain name",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          700,
+          300
+        ],
+        "parameters": {
+          "functionCode": "// Take email and extract the domain name \nvar email = ($json[\"email\"]);\nvar name   = email.substring(0, email.lastIndexOf(\"@\"));\nvar domain = email.substring(email.lastIndexOf(\"@\") +1);\n\n//To display the final domain name. (result)\n\nreturn [{\n  json: { domain }\n}]"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Sample email",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          460,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "email",
+                "value": "email@domain2.com"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Sample email": {
+        "main": [
+          [
+            {
+              "node": "Extract domain name",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Sample email",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Extract domain name from email addresses",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "Manual"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

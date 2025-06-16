@@ -1,0 +1,75 @@
+{
+  "id": "1029",
+  "filename": "1029_spotify_track_details",
+  "description": "Triggers on manual execution to fetch and display details of a specific Spotify track, streamlining music management tasks.",
+  "content": {
+    "id": "8",
+    "name": "Sample Spotify",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          500,
+          310
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Spotify",
+        "type": "n8n-nodes-base.spotify",
+        "position": [
+          780,
+          310
+        ],
+        "parameters": {
+          "id": "spotify:track:6SPOM20nWbQSBvTwzgIzqg"
+        },
+        "credentials": {
+          "spotifyOAuth2Api": "spotifyOAuth2"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Spotify",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Retrieve Spotify track details on demand",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Miscellaneous"
+  ],
+  "services": [
+    "Manual",
+    "Spotify"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Spotify Account"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

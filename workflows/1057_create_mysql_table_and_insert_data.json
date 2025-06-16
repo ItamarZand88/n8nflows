@@ -1,0 +1,136 @@
+{
+  "id": "1057",
+  "filename": "1057_create_mysql_table_and_insert_data",
+  "description": "Triggers a manual execution to create a MySQL table and insert sample data, streamlining database setup for testing or development.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          460,
+          230
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "MySQL",
+        "type": "n8n-nodes-base.mySql",
+        "position": [
+          660,
+          230
+        ],
+        "parameters": {
+          "query": "CREATE TABLE test (id INT, name VARCHAR(255), PRIMARY KEY (id));",
+          "operation": "executeQuery"
+        },
+        "credentials": {
+          "mySql": "mysql_creds"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "MySQL1",
+        "type": "n8n-nodes-base.mySql",
+        "position": [
+          1060,
+          230
+        ],
+        "parameters": {
+          "table": "test",
+          "columns": "id, name"
+        },
+        "credentials": {
+          "mySql": "mysql_creds"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          860,
+          230
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "id"
+              }
+            ],
+            "string": [
+              {
+                "name": "name",
+                "value": "n8n"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1,
+        "alwaysOutputData": false
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "MySQL1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "MySQL": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "MySQL",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create a MySQL Table and Insert Sample Data",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes"
+  ],
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "MySQL"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Executequery",
+    "Set Data"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 4,
+  "external_integrations_count": 3
+}

@@ -1,0 +1,106 @@
+{
+  "id": "949",
+  "filename": "949_convert_xml_data",
+  "description": "Triggers manual execution to set and convert XML data into a structured format for further automation or processing.",
+  "content": {
+    "id": "3",
+    "name": "XML Conversion",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          510,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "xml",
+                "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <ORDERS05>   <IDOC BEGIN=\"1\">     <EDI_DC40 SEGMENT=\"1\">       <TABNAM>EDI_DC40</TABNAM>     </EDI_DC40>   </IDOC> </ORDERS05>"
+              }
+            ]
+          },
+          "keepOnlySet": true
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "XML",
+        "type": "n8n-nodes-base.xml",
+        "position": [
+          740,
+          300
+        ],
+        "parameters": {
+          "options": {
+            "attrkey": "$",
+            "mergeAttrs": false,
+            "explicitRoot": true
+          },
+          "dataPropertyName": "xml"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "XML",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Convert XML Data for Easy Processing",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes"
+  ],
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "XML"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

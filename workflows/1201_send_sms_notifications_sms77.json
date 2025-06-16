@@ -1,0 +1,73 @@
+{
+  "id": "1201",
+  "filename": "1201_send_sms_notifications_sms77",
+  "description": "Triggers an SMS notification with a custom message when executed manually, enabling quick communication via sms77.",
+  "content": {
+    "id": "92",
+    "name": "Sending an SMS using sms77",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Sms77",
+        "type": "n8n-nodes-base.sms77",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "message": "Hello from n8n!"
+        },
+        "credentials": {
+          "sms77Api": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Sms77",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send SMS notifications using sms77 on manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "services": [
+    "Manual",
+    "seven"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "seven API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

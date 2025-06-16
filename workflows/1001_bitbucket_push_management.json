@@ -1,0 +1,53 @@
+{
+  "id": "1001",
+  "filename": "1001_bitbucket_push_management",
+  "description": "Triggers on new repository pushes in Bitbucket, allowing for automated management actions to streamline development workflows.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Bitbucket Trigger",
+        "type": "n8n-nodes-base.bitbucketTrigger",
+        "position": [
+          880,
+          390
+        ],
+        "webhookId": "97ca8044-5835-4547-801d-c27dd7f10c2d",
+        "parameters": {
+          "events": [
+            "repo:push"
+          ],
+          "resource": "repository",
+          "repository": "test"
+        },
+        "credentials": {
+          "bitbucketApi": "bitbucket_creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {}
+  },
+  "title": "Automate repository management for new Bitbucket pushes",
+  "nodes_count": 1,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Development",
+    "Productivity"
+  ],
+  "services": [
+    "Bitbucket"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Bitbucket Event"
+  ],
+  "actions": [
+    "Manage repository"
+  ],
+  "setup_requirements": [
+    "Bitbucket API Key"
+  ],
+  "workflow_complexity": 1,
+  "external_integrations_count": 1
+}

@@ -1,0 +1,161 @@
+{
+  "id": "24",
+  "filename": "24_iss_position_to_bigquery",
+  "description": "Automatically retrieves the current position of the ISS every minute and logs the data, including latitude, longitude, and timestamp, to Google BigQuery for analysis.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Google BigQuery",
+        "type": "n8n-nodes-base.googleBigQuery",
+        "position": [
+          1010,
+          240
+        ],
+        "parameters": {
+          "columns": "name, latitude, longitude, timestamp",
+          "options": {},
+          "tableId": "position",
+          "datasetId": "iss",
+          "projectId": "supple-cabinet-289219"
+        },
+        "credentials": {
+          "googleBigQueryOAuth2Api": "BigQuery Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          810,
+          240
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "latitude",
+                "value": "={{$node[\"HTTP Request\"].json[\"0\"][\"latitude\"]}}"
+              },
+              {
+                "name": "longitude",
+                "value": "={{$node[\"HTTP Request\"].json[\"0\"][\"longitude\"]}}"
+              },
+              {
+                "name": "timestamp",
+                "value": "={{$node[\"HTTP Request\"].json[\"0\"][\"timestamp\"]}}"
+              }
+            ],
+            "string": [
+              {
+                "name": "name",
+                "value": "={{$json[\"0\"][\"name\"]}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          610,
+          240
+        ],
+        "parameters": {
+          "url": "https://api.wheretheiss.at/v1/satellites/25544/positions",
+          "options": {},
+          "queryParametersUi": {
+            "parameter": [
+              {
+                "name": "timestamps",
+                "value": "={{Date.now();}}"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          410,
+          240
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "mode": "everyMinute"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Google BigQuery",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate satellite position logging to Google BigQuery",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Google BigQuery",
+    "HTTP Request"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google BigQuery Account"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 4
+}

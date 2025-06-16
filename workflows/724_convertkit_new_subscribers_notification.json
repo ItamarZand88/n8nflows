@@ -1,0 +1,52 @@
+{
+  "id": "724",
+  "filename": "724_convertkit_new_subscribers_notification",
+  "description": "Triggers notifications whenever a new subscriber is added through a ConvertKit form, helping you stay updated on your audience growth.",
+  "content": {
+    "id": "28",
+    "name": "Receive updates when a subscriber is added through a form in ConvertKit",
+    "nodes": [
+      {
+        "name": "ConvertKit Trigger",
+        "type": "n8n-nodes-base.convertKitTrigger",
+        "position": [
+          690,
+          260
+        ],
+        "webhookId": "55336480-7be1-4432-8fc8-d860572c1c18",
+        "parameters": {
+          "event": "formSubscribe",
+          "formId": 1657198
+        },
+        "credentials": {
+          "convertKitApi": "convertkit"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  },
+  "title": "Receive notifications for new subscribers from ConvertKit forms",
+  "nodes_count": 1,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Marketing",
+    "Sales"
+  ],
+  "services": [
+    "ConvertKit"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New ConvertKit Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "ConvertKit API Key"
+  ],
+  "workflow_complexity": 1,
+  "external_integrations_count": 1
+}

@@ -1,0 +1,80 @@
+{
+  "id": "1222",
+  "filename": "1222_create_contact_in_agile_crm",
+  "description": "Manually triggers the creation of a new contact in Agile CRM, allowing for quick addition of leads or customers directly from your workflow.",
+  "content": {
+    "id": "96",
+    "name": "Create a new contact in Agile CRM",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "AgileCRM",
+        "type": "n8n-nodes-base.agileCrm",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "operation": "create",
+          "additionalFields": {
+            "lastName": "",
+            "firstName": ""
+          }
+        },
+        "credentials": {
+          "agileCrmApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "AgileCRM",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create new contacts in Agile CRM with a manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Marketing",
+    "Sales"
+  ],
+  "services": [
+    "Agile CRM",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create"
+  ],
+  "setup_requirements": [
+    "Agile CRM API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

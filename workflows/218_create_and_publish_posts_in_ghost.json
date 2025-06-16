@@ -1,0 +1,140 @@
+{
+  "id": "218",
+  "filename": "218_create_and_publish_posts_in_ghost",
+  "description": "Triggers a post creation in Ghost, updates its status to published, and retrieves the post details for confirmation.",
+  "content": {
+    "id": "170",
+    "name": "Create, update, and get a post in Ghost",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          310,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Ghost",
+        "type": "n8n-nodes-base.ghost",
+        "position": [
+          510,
+          300
+        ],
+        "parameters": {
+          "title": "Running ghost with n8n!",
+          "source": "adminApi",
+          "content": "<p>In this article, you will learn how to automate your Ghost site with n8n!</p>",
+          "operation": "create",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "ghostAdminApi": "Ghost Admin API"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Ghost1",
+        "type": "n8n-nodes-base.ghost",
+        "position": [
+          710,
+          300
+        ],
+        "parameters": {
+          "postId": "={{$node[\"Ghost\"].json[\"id\"]}}",
+          "source": "adminApi",
+          "operation": "update",
+          "updateFields": {
+            "status": "published"
+          }
+        },
+        "credentials": {
+          "ghostAdminApi": "Ghost Admin API"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Ghost2",
+        "type": "n8n-nodes-base.ghost",
+        "position": [
+          910,
+          300
+        ],
+        "parameters": {
+          "by": "id",
+          "source": "adminApi",
+          "options": {},
+          "identifier": "={{$node[\"Ghost\"].json[\"id\"]}}"
+        },
+        "credentials": {
+          "ghostAdminApi": "Ghost Admin API"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Ghost": {
+        "main": [
+          [
+            {
+              "node": "Ghost1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Ghost1": {
+        "main": [
+          [
+            {
+              "node": "Ghost2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Ghost",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create and publish posts in Ghost automatically",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Marketing"
+  ],
+  "services": [
+    "Ghost",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Ghost API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 2
+}

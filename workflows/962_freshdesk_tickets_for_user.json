@@ -1,0 +1,72 @@
+{
+  "id": "962",
+  "filename": "962_freshdesk_tickets_for_user",
+  "description": "Triggers on manual execution to retrieve all open Freshdesk tickets for a specified user, streamlining support management.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Freshdesk",
+        "type": "n8n-nodes-base.freshdesk",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "status": "open",
+          "options": {},
+          "requester": "email",
+          "requesterIdentificationValue": "user@example.com"
+        },
+        "credentials": {
+          "freshdeskApi": "freshdesk-api"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Freshdesk",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Fetch open Freshdesk tickets for a specific user",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "services": [
+    "Freshdesk",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Freshdesk API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

@@ -1,0 +1,73 @@
+{
+  "id": "209",
+  "filename": "209_send_welcome_email_with_mandrill",
+  "description": "Triggers a welcome email to a specified user via Mandrill when manually executed, streamlining the onboarding process.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Mandrill",
+        "type": "n8n-nodes-base.mandrill",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "toEmail": "user@example.com",
+          "template": "welcomeemailv2",
+          "fromEmail": "example@yourdomain.com"
+        },
+        "credentials": {
+          "mandrillApi": "mandrill_creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Mandrill",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send welcome emails using Mandrill on manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Mandrill",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mandrill API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

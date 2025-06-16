@@ -1,0 +1,142 @@
+{
+  "id": "1225",
+  "filename": "1225_weather_data_response",
+  "description": "Retrieves current weather information for a specified city and formats a response with temperature details for easy sharing.",
+  "content": {
+    "nodes": [
+      {
+        "name": "OpenWeatherMap",
+        "type": "n8n-nodes-base.openWeatherMap",
+        "position": [
+          900,
+          300
+        ],
+        "parameters": {
+          "cityName": "={{ $json[\"city\"] }}",
+          "language": "en"
+        },
+        "credentials": {
+          "openWeatherMapApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Webhook GET",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          500,
+          300
+        ],
+        "webhookId": "a31f0bbd-a583-470e-9a1e-29a9ce778122",
+        "parameters": {
+          "path": "weather",
+          "options": {
+            "responsePropertyName": "data"
+          },
+          "responseMode": "lastNode"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set City",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          700,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "city",
+                "value": "={{ $json[\"query\"][\"parameter\"] || 'berlin,de' }}"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Create Response",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          1100,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "data",
+                "value": "=It has {{$json[\"main\"][\"temp\"]}}\\xE2\\x84\\x83  and feels like {{$json[\"main\"][\"feels_like\"]}}\\xE2\\x84\\x83  in {{$json[\"name\"]}}"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Set City": {
+        "main": [
+          [
+            {
+              "node": "OpenWeatherMap",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Webhook GET": {
+        "main": [
+          [
+            {
+              "node": "Set City",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "OpenWeatherMap": {
+        "main": [
+          [
+            {
+              "node": "Create Response",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Fetch and Respond with Current Weather Data for a City",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "services": [
+    "Edit Fields (Set)",
+    "OpenWeatherMap",
+    "Webhook"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "OpenWeatherMap API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 3
+}

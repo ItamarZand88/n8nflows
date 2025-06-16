@@ -1,0 +1,145 @@
+{
+  "id": "53",
+  "filename": "53_git_readme_commit_push",
+  "description": "Triggers a manual execution to add, commit, and push updates to the README.md file in a Git repository, streamlining version control tasks.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          230,
+          320
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Git",
+        "type": "n8n-nodes-base.git",
+        "position": [
+          430,
+          320
+        ],
+        "parameters": {
+          "operation": "add",
+          "pathsToAdd": "README.md"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Git1",
+        "type": "n8n-nodes-base.git",
+        "position": [
+          630,
+          320
+        ],
+        "parameters": {
+          "message": "✨ First commit from n8n",
+          "options": {},
+          "operation": "commit",
+          "repositoryPath": "={{$node[\"Git\"].parameter[\"repositoryPath\"]}}"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Git2",
+        "type": "n8n-nodes-base.git",
+        "position": [
+          830,
+          320
+        ],
+        "parameters": {
+          "options": {},
+          "repositoryPath": "={{$node[\"Git\"].parameter[\"repositoryPath\"]}}"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Git3",
+        "type": "n8n-nodes-base.git",
+        "position": [
+          1030,
+          320
+        ],
+        "parameters": {
+          "options": {},
+          "operation": "push",
+          "repositoryPath": "={{$node[\"Git\"].parameter[\"repositoryPath\"]}}"
+        },
+        "executeOnce": false,
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Git": {
+        "main": [
+          [
+            {
+              "node": "Git1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Git1": {
+        "main": [
+          [
+            {
+              "node": "Git2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Git2": {
+        "main": [
+          [
+            {
+              "node": "Git3",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Git",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate Git commits and pushes for README updates",
+  "nodes_count": 5,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Git",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Add",
+    "Commit",
+    "Push"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 5,
+  "external_integrations_count": 2
+}

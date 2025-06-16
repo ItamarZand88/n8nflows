@@ -1,0 +1,74 @@
+{
+  "id": "1220",
+  "filename": "1220_webhook_events_to_posthog",
+  "description": "Captures event data sent to a Webhook and logs it in PostHog for analytics and tracking purposes.",
+  "content": {
+    "nodes": [
+      {
+        "name": "PostHog",
+        "type": "n8n-nodes-base.postHog",
+        "position": [
+          640,
+          280
+        ],
+        "parameters": {
+          "eventName": "={{$json[\"query\"][\"event\"]}}",
+          "distinctId": "n8n",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "postHogApi": "PostHog Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          440,
+          280
+        ],
+        "webhookId": "f6d0071e-3cf9-49fd-8bbd-afdbea6b0c67",
+        "parameters": {
+          "path": "f6d0071e-3cf9-49fd-8bbd-afdbea6b0c67",
+          "options": {}
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "PostHog",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Track events in PostHog via Webhook integration",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Analytics",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "PostHog",
+    "Webhook"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "PostHog API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

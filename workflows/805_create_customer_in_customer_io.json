@@ -1,0 +1,113 @@
+{
+  "id": "805",
+  "filename": "805_create_customer_in_customer_io",
+  "description": "Triggers on manual execution to create a customer in Customer.io and automatically adds them to a specified segment, streamlining customer management.",
+  "content": {
+    "id": "32",
+    "name": "Create a customer and add them to a segment in Customer.io",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          440,
+          260
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "CustomerIo",
+        "type": "n8n-nodes-base.customerIo",
+        "position": [
+          650,
+          260
+        ],
+        "parameters": {
+          "id": "2",
+          "additionalFields": {
+            "customProperties": {
+              "customProperty": [
+                {
+                  "key": "Name",
+                  "value": "n8n"
+                }
+              ]
+            }
+          }
+        },
+        "credentials": {
+          "customerIoApi": "cust"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "CustomerIo1",
+        "type": "n8n-nodes-base.customerIo",
+        "position": [
+          840,
+          260
+        ],
+        "parameters": {
+          "resource": "segment",
+          "customerIds": "={{$node[\"CustomerIo\"].json[\"id\"]}}"
+        },
+        "credentials": {
+          "customerIoApi": "cust"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "CustomerIo": {
+        "main": [
+          [
+            {
+              "node": "CustomerIo1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "CustomerIo",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create and segment customers in Customer.io",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Customer.io",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage segment"
+  ],
+  "setup_requirements": [
+    "Customer.io API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 2
+}

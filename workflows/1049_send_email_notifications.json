@@ -1,0 +1,72 @@
+{
+  "id": "1049",
+  "filename": "1049_send_email_notifications",
+  "description": "Triggers an email to be sent when executed manually, providing a simple way to send messages instantly via SMTP.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Send Email",
+        "type": "n8n-nodes-base.emailSend",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "text": "This is a message to demonstrate the n8n Send Email workflow!",
+          "options": {
+            "allowUnauthorizedCerts": false
+          },
+          "subject": "n8n rocks!",
+          "toEmail": "user@example.com",
+          "fromEmail": "user@from.email"
+        },
+        "credentials": {
+          "smtp": "your@smtp_creds.here"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Send Email",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send automated email notifications with n8n",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes"
+  ],
+  "services": [
+    "Manual",
+    "Send Email"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

@@ -1,0 +1,52 @@
+{
+  "id": "1022",
+  "filename": "1022_surveymonkey_responses_notifications",
+  "description": "Triggers when a new response is created in SurveyMonkey, allowing you to streamline feedback collection and improve engagement.",
+  "content": {
+    "nodes": [
+      {
+        "name": "SurveyMonkey Trigger",
+        "type": "n8n-nodes-base.surveyMonkeyTrigger",
+        "position": [
+          880,
+          390
+        ],
+        "webhookId": "52754661-725a-49e0-88fc-a8e5dbbea5a5",
+        "parameters": {
+          "event": "response_created",
+          "surveyIds": [
+            "288506979"
+          ],
+          "objectType": "survey",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "surveyMonkeyOAuth2Api": "surveymonkey_oauth"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {}
+  },
+  "title": "Automate notifications for new SurveyMonkey responses",
+  "nodes_count": 1,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Marketing"
+  ],
+  "services": [
+    "SurveyMonkey"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New SurveyMonkey Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "SurveyMonkey Account"
+  ],
+  "workflow_complexity": 1,
+  "external_integrations_count": 1
+}

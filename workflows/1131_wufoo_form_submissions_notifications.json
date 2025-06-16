@@ -1,0 +1,50 @@
+{
+  "id": "1131",
+  "filename": "1131_wufoo_form_submissions_notifications",
+  "description": "Automatically triggers notifications when a new form is submitted in Wufoo, ensuring timely updates for your team.",
+  "content": {
+    "id": "78",
+    "name": "Receive updates when a form is submitted in Wufoo",
+    "nodes": [
+      {
+        "name": "Wufoo Trigger",
+        "type": "n8n-nodes-base.wufooTrigger",
+        "position": [
+          1290,
+          140
+        ],
+        "webhookId": "106376c5-b49c-412f-8463-4db23a23c057",
+        "parameters": {
+          "form": "n8n"
+        },
+        "credentials": {
+          "wufooApi": "wufoo"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  },
+  "title": "Receive notifications for new Wufoo form submissions",
+  "nodes_count": 1,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication"
+  ],
+  "services": [
+    "Wufoo"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Wufoo Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Wufoo API Key"
+  ],
+  "workflow_complexity": 1,
+  "external_integrations_count": 1
+}

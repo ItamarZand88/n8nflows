@@ -1,0 +1,73 @@
+{
+  "id": "1236",
+  "filename": "1236_translate_cocktail_instructions",
+  "description": "Fetches a random cocktail recipe and translates its preparation instructions from English to French using DeepL for multilingual accessibility.",
+  "content": {
+    "nodes": [
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          510,
+          320
+        ],
+        "parameters": {
+          "url": "https://www.thecocktaildb.com/api/json/v1/1/random.php",
+          "options": {}
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "DeepL",
+        "type": "n8n-nodes-base.deepL",
+        "position": [
+          710,
+          320
+        ],
+        "parameters": {
+          "text": "={{$json[\"drinks\"][0][\"strInstructions\"]}}",
+          "translateTo": "FR",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "deepLApi": "DeepL API Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "DeepL",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Translate cocktail instructions from English to French",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Utility"
+  ],
+  "services": [
+    "DeepL",
+    "HTTP Request"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "DeepL API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

@@ -1,0 +1,74 @@
+{
+  "id": "995",
+  "filename": "995_send_test_email_mailjet",
+  "description": "Triggers a test email to a specified recipient using Mailjet when executed manually, streamlining communication for testing purposes.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Mailjet",
+        "type": "n8n-nodes-base.mailjet",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "text": "This is a test message",
+          "subject": "Sample Subject",
+          "toEmail": "user2@example.com",
+          "fromEmail": "user@example.com",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "mailjetEmailApi": "mailjet creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Mailjet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send test emails via Mailjet on manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Mailjet",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mailjet API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

@@ -1,0 +1,135 @@
+{
+  "id": "52",
+  "filename": "52_create_update_tasks_microsoft_to_do",
+  "description": "Triggers task creation in Microsoft To Do and updates its status to in progress, streamlining task management and enhancing productivity.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          200
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Microsoft To Do",
+        "type": "n8n-nodes-base.microsoftToDo",
+        "position": [
+          450,
+          200
+        ],
+        "parameters": {
+          "title": "Document Microsoft To Do node",
+          "operation": "create",
+          "taskListId": "AQMkADAwATNiZmYAZC0zOTkAMy02ZWZjLTAwAi0wMAoALgAAA3i1fHMTrftIhQBzhywL64UBAFB0wRiJW1FJmmlvlAkVFQA-AAACARIAAAA=",
+          "additionalFields": {
+            "importance": "high"
+          }
+        },
+        "credentials": {
+          "microsoftToDoOAuth2Api": "Microsoft OAuth Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Microsoft To Do1",
+        "type": "n8n-nodes-base.microsoftToDo",
+        "position": [
+          650,
+          200
+        ],
+        "parameters": {
+          "taskId": "={{$json[\"id\"]}}",
+          "operation": "update",
+          "taskListId": "={{$node[\"Microsoft To Do\"].parameter[\"taskListId\"]}}",
+          "updateFields": {
+            "status": "inProgress"
+          }
+        },
+        "credentials": {
+          "microsoftToDoOAuth2Api": "Microsoft OAuth Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Microsoft To Do2",
+        "type": "n8n-nodes-base.microsoftToDo",
+        "position": [
+          850,
+          200
+        ],
+        "parameters": {
+          "taskId": "={{$json[\"id\"]}}",
+          "taskListId": "={{$node[\"Microsoft To Do\"].parameter[\"taskListId\"]}}"
+        },
+        "credentials": {
+          "microsoftToDoOAuth2Api": "Microsoft OAuth Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Microsoft To Do": {
+        "main": [
+          [
+            {
+              "node": "Microsoft To Do1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Microsoft To Do1": {
+        "main": [
+          [
+            {
+              "node": "Microsoft To Do2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Microsoft To Do",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create and Update Tasks in Microsoft To Do Automatically",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Productivity"
+  ],
+  "services": [
+    "Manual",
+    "Microsoft To Do"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Microsoft To Do Account"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 2
+}

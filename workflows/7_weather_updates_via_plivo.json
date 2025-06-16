@@ -1,0 +1,106 @@
+{
+  "id": "7",
+  "filename": "7_weather_updates_via_plivo",
+  "description": "Triggers every morning at 9 AM to fetch the current temperature in Berlin and sends it as an SMS notification using Plivo.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Plivo",
+        "type": "n8n-nodes-base.plivo",
+        "position": [
+          1030,
+          400
+        ],
+        "parameters": {
+          "message": "=Hey! The temperature outside is {{$node[\"OpenWeatherMap\"].json[\"main\"][\"temp\"]}}°C."
+        },
+        "credentials": {
+          "plivoApi": "Plivo API Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "OpenWeatherMap",
+        "type": "n8n-nodes-base.openWeatherMap",
+        "position": [
+          830,
+          400
+        ],
+        "parameters": {
+          "cityName": "berlin"
+        },
+        "credentials": {
+          "openWeatherMapApi": "owm"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          630,
+          400
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 9
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "OpenWeatherMap",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "OpenWeatherMap": {
+        "main": [
+          [
+            {
+              "node": "Plivo",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate daily weather updates via SMS using Plivo",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "services": [
+    "Cron",
+    "OpenWeatherMap",
+    "Plivo"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "OpenWeatherMap API Key",
+    "Plivo API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

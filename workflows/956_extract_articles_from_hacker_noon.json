@@ -1,0 +1,138 @@
+{
+  "id": "956",
+  "filename": "956_extract_articles_from_hacker_noon",
+  "description": "Triggers on manual execution to fetch and extract article titles and URLs from Hacker Noon, providing quick access to the latest tech content.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "url": "https://hackernoon.com/",
+          "options": {},
+          "responseFormat": "string"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "HTML Extract",
+        "type": "n8n-nodes-base.htmlExtract",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "extractionValues": {
+            "values": [
+              {
+                "key": "item",
+                "cssSelector": "h2",
+                "returnArray": true,
+                "returnValue": "html"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "HTML Extract1",
+        "type": "n8n-nodes-base.htmlExtract",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "dataPropertyName": "item",
+          "extractionValues": {
+            "values": [
+              {
+                "key": "title",
+                "cssSelector": "a"
+              },
+              {
+                "key": "url",
+                "attribute": "href",
+                "cssSelector": "a",
+                "returnValue": "attribute"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "HTML Extract": {
+        "main": [
+          [
+            {
+              "node": "HTML Extract1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "HTML Extract",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Extract latest articles from Hacker Noon",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "HTML Extract",
+    "HTTP Request",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
+  "workflow_complexity": 4,
+  "external_integrations_count": 3
+}

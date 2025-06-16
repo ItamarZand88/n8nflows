@@ -1,0 +1,75 @@
+{
+  "id": "1024",
+  "filename": "1024_manual_trigger_keap_contacts",
+  "description": "Manually triggers the retrieval of all contacts from Keap, streamlining contact management and ensuring up-to-date records.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Keap",
+        "type": "n8n-nodes-base.keap",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "resource": "contact",
+          "operation": "getAll"
+        },
+        "credentials": {
+          "keapOAuth2Api": "keap_creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Keap",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Retrieve all contacts from Keap with a manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Sales"
+  ],
+  "services": [
+    "Keap",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage contact"
+  ],
+  "setup_requirements": [
+    "Keap Account"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

@@ -1,0 +1,173 @@
+{
+  "id": "844",
+  "filename": "844_monitor_sensor_readings_twilio",
+  "description": "Automatically checks sensor data from Postgres, and sends SMS alerts through Twilio when readings exceed a specified threshold.",
+  "content": {
+    "id": "34",
+    "name": "Monitoring and alerting",
+    "nodes": [
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          250,
+          200
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Postgres",
+        "type": "n8n-nodes-base.postgres",
+        "position": [
+          450,
+          200
+        ],
+        "parameters": {
+          "query": "SELECT * FROM n8n WHERE value > 70 AND notification = false;",
+          "operation": "executeQuery"
+        },
+        "credentials": {
+          "postgres": "Postgres"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Twilio",
+        "type": "n8n-nodes-base.twilio",
+        "position": [
+          650,
+          200
+        ],
+        "parameters": {
+          "to": "",
+          "from": "",
+          "message": "=🚨 The Sensor ({{$node[\"Postgres\"].json[\"sensor_id\"]}}) showed a reading of {{$node[\"Postgres\"].json[\"value\"]}}."
+        },
+        "credentials": {
+          "twilioApi": "Twilio"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          850,
+          200
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "id",
+                "value": "={{$node[\"Postgres\"].json[\"id\"]}}"
+              }
+            ],
+            "boolean": [
+              {
+                "name": "notification",
+                "value": true
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Postgres1",
+        "type": "n8n-nodes-base.postgres",
+        "position": [
+          1050,
+          200
+        ],
+        "parameters": {
+          "table": "n8n",
+          "columns": "notification",
+          "operation": "update"
+        },
+        "credentials": {
+          "postgres": "Postgres"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Postgres1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "Postgres",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Twilio": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Postgres": {
+        "main": [
+          [
+            {
+              "node": "Twilio",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Monitor Sensor Readings and Alert via Twilio SMS",
+  "nodes_count": 5,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Postgres",
+    "Twilio"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Executequery",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Twilio API Key"
+  ],
+  "workflow_complexity": 5,
+  "external_integrations_count": 4
+}

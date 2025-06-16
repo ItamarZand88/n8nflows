@@ -1,0 +1,107 @@
+{
+  "id": "954",
+  "filename": "954_strapi_articles_to_medium_devto",
+  "description": "Triggers on new content from Strapi, then posts it to Medium and Dev.to, streamlining content distribution across platforms.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Medium",
+        "type": "n8n-nodes-base.medium",
+        "position": [
+          650,
+          450
+        ],
+        "parameters": {
+          "title": "={{$json[\"body\"][\"entry\"][\"Title\"]}}",
+          "content": "={{$json[\"body\"][\"entry\"][\"PostContent\"]}}",
+          "contentFormat": "markdown",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "mediumApi": "Medium Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          450,
+          300
+        ],
+        "webhookId": "",
+        "parameters": {
+          "path": "",
+          "options": {},
+          "httpMethod": "POST",
+          "authentication": "headerAuth"
+        },
+        "credentials": {
+          "httpHeaderAuth": "Strapi Webhook Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          650,
+          200
+        ],
+        "parameters": {
+          "url": "https://dev.to/api/articles",
+          "options": {},
+          "requestMethod": "POST",
+          "authentication": "headerAuth",
+          "jsonParameters": true,
+          "bodyParametersJson": "={\n\t\"article\": {\n\t\t\"title\": \"{{$json[\"body\"][\"entry\"][\"Title\"]}}\",\n\t\t\"published\": true,\n\t\t\"body_markdown\": \"{{$json[\"body\"][\"entry\"][\"PostContent\"]}}\",\n\t\t\"tags\":[\"{{$json[\"body\"][\"entry\"][\"Tag\"]}}\"]\n\t}\n}",
+          "headerParametersJson": "{\"Content-Type\": \"application/json\"}"
+        },
+        "credentials": {
+          "httpHeaderAuth": "Dev.to Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Medium",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate article posting from Strapi to Medium and Dev.to",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "services": [
+    "HTTP Request",
+    "Medium",
+    "Webhook"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Medium API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

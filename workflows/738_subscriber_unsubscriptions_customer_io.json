@@ -1,0 +1,53 @@
+{
+  "id": "738",
+  "filename": "738_subscriber_unsubscriptions_customer_io",
+  "description": "Automatically triggers notifications when a subscriber unsubscribes in Customer.io, helping you manage your audience effectively.",
+  "content": {
+    "id": "29",
+    "name": "Receive updates when a subscriber unsubscribes in Customer.io",
+    "nodes": [
+      {
+        "name": "Customer.io Trigger",
+        "type": "n8n-nodes-base.customerIoTrigger",
+        "position": [
+          650,
+          260
+        ],
+        "webhookId": "88092579-1b8d-4d44-98d5-f24b3579cbc2",
+        "parameters": {
+          "events": [
+            "customer.unsubscribed"
+          ]
+        },
+        "credentials": {
+          "customerIoApi": "customerIO"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  },
+  "title": "Receive notifications for subscriber unsubscriptions in Customer.io",
+  "nodes_count": 1,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Development"
+  ],
+  "services": [
+    "Customer.io"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Customer.io Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Customer.io API Key"
+  ],
+  "workflow_complexity": 1,
+  "external_integrations_count": 1
+}

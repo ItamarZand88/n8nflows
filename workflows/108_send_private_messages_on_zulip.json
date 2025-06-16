@@ -1,0 +1,73 @@
+{
+  "id": "108",
+  "filename": "108_send_private_messages_on_zulip",
+  "description": "Triggers a private message to a specified recipient on Zulip when executed manually, streamlining communication for quick updates.",
+  "content": {
+    "id": "126",
+    "name": "Send a private message on Zulip",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Zulip",
+        "type": "n8n-nodes-base.zulip",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "to": []
+        },
+        "credentials": {
+          "zulipApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Zulip",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send private messages on Zulip with a manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "services": [
+    "Manual",
+    "Zulip"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Zulip API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

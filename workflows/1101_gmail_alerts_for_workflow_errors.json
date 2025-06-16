@@ -1,0 +1,78 @@
+{
+  "id": "1101",
+  "filename": "1101_gmail_alerts_for_workflow_errors",
+  "description": "Triggers an email alert via Gmail whenever an error occurs in the n8n workflow, providing detailed error information for quick resolution.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Error Trigger",
+        "type": "n8n-nodes-base.errorTrigger",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Gmail",
+        "type": "n8n-nodes-base.gmail",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "toList": [
+            "recipient@email.com"
+          ],
+          "message": "=Workflow: {{$json[\"workflow\"][\"name\"]}}\nError: {{$json[\"execution\"][\"error\"][\"message\"]}}\nLast node executed: {{$json[\"execution\"][\"lastNodeExecuted\"]}}\nExecution URL: {{$json[\"execution\"][\"url\"]}}\nStacktrace:\n{{$json[\"execution\"][\"error\"][\"stack\"]}}",
+          "subject": "=n8n Workflow Failure:  {{$json[\"workflow\"][\"name\"]}}",
+          "resource": "message",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "gmailOAuth2": "TBD"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Error Trigger": {
+        "main": [
+          [
+            {
+              "node": "Gmail",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate Gmail alerts for workflow errors",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Error",
+    "Gmail"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Error Event"
+  ],
+  "actions": [
+    "Manage message"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

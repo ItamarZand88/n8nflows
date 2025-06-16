@@ -1,0 +1,46 @@
+{
+  "id": "996",
+  "filename": "996_mailjet_email_tracking",
+  "description": "Triggers when an email is sent via Mailjet, allowing you to monitor email delivery and engagement for better communication insights.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Mailjet Trigger",
+        "type": "n8n-nodes-base.mailjetTrigger",
+        "position": [
+          530,
+          400
+        ],
+        "parameters": {
+          "event": "sent"
+        },
+        "credentials": {
+          "mailjetEmailApi": "mailjet creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {}
+  },
+  "title": "Automate email tracking for sent messages with Mailjet",
+  "nodes_count": 1,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Development"
+  ],
+  "services": [
+    "Mailjet"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Mailjet Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mailjet API Key"
+  ],
+  "workflow_complexity": 1,
+  "external_integrations_count": 1
+}

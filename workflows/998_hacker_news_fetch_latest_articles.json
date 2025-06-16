@@ -1,0 +1,68 @@
+{
+  "id": "998",
+  "filename": "998_hacker_news_fetch_latest_articles",
+  "description": "Triggers on manual execution to retrieve and display the latest articles from Hacker News, providing quick access to trending tech news.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Hacker News",
+        "type": "n8n-nodes-base.hackerNews",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "resource": "all",
+          "additionalFields": {}
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Hacker News",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Fetch latest articles from Hacker News on demand",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing"
+  ],
+  "services": [
+    "Hacker News",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage all"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

@@ -1,0 +1,98 @@
+{
+  "id": "1130",
+  "filename": "1130_extract_receipt_data_mindee",
+  "description": "Triggers a manual execution to download an image of a receipt and extracts relevant information using the Mindee API for easy processing.",
+  "content": {
+    "id": "77",
+    "name": "Extract information from an image of a receipt",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          340
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Mindee",
+        "type": "n8n-nodes-base.mindee",
+        "position": [
+          650,
+          340
+        ],
+        "parameters": {},
+        "credentials": {
+          "mindeeReceiptApi": "mindee"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          450,
+          340
+        ],
+        "parameters": {
+          "url": "https://miro.medium.com/max/1400/0*1T9GkAb93w5NSMsf",
+          "options": {},
+          "responseFormat": "file"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "Mindee",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Extract receipt data using Mindee API",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Utility"
+  ],
+  "services": [
+    "HTTP Request",
+    "Manual",
+    "Mindee"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mindee API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

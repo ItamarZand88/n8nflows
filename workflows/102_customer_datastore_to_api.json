@@ -1,0 +1,181 @@
+{
+  "id": "102",
+  "filename": "102_customer_datastore_to_api",
+  "description": "Triggers data retrieval from a customer datastore and posts each entry to an external API, enhancing data integration and workflow efficiency.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Customer Datastore",
+        "type": "n8n-nodes-base.n8nTrainingCustomerDatastore",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "operation": "getAllPeople",
+          "returnAll": true
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "SplitInBatches",
+        "type": "n8n-nodes-base.splitInBatches",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "batchSize": 1
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "url": "https://jsonplaceholder.typicode.com/posts",
+          "options": {},
+          "requestMethod": "POST",
+          "bodyParametersUi": {
+            "parameter": [
+              {
+                "name": "id",
+                "value": "={{$json[\"id\"]}}"
+              },
+              {
+                "name": "name",
+                "value": "={{$json[\"name\"]}}"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Wait",
+        "type": "n8n-nodes-base.wait",
+        "position": [
+          950,
+          100
+        ],
+        "webhookId": "b809abfb-8e02-4b31-90b9-0005be656312",
+        "parameters": {
+          "unit": "seconds",
+          "amount": 4
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Replace Me",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          1050,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Wait": {
+        "main": [
+          [
+            {
+              "node": "SplitInBatches",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "Replace Me",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Wait",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "SplitInBatches": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Customer Datastore": {
+        "main": [
+          [
+            {
+              "node": "SplitInBatches",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Customer Datastore",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate data posting from customer datastore to API",
+  "nodes_count": 6,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "No Operation, do nothing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getallpeople"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 6,
+  "external_integrations_count": 4
+}

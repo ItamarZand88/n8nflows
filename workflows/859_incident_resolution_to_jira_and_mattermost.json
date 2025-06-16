@@ -1,0 +1,167 @@
+{
+  "id": "859",
+  "filename": "859_incident_resolution_to_jira_and_mattermost",
+  "description": "Triggers on PagerDuty incident closure, updates Jira status, and sends notifications to Mattermost channels about the resolution.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          1050,
+          200
+        ],
+        "parameters": {
+          "message": "💪 This issue got closed in PagerDuty and Jira.",
+          "channelId": "={{$node[\"Webhook\"].json[\"body\"][\"channel_id\"]}}",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": "Mattermost Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Mattermost1",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          1050,
+          400
+        ],
+        "parameters": {
+          "message": "=🎉 The incident ({{$node[\"PagerDuty\"].json[\"summary\"]}}) was resolved by the lovely folks in the on-call team!",
+          "channelId": "k1h3du9r9byyfg7sys8ib6p3ey",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": "Mattermost Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Jira",
+        "type": "n8n-nodes-base.jira",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "issueKey": "={{$node[\"Webhook\"].json[\"body\"][\"context\"][\"jira_key\"]}}",
+          "operation": "update",
+          "updateFields": {
+            "statusId": "31"
+          }
+        },
+        "credentials": {
+          "jiraSoftwareCloudApi": "jira"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "PagerDuty",
+        "type": "n8n-nodes-base.pagerDuty",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "email": "n8ndocsburner@gmail.com",
+          "operation": "update",
+          "incidentId": "={{$json[\"body\"][\"context\"][\"pagerduty_incident\"]}}",
+          "updateFields": {
+            "status": "resolved"
+          }
+        },
+        "credentials": {
+          "pagerDutyApi": "PagerDuty Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          450,
+          300
+        ],
+        "webhookId": "1bd40693-c7dd-43f5-97d9-6d8986e62fc1",
+        "parameters": {
+          "path": "1bd40693-c7dd-43f5-97d9-6d8986e62fc1",
+          "options": {},
+          "httpMethod": "POST"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Jira": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Mattermost1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "PagerDuty",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "PagerDuty": {
+        "main": [
+          [
+            {
+              "node": "Jira",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate incident resolution updates in Jira and Mattermost",
+  "nodes_count": 5,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "services": [
+    "Jira Software",
+    "Mattermost",
+    "PagerDuty",
+    "Webhook"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Update"
+  ],
+  "setup_requirements": [
+    "Jira Software API Key",
+    "Mattermost API Key",
+    "PagerDuty API Key"
+  ],
+  "workflow_complexity": 5,
+  "external_integrations_count": 4
+}

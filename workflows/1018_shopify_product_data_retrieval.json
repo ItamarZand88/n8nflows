@@ -1,0 +1,73 @@
+{
+  "id": "1018",
+  "filename": "1018_shopify_product_data_retrieval",
+  "description": "Triggers a manual execution to fetch all product data from Shopify, streamlining inventory management and analysis.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          230,
+          310
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Shopify",
+        "type": "n8n-nodes-base.shopify",
+        "position": [
+          430,
+          310
+        ],
+        "parameters": {
+          "options": {},
+          "operation": "getAll"
+        },
+        "credentials": {
+          "shopifyApi": "shopify_creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Shopify",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate data retrieval from Shopify products",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Sales"
+  ],
+  "services": [
+    "Manual",
+    "Shopify"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Shopify API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

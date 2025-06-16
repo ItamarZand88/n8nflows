@@ -1,0 +1,80 @@
+{
+  "id": "188",
+  "filename": "188_onfleet_tasks_for_google_drive_updates",
+  "description": "Automatically creates a new task in Onfleet whenever a specified file in Google Drive is updated, streamlining your delivery management process.",
+  "content": {
+    "name": "Create an Onfleet task when a file in Google Drive is updated",
+    "nodes": [
+      {
+        "name": "Google Drive Trigger",
+        "type": "n8n-nodes-base.googleDriveTrigger",
+        "position": [
+          460,
+          300
+        ],
+        "parameters": {
+          "pollTimes": {
+            "item": [
+              {
+                "mode": "everyMinute"
+              }
+            ]
+          },
+          "triggerOn": "specificFile",
+          "fileToWatch": "<some_id>"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Onfleet",
+        "type": "n8n-nodes-base.onfleet",
+        "position": [
+          680,
+          300
+        ],
+        "parameters": {
+          "operation": "create",
+          "additionalFields": {}
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Google Drive Trigger": {
+        "main": [
+          [
+            {
+              "node": "Onfleet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create Onfleet tasks for updated Google Drive files",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Data & Storage",
+    "Miscellaneous"
+  ],
+  "services": [
+    "Google Drive",
+    "Onfleet"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Create"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

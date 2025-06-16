@@ -1,0 +1,114 @@
+{
+  "id": "162",
+  "filename": "162_daily_weather_updates_pushcut",
+  "description": "Triggers daily at 9 AM to fetch the current temperature in Berlin and sends a push notification with the weather update using Pushcut.",
+  "content": {
+    "id": "82",
+    "name": "Send daily weather updates via a push notification using the Pushcut node",
+    "nodes": [
+      {
+        "name": "Pushcut",
+        "type": "n8n-nodes-base.pushcut",
+        "position": [
+          1050,
+          420
+        ],
+        "parameters": {
+          "additionalFields": {
+            "text": "=Hey! The temperature outside is {{$node[\"OpenWeatherMap\"].json[\"main\"][\"temp\"]}}°C.",
+            "title": "Today's Weather Update"
+          },
+          "notificationName": "n8n"
+        },
+        "credentials": {
+          "pushcutApi": "Pushcut Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "OpenWeatherMap",
+        "type": "n8n-nodes-base.openWeatherMap",
+        "position": [
+          850,
+          420
+        ],
+        "parameters": {
+          "cityName": "berlin"
+        },
+        "credentials": {
+          "openWeatherMapApi": "open-weather-map"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          650,
+          420
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 9
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "OpenWeatherMap",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "OpenWeatherMap": {
+        "main": [
+          [
+            {
+              "node": "Pushcut",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send daily weather updates via Pushcut notifications",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Miscellaneous",
+    "Productivity",
+    "Utility"
+  ],
+  "services": [
+    "Cron",
+    "OpenWeatherMap",
+    "Pushcut"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "OpenWeatherMap API Key",
+    "Pushcut API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

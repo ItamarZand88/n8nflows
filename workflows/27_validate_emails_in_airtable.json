@@ -1,0 +1,153 @@
+{
+  "id": "27",
+  "filename": "27_validate_emails_in_airtable",
+  "description": "Automatically checks email validity using Mailcheck and updates the status in Airtable for better data accuracy.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Airtable",
+        "type": "n8n-nodes-base.airtable",
+        "position": [
+          470,
+          200
+        ],
+        "parameters": {
+          "table": "Table 1",
+          "operation": "list",
+          "additionalOptions": {}
+        },
+        "credentials": {
+          "airtableApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Mailcheck",
+        "type": "n8n-nodes-base.mailcheck",
+        "position": [
+          670,
+          200
+        ],
+        "parameters": {
+          "email": "={{$json[\"fields\"][\"Email\"]}}"
+        },
+        "credentials": {
+          "mailcheckApi": "Mailcheck API Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          870,
+          200
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "ID",
+                "value": "={{$node[\"Airtable\"].json[\"id\"]}}"
+              }
+            ],
+            "boolean": [
+              {
+                "name": "Valid",
+                "value": "={{$json[\"mxExists\"]}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Airtable1",
+        "type": "n8n-nodes-base.airtable",
+        "position": [
+          1070,
+          200
+        ],
+        "parameters": {
+          "id": "={{$json[\"ID\"]}}",
+          "table": "=Table 1",
+          "fields": [
+            "Valid"
+          ],
+          "options": {},
+          "operation": "update",
+          "application": "={{$node[\"Airtable\"].parameter[\"application\"]}}",
+          "updateAllFields": false
+        },
+        "credentials": {
+          "airtableApi": "Airtable Credentials n8n"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Airtable1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Airtable": {
+        "main": [
+          [
+            {
+              "node": "Mailcheck",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Mailcheck": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Validate and Update Email Addresses in Airtable",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Data & Storage",
+    "Marketing",
+    "Utility"
+  ],
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Mailcheck"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "List",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Mailcheck API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 3
+}

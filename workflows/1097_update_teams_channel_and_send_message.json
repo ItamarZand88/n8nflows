@@ -1,0 +1,135 @@
+{
+  "id": "1097",
+  "filename": "1097_update_teams_channel_and_send_message",
+  "description": "Triggers an update to a Microsoft Teams channel name and sends a message, streamlining team communication and ensuring updates are communicated instantly.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          540,
+          360
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Microsoft Teams",
+        "type": "n8n-nodes-base.microsoftTeams",
+        "position": [
+          740,
+          360
+        ],
+        "parameters": {
+          "name": "n8n-docs-demo",
+          "teamId": "d6b83b00-085d-472c-a6d9-8c2c32c1424e",
+          "options": {}
+        },
+        "credentials": {
+          "microsoftTeamsOAuth2Api": "teams_n8n"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Microsoft Teams1",
+        "type": "n8n-nodes-base.microsoftTeams",
+        "position": [
+          940,
+          360
+        ],
+        "parameters": {
+          "teamId": "={{$node[\"Microsoft Teams\"].parameter[\"teamId\"]}}",
+          "channelId": "={{$node[\"Microsoft Teams\"].json[\"id\"]}}",
+          "operation": "update",
+          "updateFields": {
+            "name": "n8n-documentation-demo"
+          }
+        },
+        "credentials": {
+          "microsoftTeamsOAuth2Api": "teams_n8n"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Microsoft Teams2",
+        "type": "n8n-nodes-base.microsoftTeams",
+        "position": [
+          1140,
+          360
+        ],
+        "parameters": {
+          "teamId": "={{$node[\"Microsoft Teams\"].parameter[\"teamId\"]}}",
+          "message": "n8n rocks!",
+          "resource": "channelMessage",
+          "channelId": "={{$node[\"Microsoft Teams\"].json[\"id\"]}}",
+          "messageType": "text"
+        },
+        "credentials": {
+          "microsoftTeamsOAuth2Api": "teams_n8n"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Microsoft Teams": {
+        "main": [
+          [
+            {
+              "node": "Microsoft Teams1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Microsoft Teams1": {
+        "main": [
+          [
+            {
+              "node": "Microsoft Teams2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Microsoft Teams",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Update Microsoft Teams channel and send a message",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "services": [
+    "Manual",
+    "Microsoft Teams"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage channelMessage",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Microsoft Teams Account"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 2
+}

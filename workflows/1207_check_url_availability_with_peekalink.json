@@ -1,0 +1,149 @@
+{
+  "id": "1207",
+  "filename": "1207_check_url_availability_with_peekalink",
+  "description": "Triggers on manual execution to check if a URL is available and retrieves its metadata if it is, helping users quickly assess link status.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          310,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Peekalink",
+        "type": "n8n-nodes-base.peekalink",
+        "position": [
+          510,
+          300
+        ],
+        "parameters": {
+          "url": "https://n8n1.io",
+          "operation": "isAvailable"
+        },
+        "credentials": {
+          "peekalinkApi": "Peekalink API Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          710,
+          300
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [],
+            "boolean": [
+              {
+                "value1": "={{$json[\"isAvailable\"]}}",
+                "value2": true
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Peekalink1",
+        "type": "n8n-nodes-base.peekalink",
+        "position": [
+          910,
+          200
+        ],
+        "parameters": {
+          "url": "={{$node[\"Peekalink\"].parameter[\"url\"]}}"
+        },
+        "credentials": {
+          "peekalinkApi": "Peekalink API Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          910,
+          400
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Peekalink1",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Peekalink": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Peekalink",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Check URL availability and retrieve metadata with Peekalink",
+  "nodes_count": 5,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "If",
+    "Manual",
+    "No Operation, do nothing",
+    "Peekalink"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Isavailable"
+  ],
+  "setup_requirements": [
+    "Peekalink API Key"
+  ],
+  "workflow_complexity": 5,
+  "external_integrations_count": 4
+}

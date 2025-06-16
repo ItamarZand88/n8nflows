@@ -1,0 +1,136 @@
+{
+  "id": "292",
+  "filename": "292_sms_alerts_for_rabbitmq_messages",
+  "description": "Triggers when a new message is received in RabbitMQ, checks if the value exceeds 50, and sends an SMS alert via Vonage if true.",
+  "content": {
+    "id": "186",
+    "name": "Receive messages from a queue via RabbitMQ and send an SMS",
+    "nodes": [
+      {
+        "name": "RabbitMQ",
+        "type": "n8n-nodes-base.rabbitmqTrigger",
+        "position": [
+          520,
+          220
+        ],
+        "parameters": {
+          "queue": "temp",
+          "options": {
+            "onlyContent": true,
+            "jsonParseBody": true
+          }
+        },
+        "credentials": {
+          "rabbitmq": "RabbitMQ Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          720,
+          220
+        ],
+        "parameters": {
+          "conditions": {
+            "number": [
+              {
+                "value1": "={{$node[\"RabbitMQ\"].json[\"temp\"]}}",
+                "value2": 50,
+                "operation": "larger"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Vonage",
+        "type": "n8n-nodes-base.vonage",
+        "position": [
+          930,
+          120
+        ],
+        "parameters": {
+          "message": "=Alert!\nThe value of temp is {{$node[\"RabbitMQ\"].json[\"temp\"]}}.",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "vonageApi": "vonage"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          920,
+          370
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Vonage",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "RabbitMQ": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send SMS alerts for high RabbitMQ queue messages",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "If",
+    "No Operation, do nothing",
+    "RabbitMQ",
+    "Vonage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New RabbitMQ Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Vonage API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 4
+}

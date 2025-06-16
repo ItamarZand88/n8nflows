@@ -1,0 +1,92 @@
+{
+  "id": "181",
+  "filename": "181_mattermost_notifications_for_airtable_data",
+  "description": "Automatically notifies a Mattermost channel when new data is added to Airtable, ensuring your team stays updated in real-time.",
+  "content": {
+    "id": "151",
+    "name": "Receive a Mattermost message when new data gets added to Airtable",
+    "nodes": [
+      {
+        "name": "Airtable Trigger",
+        "type": "n8n-nodes-base.airtableTrigger",
+        "position": [
+          550,
+          340
+        ],
+        "parameters": {
+          "baseId": "",
+          "tableId": "Data",
+          "pollTimes": {
+            "item": [
+              {
+                "mode": "everyMinute"
+              }
+            ]
+          },
+          "triggerField": "Created",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "airtableApi": "Airtable Credentials n8n"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          750,
+          340
+        ],
+        "parameters": {
+          "message": "=New Data was added to Airtable.\nID:{{$node[\"Airtable Trigger\"].json[\"fields\"][\"id\"]}}\nName: {{$node[\"Airtable Trigger\"].json[\"fields\"][\"name\"]}}",
+          "channelId": "",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": "mattermost"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Airtable Trigger": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send Mattermost notifications for new Airtable data",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Data & Storage"
+  ],
+  "services": [
+    "Airtable",
+    "Mattermost"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Airtable Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Mattermost API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

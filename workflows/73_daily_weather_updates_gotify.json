@@ -1,0 +1,114 @@
+{
+  "id": "73",
+  "filename": "73_daily_weather_updates_gotify",
+  "description": "Triggers daily at 9 AM to fetch the current temperature in Berlin and sends a message via Gotify with the weather update.",
+  "content": {
+    "id": "115",
+    "name": "Send daily weather updates via a message using the Gotify node",
+    "nodes": [
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          490,
+          340
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 9
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "OpenWeatherMap",
+        "type": "n8n-nodes-base.openWeatherMap",
+        "position": [
+          690,
+          340
+        ],
+        "parameters": {
+          "cityName": "berlin"
+        },
+        "credentials": {
+          "openWeatherMapApi": "owm"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Gotify",
+        "type": "n8n-nodes-base.gotify",
+        "position": [
+          890,
+          340
+        ],
+        "parameters": {
+          "message": "=Hey! The temperature outside is {{$node[\"OpenWeatherMap\"].json[\"main\"][\"temp\"]}}°C.",
+          "additionalFields": {
+            "title": "Today's Weather Update"
+          }
+        },
+        "credentials": {
+          "gotifyApi": "gotify-credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "OpenWeatherMap",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "OpenWeatherMap": {
+        "main": [
+          [
+            {
+              "node": "Gotify",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send daily weather updates via Gotify messages",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "services": [
+    "Cron",
+    "Gotify",
+    "OpenWeatherMap"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Gotify API Key",
+    "OpenWeatherMap API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

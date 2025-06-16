@@ -1,0 +1,76 @@
+{
+  "id": "1038",
+  "filename": "1038_sms_alerts_for_workflow_failures",
+  "description": "Automatically sends an SMS notification through Twilio when a workflow encounters an error, ensuring timely awareness of issues.",
+  "content": {
+    "id": "56",
+    "name": "Send an SMS when a workflow fails",
+    "nodes": [
+      {
+        "name": "Error Trigger",
+        "type": "n8n-nodes-base.errorTrigger",
+        "position": [
+          550,
+          260
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Twilio",
+        "type": "n8n-nodes-base.twilio",
+        "position": [
+          750,
+          260
+        ],
+        "parameters": {
+          "to": "",
+          "from": "",
+          "message": "=Your workflow with ID: {{$node[\"Error Trigger\"].json[\"workflow\"][\"id\"]}} and name: {{$node[\"Error Trigger\"].json[\"workflow\"][\"name\"]}} failed to execute."
+        },
+        "credentials": {
+          "twilioApi": "twilio-credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Error Trigger": {
+        "main": [
+          [
+            {
+              "node": "Twilio",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send SMS alerts for workflow failures via Twilio",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Error",
+    "Twilio"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Error Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Twilio API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

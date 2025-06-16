@@ -1,0 +1,71 @@
+{
+  "id": "1035",
+  "filename": "1035_manual_trigger_excel_data_retrieval",
+  "description": "Allows users to manually trigger the retrieval of all data from a Microsoft Excel sheet, streamlining data access for analysis or reporting.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Microsoft Excel",
+        "type": "n8n-nodes-base.microsoftExcel",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "filters": {},
+          "operation": "getAll"
+        },
+        "credentials": {
+          "microsoftExcelOAuth2Api": "ms-oauth-creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Microsoft Excel",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Retrieve all data from Microsoft Excel with a manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes"
+  ],
+  "services": [
+    "Manual",
+    "Microsoft Excel"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Microsoft Excel Account"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

@@ -1,0 +1,103 @@
+{
+  "id": "64",
+  "filename": "64_get_dns_records_for_domain",
+  "description": "Triggers a manual execution to fetch DNS records for the domain 'n8n.io', providing essential data for internet management tasks.",
+  "content": {
+    "id": "113",
+    "name": "Get DNS entries",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          240,
+          290
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Create Domain Item",
+        "type": "n8n-nodes-base.functionItem",
+        "position": [
+          450,
+          290
+        ],
+        "parameters": {
+          "functionCode": "item.domain = \"n8n.io\";\nreturn item;"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Get DNS records",
+        "type": "n8n-nodes-base.uproc",
+        "position": [
+          650,
+          290
+        ],
+        "parameters": {
+          "tool": "getDomainRecords",
+          "group": "internet",
+          "domain": "= {{$node[\"Create Domain Item\"].json[\"domain\"]}}",
+          "additionalOptions": {}
+        },
+        "credentials": {
+          "uprocApi": "miquel-uproc"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Create Domain Item": {
+        "main": [
+          [
+            {
+              "node": "Get DNS records",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Create Domain Item",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Retrieve DNS records for a specified domain",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "services": [
+    "Function Item",
+    "Manual",
+    "uProc"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [
+    "uProc API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

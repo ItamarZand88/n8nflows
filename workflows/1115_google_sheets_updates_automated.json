@@ -1,0 +1,119 @@
+{
+  "id": "1115",
+  "filename": "1115_google_sheets_updates_automated",
+  "description": "Automatically reads data from a Google Sheet every 2 hours and updates two separate sheets with the latest information, ensuring data consistency.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Read Sheet",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          700,
+          300
+        ],
+        "parameters": {
+          "range": "Data!A:G",
+          "rawData": true
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          500,
+          300
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "mode": "custom",
+                "cronExpression": "0 */2 * * * *"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Write Sheet 2",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          900,
+          400
+        ],
+        "parameters": {
+          "range": "={{$node[\"Read Sheet\"].parameter[\"range\"]}}",
+          "rawData": true,
+          "operation": "update"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Write Sheet 1",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          900,
+          200
+        ],
+        "parameters": {
+          "range": "={{$node[\"Read Sheet\"].parameter[\"range\"]}}",
+          "rawData": true,
+          "operation": "update"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "Read Sheet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Read Sheet": {
+        "main": [
+          [
+            {
+              "node": "Write Sheet 2",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Write Sheet 1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate Google Sheets updates every 2 hours",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "services": [
+    "Cron",
+    "Google Sheets"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Update"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 4,
+  "external_integrations_count": 2
+}

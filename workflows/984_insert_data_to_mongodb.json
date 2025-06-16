@@ -1,0 +1,105 @@
+{
+  "id": "984",
+  "filename": "984_insert_data_to_mongodb",
+  "description": "Manually triggers the insertion of predefined data into a MongoDB collection, streamlining data entry tasks for users.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          220,
+          320
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          420,
+          320
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "my_key",
+                "value": "my_value"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "MongoDB",
+        "type": "n8n-nodes-base.mongoDb",
+        "position": [
+          620,
+          320
+        ],
+        "parameters": {
+          "fields": "my_key",
+          "operation": "insert",
+          "collection": "n8n-collection"
+        },
+        "credentials": {
+          "mongoDb": "mongodb_credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "MongoDB",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Insert Data into MongoDB on Manual Trigger",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "MongoDB"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Insert",
+    "Set Data"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

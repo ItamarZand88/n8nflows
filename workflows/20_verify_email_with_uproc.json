@@ -1,0 +1,134 @@
+{
+  "id": "20",
+  "filename": "20_verify_email_with_uproc",
+  "description": "Triggers email verification by checking if a specified email address is deliverable using the uProc API, ensuring valid communication.",
+  "content": {
+    "id": "103",
+    "name": "verify email",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          440,
+          510
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Create Email Item",
+        "type": "n8n-nodes-base.functionItem",
+        "position": [
+          640,
+          510
+        ],
+        "parameters": {
+          "functionCode": "item.email = \"mcolomer@gmail.com\";\nreturn item;"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Check Email Exists",
+        "type": "n8n-nodes-base.uproc",
+        "position": [
+          850,
+          510
+        ],
+        "parameters": {
+          "tool": "checkEmailExists",
+          "email": "={{$node[\"Create Email Item\"].json[\"email\"]}}",
+          "additionalOptions": {}
+        },
+        "credentials": {
+          "uprocApi": "miquel-uproc"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Email Exists?",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          1050,
+          510
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$node[\"Check Email Exists\"].json[\"message\"][\"response\"]}}",
+                "value2": "deliverable"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Create Email Item": {
+        "main": [
+          [
+            {
+              "node": "Check Email Exists",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Check Email Exists": {
+        "main": [
+          [
+            {
+              "node": "Email Exists?",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Create Email Item",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Verify Email Deliverability with uProc API",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "services": [
+    "Function Item",
+    "If",
+    "Manual",
+    "uProc"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "uProc API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 4
+}

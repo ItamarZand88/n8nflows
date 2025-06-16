@@ -1,0 +1,153 @@
+{
+  "id": "370",
+  "filename": "370_phantombuster_outputs_to_airtable",
+  "description": "Triggers manually to fetch data from Phantombuster and appends the results, including names and emails, to an Airtable table for easy access and organization.",
+  "content": {
+    "id": "201",
+    "name": "Store the output of a phantom in Airtable",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          270,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Phantombuster",
+        "type": "n8n-nodes-base.phantombuster",
+        "position": [
+          470,
+          300
+        ],
+        "parameters": {
+          "agentId": "",
+          "operation": "getOutput",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "phantombusterApi": "Phantombuster Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          670,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "Name",
+                "value": "={{$node[\"Phantombuster\"].json[\"general\"][\"fullName\"]}}"
+              },
+              {
+                "name": "Email",
+                "value": "={{$node[\"Phantombuster\"].json[\"details\"][\"mail\"]}}"
+              },
+              {
+                "name": "Company",
+                "value": "={{$node[\"Phantombuster\"].json[\"jobs\"][0][\"companyName\"]}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Airtable",
+        "type": "n8n-nodes-base.airtable",
+        "position": [
+          870,
+          300
+        ],
+        "parameters": {
+          "table": "",
+          "options": {},
+          "operation": "append",
+          "application": ""
+        },
+        "credentials": {
+          "airtableApi": "Airtable Credentials n8n"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Airtable",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Phantombuster": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Phantombuster",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Store Phantombuster Outputs in Airtable Automatically",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing",
+    "Sales"
+  ],
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Manual",
+    "Phantombuster"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Getoutput",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Phantombuster API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 4
+}

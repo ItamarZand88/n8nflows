@@ -1,0 +1,126 @@
+{
+  "id": "1095",
+  "filename": "1095_upload_image_to_ftp",
+  "description": "Triggers a manual event to download an image from a URL and uploads it to an FTP server, ensuring your files are always up to date.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          350
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "FTP",
+        "type": "n8n-nodes-base.ftp",
+        "position": [
+          650,
+          350
+        ],
+        "parameters": {
+          "path": "/upload/n8n_logo.png",
+          "operation": "upload"
+        },
+        "credentials": {
+          "ftp": "ftp_creds"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "FTP1",
+        "type": "n8n-nodes-base.ftp",
+        "position": [
+          850,
+          350
+        ],
+        "parameters": {
+          "path": "/upload/",
+          "operation": "list"
+        },
+        "credentials": {
+          "ftp": "ftp_creds"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          450,
+          350
+        ],
+        "parameters": {
+          "url": "https://n8n.io/n8n-logo.png",
+          "options": {},
+          "responseFormat": "file"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "FTP": {
+        "main": [
+          [
+            {
+              "node": "FTP1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "FTP",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Upload image to FTP after fetching from HTTP",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Utility"
+  ],
+  "services": [
+    "FTP",
+    "HTTP Request",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "List",
+    "Upload"
+  ],
+  "setup_requirements": [],
+  "workflow_complexity": 4,
+  "external_integrations_count": 3
+}

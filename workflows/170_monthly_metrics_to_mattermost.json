@@ -1,0 +1,113 @@
+{
+  "id": "170",
+  "filename": "170_monthly_metrics_to_mattermost",
+  "description": "Automatically retrieves monthly financial metrics from ProfitWell and sends a formatted message to Mattermost for team visibility and tracking.",
+  "content": {
+    "id": "146",
+    "name": "Send financial metrics monthly to Mattermost",
+    "nodes": [
+      {
+        "name": "ProfitWell",
+        "type": "n8n-nodes-base.profitWell",
+        "position": [
+          730,
+          220
+        ],
+        "parameters": {
+          "type": "monthly",
+          "options": {}
+        },
+        "credentials": {
+          "profitWellApi": "profitwell"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          530,
+          220
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 9,
+                "mode": "everyMonth"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          930,
+          220
+        ],
+        "parameters": {
+          "message": "=Active Customers: {{$node[\"ProfitWell\"].json[\"active_customers\"]}}\nTrailing Customers: {{$node[\"ProfitWell\"].json[\"active_trialing_customers\"]}}\nNew Customers: {{$node[\"ProfitWell\"].json[\"new_customers\"]}}\nGrowth Rate: {{$node[\"ProfitWell\"].json[\"growth_rate\"]}}\nRecurring Revenue: {{$node[\"ProfitWell\"].json[\"recurring_revenue\"]}}",
+          "channelId": "w6rsxrqds3bt9pguxzduowqucy",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": "mattermost"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "ProfitWell",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "ProfitWell": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send monthly financial metrics to Mattermost",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Analytics",
+    "Communication",
+    "Core Nodes"
+  ],
+  "services": [
+    "Cron",
+    "Mattermost",
+    "ProfitWell"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Mattermost API Key",
+    "ProfitWell API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

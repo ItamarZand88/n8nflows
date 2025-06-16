@@ -1,0 +1,140 @@
+{
+  "id": "301",
+  "filename": "301_create_update_subscribers_in_egoi",
+  "description": "Triggers subscriber creation in E-goi, updates their details, and retrieves the updated information for seamless contact management.",
+  "content": {
+    "id": "189",
+    "name": "Create, update, and get a subscriber using the e-goi node",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          270,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "e-goi",
+        "type": "n8n-nodes-base.egoi",
+        "position": [
+          470,
+          300
+        ],
+        "parameters": {
+          "list": 1,
+          "email": "nathan@testmail.com",
+          "additionalFields": {
+            "first_name": "Nathan"
+          }
+        },
+        "credentials": {
+          "egoiApi": "e-goi Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "e-goi1",
+        "type": "n8n-nodes-base.egoi",
+        "position": [
+          670,
+          300
+        ],
+        "parameters": {
+          "list": "={{$node[\"e-goi\"].parameter[\"list\"]}}",
+          "contactId": "={{$node[\"e-goi\"].json[\"base\"][\"contact_id\"]}}",
+          "operation": "update",
+          "updateFields": {
+            "first_name": "Nat"
+          }
+        },
+        "credentials": {
+          "egoiApi": "e-goi Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "e-goi2",
+        "type": "n8n-nodes-base.egoi",
+        "position": [
+          870,
+          300
+        ],
+        "parameters": {
+          "list": "={{$node[\"e-goi\"].parameter[\"list\"]}}",
+          "contactId": "={{$node[\"e-goi1\"].json[\"base\"][\"contact_id\"]}}",
+          "operation": "get"
+        },
+        "credentials": {
+          "egoiApi": "e-goi Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "e-goi": {
+        "main": [
+          [
+            {
+              "node": "e-goi1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "e-goi1": {
+        "main": [
+          [
+            {
+              "node": "e-goi2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "e-goi",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create and Update Subscribers in E-goi Automatically",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing"
+  ],
+  "services": [
+    "E-goi",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "E-goi API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 2
+}

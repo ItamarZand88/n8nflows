@@ -1,0 +1,47 @@
+{
+  "id": "206",
+  "filename": "206_thehive_event_notifications",
+  "description": "Automatically triggers notifications whenever a new event occurs in TheHive, keeping your team informed and responsive.",
+  "content": {
+    "id": "161",
+    "name": "Receive updates when an event occurs in TheHive",
+    "nodes": [
+      {
+        "name": "TheHive Trigger",
+        "type": "n8n-nodes-base.theHiveTrigger",
+        "position": [
+          690,
+          220
+        ],
+        "webhookId": "bef3fea8-2d68-43e8-9061-6c17c1059c86",
+        "parameters": {
+          "events": [
+            "*"
+          ]
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  },
+  "title": "Receive notifications for new events in TheHive",
+  "nodes_count": 1,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Development"
+  ],
+  "services": [
+    "TheHive"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New TheHive Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
+  "workflow_complexity": 1,
+  "external_integrations_count": 1
+}

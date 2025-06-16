@@ -1,0 +1,117 @@
+{
+  "id": "232",
+  "filename": "232_astronomy_picture_to_telegram",
+  "description": "Automatically retrieves the Astronomy Picture of the Day from NASA and sends it to a specified Telegram channel every day at 8 PM.",
+  "content": {
+    "id": "174",
+    "name": "Send the Astronomy Picture of the day daily to a Telegram channel",
+    "nodes": [
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 20
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "NASA",
+        "type": "n8n-nodes-base.nasa",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "download": false,
+          "additionalFields": {}
+        },
+        "credentials": {
+          "nasaApi": "NASA"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Telegram",
+        "type": "n8n-nodes-base.telegram",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "file": "={{$node[\"NASA\"].json[\"url\"]}}",
+          "chatId": "-485365454",
+          "operation": "sendPhoto",
+          "additionalFields": {
+            "caption": "={{$node[\"NASA\"].json[\"title\"]}}"
+          }
+        },
+        "credentials": {
+          "telegramApi": "Telegram n8n bot"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "NASA",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "NASA": {
+        "main": [
+          [
+            {
+              "node": "Telegram",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send daily Astronomy Pictures to Telegram channel",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Miscellaneous"
+  ],
+  "services": [
+    "Cron",
+    "NASA",
+    "Telegram"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Sendphoto"
+  ],
+  "setup_requirements": [
+    "NASA API Key",
+    "Telegram API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

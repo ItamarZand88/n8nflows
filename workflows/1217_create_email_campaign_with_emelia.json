@@ -1,0 +1,106 @@
+{
+  "id": "1217",
+  "filename": "1217_create_email_campaign_with_emelia",
+  "description": "Automates the creation of an email campaign and adds a contact with their details, streamlining your marketing efforts using Emelia.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Emelia",
+        "type": "n8n-nodes-base.emelia",
+        "position": [
+          530,
+          310
+        ],
+        "parameters": {
+          "operation": "create",
+          "campaignName": "n8n-docs"
+        },
+        "credentials": {
+          "emeliaApi": "Emelia API Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Emelia1",
+        "type": "n8n-nodes-base.emelia",
+        "position": [
+          730,
+          310
+        ],
+        "parameters": {
+          "operation": "addContact",
+          "campaignId": "603dfd70cbe34c3c9730fd09",
+          "contactEmail": "email@example.com",
+          "additionalFields": {
+            "firstName": "NAME"
+          }
+        },
+        "credentials": {
+          "emeliaApi": "Emelia API Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Emelia2",
+        "type": "n8n-nodes-base.emelia",
+        "position": [
+          930,
+          310
+        ],
+        "parameters": {
+          "campaignId": "={{$node[\"Emelia\"].json[\"_id\"]}}"
+        },
+        "credentials": {
+          "emeliaApi": "Emelia API Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Emelia": {
+        "main": [
+          [
+            {
+              "node": "Emelia1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Emelia1": {
+        "main": [
+          [
+            {
+              "node": "Emelia2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create and Manage Email Campaigns with Emelia",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Marketing"
+  ],
+  "services": [
+    "Emelia"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Addcontact",
+    "Create"
+  ],
+  "setup_requirements": [
+    "Emelia API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 1
+}

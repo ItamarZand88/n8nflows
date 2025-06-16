@@ -1,0 +1,71 @@
+{
+  "id": "951",
+  "filename": "951_send_sms_notifications_twilio",
+  "description": "Triggers an SMS notification through Twilio when executed manually, allowing for quick communication without additional setup.",
+  "content": {
+    "name": "A workflow with the Twilio node",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Twilio",
+        "type": "n8n-nodes-base.twilio",
+        "position": [
+          430,
+          300
+        ],
+        "parameters": {},
+        "credentials": {
+          "twilioApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Twilio",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send SMS notifications using Twilio on manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Manual",
+    "Twilio"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Twilio API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

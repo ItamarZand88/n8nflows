@@ -1,0 +1,115 @@
+{
+  "id": "40",
+  "filename": "40_calendly_invitees_to_notion",
+  "description": "Triggers when a new invitee is created in Calendly and automatically adds their details to a Notion database for easy tracking and management.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Calendly Trigger",
+        "type": "n8n-nodes-base.calendlyTrigger",
+        "position": [
+          490,
+          320
+        ],
+        "webhookId": "d932d43a-511e-4e54-9a8d-c8da6f6ab7c2",
+        "parameters": {
+          "events": [
+            "invitee.created"
+          ]
+        },
+        "credentials": {
+          "calendlyApi": "Calendly API Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Notion",
+        "type": "n8n-nodes-base.notion",
+        "position": [
+          690,
+          320
+        ],
+        "parameters": {
+          "blockUi": {
+            "blockValues": []
+          },
+          "resource": "databasePage",
+          "databaseId": "b40628ca-9000-4576-ab2c-4ed3c37e6ee4",
+          "propertiesUi": {
+            "propertyValues": [
+              {
+                "key": "Name|title",
+                "title": "={{$json[\"payload\"][\"invitee\"][\"name\"]}}",
+                "peopleValue": [],
+                "relationValue": [
+                  ""
+                ],
+                "multiSelectValue": []
+              },
+              {
+                "key": "Email|email",
+                "emailValue": "={{$json[\"payload\"][\"invitee\"][\"email\"]}}",
+                "peopleValue": [],
+                "relationValue": [
+                  ""
+                ],
+                "multiSelectValue": []
+              },
+              {
+                "key": "Status|select",
+                "peopleValue": [],
+                "selectValue": "6ad3880b-260a-4d12-999f-5b605e096c1c",
+                "relationValue": [
+                  ""
+                ],
+                "multiSelectValue": []
+              }
+            ]
+          }
+        },
+        "credentials": {
+          "notionApi": "Notion API Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Calendly Trigger": {
+        "main": [
+          [
+            {
+              "node": "Notion",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate Notion entries for new Calendly invitees",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Productivity",
+    "Utility"
+  ],
+  "services": [
+    "Calendly",
+    "Notion"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Calendly Event"
+  ],
+  "actions": [
+    "Manage databasePage"
+  ],
+  "setup_requirements": [
+    "Calendly API Key",
+    "Notion API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

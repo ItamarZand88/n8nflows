@@ -1,0 +1,118 @@
+{
+  "id": "1211",
+  "filename": "1211_create_and_send_invoices_quickbooks",
+  "description": "Creates a new invoice for a customer in QuickBooks and automatically sends it via email, streamlining billing processes and improving cash flow.",
+  "content": {
+    "nodes": [
+      {
+        "name": "QuickBooks2",
+        "type": "n8n-nodes-base.quickbooks",
+        "position": [
+          870,
+          300
+        ],
+        "parameters": {
+          "email": "",
+          "resource": "invoice",
+          "invoiceId": "={{$json[\"Id\"]}}",
+          "operation": "send"
+        },
+        "credentials": {
+          "quickBooksOAuth2Api": "QuickBooks OAuth Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "QuickBooks1",
+        "type": "n8n-nodes-base.quickbooks",
+        "position": [
+          670,
+          300
+        ],
+        "parameters": {
+          "Line": [
+            {
+              "Amount": 100,
+              "itemId": "1",
+              "DetailType": "SalesItemLineDetail",
+              "Description": "Consulting service"
+            }
+          ],
+          "resource": "invoice",
+          "operation": "create",
+          "CustomerRef": "={{$json[\"Id\"]}}",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "quickBooksOAuth2Api": "QuickBooks OAuth Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "QuickBooks",
+        "type": "n8n-nodes-base.quickbooks",
+        "position": [
+          470,
+          300
+        ],
+        "parameters": {
+          "operation": "create",
+          "displayName": "Jack Ryan",
+          "additionalFields": {
+            "PrimaryEmailAddr": "jack@ryan.com"
+          }
+        },
+        "credentials": {
+          "quickBooksOAuth2Api": "QuickBooks OAuth Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "QuickBooks": {
+        "main": [
+          [
+            {
+              "node": "QuickBooks1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "QuickBooks1": {
+        "main": [
+          [
+            {
+              "node": "QuickBooks2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate invoice creation and sending in QuickBooks",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Finance & Accounting"
+  ],
+  "services": [
+    "QuickBooks Online"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Manage invoice",
+    "Send"
+  ],
+  "setup_requirements": [
+    "QuickBooks Online Account"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 1
+}

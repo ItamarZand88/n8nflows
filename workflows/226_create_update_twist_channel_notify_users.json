@@ -1,0 +1,154 @@
+{
+  "id": "226",
+  "filename": "226_create_update_twist_channel_notify_users",
+  "description": "Triggers a channel creation in Twist, updates its description, and sends a notification to users about the new channel with a link to documentation.",
+  "content": {
+    "id": "173",
+    "name": "Create and update a channel, and send a message on Twist",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          470,
+          260
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Twist",
+        "type": "n8n-nodes-base.twist",
+        "position": [
+          670,
+          260
+        ],
+        "parameters": {
+          "name": "n8n-docs",
+          "resource": "channel",
+          "workspaceId": 150329,
+          "additionalFields": {
+            "user_ids": [
+              475370
+            ]
+          }
+        },
+        "credentials": {
+          "twistOAuth2Api": "Twist OAuth Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Twist1",
+        "type": "n8n-nodes-base.twist",
+        "position": [
+          870,
+          260
+        ],
+        "parameters": {
+          "resource": "channel",
+          "channelId": "={{$node[\"Twist\"].json[\"id\"]}}",
+          "operation": "update",
+          "updateFields": {
+            "description": "Discussion for documentation"
+          }
+        },
+        "credentials": {
+          "twistOAuth2Api": "Twist OAuth Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Twist2",
+        "type": "n8n-nodes-base.twist",
+        "position": [
+          1070,
+          260
+        ],
+        "parameters": {
+          "content": "=Hey [Harshil](twist-mention://475370)!\nYou have been added to the {{$node[\"Twist\"].json[\"name\"]}} channel.\nClick on the button below to quickly navigate to the documentation website.",
+          "workspaceId": 150329,
+          "conversationId": 989141,
+          "additionalFields": {
+            "actionsUi": {
+              "actionValues": [
+                {
+                  "url": "https://docs.n8n.io",
+                  "type": "action",
+                  "action": "open_url",
+                  "button_text": "Documentation site"
+                }
+              ]
+            }
+          }
+        },
+        "credentials": {
+          "twistOAuth2Api": "Twist OAuth Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Twist": {
+        "main": [
+          [
+            {
+              "node": "Twist1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Twist1": {
+        "main": [
+          [
+            {
+              "node": "Twist2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Twist",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create and update a Twist channel, then notify users",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "services": [
+    "Manual",
+    "Twist"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage channel",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Twist Account"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 2
+}

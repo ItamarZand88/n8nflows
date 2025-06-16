@@ -1,0 +1,202 @@
+{
+  "id": "1149",
+  "filename": "1149_youtube_video_bookmarks_to_raindrop",
+  "description": "Automatically checks for new YouTube playlist videos every 30 minutes and saves them as bookmarks in Raindrop for easy access and organization.",
+  "content": {
+    "id": 7,
+    "name": "YouTube to Raindrop",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          -610,
+          160
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "YouTube",
+        "type": "n8n-nodes-base.youTube",
+        "position": [
+          -440,
+          240
+        ],
+        "parameters": {
+          "part": [
+            "snippet"
+          ],
+          "options": {},
+          "resource": "playlistItem",
+          "operation": "getAll",
+          "playlistId": "CHANGE_ME"
+        },
+        "credentials": {
+          "youTubeOAuth2Api": "Google n8n"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Filter new items",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          -120,
+          240
+        ],
+        "parameters": {
+          "functionCode": "const staticData = getWorkflowStaticData('global');\nconst newIds = items.map(item => item.json[\"resourceId\"][\"videoId\"]);\nconst oldIds = staticData.oldIds; \n\nif (!oldIds) {\n  staticData.oldIds = newIds;\n  return items;\n}\n\n\nconst actualNewIds = newIds.filter((id) => !oldIds.includes(id));\nconst actualNew = items.filter((data) => actualNewIds.includes(data.json[\"resourceId\"][\"videoId\"]));\nstaticData.oldIds = [...actualNewIds, ...oldIds];\n\nreturn actualNew;\n"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Flatten JSON",
+        "type": "n8n-nodes-base.functionItem",
+        "position": [
+          -280,
+          240
+        ],
+        "parameters": {
+          "functionCode": "item = item[\"snippet\"]\n\nreturn item;"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Raindrop Bookmark",
+        "type": "n8n-nodes-base.raindrop",
+        "position": [
+          40,
+          240
+        ],
+        "parameters": {
+          "link": "=https://www.youtube.com/watch?v={{$json[\"resourceId\"][\"videoId\"]}}",
+          "resource": "bookmark",
+          "operation": "create",
+          "collectionId": 0,
+          "additionalFields": {
+            "tags": "youtube",
+            "title": "={{$json[\"videoOwnerChannelTitle\"]}} | {{$json[\"title\"]}}"
+          }
+        },
+        "credentials": {
+          "raindropOAuth2Api": "Raindrop"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Every 30 mins",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          -610,
+          320
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "mode": "everyX",
+                "unit": "minutes",
+                "value": 30
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": true,
+    "settings": {},
+    "connections": {
+      "YouTube": {
+        "main": [
+          [
+            {
+              "node": "Flatten JSON",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Flatten JSON": {
+        "main": [
+          [
+            {
+              "node": "Filter new items",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Every 30 mins": {
+        "main": [
+          [
+            {
+              "node": "YouTube",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Filter new items": {
+        "main": [
+          [
+            {
+              "node": "Raindrop Bookmark",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "YouTube",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate YouTube video bookmarking to Raindrop every 30 minutes",
+  "nodes_count": 6,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing",
+    "Productivity"
+  ],
+  "services": [
+    "Cron",
+    "Function",
+    "Function Item",
+    "Manual",
+    "Raindrop",
+    "YouTube"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Execute Function",
+    "Getall",
+    "Manage bookmark",
+    "Manage playlistItem"
+  ],
+  "setup_requirements": [
+    "Raindrop Account",
+    "YouTube Account"
+  ],
+  "workflow_complexity": 6,
+  "external_integrations_count": 6
+}

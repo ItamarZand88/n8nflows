@@ -1,0 +1,73 @@
+{
+  "id": "961",
+  "filename": "961_send_test_alerts_to_signl4",
+  "description": "Triggers a test alert to SIGNL4 when executed manually, allowing users to verify alert configurations and communication setup.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "SIGNL4",
+        "type": "n8n-nodes-base.signl4",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "message": "This is a test alert sent from n8n to SIGNL4",
+          "additionalFields": {
+            "title": "Sample Title"
+          }
+        },
+        "credentials": {
+          "signl4Api": "Signl4 Team Secret"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "SIGNL4",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send test alerts to SIGNL4 on manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Manual",
+    "SIGNL4"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "SIGNL4 API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

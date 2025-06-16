@@ -1,0 +1,127 @@
+{
+  "id": "353",
+  "filename": "353_google_sheets_to_mailchimp",
+  "description": "Automatically transfers email addresses from Google Sheets to Mailchimp, ensuring your mailing list is always up-to-date with new contacts.",
+  "content": {
+    "id": "1",
+    "name": "Google Sheet to Mailchimp",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          110,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Google Sheets",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          530,
+          300
+        ],
+        "parameters": {
+          "range": "sheetone!A:C",
+          "options": {},
+          "sheetId": "1jwEoPPrkQ2qYMYLZ_I0hlME_Ya_p2YZvaxG10Nf_R20"
+        },
+        "credentials": {
+          "googleApi": "Google mailchimp"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Mailchimp",
+        "type": "n8n-nodes-base.mailchimp",
+        "position": [
+          720,
+          300
+        ],
+        "parameters": {
+          "list": "90d12734de",
+          "email": "={{$node[\"Google Sheets\"].json[\"email\"]}}",
+          "status": "subscribed",
+          "options": {}
+        },
+        "credentials": {
+          "mailchimpApi": "Google mailchimp"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Interval",
+        "type": "n8n-nodes-base.interval",
+        "position": [
+          290,
+          300
+        ],
+        "parameters": {
+          "interval": 2
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": true,
+    "settings": {},
+    "connections": {
+      "Interval": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Google Sheets": {
+        "main": [
+          [
+            {
+              "node": "Mailchimp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          []
+        ]
+      }
+    }
+  },
+  "title": "Sync Google Sheets contacts to Mailchimp subscribers",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing",
+    "Productivity"
+  ],
+  "services": [
+    "Google Sheets",
+    "Interval",
+    "Mailchimp",
+    "Manual"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Google Sheets API Key",
+    "Mailchimp API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 4
+}

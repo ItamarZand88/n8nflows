@@ -1,0 +1,138 @@
+{
+  "id": "41",
+  "filename": "41_notion_meeting_notes_to_mattermost",
+  "description": "Triggers when new meeting notes are added in Notion, filters for the Marketing team, and sends a notification to Mattermost with meeting details.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Notion Trigger",
+        "type": "n8n-nodes-base.notionTrigger",
+        "position": [
+          270,
+          350
+        ],
+        "parameters": {
+          "event": "pageAddedToDatabase",
+          "pollTimes": {
+            "item": [
+              {
+                "mode": "everyHour"
+              }
+            ]
+          },
+          "databaseId": "6ea34c0d-67e8-4614-ad5c-68c665a34763"
+        },
+        "credentials": {
+          "notionApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          470,
+          350
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$json[\"Team\"]}}",
+                "value2": "Marketing"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          670,
+          250
+        ],
+        "parameters": {
+          "message": "=New meeting notes were added.\nAgenda: {{$json[\"Agenda\"]}}\nDate: {{$json[\"Date\"][\"start\"]}}\nLink: https://notion.so/{{$json[\"id\"].replace(/-/g,'')}}",
+          "channelId": "64cae1bh6pggtcupfd4ztwby4r",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          668,
+          495
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Notion Trigger": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Notify Marketing Team of New Notion Meeting Notes",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Productivity"
+  ],
+  "services": [
+    "If",
+    "Mattermost",
+    "No Operation, do nothing",
+    "Notion"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Notion Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Mattermost API Key",
+    "Notion API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 4
+}

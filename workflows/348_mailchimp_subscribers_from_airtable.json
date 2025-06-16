@@ -1,0 +1,131 @@
+{
+  "id": "348",
+  "filename": "348_mailchimp_subscribers_from_airtable",
+  "description": "Automatically retrieves user information from Airtable and adds them as subscribers to a Mailchimp list, streamlining email marketing efforts.",
+  "content": {
+    "id": "1",
+    "name": "Create entry in Mailchimp from Airtable",
+    "nodes": [
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          450,
+          450
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {}
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Airtable",
+        "type": "n8n-nodes-base.airtable",
+        "position": [
+          650,
+          450
+        ],
+        "parameters": {
+          "table": "Users",
+          "operation": "list",
+          "application": "=apprZs8g4tIGDUtqQ",
+          "additionalOptions": {
+            "fields": [
+              "Name",
+              "Email",
+              "Interest"
+            ]
+          }
+        },
+        "credentials": {
+          "airtableApi": "claudiajanebates@gmail.com"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Mailchimp",
+        "type": "n8n-nodes-base.mailchimp",
+        "position": [
+          840,
+          450
+        ],
+        "parameters": {
+          "list": "777b2643d4",
+          "email": "={{$node[\"Airtable\"].json[\"fields\"][\"Email\"]}}",
+          "status": "subscribed",
+          "options": {
+            "tags": "Interest"
+          },
+          "mergeFieldsUi": {
+            "mergeFieldsValues": [
+              {
+                "name": "FNAME",
+                "value": "={{$node[\"Airtable\"].json[\"fields\"][\"Name\"]}}"
+              }
+            ]
+          }
+        },
+        "credentials": {
+          "mailchimpApi": "claudiajanebates@gmail.com"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "Airtable",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Airtable": {
+        "main": [
+          [
+            {
+              "node": "Mailchimp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create Mailchimp subscribers from Airtable user data",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing"
+  ],
+  "services": [
+    "Airtable",
+    "Cron",
+    "Mailchimp"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "List"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Mailchimp API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

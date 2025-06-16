@@ -1,0 +1,126 @@
+{
+  "id": "104",
+  "filename": "104_netlify_submissions_to_airtable",
+  "description": "Captures new form submissions from Netlify and automatically appends the data to Airtable for easy management and tracking.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Netlify Trigger",
+        "type": "n8n-nodes-base.netlifyTrigger",
+        "position": [
+          450,
+          300
+        ],
+        "webhookId": "df7efc17-09bb-4409-9f6f-09bd5e59546e",
+        "parameters": {
+          "event": "submissionCreated",
+          "formId": "615ad58f9f491e00070abac5",
+          "siteId": "b585059c-a19a-487c-831f-c57af6f13bd1"
+        },
+        "credentials": {
+          "netlifyApi": "Netlify account"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "Name",
+                "value": "={{$json[\"name\"]}}"
+              },
+              {
+                "name": "Email",
+                "value": "={{$json[\"email\"]}}"
+              },
+              {
+                "name": "Role",
+                "value": "={{$json[\"role\"][0]}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Airtable",
+        "type": "n8n-nodes-base.airtable",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "table": "Table 1",
+          "options": {},
+          "operation": "append",
+          "application": "apphwBsFxzjDPDBA8"
+        },
+        "credentials": {
+          "airtableApi": "Airtable Credentials @n8n"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Airtable",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Netlify Trigger": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate form submissions from Netlify to Airtable",
+  "nodes_count": 3,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Data & Storage",
+    "Development"
+  ],
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Netlify"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Netlify Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Netlify API Key"
+  ],
+  "workflow_complexity": 3,
+  "external_integrations_count": 3
+}

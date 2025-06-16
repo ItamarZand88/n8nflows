@@ -1,0 +1,156 @@
+{
+  "id": "981",
+  "filename": "981_github_stars_to_slack",
+  "description": "Monitors a GitHub repository for new stars and sends notifications to Slack, indicating who starred the project and the current star count.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Github Trigger",
+        "type": "n8n-nodes-base.githubTrigger",
+        "position": [
+          500,
+          350
+        ],
+        "parameters": {
+          "owner": "n8n-io",
+          "events": [
+            "star"
+          ],
+          "repository": "n8n"
+        },
+        "credentials": {
+          "githubApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          700,
+          350
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$node[\"Github Trigger\"].data[\"body\"][\"action\"]}}",
+                "value2": "created"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Slack - Add",
+        "type": "n8n-nodes-base.slack",
+        "position": [
+          900,
+          250
+        ],
+        "parameters": {
+          "channel": "#general",
+          "attachments": [
+            {
+              "text": "=The project has now: {{$node[\"Github Trigger\"].data[\"body\"][\"repository\"][\"stargazers_count\"]}} Stars",
+              "color": "#88FF00",
+              "title": "=Got new star from: {{$node[\"Github Trigger\"].data[\"body\"][\"sender\"][\"login\"]}}",
+              "image_url": "={{$node[\"Github Trigger\"].data[\"body\"][\"sender\"][\"avatar_url\"]}}",
+              "title_link": "={{$node[\"Github Trigger\"].data[\"body\"][\"sender\"][\"html_url\"]}}"
+            }
+          ],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "slackApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Slack - Remove",
+        "type": "n8n-nodes-base.slack",
+        "position": [
+          900,
+          450
+        ],
+        "parameters": {
+          "channel": "#general",
+          "attachments": [
+            {
+              "text": "=The project has now: {{$node[\"Github Trigger\"].data[\"body\"][\"repository\"][\"stargazers_count\"]}} Stars",
+              "color": "#ff0000",
+              "title": "=Star got removed by: {{$node[\"Github Trigger\"].data[\"body\"][\"sender\"][\"login\"]}}",
+              "image_url": "={{$node[\"Github Trigger\"].data[\"body\"][\"sender\"][\"avatar_url\"]}}",
+              "title_link": "={{$node[\"Github Trigger\"].data[\"body\"][\"sender\"][\"html_url\"]}}"
+            }
+          ],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "slackApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Slack - Add",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Slack - Remove",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Github Trigger": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Notify Slack on GitHub star events",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "services": [
+    "Github",
+    "If",
+    "Slack"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Github Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Github API Key",
+    "Slack API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 3
+}

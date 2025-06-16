@@ -1,0 +1,81 @@
+{
+  "id": "1021",
+  "filename": "1021_create_coupon_on_paddle",
+  "description": "Manually triggers the creation of a discount coupon on Paddle, allowing for quick promotions and sales adjustments with ease.",
+  "content": {
+    "id": "54",
+    "name": "Create a coupon on Paddle",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          550,
+          260
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Paddle",
+        "type": "n8n-nodes-base.paddle",
+        "position": [
+          750,
+          260
+        ],
+        "parameters": {
+          "discountAmount": 2,
+          "additionalFields": {
+            "couponCode": "n8n-docs"
+          }
+        },
+        "credentials": {
+          "paddleApi": "paddle"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Paddle": {
+        "main": [
+          []
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Paddle",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create discount coupons on Paddle with a manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Sales"
+  ],
+  "services": [
+    "Manual",
+    "Paddle"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Paddle API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

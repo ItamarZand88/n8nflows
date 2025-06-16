@@ -1,0 +1,73 @@
+{
+  "id": "997",
+  "filename": "997_send_test_email_mailgun",
+  "description": "Triggers a test email to a specified recipient using Mailgun when executed manually, streamlining communication for testing purposes.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Mailgun",
+        "type": "n8n-nodes-base.mailgun",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "text": "This is a test message ",
+          "subject": "This is a Subject",
+          "toEmail": "user2@example.com",
+          "fromEmail": "user@example.com"
+        },
+        "credentials": {
+          "mailgunApi": "mailgun-creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Mailgun",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Send test emails using Mailgun on manual trigger",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "services": [
+    "Mailgun",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mailgun API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

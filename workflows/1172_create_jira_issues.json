@@ -1,0 +1,77 @@
+{
+  "id": "1172",
+  "filename": "1172_create_jira_issues",
+  "description": "Triggers the creation of a new Jira issue titled 'Firewall on fire' with a manual click, streamlining issue tracking and management.",
+  "content": {
+    "id": "87",
+    "name": "Create a new issue in Jira",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          350,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Jira",
+        "type": "n8n-nodes-base.jira",
+        "position": [
+          550,
+          300
+        ],
+        "parameters": {
+          "project": "",
+          "summary": "Firewall on fire",
+          "issueType": "10001",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "jiraSoftwareCloudApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Jira",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create Jira issues with a single click",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "services": [
+    "Jira Software",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Jira Software API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}

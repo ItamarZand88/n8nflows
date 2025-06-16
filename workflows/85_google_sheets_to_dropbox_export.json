@@ -1,0 +1,128 @@
+{
+  "id": "85",
+  "filename": "85_google_sheets_to_dropbox_export",
+  "description": "Automatically reads data from Google Sheets, converts it to XLS format, and uploads it to Dropbox every 15 minutes for easy access and sharing.",
+  "content": {
+    "nodes": [
+      {
+        "name": "Read Sheet",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "sheetId": "1GT2dc0dOkAC1apY0UlTKY9vitBl8PtKrILvFiAy5VBs"
+        },
+        "credentials": {
+          "googleApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Convert to XLS",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "operation": "toFile"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Upload Dropbox",
+        "type": "n8n-nodes-base.dropbox",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "path": "/my-sheets/prices.xls",
+          "binaryData": true
+        },
+        "credentials": {
+          "dropboxApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Trigger all 15 min",
+        "type": "n8n-nodes-base.interval",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {
+          "unit": "minutes",
+          "interval": 15
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "Read Sheet": {
+        "main": [
+          [
+            {
+              "node": "Convert to XLS",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Convert to XLS": {
+        "main": [
+          [
+            {
+              "node": "Upload Dropbox",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Trigger all 15 min": {
+        "main": [
+          [
+            {
+              "node": "Read Sheet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Automate Google Sheets data export to Dropbox every 15 minutes",
+  "nodes_count": 4,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "services": [
+    "Dropbox",
+    "Google Sheets",
+    "Interval",
+    "Spreadsheet File"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Interval Event"
+  ],
+  "actions": [
+    "Tofile"
+  ],
+  "setup_requirements": [
+    "Dropbox API Key",
+    "Google Sheets API Key"
+  ],
+  "workflow_complexity": 4,
+  "external_integrations_count": 4
+}

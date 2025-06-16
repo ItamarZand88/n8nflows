@@ -1,0 +1,82 @@
+{
+  "id": "1015",
+  "filename": "1015_bannerbear_graphics_on_demand",
+  "description": "Triggers a graphic creation in Bannerbear with specified text and colors, allowing for instant marketing material generation.",
+  "content": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Bannerbear",
+        "type": "n8n-nodes-base.bannerbear",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "templateId": "8BK3vWZJ7Wl5Jzk1aX",
+          "modificationsUi": {
+            "modificationsValues": [
+              {
+                "name": "message",
+                "text": "this is some text",
+                "color": "#3097BC",
+                "background": "#28A96F"
+              }
+            ]
+          },
+          "additionalFields": {
+            "waitForImage": true
+          }
+        },
+        "credentials": {
+          "bannerbearApi": "bannerbear_creds"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Bannerbear",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "title": "Create customized graphics using Bannerbear on demand",
+  "nodes_count": 2,
+  "created_at": "2025-06-14T17:34:01.150895Z",
+  "updated_at": "2025-06-14T17:34:01.150895Z",
+  "categories": [
+    "Core Nodes",
+    "Marketing"
+  ],
+  "services": [
+    "Bannerbear",
+    "Manual"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Bannerbear API Key"
+  ],
+  "workflow_complexity": 2,
+  "external_integrations_count": 2
+}
