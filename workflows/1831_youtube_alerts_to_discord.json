@@ -1,7 +1,32 @@
 {
   "id": "1831",
-  "filename": "1831_youtube_alerts_to_discord",
+  "title": "Automate YouTube Video Alerts to Discord with Captions Summary",
   "description": "Triggers on new YouTube videos, retrieves captions, summarizes them, and posts alerts to Discord, enhancing engagement with concise video insights.",
+  "filename": "1831_youtube_alerts_to_discord",
+  "services": [
+    "Discord",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "HTTP Request",
+    "RSS Feed",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New RSS Feed Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Text"
+  ],
+  "setup_requirements": [
+    "Discord API Key",
+    "HTTP Request Account"
+  ],
   "content": {
     "id": "LF8gz3iz74u45a5i",
     "meta": {
@@ -268,35 +293,5 @@
         ]
       }
     }
-  },
-  "title": "Automate YouTube Video Alerts to Discord with Captions Summary",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Discord",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "HTTP Request",
-    "RSS Feed",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New RSS Feed Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Text"
-  ],
-  "setup_requirements": [
-    "Discord API Key",
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 6
+  }
 }

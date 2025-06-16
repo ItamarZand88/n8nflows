@@ -1,7 +1,39 @@
 {
   "id": "1587",
-  "filename": "1587_crowdstrike_alerts_to_jira_slack",
+  "title": "Automate CrowdStrike alerts to Jira and Slack notifications",
   "description": "Triggers daily to fetch new CrowdStrike detections, enriches data with VirusTotal, creates Jira tickets, and sends Slack alerts for immediate response.",
+  "filename": "1587_crowdstrike_alerts_to_jira_slack",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Item Lists",
+    "Jira Software",
+    "Loop Over Items (Split in Batches)",
+    "Schedule",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Summarize"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "HTTP Request Account",
+    "Jira Software API Key",
+    "Slack Account"
+  ],
   "content": {
     "id": "IMVycpyABaGuD1hq",
     "meta": {
@@ -2775,42 +2807,5 @@
         ]
       }
     }
-  },
-  "title": "Automate CrowdStrike alerts to Jira and Slack notifications",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Item Lists",
-    "Jira Software",
-    "Loop Over Items (Split in Batches)",
-    "Schedule",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Summarize"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "HTTP Request Account",
-    "Jira Software API Key",
-    "Slack Account"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 8
+  }
 }

@@ -1,7 +1,38 @@
 {
   "id": "1141",
-  "filename": "1141_exam_questions_from_google_docs",
+  "title": "Automate Exam Question Generation from Google Docs",
   "description": "Triggers on demand to extract content from Google Docs, generating open-ended and multiple-choice questions, and storing them in Google Sheets for easy access.",
+  "filename": "1141_exam_questions_from_google_docs",
+  "services": [
+    "Code",
+    "Convert to File",
+    "Google Docs",
+    "Google Sheets",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Miscellaneous",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Get",
+    "Totext"
+  ],
+  "setup_requirements": [
+    "Google Docs Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "7Qa2mH7PnDxy7Qat",
     "meta": {
@@ -1181,41 +1212,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Exam Question Generation from Google Docs",
-  "nodes_count": 37,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Miscellaneous",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Convert to File",
-    "Google Docs",
-    "Google Sheets",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Get",
-    "Totext"
-  ],
-  "setup_requirements": [
-    "Google Docs Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 37,
-  "external_integrations_count": 8
+  }
 }

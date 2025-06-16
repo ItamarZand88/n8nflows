@@ -1,7 +1,41 @@
 {
   "id": "1844",
-  "filename": "1844_appointment_scheduling_from_gmail",
+  "title": "Automate appointment scheduling responses from Gmail",
   "description": "Triggers on new unread emails in Gmail, checks for appointment requests, retrieves calendar availability, and sends a tailored response to the sender.",
+  "filename": "1844_appointment_scheduling_from_gmail",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Filter",
+    "Gmail",
+    "Google Calendar",
+    "If",
+    "Item Lists",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Concatenateitems",
+    "Filter Data",
+    "Getall",
+    "Markasread",
+    "Reply",
+    "Set Data",
+    "Sort"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Calendar Account"
+  ],
   "content": {
     "id": "slP122GjD9meGkS6",
     "meta": {
@@ -603,44 +637,5 @@
         ]
       }
     }
-  },
-  "title": "Automate appointment scheduling responses from Gmail",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Filter",
-    "Gmail",
-    "Google Calendar",
-    "If",
-    "Item Lists",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Concatenateitems",
-    "Filter Data",
-    "Getall",
-    "Markasread",
-    "Reply",
-    "Set Data",
-    "Sort"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Calendar Account"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 8
+  }
 }

@@ -1,7 +1,39 @@
 {
   "id": "1816",
-  "filename": "1816_news_extraction_and_summarization",
+  "title": "Automate news extraction and summarization from a website",
   "description": "Triggers weekly to scrape news articles from a website, extracts key details, summarizes content, and stores results in a NocoDB database for easy access and analysis.",
+  "filename": "1816_news_extraction_and_summarization",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Item Lists",
+    "Merge",
+    "NocoDB",
+    "OpenAI",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Create",
+    "Extracthtmlcontent",
+    "Manage chat",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "NocoDB API Key",
+    "OpenAI API Key"
+  ],
   "content": {
     "id": "xM8Z5vZVNTNjCySL",
     "meta": {
@@ -886,42 +918,5 @@
         ]
       }
     }
-  },
-  "title": "Automate news extraction and summarization from a website",
-  "nodes_count": 36,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Item Lists",
-    "Merge",
-    "NocoDB",
-    "OpenAI",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Create",
-    "Extracthtmlcontent",
-    "Manage chat",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "NocoDB API Key",
-    "OpenAI API Key"
-  ],
-  "workflow_complexity": 36,
-  "external_integrations_count": 9
+  }
 }

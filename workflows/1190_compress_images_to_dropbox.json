@@ -1,7 +1,29 @@
 {
   "id": "1190",
-  "filename": "1190_compress_images_to_dropbox",
+  "title": "Compress and Store Images from HTTP to Dropbox",
   "description": "Triggers manually to download images from URLs, compresses them into a zip file, and stores the zip file in Dropbox for easy access and sharing.",
+  "filename": "1190_compress_images_to_dropbox",
+  "services": [
+    "Compression",
+    "Dropbox",
+    "HTTP Request",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Compress"
+  ],
+  "setup_requirements": [
+    "Dropbox API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -122,32 +144,5 @@
         ]
       }
     }
-  },
-  "title": "Compress and Store Images from HTTP to Dropbox",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Compression",
-    "Dropbox",
-    "HTTP Request",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Compress"
-  ],
-  "setup_requirements": [
-    "Dropbox API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,44 @@
 {
   "id": "1467",
-  "filename": "workflow_address_agent_ai_agent_analysis_api_audio_backup_ch",
+  "title": "Address Agent AI Agent Analysis API Audio Backup Ch",
   "description": "Evaluate candidate resumes against job descriptions, summarizing qualifications and generating scores.",
+  "filename": "workflow_address_agent_ai_agent_analysis_api_audio_backup_ch",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Filter",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "Merge",
+    "Notion",
+    "Sticky Note",
+    "Webhook",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append",
+    "Getall",
+    "Manage databasePage",
+    "Pdf",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Google Sheets Account",
+    "Notion API Key"
+  ],
   "content": {
     "id": "EnfvHdczSXHN8vNv",
     "meta": {
@@ -2211,47 +2248,5 @@
         ]
       }
     }
-  },
-  "title": "Address Agent AI Agent Analysis API Audio Backup Ch",
-  "nodes_count": 67,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Filter",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "Merge",
-    "Notion",
-    "Sticky Note",
-    "Webhook",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append",
-    "Getall",
-    "Manage databasePage",
-    "Pdf",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Google Sheets Account",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 67,
-  "external_integrations_count": 11
+  }
 }

@@ -1,7 +1,32 @@
 {
   "id": "1772",
-  "filename": "1772_lead_generation_google_maps_to_sheets",
+  "title": "Automate Lead Generation from Google Maps to Google Sheets",
   "description": "Triggers on user messages to extract business leads from Google Maps and enriches data from websites, storing results in Google Sheets for easy access.",
+  "filename": "1772_lead_generation_google_maps_to_sheets",
+  "services": [
+    "Aggregate",
+    "Execute Workflow",
+    "Google Sheets",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Append"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "qhZvZVCoV3HLjRkq",
     "meta": {
@@ -620,35 +645,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Lead Generation from Google Maps to Google Sheets",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Execute Workflow",
-    "Google Sheets",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Append"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 5
+  }
 }

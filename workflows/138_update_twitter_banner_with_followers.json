@@ -1,7 +1,31 @@
 {
   "id": "138",
-  "filename": "138_update_twitter_banner_with_followers",
+  "title": "Update Twitter profile banner with new follower avatars",
   "description": "Triggers on demand to fetch new Twitter followers, processes their avatars, and updates the profile banner with a custom image.",
+  "filename": "138_update_twitter_banner_with_followers",
+  "services": [
+    "Function",
+    "HTTP Request",
+    "Item Lists",
+    "Manual",
+    "Merge"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Multistep",
+    "Resize"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -359,34 +383,5 @@
         ]
       }
     }
-  },
-  "title": "Update Twitter profile banner with new follower avatars",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Function",
-    "HTTP Request",
-    "Item Lists",
-    "Manual",
-    "Merge"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Multistep",
-    "Resize"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,35 @@
 {
   "id": "1375",
-  "filename": "1375_hubspot_messages_to_openai_responses",
+  "title": "Automate HubSpot message responses using OpenAI",
   "description": "Triggers on new HubSpot messages, processes them with OpenAI, and sends automated responses back to HubSpot, enhancing customer interaction efficiency.",
+  "filename": "1375_hubspot_messages_to_openai_responses",
+  "services": [
+    "Airtable",
+    "Code",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Manage assistant",
+    "Search"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "HTTP Request API Key",
+    "HTTP Request Account"
+  ],
   "content": {
     "id": "C2pB17EpXAJwOcst",
     "meta": {
@@ -1185,38 +1213,5 @@
         ]
       }
     }
-  },
-  "title": "Automate HubSpot message responses using OpenAI",
-  "nodes_count": 34,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Manage assistant",
-    "Search"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "HTTP Request API Key",
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 34,
-  "external_integrations_count": 7
+  }
 }

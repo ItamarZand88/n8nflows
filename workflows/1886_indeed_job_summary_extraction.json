@@ -1,7 +1,35 @@
 {
   "id": "1886",
-  "filename": "1886_indeed_job_summary_extraction",
+  "title": "Automate Indeed job summary extraction and notification",
   "description": "Triggers job summary extraction from Indeed links in Airtable, processes the data with AI, and sends formatted summaries via webhook.",
+  "filename": "1886_indeed_job_summary_extraction",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Markdown",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "TTj6BiN7bQKTa6FM",
     "meta": {
@@ -609,38 +637,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Indeed job summary extraction and notification",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Markdown",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 8
+  }
 }

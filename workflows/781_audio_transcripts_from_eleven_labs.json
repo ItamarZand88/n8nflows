@@ -1,7 +1,23 @@
 {
   "id": "781",
-  "filename": "781_audio_transcripts_from_eleven_labs",
+  "title": "Create audio transcripts from uploaded files",
   "description": "Triggers when the workflow is manually initiated, reads an audio file, and sends it to Eleven Labs for transcription, generating a text output.",
+  "filename": "781_audio_transcripts_from_eleven_labs",
+  "services": [
+    "HTTP Request",
+    "Manual",
+    "Read/Write Files from Disk"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "c911aed9995230b93fd0d9bc41c258d697c2fe97a3bab8c02baf85963eeda618"
@@ -105,26 +121,5 @@
         ]
       }
     }
-  },
-  "title": "Create audio transcripts from uploaded files",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Manual",
-    "Read/Write Files from Disk"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

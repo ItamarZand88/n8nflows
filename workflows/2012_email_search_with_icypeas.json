@@ -1,7 +1,24 @@
 {
   "id": "2012",
-  "filename": "2012_email_search_with_icypeas",
+  "title": "Automate email searches using Icypeas API",
   "description": "Triggers a search for an email address based on provided names and domain, utilizing the Icypeas API for streamlined email lookup.",
+  "filename": "2012_email_search_with_icypeas",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "zAkPoRdcG5M5x4KT",
     "meta": {
@@ -158,27 +175,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email searches using Icypeas API",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

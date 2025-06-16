@@ -1,7 +1,37 @@
 {
   "id": "870",
-  "filename": "870_scrape_trustpilot_reviews_ad_insights",
+  "title": "Scrape Trustpilot Reviews and Generate Ad Insights",
   "description": "Automates the collection of competitor Trustpilot reviews, filters negative feedback, and generates ad copy suggestions for marketing teams.",
+  "filename": "870_scrape_trustpilot_reviews_ad_insights",
+  "services": [
+    "Aggregate",
+    "Filter",
+    "Gmail",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "1eadd5bc7c3d70c587c28f782511fd898c6bf6d97963d92e836019d2039d1c79"
@@ -953,40 +983,5 @@
         ]
       }
     }
-  },
-  "title": "Scrape Trustpilot Reviews and Generate Ad Insights",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Filter",
-    "Gmail",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 8
+  }
 }

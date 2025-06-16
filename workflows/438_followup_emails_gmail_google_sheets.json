@@ -1,7 +1,44 @@
 {
   "id": "438",
-  "filename": "438_followup_emails_gmail_google_sheets",
+  "title": "Automate follow-up emails with Gmail and Google Sheets",
   "description": "Triggers every hour to send follow-up emails based on previous interactions, updating contact records in Google Sheets for effective communication.",
+  "filename": "438_followup_emails_gmail_google_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Filter",
+    "Gmail",
+    "Google Sheets",
+    "If",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Manage thread",
+    "Reply",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -1059,47 +1096,5 @@
         ]
       }
     }
-  },
-  "title": "Automate follow-up emails with Gmail and Google Sheets",
-  "nodes_count": 32,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Filter",
-    "Gmail",
-    "Google Sheets",
-    "If",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Manage thread",
-    "Reply",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 32,
-  "external_integrations_count": 10
+  }
 }

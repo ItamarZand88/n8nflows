@@ -1,7 +1,23 @@
 {
   "id": "815",
-  "filename": "815_generate_pdf_invoices_from_webhook",
+  "title": "Generate PDF invoices from webhook data",
   "description": "Automatically creates a PDF invoice from incoming webhook data, processes invoice details, and responds with the generated PDF for easy sharing.",
+  "filename": "815_generate_pdf_invoices_from_webhook",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "fcf18fc485cc336a31bc65574fd28e124660f468281b7aad773616b17903afe6",
@@ -166,26 +182,5 @@
         ]
       }
     }
-  },
-  "title": "Generate PDF invoices from webhook data",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 3
+  }
 }

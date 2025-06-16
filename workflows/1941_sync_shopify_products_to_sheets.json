@@ -1,7 +1,37 @@
 {
   "id": "1941",
-  "filename": "1941_sync_shopify_products_to_sheets",
+  "title": "Sync Shopify product data to Google Sheets daily",
   "description": "Automates daily retrieval of product details from Shopify and logs them into Google Sheets, ensuring up-to-date inventory management and easy access to product information.",
+  "filename": "1941_sync_shopify_products_to_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "GraphQL",
+    "If",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "WBkJdubQjVzMUhwi",
     "meta": {
@@ -897,40 +927,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Shopify product data to Google Sheets daily",
-  "nodes_count": 25,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "GraphQL",
-    "If",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 25,
-  "external_integrations_count": 8
+  }
 }

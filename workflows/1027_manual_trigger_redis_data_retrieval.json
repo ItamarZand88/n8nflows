@@ -1,7 +1,26 @@
 {
   "id": "1027",
-  "filename": "1027_manual_trigger_redis_data_retrieval",
+  "title": "Retrieve data from Redis on manual trigger",
   "description": "Allows users to manually trigger a workflow that retrieves a value associated with the key 'hello' from a Redis database, streamlining data access.",
+  "filename": "1027_manual_trigger_redis_data_retrieval",
+  "services": [
+    "Manual",
+    "Redis"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -45,29 +64,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve data from Redis on manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Manual",
-    "Redis"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

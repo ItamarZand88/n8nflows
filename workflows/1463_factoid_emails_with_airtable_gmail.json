@@ -1,7 +1,45 @@
 {
   "id": "1463",
-  "filename": "1463_factoid_emails_with_airtable_gmail",
+  "title": "Automate daily and weekly factoid emails with Airtable and Gmail",
   "description": "Triggers daily at 9 AM to send personalized factoid emails based on user preferences stored in Airtable, enhancing engagement and knowledge sharing.",
+  "filename": "1463_factoid_emails_with_airtable_gmail",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Execution Data",
+    "Filter",
+    "Gmail",
+    "Schedule",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Schedule Event",
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Manage image",
+    "Resize",
+    "Search",
+    "Set Data",
+    "Update",
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Gmail Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -1537,48 +1575,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily and weekly factoid emails with Airtable and Gmail",
-  "nodes_count": 32,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Execution Data",
-    "Filter",
-    "Gmail",
-    "Schedule",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Schedule Event",
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Manage image",
-    "Resize",
-    "Search",
-    "Set Data",
-    "Update",
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Gmail Account"
-  ],
-  "workflow_complexity": 32,
-  "external_integrations_count": 11
+  }
 }

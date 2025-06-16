@@ -1,7 +1,38 @@
 {
   "id": "1456",
-  "filename": "1456_squarespace_backups_to_github",
+  "title": "Automate Squarespace header and footer backups to GitHub",
   "description": "Triggers every 2 hours to backup Squarespace header and footer injections to a GitHub repository, ensuring website changes are securely stored.",
+  "filename": "1456_squarespace_backups_to_github",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "GitHub",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Edit",
+    "Filter Data",
+    "Manage file",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "GitHub API Key"
+  ],
   "content": {
     "id": "eB4rTdZFvrdKK5VP",
     "meta": {
@@ -583,41 +614,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Squarespace header and footer backups to GitHub",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "GitHub",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Edit",
-    "Filter Data",
-    "Manage file",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "GitHub API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 10
+  }
 }

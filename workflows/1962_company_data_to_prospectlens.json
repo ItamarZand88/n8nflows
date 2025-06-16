@@ -1,7 +1,32 @@
 {
   "id": "1962",
-  "filename": "1962_company_data_to_prospectlens",
+  "title": "Automate company data collection from Google Sheets to ProspectLens",
   "description": "Triggers on manual input, retrieves company data from Google Sheets, processes it via ProspectLens API, and saves the results back to Sheets for easy access.",
+  "filename": "1962_company_data_to_prospectlens",
+  "services": [
+    "Filter",
+    "Google Sheets",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "wwvUsosYUyMfpGbB",
     "meta": {
@@ -419,35 +444,5 @@
         ]
       }
     }
-  },
-  "title": "Automate company data collection from Google Sheets to ProspectLens",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Filter",
-    "Google Sheets",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 6
+  }
 }

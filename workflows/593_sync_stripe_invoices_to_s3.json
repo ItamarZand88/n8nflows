@@ -1,7 +1,35 @@
 {
   "id": "593",
-  "filename": "593_sync_stripe_invoices_to_s3",
+  "title": "Sync Stripe Invoice PDFs to AWS S3 Monthly",
   "description": "Automatically retrieves invoice PDFs from Stripe every month and uploads them to a specified AWS S3 bucket, organizing them by year and month.",
+  "filename": "593_sync_stripe_invoices_to_s3",
+  "services": [
+    "AWS S3",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Schedule",
+    "Split Out",
+    "Sticky Note",
+    "Stop and Error"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data",
+    "Upload"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "9e331a89ae45a204c6dee51c77131d32a8c962ec20ccf002135ea60bd285dba9"
@@ -499,38 +527,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Stripe Invoice PDFs to AWS S3 Monthly",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "AWS S3",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Schedule",
-    "Split Out",
-    "Sticky Note",
-    "Stop and Error"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data",
-    "Upload"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 17,
-  "external_integrations_count": 9
+  }
 }

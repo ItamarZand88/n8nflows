@@ -1,7 +1,27 @@
 {
   "id": "1405",
-  "filename": "1405_google_calendar_to_telegram",
+  "title": "Post new Google Calendar events to Telegram",
   "description": "Automatically sends a Telegram message with event details whenever a new event is created in Google Calendar, keeping you updated in real-time.",
+  "filename": "1405_google_calendar_to_telegram",
+  "services": [
+    "Google Calendar",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Google Calendar Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Google Calendar Account"
+  ],
   "content": {
     "id": "CoYwFuZTq5kUuiba",
     "meta": {
@@ -112,30 +132,5 @@
         ]
       }
     }
-  },
-  "title": "Post new Google Calendar events to Telegram",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Google Calendar",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Google Calendar Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Google Calendar Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

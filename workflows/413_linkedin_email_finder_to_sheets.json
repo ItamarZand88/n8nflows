@@ -1,7 +1,36 @@
 {
   "id": "413",
-  "filename": "413_linkedin_email_finder_to_sheets",
+  "title": "Automate LinkedIn Email Finding and Update Google Sheets",
   "description": "Triggers every few minutes to find email addresses from LinkedIn profiles stored in Google Sheets and updates the sheet with the retrieved information.",
+  "filename": "413_linkedin_email_finder_to_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "21754f977ce20b07e6fe64be3fbc663f6e6f730423d6e46c6cd2bf5b5e70a383"
@@ -556,39 +585,5 @@
         ]
       }
     }
-  },
-  "title": "Automate LinkedIn Email Finding and Update Google Sheets",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 8
+  }
 }

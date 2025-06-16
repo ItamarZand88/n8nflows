@@ -1,7 +1,37 @@
 {
   "id": "331",
-  "filename": "331_url_ip_threat_scans_virustotal_greynoise",
+  "title": "Automate URL and IP Threat Scans with VirusTotal and Greynoise",
   "description": "Triggers on form submissions to scan URLs or IPs, retrieves threat intelligence from VirusTotal and Greynoise, and sends detailed reports via Slack and email.",
+  "filename": "331_url_ip_threat_scans_virustotal_greynoise",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "HTTP Request",
+    "If",
+    "Item Lists",
+    "Merge",
+    "Slack",
+    "Sticky Note",
+    "Webhook",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd",
@@ -837,40 +867,5 @@
         ]
       }
     }
-  },
-  "title": "Automate URL and IP Threat Scans with VirusTotal and Greynoise",
-  "nodes_count": 29,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "HTTP Request",
-    "If",
-    "Item Lists",
-    "Merge",
-    "Slack",
-    "Sticky Note",
-    "Webhook",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 29,
-  "external_integrations_count": 12
+  }
 }

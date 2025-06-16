@@ -1,7 +1,43 @@
 {
   "id": "866",
-  "filename": "866_telegram_meal_logging_nutrient_analysis",
+  "title": "Automate meal logging via Telegram with nutrient analysis",
   "description": "Triggers on new Telegram messages, processes voice or text inputs to log meals, and analyzes nutrient content, storing results in Google Sheets.",
+  "filename": "866_telegram_meal_logging_nutrient_analysis",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "If",
+    "Limit",
+    "Split Out",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Telegram Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Manage audio",
+    "Manage file",
+    "Set Data",
+    "Transcribe"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -656,46 +692,5 @@
         ]
       }
     }
-  },
-  "title": "Automate meal logging via Telegram with nutrient analysis",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "If",
-    "Limit",
-    "Split Out",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Telegram Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Manage audio",
-    "Manage file",
-    "Set Data",
-    "Transcribe"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 8
+  }
 }

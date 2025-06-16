@@ -1,7 +1,44 @@
 {
   "id": "1295",
-  "filename": "1295_woocommerce_order_tracking_support",
+  "title": "Automate WooCommerce order tracking and customer support",
   "description": "Facilitates customer inquiries by retrieving WooCommerce orders and tracking information, enhancing support efficiency and customer satisfaction.",
+  "filename": "1295_woocommerce_order_tracking_support",
+  "services": [
+    "Aggregate",
+    "Code",
+    "DHL",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Split Out",
+    "Sticky Note",
+    "Webhook",
+    "WooCommerce"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Miscellaneous",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage customer",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "DHL API Key",
+    "HTTP Request API Key",
+    "WooCommerce API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -1088,47 +1125,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WooCommerce order tracking and customer support",
-  "nodes_count": 40,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Miscellaneous",
-    "Sales"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "DHL",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Split Out",
-    "Sticky Note",
-    "Webhook",
-    "WooCommerce"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage customer",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "DHL API Key",
-    "HTTP Request API Key",
-    "WooCommerce API Key"
-  ],
-  "workflow_complexity": 40,
-  "external_integrations_count": 12
+  }
 }

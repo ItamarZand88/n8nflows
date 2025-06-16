@@ -1,7 +1,24 @@
 {
   "id": "1486",
-  "filename": "1486_chat_request_analysis_and_correction",
+  "title": "Automate user request analysis and response correction",
   "description": "Triggers on incoming chat messages, analyzes user requests, and ensures structured responses are accurate, improving communication efficiency.",
+  "filename": "1486_chat_request_analysis_and_correction",
+  "services": [
+    "Edit Fields (Set)",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "HMoUOg8J7RzEcslH",
     "meta": {
@@ -293,27 +310,5 @@
         ]
       }
     }
-  },
-  "title": "Automate user request analysis and response correction",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 13,
-  "external_integrations_count": 3
+  }
 }

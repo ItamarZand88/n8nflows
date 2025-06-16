@@ -1,7 +1,27 @@
 {
   "id": "1101",
-  "filename": "1101_gmail_alerts_for_workflow_errors",
+  "title": "Automate Gmail alerts for workflow errors",
   "description": "Triggers an email alert via Gmail whenever an error occurs in the n8n workflow, providing detailed error information for quick resolution.",
+  "filename": "1101_gmail_alerts_for_workflow_errors",
+  "services": [
+    "Error",
+    "Gmail"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Error Event"
+  ],
+  "actions": [
+    "Manage message"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -49,30 +69,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Gmail alerts for workflow errors",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Error",
-    "Gmail"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Error Event"
-  ],
-  "actions": [
-    "Manage message"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

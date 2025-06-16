@@ -1,7 +1,35 @@
 {
   "id": "398",
-  "filename": "398_daily_fundraising_updates_to_sheets",
+  "title": "Automate daily fundraising updates to Google Sheets",
   "description": "Triggers daily to fetch recent fundraising events from Crunchbase and logs them into Google Sheets for easy tracking and analysis.",
+  "filename": "398_daily_fundraising_updates_to_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Item Lists",
+    "Merge",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "f0a68da631efd4ed052a324b63ff90f7a844426af0398a68338f44245d1dd9e5"
@@ -645,38 +673,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily fundraising updates to Google Sheets",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Item Lists",
-    "Merge",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 8
+  }
 }

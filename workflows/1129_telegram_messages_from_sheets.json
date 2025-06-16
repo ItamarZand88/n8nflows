@@ -1,7 +1,30 @@
 {
   "id": "1129",
-  "filename": "1129_telegram_messages_from_sheets",
+  "title": "Send Telegram messages with data from Google Sheets",
   "description": "Triggers a manual execution to send messages via Telegram using data from Google Sheets, processing in batches for efficiency.",
+  "filename": "1129_telegram_messages_from_sheets",
+  "services": [
+    "Google Sheets",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -139,33 +162,5 @@
         ]
       }
     }
-  },
-  "title": "Send Telegram messages with data from Google Sheets",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

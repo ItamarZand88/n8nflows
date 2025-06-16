@@ -1,7 +1,39 @@
 {
   "id": "2008",
-  "filename": "2008_lead_capture_to_sheets_notifications",
+  "title": "Automate lead capture from forms to Google Sheets and notifications",
   "description": "Captures new form submissions, verifies email validity, and logs qualified leads to Google Sheets while sending notifications via Gmail and Discord.",
+  "filename": "2008_lead_capture_to_sheets_notifications",
+  "services": [
+    "Discord",
+    "Gmail",
+    "Google Sheets",
+    "Hunter",
+    "If",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Emailverifier",
+    "Filter Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Discord API Key",
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "yYjRbTWULZuNLXM0",
     "meta": {
@@ -398,42 +430,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead capture from forms to Google Sheets and notifications",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity",
-    "Sales"
-  ],
-  "services": [
-    "Discord",
-    "Gmail",
-    "Google Sheets",
-    "Hunter",
-    "If",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Emailverifier",
-    "Filter Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Discord API Key",
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 8
+  }
 }

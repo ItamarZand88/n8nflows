@@ -1,7 +1,24 @@
 {
   "id": "1168",
-  "filename": "1168_send_sms_notifications_using_sms77",
+  "title": "Send SMS notifications using sms77 on manual trigger",
   "description": "Triggers an SMS notification with a predefined message when executed manually, allowing for quick communication via sms77.",
+  "filename": "1168_send_sms_notifications_using_sms77",
+  "services": [
+    "Manual",
+    "seven"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "seven API Key"
+  ],
   "content": {
     "id": "92",
     "name": "Sending an SMS using sms77",
@@ -47,27 +64,5 @@
         ]
       }
     }
-  },
-  "title": "Send SMS notifications using sms77 on manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Manual",
-    "seven"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "seven API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

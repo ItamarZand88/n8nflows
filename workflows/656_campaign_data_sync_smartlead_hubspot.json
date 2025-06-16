@@ -1,7 +1,45 @@
 {
   "id": "656",
-  "filename": "656_campaign_data_sync_smartlead_hubspot",
+  "title": "Automate Campaign Data Sync from Smartlead to HubSpot",
   "description": "Triggers on a schedule to extract campaign data from Smartlead, processes it, and updates HubSpot and Google Sheets for streamlined reporting and lead management.",
+  "filename": "656_campaign_data_sync_smartlead_hubspot",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "HubSpot",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "Postgres",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Executequery",
+    "Filter Data",
+    "Getall",
+    "Set Data",
+    "Update",
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "HubSpot Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "a2435d996b378e3a6fdef0468d70285e3aa0fbd0004de817bfc80e80afee4e7b"
@@ -1909,48 +1947,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Campaign Data Sync from Smartlead to HubSpot",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity",
-    "Sales"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "HubSpot",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "Postgres",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Executequery",
-    "Filter Data",
-    "Getall",
-    "Set Data",
-    "Update",
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "HubSpot Account"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 11
+  }
 }

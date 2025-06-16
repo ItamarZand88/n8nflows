@@ -1,7 +1,40 @@
 {
   "id": "2007",
-  "filename": "2007_log_errors_and_notifications",
+  "title": "Log Errors and Send Notifications for Error Events",
   "description": "Automatically logs error events in a PostgreSQL database and sends notifications via email and mobile for immediate awareness, limiting alerts to avoid spamming.",
+  "filename": "2007_log_errors_and_notifications",
+  "services": [
+    "Code",
+    "Error",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "If",
+    "Manual",
+    "No Operation, do nothing",
+    "Postgres",
+    "Pushover",
+    "Send Email",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Error Event",
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Deletetable",
+    "Executequery",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Pushover API Key"
+  ],
   "content": {
     "id": "YybYYc430rmZWJPJ",
     "meta": {
@@ -625,43 +658,5 @@
         ]
       }
     }
-  },
-  "title": "Log Errors and Send Notifications for Error Events",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Error",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "If",
-    "Manual",
-    "No Operation, do nothing",
-    "Postgres",
-    "Pushover",
-    "Send Email",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Error Event",
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Deletetable",
-    "Executequery",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Pushover API Key"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 11
+  }
 }

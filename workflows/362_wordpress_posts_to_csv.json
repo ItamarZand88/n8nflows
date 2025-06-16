@@ -1,7 +1,30 @@
 {
   "id": "362",
-  "filename": "362_wordpress_posts_to_csv",
+  "title": "Export Wordpress Posts to CSV File",
   "description": "Triggers on manual execution to fetch all posts from Wordpress and saves them as a CSV file for easy data management and analysis.",
+  "filename": "362_wordpress_posts_to_csv",
+  "services": [
+    "Manual",
+    "Spreadsheet File",
+    "Wordpress",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall",
+    "Tofile"
+  ],
+  "setup_requirements": [
+    "Wordpress API Key"
+  ],
   "content": {
     "id": "1",
     "name": "Wordpress-to-csv",
@@ -97,33 +120,5 @@
         ]
       }
     }
-  },
-  "title": "Export Wordpress Posts to CSV File",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing"
-  ],
-  "services": [
-    "Manual",
-    "Spreadsheet File",
-    "Wordpress",
-    "Write Binary File"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getall",
-    "Tofile"
-  ],
-  "setup_requirements": [
-    "Wordpress API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

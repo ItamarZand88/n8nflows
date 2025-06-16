@@ -1,7 +1,36 @@
 {
   "id": "225",
-  "filename": "225_random_user_data_to_google_sheets",
+  "title": "Automate user data collection and reporting to Google Sheets",
   "description": "Fetches random user data, saves it as a JSON file, and appends user information to Google Sheets for easy tracking and reporting.",
+  "filename": "225_random_user_data_to_google_sheets",
+  "services": [
+    "Convert to/from binary data",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Sheets",
+    "HTTP Request",
+    "Spreadsheet File",
+    "Sticky Note",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Append",
+    "Set Data",
+    "Tofile"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -338,39 +367,5 @@
         ]
       }
     }
-  },
-  "title": "Automate user data collection and reporting to Google Sheets",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Convert to/from binary data",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Sheets",
-    "HTTP Request",
-    "Spreadsheet File",
-    "Sticky Note",
-    "Write Binary File"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Append",
-    "Set Data",
-    "Tofile"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 8
+  }
 }

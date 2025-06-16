@@ -1,7 +1,43 @@
 {
   "id": "1301",
-  "filename": "1301_blog_post_creation_to_wordpress",
+  "title": "Automate Blog Post Creation and Publishing to WordPress",
   "description": "Triggers blog post creation with a defined topic, generates structured content at multiple reading levels, and publishes it to WordPress with a featured image.",
+  "filename": "1301_blog_post_creation_to_wordpress",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Markdown",
+    "Sticky Note",
+    "Telegram",
+    "Wordpress"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Createfromtext",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "HTTP Request API Key",
+    "Telegram API Key",
+    "Wordpress API Key"
+  ],
   "content": {
     "id": "ALg2eFzN4AsHIf3R",
     "meta": {
@@ -1129,46 +1165,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Blog Post Creation and Publishing to WordPress",
-  "nodes_count": 39,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Marketing"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Markdown",
-    "Sticky Note",
-    "Telegram",
-    "Wordpress"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Createfromtext",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "HTTP Request API Key",
-    "Telegram API Key",
-    "Wordpress API Key"
-  ],
-  "workflow_complexity": 39,
-  "external_integrations_count": 10
+  }
 }

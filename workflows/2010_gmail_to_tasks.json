@@ -1,7 +1,27 @@
 {
   "id": "2010",
-  "filename": "2010_gmail_to_tasks",
+  "title": "Create Google Tasks from New Gmail To-Do Emails",
   "description": "Automatically creates a Google Task whenever a new email with the 'To-Do' label is received in Gmail, streamlining task management.",
+  "filename": "2010_gmail_to_tasks",
+  "services": [
+    "Gmail",
+    "Google Tasks",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Gmail API Key",
+    "Google Tasks Account"
+  ],
   "content": {
     "id": "z0C6H2kYSgML2dib",
     "meta": {
@@ -113,30 +133,5 @@
         ]
       }
     }
-  },
-  "title": "Create Google Tasks from New Gmail To-Do Emails",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Gmail",
-    "Google Tasks",
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Gmail API Key",
-    "Google Tasks Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

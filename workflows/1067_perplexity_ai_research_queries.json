@@ -1,7 +1,26 @@
 {
   "id": "1067",
-  "filename": "1067_perplexity_ai_research_queries",
+  "title": "Automate AI-driven research queries using Perplexity AI",
   "description": "Triggers on execution from another workflow, formats user queries, and retrieves AI-generated responses from Perplexity AI for efficient research.",
+  "filename": "1067_perplexity_ai_research_queries",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "5uapJIjLLhwnhX0n",
     "meta": {
@@ -140,29 +159,5 @@
         ]
       }
     }
-  },
-  "title": "Automate AI-driven research queries using Perplexity AI",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,23 @@
 {
   "id": "689",
-  "filename": "689_line_messages_to_legos",
+  "title": "Create and Send LEGO-style Images via LINE Messaging",
   "description": "Automates the process of receiving messages on LINE, generating LEGO-style images using DALL-E, and sending them back to users.",
+  "filename": "689_line_messages_to_legos",
+  "services": [
+    "HTTP Request",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Analyze",
+    "Manage image"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "c59c4acfed171bdc864e7c432be610946898c3ee271693e0303565c953d88c1d",
@@ -170,26 +186,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Send LEGO-style Images via LINE Messaging",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Analyze",
-    "Manage image"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 2
+  }
 }

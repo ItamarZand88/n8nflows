@@ -1,7 +1,32 @@
 {
   "id": "1850",
-  "filename": "1850_umami_analytics_to_baserow",
+  "title": "Automate Umami analytics data processing and storage",
   "description": "Triggers weekly to fetch website stats from Umami, processes the data with AI, and saves the analysis to Baserow for easy access and review.",
+  "filename": "1850_umami_analytics_to_baserow",
+  "services": [
+    "Baserow",
+    "Code",
+    "HTTP Request",
+    "Manual",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Create"
+  ],
+  "setup_requirements": [
+    "Baserow API Key"
+  ],
   "content": {
     "id": "eZT6SZ4Kvmq5TzyQ",
     "meta": {
@@ -455,35 +480,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Umami analytics data processing and storage",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Baserow",
-    "Code",
-    "HTTP Request",
-    "Manual",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Create"
-  ],
-  "setup_requirements": [
-    "Baserow API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 6
+  }
 }

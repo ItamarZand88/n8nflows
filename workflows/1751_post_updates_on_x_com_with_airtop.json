@@ -1,7 +1,35 @@
 {
   "id": "1751",
-  "filename": "1751_post_updates_on_x_com_with_airtop",
+  "title": "Automate posting updates on X.com using Airtop",
   "description": "Triggers from a form submission to create a session, type a message, and post it on X.com, streamlining social media updates.",
+  "filename": "1751_post_updates_on_x_com_with_airtop",
+  "services": [
+    "Airtop",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Manage interaction",
+    "Manage window",
+    "Set Data",
+    "Terminate",
+    "Type"
+  ],
+  "setup_requirements": [
+    "Airtop API Key"
+  ],
   "content": {
     "id": "plzObaqgoEvV4UU0",
     "meta": {
@@ -324,38 +352,5 @@
         ]
       }
     }
-  },
-  "title": "Automate posting updates on X.com using Airtop",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Airtop",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Manage interaction",
-    "Manage window",
-    "Set Data",
-    "Terminate",
-    "Type"
-  ],
-  "setup_requirements": [
-    "Airtop API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 5
+  }
 }

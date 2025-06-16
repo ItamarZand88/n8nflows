@@ -1,7 +1,34 @@
 {
   "id": "351",
-  "filename": "351_inbound_calls_to_tickets_and_sheets",
+  "title": "Automate ticket creation and updates for inbound calls",
   "description": "Triggers on inbound calls, retrieves customer details, creates or updates tickets, and logs call information to Google Sheets for better tracking.",
+  "filename": "351_inbound_calls_to_tickets_and_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "No Operation, do nothing",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Append",
+    "Execute Function",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets API Key"
+  ],
   "content": {
     "id": "1",
     "name": "Dialpad to Syncro",
@@ -697,37 +724,5 @@
         ]
       }
     }
-  },
-  "title": "Automate ticket creation and updates for inbound calls",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "No Operation, do nothing",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Append",
-    "Execute Function",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets API Key"
-  ],
-  "workflow_complexity": 22,
-  "external_integrations_count": 7
+  }
 }

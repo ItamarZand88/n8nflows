@@ -1,7 +1,41 @@
 {
   "id": "1629",
-  "filename": "1629_weekly_marketing_reports_email_telegram",
+  "title": "Automate Weekly Online Marketing Reports via Email and Telegram",
   "description": "Triggers weekly to gather and analyze Google Analytics and Ads data, then sends a comprehensive report via email and Telegram for performance insights.",
+  "filename": "1629_weekly_marketing_reports_email_telegram",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Facebook Graph",
+    "Google Analytics",
+    "HTTP Request",
+    "Schedule",
+    "Send Email",
+    "Sticky Note",
+    "Summarize",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Facebook Graph API Key",
+    "Google Analytics Account",
+    "HTTP Request Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "knmxcsujuHmViJl4",
     "meta": {
@@ -2043,44 +2077,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Weekly Online Marketing Reports via Email and Telegram",
-  "nodes_count": 51,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Facebook Graph",
-    "Google Analytics",
-    "HTTP Request",
-    "Schedule",
-    "Send Email",
-    "Sticky Note",
-    "Summarize",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Facebook Graph API Key",
-    "Google Analytics Account",
-    "HTTP Request Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 51,
-  "external_integrations_count": 11
+  }
 }

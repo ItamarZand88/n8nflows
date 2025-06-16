@@ -1,7 +1,28 @@
 {
   "id": "1771",
-  "filename": "1771_nightly_cleanup_discord_messages",
+  "title": "Automate nightly cleanup of old Discord messages",
   "description": "Runs daily at 9 PM to delete messages older than 7 days from all Discord channels, keeping your server tidy and compliant with retention policies.",
+  "filename": "1771_nightly_cleanup_discord_messages",
+  "services": [
+    "Discord",
+    "Filter",
+    "Loop Over Items (Split in Batches)",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Deletemessage",
+    "Getall",
+    "Manage message"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "QCbb7Bm12gDIH0mI",
     "meta": {
@@ -430,31 +451,5 @@
         ]
       }
     }
-  },
-  "title": "Automate nightly cleanup of old Discord messages",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Discord",
-    "Filter",
-    "Loop Over Items (Split in Batches)",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Deletemessage",
-    "Getall",
-    "Manage message"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 5
+  }
 }

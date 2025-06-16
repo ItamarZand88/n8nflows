@@ -1,7 +1,27 @@
 {
   "id": "156",
-  "filename": "156_fetch_xml_to_dropbox",
+  "title": "Fetch XML Data, Update Title, and Save to Dropbox",
   "description": "Retrieves XML data from a URL, modifies the title, converts it to XML format, and saves the file to Dropbox for easy access and sharing.",
+  "filename": "156_fetch_xml_to_dropbox",
+  "services": [
+    "Dropbox",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Dropbox API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -124,30 +144,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch XML Data, Update Title, and Save to Dropbox",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Dropbox",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "XML"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Dropbox API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

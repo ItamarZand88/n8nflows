@@ -1,7 +1,38 @@
 {
   "id": "834",
-  "filename": "834_tag_to_folder_conversion_n8n",
+  "title": "Automate Tag to Folder Conversion in n8n Projects",
   "description": "Triggers on form submission, logs into n8n, retrieves tags from personal projects, and organizes them into corresponding folders for better management.",
+  "filename": "834_tag_to_folder_conversion_n8n",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Limit",
+    "Loop Over Items (Split in Batches)",
+    "Remove Duplicates",
+    "Split Out",
+    "Sticky Note",
+    "n8n",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "db80165df40cb07c0377167c050b3f9ab0b0fb04f0e8cae0dc53f5a8527103ca",
@@ -1377,41 +1408,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Tag to Folder Conversion in n8n Projects",
-  "nodes_count": 40,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Limit",
-    "Loop Over Items (Split in Batches)",
-    "Remove Duplicates",
-    "Split Out",
-    "Sticky Note",
-    "n8n",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 40,
-  "external_integrations_count": 12
+  }
 }

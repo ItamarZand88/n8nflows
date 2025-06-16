@@ -1,7 +1,44 @@
 {
   "id": "436",
-  "filename": "436_lead_enrichment_to_slack",
+  "title": "Automate lead enrichment and Slack notifications for Pipedrive",
   "description": "Triggers every 5 minutes to enrich Pipedrive leads with Clearbit data and sends alerts to Slack for high-quality leads based on custom criteria.",
+  "filename": "436_lead_enrichment_to_slack",
+  "services": [
+    "Clearbit",
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "Merge",
+    "Pipedrive",
+    "Schedule",
+    "Slack",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Get",
+    "Getall",
+    "Manage lead",
+    "Manage organization",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Clearbit API Key",
+    "HTTP Request API Key",
+    "Pipedrive API Key",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833",
@@ -655,47 +692,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead enrichment and Slack notifications for Pipedrive",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "Clearbit",
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "Merge",
-    "Pipedrive",
-    "Schedule",
-    "Slack",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Get",
-    "Getall",
-    "Manage lead",
-    "Manage organization",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Clearbit API Key",
-    "HTTP Request API Key",
-    "Pipedrive API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 20,
-  "external_integrations_count": 10
+  }
 }

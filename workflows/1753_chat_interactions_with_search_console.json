@@ -1,7 +1,31 @@
 {
   "id": "1753",
-  "filename": "1753_chat_interactions_with_search_console",
+  "title": "Automate Chat Interactions with Search Console Data",
   "description": "Sets up a webhook to receive chat inputs, processes user requests through an AI agent, and retrieves insights from Google Search Console for seamless data interaction.",
+  "filename": "1753_chat_interactions_with_search_console",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "PoiRk5w0xd1ysq4U",
     "meta": {
@@ -828,34 +852,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Chat Interactions with Search Console Data",
-  "nodes_count": 30,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 30,
-  "external_integrations_count": 7
+  }
 }

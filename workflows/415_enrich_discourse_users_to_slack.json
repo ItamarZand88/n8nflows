@@ -1,7 +1,32 @@
 {
   "id": "415",
-  "filename": "415_enrich_discourse_users_to_slack",
+  "title": "Enrich new Discourse users and notify Slack for high value leads",
   "description": "Triggers on new Discourse user sign-ups, enriches their data with Clearbit, and sends Slack notifications for high value leads based on defined criteria.",
+  "filename": "415_enrich_discourse_users_to_slack",
+  "services": [
+    "Clearbit",
+    "Filter",
+    "No Operation, do nothing",
+    "Slack",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Manage person"
+  ],
+  "setup_requirements": [
+    "Clearbit API Key",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -354,35 +379,5 @@
         ]
       }
     }
-  },
-  "title": "Enrich new Discourse users and notify Slack for high value leads",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "Clearbit",
-    "Filter",
-    "No Operation, do nothing",
-    "Slack",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Manage person"
-  ],
-  "setup_requirements": [
-    "Clearbit API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,38 @@
 {
   "id": "79",
-  "filename": "79_slack_status_updates_from_calendar",
+  "title": "Automate Slack status updates based on Google Calendar events",
   "description": "Triggers on new Google Calendar events, updates Slack status with event details, and controls smart lights based on event type.",
+  "filename": "79_slack_status_updates_from_calendar",
+  "services": [
+    "Function",
+    "Google Calendar",
+    "HTTP Request",
+    "Manual",
+    "Slack",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Google Calendar Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Get",
+    "Manage userProfile",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Calendar Account",
+    "Slack API Key"
+  ],
   "content": {
     "id": 118,
     "name": "Google Calendar to Slack Status & Philips Hue",
@@ -253,41 +284,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack status updates based on Google Calendar events",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Function",
-    "Google Calendar",
-    "HTTP Request",
-    "Manual",
-    "Slack",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Google Calendar Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Get",
-    "Manage userProfile",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Calendar Account",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 6
+  }
 }

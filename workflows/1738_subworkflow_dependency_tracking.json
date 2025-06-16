@@ -1,7 +1,43 @@
 {
   "id": "1738",
-  "filename": "1738_subworkflow_dependency_tracking",
+  "title": "Automate Subworkflow Dependency Tracking and Tagging",
   "description": "Automatically analyzes workflow dependencies in n8n, tagging subworkflows based on their callers and visualizing the relationships for better management.",
+  "filename": "1738_subworkflow_dependency_tracking",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "QuickChart",
+    "Schedule",
+    "Split Out",
+    "Sticky Note",
+    "Webhook",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event",
+    "New n8n Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "n8n API Key"
+  ],
   "content": {
     "id": "P9Jr9s9yfcDXTe9R",
     "meta": {
@@ -1216,46 +1252,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Subworkflow Dependency Tracking and Tagging",
-  "nodes_count": 40,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "QuickChart",
-    "Schedule",
-    "Split Out",
-    "Sticky Note",
-    "Webhook",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event",
-    "New n8n Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 40,
-  "external_integrations_count": 14
+  }
 }

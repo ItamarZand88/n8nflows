@@ -1,7 +1,28 @@
 {
   "id": "1998",
-  "filename": "1998_customer_datastore_data_processing",
+  "title": "Automate data retrieval and processing from customer datastore",
   "description": "Triggers data retrieval from a customer datastore, processes items in batches, and merges results for efficient data handling.",
+  "filename": "1998_customer_datastore_data_processing",
+  "services": [
+    "Code",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "No Operation, do nothing"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getallpeople"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "ynTqojfUnGpG2rBP",
     "meta": {
@@ -188,31 +209,5 @@
         ]
       }
     }
-  },
-  "title": "Automate data retrieval and processing from customer datastore",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "No Operation, do nothing"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getallpeople"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

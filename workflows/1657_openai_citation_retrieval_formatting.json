@@ -1,7 +1,32 @@
 {
   "id": "1657",
-  "filename": "1657_openai_citation_retrieval_formatting",
+  "title": "Automate citation retrieval and formatting with OpenAI",
   "description": "Triggers a chat button to fetch citations from OpenAI, processes the content, and formats it for Markdown or HTML output, enhancing document accuracy.",
+  "filename": "1657_openai_citation_retrieval_formatting",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Markdown",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Manage assistant",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "5NAbfX550LJsfz6f",
     "meta": {
@@ -503,35 +528,5 @@
         ]
       }
     }
-  },
-  "title": "Automate citation retrieval and formatting with OpenAI",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Markdown",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Manage assistant",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 7
+  }
 }

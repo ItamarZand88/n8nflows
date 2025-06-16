@@ -1,7 +1,29 @@
 {
   "id": "1242",
-  "filename": "1242_weekly_coffee_chat_groups_matrix",
+  "title": "Automate weekly coffee chat group announcements in Matrix",
   "description": "Triggers every Monday at 10 AM, organizes employees into random groups for virtual coffee chats, and announces the groups in a Matrix room.",
+  "filename": "1242_weekly_coffee_chat_groups_matrix",
+  "services": [
+    "Cron",
+    "Function",
+    "Matrix"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Cron Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Manage roomMember"
+  ],
+  "setup_requirements": [
+    "Matrix API Key"
+  ],
   "content": {
     "id": "9",
     "name": "Coffee Bot (Matrix)",
@@ -138,32 +160,5 @@
         ]
       }
     }
-  },
-  "title": "Automate weekly coffee chat group announcements in Matrix",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Function",
-    "Matrix"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Cron Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Manage roomMember"
-  ],
-  "setup_requirements": [
-    "Matrix API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 3
+  }
 }

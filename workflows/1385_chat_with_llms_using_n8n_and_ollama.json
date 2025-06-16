@@ -1,7 +1,20 @@
 {
   "id": "1385",
-  "filename": "1385_chat_with_llms_using_n8n_and_ollama",
+  "title": "Chat with Local LLMs Using n8n and Ollama",
   "description": "Captures chat messages, processes them with a local LLM via Ollama, and returns AI-generated responses, enhancing user interaction and support.",
+  "filename": "1385_chat_with_llms_using_n8n_and_ollama",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "af8RV5b2TWB2LclA",
     "meta": {
@@ -117,23 +130,5 @@
         ]
       }
     }
-  },
-  "title": "Chat with Local LLMs Using n8n and Ollama",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 1
+  }
 }

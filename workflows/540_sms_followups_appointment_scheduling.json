@@ -1,7 +1,34 @@
 {
   "id": "540",
-  "filename": "540_sms_followups_appointment_scheduling",
+  "title": "Automate SMS Follow-Ups for Appointment Scheduling",
   "description": "Triggers on incoming SMS inquiries, processes customer requests, and sends follow-up messages to engage users for scheduling appointments via Twilio and Airtable.",
+  "filename": "540_sms_followups_appointment_scheduling",
+  "services": [
+    "Airtable",
+    "Schedule",
+    "Sticky Note",
+    "Switch",
+    "Twilio"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event",
+    "New Twilio Event"
+  ],
+  "actions": [
+    "Search",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Twilio API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -1665,37 +1692,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SMS Follow-Ups for Appointment Scheduling",
-  "nodes_count": 36,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Schedule",
-    "Sticky Note",
-    "Switch",
-    "Twilio"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event",
-    "New Twilio Event"
-  ],
-  "actions": [
-    "Search",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Twilio API Key"
-  ],
-  "workflow_complexity": 36,
-  "external_integrations_count": 5
+  }
 }

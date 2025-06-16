@@ -1,7 +1,29 @@
 {
   "id": "27",
-  "filename": "27_validate_emails_in_airtable",
+  "title": "Validate and Update Email Addresses in Airtable",
   "description": "Automatically checks email validity using Mailcheck and updates the status in Airtable for better data accuracy.",
+  "filename": "27_validate_emails_in_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Mailcheck"
+  ],
+  "categories": [
+    "Data & Storage",
+    "Marketing",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "List",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Mailcheck API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -122,32 +144,5 @@
         ]
       }
     }
-  },
-  "title": "Validate and Update Email Addresses in Airtable",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Data & Storage",
-    "Marketing",
-    "Utility"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Mailcheck"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "List",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Mailcheck API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

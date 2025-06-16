@@ -1,7 +1,22 @@
 {
   "id": "10",
-  "filename": "10_merge_interviewer_data_with_profiles",
+  "title": "Merge interviewer data with employee profiles",
   "description": "Combines interviewer details from interview records with employee profiles, enhancing data completeness for HR management.",
+  "filename": "10_merge_interviewer_data_with_profiles",
+  "services": [
+    "Function",
+    "Merge"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -113,25 +128,5 @@
         ]
       }
     }
-  },
-  "title": "Merge interviewer data with employee profiles",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Function",
-    "Merge"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 2
+  }
 }

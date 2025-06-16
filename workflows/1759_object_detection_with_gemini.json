@@ -1,7 +1,31 @@
 {
   "id": "1759",
-  "filename": "1759_object_detection_with_gemini",
+  "title": "Detect and Highlight Objects in Images Using Gemini 2.0",
   "description": "Triggers on manual input to download an image, detects specified objects, and draws bounding boxes around them for visual analysis.",
+  "filename": "1759_object_detection_with_gemini",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Information",
+    "Multistep",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -368,34 +392,5 @@
         ]
       }
     }
-  },
-  "title": "Detect and Highlight Objects in Images Using Gemini 2.0",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Information",
-    "Multistep",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,33 @@
 {
   "id": "339",
-  "filename": "339_twentycrm_events_to_sheets_and_notifications",
+  "title": "Log TwentyCRM events and notify via email or Slack",
   "description": "Captures new events from TwentyCRM, logs them in Google Sheets, and sends notifications via email for delete events or Slack for others.",
+  "filename": "339_twentycrm_events_to_sheets_and_notifications",
+  "services": [
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Sheets",
+    "If",
+    "Slack",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "1dnr1k4MAVbDiBmO",
     "meta": {
@@ -317,36 +343,5 @@
         ]
       }
     }
-  },
-  "title": "Log TwentyCRM events and notify via email or Slack",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Sheets",
-    "If",
-    "Slack",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 11,
-  "external_integrations_count": 7
+  }
 }

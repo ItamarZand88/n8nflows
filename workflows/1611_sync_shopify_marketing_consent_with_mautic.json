@@ -1,7 +1,42 @@
 {
   "id": "1611",
-  "filename": "1611_sync_shopify_marketing_consent_with_mautic",
+  "title": "Sync Shopify customer marketing consent with Mautic",
   "description": "Triggers on customer updates in Shopify, checks marketing consent status, and syncs this information with Mautic to manage customer segments effectively.",
+  "filename": "1611_sync_shopify_marketing_consent_with_mautic",
+  "services": [
+    "Crypto",
+    "Edit Fields (Set)",
+    "GraphQL",
+    "If",
+    "Mautic",
+    "No Operation, do nothing",
+    "Shopify",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Shopify Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage contactSegment",
+    "Remove",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Mautic Account",
+    "Shopify API Key"
+  ],
   "content": {
     "id": "JiSesGjDIXIPYtbt",
     "meta": {
@@ -759,45 +794,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Shopify customer marketing consent with Mautic",
-  "nodes_count": 26,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "Crypto",
-    "Edit Fields (Set)",
-    "GraphQL",
-    "If",
-    "Mautic",
-    "No Operation, do nothing",
-    "Shopify",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Shopify Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage contactSegment",
-    "Remove",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Mautic Account",
-    "Shopify API Key"
-  ],
-  "workflow_complexity": 26,
-  "external_integrations_count": 9
+  }
 }

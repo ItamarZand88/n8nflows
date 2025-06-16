@@ -1,7 +1,28 @@
 {
   "id": "788",
-  "filename": "788_ko_fi_payment_processing",
+  "title": "Automate Ko-fi payment processing and notifications",
   "description": "Receives and verifies Ko-fi payment webhooks, categorizes donations, subscriptions, and shop orders, and triggers appropriate actions based on payment type.",
+  "filename": "788_ko_fi_payment_processing",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Sticky Note",
+    "Stop and Error",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "568298fde06d3db80a2eea77fe5bf45f0c7bb898dea20b769944e9ac7c6c5a80"
@@ -582,31 +603,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Ko-fi payment processing and notifications",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Sticky Note",
-    "Stop and Error",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 15,
-  "external_integrations_count": 6
+  }
 }

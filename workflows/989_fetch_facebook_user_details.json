@@ -1,7 +1,24 @@
 {
   "id": "989",
-  "filename": "989_fetch_facebook_user_details",
+  "title": "Fetch Facebook user profile details on demand",
   "description": "Triggers on manual execution to retrieve the first and last name of the authenticated Facebook user via the Graph API.",
+  "filename": "989_fetch_facebook_user_details",
+  "services": [
+    "Facebook Graph",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Facebook Graph API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -55,27 +72,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch Facebook user profile details on demand",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Facebook Graph",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Facebook Graph API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

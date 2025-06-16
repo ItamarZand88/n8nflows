@@ -1,7 +1,31 @@
 {
   "id": "1132",
-  "filename": "1132_btc_price_alerts_sms",
+  "title": "Monitor BTC price in EUR and send SMS alerts",
   "description": "Checks the BTC price in EUR every minute and sends an SMS alert if the price exceeds EUR 9000, helping you stay informed on market changes.",
+  "filename": "1132_btc_price_alerts_sms",
+  "services": [
+    "CoinGecko",
+    "Cron",
+    "If",
+    "No Operation, do nothing",
+    "Twilio"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Finance & Accounting",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Price"
+  ],
+  "setup_requirements": [
+    "Twilio API Key"
+  ],
   "content": {
     "id": "79",
     "name": "Get the price of BTC in EUR and send an SMS when the price is larger than EUR 9000",
@@ -135,34 +159,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor BTC price in EUR and send SMS alerts",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Finance & Accounting",
-    "Productivity"
-  ],
-  "services": [
-    "CoinGecko",
-    "Cron",
-    "If",
-    "No Operation, do nothing",
-    "Twilio"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Price"
-  ],
-  "setup_requirements": [
-    "Twilio API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

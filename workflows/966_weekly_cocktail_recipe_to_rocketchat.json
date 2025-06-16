@@ -1,7 +1,27 @@
 {
   "id": "966",
-  "filename": "966_weekly_cocktail_recipe_to_rocketchat",
+  "title": "Automate weekly cocktail recipe sharing to RocketChat",
   "description": "Fetches a random cocktail recipe every week and shares a formatted image with the recipe in a RocketChat channel, enhancing team engagement and creativity.",
+  "filename": "966_weekly_cocktail_recipe_to_rocketchat",
+  "services": [
+    "Bannerbear",
+    "Cron",
+    "HTTP Request",
+    "RocketChat"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Bannerbear API Key",
+    "RocketChat API Key"
+  ],
   "content": {
     "id": "46",
     "name": "Cocktail Recipe Sharing",
@@ -132,30 +152,5 @@
         ]
       }
     }
-  },
-  "title": "Automate weekly cocktail recipe sharing to RocketChat",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Bannerbear",
-    "Cron",
-    "HTTP Request",
-    "RocketChat"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "Bannerbear API Key",
-    "RocketChat API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

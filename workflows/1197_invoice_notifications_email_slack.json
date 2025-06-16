@@ -1,7 +1,31 @@
 {
   "id": "1197",
-  "filename": "1197_invoice_notifications_email_slack",
+  "title": "Automate invoice notifications and approvals via email and Slack",
   "description": "Checks for new emails with invoices, extracts the total amount, and notifies the finance team on Slack while sending an approval email for high-value invoices.",
+  "filename": "1197_invoice_notifications_email_slack",
+  "services": [
+    "Email Trigger (IMAP)",
+    "If",
+    "Mindee",
+    "Send Email",
+    "Slack"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Manage invoice"
+  ],
+  "setup_requirements": [
+    "Mindee API Key",
+    "Slack API Key"
+  ],
   "content": {
     "id": 91,
     "name": "New invoice email notification",
@@ -227,34 +251,5 @@
         ]
       }
     }
-  },
-  "title": "Automate invoice notifications and approvals via email and Slack",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Utility"
-  ],
-  "services": [
-    "Email Trigger (IMAP)",
-    "If",
-    "Mindee",
-    "Send Email",
-    "Slack"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Manage invoice"
-  ],
-  "setup_requirements": [
-    "Mindee API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,24 @@
 {
   "id": "345",
-  "filename": "345_add_event_to_google_calendar",
+  "title": "Add events to Google Calendar with a manual trigger",
   "description": "Manually triggers the addition of a new event to Google Calendar, helping users schedule important dates efficiently.",
+  "filename": "345_add_event_to_google_calendar",
+  "services": [
+    "Google Calendar",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Google Calendar Account"
+  ],
   "content": {
     "id": "1",
     "name": "Add a event to Calender",
@@ -50,27 +67,5 @@
         ]
       }
     }
-  },
-  "title": "Add events to Google Calendar with a manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Google Calendar",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Google Calendar Account"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

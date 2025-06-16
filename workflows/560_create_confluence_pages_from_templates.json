@@ -1,7 +1,25 @@
 {
   "id": "560",
-  "filename": "560_create_confluence_pages_from_templates",
+  "title": "Create Confluence pages from templates automatically",
   "description": "Automatically generates new Confluence pages from a specified template when triggered, streamlining documentation and project management.",
+  "filename": "560_create_confluence_pages_from_templates",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "0000"
@@ -223,28 +241,5 @@
         ]
       }
     }
-  },
-  "title": "Create Confluence pages from templates automatically",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 5
+  }
 }

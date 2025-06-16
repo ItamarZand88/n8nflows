@@ -1,7 +1,37 @@
 {
   "id": "1661",
-  "filename": "1661_blog_post_creation_wordpress",
+  "title": "Automate blog post creation and optimization for WordPress",
   "description": "Triggers on demand to generate SEO-friendly blog posts, titles, and images, then uploads them to WordPress, saving time and enhancing content quality.",
+  "filename": "1661_blog_post_creation_wordpress",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note",
+    "Wordpress"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage image",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "HTTP Request API Key",
+    "Wordpress API Key"
+  ],
   "content": {
     "id": "Mbuax8L8jEmBBYkz",
     "meta": {
@@ -883,40 +913,5 @@
         ]
       }
     }
-  },
-  "title": "Automate blog post creation and optimization for WordPress",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note",
-    "Wordpress"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage image",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "HTTP Request API Key",
-    "Wordpress API Key"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,32 @@
 {
   "id": "1884",
-  "filename": "1884_translate_speech_messages_telegram",
+  "title": "Translate Speech Messages in Telegram with AI",
   "description": "Triggers on new voice messages in Telegram, transcribes and translates them into the specified language, and replies with both text and audio responses.",
+  "filename": "1884_translate_speech_messages_telegram",
+  "services": [
+    "Edit Fields (Set)",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Manage audio",
+    "Manage file",
+    "Sendaudio",
+    "Set Data",
+    "Transcribe"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "IvgAFAUOSI3biT4L",
     "meta": {
@@ -371,35 +396,5 @@
         ]
       }
     }
-  },
-  "title": "Translate Speech Messages in Telegram with AI",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Manage audio",
-    "Manage file",
-    "Sendaudio",
-    "Set Data",
-    "Transcribe"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 3
+  }
 }

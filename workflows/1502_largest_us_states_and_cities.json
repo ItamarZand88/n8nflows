@@ -1,7 +1,24 @@
 {
   "id": "1502",
-  "filename": "1502_largest_us_states_and_cities",
+  "title": "Retrieve largest US states and their major cities",
   "description": "Triggers on manual execution to fetch the 5 largest US states by area along with their 3 largest cities and populations, providing structured data for analysis.",
+  "filename": "1502_largest_us_states_and_cities",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "cKRViOHDPsosO7UX",
     "meta": {
@@ -251,27 +268,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve largest US states and their major cities",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 11,
-  "external_integrations_count": 3
+  }
 }

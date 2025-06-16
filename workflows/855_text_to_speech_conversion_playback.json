@@ -1,7 +1,26 @@
 {
   "id": "855",
-  "filename": "855_text_to_speech_conversion_playback",
+  "title": "Automate text-to-speech conversion and playback",
   "description": "Triggers a Python script to convert text into speech and plays the generated audio file, streamlining voice generation tasks.",
+  "filename": "855_text_to_speech_conversion_playback",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Command",
+    "Manual",
+    "Read Binary Files"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "a6d5191e58fd6be87222f47435e6f9df8f98ec0d945d3e7b7f6373c59a6c3f37",
@@ -98,29 +117,5 @@
         ]
       }
     }
-  },
-  "title": "Automate text-to-speech conversion and playback",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Command",
-    "Manual",
-    "Read Binary Files"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

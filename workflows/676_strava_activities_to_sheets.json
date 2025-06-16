@@ -1,7 +1,36 @@
 {
   "id": "676",
-  "filename": "676_strava_activities_to_sheets",
+  "title": "Automate Strava activity logging to Google Sheets",
   "description": "Triggers every 2 hours to fetch new Strava activities, filters out duplicates, and appends the data to Google Sheets for easy tracking.",
+  "filename": "676_strava_activities_to_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "Limit",
+    "Remove Duplicates",
+    "Schedule",
+    "Sort",
+    "Strava"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -514,39 +543,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Strava activity logging to Google Sheets",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "Limit",
-    "Remove Duplicates",
-    "Schedule",
-    "Sort",
-    "Strava"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 8
+  }
 }

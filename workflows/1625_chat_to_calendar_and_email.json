@@ -1,7 +1,26 @@
 {
   "id": "1625",
-  "filename": "1625_chat_to_calendar_and_email",
+  "title": "Automate event management and email drafting with Google Calendar and Gmail",
   "description": "Triggers on new chat messages, processes requests to manage Google Calendar events, and drafts emails for follow-up, enhancing productivity and communication.",
+  "filename": "1625_chat_to_calendar_and_email",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Append",
+    "Get",
+    "Getall",
+    "Manage draft",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "KhUd3rHKtZAImiXZ",
     "meta": {
@@ -609,29 +628,5 @@
         ]
       }
     }
-  },
-  "title": "Automate event management and email drafting with Google Calendar and Gmail",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Append",
-    "Get",
-    "Getall",
-    "Manage draft",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 20,
-  "external_integrations_count": 1
+  }
 }

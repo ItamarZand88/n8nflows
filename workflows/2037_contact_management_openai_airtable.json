@@ -1,7 +1,25 @@
 {
   "id": "2037",
-  "filename": "2037_contact_management_openai_airtable",
+  "title": "Automate contact management with OpenAI and Airtable",
   "description": "Triggers on workflow execution to manage contacts by retrieving, adding, or updating information in Airtable using OpenAI's language model.",
+  "filename": "2037_contact_management_openai_airtable",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Workflow"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Search",
+    "Set Data",
+    "Upsert"
+  ],
+  "setup_requirements": [],
   "content": {
     "name": "🤖Contact Agent",
     "nodes": [
@@ -300,28 +318,5 @@
     },
     "id": "IsSUyrla7wc1cDLE",
     "tags": []
-  },
-  "title": "Automate contact management with OpenAI and Airtable",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Workflow"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Search",
-    "Set Data",
-    "Upsert"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 2
+  }
 }

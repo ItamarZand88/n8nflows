@@ -1,7 +1,30 @@
 {
   "id": "230",
-  "filename": "230_fetch_github_starred_repos",
+  "title": "Fetch and Extract GitHub Starred Repositories with Pagination",
   "description": "Triggers on manual execution to retrieve and extract titles of starred GitHub repositories, handling pagination for complete data collection.",
+  "filename": "230_fetch_github_starred_repos",
+  "services": [
+    "Edit Fields (Set)",
+    "HTML Extract",
+    "HTTP Request",
+    "If",
+    "Item Lists",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd"
@@ -385,33 +408,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch and Extract GitHub Starred Repositories with Pagination",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTML Extract",
-    "HTTP Request",
-    "If",
-    "Item Lists",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 7
+  }
 }

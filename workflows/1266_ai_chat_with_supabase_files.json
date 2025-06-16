@@ -1,7 +1,39 @@
 {
   "id": "1266",
-  "filename": "1266_ai_chat_with_supabase_files",
+  "title": "Automate AI Chat with Files in Supabase Storage",
   "description": "Triggers on new chat messages, retrieves files from Supabase, processes them, and enables AI-powered queries for efficient information retrieval.",
+  "filename": "1266_ai_chat_with_supabase_files",
+  "services": [
+    "Aggregate",
+    "Extract from File",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "Sticky Note",
+    "Supabase",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Pdf"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Supabase API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "6a2a7715680b8313f7cb4676321c5baa46680adfb913072f089f2766f42e43bd"
@@ -916,42 +948,5 @@
         ]
       }
     }
-  },
-  "title": "Automate AI Chat with Files in Supabase Storage",
-  "nodes_count": 33,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Extract from File",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "Sticky Note",
-    "Supabase",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Pdf"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Supabase API Key"
-  ],
-  "workflow_complexity": 33,
-  "external_integrations_count": 10
+  }
 }

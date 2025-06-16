@@ -1,7 +1,28 @@
 {
   "id": "137",
-  "filename": "137_iss_position_updates_to_google_cloud",
+  "title": "Automate ISS position updates to Google Cloud Realtime Database",
   "description": "Fetches the ISS position every minute and stores the latitude, longitude, and timestamp in Google Cloud Realtime Database for real-time tracking.",
+  "filename": "137_iss_position_updates_to_google_cloud",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Google Cloud Realtime Database",
+    "HTTP Request"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Push",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Cloud Realtime Database Account"
+  ],
   "content": {
     "id": "134",
     "name": "Receive updates for the position of the ISS every minute and push it to a database",
@@ -131,31 +152,5 @@
         ]
       }
     }
-  },
-  "title": "Automate ISS position updates to Google Cloud Realtime Database",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Google Cloud Realtime Database",
-    "HTTP Request"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Push",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Cloud Realtime Database Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

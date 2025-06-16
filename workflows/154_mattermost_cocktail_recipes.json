@@ -1,7 +1,24 @@
 {
   "id": "154",
-  "filename": "154_mattermost_cocktail_recipes",
+  "title": "Send Mattermost messages with random cocktail recipes",
   "description": "Triggers via a webhook to fetch a random cocktail recipe and sends a formatted message with details to a Mattermost channel.",
+  "filename": "154_mattermost_cocktail_recipes",
+  "services": [
+    "HTTP Request",
+    "Mattermost",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Mattermost API Key"
+  ],
   "content": {
     "id": "13",
     "name": "Mattermost Webhook",
@@ -82,27 +99,5 @@
         ]
       }
     }
-  },
-  "title": "Send Mattermost messages with random cocktail recipes",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Mattermost",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "Mattermost API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

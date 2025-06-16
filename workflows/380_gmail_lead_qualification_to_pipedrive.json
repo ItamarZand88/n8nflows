@@ -1,7 +1,40 @@
 {
   "id": "380",
-  "filename": "380_gmail_lead_qualification_to_pipedrive",
+  "title": "Automate lead qualification from Gmail to Pipedrive",
   "description": "Triggers on new Gmail replies, checks if leads are interested in meetings, and creates deals in Pipedrive for qualified leads.",
+  "filename": "380_gmail_lead_qualification_to_pipedrive",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Gmail",
+    "If",
+    "OpenAI",
+    "Pipedrive",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Sales",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Manage chat",
+    "Manage person",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "OpenAI API Key",
+    "Pipedrive API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "0bd9e607aabfd58640f9f5a370e768a7755e93315179f5bcc6d1f8f114b3567a"
@@ -343,43 +376,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead qualification from Gmail to Pipedrive",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Sales",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Gmail",
-    "If",
-    "OpenAI",
-    "Pipedrive",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Manage chat",
-    "Manage person",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "OpenAI API Key",
-    "Pipedrive API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 7
+  }
 }

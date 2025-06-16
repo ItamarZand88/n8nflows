@@ -1,7 +1,25 @@
 {
   "id": "221",
-  "filename": "221_csv_to_json_conversion",
+  "title": "Convert CSV Spreadsheet to JSON Format Automatically",
   "description": "Triggers manually to read a CSV file, converts its data to JSON format, and saves it as a new file, streamlining data handling processes.",
+  "filename": "221_csv_to_json_conversion",
+  "services": [
+    "Convert to/from binary data",
+    "Manual",
+    "Read Binary File",
+    "Spreadsheet File",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -110,28 +128,5 @@
         ]
       }
     }
-  },
-  "title": "Convert CSV Spreadsheet to JSON Format Automatically",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Convert to/from binary data",
-    "Manual",
-    "Read Binary File",
-    "Spreadsheet File",
-    "Write Binary File"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

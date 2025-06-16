@@ -1,7 +1,30 @@
 {
   "id": "327",
-  "filename": "327_data_loading_and_chat_with_pinecone",
+  "title": "Automate data loading and chat responses with Google Drive and Pinecone",
   "description": "Fetches a file from Google Drive, loads data into Pinecone, and enables chat interactions to retrieve relevant information for user queries.",
+  "filename": "327_data_loading_and_chat_with_pinecone",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -400,33 +423,5 @@
         ]
       }
     }
-  },
-  "title": "Automate data loading and chat responses with Google Drive and Pinecone",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 4
+  }
 }

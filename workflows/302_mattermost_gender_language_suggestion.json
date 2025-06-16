@@ -1,7 +1,27 @@
 {
   "id": "302",
-  "filename": "302_mattermost_gender_language_suggestion",
+  "title": "Send Mattermost messages for gendered language in chats",
   "description": "Listens for messages in Mattermost, checks for gendered terms, and suggests inclusive language to promote a welcoming environment.",
+  "filename": "302_mattermost_gender_language_suggestion",
+  "services": [
+    "If",
+    "Mattermost",
+    "No Operation, do nothing",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Mattermost API Key"
+  ],
   "content": {
     "id": "18",
     "name": "Gender Inclusive Language",
@@ -138,30 +158,5 @@
         ]
       }
     }
-  },
-  "title": "Send Mattermost messages for gendered language in chats",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "If",
-    "Mattermost",
-    "No Operation, do nothing",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Mattermost API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

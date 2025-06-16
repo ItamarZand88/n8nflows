@@ -1,7 +1,26 @@
 {
   "id": "1621",
-  "filename": "1621_confluence_searches_from_slack",
+  "title": "Automate Confluence Searches from Slack Queries",
   "description": "Triggers on Slack messages, searches Confluence for relevant articles, and returns formatted responses to enhance IT support efficiency.",
+  "filename": "1621_confluence_searches_from_slack",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -170,29 +189,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Confluence Searches from Slack Queries",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

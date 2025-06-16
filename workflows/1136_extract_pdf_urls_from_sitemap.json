@@ -1,7 +1,29 @@
 {
   "id": "1136",
-  "filename": "1136_extract_pdf_urls_from_sitemap",
+  "title": "Extract PDF URLs from Sitemap XML",
   "description": "Triggers manually to fetch a sitemap XML, converts it to JSON, and filters out PDF URLs for easy access and processing.",
+  "filename": "1136_extract_pdf_urls_from_sitemap",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "Manual",
+    "Split Out",
+    "Sticky Note",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "7fdJOvYNILCr24fH",
     "meta": {
@@ -251,32 +273,5 @@
         ]
       }
     }
-  },
-  "title": "Extract PDF URLs from Sitemap XML",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "Manual",
-    "Split Out",
-    "Sticky Note",
-    "XML"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

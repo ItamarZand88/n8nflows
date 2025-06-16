@@ -1,7 +1,29 @@
 {
   "id": "1972",
-  "filename": "1972_seo_blog_posts_from_form_submissions",
+  "title": "Generate SEO-Optimized Blog Posts from Form Submissions",
   "description": "Automates the creation of SEO-friendly blog posts based on user research queries submitted through a form, enhancing content marketing efforts.",
+  "filename": "1972_seo_blog_posts_from_form_submissions",
+  "services": [
+    "Aggregate",
+    "Merge",
+    "Sticky Note",
+    "Telegram",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event",
+    "New n8n Form Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "Xfz2YRxH6qFfpqHw",
     "meta": {
@@ -627,32 +649,5 @@
         ]
       }
     }
-  },
-  "title": "Generate SEO-Optimized Blog Posts from Form Submissions",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "Merge",
-    "Sticky Note",
-    "Telegram",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event",
-    "New n8n Form Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 22,
-  "external_integrations_count": 5
+  }
 }

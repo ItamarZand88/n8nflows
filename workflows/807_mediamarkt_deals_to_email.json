@@ -1,7 +1,25 @@
 {
   "id": "807",
-  "filename": "807_mediamarkt_deals_to_email",
+  "title": "Automate email notifications for MediaMarkt deals",
   "description": "Triggers when a user completes a form, fetches MediaMarkt offers, and sends personalized email notifications with recommended deals.",
+  "filename": "807_mediamarkt_deals_to_email",
+  "services": [
+    "Send Email",
+    "Split Out",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Extracthtmlcontent"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "b1f85eae352fde76d801a1a612661df6824cc2e68bfd6741e31305160a737e6e",
@@ -322,28 +340,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email notifications for MediaMarkt deals",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Send Email",
-    "Split Out",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Extracthtmlcontent"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 3
+  }
 }

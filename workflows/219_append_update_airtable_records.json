@@ -1,7 +1,30 @@
 {
   "id": "219",
-  "filename": "219_append_update_airtable_records",
+  "title": "Append and Update Airtable Records with Manual Trigger",
   "description": "Manually triggers the addition of a new record to Airtable and updates an existing record based on specific criteria, streamlining data management.",
+  "filename": "219_append_update_airtable_records",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "List",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "171",
     "name": "Insert and update data in Airtable",
@@ -180,33 +203,5 @@
         ]
       }
     }
-  },
-  "title": "Append and Update Airtable Records with Manual Trigger",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "List",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,26 @@
 {
   "id": "1465",
-  "filename": "1465_compare_orders_2003_2005",
+  "title": "Compare Customer Orders from 2003 to 2005",
   "description": "Triggers a comparison of customer order data from 2003-2005, analyzing totals and counts to identify trends and changes in purchasing behavior.",
+  "filename": "1465_compare_orders_2003_2005",
+  "services": [
+    "Compare Datasets",
+    "Edit Fields (Set)",
+    "Manual",
+    "MySQL"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Executequery",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "emPRhyWgxygwHgWh",
     "meta": {
@@ -169,29 +188,5 @@
         ]
       }
     }
-  },
-  "title": "Compare Customer Orders from 2003 to 2005",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Compare Datasets",
-    "Edit Fields (Set)",
-    "Manual",
-    "MySQL"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Executequery",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

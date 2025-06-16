@@ -1,7 +1,27 @@
 {
   "id": "5",
-  "filename": "5_bitwarden_group_management",
+  "title": "Create and Manage Bitwarden Groups and Members",
   "description": "Automates the creation of a new group in Bitwarden, retrieves all members, updates group membership, and fetches current members for efficient team management.",
+  "filename": "5_bitwarden_group_management",
+  "services": [
+    "Bitwarden"
+  ],
+  "categories": [
+    "Data & Storage"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Getall",
+    "Getmembers",
+    "Manage group",
+    "Manage member",
+    "Updatemembers"
+  ],
+  "setup_requirements": [
+    "Bitwarden API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -110,30 +130,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Manage Bitwarden Groups and Members",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Data & Storage"
-  ],
-  "services": [
-    "Bitwarden"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Getall",
-    "Getmembers",
-    "Manage group",
-    "Manage member",
-    "Updatemembers"
-  ],
-  "setup_requirements": [
-    "Bitwarden API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 1
+  }
 }

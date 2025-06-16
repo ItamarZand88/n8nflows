@@ -1,7 +1,28 @@
 {
   "id": "1143",
-  "filename": "1143_bluesky_daily_posts_and_replies",
+  "title": "Automate Daily Bluesky Posts and Replies",
   "description": "Triggers daily at 9 AM to create an initial post on Bluesky, followed by automated replies and sibling posts, enhancing engagement effortlessly.",
+  "filename": "1143_bluesky_daily_posts_and_replies",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "7ZIG5xxEACMBgj4Z",
     "meta": {
@@ -560,31 +581,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Daily Bluesky Posts and Replies",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 20,
-  "external_integrations_count": 6
+  }
 }

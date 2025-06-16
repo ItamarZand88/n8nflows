@@ -1,7 +1,38 @@
 {
   "id": "879",
-  "filename": "879_review_management_with_qdrant",
+  "title": "Automate Customer Review Management with Qdrant MCP Server",
   "description": "Triggers on review requests, processes insertions, searches, and recommendations for customer reviews using Qdrant, enhancing customer insights and engagement.",
+  "filename": "879_review_management_with_qdrant",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Split Out",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -1722,41 +1753,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Customer Review Management with Qdrant MCP Server",
-  "nodes_count": 44,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Split Out",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 44,
-  "external_integrations_count": 11
+  }
 }

@@ -1,7 +1,38 @@
 {
   "id": "1423",
-  "filename": "1423_n8n_workflows_dashboard",
+  "title": "Generate a Comprehensive n8n Workflows Dashboard",
   "description": "Creates a detailed dashboard summarizing n8n workflows, nodes, and webhooks, triggered by a manual event, providing insights for better workflow management.",
+  "filename": "1423_n8n_workflows_dashboard",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Convert to/from binary data",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Manual",
+    "Merge",
+    "Sort",
+    "Sticky Note",
+    "Webhook",
+    "XML",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "id": "D0I76cew5KOnlem0",
     "meta": {
@@ -972,41 +1003,5 @@
         ]
       }
     }
-  },
-  "title": "Generate a Comprehensive n8n Workflows Dashboard",
-  "nodes_count": 33,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Convert to/from binary data",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Manual",
-    "Merge",
-    "Sort",
-    "Sticky Note",
-    "Webhook",
-    "XML",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 33,
-  "external_integrations_count": 13
+  }
 }

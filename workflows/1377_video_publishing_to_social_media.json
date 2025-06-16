@@ -1,7 +1,32 @@
 {
   "id": "1377",
-  "filename": "1377_video_publishing_to_social_media",
+  "title": "Automate Video Publishing to 9 Social Media Platforms",
   "description": "Triggers nightly to upload a video to Blotato and automatically posts it to Instagram, YouTube, TikTok, Facebook, LinkedIn, Threads, Twitter, Bluesky, and Pinterest.",
+  "filename": "1377_video_publishing_to_social_media",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "CCcz1G4G2yPwk1me",
     "meta": {
@@ -559,35 +584,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Video Publishing to 9 Social Media Platforms",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 5
+  }
 }

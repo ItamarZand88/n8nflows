@@ -1,7 +1,37 @@
 {
   "id": "419",
-  "filename": "419_lead_enrichment_to_google_sheets",
+  "title": "Automate lead enrichment and logging to Google Sheets",
   "description": "Triggers daily to fetch leads from Leadfeeder, filters based on company size and engagement, enriches data, and saves qualified leads to Google Sheets.",
+  "filename": "419_lead_enrichment_to_google_sheets",
+  "services": [
+    "Clearbit",
+    "Edit Fields (Set)",
+    "Filter",
+    "Google Sheets",
+    "HTTP Request",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Clearbit API Key",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833",
@@ -993,40 +1023,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead enrichment and logging to Google Sheets",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity",
-    "Sales"
-  ],
-  "services": [
-    "Clearbit",
-    "Edit Fields (Set)",
-    "Filter",
-    "Google Sheets",
-    "HTTP Request",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Clearbit API Key",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 8
+  }
 }

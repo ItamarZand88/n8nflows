@@ -1,7 +1,31 @@
 {
   "id": "1060",
-  "filename": "1060_nextcloud_backups_for_n8n_workflows",
+  "title": "Automate NextCloud backups of N8N workflows every 6 hours",
   "description": "Triggers every 6 hours to fetch N8N workflows, converts them to binary, and uploads the backups to NextCloud for secure storage.",
+  "filename": "1060_nextcloud_backups_for_n8n_workflows",
+  "services": [
+    "Convert to/from binary data",
+    "Cron",
+    "Function",
+    "Function Item",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "Nextcloud"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "5dcd71e5db772d996680f0be",
     "name": "Example - Backup n8n to Nextcloud",
@@ -228,34 +252,5 @@
         ]
       }
     }
-  },
-  "title": "Automate NextCloud backups of N8N workflows every 6 hours",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Convert to/from binary data",
-    "Cron",
-    "Function",
-    "Function Item",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "Nextcloud"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 9,
-  "external_integrations_count": 8
+  }
 }

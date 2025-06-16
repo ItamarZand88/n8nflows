@@ -1,7 +1,28 @@
 {
   "id": "196",
-  "filename": "196_incident_management_pagerduty",
+  "title": "Automate incident management in PagerDuty",
   "description": "Triggers incident creation in PagerDuty, updates the incident details, and retrieves the updated incident information for tracking.",
+  "filename": "196_incident_management_pagerduty",
+  "services": [
+    "Manual",
+    "PagerDuty"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "PagerDuty API Key"
+  ],
   "content": {
     "id": "158",
     "name": "Create, update, and get an incident on PagerDuty",
@@ -108,31 +129,5 @@
         ]
       }
     }
-  },
-  "title": "Automate incident management in PagerDuty",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Manual",
-    "PagerDuty"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Update"
-  ],
-  "setup_requirements": [
-    "PagerDuty API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

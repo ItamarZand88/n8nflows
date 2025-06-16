@@ -1,7 +1,46 @@
 {
   "id": "1675",
-  "filename": "1675_spotify_archiving_to_google_sheets",
+  "title": "Automate monthly Spotify track archiving to Google Sheets",
   "description": "Triggers monthly to archive liked Spotify tracks and playlists into Google Sheets, categorizing tracks using AI for better organization.",
+  "filename": "1675_spotify_archiving_to_google_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "Google Sheets",
+    "HTTP Request",
+    "Limit",
+    "Merge",
+    "No Operation, do nothing",
+    "Schedule",
+    "Split Out",
+    "Spotify",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Miscellaneous",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Getuserplaylists",
+    "Manage library",
+    "Manage playlist",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "HTTP Request Account",
+    "Spotify Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "8e95de061dd3893a50b8b4c150c8084a7848fb1df63f53533941b7c91a8ab996"
@@ -1374,49 +1413,5 @@
         ]
       }
     }
-  },
-  "title": "Automate monthly Spotify track archiving to Google Sheets",
-  "nodes_count": 37,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Miscellaneous",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "Google Sheets",
-    "HTTP Request",
-    "Limit",
-    "Merge",
-    "No Operation, do nothing",
-    "Schedule",
-    "Split Out",
-    "Spotify",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Getuserplaylists",
-    "Manage library",
-    "Manage playlist",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "HTTP Request Account",
-    "Spotify Account"
-  ],
-  "workflow_complexity": 37,
-  "external_integrations_count": 12
+  }
 }

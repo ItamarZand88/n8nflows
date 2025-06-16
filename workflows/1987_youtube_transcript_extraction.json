@@ -1,7 +1,27 @@
 {
   "id": "1987",
-  "filename": "1987_youtube_transcript_extraction",
+  "title": "Automate YouTube video transcript extraction and cleaning",
   "description": "Triggers on a new YouTube video URL submission, retrieves the transcript, processes it, and provides a cleaned version for easy reading.",
+  "filename": "1987_youtube_transcript_extraction",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "HTTP Request",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "XxkmcgZC4OtIOVoD",
     "meta": {
@@ -160,30 +180,5 @@
         ]
       }
     }
-  },
-  "title": "Automate YouTube video transcript extraction and cleaning",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "HTTP Request",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

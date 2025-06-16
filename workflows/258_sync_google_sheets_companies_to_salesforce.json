@@ -1,7 +1,42 @@
 {
   "id": "258",
-  "filename": "258_sync_google_sheets_companies_to_salesforce",
+  "title": "Sync new Google Sheet companies with Salesforce accounts",
   "description": "Triggers on manual execution to read new companies from Google Sheets, checks Salesforce for existing accounts, and creates new accounts and contacts as needed.",
+  "filename": "258_sync_google_sheets_companies_to_salesforce",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "If",
+    "Item Lists",
+    "Manual",
+    "Merge",
+    "Rename Keys",
+    "Salesforce"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage account",
+    "Manage contact",
+    "Manage search",
+    "Removeduplicates",
+    "Set Data",
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Salesforce Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -383,45 +418,5 @@
         ]
       }
     }
-  },
-  "title": "Sync new Google Sheet companies with Salesforce accounts",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity",
-    "Sales"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "If",
-    "Item Lists",
-    "Manual",
-    "Merge",
-    "Rename Keys",
-    "Salesforce"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage account",
-    "Manage contact",
-    "Manage search",
-    "Removeduplicates",
-    "Set Data",
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Salesforce Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 8
+  }
 }

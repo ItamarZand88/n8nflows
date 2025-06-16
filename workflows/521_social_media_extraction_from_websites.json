@@ -1,7 +1,38 @@
 {
   "id": "521",
-  "filename": "521_social_media_extraction_from_websites",
+  "title": "Automate social media profile extraction from company websites",
   "description": "Triggers on demand to retrieve company names and websites, crawls each site for social media links, and stores the results in a database for easy access.",
+  "filename": "521_social_media_extraction_from_websites",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "Manual",
+    "Markdown",
+    "Merge",
+    "Remove Duplicates",
+    "Split Out",
+    "Sticky Note",
+    "Supabase"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Extracthtmlcontent",
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Supabase API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -1024,41 +1055,5 @@
         ]
       }
     }
-  },
-  "title": "Automate social media profile extraction from company websites",
-  "nodes_count": 38,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "Manual",
-    "Markdown",
-    "Merge",
-    "Remove Duplicates",
-    "Split Out",
-    "Sticky Note",
-    "Supabase"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Extracthtmlcontent",
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Supabase API Key"
-  ],
-  "workflow_complexity": 38,
-  "external_integrations_count": 11
+  }
 }

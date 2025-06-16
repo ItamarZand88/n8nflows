@@ -1,7 +1,39 @@
 {
   "id": "1571",
-  "filename": "1571_job_application_processing_airtable_google_drive",
+  "title": "Automate Job Application Processing with Airtable and Google Drive",
   "description": "Captures job applications from a form, uploads CVs to Google Drive, evaluates candidates, and updates Airtable with scores and interview details.",
+  "filename": "1571_job_application_processing_airtable_google_drive",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Google Drive",
+    "If",
+    "Send Email",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Create",
+    "Download",
+    "Filter Data",
+    "Pdf",
+    "Search",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Google Drive Account"
+  ],
   "content": {
     "id": "eMxH0GjgfWEvBDic",
     "meta": {
@@ -3070,42 +3102,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Job Application Processing with Airtable and Google Drive",
-  "nodes_count": 36,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Google Drive",
-    "If",
-    "Send Email",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Create",
-    "Download",
-    "Filter Data",
-    "Pdf",
-    "Search",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 36,
-  "external_integrations_count": 8
+  }
 }

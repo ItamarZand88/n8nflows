@@ -1,7 +1,42 @@
 {
   "id": "1875",
-  "filename": "1875_github_releases_to_slack",
+  "title": "Automate Slack notifications for new GitHub releases",
   "description": "Triggers every 10 minutes to check GitHub repositories for new releases and sends formatted notifications to Slack with release details.",
+  "filename": "1875_github_releases_to_slack",
+  "services": [
+    "Code",
+    "Date & Time",
+    "Edit Fields (Set)",
+    "If",
+    "Limit",
+    "Loop Over Items (Split in Batches)",
+    "RSS Read",
+    "Redis",
+    "Schedule",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Formatdate",
+    "Get",
+    "Set",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Slack API Key"
+  ],
   "content": {
     "id": "ThLx9WKLEujJHrvW",
     "meta": {
@@ -749,45 +784,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack notifications for new GitHub releases",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Date & Time",
-    "Edit Fields (Set)",
-    "If",
-    "Limit",
-    "Loop Over Items (Split in Batches)",
-    "RSS Read",
-    "Redis",
-    "Schedule",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Formatdate",
-    "Get",
-    "Set",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Slack API Key"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 11
+  }
 }

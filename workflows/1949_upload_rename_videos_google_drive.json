@@ -1,7 +1,28 @@
 {
   "id": "1949",
-  "filename": "1949_upload_rename_videos_google_drive",
+  "title": "Upload and Rename Videos in Google Drive via Script",
   "description": "Triggers video uploads to Google Drive through a web app and renames the uploaded file for easy identification and organization.",
+  "filename": "1949_upload_rename_videos_google_drive",
+  "services": [
+    "Google Drive",
+    "HTTP Request",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "wGv0NPBA0QLp4rQ6",
     "meta": {
@@ -96,31 +117,5 @@
         ]
       }
     }
-  },
-  "title": "Upload and Rename Videos in Google Drive via Script",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Google Drive",
-    "HTTP Request",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

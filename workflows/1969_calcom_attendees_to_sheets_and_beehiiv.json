@@ -1,7 +1,39 @@
 {
   "id": "1969",
-  "filename": "1969_calcom_attendees_to_sheets_and_beehiiv",
+  "title": "Automate attendee management from Cal.com to Google Sheets and Beehiiv",
   "description": "Triggers on new bookings in Cal.com, adds attendees to Google Sheets, and subscribes them to a Beehiiv newsletter, streamlining event management.",
+  "filename": "1969_calcom_attendees_to_sheets_and_beehiiv",
+  "services": [
+    "Cal.com",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Split Out",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Cal.com Event"
+  ],
+  "actions": [
+    "Append",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Cal.com API Key",
+    "Google Sheets Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "xe9sXQUc7yW8P8im",
     "meta": {
@@ -422,42 +454,5 @@
         ]
       }
     }
-  },
-  "title": "Automate attendee management from Cal.com to Google Sheets and Beehiiv",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Cal.com",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Split Out",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Cal.com Event"
-  ],
-  "actions": [
-    "Append",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Cal.com API Key",
-    "Google Sheets Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 7
+  }
 }

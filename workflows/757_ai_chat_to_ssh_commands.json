@@ -1,7 +1,20 @@
 {
   "id": "757",
-  "filename": "757_ai_chat_to_ssh_commands",
+  "title": "Automate Linux command execution via AI chat",
   "description": "Triggers on chat messages to execute Linux commands through SSH, providing users with an AI assistant for system management.",
+  "filename": "757_ai_chat_to_ssh_commands",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -158,23 +171,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Linux command execution via AI chat",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 1
+  }
 }

@@ -1,7 +1,39 @@
 {
   "id": "1904",
-  "filename": "1904_notion_updates_to_openai_qa",
+  "title": "Automate Notion Knowledge Base updates with OpenAI Q&A",
   "description": "Triggers on updates in Notion, processes content into embeddings, and enables a chat interface for users to ask questions about the Knowledge Base.",
+  "filename": "1904_notion_updates_to_openai_qa",
+  "services": [
+    "Limit",
+    "Loop Over Items (Split in Batches)",
+    "No Operation, do nothing",
+    "Notion",
+    "Schedule",
+    "Sticky Note",
+    "Summarize",
+    "Supabase"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Notion Event",
+    "New Schedule Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Delete",
+    "Getall",
+    "Manage block",
+    "Manage databasePage"
+  ],
+  "setup_requirements": [
+    "Notion API Key",
+    "Supabase API Key"
+  ],
   "content": {
     "id": "JxFP8FJ2W7e4Kmqn",
     "meta": {
@@ -840,42 +872,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Notion Knowledge Base updates with OpenAI Q&A",
-  "nodes_count": 34,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Limit",
-    "Loop Over Items (Split in Batches)",
-    "No Operation, do nothing",
-    "Notion",
-    "Schedule",
-    "Sticky Note",
-    "Summarize",
-    "Supabase"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Notion Event",
-    "New Schedule Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Delete",
-    "Getall",
-    "Manage block",
-    "Manage databasePage"
-  ],
-  "setup_requirements": [
-    "Notion API Key",
-    "Supabase API Key"
-  ],
-  "workflow_complexity": 34,
-  "external_integrations_count": 8
+  }
 }

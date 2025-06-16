@@ -1,7 +1,41 @@
 {
   "id": "1689",
-  "filename": "1689_seo_keyword_research_and_analysis",
+  "title": "Automate SEO Keyword Research and Competitor Analysis",
   "description": "Fetches input from NocoDB, generates SEO keyword strategies, analyzes competitors, and sends results via Slack notifications.",
+  "filename": "1689_seo_keyword_research_and_analysis",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Merge",
+    "NocoDB",
+    "Slack",
+    "Split Out",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Get-Keyword-Difficulty",
+    "Get-Ranked-Keywords",
+    "Manage keywords_data",
+    "Manage labs",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "NocoDB API Key",
+    "Slack API Key"
+  ],
   "content": {
     "id": "nGpVbW7RTylKujyT",
     "meta": {
@@ -1021,44 +1055,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SEO Keyword Research and Competitor Analysis",
-  "nodes_count": 34,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Merge",
-    "NocoDB",
-    "Slack",
-    "Split Out",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Get-Keyword-Difficulty",
-    "Get-Ranked-Keywords",
-    "Manage keywords_data",
-    "Manage labs",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "NocoDB API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 34,
-  "external_integrations_count": 9
+  }
 }

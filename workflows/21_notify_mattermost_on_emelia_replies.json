@@ -1,7 +1,25 @@
 {
   "id": "21",
-  "filename": "21_notify_mattermost_on_emelia_replies",
+  "title": "Notify Mattermost on New Replies to Emelia Campaigns",
   "description": "Triggers a Mattermost notification when a contact replies to your Emelia campaign, keeping your team updated in real-time.",
+  "filename": "21_notify_mattermost_on_emelia_replies",
+  "services": [
+    "Emelia",
+    "Mattermost"
+  ],
+  "categories": [
+    "Communication",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Emelia Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Emelia API Key",
+    "Mattermost API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -55,28 +73,5 @@
         ]
       }
     }
-  },
-  "title": "Notify Mattermost on New Replies to Emelia Campaigns",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Marketing"
-  ],
-  "services": [
-    "Emelia",
-    "Mattermost"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Emelia Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Emelia API Key",
-    "Mattermost API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

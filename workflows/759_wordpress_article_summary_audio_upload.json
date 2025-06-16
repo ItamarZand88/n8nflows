@@ -1,7 +1,33 @@
 {
   "id": "759",
-  "filename": "759_wordpress_article_summary_audio_upload",
+  "title": "Automate WordPress Article Summarization and Audio Upload",
   "description": "Triggers on manual request to retrieve a WordPress article, summarizes it, generates audio, and uploads the audio back to the post for user engagement.",
+  "filename": "759_wordpress_article_summary_audio_upload",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note",
+    "Wordpress"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Wordpress API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "c911aed9995230b93fd0d9bc41c258d697c2fe97a3bab8c02baf85963eeda618",
@@ -320,36 +346,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WordPress Article Summarization and Audio Upload",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note",
-    "Wordpress"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Wordpress API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 5
+  }
 }

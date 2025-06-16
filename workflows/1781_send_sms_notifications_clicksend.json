@@ -1,7 +1,26 @@
 {
   "id": "1781",
-  "filename": "1781_send_sms_notifications_clicksend",
+  "title": "Send SMS notifications using ClickSend API",
   "description": "Triggers SMS notifications by sending a predefined message to a specified phone number using ClickSend's API after manual initiation.",
+  "filename": "1781_send_sms_notifications_clicksend",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "Qpxx8UnnACBONNJu",
     "meta": {
@@ -150,29 +169,5 @@
         ]
       }
     }
-  },
-  "title": "Send SMS notifications using ClickSend API",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

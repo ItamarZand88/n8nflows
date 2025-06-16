@@ -1,7 +1,27 @@
 {
   "id": "802",
-  "filename": "802_telegram_chinese_vocabulary_practice",
+  "title": "Automate Chinese Vocabulary Practice via Telegram",
   "description": "Triggers on user messages in Telegram, retrieves vocabulary from Google Sheets, and generates interactive MCQs for practicing Chinese language skills.",
+  "filename": "802_telegram_chinese_vocabulary_practice",
+  "services": [
+    "Aggregate",
+    "Google Sheets",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "6a5e68bcca67c4cdb3e0b698d01739aea084e1ec06e551db64aeff43d174cb23",
@@ -269,30 +289,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Chinese Vocabulary Practice via Telegram",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Google Sheets",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,22 @@
 {
   "id": "1006",
-  "filename": "1006_invoice_ninja_notifications",
+  "title": "Automate invoice creation notifications from Invoice Ninja",
   "description": "Triggers notifications for new invoices created in Invoice Ninja, streamlining your invoicing process and keeping your team informed.",
+  "filename": "1006_invoice_ninja_notifications",
+  "services": [
+    "Invoice Ninja"
+  ],
+  "categories": [
+    "Finance & Accounting"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Invoice Ninja Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Invoice Ninja API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -22,25 +37,5 @@
       }
     ],
     "connections": {}
-  },
-  "title": "Automate invoice creation notifications from Invoice Ninja",
-  "nodes_count": 1,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Finance & Accounting"
-  ],
-  "services": [
-    "Invoice Ninja"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Invoice Ninja Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Invoice Ninja API Key"
-  ],
-  "workflow_complexity": 1,
-  "external_integrations_count": 1
+  }
 }

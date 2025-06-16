@@ -1,7 +1,39 @@
 {
   "id": "894",
-  "filename": "894_pdf_invoices_to_drive",
+  "title": "Automate PDF Invoice Classification and Google Drive Upload",
   "description": "Triggers from a webhook to classify PDF invoices from Gmail, uploads matched files to Google Drive, and optionally emails them to your accountant.",
+  "filename": "894_pdf_invoices_to_drive",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "Google Drive",
+    "If",
+    "Merge",
+    "No Operation, do nothing",
+    "Read PDF",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage folder",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "d1b60f1865ef6504ee3af5be4ef9a7387762b4132615a52de808456d52e8d336",
@@ -664,42 +696,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PDF Invoice Classification and Google Drive Upload",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "Google Drive",
-    "If",
-    "Merge",
-    "No Operation, do nothing",
-    "Read PDF",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage folder",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 20,
-  "external_integrations_count": 11
+  }
 }

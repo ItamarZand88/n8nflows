@@ -1,7 +1,32 @@
 {
   "id": "461",
-  "filename": "461_update_workflows_excluding_error_tags",
+  "title": "Update Workflows Excluding Error Tagged Items",
   "description": "Triggers every 4 hours to update workflows in Postgres, excluding those tagged with 'default_error:false', ensuring error handling workflows are properly managed.",
+  "filename": "461_update_workflows_excluding_error_tags",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "Manual",
+    "Postgres",
+    "Schedule",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "f4b99447bb6b56ad425b30ab755dc982ee1c258e7ce783958190eabedd1bcbb0"
@@ -365,35 +390,5 @@
         ]
       }
     }
-  },
-  "title": "Update Workflows Excluding Error Tagged Items",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "Manual",
-    "Postgres",
-    "Schedule",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 6
+  }
 }

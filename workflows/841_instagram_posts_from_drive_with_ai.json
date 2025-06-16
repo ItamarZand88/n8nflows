@@ -1,7 +1,33 @@
 {
   "id": "841",
-  "filename": "841_instagram_posts_from_drive_with_ai",
+  "title": "Automate Instagram Posts from Google Drive with AI Captions",
   "description": "Triggers when new media is uploaded to Google Drive, generates captions using OpenAI, and posts to Instagram automatically, streamlining social media management.",
+  "filename": "841_instagram_posts_from_drive_with_ai",
+  "services": [
+    "Facebook Graph",
+    "Google Drive",
+    "Google Sheets",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Download"
+  ],
+  "setup_requirements": [
+    "Facebook Graph API Key",
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "160aba527cc3058f06f5c3afbfdaa77f24ad6a273269f4a7e247245d0eb0c124",
@@ -449,36 +475,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Instagram Posts from Google Drive with AI Captions",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Facebook Graph",
-    "Google Drive",
-    "Google Sheets",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Download"
-  ],
-  "setup_requirements": [
-    "Facebook Graph API Key",
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 4
+  }
 }

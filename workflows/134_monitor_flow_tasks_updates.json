@@ -1,7 +1,24 @@
 {
   "id": "134",
-  "filename": "134_monitor_flow_tasks_updates",
+  "title": "Monitor Flow tasks for updates and automate notifications",
   "description": "Triggers notifications for specified tasks in Flow whenever there are updates, ensuring you stay informed on task progress.",
+  "filename": "134_monitor_flow_tasks_updates",
+  "services": [
+    "Flow"
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Flow Event"
+  ],
+  "actions": [
+    "Manage task"
+  ],
+  "setup_requirements": [
+    "Flow API Key"
+  ],
   "content": {
     "id": "133",
     "name": "Receive updates for specified tasks in Flow",
@@ -26,27 +43,5 @@
     "active": false,
     "settings": {},
     "connections": {}
-  },
-  "title": "Monitor Flow tasks for updates and automate notifications",
-  "nodes_count": 1,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Productivity"
-  ],
-  "services": [
-    "Flow"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Flow Event"
-  ],
-  "actions": [
-    "Manage task"
-  ],
-  "setup_requirements": [
-    "Flow API Key"
-  ],
-  "workflow_complexity": 1,
-  "external_integrations_count": 1
+  }
 }

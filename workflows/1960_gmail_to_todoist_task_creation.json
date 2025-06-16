@@ -1,7 +1,41 @@
 {
   "id": "1960",
-  "filename": "1960_gmail_to_todoist_task_creation",
+  "title": "Automate task creation from unread Gmail messages to Todoist",
   "description": "Triggers on new unread emails, summarizes them using AI, and creates tasks in Todoist with proposed actions and responses.",
+  "filename": "1960_gmail_to_todoist_task_creation",
+  "services": [
+    "Email Trigger (IMAP)",
+    "Gmail",
+    "If",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note",
+    "Todoist"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Email Trigger (IMAP) Event",
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Addlabels",
+    "Close",
+    "Filter Data",
+    "Get",
+    "Getall",
+    "Markasread"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Todoist API Key"
+  ],
   "content": {
     "id": "WUX0BsRA1dbzTKnl",
     "meta": {
@@ -788,44 +822,5 @@
         ]
       }
     }
-  },
-  "title": "Automate task creation from unread Gmail messages to Todoist",
-  "nodes_count": 25,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Email Trigger (IMAP)",
-    "Gmail",
-    "If",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note",
-    "Todoist"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Email Trigger (IMAP) Event",
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Addlabels",
-    "Close",
-    "Filter Data",
-    "Get",
-    "Getall",
-    "Markasread"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Todoist API Key"
-  ],
-  "workflow_complexity": 25,
-  "external_integrations_count": 9
+  }
 }

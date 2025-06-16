@@ -1,7 +1,27 @@
 {
   "id": "15",
-  "filename": "15_insert_data_to_coda_table",
+  "title": "Insert data into Coda table with a manual trigger",
   "description": "Manually triggers the insertion of specified data into a designated table in Coda, streamlining data entry and organization.",
+  "filename": "15_insert_data_to_coda_table",
+  "services": [
+    "Coda",
+    "Edit Fields (Set)",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Coda API Key"
+  ],
   "content": {
     "id": "102",
     "name": "Insert data into a new row for a table in Coda",
@@ -88,30 +108,5 @@
         ]
       }
     }
-  },
-  "title": "Insert data into Coda table with a manual trigger",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Coda",
-    "Edit Fields (Set)",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Coda API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

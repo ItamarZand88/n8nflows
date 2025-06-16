@@ -1,7 +1,28 @@
 {
   "id": "1654",
-  "filename": "1654_email_responses_and_classification",
+  "title": "Automate email responses and categorization in Gmail",
   "description": "Triggers on new Gmail messages, classifies them, and generates professional replies using AI, enhancing communication efficiency.",
+  "filename": "1654_email_responses_and_classification",
+  "services": [
+    "Gmail",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Addlabels",
+    "Filter Data",
+    "Manage draft"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "id": "m8gr0YZgCx5Qrsia",
     "meta": {
@@ -403,31 +424,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email responses and categorization in Gmail",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Gmail",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Addlabels",
-    "Filter Data",
-    "Manage draft"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 2
+  }
 }

@@ -1,7 +1,28 @@
 {
   "id": "1803",
-  "filename": "1803_create_update_short_links_dubco",
+  "title": "Create and Update Short Links with Dub.co API",
   "description": "Triggers on manual input to create or update short links using the Dub.co API, streamlining URL management for marketing and sharing.",
+  "filename": "1803_create_update_short_links_dubco",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "ReXF4z8ZKcEd6Kea",
     "meta": {
@@ -441,31 +462,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Update Short Links with Dub.co API",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 5
+  }
 }

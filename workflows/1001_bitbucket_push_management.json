@@ -1,7 +1,25 @@
 {
   "id": "1001",
-  "filename": "1001_bitbucket_push_management",
+  "title": "Automate repository management for new Bitbucket pushes",
   "description": "Triggers on new repository pushes in Bitbucket, allowing for automated management actions to streamline development workflows.",
+  "filename": "1001_bitbucket_push_management",
+  "services": [
+    "Bitbucket"
+  ],
+  "categories": [
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Bitbucket Event"
+  ],
+  "actions": [
+    "Manage repository"
+  ],
+  "setup_requirements": [
+    "Bitbucket API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -26,28 +44,5 @@
       }
     ],
     "connections": {}
-  },
-  "title": "Automate repository management for new Bitbucket pushes",
-  "nodes_count": 1,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Bitbucket"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Bitbucket Event"
-  ],
-  "actions": [
-    "Manage repository"
-  ],
-  "setup_requirements": [
-    "Bitbucket API Key"
-  ],
-  "workflow_complexity": 1,
-  "external_integrations_count": 1
+  }
 }

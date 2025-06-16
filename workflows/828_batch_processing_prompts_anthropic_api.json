@@ -1,7 +1,39 @@
 {
   "id": "828",
-  "filename": "828_batch_processing_prompts_anthropic_api",
+  "title": "Automate batch processing of prompts with Anthropic API",
   "description": "Triggers on new requests, submits multiple prompts to the Anthropic API, checks status, and retrieves results for efficient processing.",
+  "filename": "828_batch_processing_prompts_anthropic_api",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Execution Data",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Merge",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "97d44c78f314fab340d7a5edaf7e2c274a7fbb8a7cd138f53cc742341e706fe7"
@@ -1143,42 +1175,5 @@
         ]
       }
     }
-  },
-  "title": "Automate batch processing of prompts with Anthropic API",
-  "nodes_count": 39,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Execution Data",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Merge",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 39,
-  "external_integrations_count": 13
+  }
 }

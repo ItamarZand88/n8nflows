@@ -1,7 +1,26 @@
 {
   "id": "460",
-  "filename": "460_gitlab_code_review_automation",
+  "title": "Automate GitLab code review discussions with AI insights",
   "description": "Triggers on GitLab merge requests, analyzes code changes, and posts AI-generated review comments to discussions, enhancing collaboration and code quality.",
+  "filename": "460_gitlab_code_review_automation",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "If",
+    "Split Out",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -406,29 +425,5 @@
         ]
       }
     }
-  },
-  "title": "Automate GitLab code review discussions with AI insights",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "If",
-    "Split Out",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 6
+  }
 }

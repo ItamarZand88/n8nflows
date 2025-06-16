@@ -1,7 +1,31 @@
 {
   "id": "778",
-  "filename": "778_telegram_no_code_tool_responses",
+  "title": "Automate Telegram responses for No-Code tool inquiries",
   "description": "Triggers on new Telegram messages, fetches No-Code tool details, and sends descriptions and images in the user's language.",
+  "filename": "778_telegram_no_code_tool_responses",
+  "services": [
+    "Execute Command",
+    "HTTP Request",
+    "If",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Sendphoto"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "30",
     "name": "N8N Español - NocodeBot",
@@ -188,34 +212,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Telegram responses for No-Code tool inquiries",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Execute Command",
-    "HTTP Request",
-    "If",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Sendphoto"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

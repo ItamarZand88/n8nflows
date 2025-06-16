@@ -1,7 +1,26 @@
 {
   "id": "1226",
-  "filename": "1226_asana_tasks_from_webhook",
+  "title": "Create Asana tasks from webhook triggers",
   "description": "Automatically creates a new task in Asana when a webhook is triggered, providing a seamless way to manage tasks from external events.",
+  "filename": "1226_asana_tasks_from_webhook",
+  "services": [
+    "Asana",
+    "Edit Fields (Set)",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Asana Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -88,29 +107,5 @@
         ]
       }
     }
-  },
-  "title": "Create Asana tasks from webhook triggers",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Asana",
-    "Edit Fields (Set)",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Asana Account"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,35 @@
 {
   "id": "884",
-  "filename": "884_telegram_messages_to_google_tasks",
+  "title": "Automate Telegram messages and task management with Google Tasks",
   "description": "Triggers on new Telegram messages, processes voice notes or text, and manages tasks in Google Tasks based on user input.",
+  "filename": "884_telegram_messages_to_google_tasks",
+  "services": [
+    "Edit Fields (Set)",
+    "Sticky Note",
+    "Switch",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Getall",
+    "Manage audio",
+    "Manage file",
+    "Set Data",
+    "Transcribe",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "be27b2af86ae3a5dc19ef2a1947644c0aec45fd8c88f29daa7dea6f0ce537691",
@@ -701,38 +729,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Telegram messages and task management with Google Tasks",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Sticky Note",
-    "Switch",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Getall",
-    "Manage audio",
-    "Manage file",
-    "Set Data",
-    "Transcribe",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 4
+  }
 }

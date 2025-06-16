@@ -1,7 +1,41 @@
 {
   "id": "563",
-  "filename": "563_gmail_invoices_to_drive",
+  "title": "Automate invoice retrieval from Gmail to Google Drive",
   "description": "Monitors Gmail for Paddle invoice emails, extracts the invoice link, downloads the PDF, and saves it to Google Drive for easy access.",
+  "filename": "563_gmail_invoices_to_drive",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "Google Drive",
+    "HTTP Request",
+    "If",
+    "No Operation, do nothing",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Extracthtmlcontent",
+    "Filter Data",
+    "Move",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "HTTP Request Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -509,44 +543,5 @@
         ]
       }
     }
-  },
-  "title": "Automate invoice retrieval from Gmail to Google Drive",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "Google Drive",
-    "HTTP Request",
-    "If",
-    "No Operation, do nothing",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Extracthtmlcontent",
-    "Filter Data",
-    "Move",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 9
+  }
 }

@@ -1,7 +1,28 @@
 {
   "id": "889",
-  "filename": "889_generate_edit_images_openai",
+  "title": "Generate and Edit Images Using OpenAI API",
   "description": "Manually triggers image generation and editing with OpenAI, creating custom visuals from prompts and returning downloadable PNG files.",
+  "filename": "889_generate_edit_images_openai",
+  "services": [
+    "Convert to File",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Tobinary"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "96b96d0aa1e4ff5d5b6779332b149e3ef3364191562d79083d0309cf3ddfa53e"
@@ -302,31 +323,5 @@
         ]
       }
     }
-  },
-  "title": "Generate and Edit Images Using OpenAI API",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Convert to File",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Tobinary"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 4
+  }
 }

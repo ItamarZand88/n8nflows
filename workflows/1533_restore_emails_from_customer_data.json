@@ -1,7 +1,27 @@
 {
   "id": "1533",
-  "filename": "1533_restore_emails_from_customer_data",
+  "title": "Restore Email Addresses from Customer Data",
   "description": "Triggers manually to retrieve all customer names, restores their email addresses, and prepares data for further use, enhancing data management efficiency.",
+  "filename": "1533_restore_emails_from_customer_data",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getallpeople",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "gkOayLvJnwcTiHbk",
     "meta": {
@@ -170,30 +190,5 @@
         ]
       }
     }
-  },
-  "title": "Restore Email Addresses from Customer Data",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getallpeople",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 4
+  }
 }

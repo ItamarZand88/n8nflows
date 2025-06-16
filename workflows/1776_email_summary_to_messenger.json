@@ -1,7 +1,21 @@
 {
   "id": "1776",
-  "filename": "1776_email_summary_to_messenger",
+  "title": "Summarize Emails with A.I. and Send to Messenger",
   "description": "Automatically reads emails via IMAP, summarizes them using A.I., and sends the summaries to your messenger for quick review.",
+  "filename": "1776_email_summary_to_messenger",
+  "services": [
+    "Email Trigger (IMAP)",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "QnVdtKiTf3nbrNkh",
     "meta": {
@@ -178,24 +192,5 @@
         ]
       }
     }
-  },
-  "title": "Summarize Emails with A.I. and Send to Messenger",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Email Trigger (IMAP)",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 3
+  }
 }

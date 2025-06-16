@@ -1,7 +1,46 @@
 {
   "id": "1618",
-  "filename": "1618_clockify_reports_to_github",
+  "title": "Automate monthly report backups to GitHub from Clockify",
   "description": "Triggers daily to retrieve detailed monthly reports from Clockify, checks for existing files in GitHub, and updates or creates reports as needed.",
+  "filename": "1618_clockify_reports_to_github",
+  "services": [
+    "Clockify",
+    "Compare Datasets",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Filter",
+    "GitHub",
+    "HTTP Request",
+    "If",
+    "Schedule",
+    "Split Out",
+    "Sticky Note",
+    "Stop and Error"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Edit",
+    "Filter Data",
+    "Fromjson",
+    "Get",
+    "Manage file",
+    "Manage workspace",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Clockify API Key",
+    "GitHub API Key",
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "k22TSNIZXHaQ9rGr",
     "meta": {
@@ -677,49 +716,5 @@
         ]
       }
     }
-  },
-  "title": "Automate monthly report backups to GitHub from Clockify",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Clockify",
-    "Compare Datasets",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Filter",
-    "GitHub",
-    "HTTP Request",
-    "If",
-    "Schedule",
-    "Split Out",
-    "Sticky Note",
-    "Stop and Error"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Edit",
-    "Filter Data",
-    "Fromjson",
-    "Get",
-    "Manage file",
-    "Manage workspace",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Clockify API Key",
-    "GitHub API Key",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 12
+  }
 }

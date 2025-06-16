@@ -1,7 +1,28 @@
 {
   "id": "565",
-  "filename": "565_google_drive_to_supabase_document_processing",
+  "title": "Automate document processing from Google Drive to Supabase",
   "description": "Triggers on receiving a chat message, downloads a document from Google Drive, processes it, and stores the data in Supabase for easy retrieval.",
+  "filename": "565_google_drive_to_supabase_document_processing",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Sticky Note",
+    "Supabase"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download",
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "1a23006df50de49624f69e85993be557d137b6efe723a867a7d68a84e0b32704"
@@ -484,31 +505,5 @@
         ]
       }
     }
-  },
-  "title": "Automate document processing from Google Drive to Supabase",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Sticky Note",
-    "Supabase"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download",
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 21,
-  "external_integrations_count": 4
+  }
 }

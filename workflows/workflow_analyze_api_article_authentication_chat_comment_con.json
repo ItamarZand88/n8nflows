@@ -1,7 +1,43 @@
 {
   "id": "1895",
-  "filename": "workflow_analyze_api_article_authentication_chat_comment_con",
+  "title": "Analyze API Article Authentication Chat Comment Con",
   "description": "Trigger a workflow to generate social media content and images based on Google Sheets data.",
+  "filename": "workflow_analyze_api_article_authentication_chat_comment_con",
+  "services": [
+    "Facebook Graph",
+    "Google Sheets",
+    "HTTP Request",
+    "LinkedIn",
+    "Manual",
+    "Sticky Note",
+    "Wordpress",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Manage image",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Facebook Graph API Key",
+    "Google Sheets Account",
+    "HTTP Request API Key",
+    "LinkedIn Account",
+    "Wordpress API Key",
+    "X (Formerly Twitter) Account"
+  ],
   "content": {
     "id": "U9RofpXSIIUg12f9",
     "meta": {
@@ -1031,46 +1067,5 @@
         ]
       }
     }
-  },
-  "title": "Analyze API Article Authentication Chat Comment Con",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Facebook Graph",
-    "Google Sheets",
-    "HTTP Request",
-    "LinkedIn",
-    "Manual",
-    "Sticky Note",
-    "Wordpress",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Manage image",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Facebook Graph API Key",
-    "Google Sheets Account",
-    "HTTP Request API Key",
-    "LinkedIn Account",
-    "Wordpress API Key",
-    "X (Formerly Twitter) Account"
-  ],
-  "workflow_complexity": 20,
-  "external_integrations_count": 8
+  }
 }

@@ -1,7 +1,44 @@
 {
   "id": "1632",
-  "filename": "1632_video_creation_to_social_media",
+  "title": "Automate video creation and upload for social media",
   "description": "Triggers daily to generate engaging videos from Google Sheets ideas, processes images and audio, and uploads to TikTok, Instagram, YouTube, Facebook, and LinkedIn.",
+  "filename": "1632_video_creation_to_social_media",
+  "services": [
+    "Code",
+    "Discord",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Read Binary File",
+    "Schedule",
+    "Sticky Note",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage audio",
+    "Set Data",
+    "Share",
+    "Transcribe",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "KY0vB3hifSrA24k2",
     "meta": {
@@ -2114,47 +2151,5 @@
         ]
       }
     }
-  },
-  "title": "Automate video creation and upload for social media",
-  "nodes_count": 51,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Discord",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Read Binary File",
-    "Schedule",
-    "Sticky Note",
-    "Write Binary File"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage audio",
-    "Set Data",
-    "Share",
-    "Transcribe",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 51,
-  "external_integrations_count": 12
+  }
 }

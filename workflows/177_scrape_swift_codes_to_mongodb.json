@@ -1,7 +1,41 @@
 {
   "id": "177",
-  "filename": "177_scrape_swift_codes_to_mongodb",
+  "title": "Scrape and Store Swift Codes by Country",
   "description": "Triggers a manual execution to scrape swift codes from a website by country, processes the data, and stores it in MongoDB for easy access and management.",
+  "filename": "177_scrape_swift_codes_to_mongodb",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Command",
+    "Function",
+    "Function Item",
+    "HTML Extract",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "MongoDB",
+    "Read Binary File",
+    "Write Binary File",
+    "uProc"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Filter Data",
+    "Insert",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "uProc API Key"
+  ],
   "content": {
     "id": "14",
     "name": "extract_swifts",
@@ -655,44 +689,5 @@
         ]
       }
     }
-  },
-  "title": "Scrape and Store Swift Codes by Country",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Command",
-    "Function",
-    "Function Item",
-    "HTML Extract",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "MongoDB",
-    "Read Binary File",
-    "Write Binary File",
-    "uProc"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Filter Data",
-    "Insert",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "uProc API Key"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 13
+  }
 }

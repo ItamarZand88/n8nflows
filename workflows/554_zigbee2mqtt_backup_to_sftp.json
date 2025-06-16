@@ -1,7 +1,32 @@
 {
   "id": "554",
-  "filename": "554_zigbee2mqtt_backup_to_sftp",
+  "title": "Automate Zigbee2MQTT Backup and Upload to SFTP",
   "description": "Triggers a backup request for Zigbee2MQTT every Monday at 2:45 am, processes the response, and uploads the backup file to SFTP for secure storage.",
+  "filename": "554_zigbee2mqtt_backup_to_sftp",
+  "services": [
+    "Code",
+    "Convert to File",
+    "FTP",
+    "MQTT",
+    "Schedule"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New MQTT Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Tobinary",
+    "Upload"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -154,35 +179,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Zigbee2MQTT Backup and Upload to SFTP",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Convert to File",
-    "FTP",
-    "MQTT",
-    "Schedule"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New MQTT Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Tobinary",
-    "Upload"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 5
+  }
 }

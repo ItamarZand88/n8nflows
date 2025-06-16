@@ -1,7 +1,38 @@
 {
   "id": "1684",
-  "filename": "1684_opportunity_summaries_from_odoo",
+  "title": "Automate opportunity summaries from Odoo to text files",
   "description": "Triggers on a schedule to fetch opportunities from Odoo, summarizes them using AI, and saves the summary to a text file for easy access.",
+  "filename": "1684_opportunity_summaries_from_odoo",
+  "services": [
+    "Aggregate",
+    "Convert to File",
+    "Extract from File",
+    "If",
+    "Odoo",
+    "Read/Write Files from Disk",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage opportunity",
+    "Text",
+    "Totext",
+    "Write"
+  ],
+  "setup_requirements": [
+    "Odoo API Key"
+  ],
   "content": {
     "id": "n8cwEZfJLGn15Lqx",
     "meta": {
@@ -496,41 +527,5 @@
         ]
       }
     }
-  },
-  "title": "Automate opportunity summaries from Odoo to text files",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Aggregate",
-    "Convert to File",
-    "Extract from File",
-    "If",
-    "Odoo",
-    "Read/Write Files from Disk",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage opportunity",
-    "Text",
-    "Totext",
-    "Write"
-  ],
-  "setup_requirements": [
-    "Odoo API Key"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 8
+  }
 }

@@ -1,7 +1,37 @@
 {
   "id": "873",
-  "filename": "873_amazon_review_analysis_to_gmail",
+  "title": "Automate Amazon review analysis and creative generation",
   "description": "Captures Amazon product URLs from a form, retrieves reviews, summarizes insights, and sends creative assets via Gmail for marketing use.",
+  "filename": "873_amazon_review_analysis_to_gmail",
+  "services": [
+    "Aggregate",
+    "Gmail",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Manage image"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "1eadd5bc7c3d70c587c28f782511fd898c6bf6d97963d92e836019d2039d1c79"
@@ -791,40 +821,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Amazon review analysis and creative generation",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Gmail",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Manage image"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 7
+  }
 }

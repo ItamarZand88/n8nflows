@@ -1,7 +1,33 @@
 {
   "id": "1321",
-  "filename": "1321_google_drive_document_summarization_to_sheets",
+  "title": "Automate Google Drive document summarization to Google Sheets",
   "description": "Triggers on new Google Drive document uploads, retrieves content, summarizes it using AI, and stores the summary in Google Sheets for easy access.",
+  "filename": "1321_google_drive_document_summarization_to_sheets",
+  "services": [
+    "Google Docs",
+    "Google Drive",
+    "Google Sheets",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Miscellaneous",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Append",
+    "Get"
+  ],
+  "setup_requirements": [
+    "Google Docs Account",
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "aswQJmksAOmHmn8c",
     "meta": {
@@ -350,36 +376,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Drive document summarization to Google Sheets",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Miscellaneous",
-    "Productivity"
-  ],
-  "services": [
-    "Google Docs",
-    "Google Drive",
-    "Google Sheets",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Append",
-    "Get"
-  ],
-  "setup_requirements": [
-    "Google Docs Account",
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 4
+  }
 }

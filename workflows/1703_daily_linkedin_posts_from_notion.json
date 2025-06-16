@@ -1,7 +1,39 @@
 {
   "id": "1703",
-  "filename": "1703_daily_linkedin_posts_from_notion",
+  "title": "Automate daily LinkedIn posts from Notion content",
   "description": "Triggers daily to fetch today's post from Notion, formats it, and publishes it on LinkedIn, saving time on social media management.",
+  "filename": "1703_daily_linkedin_posts_from_notion",
+  "services": [
+    "Aggregate",
+    "Code",
+    "HTTP Request",
+    "LinkedIn",
+    "Merge",
+    "Notion",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage block",
+    "Manage databasePage",
+    "Update"
+  ],
+  "setup_requirements": [
+    "LinkedIn Account",
+    "Notion API Key"
+  ],
   "content": {
     "id": "0pVPSW4PzJZLLqSf",
     "meta": {
@@ -382,42 +414,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily LinkedIn posts from Notion content",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "HTTP Request",
-    "LinkedIn",
-    "Merge",
-    "Notion",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage block",
-    "Manage databasePage",
-    "Update"
-  ],
-  "setup_requirements": [
-    "LinkedIn Account",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 8
+  }
 }

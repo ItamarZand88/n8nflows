@@ -1,7 +1,31 @@
 {
   "id": "783",
-  "filename": "783_n8n_workflows_backup_to_google_drive",
+  "title": "Automate Google Drive backups of n8n workflows",
   "description": "Triggers daily at 1:30 AM to back up all n8n workflows as JSON files to a specified Google Drive folder, ensuring data security and easy access.",
+  "filename": "783_n8n_workflows_backup_to_google_drive",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Schedule",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "c911aed9995230b93fd0d9bc41c258d697c2fe97a3bab8c02baf85963eeda618",
@@ -181,34 +205,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Drive backups of n8n workflows",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Schedule",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 6
+  }
 }

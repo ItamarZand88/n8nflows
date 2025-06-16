@@ -1,7 +1,39 @@
 {
   "id": "1137",
-  "filename": "1137_google_sheets_to_postgres_insertion",
+  "title": "Automate Google Sheets data insertion into PostgreSQL",
   "description": "Triggers on changes in a Google Sheet, checks for table existence, creates a new table, and inserts data into PostgreSQL for seamless data management.",
+  "filename": "1137_google_sheets_to_postgres_insertion",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Google Drive",
+    "Google Sheets",
+    "If",
+    "Postgres",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Google Drive Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Executequery",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "7gRbzEzCuOzQKn4M",
     "meta": {
@@ -678,42 +710,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Sheets data insertion into PostgreSQL",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Google Drive",
-    "Google Sheets",
-    "If",
-    "Postgres",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Google Drive Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Executequery",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 8
+  }
 }

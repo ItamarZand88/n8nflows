@@ -1,7 +1,34 @@
 {
   "id": "169",
-  "filename": "169_monthly_absence_reports_to_payroll",
+  "title": "Automate monthly absence reports to payroll via email",
   "description": "Triggers on the 1st of each month, gathers last month's absence data from Google Calendar, and emails a summary to the payroll team.",
+  "filename": "169_monthly_absence_reports_to_payroll",
+  "services": [
+    "Code",
+    "Cron",
+    "Date & Time",
+    "Edit Fields (Set)",
+    "Google Calendar",
+    "Merge",
+    "No Operation, do nothing",
+    "Send Email",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Getall",
+    "Set Data",
+    "Subtract"
+  ],
+  "setup_requirements": [
+    "Google Calendar Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd"
@@ -394,37 +421,5 @@
         ]
       }
     }
-  },
-  "title": "Automate monthly absence reports to payroll via email",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Cron",
-    "Date & Time",
-    "Edit Fields (Set)",
-    "Google Calendar",
-    "Merge",
-    "No Operation, do nothing",
-    "Send Email",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Getall",
-    "Set Data",
-    "Subtract"
-  ],
-  "setup_requirements": [
-    "Google Calendar Account"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 9
+  }
 }

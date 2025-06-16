@@ -1,7 +1,42 @@
 {
   "id": "1322",
-  "filename": "1322_monitor_dmarc_reports_notifications",
+  "title": "Monitor DMARC Reports and Notify on DKIM/SPF Issues",
   "description": "Automatically checks for new DMARC reports via email, processes the data, and sends alerts to Slack and email if DKIM or SPF evaluations fail.",
+  "filename": "1322_monitor_dmarc_reports_notifications",
+  "services": [
+    "Compression",
+    "Date & Time",
+    "Edit Fields (Set)",
+    "Email Trigger (IMAP)",
+    "Extract from File",
+    "If",
+    "MySQL",
+    "Rename Keys",
+    "Send Email",
+    "Slack",
+    "Split Out",
+    "Sticky Note",
+    "XML"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Email Trigger (IMAP) Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Formatdate",
+    "Set Data",
+    "Xml"
+  ],
+  "setup_requirements": [
+    "Slack Account"
+  ],
   "content": {
     "id": "ATxZ5QYhdJq9mZDO",
     "meta": {
@@ -718,45 +753,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor DMARC Reports and Notify on DKIM/SPF Issues",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "HITL"
-  ],
-  "services": [
-    "Compression",
-    "Date & Time",
-    "Edit Fields (Set)",
-    "Email Trigger (IMAP)",
-    "Extract from File",
-    "If",
-    "MySQL",
-    "Rename Keys",
-    "Send Email",
-    "Slack",
-    "Split Out",
-    "Sticky Note",
-    "XML"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Email Trigger (IMAP) Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Formatdate",
-    "Set Data",
-    "Xml"
-  ],
-  "setup_requirements": [
-    "Slack Account"
-  ],
-  "workflow_complexity": 20,
-  "external_integrations_count": 13
+  }
 }

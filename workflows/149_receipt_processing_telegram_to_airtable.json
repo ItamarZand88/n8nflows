@@ -1,7 +1,32 @@
 {
   "id": "149",
-  "filename": "149_receipt_processing_telegram_to_airtable",
+  "title": "Automate receipt processing from Telegram to Airtable",
   "description": "Triggers on new Telegram messages, uploads receipts to AWS S3, extracts data with AWS Textract, and appends results to Airtable for easy tracking.",
+  "filename": "149_receipt_processing_telegram_to_airtable",
+  "services": [
+    "AWS S3",
+    "AWS Textract",
+    "Airtable",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Data & Storage",
+    "HITL",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Append",
+    "Upload"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -118,35 +143,5 @@
         ]
       }
     }
-  },
-  "title": "Automate receipt processing from Telegram to Airtable",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Data & Storage",
-    "HITL",
-    "Utility"
-  ],
-  "services": [
-    "AWS S3",
-    "AWS Textract",
-    "Airtable",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Append",
-    "Upload"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

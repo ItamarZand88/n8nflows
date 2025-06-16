@@ -1,7 +1,35 @@
 {
   "id": "1032",
-  "filename": "1032_receipt_processing_typeform_to_airtable",
+  "title": "Automate receipt processing from Typeform to Airtable",
   "description": "Captures uploaded receipts from Typeform submissions, extracts key information, and logs it into Airtable for easy expense tracking.",
+  "filename": "1032_receipt_processing_typeform_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Mindee",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Append",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Mindee API Key",
+    "Typeform API Key"
+  ],
   "content": {
     "id": "55",
     "name": "Expense Tracker App",
@@ -159,38 +187,5 @@
         ]
       }
     }
-  },
-  "title": "Automate receipt processing from Typeform to Airtable",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Mindee",
-    "Typeform"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Append",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Mindee API Key",
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

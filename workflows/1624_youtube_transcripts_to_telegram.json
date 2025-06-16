@@ -1,7 +1,39 @@
 {
   "id": "1624",
-  "filename": "1624_youtube_transcripts_to_telegram",
+  "title": "Extract YouTube Transcripts and Summarize via Telegram",
   "description": "Automatically retrieves YouTube video transcripts, summarizes them, and sends the summary to Telegram when a user shares a video link.",
+  "filename": "1624_youtube_transcripts_to_telegram",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Docs",
+    "Split Out",
+    "Sticky Note",
+    "Summarize",
+    "Telegram",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Miscellaneous"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Telegram Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Get",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Docs Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "KgoL0qrLYZUJFuAS",
     "meta": {
@@ -595,42 +627,5 @@
         ]
       }
     }
-  },
-  "title": "Extract YouTube Transcripts and Summarize via Telegram",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Docs",
-    "Split Out",
-    "Sticky Note",
-    "Summarize",
-    "Telegram",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Telegram Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Get",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Docs Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 22,
-  "external_integrations_count": 8
+  }
 }

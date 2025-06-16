@@ -1,7 +1,26 @@
 {
   "id": "2036",
-  "filename": "2036_calendar_management_openai_google_calendar",
+  "title": "Automate Calendar Management with OpenAI and Google Calendar",
   "description": "Triggers on workflow execution to manage calendar events using OpenAI's chat model, allowing users to create, update, delete, and retrieve events seamlessly.",
+  "filename": "2036_calendar_management_openai_google_calendar",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Workflow"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Delete",
+    "Getall",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "name": "🤖Calendar Agent",
     "nodes": [
@@ -359,29 +378,5 @@
     },
     "id": "0NtlJ41IozGhtFa6",
     "tags": []
-  },
-  "title": "Automate Calendar Management with OpenAI and Google Calendar",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Workflow"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Delete",
-    "Getall",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 2
+  }
 }

@@ -1,7 +1,29 @@
 {
   "id": "210",
-  "filename": "210_send_sms_alerts_kafka",
+  "title": "Send SMS alerts for high temperature readings from Kafka",
   "description": "Triggers on new Kafka messages, checks if temperature exceeds 50, and sends an SMS alert via Vonage for critical updates.",
+  "filename": "210_send_sms_alerts_kafka",
+  "services": [
+    "If",
+    "Kafka",
+    "No Operation, do nothing",
+    "Vonage"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Kafka Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Vonage API Key"
+  ],
   "content": {
     "id": "166",
     "name": "Receive messages from a topic and send an SMS",
@@ -106,32 +128,5 @@
         ]
       }
     }
-  },
-  "title": "Send SMS alerts for high temperature readings from Kafka",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "If",
-    "Kafka",
-    "No Operation, do nothing",
-    "Vonage"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Kafka Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Vonage API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

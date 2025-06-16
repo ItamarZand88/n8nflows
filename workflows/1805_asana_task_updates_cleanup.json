@@ -1,7 +1,32 @@
 {
   "id": "1805",
-  "filename": "1805_asana_task_updates_cleanup",
+  "title": "Automate Asana task updates and cleanup daily at 7am",
   "description": "Triggers daily at 7am to check user tasks in Asana, updates overdue tasks to today's date, and deletes completed tasks, keeping your workspace organized.",
+  "filename": "1805_asana_task_updates_cleanup",
+  "services": [
+    "Asana",
+    "If",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Delete",
+    "Filter Data",
+    "Get",
+    "Getall",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Asana API Key"
+  ],
   "content": {
     "id": "RJ4PaYq0JBr29KJm",
     "meta": {
@@ -313,35 +338,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Asana task updates and cleanup daily at 7am",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Asana",
-    "If",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Delete",
-    "Filter Data",
-    "Get",
-    "Getall",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Asana API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 4
+  }
 }

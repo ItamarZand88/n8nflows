@@ -1,7 +1,27 @@
 {
   "id": "89",
-  "filename": "89_track_events_in_segment",
+  "title": "Track events in Segment with a manual trigger",
   "description": "Manually triggers an event tracking in Segment, allowing users to log specific actions for analytics and insights.",
+  "filename": "89_track_events_in_segment",
+  "services": [
+    "Manual",
+    "Segment"
+  ],
+  "categories": [
+    "Analytics",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage track"
+  ],
+  "setup_requirements": [
+    "Segment API Key"
+  ],
   "content": {
     "id": "122",
     "name": "Track an event in Segment",
@@ -48,30 +68,5 @@
         ]
       }
     }
-  },
-  "title": "Track events in Segment with a manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Analytics",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Manual",
-    "Segment"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage track"
-  ],
-  "setup_requirements": [
-    "Segment API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

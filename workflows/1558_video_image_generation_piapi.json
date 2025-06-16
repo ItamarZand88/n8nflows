@@ -1,7 +1,27 @@
 {
   "id": "1558",
-  "filename": "1558_video_image_generation_piapi",
+  "title": "Generate Videos and Images from Prompts Using PiAPI",
   "description": "Triggers video and image generation from user-defined prompts, utilizing PiAPI to create engaging content for social media and marketing.",
+  "filename": "1558_video_image_generation_piapi",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "HBUhVkSsjslXAojw",
     "meta": {
@@ -399,30 +419,5 @@
         ]
       }
     }
-  },
-  "title": "Generate Videos and Images from Prompts Using PiAPI",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 13,
-  "external_integrations_count": 5
+  }
 }

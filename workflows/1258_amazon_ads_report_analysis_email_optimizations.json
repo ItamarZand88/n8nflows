@@ -1,7 +1,40 @@
 {
   "id": "1258",
-  "filename": "1258_amazon_ads_report_analysis_email_optimizations",
+  "title": "Automate Amazon Ads Report Analysis and Email Optimizations",
   "description": "Triggers on new Amazon Ads reports in Google Drive, analyzes data using AI, and sends optimization recommendations via Gmail.",
+  "filename": "1258_amazon_ads_report_analysis_email_optimizations",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Gmail",
+    "Google Drive",
+    "If",
+    "Manual",
+    "Merge",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download",
+    "Filter Data",
+    "Manage fileFolder",
+    "Set Data",
+    "Xlsx"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account"
+  ],
   "content": {
     "id": "Agn9dzf5YTqcmQGN",
     "meta": {
@@ -621,43 +654,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Amazon Ads Report Analysis and Email Optimizations",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Gmail",
-    "Google Drive",
-    "If",
-    "Manual",
-    "Merge",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download",
-    "Filter Data",
-    "Manage fileFolder",
-    "Set Data",
-    "Xlsx"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 22,
-  "external_integrations_count": 9
+  }
 }

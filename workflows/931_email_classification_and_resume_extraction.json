@@ -1,7 +1,26 @@
 {
   "id": "931",
-  "filename": "931_email_classification_and_resume_extraction",
+  "title": "Automate email classification and data extraction from resumes",
   "description": "Triggers on new emails, classifies them, extracts applicant data from attachments, and processes it for further actions.",
+  "filename": "931_email_classification_and_resume_extraction",
+  "services": [
+    "Email Trigger (IMAP)",
+    "Extract from File",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Email Trigger (IMAP) Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Pdf"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "39KuujB1fbOvx8Al",
     "meta": {
@@ -307,29 +326,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email classification and data extraction from resumes",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Email Trigger (IMAP)",
-    "Extract from File",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Email Trigger (IMAP) Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Pdf"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 4
+  }
 }

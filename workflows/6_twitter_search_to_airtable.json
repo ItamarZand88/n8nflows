@@ -1,7 +1,33 @@
 {
   "id": "6",
-  "filename": "6_twitter_search_to_airtable",
+  "title": "Automate Twitter search and log new tweets to Airtable",
   "description": "Triggers a search for new tweets mentioning 'verstappen', filters out existing entries, and appends new tweets to Airtable for easy tracking.",
+  "filename": "6_twitter_search_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Manual",
+    "Merge",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "List",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": 1003,
     "name": "New tweets",
@@ -256,36 +282,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Twitter search and log new tweets to Airtable",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Manual",
-    "Merge",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "List",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

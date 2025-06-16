@@ -1,7 +1,29 @@
 {
   "id": "2039",
-  "filename": "2039_email_management_with_openai_gmail",
+  "title": "Automate email management with OpenAI and Gmail",
   "description": "Triggers on workflow execution to manage emails using OpenAI for drafting, sending, and organizing emails in Gmail, enhancing productivity.",
+  "filename": "2039_email_management_with_openai_gmail",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Workflow"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Addlabels",
+    "Getall",
+    "Manage draft",
+    "Manage label",
+    "Markasunread",
+    "Reply",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "name": "🤖Email Agent",
     "nodes": [
@@ -400,32 +422,5 @@
     },
     "id": "C3hLlOS4O6ZJtVFy",
     "tags": []
-  },
-  "title": "Automate email management with OpenAI and Gmail",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Workflow"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Addlabels",
-    "Getall",
-    "Manage draft",
-    "Manage label",
-    "Markasunread",
-    "Reply",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 2
+  }
 }

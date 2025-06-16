@@ -1,7 +1,29 @@
 {
   "id": "1357",
-  "filename": "1357_gmail_email_categorization_with_openai",
+  "title": "Automate Gmail email categorization with OpenAI labels",
   "description": "Automatically categorizes incoming Gmail emails using existing labels or creates new ones based on content, improving email organization and management.",
+  "filename": "1357_gmail_email_categorization_with_openai",
+  "services": [
+    "Gmail",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Addlabels",
+    "Create",
+    "Get",
+    "Manage label"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -347,32 +369,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Gmail email categorization with OpenAI labels",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Gmail",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Addlabels",
-    "Create",
-    "Get",
-    "Manage label"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 2
+  }
 }

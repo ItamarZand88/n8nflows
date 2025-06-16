@@ -1,7 +1,42 @@
 {
   "id": "856",
-  "filename": "856_google_drive_permissions_audit",
+  "title": "Automate Google Drive Permissions Audit and Reporting",
   "description": "Schedules daily audits of Google Drive files, identifies risky permissions, and sends a summary report via email, enhancing security management.",
+  "filename": "856_google_drive_permissions_audit",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "Google Drive",
+    "Google Sheets",
+    "Loop Over Items (Split in Batches)",
+    "No Operation, do nothing",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Create",
+    "Manage fileFolder",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -679,45 +714,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Drive Permissions Audit and Reporting",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "Google Drive",
-    "Google Sheets",
-    "Loop Over Items (Split in Batches)",
-    "No Operation, do nothing",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Create",
-    "Manage fileFolder",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 11
+  }
 }

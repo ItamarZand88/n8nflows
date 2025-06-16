@@ -1,7 +1,33 @@
 {
   "id": "1898",
-  "filename": "1898_web_data_extraction_with_selenium_openai",
+  "title": "Automate web data extraction and analysis with Selenium and OpenAI",
   "description": "Extracts relevant data from specified web pages using Selenium, analyzes it with OpenAI, and returns structured results for further use.",
+  "filename": "1898_web_data_extraction_with_selenium_openai",
+  "services": [
+    "Code",
+    "Convert to File",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Limit",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Analyze",
+    "Extracthtmlcontent",
+    "Filter Data",
+    "Manage image",
+    "Set Data",
+    "Tobinary"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "kZ3aL4r7xc96Q7lp",
     "meta": {
@@ -1972,36 +1998,5 @@
         ]
       }
     }
-  },
-  "title": "Automate web data extraction and analysis with Selenium and OpenAI",
-  "nodes_count": 63,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Convert to File",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Limit",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Analyze",
-    "Extracthtmlcontent",
-    "Filter Data",
-    "Manage image",
-    "Set Data",
-    "Tobinary"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 63,
-  "external_integrations_count": 8
+  }
 }

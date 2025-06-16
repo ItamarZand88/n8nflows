@@ -1,7 +1,48 @@
 {
   "id": "183",
-  "filename": "183_github_workflow_backups_daily",
+  "title": "Automate GitHub workflow backups every 24 hours",
   "description": "Backs up all n8n workflows to GitHub daily, organizing files by date and notifying via Slack upon completion or failure.",
+  "filename": "183_github_workflow_backups_daily",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "GitHub",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "Schedule",
+    "Slack",
+    "Sticky Note",
+    "Switch",
+    "n8n"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Edit",
+    "Filter Data",
+    "Get",
+    "Manage file",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -794,51 +835,5 @@
         ]
       }
     }
-  },
-  "title": "Automate GitHub workflow backups every 24 hours",
-  "nodes_count": 26,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "GitHub",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "Schedule",
-    "Slack",
-    "Sticky Note",
-    "Switch",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Edit",
-    "Filter Data",
-    "Get",
-    "Manage file",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 26,
-  "external_integrations_count": 16
+  }
 }

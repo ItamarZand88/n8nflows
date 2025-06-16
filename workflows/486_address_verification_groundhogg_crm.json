@@ -1,7 +1,27 @@
 {
   "id": "486",
-  "filename": "486_address_verification_groundhogg_crm",
+  "title": "Automate address verification for new Groundhogg CRM contacts",
   "description": "Triggers on new contacts in Groundhogg CRM, verifies mailing addresses, and updates deliverability status automatically for efficient management.",
+  "filename": "486_address_verification_groundhogg_crm",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Webhook Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "041bccf206a3546a759ec4c0a3bf1256e62051945bb270c48f91f3acb13dc080"
@@ -323,30 +343,5 @@
         ]
       }
     }
-  },
-  "title": "Automate address verification for new Groundhogg CRM contacts",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Webhook Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 5
+  }
 }

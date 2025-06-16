@@ -1,7 +1,46 @@
 {
   "id": "822",
-  "filename": "822_outlook_invoices_to_excel",
+  "title": "Automate invoice processing from Outlook to Excel",
   "description": "Monitors an Outlook mailbox for invoices, extracts data from attachments, and uploads the results to an Excel workbook for easy review.",
+  "filename": "822_outlook_invoices_to_excel",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Markdown",
+    "Microsoft Excel",
+    "Microsoft Outlook",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Binarytopropery",
+    "Filter Data",
+    "Get",
+    "Getall",
+    "Manage worksheet",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Microsoft Excel Account",
+    "Microsoft Outlook Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -727,49 +766,5 @@
         ]
       }
     }
-  },
-  "title": "Automate invoice processing from Outlook to Excel",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Markdown",
-    "Microsoft Excel",
-    "Microsoft Outlook",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Binarytopropery",
-    "Filter Data",
-    "Get",
-    "Getall",
-    "Manage worksheet",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Microsoft Excel Account",
-    "Microsoft Outlook Account"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 13
+  }
 }

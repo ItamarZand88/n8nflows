@@ -1,7 +1,27 @@
 {
   "id": "197",
-  "filename": "197_weather_info_retrieval_openweathermap",
+  "title": "Retrieve current weather data for any city",
   "description": "Automatically fetches and formats current weather information for a specified city using OpenWeatherMap when a webhook is triggered.",
+  "filename": "197_weather_info_retrieval_openweathermap",
+  "services": [
+    "Edit Fields (Set)",
+    "OpenWeatherMap",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "OpenWeatherMap API Key"
+  ],
   "content": {
     "id": "158",
     "name": "Receive the weather information of any city",
@@ -89,30 +109,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve current weather data for any city",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Miscellaneous",
-    "Utility"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "OpenWeatherMap",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "OpenWeatherMap API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

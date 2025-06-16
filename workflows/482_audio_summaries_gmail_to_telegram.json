@@ -1,7 +1,37 @@
 {
   "id": "482",
-  "filename": "482_audio_summaries_gmail_to_telegram",
+  "title": "Automate audio summaries of Gmail promotions to Telegram",
   "description": "Triggers on new promotional emails in Gmail, summarizes content, converts it to audio, and sends the audio message to a Telegram chat.",
+  "filename": "482_audio_summaries_gmail_to_telegram",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Convert to File",
+    "Gmail",
+    "HTTP Request",
+    "Merge",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Get",
+    "Sendaudio",
+    "Tobinary"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Telegram API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "21754f977ce20b07e6fe64be3fbc663f6e6f730423d6e46c6cd2bf5b5e70a383"
@@ -393,40 +423,5 @@
         ]
       }
     }
-  },
-  "title": "Automate audio summaries of Gmail promotions to Telegram",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Convert to File",
-    "Gmail",
-    "HTTP Request",
-    "Merge",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Get",
-    "Sendaudio",
-    "Tobinary"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 8
+  }
 }

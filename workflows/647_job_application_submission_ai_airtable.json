@@ -1,7 +1,35 @@
 {
   "id": "647",
-  "filename": "647_job_application_submission_ai_airtable",
+  "title": "Automate Job Application Submission with AI and Airtable",
   "description": "Facilitates CV uploads through a form, classifies documents, extracts relevant data, and saves applications to Airtable for efficient processing.",
+  "filename": "647_job_application_submission_ai_airtable",
+  "services": [
+    "Airtable",
+    "Extract from File",
+    "HTTP Request",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Create",
+    "Filter Data",
+    "Pdf",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -1037,38 +1065,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Job Application Submission with AI and Airtable",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Extract from File",
-    "HTTP Request",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Create",
-    "Filter Data",
-    "Pdf",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 5
+  }
 }

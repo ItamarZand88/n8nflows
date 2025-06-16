@@ -1,7 +1,27 @@
 {
   "id": "1227",
-  "filename": "1227_typeform_to_pdf_invoice",
+  "title": "Automate PDF invoice generation from Typeform responses",
   "description": "Triggers on new Typeform submissions and generates a PDF invoice using APITemplate.io with the provided data for streamlined billing.",
+  "filename": "1227_typeform_to_pdf_invoice",
+  "services": [
+    "APITemplate.io",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Manage pdf"
+  ],
+  "setup_requirements": [
+    "APITemplate.io API Key",
+    "Typeform API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -57,30 +77,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PDF invoice generation from Typeform responses",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Marketing"
-  ],
-  "services": [
-    "APITemplate.io",
-    "Typeform"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Manage pdf"
-  ],
-  "setup_requirements": [
-    "APITemplate.io API Key",
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

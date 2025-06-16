@@ -1,7 +1,28 @@
 {
   "id": "1166",
-  "filename": "1166_daily_weather_updates_gotify",
+  "title": "Send daily weather updates via Gotify messages",
   "description": "Automatically retrieves the daily temperature for Berlin and sends a message via Gotify, keeping you informed about the weather each morning.",
+  "filename": "1166_daily_weather_updates_gotify",
+  "services": [
+    "Cron",
+    "Gotify",
+    "OpenWeatherMap"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Gotify API Key",
+    "OpenWeatherMap API Key"
+  ],
   "content": {
     "id": "115",
     "name": "Send daily weather updates via a message using the Gotify node",
@@ -84,31 +105,5 @@
         ]
       }
     }
-  },
-  "title": "Send daily weather updates via Gotify messages",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Miscellaneous",
-    "Utility"
-  ],
-  "services": [
-    "Cron",
-    "Gotify",
-    "OpenWeatherMap"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Gotify API Key",
-    "OpenWeatherMap API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

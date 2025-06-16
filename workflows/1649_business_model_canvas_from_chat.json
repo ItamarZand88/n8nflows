@@ -1,7 +1,26 @@
 {
   "id": "1649",
-  "filename": "1649_business_model_canvas_from_chat",
+  "title": "Create Business Model Canvas from Chat Input",
   "description": "Triggers when a chat message is received, generating a complete Business Model Canvas based on user input and providing a downloadable HTML file.",
+  "filename": "1649_business_model_canvas_from_chat",
+  "services": [
+    "Code",
+    "Convert to File",
+    "Merge",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Totext"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "lStrENIdqN2WyGqW",
     "meta": {
@@ -788,29 +807,5 @@
         ]
       }
     }
-  },
-  "title": "Create Business Model Canvas from Chat Input",
-  "nodes_count": 28,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Convert to File",
-    "Merge",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Totext"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 28,
-  "external_integrations_count": 4
+  }
 }

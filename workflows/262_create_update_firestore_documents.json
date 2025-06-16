@@ -1,7 +1,29 @@
 {
   "id": "262",
-  "filename": "262_create_update_firestore_documents",
+  "title": "Create and Update Firestore Documents with N8N",
   "description": "Triggers on manual execution to create a new document in Firestore and updates it with additional data, streamlining data management.",
+  "filename": "262_create_update_firestore_documents",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Cloud Firestore",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Set Data",
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Google Cloud Firestore Account"
+  ],
   "content": {
     "id": "179",
     "name": "Create, update, and get a document in Google Cloud Firestore",
@@ -181,32 +203,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Update Firestore Documents with N8N",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Cloud Firestore",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Set Data",
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Google Cloud Firestore Account"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 3
+  }
 }

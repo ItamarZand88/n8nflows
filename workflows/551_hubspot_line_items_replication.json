@@ -1,7 +1,30 @@
 {
   "id": "551",
-  "filename": "551_hubspot_line_items_replication",
+  "title": "Automate line item replication for new HubSpot deals",
   "description": "Triggers on deal creation in HubSpot, replicates line items from a won deal, and notifies via Slack, streamlining sales processes.",
+  "filename": "551_hubspot_line_items_replication",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Slack",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "8e95de061dd3893a50b8b4c150c8084a7848fb1df63f53533941b7c91a8ab996"
@@ -324,33 +347,5 @@
         ]
       }
     }
-  },
-  "title": "Automate line item replication for new HubSpot deals",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Slack",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 5
+  }
 }

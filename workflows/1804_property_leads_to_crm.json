@@ -1,7 +1,36 @@
 {
   "id": "1804",
-  "filename": "1804_property_leads_to_crm",
+  "title": "Automate Property Lead Generation and CRM Integration",
   "description": "Automatically searches for distressed properties, retrieves owner contact info, and exports leads to Excel and HubSpot for efficient follow-up.",
+  "filename": "1804_property_leads_to_crm",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "HubSpot",
+    "Manual",
+    "Schedule",
+    "Send Email",
+    "Spreadsheet File",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event",
+    "New Sticky Note Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Tofile"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "RGVS0tHJV7Wh6aX4",
     "meta": {
@@ -378,39 +407,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Property Lead Generation and CRM Integration",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "HubSpot",
-    "Manual",
-    "Schedule",
-    "Send Email",
-    "Spreadsheet File",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event",
-    "New Sticky Note Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Tofile"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 16,
-  "external_integrations_count": 9
+  }
 }

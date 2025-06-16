@@ -1,7 +1,29 @@
 {
   "id": "1981",
-  "filename": "1981_virtual_try_on_video_generation_kling",
+  "title": "Automate 360° Virtual Try-On Video Generation with Kling API",
   "description": "Triggers a virtual try-on video generation for clothing by uploading model and outfit images, providing an immersive shopping experience for e-commerce platforms.",
+  "filename": "1981_virtual_try_on_video_generation_kling",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "xQ0xqhNzFeEdBpFK",
     "meta": {
@@ -540,32 +562,5 @@
         ]
       }
     }
-  },
-  "title": "Automate 360° Virtual Try-On Video Generation with Kling API",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 16,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,47 @@
 {
   "id": "1474",
-  "filename": "1474_research_report_generation_distribution",
+  "title": "Automate Research Report Generation and Distribution",
   "description": "Triggers on a manual request to generate a comprehensive research report, aggregates data from various sources, and sends the report via Gmail and Telegram.",
+  "filename": "1474_research_report_generation_distribution",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Execute Workflow",
+    "Gmail",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Split Out",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Manage fileFolder",
+    "Senddocument"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "Google Sheets Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "EOJfPcM9PPWI1Rmp",
     "meta": {
@@ -886,50 +926,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Research Report Generation and Distribution",
-  "nodes_count": 26,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Execute Workflow",
-    "Gmail",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Split Out",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Manage fileFolder",
-    "Senddocument"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "Google Sheets Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 26,
-  "external_integrations_count": 12
+  }
 }

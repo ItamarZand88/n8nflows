@@ -1,7 +1,26 @@
 {
   "id": "385",
-  "filename": "385_manage_cloudflare_kv_storage",
+  "title": "Manage Cloudflare Key-Value Storage with Bulk Actions",
   "description": "Automates the management of Cloudflare KV namespaces and key-value pairs, allowing users to create, delete, rename, and read data efficiently through a manual trigger.",
+  "filename": "385_manage_cloudflare_kv_storage",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "dbd43d88d26a9e30d8aadc002c9e77f1400c683dd34efe3778d43d27250dde50"
@@ -1438,29 +1457,5 @@
         ]
       }
     }
-  },
-  "title": "Manage Cloudflare Key-Value Storage with Bulk Actions",
-  "nodes_count": 47,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 47,
-  "external_integrations_count": 4
+  }
 }

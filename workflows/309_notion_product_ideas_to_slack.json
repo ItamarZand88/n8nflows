@@ -1,7 +1,37 @@
 {
   "id": "309",
-  "filename": "309_notion_product_ideas_to_slack",
+  "title": "Automate Slack notifications for new Notion product ideas",
   "description": "Triggers weekly to fetch new product ideas from Notion and sends a summary notification to Slack, enhancing team collaboration and idea tracking.",
+  "filename": "309_notion_product_ideas_to_slack",
+  "services": [
+    "Code",
+    "Filter",
+    "Item Lists",
+    "Notion",
+    "Schedule",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage databasePage",
+    "Summarize"
+  ],
+  "setup_requirements": [
+    "Notion API Key",
+    "Slack API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -288,40 +318,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack notifications for new Notion product ideas",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Filter",
-    "Item Lists",
-    "Notion",
-    "Schedule",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage databasePage",
-    "Summarize"
-  ],
-  "setup_requirements": [
-    "Notion API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 7
+  }
 }

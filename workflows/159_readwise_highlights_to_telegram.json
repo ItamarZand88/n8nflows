@@ -1,7 +1,37 @@
 {
   "id": "159",
-  "filename": "159_readwise_highlights_to_telegram",
+  "title": "Sync Readwise highlights to Telegram every 10 minutes",
   "description": "Automatically fetches updated highlights from Readwise and sends them to a specified Telegram chat every 10 minutes, ensuring you never miss important insights.",
+  "filename": "159_readwise_highlights_to_telegram",
+  "services": [
+    "Convert to/from binary data",
+    "Cron",
+    "Edit Fields (Set)",
+    "Function",
+    "Function Item",
+    "HTTP Request",
+    "Manual",
+    "Read Binary File",
+    "Telegram",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -287,40 +317,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Readwise highlights to Telegram every 10 minutes",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Convert to/from binary data",
-    "Cron",
-    "Edit Fields (Set)",
-    "Function",
-    "Function Item",
-    "HTTP Request",
-    "Manual",
-    "Read Binary File",
-    "Telegram",
-    "Write Binary File"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 10
+  }
 }

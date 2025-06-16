@@ -1,7 +1,43 @@
 {
   "id": "1531",
-  "filename": "1531_video_creation_quotes_music_youtube",
+  "title": "Automate Video Creation with Quotes and Music for YouTube",
   "description": "Triggers video creation by selecting random quotes, video backgrounds, and music, then uploads the final video to YouTube, streamlining content production.",
+  "filename": "1531_video_creation_quotes_music_youtube",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Command",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "Read/Write Files from Disk",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Appendorupdate",
+    "Download",
+    "Manage fileFolder",
+    "Set Data",
+    "Write"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Google Sheets Account",
+    "HTTP Request Account"
+  ],
   "content": {
     "id": "gI3QGKTf52zwyh6O",
     "meta": {
@@ -936,46 +972,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Video Creation with Quotes and Music for YouTube",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Command",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "Read/Write Files from Disk",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Appendorupdate",
-    "Download",
-    "Manage fileFolder",
-    "Set Data",
-    "Write"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Google Sheets Account",
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 10
+  }
 }

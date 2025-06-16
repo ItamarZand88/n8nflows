@@ -1,7 +1,30 @@
 {
   "id": "863",
-  "filename": "863_dynamic_sales_charts_to_google_drive",
+  "title": "Create and Upload Dynamic Sales Charts to Google Drive",
   "description": "Generates a line chart from sales data and uploads it to Google Drive, triggered by a manual event for easy reporting.",
+  "filename": "863_dynamic_sales_charts_to_google_drive",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Manual",
+    "QuickChart",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "c6511943b220d4ab672ac957465b13db475def5fbbd0b0e41240952f5fd0c300"
@@ -142,33 +165,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Upload Dynamic Sales Charts to Google Drive",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Manual",
-    "QuickChart",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

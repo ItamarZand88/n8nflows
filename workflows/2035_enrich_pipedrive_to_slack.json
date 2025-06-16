@@ -1,7 +1,34 @@
 {
   "id": "2035",
-  "filename": "2035_enrich_pipedrive_to_slack",
+  "title": "Enrich Pipedrive Organizations with Web Data and Notify Slack",
   "description": "Triggers on new Pipedrive organizations, enriches their data using web scraping and OpenAI, then sends a formatted notification to Slack.",
+  "filename": "2035_enrich_pipedrive_to_slack",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "Markdown",
+    "Pipedrive",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Manage note"
+  ],
+  "setup_requirements": [
+    "Pipedrive API Key",
+    "Slack Account"
+  ],
   "content": {
     "id": "",
     "meta": {
@@ -267,37 +294,5 @@
         ]
       }
     }
-  },
-  "title": "Enrich Pipedrive Organizations with Web Data and Notify Slack",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "Markdown",
-    "Pipedrive",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Manage note"
-  ],
-  "setup_requirements": [
-    "Pipedrive API Key",
-    "Slack Account"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 6
+  }
 }

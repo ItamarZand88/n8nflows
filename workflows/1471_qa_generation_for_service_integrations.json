@@ -1,7 +1,48 @@
 {
   "id": "1471",
-  "filename": "1471_qa_generation_for_service_integrations",
+  "title": "Automate Q&A Generation for Service Integrations",
   "description": "Triggers on demand to generate structured Q&A pairs for various service integrations, utilizing AI to enhance responses and saving results to Google Drive.",
+  "filename": "1471_qa_generation_for_service_integrations",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Split Out",
+    "Sticky Note",
+    "Str",
+    "Switch",
+    "Webflow",
+    "Wordpress"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Createfromtext",
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Wordpress API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "ff412ab2a6cd55af5dedbbab9b8e43f0f3a0cb16fb794fa8d3837f957b771ad2"
@@ -1162,51 +1203,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Q&A Generation for Service Integrations",
-  "nodes_count": 36,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Split Out",
-    "Sticky Note",
-    "Str",
-    "Switch",
-    "Webflow",
-    "Wordpress"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Createfromtext",
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Wordpress API Key"
-  ],
-  "workflow_complexity": 36,
-  "external_integrations_count": 16
+  }
 }

@@ -1,7 +1,23 @@
 {
   "id": "369",
-  "filename": "369_icypeas_email_retrieval",
+  "title": "Automate real-time email retrieval from Icypeas searches",
   "description": "Sets up a webhook to capture email search results from Icypeas, extracting names and emails for immediate use in other applications.",
+  "filename": "369_icypeas_email_retrieval",
+  "services": [
+    "Edit Fields (Set)",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833"
@@ -112,26 +128,5 @@
         ]
       }
     }
-  },
-  "title": "Automate real-time email retrieval from Icypeas searches",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 3
+  }
 }

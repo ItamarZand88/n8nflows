@@ -1,7 +1,27 @@
 {
   "id": "368",
-  "filename": "368_email_verification_with_google_sheets_and_icypeas",
+  "title": "Automate email verifications using Google Sheets and Icypeas",
   "description": "Triggers a batch email verification process by reading emails from Google Sheets and sending them to Icypeas for validation, streamlining your email management.",
+  "filename": "368_email_verification_with_google_sheets_and_icypeas",
+  "services": [
+    "Code",
+    "Google Sheets",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833"
@@ -195,30 +215,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email verifications using Google Sheets and Icypeas",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Google Sheets",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 5
+  }
 }

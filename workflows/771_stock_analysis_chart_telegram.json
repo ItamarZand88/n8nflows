@@ -1,7 +1,48 @@
 {
   "id": "771",
-  "filename": "771_stock_analysis_chart_telegram",
+  "title": "Automate stock analysis and chart generation via Telegram",
   "description": "Triggers on new Telegram messages, analyzes stock data, generates charts, and sends insights back to users for informed trading decisions.",
+  "filename": "771_stock_analysis_chart_telegram",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Schedule",
+    "Sticky Note",
+    "Switch",
+    "Telegram",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Schedule Event",
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Analyze",
+    "Create",
+    "Manage audio",
+    "Manage file",
+    "Manage image",
+    "Search",
+    "Sendphoto",
+    "Set Data",
+    "Transcribe"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Telegram API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "6a2a7715680b8313f7cb4676321c5baa46680adfb913072f089f2766f42e43bd"
@@ -1098,51 +1139,5 @@
         ]
       }
     }
-  },
-  "title": "Automate stock analysis and chart generation via Telegram",
-  "nodes_count": 35,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Schedule",
-    "Sticky Note",
-    "Switch",
-    "Telegram",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Schedule Event",
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Analyze",
-    "Create",
-    "Manage audio",
-    "Manage file",
-    "Manage image",
-    "Search",
-    "Sendphoto",
-    "Set Data",
-    "Transcribe"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 35,
-  "external_integrations_count": 10
+  }
 }

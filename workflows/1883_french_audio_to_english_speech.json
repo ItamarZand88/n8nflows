@@ -1,7 +1,28 @@
 {
   "id": "1883",
-  "filename": "1883_french_audio_to_english_speech",
+  "title": "Generate and Transcribe French Audio to English Speech",
   "description": "Triggers on manual execution to convert French text to audio, transcribes it, translates to English, and generates audio of the English text.",
+  "filename": "1883_french_audio_to_english_speech",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -353,31 +374,5 @@
         ]
       }
     }
-  },
-  "title": "Generate and Transcribe French Audio to English Speech",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 4
+  }
 }

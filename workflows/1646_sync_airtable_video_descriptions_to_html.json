@@ -1,7 +1,31 @@
 {
   "id": "1646",
-  "filename": "1646_sync_airtable_video_descriptions_to_html",
+  "title": "Sync Airtable video descriptions to HTML format",
   "description": "Automatically converts video descriptions in Airtable to HTML format and updates records based on single or multiple entries, enhancing content presentation.",
+  "filename": "1646_sync_airtable_video_descriptions_to_html",
+  "services": [
+    "Airtable",
+    "If",
+    "Markdown",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Search",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "LMMle9xFHQxXUWQy",
     "meta": {
@@ -1314,34 +1338,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Airtable video descriptions to HTML format",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "If",
-    "Markdown",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Search",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,37 @@
 {
   "id": "1686",
-  "filename": "1686_pdf_image_extraction_analysis_openai",
+  "title": "Automate PDF image extraction and analysis with OpenAI",
   "description": "Triggers manual execution to extract images from a PDF, analyzes them using OpenAI's GPT-4o, and compiles the results into a text file.",
+  "filename": "1686_pdf_image_extraction_analysis_openai",
+  "services": [
+    "Code",
+    "Convert to File",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "HTTP Request",
+    "Manual",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Analyze",
+    "Download",
+    "Manage image",
+    "Set Data",
+    "Totext"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "NDCN2arRu5tLuP61",
     "meta": {
@@ -367,40 +397,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PDF image extraction and analysis with OpenAI",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Convert to File",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "HTTP Request",
-    "Manual",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Analyze",
-    "Download",
-    "Manage image",
-    "Set Data",
-    "Totext"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 8
+  }
 }

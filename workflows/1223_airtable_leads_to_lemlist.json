@@ -1,7 +1,28 @@
 {
   "id": "1223",
-  "filename": "1223_airtable_leads_to_lemlist",
+  "title": "Automate lead management from Airtable to Lemlist",
   "description": "Lists leads from Airtable and automatically adds them to a Lemlist campaign for streamlined email outreach.",
+  "filename": "1223_airtable_leads_to_lemlist",
+  "services": [
+    "Airtable",
+    "Lemlist"
+  ],
+  "categories": [
+    "Communication",
+    "Data & Storage",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Get",
+    "List",
+    "Manage lead"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Lemlist API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -82,31 +103,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead management from Airtable to Lemlist",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Data & Storage",
-    "Marketing"
-  ],
-  "services": [
-    "Airtable",
-    "Lemlist"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Get",
-    "List",
-    "Manage lead"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Lemlist API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

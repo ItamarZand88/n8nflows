@@ -1,7 +1,26 @@
 {
   "id": "1443",
-  "filename": "1443_customer_support_responses_with_ai",
+  "title": "Automate customer support responses using AI models",
   "description": "Triggers on new chat messages, processes customer complaints, and generates polite responses using AI language models for improved support efficiency.",
+  "filename": "1443_customer_support_responses_with_ai",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "dQC8kExvbCrovWf0",
     "meta": {
@@ -631,29 +650,5 @@
         ]
       }
     }
-  },
-  "title": "Automate customer support responses using AI models",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 22,
-  "external_integrations_count": 4
+  }
 }

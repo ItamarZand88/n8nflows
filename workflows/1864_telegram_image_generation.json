@@ -1,7 +1,33 @@
 {
   "id": "1864",
-  "filename": "1864_telegram_image_generation",
+  "title": "Automate image generation and response in Telegram",
   "description": "Triggers on new messages in Telegram, processes user input, generates images using AI, and sends responses back to the chat, enhancing user engagement.",
+  "filename": "1864_telegram_image_generation",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "Sticky Note",
+    "Switch",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Deletemessage",
+    "Sendchataction",
+    "Sendphoto"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "RLWjEhY8L4TORAIj",
     "meta": {
@@ -978,36 +1004,5 @@
         ]
       }
     }
-  },
-  "title": "Automate image generation and response in Telegram",
-  "nodes_count": 29,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "Sticky Note",
-    "Switch",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Deletemessage",
-    "Sendchataction",
-    "Sendphoto"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 29,
-  "external_integrations_count": 5
+  }
 }

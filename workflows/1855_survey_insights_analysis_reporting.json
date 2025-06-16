@@ -1,7 +1,46 @@
 {
   "id": "1855",
-  "filename": "1855_survey_insights_analysis_reporting",
+  "title": "Automate Survey Insights Analysis and Reporting",
   "description": "Processes survey responses from Google Sheets, analyzes data for insights, and exports findings back to a new sheet for easy access and reporting.",
+  "filename": "1855_survey_insights_analysis_reporting",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Filter",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Edit Fields (Set) Event",
+    "New Execute Sub-workflow Event",
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Create",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "HTTP Request API Key",
+    "HTTP Request Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -1273,49 +1312,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Survey Insights Analysis and Reporting",
-  "nodes_count": 42,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Filter",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Edit Fields (Set) Event",
-    "New Execute Sub-workflow Event",
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Create",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "HTTP Request API Key",
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 42,
-  "external_integrations_count": 12
+  }
 }

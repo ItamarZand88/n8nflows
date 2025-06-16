@@ -1,7 +1,24 @@
 {
   "id": "1161",
-  "filename": "1161_translate_text_to_german",
+  "title": "Translate text from English to German using Google Translate",
   "description": "Triggers a manual event to translate a predefined English text into German using Google Translate, streamlining communication in multiple languages.",
+  "filename": "1161_translate_text_to_german",
+  "services": [
+    "Google Translate",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Google Translate Account"
+  ],
   "content": {
     "id": "92",
     "name": "Translate text from English to German",
@@ -49,27 +66,5 @@
         ]
       }
     }
-  },
-  "title": "Translate text from English to German using Google Translate",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Utility"
-  ],
-  "services": [
-    "Google Translate",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Google Translate Account"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

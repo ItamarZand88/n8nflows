@@ -1,7 +1,38 @@
 {
   "id": "437",
-  "filename": "437_lead_verification_hunter_pipedrive",
+  "title": "Automate lead verification and management with Hunter and Pipedrive",
   "description": "Captures form submissions, verifies email validity, and manages leads and organizations in Pipedrive using Hunter and Clearbit for enhanced sales follow-up.",
+  "filename": "437_lead_verification_hunter_pipedrive",
+  "services": [
+    "Clearbit",
+    "Hunter",
+    "If",
+    "No Operation, do nothing",
+    "Pipedrive",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Emailverifier",
+    "Filter Data",
+    "Manage lead",
+    "Manage organization",
+    "Manage person",
+    "Search"
+  ],
+  "setup_requirements": [
+    "Clearbit API Key",
+    "Hunter API Key",
+    "Pipedrive API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833"
@@ -481,41 +512,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead verification and management with Hunter and Pipedrive",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Sales"
-  ],
-  "services": [
-    "Clearbit",
-    "Hunter",
-    "If",
-    "No Operation, do nothing",
-    "Pipedrive",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Emailverifier",
-    "Filter Data",
-    "Manage lead",
-    "Manage organization",
-    "Manage person",
-    "Search"
-  ],
-  "setup_requirements": [
-    "Clearbit API Key",
-    "Hunter API Key",
-    "Pipedrive API Key"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 7
+  }
 }

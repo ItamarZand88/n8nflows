@@ -1,7 +1,39 @@
 {
   "id": "792",
-  "filename": "792_monitor_hibp_breaches",
+  "title": "Monitor haveibeenpwned for new data breaches",
   "description": "Automatically checks for new breaches on haveibeenpwned.com every 15 minutes and alerts if a new breach is detected, helping you stay informed about data security.",
+  "filename": "792_monitor_hibp_breaches",
+  "services": [
+    "Convert to File",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "Read/Write Files from Disk",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Fromjson",
+    "Set Data",
+    "Tojson",
+    "Write"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "568298fde06d3db80a2eea77fe5bf45f0c7bb898dea20b769944e9ac7c6c5a80",
@@ -619,42 +651,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor haveibeenpwned for new data breaches",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Convert to File",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "Read/Write Files from Disk",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Fromjson",
-    "Set Data",
-    "Tojson",
-    "Write"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 24,
-  "external_integrations_count": 12
+  }
 }

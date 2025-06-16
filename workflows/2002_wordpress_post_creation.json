@@ -1,7 +1,31 @@
 {
   "id": "2002",
-  "filename": "2002_wordpress_post_creation",
+  "title": "Automate WordPress post creation with XML-RPC",
   "description": "Triggers manual execution to create a new post on WordPress using XML-RPC, streamlining content publishing with specified title and text.",
+  "filename": "2002_wordpress_post_creation",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "yPIST7l13huQEjY5",
     "meta": {
@@ -319,34 +343,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WordPress post creation with XML-RPC",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "XML"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 11,
-  "external_integrations_count": 8
+  }
 }

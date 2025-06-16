@@ -1,7 +1,27 @@
 {
   "id": "1225",
-  "filename": "1225_weather_data_response",
+  "title": "Fetch and Respond with Current Weather Data for a City",
   "description": "Retrieves current weather information for a specified city and formats a response with temperature details for easy sharing.",
+  "filename": "1225_weather_data_response",
+  "services": [
+    "Edit Fields (Set)",
+    "OpenWeatherMap",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "OpenWeatherMap API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -113,30 +133,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch and Respond with Current Weather Data for a City",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Miscellaneous",
-    "Utility"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "OpenWeatherMap",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "OpenWeatherMap API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

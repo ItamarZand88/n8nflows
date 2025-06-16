@@ -1,7 +1,36 @@
 {
   "id": "1372",
-  "filename": "1372_whatsapp_ai_product_inquiries",
+  "title": "Automate WhatsApp responses with AI-powered product inquiries",
   "description": "Triggers on new WhatsApp messages, processes text inquiries using an AI agent, and replies with product information from a catalog.",
+  "filename": "1372_whatsapp_ai_product_inquiries",
+  "services": [
+    "Extract from File",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note",
+    "Switch",
+    "WhatsApp",
+    "WhatsApp Business Cloud"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New WhatsApp Event"
+  ],
+  "actions": [
+    "Pdf",
+    "Send"
+  ],
+  "setup_requirements": [
+    "WhatsApp API Key",
+    "WhatsApp Business Cloud API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -701,39 +730,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WhatsApp responses with AI-powered product inquiries",
-  "nodes_count": 28,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Extract from File",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note",
-    "Switch",
-    "WhatsApp",
-    "WhatsApp Business Cloud"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New WhatsApp Event"
-  ],
-  "actions": [
-    "Pdf",
-    "Send"
-  ],
-  "setup_requirements": [
-    "WhatsApp API Key",
-    "WhatsApp Business Cloud API Key"
-  ],
-  "workflow_complexity": 28,
-  "external_integrations_count": 7
+  }
 }

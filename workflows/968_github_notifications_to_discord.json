@@ -1,7 +1,26 @@
 {
   "id": "968",
-  "filename": "968_github_notifications_to_discord",
+  "title": "Monitor GitHub notifications and send updates to Discord",
   "description": "Checks for new GitHub notifications every minute and sends formatted updates to a Discord channel if there are any new notifications.",
+  "filename": "968_github_notifications_to_discord",
+  "services": [
+    "Cron",
+    "Discord",
+    "Function",
+    "HTTP Request",
+    "If"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -172,29 +191,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor GitHub notifications and send updates to Discord",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Discord",
-    "Function",
-    "HTTP Request",
-    "If"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 5
+  }
 }

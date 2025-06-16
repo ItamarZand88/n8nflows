@@ -1,7 +1,28 @@
 {
   "id": "588",
-  "filename": "588_fastmail_email_replies_with_openai",
+  "title": "Automate email replies in Fastmail using OpenAI",
   "description": "Monitors an IMAP inbox for new emails, generates personalized replies with OpenAI, and saves drafts in Fastmail for review.",
+  "filename": "588_fastmail_email_replies_with_openai",
+  "services": [
+    "Edit Fields (Set)",
+    "Email Trigger (IMAP)",
+    "Filter",
+    "HTTP Request",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Email Trigger (IMAP) Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "04ab549d8bbb435ec33b81e4e29965c46cf6f0f9e7afe631018b5e34c8eead58"
@@ -435,31 +456,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email replies in Fastmail using OpenAI",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Email Trigger (IMAP)",
-    "Filter",
-    "HTTP Request",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Email Trigger (IMAP) Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 11,
-  "external_integrations_count": 6
+  }
 }

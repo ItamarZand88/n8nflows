@@ -1,7 +1,26 @@
 {
   "id": "316",
-  "filename": "316_compare_fruit_datasets",
+  "title": "Compare and Analyze Fruit Datasets for Insights",
   "description": "Triggers a manual workflow to compare two fruit datasets, highlighting differences and similarities for better data analysis and decision-making.",
+  "filename": "316_compare_fruit_datasets",
+  "services": [
+    "Code",
+    "Compare Datasets",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -136,29 +155,5 @@
         ]
       }
     }
-  },
-  "title": "Compare and Analyze Fruit Datasets for Insights",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Compare Datasets",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

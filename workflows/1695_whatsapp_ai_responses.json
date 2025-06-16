@@ -1,7 +1,38 @@
 {
   "id": "1695",
-  "filename": "1695_whatsapp_ai_responses",
+  "title": "Automate WhatsApp responses with AI assistance",
   "description": "Responds to WhatsApp messages using an AI agent that provides product information and customer support, enhancing user engagement and service efficiency.",
+  "filename": "1695_whatsapp_ai_responses",
+  "services": [
+    "Google Drive",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note",
+    "Webhook",
+    "WhatsApp Business Cloud"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download",
+    "Filter Data",
+    "Manage fileFolder",
+    "Send"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "WhatsApp Business Cloud API Key"
+  ],
   "content": {
     "id": "NLOITjwt4iZK16Qq",
     "meta": {
@@ -795,41 +826,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WhatsApp responses with AI assistance",
-  "nodes_count": 28,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Google Drive",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note",
-    "Webhook",
-    "WhatsApp Business Cloud"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download",
-    "Filter Data",
-    "Manage fileFolder",
-    "Send"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "WhatsApp Business Cloud API Key"
-  ],
-  "workflow_complexity": 28,
-  "external_integrations_count": 7
+  }
 }

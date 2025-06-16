@@ -1,7 +1,32 @@
 {
   "id": "90",
-  "filename": "90_filter_toxic_language_telegram_google_perspective",
+  "title": "Filter Toxic Language in Telegram Messages with Google Perspective",
   "description": "Triggers on new Telegram messages, analyzes for toxicity, and responds if profanity is detected, promoting a positive chat environment.",
+  "filename": "90_filter_toxic_language_telegram_google_perspective",
+  "services": [
+    "Google Perspective",
+    "If",
+    "No Operation, do nothing",
+    "Telegram"
+  ],
+  "categories": [
+    "Analytics",
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Google Perspective Account",
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -149,35 +174,5 @@
         ]
       }
     }
-  },
-  "title": "Filter Toxic Language in Telegram Messages with Google Perspective",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Analytics",
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Utility"
-  ],
-  "services": [
-    "Google Perspective",
-    "If",
-    "No Operation, do nothing",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Google Perspective Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

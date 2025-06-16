@@ -1,7 +1,26 @@
 {
   "id": "518",
-  "filename": "518_convert_webpage_to_pdf",
+  "title": "Convert Web Pages to PDF and Save Automatically",
   "description": "Triggers a PDF conversion of a specified webpage and saves the output file to disk, streamlining document management.",
+  "filename": "518_convert_webpage_to_pdf",
+  "services": [
+    "HTTP Request",
+    "Manual",
+    "Read/Write Files from Disk",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Write"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "1dd912a1610cd0376bae7bb8f1b5838d2b601f42ac66a48e012166bb954fed5a",
@@ -138,29 +157,5 @@
         ]
       }
     }
-  },
-  "title": "Convert Web Pages to PDF and Save Automatically",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Manual",
-    "Read/Write Files from Disk",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Write"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

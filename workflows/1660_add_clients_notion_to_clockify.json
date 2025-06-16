@@ -1,7 +1,30 @@
 {
   "id": "1660",
-  "filename": "1660_add_clients_notion_to_clockify",
+  "title": "Automate client addition from Notion to Clockify",
   "description": "Triggers on new client entries in Notion and automatically adds them to Clockify, streamlining client management and saving time.",
+  "filename": "1660_add_clients_notion_to_clockify",
+  "services": [
+    "Clockify",
+    "Notion",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Notion Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage client"
+  ],
+  "setup_requirements": [
+    "Clockify API Key",
+    "Notion API Key"
+  ],
   "content": {
     "id": "mbgpq1PH1SFkHi6w",
     "meta": {
@@ -116,33 +139,5 @@
         ]
       }
     }
-  },
-  "title": "Automate client addition from Notion to Clockify",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Clockify",
-    "Notion",
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Notion Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage client"
-  ],
-  "setup_requirements": [
-    "Clockify API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

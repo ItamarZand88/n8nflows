@@ -1,7 +1,27 @@
 {
   "id": "176",
-  "filename": "176_add_subscriber_to_sendy_and_send_campaign",
+  "title": "Add subscribers to Sendy and send welcome campaigns",
   "description": "Triggers manually to add a subscriber to a Sendy list and automatically sends a welcome email campaign to the new subscriber.",
+  "filename": "176_add_subscriber_to_sendy_and_send_campaign",
+  "services": [
+    "Manual",
+    "Sendy"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage campaign"
+  ],
+  "setup_requirements": [
+    "Sendy API Key"
+  ],
   "content": {
     "id": "14",
     "name": "Add a subscriber to a list and create and send a campaign",
@@ -87,30 +107,5 @@
         ]
       }
     }
-  },
-  "title": "Add subscribers to Sendy and send welcome campaigns",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Manual",
-    "Sendy"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage campaign"
-  ],
-  "setup_requirements": [
-    "Sendy API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

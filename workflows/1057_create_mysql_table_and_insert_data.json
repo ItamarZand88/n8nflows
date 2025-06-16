@@ -1,7 +1,25 @@
 {
   "id": "1057",
-  "filename": "1057_create_mysql_table_and_insert_data",
+  "title": "Create a MySQL Table and Insert Sample Data",
   "description": "Triggers a manual execution to create a MySQL table and insert sample data, streamlining database setup for testing or development.",
+  "filename": "1057_create_mysql_table_and_insert_data",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "MySQL"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Executequery",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -109,28 +127,5 @@
         ]
       }
     }
-  },
-  "title": "Create a MySQL Table and Insert Sample Data",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual",
-    "MySQL"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Executequery",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

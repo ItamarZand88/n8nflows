@@ -1,7 +1,32 @@
 {
   "id": "1138",
-  "filename": "1138_squarespace_to_shopify_customers",
+  "title": "Automate Squarespace profile submissions to Shopify customers",
   "description": "Captures profile submissions via a webhook, processes Squarespace data, and updates Shopify customer records in Google Sheets for streamlined management.",
+  "filename": "1138_squarespace_to_shopify_customers",
+  "services": [
+    "Extract from File",
+    "Google Sheets",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Appendorupdate"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "7Gw4IfHaVMDSj70o",
     "meta": {
@@ -800,35 +825,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Squarespace profile submissions to Shopify customers",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Extract from File",
-    "Google Sheets",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Appendorupdate"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 6
+  }
 }

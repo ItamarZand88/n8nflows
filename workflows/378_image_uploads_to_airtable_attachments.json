@@ -1,7 +1,26 @@
 {
   "id": "378",
-  "filename": "378_image_uploads_to_airtable_attachments",
+  "title": "Automate image uploads from Airtable URLs to attachments",
   "description": "Triggers manual execution to fetch image URLs from Airtable and updates records by attaching the images, streamlining your data management.",
+  "filename": "378_image_uploads_to_airtable_attachments",
+  "services": [
+    "Airtable",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Search",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "dbd43d88d26a9e30d8aadc002c9e77f1400c683dd34efe3778d43d27250dde50"
@@ -160,29 +179,5 @@
         ]
       }
     }
-  },
-  "title": "Automate image uploads from Airtable URLs to attachments",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Airtable",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Search",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

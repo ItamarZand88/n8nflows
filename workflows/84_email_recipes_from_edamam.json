@@ -1,7 +1,26 @@
 {
   "id": "84",
-  "filename": "84_email_recipes_from_edamam",
+  "title": "Automate Recipe Suggestions via Email from Edamam",
   "description": "Triggers daily at 10 AM to fetch and email personalized recipe suggestions based on user-defined criteria from Edamam API.",
+  "filename": "84_email_recipes_from_edamam",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Function",
+    "HTTP Request",
+    "Send Email"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "11",
     "name": "What To Eat",
@@ -363,29 +382,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Recipe Suggestions via Email from Edamam",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Function",
-    "HTTP Request",
-    "Send Email"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 9,
-  "external_integrations_count": 5
+  }
 }

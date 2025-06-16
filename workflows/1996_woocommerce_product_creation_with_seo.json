@@ -1,7 +1,40 @@
 {
   "id": "1996",
-  "filename": "1996_woocommerce_product_creation_with_seo",
+  "title": "Automate WooCommerce Product Creation with SEO Optimization",
   "description": "Triggers product creation from Google Sheets, generates SEO meta tags, and updates WooCommerce, enhancing online visibility and saving time.",
+  "filename": "1996_woocommerce_product_creation_with_seo",
+  "services": [
+    "Code",
+    "Google Sheets",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Sticky Note",
+    "Telegram",
+    "WooCommerce"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Manage product",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Telegram API Key",
+    "WooCommerce API Key"
+  ],
   "content": {
     "id": "YkATyvsBXigxnMgo",
     "meta": {
@@ -813,43 +846,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WooCommerce Product Creation with SEO Optimization",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity",
-    "Sales"
-  ],
-  "services": [
-    "Code",
-    "Google Sheets",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Sticky Note",
-    "Telegram",
-    "WooCommerce"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Manage product",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Telegram API Key",
-    "WooCommerce API Key"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 7
+  }
 }

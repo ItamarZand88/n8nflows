@@ -1,7 +1,38 @@
 {
   "id": "1693",
-  "filename": "1693_gmail_invoices_payments_to_sheets",
+  "title": "Automate invoice and payment processing from Gmail to Google Sheets",
   "description": "Monitors Gmail for new invoices and payment notifications, extracts relevant details, and logs them into Google Sheets for easy tracking and management.",
+  "filename": "1693_gmail_invoices_payments_to_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Gmail",
+    "Google Sheets",
+    "Merge",
+    "Split Out",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Append",
+    "Extracthtmlcontent",
+    "Pdf",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "nkMjcOC4hpte1a0t",
     "meta": {
@@ -1135,41 +1166,5 @@
         ]
       }
     }
-  },
-  "title": "Automate invoice and payment processing from Gmail to Google Sheets",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Gmail",
-    "Google Sheets",
-    "Merge",
-    "Split Out",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Append",
-    "Extracthtmlcontent",
-    "Pdf",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 8
+  }
 }

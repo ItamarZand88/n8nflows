@@ -1,7 +1,24 @@
 {
   "id": "1066",
-  "filename": "1066_google_calendar_event_management_mcp",
+  "title": "Automate Google Calendar event management with MCP Server",
   "description": "Integrates Google Calendar with an MCP Server to create, update, delete, and search events based on chat messages, streamlining event management.",
+  "filename": "1066_google_calendar_event_management_mcp",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Delete",
+    "Getall",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "5opbTWPZRN05bYdz",
     "meta": {
@@ -523,27 +540,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Calendar event management with MCP Server",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Delete",
-    "Getall",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 23,
-  "external_integrations_count": 1
+  }
 }

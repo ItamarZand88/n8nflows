@@ -1,7 +1,21 @@
 {
   "id": "1127",
-  "filename": "1127_mock_data_array_for_testing",
+  "title": "Create an array of mock data objects for testing",
   "description": "Generates an array of mock user data objects, simplifying testing and development processes by providing sample data for applications.",
+  "filename": "1127_mock_data_array_for_testing",
+  "services": [
+    "Function"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -42,24 +56,5 @@
         ]
       }
     }
-  },
-  "title": "Create an array of mock data objects for testing",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Function"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 2,
-  "external_integrations_count": 1
+  }
 }

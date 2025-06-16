@@ -1,7 +1,25 @@
 {
   "id": "1175",
-  "filename": "1175_current_weather_data_openweathermap",
+  "title": "Fetch current weather data for a specified city",
   "description": "Triggers a manual event to retrieve and display the current weather data for Berlin, using OpenWeatherMap API for real-time updates.",
+  "filename": "1175_current_weather_data_openweathermap",
+  "services": [
+    "Manual",
+    "OpenWeatherMap"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "OpenWeatherMap API Key"
+  ],
   "content": {
     "id": "88",
     "name": "Get the current weather data for a city",
@@ -52,28 +70,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch current weather data for a specified city",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Miscellaneous",
-    "Utility"
-  ],
-  "services": [
-    "Manual",
-    "OpenWeatherMap"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "OpenWeatherMap API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

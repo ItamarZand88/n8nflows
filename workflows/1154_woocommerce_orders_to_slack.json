@@ -1,7 +1,30 @@
 {
   "id": "1154",
-  "filename": "1154_woocommerce_orders_to_slack",
+  "title": "Send Slack notifications for new WooCommerce orders over $100",
   "description": "Triggers on new WooCommerce orders, checks if total is over $100, and sends a detailed notification to Slack with order information.",
+  "filename": "1154_woocommerce_orders_to_slack",
+  "services": [
+    "If",
+    "Slack",
+    "WooCommerce"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New WooCommerce Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Slack API Key",
+    "WooCommerce API Key"
+  ],
   "content": {
     "id": 81,
     "name": "New WooCommerce order to Slack",
@@ -130,33 +153,5 @@
         ]
       }
     }
-  },
-  "title": "Send Slack notifications for new WooCommerce orders over $100",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "If",
-    "Slack",
-    "WooCommerce"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New WooCommerce Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Slack API Key",
-    "WooCommerce API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,31 @@
 {
   "id": "1448",
-  "filename": "1448_book_data_extraction_to_email",
+  "title": "Automate book data extraction and email CSV reports",
   "description": "Watches a Google Sheet for new URLs, scrapes book data from a website, sorts it by price, and emails a CSV report with the results.",
+  "filename": "1448_book_data_extraction_to_email",
+  "services": [
+    "Convert to File",
+    "Gmail",
+    "HTTP Request",
+    "Sort",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Extracthtmlcontent"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "id": "DswhuYzoemjA6iNN",
     "meta": {
@@ -365,34 +389,5 @@
         ]
       }
     }
-  },
-  "title": "Automate book data extraction and email CSV reports",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Convert to File",
-    "Gmail",
-    "HTTP Request",
-    "Sort",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Extracthtmlcontent"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 6
+  }
 }

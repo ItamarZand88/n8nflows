@@ -1,7 +1,26 @@
 {
   "id": "1016",
-  "filename": "1016_fetch_wordpress_posts_manually",
+  "title": "Retrieve all posts from Wordpress with a manual trigger",
   "description": "Manually fetches all posts from your Wordpress site, allowing you to review content quickly and efficiently whenever needed.",
+  "filename": "1016_fetch_wordpress_posts_manually",
+  "services": [
+    "Manual",
+    "Wordpress"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Wordpress API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -44,29 +63,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve all posts from Wordpress with a manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Manual",
-    "Wordpress"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getall"
-  ],
-  "setup_requirements": [
-    "Wordpress API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

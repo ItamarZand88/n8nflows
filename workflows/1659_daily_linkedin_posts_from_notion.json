@@ -1,7 +1,39 @@
 {
   "id": "1659",
-  "filename": "1659_daily_linkedin_posts_from_notion",
+  "title": "Automate daily LinkedIn posts from Notion database",
   "description": "Triggers daily to fetch posts from Notion, reformats them, and shares on LinkedIn, enhancing engagement effortlessly.",
+  "filename": "1659_daily_linkedin_posts_from_notion",
+  "services": [
+    "Aggregate",
+    "HTTP Request",
+    "LinkedIn",
+    "Merge",
+    "Notion",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage assistant",
+    "Manage block",
+    "Manage databasePage",
+    "Update"
+  ],
+  "setup_requirements": [
+    "LinkedIn Account",
+    "Notion API Key"
+  ],
   "content": {
     "id": "mb2MU4xOaT3NrvqN",
     "meta": {
@@ -363,42 +395,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily LinkedIn posts from Notion database",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "HTTP Request",
-    "LinkedIn",
-    "Merge",
-    "Notion",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage assistant",
-    "Manage block",
-    "Manage databasePage",
-    "Update"
-  ],
-  "setup_requirements": [
-    "LinkedIn Account",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 7
+  }
 }

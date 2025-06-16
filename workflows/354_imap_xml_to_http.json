@@ -1,7 +1,25 @@
 {
   "id": "354",
-  "filename": "354_imap_xml_to_http",
+  "title": "Automate XML data extraction from IMAP emails and send via HTTP",
   "description": "Extracts XML data from email attachments in IMAP, converts it to JSON, and sends it via a POST request to a specified API endpoint.",
+  "filename": "354_imap_xml_to_http",
+  "services": [
+    "Convert to/from binary data",
+    "Edit Fields (Set)",
+    "Email Trigger (IMAP)",
+    "HTTP Request",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "1",
     "name": "ImapEmail, XmlToJson, POST-HTTP-Request",
@@ -150,28 +168,5 @@
         ]
       }
     }
-  },
-  "title": "Automate XML data extraction from IMAP emails and send via HTTP",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Convert to/from binary data",
-    "Edit Fields (Set)",
-    "Email Trigger (IMAP)",
-    "HTTP Request",
-    "XML"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

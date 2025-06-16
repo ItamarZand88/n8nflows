@@ -1,7 +1,23 @@
 {
   "id": "991",
-  "filename": "991_mailchimp_subscriptions_automation",
+  "title": "Automate Mailchimp subscriptions for new users",
   "description": "Triggers when a new user subscribes to a Mailchimp list, allowing for automated follow-up actions to enhance engagement.",
+  "filename": "991_mailchimp_subscriptions_automation",
+  "services": [
+    "Mailchimp"
+  ],
+  "categories": [
+    "Communication",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Mailchimp Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mailchimp API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -29,26 +45,5 @@
       }
     ],
     "connections": {}
-  },
-  "title": "Automate Mailchimp subscriptions for new users",
-  "nodes_count": 1,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Marketing"
-  ],
-  "services": [
-    "Mailchimp"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Mailchimp Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Mailchimp API Key"
-  ],
-  "workflow_complexity": 1,
-  "external_integrations_count": 1
+  }
 }

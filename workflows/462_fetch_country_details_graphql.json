@@ -1,7 +1,26 @@
 {
   "id": "462",
-  "filename": "462_fetch_country_details_graphql",
+  "title": "Fetch country details using a code via GraphQL API",
   "description": "Triggers on a webhook to fetch country name, phone, and emoji using a provided code, then formats and returns the information for easy access.",
+  "filename": "462_fetch_country_details_graphql",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "GraphQL",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -102,29 +121,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch country details using a code via GraphQL API",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "GraphQL",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,26 @@
 {
   "id": "451",
-  "filename": "451_slack_bug_reports_to_linear",
+  "title": "Automate bug reporting from Slack to Linear",
   "description": "Captures bug reports submitted via a Slack command and automatically creates a detailed issue in Linear, streamlining the bug tracking process.",
+  "filename": "451_slack_bug_reports_to_linear",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -323,29 +342,5 @@
         ]
       }
     }
-  },
-  "title": "Automate bug reporting from Slack to Linear",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 4
+  }
 }

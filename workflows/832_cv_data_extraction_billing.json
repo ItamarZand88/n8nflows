@@ -1,7 +1,40 @@
 {
   "id": "832",
-  "filename": "832_cv_data_extraction_billing",
+  "title": "Automate CV data extraction and client billing via Google Sheets",
   "description": "Triggers on CV uploads, extracts data, logs usage in Google Sheets, and sends monthly invoices to clients based on their usage.",
+  "filename": "832_cv_data_extraction_billing",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Filter",
+    "Gmail",
+    "Google Sheets",
+    "Schedule",
+    "Sticky Note",
+    "Summarize",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event",
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append",
+    "Completion",
+    "Pdf",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -701,43 +734,5 @@
         ]
       }
     }
-  },
-  "title": "Automate CV data extraction and client billing via Google Sheets",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Filter",
-    "Gmail",
-    "Google Sheets",
-    "Schedule",
-    "Sticky Note",
-    "Summarize",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event",
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append",
-    "Completion",
-    "Pdf",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 20,
-  "external_integrations_count": 9
+  }
 }

@@ -1,7 +1,28 @@
 {
   "id": "1679",
-  "filename": "1679_multi_agent_conversations_with_ai",
+  "title": "Automate multi-agent conversations with AI mentions",
   "description": "Initiates conversations with multiple AI agents based on chat messages, extracting mentions and dynamically generating responses for enhanced interaction.",
+  "filename": "1679_multi_agent_conversations_with_ai",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "0QQxgdQABUbbDJ0G",
     "meta": {
@@ -481,31 +502,5 @@
         ]
       }
     }
-  },
-  "title": "Automate multi-agent conversations with AI mentions",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 18,
-  "external_integrations_count": 5
+  }
 }

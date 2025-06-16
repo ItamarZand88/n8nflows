@@ -1,7 +1,19 @@
 {
   "id": "1140",
-  "filename": "1140_apple_case_orders_support",
+  "title": "Automate customer support for Apple Case orders",
   "description": "Handles incoming chat messages, processes orders, and updates stock levels in Google Sheets for Apple Case products.",
+  "filename": "1140_apple_case_orders_support",
+  "services": [],
+  "categories": [],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Append",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "7Pw91QNT4UGeNmL5",
     "meta": {
@@ -482,22 +494,5 @@
         ]
       }
     }
-  },
-  "title": "Automate customer support for Apple Case orders",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [],
-  "services": [],
-  "difficulty": "Beginner",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Append",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 0
+  }
 }

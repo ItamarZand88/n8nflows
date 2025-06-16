@@ -1,7 +1,40 @@
 {
   "id": "427",
-  "filename": "427_lead_qualification_outreach_gmail",
+  "title": "Automate lead qualification and outreach via Gmail",
   "description": "Captures form submissions, verifies email validity, scores leads, and sends personalized outreach emails through Gmail for qualified leads.",
+  "filename": "427_lead_qualification_outreach_gmail",
+  "services": [
+    "Edit Fields (Set)",
+    "Gmail",
+    "HTTP Request",
+    "HubSpot",
+    "Hunter",
+    "If",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Emailverifier",
+    "Filter Data",
+    "Manage engagement",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "HubSpot Account",
+    "Hunter API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -452,43 +485,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead qualification and outreach via Gmail",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Gmail",
-    "HTTP Request",
-    "HubSpot",
-    "Hunter",
-    "If",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Emailverifier",
-    "Filter Data",
-    "Manage engagement",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "HubSpot Account",
-    "Hunter API Key"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 9
+  }
 }

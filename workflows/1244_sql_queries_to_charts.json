@@ -1,7 +1,31 @@
 {
   "id": "1244",
-  "filename": "1244_sql_queries_to_charts",
+  "title": "Automate SQL Queries and Visualize Results with OpenAI",
   "description": "Triggers on new chat messages, processes SQL queries, and generates visual charts using OpenAI and Quickchart.io for enhanced data insights.",
+  "filename": "1244_sql_queries_to_charts",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "f4f5d195bb2162a0972f737368404b18be694648d365d6c6771d7b4909d28167",
@@ -534,34 +558,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SQL Queries and Visualize Results with OpenAI",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 5
+  }
 }

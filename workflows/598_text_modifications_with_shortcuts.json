@@ -1,7 +1,21 @@
 {
   "id": "598",
-  "filename": "598_text_modifications_with_shortcuts",
+  "title": "Automate text modifications using Apple Shortcuts and OpenAI",
   "description": "Processes text requests from Apple Shortcuts to translate, correct grammar, or modify length using OpenAI, enhancing writing efficiency.",
+  "filename": "598_text_modifications_with_shortcuts",
+  "services": [
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "f4f5d195bb2162a0972f737368404b18be694648d365d6c6771d7b4909d28167"
@@ -505,24 +519,5 @@
         ]
       }
     }
-  },
-  "title": "Automate text modifications using Apple Shortcuts and OpenAI",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 3
+  }
 }

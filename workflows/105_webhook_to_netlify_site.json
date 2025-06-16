@@ -1,7 +1,25 @@
 {
   "id": "105",
-  "filename": "105_webhook_to_netlify_site",
+  "title": "Create new Netlify sites from webhook submissions",
   "description": "Automatically creates a new site on Netlify when a POST request is received, using data from the webhook submission for site title.",
+  "filename": "105_webhook_to_netlify_site",
+  "services": [
+    "Netlify",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Netlify API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -52,28 +70,5 @@
         ]
       }
     }
-  },
-  "title": "Create new Netlify sites from webhook submissions",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Netlify",
-    "Webhook"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Netlify API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

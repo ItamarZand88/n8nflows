@@ -1,7 +1,32 @@
 {
   "id": "1194",
-  "filename": "1194_typeform_submissions_to_slack",
+  "title": "Capture Typeform submissions and notify via Slack",
   "description": "Automatically captures new submissions from Typeform, stores the data in Airtable, and sends a notification to Slack with the respondent's name and email.",
+  "filename": "1194_typeform_submissions_to_slack",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Slack",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Data & Storage",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Append",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Slack API Key",
+    "Typeform API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -117,35 +142,5 @@
         ]
       }
     }
-  },
-  "title": "Capture Typeform submissions and notify via Slack",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Data & Storage",
-    "HITL"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Slack",
-    "Typeform"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Append",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Slack API Key",
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

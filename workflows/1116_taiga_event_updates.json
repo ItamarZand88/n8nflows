@@ -1,7 +1,23 @@
 {
   "id": "1116",
-  "filename": "1116_taiga_event_updates",
+  "title": "Receive updates for new events in Taiga projects",
   "description": "Monitors Taiga for new events in a specified project and sends real-time updates, helping teams stay informed and responsive.",
+  "filename": "1116_taiga_event_updates",
+  "services": [
+    "Taiga"
+  ],
+  "categories": [
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Taiga Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Taiga API Key"
+  ],
   "content": {
     "id": "70",
     "name": "Receive updates when an event occurs in Taiga",
@@ -26,26 +42,5 @@
     "active": false,
     "settings": {},
     "connections": {}
-  },
-  "title": "Receive updates for new events in Taiga projects",
-  "nodes_count": 1,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Taiga"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Taiga Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Taiga API Key"
-  ],
-  "workflow_complexity": 1,
-  "external_integrations_count": 1
+  }
 }

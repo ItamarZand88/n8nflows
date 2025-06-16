@@ -1,7 +1,33 @@
 {
   "id": "569",
-  "filename": "569_unassigned_tickets_to_slack",
+  "title": "Automate Slack notifications for unassigned Zendesk tickets",
   "description": "Triggers daily at 4:30 PM to retrieve unassigned Zendesk tickets and sends a formatted summary to a Slack channel.",
+  "filename": "569_unassigned_tickets_to_slack",
+  "services": [
+    "Cron",
+    "Function",
+    "Manual",
+    "Slack",
+    "Zendesk"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Slack API Key",
+    "Zendesk API Key"
+  ],
   "content": {
     "id": 23,
     "name": "Zendesk-to-slack",
@@ -140,36 +166,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack notifications for unassigned Zendesk tickets",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Cron",
-    "Function",
-    "Manual",
-    "Slack",
-    "Zendesk"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Getall"
-  ],
-  "setup_requirements": [
-    "Slack API Key",
-    "Zendesk API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,44 @@
 {
   "id": "1397",
-  "filename": "1397_audio_transcription_reports_google_drive",
+  "title": "Automate audio transcription and report generation from Google Drive",
   "description": "Triggers on new audio files in Google Drive, sends approval requests, transcribes audio, and generates structured reports for easy access.",
+  "filename": "1397_audio_transcription_reports_google_drive",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "Google Drive",
+    "Limit",
+    "Manual",
+    "Merge",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Google Drive Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Createfromtext",
+    "Download",
+    "Manage audio",
+    "Manage fileFolder",
+    "Sendandwait",
+    "Set Data",
+    "Transcribe"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "CNOMivCLJRGfZnUM",
     "meta": {
@@ -1119,47 +1156,5 @@
         ]
       }
     }
-  },
-  "title": "Automate audio transcription and report generation from Google Drive",
-  "nodes_count": 33,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "Google Drive",
-    "Limit",
-    "Manual",
-    "Merge",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Google Drive Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Createfromtext",
-    "Download",
-    "Manage audio",
-    "Manage fileFolder",
-    "Sendandwait",
-    "Set Data",
-    "Transcribe"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 33,
-  "external_integrations_count": 9
+  }
 }

@@ -1,7 +1,31 @@
 {
   "id": "382",
-  "filename": "382_binance_price_alerts_to_telegram",
+  "title": "Monitor Binance price changes and send alerts via Telegram",
   "description": "Triggers every 5 minutes to check Binance for significant price changes, then sends formatted alerts to a Telegram chat.",
+  "filename": "382_binance_price_alerts_to_telegram",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Function",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "dbd43d88d26a9e30d8aadc002c9e77f1400c683dd34efe3778d43d27250dde50"
@@ -178,34 +202,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor Binance price changes and send alerts via Telegram",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Function",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 7
+  }
 }

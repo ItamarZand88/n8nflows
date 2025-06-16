@@ -1,7 +1,30 @@
 {
   "id": "979",
-  "filename": "979_ttrss_articles_to_wallabag",
+  "title": "Automate article saving from TTRSS to Wallabag",
   "description": "Triggers every 10 minutes to fetch starred articles from TTRSS and saves them to Wallabag, streamlining content management.",
+  "filename": "979_ttrss_articles_to_wallabag",
+  "services": [
+    "Cron",
+    "Function",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "4",
     "name": "post to wallabag",
@@ -320,33 +343,5 @@
         ]
       }
     }
-  },
-  "title": "Automate article saving from TTRSS to Wallabag",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Function",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

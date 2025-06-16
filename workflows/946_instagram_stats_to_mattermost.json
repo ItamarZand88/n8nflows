@@ -1,7 +1,31 @@
 {
   "id": "946",
-  "filename": "946_instagram_stats_to_mattermost",
+  "title": "Send daily Instagram stats to Mattermost channel",
   "description": "Automatically retrieves today's Instagram follower and post data from Google Sheets and sends a formatted message to a Mattermost channel every morning.",
+  "filename": "946_instagram_stats_to_mattermost",
+  "services": [
+    "Cron",
+    "Date & Time",
+    "Function",
+    "Google Sheets",
+    "Mattermost"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Mattermost API Key"
+  ],
   "content": {
     "id": "3",
     "name": "StatsInstagram",
@@ -136,34 +160,5 @@
         ]
       }
     }
-  },
-  "title": "Send daily Instagram stats to Mattermost channel",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Cron",
-    "Date & Time",
-    "Function",
-    "Google Sheets",
-    "Mattermost"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Mattermost API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

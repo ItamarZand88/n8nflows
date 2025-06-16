@@ -1,7 +1,37 @@
 {
   "id": "765",
-  "filename": "765_competitor_integration_data_to_notion",
+  "title": "Automate competitor and integration data logging in Notion",
   "description": "Triggers on new workflow events, checks for competitor and integration data, and logs relevant information into Notion databases for streamlined tracking.",
+  "filename": "765_competitor_integration_data_to_notion",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "If",
+    "Notion",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage databasePage",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Notion API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7",
@@ -1253,40 +1283,5 @@
         ]
       }
     }
-  },
-  "title": "Automate competitor and integration data logging in Notion",
-  "nodes_count": 37,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "If",
-    "Notion",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage databasePage",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 37,
-  "external_integrations_count": 8
+  }
 }

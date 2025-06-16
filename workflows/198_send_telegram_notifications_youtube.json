@@ -1,7 +1,33 @@
 {
   "id": "198",
-  "filename": "198_send_telegram_notifications_youtube",
+  "title": "Send Telegram notifications for new YouTube videos",
   "description": "Automatically checks for new videos on a specified YouTube channel every 30 minutes and sends a formatted notification to a Telegram chat.",
+  "filename": "198_send_telegram_notifications_youtube",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "Interval",
+    "Telegram",
+    "YouTube"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Manage video",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key",
+    "YouTube Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -147,36 +173,5 @@
         ]
       }
     }
-  },
-  "title": "Send Telegram notifications for new YouTube videos",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Marketing"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "Interval",
-    "Telegram",
-    "YouTube"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Manage video",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key",
-    "YouTube Account"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,31 @@
 {
   "id": "1813",
-  "filename": "1813_video_thumbnail_updates_airtable",
+  "title": "Automate Video and Thumbnail Updates in Airtable",
   "description": "Captures video and thumbnail URLs from a webhook and updates Airtable records with the generated video details for streamlined content management.",
+  "filename": "1813_video_thumbnail_updates_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Execution Data",
+    "If",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "rYuhIChQyjpGNvuR",
     "meta": {
@@ -419,34 +443,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Video and Thumbnail Updates in Airtable",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Execution Data",
-    "If",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 6
+  }
 }

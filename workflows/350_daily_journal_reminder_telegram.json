@@ -1,7 +1,25 @@
 {
   "id": "350",
-  "filename": "350_daily_journal_reminder_telegram",
+  "title": "Send Daily Journal Reminders via Telegram",
   "description": "Triggers every morning to send a formatted reminder for users to reflect on their previous day's activities through Telegram.",
+  "filename": "350_daily_journal_reminder_telegram",
+  "services": [
+    "Cron",
+    "Function Item",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": 1,
     "name": "Daily Journal Reminder",
@@ -81,28 +99,5 @@
         ]
       }
     }
-  },
-  "title": "Send Daily Journal Reminders via Telegram",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Cron",
-    "Function Item",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

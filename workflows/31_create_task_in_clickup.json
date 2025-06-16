@@ -1,7 +1,25 @@
 {
   "id": "31",
-  "filename": "31_create_task_in_clickup",
+  "title": "Create tasks in ClickUp with a manual trigger",
   "description": "Manually triggers the creation of a new task in ClickUp, allowing users to easily manage their projects and tasks on demand.",
+  "filename": "31_create_task_in_clickup",
+  "services": [
+    "ClickUp",
+    "Manual"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "ClickUp API Key"
+  ],
   "content": {
     "id": "105",
     "name": "Create a task in ClickUp",
@@ -52,28 +70,5 @@
         ]
       }
     }
-  },
-  "title": "Create tasks in ClickUp with a manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "ClickUp",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "ClickUp API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

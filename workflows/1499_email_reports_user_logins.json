@@ -1,7 +1,30 @@
 {
   "id": "1499",
-  "filename": "1499_email_reports_user_logins",
+  "title": "Automate Email Reports of User Login Events",
   "description": "Captures user login events from multiple sources, processes the data, and emails a CSV report to the user upon request.",
+  "filename": "1499_email_reports_user_logins",
+  "services": [
+    "Convert to File",
+    "Convert to/from binary data",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Merge",
+    "Remove Duplicates",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "fGq0vUaD6JoqAbDa",
     "meta": {
@@ -459,33 +482,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Email Reports of User Login Events",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Convert to File",
-    "Convert to/from binary data",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Merge",
-    "Remove Duplicates",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 8
+  }
 }

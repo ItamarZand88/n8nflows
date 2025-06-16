@@ -1,7 +1,32 @@
 {
   "id": "447",
-  "filename": "447_daily_tasks_from_todoist_template",
+  "title": "Automate daily task creation in Todoist from template",
   "description": "Triggers daily at 5:10 AM to create tasks in Todoist from a template project, ensuring timely reminders based on specified days and due times.",
+  "filename": "447_daily_tasks_from_todoist_template",
+  "services": [
+    "Code",
+    "Filter",
+    "If",
+    "Schedule",
+    "Sticky Note",
+    "Todoist"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Delete",
+    "Filter Data",
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Todoist API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -371,35 +396,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily task creation in Todoist from template",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Filter",
-    "If",
-    "Schedule",
-    "Sticky Note",
-    "Todoist"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Delete",
-    "Filter Data",
-    "Getall"
-  ],
-  "setup_requirements": [
-    "Todoist API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,38 @@
 {
   "id": "570",
-  "filename": "570_telegram_interactions_to_google_sheets",
+  "title": "Automate Telegram interactions and update Google Sheets",
   "description": "Triggers on new Telegram messages, processes various content types, and updates user status in Google Sheets for efficient management.",
+  "filename": "570_telegram_interactions_to_google_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Google Sheets",
+    "If",
+    "Sticky Note",
+    "Switch",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Edit Fields (Set) Event",
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Telegram API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "1dbc26c48fe55fbd6f6084822260e5ffcc6df7c619b3d6ceeb699da53e67c82c"
@@ -1148,41 +1179,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Telegram interactions and update Google Sheets",
-  "nodes_count": 29,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Google Sheets",
-    "If",
-    "Sticky Note",
-    "Switch",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Edit Fields (Set) Event",
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 29,
-  "external_integrations_count": 7
+  }
 }

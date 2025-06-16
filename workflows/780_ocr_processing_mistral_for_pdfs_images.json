@@ -1,7 +1,32 @@
 {
   "id": "780",
-  "filename": "780_ocr_processing_mistral_for_pdfs_images",
+  "title": "Automate OCR Processing for PDFs and Images via Mistral",
   "description": "Triggers manual execution to upload PDFs and images to Mistral for OCR processing, retrieving structured data for easy analysis and insights.",
+  "filename": "780_ocr_processing_mistral_for_pdfs_images",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Drive",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -683,35 +708,5 @@
         ]
       }
     }
-  },
-  "title": "Automate OCR Processing for PDFs and Images via Mistral",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Drive",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 5
+  }
 }

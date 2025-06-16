@@ -1,7 +1,22 @@
 {
   "id": "1523",
-  "filename": "1523_generate_audio_with_openai",
+  "title": "Generate audio from text using OpenAI and Webhook",
   "description": "Triggers on a POST request to convert provided text into audio using OpenAI, returning the audio file to the requester.",
+  "filename": "1523_generate_audio_with_openai",
+  "services": [
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Manage audio"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "OVSyGmI6YFviPu8Q",
     "meta": {
@@ -126,25 +141,5 @@
         ]
       }
     }
-  },
-  "title": "Generate audio from text using OpenAI and Webhook",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Manage audio"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 2
+  }
 }

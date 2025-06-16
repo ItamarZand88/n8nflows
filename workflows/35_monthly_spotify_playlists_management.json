@@ -1,7 +1,43 @@
 {
   "id": "35",
-  "filename": "35_monthly_spotify_playlists_management",
+  "title": "Automate monthly Spotify playlists and track management",
   "description": "Triggers monthly to create a Spotify playlist from the last 10 liked tracks, checks for duplicates, and logs entries in NocoDB for easy tracking.",
+  "filename": "35_monthly_spotify_playlists_management",
+  "services": [
+    "Code",
+    "Filter",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "No Operation, do nothing",
+    "NocoDB",
+    "Schedule",
+    "Spotify",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Miscellaneous"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Getall",
+    "Gettracks",
+    "Getuserplaylists",
+    "Manage library",
+    "Manage playlist"
+  ],
+  "setup_requirements": [
+    "NocoDB API Key",
+    "Spotify Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "0c99324b4b0921a9febd4737c606882881f3ca11d9b1d7e22b0dad4784eb24c7"
@@ -1041,46 +1077,5 @@
         ]
       }
     }
-  },
-  "title": "Automate monthly Spotify playlists and track management",
-  "nodes_count": 30,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Code",
-    "Filter",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "No Operation, do nothing",
-    "NocoDB",
-    "Schedule",
-    "Spotify",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Getall",
-    "Gettracks",
-    "Getuserplaylists",
-    "Manage library",
-    "Manage playlist"
-  ],
-  "setup_requirements": [
-    "NocoDB API Key",
-    "Spotify Account"
-  ],
-  "workflow_complexity": 30,
-  "external_integrations_count": 10
+  }
 }

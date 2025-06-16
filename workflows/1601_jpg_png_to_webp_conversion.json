@@ -1,7 +1,36 @@
 {
   "id": "1601",
-  "filename": "1601_jpg_png_to_webp_conversion",
+  "title": "Automate image conversion from JPG/PNG to WEBP in Google Drive",
   "description": "Triggers image conversion from JPG or PNG formats to WEBP, updates Google Sheets, and uploads the converted images to Google Drive for easy management.",
+  "filename": "1601_jpg_png_to_webp_conversion",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "IyDJ7Zgh4MV43YTh",
     "meta": {
@@ -545,39 +574,5 @@
         ]
       }
     }
-  },
-  "title": "Automate image conversion from JPG/PNG to WEBP in Google Drive",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 8
+  }
 }

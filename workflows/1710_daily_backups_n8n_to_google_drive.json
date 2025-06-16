@@ -1,7 +1,46 @@
 {
   "id": "1710",
-  "filename": "1710_daily_backups_n8n_to_google_drive",
+  "title": "Automate Daily Backups of n8n Workflows to Google Drive",
   "description": "Automatically creates daily backups of your n8n workflows in timestamped folders on Google Drive, while notifying you via Telegram upon completion.",
+  "filename": "1710_daily_backups_n8n_to_google_drive",
+  "services": [
+    "Code",
+    "Convert to File",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Limit",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note",
+    "Telegram",
+    "n8n"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Deletefolder",
+    "Manage fileFolder",
+    "Manage folder",
+    "Set Data",
+    "Tojson"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Telegram API Key",
+    "n8n API Key"
+  ],
   "content": {
     "id": "o4sdVtTrkuZXDATf",
     "meta": {
@@ -572,49 +611,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Daily Backups of n8n Workflows to Google Drive",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Convert to File",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Limit",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note",
-    "Telegram",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Deletefolder",
-    "Manage fileFolder",
-    "Manage folder",
-    "Set Data",
-    "Tojson"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Telegram API Key",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 22,
-  "external_integrations_count": 12
+  }
 }

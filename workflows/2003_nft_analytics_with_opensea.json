@@ -1,7 +1,21 @@
 {
   "id": "2003",
-  "filename": "2003_nft_analytics_with_opensea",
+  "title": "Automate NFT Analytics with OpenSea Data Insights",
   "description": "Triggers on user input to fetch and analyze NFT collection stats and events from OpenSea, providing real-time market insights for traders and collectors.",
+  "filename": "2003_nft_analytics_with_opensea",
+  "services": [
+    "Execute Workflow",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "yRMCUm6oJEMknhbw",
     "meta": {
@@ -493,24 +507,5 @@
         ]
       }
     }
-  },
-  "title": "Automate NFT Analytics with OpenSea Data Insights",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Execute Workflow",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 2
+  }
 }

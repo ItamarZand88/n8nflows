@@ -1,7 +1,25 @@
 {
   "id": "959",
-  "filename": "959_paypal_batch_payments_manual_trigger",
+  "title": "Automate PayPal batch payments with a manual trigger",
   "description": "Initiates a batch payment process in PayPal when manually triggered, streamlining payment management for businesses.",
+  "filename": "959_paypal_batch_payments_manual_trigger",
+  "services": [
+    "Manual",
+    "PayPal"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Finance & Accounting",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "PayPal API Key"
+  ],
   "content": {
     "name": "",
     "nodes": [
@@ -47,28 +65,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PayPal batch payments with a manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Finance & Accounting",
-    "Sales"
-  ],
-  "services": [
-    "Manual",
-    "PayPal"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "PayPal API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

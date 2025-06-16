@@ -1,7 +1,25 @@
 {
   "id": "808",
-  "filename": "808_supply_chain_sql_queries_with_ai",
+  "title": "Automate SQL Queries for Supply Chain Analytics with AI",
   "description": "Triggers a chat interface to execute SQL queries on BigQuery for supply chain insights, returning structured results for analysis.",
+  "filename": "808_supply_chain_sql_queries_with_ai",
+  "services": [
+    "Code",
+    "Execute Workflow",
+    "Google BigQuery",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "6a5e68bcca67c4cdb3e0b698d01739aea084e1ec06e551db64aeff43d174cb23"
@@ -294,28 +312,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SQL Queries for Supply Chain Analytics with AI",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Execute Workflow",
-    "Google BigQuery",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 4
+  }
 }

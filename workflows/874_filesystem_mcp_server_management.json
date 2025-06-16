@@ -1,7 +1,25 @@
 {
   "id": "874",
-  "filename": "874_filesystem_mcp_server_management",
+  "title": "Automate file management with a FileSystem MCP server",
   "description": "Sets up a FileSystem MCP server to manage files and directories, enabling listing, reading, and creating files via simple commands.",
+  "filename": "874_filesystem_mcp_server_management",
+  "services": [
+    "Execute Command",
+    "Execute Workflow",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -457,28 +475,5 @@
         ]
       }
     }
-  },
-  "title": "Automate file management with a FileSystem MCP server",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Execute Command",
-    "Execute Workflow",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 4
+  }
 }

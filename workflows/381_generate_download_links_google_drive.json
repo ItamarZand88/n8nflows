@@ -1,7 +1,35 @@
 {
   "id": "381",
-  "filename": "381_generate_download_links_google_drive",
+  "title": "Generate Download Links for Google Drive Files",
   "description": "Triggers manually to list files in a specified Google Drive folder, generate download links, and share them publicly for easy access.",
+  "filename": "381_generate_download_links_google_drive",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "List",
+    "Set Data",
+    "Share"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "c59a6b1daf09a846754bc2cf0a94db3299bd5a69fb14687c3a5e692704c548dd"
@@ -269,38 +297,5 @@
         ]
       }
     }
-  },
-  "title": "Generate Download Links for Google Drive Files",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "List",
-    "Set Data",
-    "Share"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 8
+  }
 }

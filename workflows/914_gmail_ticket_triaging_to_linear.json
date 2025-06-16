@@ -1,7 +1,33 @@
 {
   "id": "914",
-  "filename": "914_gmail_ticket_triaging_to_linear",
+  "title": "Automate ticket triaging from Gmail to Linear",
   "description": "Monitors a Gmail inbox for support emails, triages them using AI, and creates corresponding issues in Linear for efficient management.",
+  "filename": "914_gmail_ticket_triaging_to_linear",
+  "services": [
+    "Gmail",
+    "Linear",
+    "Markdown",
+    "Remove Duplicates",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall",
+    "Removeitemsseeninpreviousexecutions"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Linear API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -326,36 +352,5 @@
         ]
       }
     }
-  },
-  "title": "Automate ticket triaging from Gmail to Linear",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Gmail",
-    "Linear",
-    "Markdown",
-    "Remove Duplicates",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall",
-    "Removeitemsseeninpreviousexecutions"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Linear API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 6
+  }
 }

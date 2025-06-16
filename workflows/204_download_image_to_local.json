@@ -1,7 +1,23 @@
 {
   "id": "204",
-  "filename": "204_download_image_to_local",
+  "title": "Download and save an image file from the web",
   "description": "Triggers a download of an image from a specified URL and saves it as a file on your local machine, streamlining the process of image retrieval.",
+  "filename": "204_download_image_to_local",
+  "services": [
+    "HTTP Request",
+    "Manual",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "160",
     "name": "Write a file to the host machine",
@@ -69,26 +85,5 @@
         ]
       }
     }
-  },
-  "title": "Download and save an image file from the web",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Manual",
-    "Write Binary File"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

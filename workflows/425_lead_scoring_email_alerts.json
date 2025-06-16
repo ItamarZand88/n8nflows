@@ -1,7 +1,35 @@
 {
   "id": "425",
-  "filename": "425_lead_scoring_email_alerts",
+  "title": "Automate lead scoring and email alerts for new form submissions",
   "description": "Triggers on new form submissions, verifies email validity, scores leads, and sends alerts for high-quality leads via Gmail.",
+  "filename": "425_lead_scoring_email_alerts",
+  "services": [
+    "Gmail",
+    "HTTP Request",
+    "Hunter",
+    "If",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Emailverifier",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Hunter API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -325,38 +353,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead scoring and email alerts for new form submissions",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Gmail",
-    "HTTP Request",
-    "Hunter",
-    "If",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Emailverifier",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Hunter API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 7
+  }
 }

@@ -1,7 +1,33 @@
 {
   "id": "732",
-  "filename": "732_podcast_script_generation_from_bbc_news",
+  "title": "Automate podcast script generation from BBC news articles",
   "description": "Fetches BBC news articles, extracts suitable content, and generates engaging podcast scripts for audio production.",
+  "filename": "732_podcast_script_generation_from_bbc_news",
+  "services": [
+    "Aggregate",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Limit",
+    "Manual",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Extracthtmlcontent",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "5287ddd2fa569cf8e4c5a724666246a45305c032a19bb677c9e4b963d365f84b",
@@ -619,36 +645,5 @@
         ]
       }
     }
-  },
-  "title": "Automate podcast script generation from BBC news articles",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Limit",
-    "Manual",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Extracthtmlcontent",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 22,
-  "external_integrations_count": 8
+  }
 }

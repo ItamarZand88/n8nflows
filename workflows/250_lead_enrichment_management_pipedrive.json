@@ -1,7 +1,36 @@
 {
   "id": "250",
-  "filename": "250_lead_enrichment_management_pipedrive",
+  "title": "Automate lead enrichment and management in Pipedrive",
   "description": "Triggers when a new company is created in Pipedrive, enriches lead data using Datagma, and adds qualified contacts to streamline sales efforts.",
+  "filename": "250_lead_enrichment_management_pipedrive",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Item Lists",
+    "Merge",
+    "Pipedrive",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage organization",
+    "Manage person",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Pipedrive API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -400,39 +429,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead enrichment and management in Pipedrive",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Item Lists",
-    "Merge",
-    "Pipedrive",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage organization",
-    "Manage person",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Pipedrive API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 7
+  }
 }

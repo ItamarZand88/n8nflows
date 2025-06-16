@@ -1,7 +1,35 @@
 {
   "id": "965",
-  "filename": "965_student_data_updates_to_mautic",
+  "title": "Automate student data updates and marketing preferences in Mautic",
   "description": "Captures student data via a webhook, updates or tags users in Mautic based on their marketing preferences, and manages subscriptions efficiently.",
+  "filename": "965_student_data_updates_to_mautic",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "If",
+    "Mautic",
+    "Merge",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Filter Data",
+    "Getall",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Mautic Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -535,38 +563,5 @@
         ]
       }
     }
-  },
-  "title": "Automate student data updates and marketing preferences in Mautic",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "If",
-    "Mautic",
-    "Merge",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Filter Data",
-    "Getall",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Mautic Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 7
+  }
 }

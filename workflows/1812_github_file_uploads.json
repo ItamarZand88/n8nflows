@@ -1,7 +1,26 @@
 {
   "id": "1812",
-  "filename": "1812_github_file_uploads",
+  "title": "Automate file uploads to GitHub repository",
   "description": "Triggers file uploads to a GitHub repository, creating a new commit with multiple files, enhancing batch processing for developers.",
+  "filename": "1812_github_file_uploads",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "RtTHLr1SAwIpntKr",
     "meta": {
@@ -403,29 +422,5 @@
         ]
       }
     }
-  },
-  "title": "Automate file uploads to GitHub repository",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 4
+  }
 }

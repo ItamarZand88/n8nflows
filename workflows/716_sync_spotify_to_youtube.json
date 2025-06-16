@@ -1,7 +1,46 @@
 {
   "id": "716",
-  "filename": "716_sync_spotify_to_youtube",
+  "title": "Sync Spotify Playlist with YouTube and Notify on Changes",
   "description": "Automatically monitors a Spotify playlist for changes, updates a YouTube playlist with matching videos, and sends notifications for added or unmatched tracks.",
+  "filename": "716_sync_spotify_to_youtube",
+  "services": [
+    "Aggregate",
+    "Compare Datasets",
+    "Discord",
+    "Edit Fields (Set)",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "No Operation, do nothing",
+    "Remove Duplicates",
+    "Schedule",
+    "Spotify",
+    "Sticky Note",
+    "Supabase",
+    "YouTube"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing",
+    "Miscellaneous"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Delete",
+    "Filter Data",
+    "Get",
+    "Getall",
+    "Gettracks",
+    "Manage playlist",
+    "Manage playlistItem",
+    "Manage video",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "173bb893d2008dedab0ccfa3d7dba2c858a9076afa8f7dce6ebaa9c817262edf"
@@ -1776,49 +1815,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Spotify Playlist with YouTube and Notify on Changes",
-  "nodes_count": 54,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Aggregate",
-    "Compare Datasets",
-    "Discord",
-    "Edit Fields (Set)",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "No Operation, do nothing",
-    "Remove Duplicates",
-    "Schedule",
-    "Spotify",
-    "Sticky Note",
-    "Supabase",
-    "YouTube"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Delete",
-    "Filter Data",
-    "Get",
-    "Getall",
-    "Gettracks",
-    "Manage playlist",
-    "Manage playlistItem",
-    "Manage video",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 54,
-  "external_integrations_count": 13
+  }
 }

@@ -1,7 +1,34 @@
 {
   "id": "770",
-  "filename": "770_telegram_messages_to_todoist_tasks",
+  "title": "Automate task creation in Todoist from Telegram messages",
   "description": "Listens for voice or text messages in Telegram, transcribes voice messages, and creates structured tasks in Todoist for project management.",
+  "filename": "770_telegram_messages_to_todoist_tasks",
+  "services": [
+    "Edit Fields (Set)",
+    "Sticky Note",
+    "Switch",
+    "Telegram",
+    "Todoist"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Manage audio",
+    "Manage file",
+    "Set Data",
+    "Translate"
+  ],
+  "setup_requirements": [
+    "Telegram API Key",
+    "Todoist API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "b41148c809c7896d124743d940fc0964703e540af66564ef95e25a4ceea61c77",
@@ -452,37 +479,5 @@
         ]
       }
     }
-  },
-  "title": "Automate task creation in Todoist from Telegram messages",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Sticky Note",
-    "Switch",
-    "Telegram",
-    "Todoist"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Manage audio",
-    "Manage file",
-    "Set Data",
-    "Translate"
-  ],
-  "setup_requirements": [
-    "Telegram API Key",
-    "Todoist API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 5
+  }
 }

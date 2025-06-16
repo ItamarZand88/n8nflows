@@ -1,7 +1,25 @@
 {
   "id": "995",
-  "filename": "995_send_test_email_mailjet",
+  "title": "Send test emails via Mailjet on manual trigger",
   "description": "Triggers a test email to a specified recipient using Mailjet when executed manually, streamlining communication for testing purposes.",
+  "filename": "995_send_test_email_mailjet",
+  "services": [
+    "Mailjet",
+    "Manual"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mailjet API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -47,28 +65,5 @@
         ]
       }
     }
-  },
-  "title": "Send test emails via Mailjet on manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Mailjet",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Mailjet API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

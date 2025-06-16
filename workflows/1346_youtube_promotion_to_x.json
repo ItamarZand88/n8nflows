@@ -1,7 +1,49 @@
 {
   "id": "1346",
-  "filename": "1346_youtube_promotion_to_x",
+  "title": "Automate YouTube video promotion on X (Twitter)",
   "description": "Fetches the latest YouTube videos, generates engaging tweets, and posts them to X while updating Google Sheets with the tweet details.",
+  "filename": "1346_youtube_promotion_to_x",
+  "services": [
+    "Discord",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Sheets",
+    "If",
+    "Manual",
+    "Remove Duplicates",
+    "Schedule",
+    "Slack",
+    "Sticky Note",
+    "X (Formerly Twitter)",
+    "YouTube"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "HITL",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Appendorupdate",
+    "Filter Data",
+    "Manage video",
+    "Removeitemsseeninpreviousexecutions",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account",
+    "X (Formerly Twitter) Account",
+    "YouTube Account"
+  ],
   "content": {
     "id": "AuwhspweKSACE1WQ",
     "meta": {
@@ -980,52 +1022,5 @@
         ]
       }
     }
-  },
-  "title": "Automate YouTube video promotion on X (Twitter)",
-  "nodes_count": 28,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "HITL",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Discord",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Sheets",
-    "If",
-    "Manual",
-    "Remove Duplicates",
-    "Schedule",
-    "Slack",
-    "Sticky Note",
-    "X (Formerly Twitter)",
-    "YouTube"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Appendorupdate",
-    "Filter Data",
-    "Manage video",
-    "Removeitemsseeninpreviousexecutions",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account",
-    "X (Formerly Twitter) Account",
-    "YouTube Account"
-  ],
-  "workflow_complexity": 28,
-  "external_integrations_count": 12
+  }
 }

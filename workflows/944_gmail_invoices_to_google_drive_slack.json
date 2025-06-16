@@ -1,7 +1,41 @@
 {
   "id": "944",
-  "filename": "944_gmail_invoices_to_google_drive_slack",
+  "title": "Automate invoice uploads from Gmail to Google Drive and notify on Slack",
   "description": "Triggers at 23:45 daily to fetch unread invoices from Gmail, uploads them to Google Drive organized by year and month, and sends a notification to Slack.",
+  "filename": "944_gmail_invoices_to_google_drive_slack",
+  "services": [
+    "Cron",
+    "Function",
+    "Gmail",
+    "Google Drive",
+    "Manual",
+    "Merge",
+    "Slack"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Getall",
+    "List",
+    "Manage message",
+    "Manage messageLabel",
+    "Remove"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "Slack Account"
+  ],
   "content": {
     "id": 3,
     "name": "Orlen",
@@ -327,44 +361,5 @@
         ]
       }
     }
-  },
-  "title": "Automate invoice uploads from Gmail to Google Drive and notify on Slack",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Cron",
-    "Function",
-    "Gmail",
-    "Google Drive",
-    "Manual",
-    "Merge",
-    "Slack"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Getall",
-    "List",
-    "Manage message",
-    "Manage messageLabel",
-    "Remove"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "Slack Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

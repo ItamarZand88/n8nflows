@@ -1,7 +1,27 @@
 {
   "id": "1145",
-  "filename": "1145_fetch_hubspot_contacts",
+  "title": "Retrieve all HubSpot contacts with a single click",
   "description": "Triggers a manual event to fetch all contacts from HubSpot, streamlining contact management for your sales team.",
+  "filename": "1145_fetch_hubspot_contacts",
+  "services": [
+    "HubSpot",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage contact"
+  ],
+  "setup_requirements": [
+    "HubSpot API Key"
+  ],
   "content": {
     "id": "7",
     "name": "6",
@@ -50,30 +70,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve all HubSpot contacts with a single click",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Sales"
-  ],
-  "services": [
-    "HubSpot",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage contact"
-  ],
-  "setup_requirements": [
-    "HubSpot API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

@@ -1,7 +1,31 @@
 {
   "id": "1899",
-  "filename": "1899_telegram_queries_to_actions",
+  "title": "Automate Telegram queries into actionable tasks",
   "description": "Triggers on new Telegram messages, processes requests, and executes actions like sending emails, managing contacts, or creating calendar events.",
+  "filename": "1899_telegram_queries_to_actions",
+  "services": [
+    "Edit Fields (Set)",
+    "Switch",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Manage audio",
+    "Manage file",
+    "Set Data",
+    "Transcribe"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "name": "Ultimate Personal Assistant",
     "nodes": [
@@ -565,34 +589,5 @@
     },
     "id": "NJ5zK0UP9WFl8ckM",
     "tags": []
-  },
-  "title": "Automate Telegram queries into actionable tasks",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Switch",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Manage audio",
-    "Manage file",
-    "Set Data",
-    "Transcribe"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 3
+  }
 }

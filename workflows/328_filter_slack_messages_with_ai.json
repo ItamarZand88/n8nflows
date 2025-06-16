@@ -1,7 +1,29 @@
 {
   "id": "328",
-  "filename": "328_filter_slack_messages_with_ai",
+  "title": "Filter Slack messages and respond with AI insights",
   "description": "Automatically filters out bot messages from Slack, processes user messages with an AI agent, and sends back insightful responses to users.",
+  "filename": "328_filter_slack_messages_with_ai",
+  "services": [
+    "If",
+    "No Operation, do nothing",
+    "Slack",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -345,32 +367,5 @@
         ]
       }
     }
-  },
-  "title": "Filter Slack messages and respond with AI insights",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "If",
-    "No Operation, do nothing",
-    "Slack",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Slack API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,33 @@
 {
   "id": "858",
-  "filename": "858_currency_exchange_rates_to_sheets",
+  "title": "Automate Daily Currency Exchange Rate Updates to Google Sheets",
   "description": "Triggers every morning to fetch USD exchange rates, updates a Google Sheet with the latest rates, and archives historical data for easy reference.",
+  "filename": "858_currency_exchange_rates_to_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Merge",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": ""
@@ -3429,36 +3455,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Daily Currency Exchange Rate Updates to Google Sheets",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Merge",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

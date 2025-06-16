@@ -1,7 +1,35 @@
 {
   "id": "1593",
-  "filename": "1593_resume_submissions_to_google_sheets",
+  "title": "Automate resume submissions and evaluations to Google Sheets",
   "description": "Captures CV submissions via a form, extracts key details, evaluates candidates, and logs results to Google Sheets for HR tracking.",
+  "filename": "1593_resume_submissions_to_google_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Google Drive",
+    "Google Sheets",
+    "Merge",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append",
+    "Pdf",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "IO0OrQ6ao4vm9urI",
     "meta": {
@@ -680,38 +708,5 @@
         ]
       }
     }
-  },
-  "title": "Automate resume submissions and evaluations to Google Sheets",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Google Drive",
-    "Google Sheets",
-    "Merge",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append",
-    "Pdf",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 7
+  }
 }

@@ -1,7 +1,42 @@
 {
   "id": "760",
-  "filename": "760_gong_calls_to_salesforce_updates",
+  "title": "Automate Gong call processing and Salesforce updates",
   "description": "Triggers hourly to fetch Gong call details, checks opportunity values, and processes calls for relevant Salesforce updates, enhancing sales insights.",
+  "filename": "760_gong_calls_to_salesforce_updates",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Gong",
+    "If",
+    "Manual",
+    "Salesforce",
+    "Schedule",
+    "Sort",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Developer Tools",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Getall",
+    "Manage customObject",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gong API Key",
+    "Salesforce Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -491,45 +526,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Gong call processing and Salesforce updates",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Developer Tools",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Gong",
-    "If",
-    "Manual",
-    "Salesforce",
-    "Schedule",
-    "Sort",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Getall",
-    "Manage customObject",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gong API Key",
-    "Salesforce Account"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 9
+  }
 }

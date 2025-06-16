@@ -1,7 +1,28 @@
 {
   "id": "472",
-  "filename": "472_create_stripe_products_and_payment_links",
+  "title": "Create Stripe Products and Payment Links Automatically",
   "description": "Triggers on form submission to create a new Stripe product and generates a payment link for easy transactions, streamlining your sales process.",
+  "filename": "472_create_stripe_products_and_payment_links",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "8418cffce8d48086ec0a73fd90aca708aa07591f2fefa6034d87fe12a09de26e"
@@ -243,31 +264,5 @@
         ]
       }
     }
-  },
-  "title": "Create Stripe Products and Payment Links Automatically",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

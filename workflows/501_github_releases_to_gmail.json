@@ -1,7 +1,29 @@
 {
   "id": "501",
-  "filename": "501_github_releases_to_gmail",
+  "title": "Automate email notifications for new GitHub releases",
   "description": "Triggers daily to fetch the latest GitHub releases and sends formatted email notifications via Gmail to keep users updated.",
+  "filename": "501_github_releases_to_gmail",
+  "services": [
+    "Gmail",
+    "HTTP Request",
+    "Markdown",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "84ba6d895254e080ac2b4916d987aa66b000f88d4d919a6b9c76848f9b8a7616",
@@ -172,32 +194,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email notifications for new GitHub releases",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Gmail",
-    "HTTP Request",
-    "Markdown",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 6
+  }
 }

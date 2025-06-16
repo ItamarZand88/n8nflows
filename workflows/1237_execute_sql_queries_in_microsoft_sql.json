@@ -1,7 +1,25 @@
 {
   "id": "1237",
-  "filename": "1237_execute_sql_queries_in_microsoft_sql",
+  "title": "Execute SQL Queries in Microsoft SQL on Demand",
   "description": "Triggers an SQL query execution in Microsoft SQL when manually activated, enabling users to run database queries as needed.",
+  "filename": "1237_execute_sql_queries_in_microsoft_sql",
+  "services": [
+    "Manual",
+    "Microsoft SQL"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Executequery"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "99",
     "name": "Execute an SQL query in Microsoft SQL",
@@ -48,28 +66,5 @@
         ]
       }
     }
-  },
-  "title": "Execute SQL Queries in Microsoft SQL on Demand",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Manual",
-    "Microsoft SQL"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Executequery"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

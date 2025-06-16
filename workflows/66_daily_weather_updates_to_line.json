@@ -1,7 +1,26 @@
 {
   "id": "66",
-  "filename": "66_daily_weather_updates_to_line",
+  "title": "Send daily weather updates via Line messages",
   "description": "Automatically retrieves the daily temperature for Berlin and sends a message via Line at 9 AM, keeping you informed about the weather.",
+  "filename": "66_daily_weather_updates_to_line",
+  "services": [
+    "Cron",
+    "Line",
+    "OpenWeatherMap"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Line Account",
+    "OpenWeatherMap API Key"
+  ],
   "content": {
     "id": "114",
     "name": "Send daily weather updates via a message in Line",
@@ -82,29 +101,5 @@
         ]
       }
     }
-  },
-  "title": "Send daily weather updates via Line messages",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Miscellaneous",
-    "Utility"
-  ],
-  "services": [
-    "Cron",
-    "Line",
-    "OpenWeatherMap"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "Line Account",
-    "OpenWeatherMap API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

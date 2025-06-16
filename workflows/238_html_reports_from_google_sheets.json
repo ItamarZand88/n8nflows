@@ -1,7 +1,27 @@
 {
   "id": "238",
-  "filename": "238_html_reports_from_google_sheets",
+  "title": "Create HTML reports from Google Sheets data",
   "description": "Triggers via a webhook to read data from Google Sheets and generates an HTML file for easy sharing and reporting.",
+  "filename": "238_html_reports_from_google_sheets",
+  "services": [
+    "Google Sheets",
+    "Spreadsheet File",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Tofile"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -78,30 +98,5 @@
         ]
       }
     }
-  },
-  "title": "Create HTML reports from Google Sheets data",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "Spreadsheet File",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Tofile"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

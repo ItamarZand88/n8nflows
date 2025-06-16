@@ -1,7 +1,31 @@
 {
   "id": "849",
-  "filename": "849_linkedin_posts_from_gmail_newsletters",
+  "title": "Automate LinkedIn Posts from Gmail Newsletters",
   "description": "Triggers on a manual click, extracts key news from Gmail newsletters, and posts concise summaries to LinkedIn, enhancing your professional presence.",
+  "filename": "849_linkedin_posts_from_gmail_newsletters",
+  "services": [
+    "Gmail",
+    "LinkedIn",
+    "Manual",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "LinkedIn Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "2f17285f1745a5069c9edd8be78921f40c6549f5b2e1cfd76834c7f73edd2c07",
@@ -219,34 +243,5 @@
         ]
       }
     }
-  },
-  "title": "Automate LinkedIn Posts from Gmail Newsletters",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Gmail",
-    "LinkedIn",
-    "Manual",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getall"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "LinkedIn Account"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

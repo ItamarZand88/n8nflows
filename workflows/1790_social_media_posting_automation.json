@@ -1,7 +1,30 @@
 {
   "id": "1790",
-  "filename": "1790_social_media_posting_automation",
+  "title": "Automate social media posting for photos and videos",
   "description": "Captures form submissions to upload photos and videos to Instagram, Facebook, TikTok, and more, streamlining your social media management.",
+  "filename": "1790_social_media_posting_automation",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Switch",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "r1u4HOJu5j5sP27x",
     "meta": {
@@ -570,33 +593,5 @@
         ]
       }
     }
-  },
-  "title": "Automate social media posting for photos and videos",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Switch",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 6
+  }
 }

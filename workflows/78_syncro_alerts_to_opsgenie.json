@@ -1,7 +1,27 @@
 {
   "id": "78",
-  "filename": "78_syncro_alerts_to_opsgenie",
+  "title": "Automate alert management between Syncro and OpsGenie",
   "description": "Captures alerts from Syncro via webhook, creates or closes alerts in OpsGenie based on their resolution status, streamlining incident management.",
+  "filename": "78_syncro_alerts_to_opsgenie",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "No Operation, do nothing",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": 117,
     "name": "Syncro Alert to OpsGenie",
@@ -225,30 +245,5 @@
         ]
       }
     }
-  },
-  "title": "Automate alert management between Syncro and OpsGenie",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "No Operation, do nothing",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 6
+  }
 }

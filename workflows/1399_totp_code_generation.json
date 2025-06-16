@@ -1,7 +1,23 @@
 {
   "id": "1399",
-  "filename": "1399_totp_code_generation",
+  "title": "Generate TOTP Codes for Secure Authentication",
   "description": "Triggers the generation of Time-based One-Time Passwords (TOTP) for secure authentication when the workflow is manually tested.",
+  "filename": "1399_totp_code_generation",
+  "services": [
+    "Manual",
+    "TOTP"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "TOTP API Key"
+  ],
   "content": {
     "id": "0wfomsVO0TQtQkwU",
     "meta": {
@@ -62,26 +78,5 @@
         ]
       }
     }
-  },
-  "title": "Generate TOTP Codes for Secure Authentication",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Manual",
-    "TOTP"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "TOTP API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

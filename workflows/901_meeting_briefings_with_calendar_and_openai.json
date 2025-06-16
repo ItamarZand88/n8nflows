@@ -1,7 +1,39 @@
 {
   "id": "901",
-  "filename": "901_meeting_briefings_with_calendar_and_openai",
+  "title": "Automate Meeting Briefings with Google Calendar and OpenAI",
   "description": "Triggers on new Google Calendar events, researches attendees and their companies, and sends a formatted briefing via Gmail, saving time on meeting preparation.",
+  "filename": "901_meeting_briefings_with_calendar_and_openai",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "Google Calendar",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Markdown",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Google Calendar Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Calendar Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "45e293393b5dd8437fb351e5b1ef5511ef67e6e0826a1c10b9b68be850b67593"
@@ -582,42 +614,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Meeting Briefings with Google Calendar and OpenAI",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "Google Calendar",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Markdown",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Google Calendar Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Calendar Account"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 11
+  }
 }

@@ -1,7 +1,27 @@
 {
   "id": "1709",
-  "filename": "1709_google_meet_links_from_slack",
+  "title": "Create Google Meet links from Slack commands",
   "description": "Triggers a Google Calendar event with a Meet link when a Slack command is issued, sending the link back to the Slack channel for participants.",
+  "filename": "1709_google_meet_links_from_slack",
+  "services": [
+    "Google Calendar",
+    "Slack",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Delete"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "O2R3U22TB968fWUo",
     "meta": {
@@ -226,30 +246,5 @@
         ]
       }
     }
-  },
-  "title": "Create Google Meet links from Slack commands",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Google Calendar",
-    "Slack",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Delete"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 9,
-  "external_integrations_count": 4
+  }
 }

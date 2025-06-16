@@ -1,7 +1,43 @@
 {
   "id": "819",
-  "filename": "819_monitor_webpage_changes_gmail",
+  "title": "Monitor webpage changes and notify via Gmail",
   "description": "Automatically checks a specified webpage for content changes daily, logs updates to Google Sheets, and sends email notifications when changes are detected.",
+  "filename": "819_monitor_webpage_changes_gmail",
+  "services": [
+    "Crypto",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "Markdown",
+    "Remove Duplicates",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Createfromtext",
+    "Extracthtmlcontent",
+    "Removeitemsseeninpreviousexecutions",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -448,46 +484,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor webpage changes and notify via Gmail",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Crypto",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "Markdown",
-    "Remove Duplicates",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Createfromtext",
-    "Extracthtmlcontent",
-    "Removeitemsseeninpreviousexecutions",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 10
+  }
 }

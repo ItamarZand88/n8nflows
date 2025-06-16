@@ -1,7 +1,36 @@
 {
   "id": "424",
-  "filename": "424_verify_leads_notify_slack",
+  "title": "Verify and Notify Slack of New Business Leads",
   "description": "Captures new form submissions, verifies email validity, scores leads, and sends notifications to Slack for qualified business opportunities.",
+  "filename": "424_verify_leads_notify_slack",
+  "services": [
+    "HTTP Request",
+    "Hunter",
+    "If",
+    "No Operation, do nothing",
+    "Slack",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Emailverifier",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Hunter API Key",
+    "Slack API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -312,39 +341,5 @@
         ]
       }
     }
-  },
-  "title": "Verify and Notify Slack of New Business Leads",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "HTTP Request",
-    "Hunter",
-    "If",
-    "No Operation, do nothing",
-    "Slack",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Emailverifier",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Hunter API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 7
+  }
 }

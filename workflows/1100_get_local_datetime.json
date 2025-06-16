@@ -1,7 +1,24 @@
 {
   "id": "1100",
-  "filename": "1100_get_local_datetime",
+  "title": "Get Local Date and Time in Your Preferred Timezone",
   "description": "Triggers on manual execution to retrieve and format the current local date and time based on a specified timezone, providing useful time data for further automation.",
+  "filename": "1100_get_local_datetime",
+  "services": [
+    "Function",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -40,27 +57,5 @@
         ]
       }
     }
-  },
-  "title": "Get Local Date and Time in Your Preferred Timezone",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Function",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

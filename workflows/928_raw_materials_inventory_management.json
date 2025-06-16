@@ -1,7 +1,40 @@
 {
   "id": "928",
-  "filename": "928_raw_materials_inventory_management",
+  "title": "Automate raw materials inventory management with Google Sheets and Supabase",
   "description": "Streamlines raw materials receiving, issuing, and stock updates through automated webhooks, ensuring timely approvals and low stock alerts.",
+  "filename": "928_raw_materials_inventory_management",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Sheets",
+    "If",
+    "Item Lists",
+    "Merge",
+    "Sticky Note",
+    "Supabase",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New If Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Getall",
+    "Removeduplicates",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "3da9aa1165fccd6e57ad278dd59febaa1dfaafc31e0e52a95d11801200f09024",
@@ -2494,43 +2527,5 @@
         ]
       }
     }
-  },
-  "title": "Automate raw materials inventory management with Google Sheets and Supabase",
-  "nodes_count": 51,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Sheets",
-    "If",
-    "Item Lists",
-    "Merge",
-    "Sticky Note",
-    "Supabase",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New If Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Getall",
-    "Removeduplicates",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 51,
-  "external_integrations_count": 10
+  }
 }

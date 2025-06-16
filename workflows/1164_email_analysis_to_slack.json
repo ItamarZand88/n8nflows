@@ -1,7 +1,37 @@
 {
   "id": "1164",
-  "filename": "1164_email_analysis_to_slack",
+  "title": "Automate email analysis and Slack notifications for attachments",
   "description": "Triggers on new emails, analyzes attachments for threats, and sends formatted reports to Slack, enhancing security response and team awareness.",
+  "filename": "1164_email_analysis_to_slack",
+  "services": [
+    "Code",
+    "Convert to/from binary data",
+    "Edit Fields (Set)",
+    "Email Trigger (IMAP)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Email Trigger (IMAP) Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Slack API Key"
+  ],
   "content": {
     "id": "84KL1bsi9OvbAapn",
     "meta": {
@@ -501,40 +531,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email analysis and Slack notifications for attachments",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Convert to/from binary data",
-    "Edit Fields (Set)",
-    "Email Trigger (IMAP)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Email Trigger (IMAP) Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Slack API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 9
+  }
 }

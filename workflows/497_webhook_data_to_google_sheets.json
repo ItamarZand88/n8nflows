@@ -1,7 +1,24 @@
 {
   "id": "497",
-  "filename": "497_webhook_data_to_google_sheets",
+  "title": "Automate data entry from webhooks to Google Sheets",
   "description": "Captures data from incoming webhooks and automatically logs it into a specified Google Sheets range for easy tracking and management.",
+  "filename": "497_webhook_data_to_google_sheets",
+  "services": [
+    "Google Sheets",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Google Sheets API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -50,27 +67,5 @@
         ]
       }
     }
-  },
-  "title": "Automate data entry from webhooks to Google Sheets",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "Webhook"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "Google Sheets API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

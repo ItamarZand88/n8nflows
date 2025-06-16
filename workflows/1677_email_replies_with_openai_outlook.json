@@ -1,7 +1,26 @@
 {
   "id": "1677",
-  "filename": "1677_email_replies_with_openai_outlook",
+  "title": "Automate Email Replies with OpenAI in Outlook",
   "description": "Triggers on new emails from a specific sender in Outlook, generates a draft reply using OpenAI, and saves it for review.",
+  "filename": "1677_email_replies_with_openai_outlook",
+  "services": [
+    "Microsoft Outlook",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Microsoft Outlook Event"
+  ],
+  "actions": [
+    "Reply"
+  ],
+  "setup_requirements": [
+    "Microsoft Outlook Account"
+  ],
   "content": {
     "id": "mqindLlOy0A0e5aA",
     "meta": {
@@ -242,29 +261,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Email Replies with OpenAI in Outlook",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Microsoft Outlook",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Microsoft Outlook Event"
-  ],
-  "actions": [
-    "Reply"
-  ],
-  "setup_requirements": [
-    "Microsoft Outlook Account"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 2
+  }
 }

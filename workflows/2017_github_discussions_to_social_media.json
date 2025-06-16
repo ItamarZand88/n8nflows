@@ -1,7 +1,45 @@
 {
   "id": "2017",
-  "filename": "2017_github_discussions_to_social_media",
+  "title": "Automate social media posts from trending GitHub discussions",
   "description": "Crawls Hacker News for trending GitHub links, generates engaging posts, and shares them on X and LinkedIn, streamlining your social media outreach.",
+  "filename": "2017_github_discussions_to_social_media",
+  "services": [
+    "Airtable",
+    "Code",
+    "Filter",
+    "HTTP Request",
+    "LinkedIn",
+    "Markdown",
+    "Merge",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note",
+    "Telegram",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Create",
+    "Search",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "LinkedIn Account",
+    "Telegram API Key",
+    "X (Formerly Twitter) Account"
+  ],
   "content": {
     "id": "ZeSJSbwXI593H1Qj",
     "meta": {
@@ -1116,48 +1154,5 @@
         ]
       }
     }
-  },
-  "title": "Automate social media posts from trending GitHub discussions",
-  "nodes_count": 26,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Marketing"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Filter",
-    "HTTP Request",
-    "LinkedIn",
-    "Markdown",
-    "Merge",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note",
-    "Telegram",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Create",
-    "Search",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "LinkedIn Account",
-    "Telegram API Key",
-    "X (Formerly Twitter) Account"
-  ],
-  "workflow_complexity": 26,
-  "external_integrations_count": 12
+  }
 }

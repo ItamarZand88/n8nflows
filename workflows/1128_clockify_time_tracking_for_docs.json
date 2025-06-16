@@ -1,7 +1,30 @@
 {
   "id": "1128",
-  "filename": "1128_clockify_time_tracking_for_docs",
+  "title": "Automate time tracking in Clockify for documentation tasks",
   "description": "Triggers time entry creation in Clockify when executed, tagging it for documentation and updating the project association for better organization.",
+  "filename": "1128_clockify_time_tracking_for_docs",
+  "services": [
+    "Clockify",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage tag",
+    "Manage timeEntry",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Clockify API Key"
+  ],
   "content": {
     "id": "76",
     "name": "Create a project, tag, and time entry, and update the time entry in Clockify",
@@ -148,33 +171,5 @@
         ]
       }
     }
-  },
-  "title": "Automate time tracking in Clockify for documentation tasks",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Clockify",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage tag",
-    "Manage timeEntry",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Clockify API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 2
+  }
 }

@@ -1,7 +1,30 @@
 {
   "id": "1113",
-  "filename": "1113_docker_github_metrics_to_dashboard",
+  "title": "Automate Docker and GitHub metrics updates to dashboard",
   "description": "Triggers every minute to fetch Docker and GitHub metrics, processes the data, and updates a dashboard with the latest statistics for monitoring.",
+  "filename": "1113_docker_github_metrics_to_dashboard",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Function",
+    "GitHub",
+    "HTTP Request"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Get",
+    "Manage repository",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "GitHub API Key"
+  ],
   "content": {
     "id": "6",
     "name": "Dashboard",
@@ -782,33 +805,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Docker and GitHub metrics updates to dashboard",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Function",
-    "GitHub",
-    "HTTP Request"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Get",
-    "Manage repository",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "GitHub API Key"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,24 @@
 {
   "id": "361",
-  "filename": "361_website_stock_check_to_discord",
+  "title": "Monitor website stock status and notify on Discord",
   "description": "Checks a website every hour for stock status and sends notifications to Discord if the item is out of stock or available.",
+  "filename": "361_website_stock_check_to_discord",
+  "services": [
+    "Cron",
+    "Discord",
+    "HTTP Request",
+    "If"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "1",
     "name": "Website check",
@@ -125,27 +142,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor website stock status and notify on Discord",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Discord",
-    "HTTP Request",
-    "If"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

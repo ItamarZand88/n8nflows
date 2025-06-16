@@ -1,7 +1,33 @@
 {
   "id": "1961",
-  "filename": "1961_ai_article_creation_and_editing",
+  "title": "Automate article creation and editing using AI tools",
   "description": "Triggers on chat messages to generate, revise, and publish articles with AI assistance, ensuring high-quality content delivery.",
+  "filename": "1961_ai_article_creation_and_editing",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Function",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Execute Function",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "WwEFqNK4YP6UJcg2",
     "meta": {
@@ -907,36 +933,5 @@
         ]
       }
     }
-  },
-  "title": "Automate article creation and editing using AI tools",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Function",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Execute Function",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 23,
-  "external_integrations_count": 9
+  }
 }

@@ -1,7 +1,43 @@
 {
   "id": "397",
-  "filename": "397_dropbox_backup_management_cleanup",
+  "title": "Automate Dropbox backup management and cleanup",
   "description": "Triggers a scheduled cleanup of Dropbox backups, moving current workflows to an old folder and deleting backups older than 30 days for efficient storage management.",
+  "filename": "397_dropbox_backup_management_cleanup",
+  "services": [
+    "Convert to/from binary data",
+    "Date & Time",
+    "Dropbox",
+    "Edit Fields (Set)",
+    "Filter",
+    "If",
+    "Merge",
+    "Schedule",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Delete",
+    "Filter Data",
+    "Formatdate",
+    "List",
+    "Manage folder",
+    "Move",
+    "Set Data",
+    "Subtractfromdate"
+  ],
+  "setup_requirements": [
+    "Dropbox Account",
+    "n8n API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833",
@@ -508,46 +544,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Dropbox backup management and cleanup",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Convert to/from binary data",
-    "Date & Time",
-    "Dropbox",
-    "Edit Fields (Set)",
-    "Filter",
-    "If",
-    "Merge",
-    "Schedule",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Delete",
-    "Filter Data",
-    "Formatdate",
-    "List",
-    "Manage folder",
-    "Move",
-    "Set Data",
-    "Subtractfromdate"
-  ],
-  "setup_requirements": [
-    "Dropbox Account",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 10
+  }
 }

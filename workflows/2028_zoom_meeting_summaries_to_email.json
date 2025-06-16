@@ -1,7 +1,48 @@
 {
   "id": "2028",
-  "filename": "2028_zoom_meeting_summaries_to_email",
+  "title": "Automate meeting summaries and task creation from Zoom",
   "description": "Triggers on a manual event to retrieve Zoom meeting data, generates a summary and tasks, and sends an email with the formatted minutes.",
+  "filename": "2028_zoom_meeting_summaries_to_email",
+  "services": [
+    "ClickUp",
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Extract from File",
+    "Filter",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Send Email",
+    "Split Out",
+    "Sticky Note",
+    "Stop and Error",
+    "Zoom"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Getall",
+    "Manage event",
+    "Set Data",
+    "Text"
+  ],
+  "setup_requirements": [
+    "ClickUp Account",
+    "HTTP Request Account",
+    "Zoom Account"
+  ],
   "content": {
     "id": "jhNsy4dPQYw9QDaa",
     "meta": {
@@ -766,51 +807,5 @@
         ]
       }
     }
-  },
-  "title": "Automate meeting summaries and task creation from Zoom",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "ClickUp",
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Extract from File",
-    "Filter",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Send Email",
-    "Split Out",
-    "Sticky Note",
-    "Stop and Error",
-    "Zoom"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Getall",
-    "Manage event",
-    "Set Data",
-    "Text"
-  ],
-  "setup_requirements": [
-    "ClickUp Account",
-    "HTTP Request Account",
-    "Zoom Account"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 14
+  }
 }

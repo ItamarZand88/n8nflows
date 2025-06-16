@@ -1,7 +1,46 @@
 {
   "id": "897",
-  "filename": "897_import_hubspot_properties_to_sheets",
+  "title": "Import HubSpot properties from CSV to Google Sheets",
   "description": "Automates the import of HubSpot properties from a CSV file, processes the data, and appends it to a Google Sheet for easy management and tracking.",
+  "filename": "897_import_hubspot_properties_to_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Filter",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Merge",
+    "Split Out",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append",
+    "Clear",
+    "Completion",
+    "Filter Data",
+    "Set Data",
+    "Text"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "HTTP Request API Key",
+    "HTTP Request Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -1292,49 +1331,5 @@
         ]
       }
     }
-  },
-  "title": "Import HubSpot properties from CSV to Google Sheets",
-  "nodes_count": 36,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Filter",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Merge",
-    "Split Out",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append",
-    "Clear",
-    "Completion",
-    "Filter Data",
-    "Set Data",
-    "Text"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "HTTP Request API Key",
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 36,
-  "external_integrations_count": 12
+  }
 }

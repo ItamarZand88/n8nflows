@@ -1,7 +1,26 @@
 {
   "id": "1530",
-  "filename": "1530_line_chatbot_azure_ai_responses",
+  "title": "Automate responses for Line chatbot using Azure AI",
   "description": "Handles incoming messages from Line chatbot, processes text input with Azure AI, and replies with appropriate responses or a loading animation if unsupported.",
+  "filename": "1530_line_chatbot_azure_ai_responses",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "ghfbOYrOSiQVAbl5",
     "meta": {
@@ -379,29 +398,5 @@
         ]
       }
     }
-  },
-  "title": "Automate responses for Line chatbot using Azure AI",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 5
+  }
 }

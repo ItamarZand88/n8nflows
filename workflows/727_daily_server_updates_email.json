@@ -1,7 +1,28 @@
 {
   "id": "727",
-  "filename": "727_daily_server_updates_email",
+  "title": "Automate daily server upgrade notifications via email",
   "description": "Checks for upgradable packages on your server daily and sends an email alert with the list of updates to keep your system secure.",
+  "filename": "727_daily_server_updates_email",
+  "services": [
+    "Code",
+    "If",
+    "SSH",
+    "Schedule",
+    "Send Email",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -193,31 +214,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily server upgrade notifications via email",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "If",
-    "SSH",
-    "Schedule",
-    "Send Email",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 6
+  }
 }

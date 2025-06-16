@@ -1,7 +1,32 @@
 {
   "id": "1162",
-  "filename": "1162_woocommerce_customer_updates_to_mautic",
+  "title": "Automate customer updates from WooCommerce to Mautic",
   "description": "Triggers on customer updates in WooCommerce, checks for existing contacts in Mautic, and creates or updates them accordingly to streamline customer management.",
+  "filename": "1162_woocommerce_customer_updates_to_mautic",
+  "services": [
+    "If",
+    "Mautic",
+    "WooCommerce"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New WooCommerce Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Mautic Account",
+    "WooCommerce API Key"
+  ],
   "content": {
     "id": 83,
     "name": "New WooCommerce Customer to Mautic",
@@ -165,35 +190,5 @@
         ]
       }
     }
-  },
-  "title": "Automate customer updates from WooCommerce to Mautic",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "If",
-    "Mautic",
-    "WooCommerce"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New WooCommerce Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Mautic Account",
-    "WooCommerce API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 3
+  }
 }

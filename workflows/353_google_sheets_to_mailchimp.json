@@ -1,7 +1,30 @@
 {
   "id": "353",
-  "filename": "353_google_sheets_to_mailchimp",
+  "title": "Sync Google Sheets contacts to Mailchimp subscribers",
   "description": "Automatically transfers email addresses from Google Sheets to Mailchimp, ensuring your mailing list is always up-to-date with new contacts.",
+  "filename": "353_google_sheets_to_mailchimp",
+  "services": [
+    "Google Sheets",
+    "Interval",
+    "Mailchimp",
+    "Manual"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Google Sheets API Key",
+    "Mailchimp API Key"
+  ],
   "content": {
     "id": "1",
     "name": "Google Sheet to Mailchimp",
@@ -95,33 +118,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Google Sheets contacts to Mailchimp subscribers",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "Interval",
-    "Mailchimp",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Google Sheets API Key",
-    "Mailchimp API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,39 @@
 {
   "id": "782",
-  "filename": "782_funding_research_to_airtable",
+  "title": "Automate company funding research and log to Airtable",
   "description": "Triggers on demand to gather and analyze recent funding news articles, extracting key company data and storing it in Airtable for easy access and follow-up.",
+  "filename": "782_funding_research_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Filter",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "Split Out",
+    "Sticky Note",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Extracthtmlcontent",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "d4d7965840e96e50a3e02959a8487c692901dfa8d5cc294134442c67ce1622d3",
@@ -1846,42 +1878,5 @@
         ]
       }
     }
-  },
-  "title": "Automate company funding research and log to Airtable",
-  "nodes_count": 51,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Filter",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "Split Out",
-    "Sticky Note",
-    "XML"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Extracthtmlcontent",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 51,
-  "external_integrations_count": 11
+  }
 }

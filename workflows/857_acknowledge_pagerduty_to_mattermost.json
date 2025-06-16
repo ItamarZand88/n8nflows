@@ -1,7 +1,27 @@
 {
   "id": "857",
-  "filename": "857_acknowledge_pagerduty_to_mattermost",
+  "title": "Acknowledge PagerDuty incidents and notify Mattermost channel",
   "description": "Automatically acknowledges incidents in PagerDuty and sends a notification to a specified Mattermost channel, improving incident response communication.",
+  "filename": "857_acknowledge_pagerduty_to_mattermost",
+  "services": [
+    "Mattermost",
+    "PagerDuty",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Update"
+  ],
+  "setup_requirements": [
+    "Mattermost API Key",
+    "PagerDuty API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -82,30 +102,5 @@
         ]
       }
     }
-  },
-  "title": "Acknowledge PagerDuty incidents and notify Mattermost channel",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Mattermost",
-    "PagerDuty",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Update"
-  ],
-  "setup_requirements": [
-    "Mattermost API Key",
-    "PagerDuty API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

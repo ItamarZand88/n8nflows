@@ -1,7 +1,46 @@
 {
   "id": "917",
-  "filename": "917_client_updates_to_gmail_and_sheets",
+  "title": "Automate client updates and notifications via Gmail and Google Sheets",
   "description": "Triggers on new client data, retrieves updates from HubSpot, and sends email alerts with changes to clients' positions and posts, logging details in Google Sheets.",
+  "filename": "917_client_updates_to_gmail_and_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Filter",
+    "Gmail",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account",
+    "HTTP Request Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -1751,49 +1790,5 @@
         ]
       }
     }
-  },
-  "title": "Automate client updates and notifications via Gmail and Google Sheets",
-  "nodes_count": 46,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Filter",
-    "Gmail",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account",
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 46,
-  "external_integrations_count": 14
+  }
 }

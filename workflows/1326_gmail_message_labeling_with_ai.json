@@ -1,7 +1,33 @@
 {
   "id": "1326",
-  "filename": "1326_gmail_message_labeling_with_ai",
+  "title": "Automate Gmail message labeling with AI categorization",
   "description": "Triggers on new Gmail messages, uses AI to categorize them, and automatically adds relevant labels for better organization.",
+  "filename": "1326_gmail_message_labeling_with_ai",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Merge",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Addlabels",
+    "Get",
+    "Manage label",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -476,36 +502,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Gmail message labeling with AI categorization",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Merge",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Addlabels",
-    "Get",
-    "Manage label",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 6
+  }
 }

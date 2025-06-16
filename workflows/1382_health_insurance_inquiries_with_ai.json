@@ -1,7 +1,27 @@
 {
   "id": "1382",
-  "filename": "1382_health_insurance_inquiries_with_ai",
+  "title": "Automate health insurance inquiries with AI responses",
   "description": "Triggers on user chat input, processes lead data, and provides tailored health insurance options using AI and database queries.",
+  "filename": "1382_health_insurance_inquiries_with_ai",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Executequery",
+    "Filter Data",
+    "Manage assistant",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "BMI5WkmyU8nZqfII",
     "meta": {
@@ -426,30 +446,5 @@
         ]
       }
     }
-  },
-  "title": "Automate health insurance inquiries with AI responses",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Executequery",
-    "Filter Data",
-    "Manage assistant",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 3
+  }
 }

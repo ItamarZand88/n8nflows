@@ -1,7 +1,32 @@
 {
   "id": "568",
-  "filename": "568_bitbucket_workflow_uploads_daily",
+  "title": "Automate Bitbucket workflow uploads daily at 2 AM",
   "description": "Automatically retrieves and uploads workflows to Bitbucket every day at 2 AM, ensuring your repository is always up-to-date with the latest changes.",
+  "filename": "568_bitbucket_workflow_uploads_daily",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Schedule",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "id": "23GPrqZjHnIVvTEa",
     "meta": {
@@ -367,35 +392,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Bitbucket workflow uploads daily at 2 AM",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Schedule",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 7
+  }
 }

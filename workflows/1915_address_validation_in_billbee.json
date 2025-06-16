@@ -1,7 +1,28 @@
 {
   "id": "1915",
-  "filename": "1915_address_validation_in_billbee",
+  "title": "Automate Address Validation and Update in Billbee",
   "description": "Triggers on new orders from Billbee, validates shipping addresses using Endereco API, and updates corrected addresses back in Billbee, enhancing order accuracy.",
+  "filename": "1915_address_validation_in_billbee",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Split Out",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "VaU41OXvni95OlAL",
     "meta": {
@@ -1082,31 +1103,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Address Validation and Update in Billbee",
-  "nodes_count": 31,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Split Out",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 31,
-  "external_integrations_count": 7
+  }
 }

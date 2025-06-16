@@ -1,7 +1,31 @@
 {
   "id": "938",
-  "filename": "938_analyze_email_headers_ip_reputation",
+  "title": "Analyze Email Headers for IP Reputation and Authentication",
   "description": "Receives email headers via webhook, analyzes IP reputation and authentication status, and returns detailed security insights to enhance email safety.",
+  "filename": "938_analyze_email_headers_ip_reputation",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Item Lists",
+    "Merge",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Concatenateitems",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "3tJcVzt2OqeyjfnH",
     "meta": {
@@ -1024,34 +1048,5 @@
         ]
       }
     }
-  },
-  "title": "Analyze Email Headers for IP Reputation and Authentication",
-  "nodes_count": 35,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Item Lists",
-    "Merge",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Concatenateitems",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 35,
-  "external_integrations_count": 9
+  }
 }

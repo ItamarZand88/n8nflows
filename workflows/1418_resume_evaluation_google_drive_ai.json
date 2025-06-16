@@ -1,7 +1,32 @@
 {
   "id": "1418",
-  "filename": "1418_resume_evaluation_google_drive_ai",
+  "title": "Automate candidate resume evaluation using Google Drive and AI",
   "description": "Triggers on demand to download a candidate's resume from Google Drive, converts it to an image, and evaluates its fit for a role using AI analysis.",
+  "filename": "1418_resume_evaluation_google_drive_ai",
+  "services": [
+    "Google Drive",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download",
+    "Filter Data",
+    "Resize"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -349,35 +374,5 @@
         ]
       }
     }
-  },
-  "title": "Automate candidate resume evaluation using Google Drive and AI",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Google Drive",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download",
-    "Filter Data",
-    "Resize"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,16 @@
 {
   "id": "1943",
-  "filename": "1943_chat_to_twitter_thread",
+  "title": "Automate Twitter thread creation from chat messages",
   "description": "Triggers on received chat messages, generates engaging tweets and replies, and posts them as a coherent thread on Twitter.",
+  "filename": "1943_chat_to_twitter_thread",
+  "services": [],
+  "categories": [],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "WCh8N9PrO0UIwrqW",
     "meta": {
@@ -168,19 +177,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Twitter thread creation from chat messages",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [],
-  "services": [],
-  "difficulty": "Beginner",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 0
+  }
 }

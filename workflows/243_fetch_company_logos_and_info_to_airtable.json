@@ -1,7 +1,33 @@
 {
   "id": "243",
-  "filename": "243_fetch_company_logos_and_info_to_airtable",
+  "title": "Fetch Company Logos and Info, Store in Airtable",
   "description": "Triggers on manual execution to retrieve a company's logo and information from Brandfetch, then appends the data to Airtable for easy access.",
+  "filename": "243_fetch_company_logos_and_info_to_airtable",
+  "services": [
+    "Airtable",
+    "Brandfetch",
+    "Edit Fields (Set)",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Sales",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Company",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Brandfetch API Key"
+  ],
   "content": {
     "id": "176",
     "name": "Get the logo, icon, and information of a company and store it in Airtable",
@@ -143,36 +169,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch Company Logos and Info, Store in Airtable",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Sales",
-    "Utility"
-  ],
-  "services": [
-    "Airtable",
-    "Brandfetch",
-    "Edit Fields (Set)",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Company",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Brandfetch API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

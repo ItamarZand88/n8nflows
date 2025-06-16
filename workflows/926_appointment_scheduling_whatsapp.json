@@ -1,7 +1,22 @@
 {
   "id": "926",
-  "filename": "926_appointment_scheduling_whatsapp",
+  "title": "Automate appointment scheduling and data encryption with WhatsApp",
   "description": "Processes encrypted appointment data from WhatsApp, decrypts it, and dynamically responds with available time slots or seat options for users.",
+  "filename": "926_appointment_scheduling_whatsapp",
+  "services": [
+    "Code",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "32014bf2061907b54debfd6d86e0e8dc3f3ec9cdd9123c339fc7506178206d83",
@@ -371,25 +386,5 @@
         ]
       }
     }
-  },
-  "title": "Automate appointment scheduling and data encryption with WhatsApp",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 4
+  }
 }

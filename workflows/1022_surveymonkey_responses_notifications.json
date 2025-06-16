@@ -1,7 +1,23 @@
 {
   "id": "1022",
-  "filename": "1022_surveymonkey_responses_notifications",
+  "title": "Automate notifications for new SurveyMonkey responses",
   "description": "Triggers when a new response is created in SurveyMonkey, allowing you to streamline feedback collection and improve engagement.",
+  "filename": "1022_surveymonkey_responses_notifications",
+  "services": [
+    "SurveyMonkey"
+  ],
+  "categories": [
+    "Communication",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New SurveyMonkey Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "SurveyMonkey Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -27,26 +43,5 @@
       }
     ],
     "connections": {}
-  },
-  "title": "Automate notifications for new SurveyMonkey responses",
-  "nodes_count": 1,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Marketing"
-  ],
-  "services": [
-    "SurveyMonkey"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New SurveyMonkey Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "SurveyMonkey Account"
-  ],
-  "workflow_complexity": 1,
-  "external_integrations_count": 1
+  }
 }

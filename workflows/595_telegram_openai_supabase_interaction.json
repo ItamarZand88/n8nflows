@@ -1,7 +1,36 @@
 {
   "id": "595",
-  "filename": "595_telegram_openai_supabase_interaction",
+  "title": "Automate Telegram interactions with OpenAI and Supabase",
   "description": "Triggers on new Telegram messages, creates user sessions in Supabase, and utilizes OpenAI to respond, enhancing user engagement and context retention.",
+  "filename": "595_telegram_openai_supabase_interaction",
+  "services": [
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Sticky Note",
+    "Supabase",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Supabase API Key",
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -684,39 +713,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Telegram interactions with OpenAI and Supabase",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Sticky Note",
-    "Supabase",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Supabase API Key",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 6
+  }
 }

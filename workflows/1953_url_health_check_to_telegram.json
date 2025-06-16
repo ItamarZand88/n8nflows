@@ -1,7 +1,33 @@
 {
   "id": "1953",
-  "filename": "1953_url_health_check_to_telegram",
+  "title": "Monitor URLs and Send Health Check Alerts via Telegram",
   "description": "Triggers every minute to fetch URLs from Google Sheets, checks their status, and sends health alerts to a specified Telegram chat for quick monitoring.",
+  "filename": "1953_url_health_check_to_telegram",
+  "services": [
+    "Google Sheets",
+    "HTTP Request",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "wng5xcxlYA6jFS6n",
     "meta": {
@@ -187,36 +213,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor URLs and Send Health Check Alerts via Telegram",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "HTTP Request",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 6
+  }
 }

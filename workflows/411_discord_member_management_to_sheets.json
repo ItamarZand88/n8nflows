@@ -1,7 +1,41 @@
 {
   "id": "411",
-  "filename": "411_discord_member_management_to_sheets",
+  "title": "Automate Discord member management with Google Sheets",
   "description": "Triggers on demand to manage Discord members, appending new IDs to Google Sheets and deleting outdated ones for efficient member tracking.",
+  "filename": "411_discord_member_management_to_sheets",
+  "services": [
+    "Discord",
+    "Edit Fields (Set)",
+    "Filter",
+    "Google Sheets",
+    "If",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Delete",
+    "Filter Data",
+    "Manage member",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Discord API Key",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833",
@@ -564,44 +598,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Discord member management with Google Sheets",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Discord",
-    "Edit Fields (Set)",
-    "Filter",
-    "Google Sheets",
-    "If",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Delete",
-    "Filter Data",
-    "Manage member",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Discord API Key",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 10
+  }
 }

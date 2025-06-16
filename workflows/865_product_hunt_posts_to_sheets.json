@@ -1,7 +1,33 @@
 {
   "id": "865",
-  "filename": "865_product_hunt_posts_to_sheets",
+  "title": "Fetch and Log Today's Product Hunt Posts to Google Sheets",
   "description": "Automates daily retrieval of today's top Product Hunt posts and logs them into Google Sheets for easy tracking and analysis.",
+  "filename": "865_product_hunt_posts_to_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Function",
+    "Google Sheets",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "431926ace0ab32761b92304a05ffb4819a2a2a8ee5de45404953945769b5412a"
@@ -406,36 +432,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch and Log Today's Product Hunt Posts to Google Sheets",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Function",
-    "Google Sheets",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 7
+  }
 }

@@ -1,7 +1,25 @@
 {
   "id": "377",
-  "filename": "377_dingtalk_notifications_for_azure_devops_prs",
+  "title": "Send DingTalk notifications for new Azure DevOps Pull Requests",
   "description": "Automatically sends formatted DingTalk messages when new Pull Requests are created in Azure DevOps, ensuring relevant team members are notified.",
+  "filename": "377_dingtalk_notifications_for_azure_devops_prs",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "MySQL",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Select"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "dbd43d88d26a9e30d8aadc002c9e77f1400c683dd34efe3778d43d27250dde50"
@@ -132,28 +150,5 @@
         ]
       }
     }
-  },
-  "title": "Send DingTalk notifications for new Azure DevOps Pull Requests",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "MySQL",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Select"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

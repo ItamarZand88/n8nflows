@@ -1,7 +1,32 @@
 {
   "id": "1277",
-  "filename": "1277_pdf_data_extraction_to_baserow",
+  "title": "Automate PDF Data Extraction and Update in Baserow",
   "description": "Triggers on updates in Baserow tables, extracts data from uploaded PDFs using AI, and updates relevant fields automatically for efficient data management.",
+  "filename": "1277_pdf_data_extraction_to_baserow",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Filter",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "No Operation, do nothing",
+    "Split Out",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Pdf",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -1301,35 +1326,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PDF Data Extraction and Update in Baserow",
-  "nodes_count": 45,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Filter",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "No Operation, do nothing",
-    "Split Out",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Pdf",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 45,
-  "external_integrations_count": 11
+  }
 }

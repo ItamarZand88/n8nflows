@@ -1,7 +1,28 @@
 {
   "id": "1403",
-  "filename": "1403_text_to_speech_openai",
+  "title": "Convert Text to Speech Using OpenAI TTS API",
   "description": "Triggers a text-to-speech conversion by sending a predefined text to OpenAI's TTS API and receives an audio file in response.",
+  "filename": "1403_text_to_speech_openai",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "6Yzmlp5xF6oHo1VW",
     "meta": {
@@ -193,31 +214,5 @@
         ]
       }
     }
-  },
-  "title": "Convert Text to Speech Using OpenAI TTS API",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 4
+  }
 }

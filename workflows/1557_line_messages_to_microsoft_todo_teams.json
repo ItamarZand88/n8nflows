@@ -1,7 +1,38 @@
 {
   "id": "1557",
-  "filename": "1557_line_messages_to_microsoft_todo_teams",
+  "title": "Automate Line messages to Microsoft To Do and Teams",
   "description": "Captures messages from Line, processes them based on type, and automatically creates tasks in Microsoft To Do or sends updates to Microsoft Teams.",
+  "filename": "1557_line_messages_to_microsoft_todo_teams",
+  "services": [
+    "HTTP Request",
+    "If",
+    "Microsoft OneDrive",
+    "Microsoft Teams",
+    "Microsoft To Do",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Manage channelMessage",
+    "Rename"
+  ],
+  "setup_requirements": [
+    "Microsoft OneDrive Account",
+    "Microsoft Teams Account",
+    "Microsoft To Do Account"
+  ],
   "content": {
     "id": "HbjZ9cBPgDdnIRjG",
     "meta": {
@@ -1355,41 +1386,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Line messages to Microsoft To Do and Teams",
-  "nodes_count": 45,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "HTTP Request",
-    "If",
-    "Microsoft OneDrive",
-    "Microsoft Teams",
-    "Microsoft To Do",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Manage channelMessage",
-    "Rename"
-  ],
-  "setup_requirements": [
-    "Microsoft OneDrive Account",
-    "Microsoft Teams Account",
-    "Microsoft To Do Account"
-  ],
-  "workflow_complexity": 45,
-  "external_integrations_count": 8
+  }
 }

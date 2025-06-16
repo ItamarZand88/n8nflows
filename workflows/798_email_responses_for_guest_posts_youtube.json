@@ -1,7 +1,35 @@
 {
   "id": "798",
-  "filename": "798_email_responses_for_guest_posts_youtube",
+  "title": "Automate Email Responses for Guest Posts and YouTube Inquiries",
   "description": "Triggers on new Gmail messages, classifies inquiries, and sends tailored responses for guest posts and YouTube video requests, enhancing outreach efficiency.",
+  "filename": "798_email_responses_for_guest_posts_youtube",
+  "services": [
+    "Brevo",
+    "Gmail",
+    "If",
+    "Send Email",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Addlabels",
+    "Filter Data",
+    "Manage contact",
+    "Markasread",
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Brevo API Key",
+    "Gmail Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "dd130a849d7b29e5541b05d2f7f86a4acd4f1ec598c1c9438783f56bc4f0ff80",
@@ -499,38 +527,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Email Responses for Guest Posts and YouTube Inquiries",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Brevo",
-    "Gmail",
-    "If",
-    "Send Email",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Addlabels",
-    "Filter Data",
-    "Manage contact",
-    "Markasread",
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Brevo API Key",
-    "Gmail Account"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,29 @@
 {
   "id": "1718",
-  "filename": "1718_telegram_file_to_kindle_email",
+  "title": "Automate file submission from Telegram to Kindle via email",
   "description": "Triggers when a file is sent to a Telegram bot, checks for the file, and emails it to a Kindle address, notifying the user of success.",
+  "filename": "1718_telegram_file_to_kindle_email",
+  "services": [
+    "Code",
+    "If",
+    "Microsoft Outlook",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "okMME97B70fXzK5U",
     "meta": {
@@ -229,32 +251,5 @@
         ]
       }
     }
-  },
-  "title": "Automate file submission from Telegram to Kindle via email",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "If",
-    "Microsoft Outlook",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 5
+  }
 }

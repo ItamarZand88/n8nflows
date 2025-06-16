@@ -1,7 +1,33 @@
 {
   "id": "1291",
-  "filename": "1291_email_responses_with_ai_summarization",
+  "title": "Automate email responses with AI summarization and approval",
   "description": "Triggers on new emails, summarizes content, generates AI responses, and sends for approval before replying, enhancing efficiency in email management.",
+  "filename": "1291_email_responses_with_ai_summarization",
+  "services": [
+    "Edit Fields (Set)",
+    "Email Trigger (IMAP)",
+    "Gmail",
+    "If",
+    "Markdown",
+    "Send Email",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Email Trigger (IMAP) Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Sendandwait",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "id": "OuHrYOR3uWGmrhWQ",
     "meta": {
@@ -505,36 +531,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email responses with AI summarization and approval",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Email Trigger (IMAP)",
-    "Gmail",
-    "If",
-    "Markdown",
-    "Send Email",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Email Trigger (IMAP) Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Sendandwait",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 7
+  }
 }

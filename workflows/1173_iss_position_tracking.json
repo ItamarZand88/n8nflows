@@ -1,7 +1,25 @@
 {
   "id": "1173",
-  "filename": "1173_iss_position_tracking",
+  "title": "Automate satellite position tracking every minute",
   "description": "Fetches the current position of the ISS every minute, filters new data, and stores unique location updates for further use.",
+  "filename": "1173_iss_position_tracking",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Function",
+    "HTTP Request"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -121,28 +139,5 @@
         ]
       }
     }
-  },
-  "title": "Automate satellite position tracking every minute",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Function",
-    "HTTP Request"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

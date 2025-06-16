@@ -1,7 +1,28 @@
 {
   "id": "1102",
-  "filename": "1102_taiga_issue_management",
+  "title": "Automate issue management in Taiga with updates and retrieval",
   "description": "Triggers issue creation in Taiga, updates its description, and retrieves the issue details for tracking, streamlining project management.",
+  "filename": "1102_taiga_issue_management",
+  "services": [
+    "Manual",
+    "Taiga"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Taiga API Key"
+  ],
   "content": {
     "id": "69",
     "name": "Create, update, and get an issue on Taiga",
@@ -107,31 +128,5 @@
         ]
       }
     }
-  },
-  "title": "Automate issue management in Taiga with updates and retrieval",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Manual",
-    "Taiga"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Taiga API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

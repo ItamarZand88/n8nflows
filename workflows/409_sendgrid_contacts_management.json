@@ -1,7 +1,28 @@
 {
   "id": "409",
-  "filename": "409_sendgrid_contacts_management",
+  "title": "Manage SendGrid contacts: Create, update, and retrieve",
   "description": "Automates the process of creating, updating, and retrieving contacts in SendGrid using a manual trigger for efficient contact management.",
+  "filename": "409_sendgrid_contacts_management",
+  "services": [
+    "Manual",
+    "SendGrid"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Manage contact"
+  ],
+  "setup_requirements": [
+    "SendGrid API Key"
+  ],
   "content": {
     "id": "209",
     "name": "Create, update and get a contact using the SendGrid node",
@@ -110,31 +131,5 @@
         ]
       }
     }
-  },
-  "title": "Manage SendGrid contacts: Create, update, and retrieve",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Manual",
-    "SendGrid"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Manage contact"
-  ],
-  "setup_requirements": [
-    "SendGrid API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

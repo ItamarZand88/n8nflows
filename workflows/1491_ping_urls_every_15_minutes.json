@@ -1,7 +1,26 @@
 {
   "id": "1491",
-  "filename": "1491_ping_urls_every_15_minutes",
+  "title": "Ping Multiple URLs Every 15 Minutes",
   "description": "Automatically pings a list of specified URLs every 15 minutes to check their availability, ensuring your services are always online.",
+  "filename": "1491_ping_urls_every_15_minutes",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Schedule",
+    "Split Out"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "F2AEknC2Kc3ujuX4",
     "meta": {
@@ -126,29 +145,5 @@
         ]
       }
     }
-  },
-  "title": "Ping Multiple URLs Every 15 Minutes",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Schedule",
-    "Split Out"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

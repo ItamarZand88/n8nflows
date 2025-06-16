@@ -1,7 +1,23 @@
 {
   "id": "2038",
-  "filename": "2038_blog_content_creation_tavily_ai",
+  "title": "Automate blog content creation using Tavily and AI",
   "description": "Triggers when executed by another workflow, searches Tavily for blog topics, and generates SEO-optimized content using AI.",
+  "filename": "2038_blog_content_creation_tavily_ai",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Workflow"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "name": "🤖Content Creator Agent",
     "nodes": [
@@ -194,26 +210,5 @@
     },
     "id": "WWSu94V939ATcqvi",
     "tags": []
-  },
-  "title": "Automate blog content creation using Tavily and AI",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Workflow"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 2
+  }
 }

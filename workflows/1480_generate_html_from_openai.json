@@ -1,7 +1,23 @@
 {
   "id": "1480",
-  "filename": "1480_generate_html_from_openai",
+  "title": "Generate HTML pages from user queries using OpenAI",
   "description": "Transforms user input into structured HTML pages by leveraging OpenAI's API, providing a quick and efficient way to visualize web design ideas.",
+  "filename": "1480_generate_html_from_openai",
+  "services": [
+    "HTTP Request",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "eXiaTDyKfXpMeyLh",
     "meta": {
@@ -225,26 +241,5 @@
         ]
       }
     }
-  },
-  "title": "Generate HTML pages from user queries using OpenAI",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 3
+  }
 }

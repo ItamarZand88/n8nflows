@@ -1,7 +1,27 @@
 {
   "id": "1120",
-  "filename": "1120_weather_data_from_openweathermap",
+  "title": "Fetch and Format Weather Data from OpenWeatherMap",
   "description": "Automatically retrieves weather information for a specified city and formats the data for easy access, including temperature, humidity, and wind speed.",
+  "filename": "1120_weather_data_from_openweathermap",
+  "services": [
+    "Edit Fields (Set)",
+    "OpenWeatherMap",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "OpenWeatherMap API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -97,30 +117,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch and Format Weather Data from OpenWeatherMap",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Miscellaneous",
-    "Utility"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "OpenWeatherMap",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "OpenWeatherMap API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

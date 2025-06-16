@@ -1,7 +1,31 @@
 {
   "id": "779",
-  "filename": "779_mailerlite_subscriber_to_airtable",
+  "title": "Automate subscriber updates from MailerLite to Airtable",
   "description": "Triggers when a new subscriber is added to a MailerLite group, then stores their name and email in Airtable for easy access and management.",
+  "filename": "779_mailerlite_subscriber_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "MailerLite",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New MailerLite Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "MailerLite API Key"
+  ],
   "content": {
     "id": "30",
     "name": "Receive updates when a subscriber is added to a group and strore the information in Airtable",
@@ -108,34 +132,5 @@
         ]
       }
     }
-  },
-  "title": "Automate subscriber updates from MailerLite to Airtable",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "MailerLite",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New MailerLite Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "MailerLite API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

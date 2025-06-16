@@ -1,7 +1,33 @@
 {
   "id": "1905",
-  "filename": "1905_linkedin_search_to_google_sheets",
+  "title": "Automate LinkedIn Profile Search and Log Results to Google Sheets",
   "description": "Triggers on chat message input to generate a Boolean search for LinkedIn profiles, fetches results, and logs them into a Google Sheets document for easy tracking.",
+  "filename": "1905_linkedin_search_to_google_sheets",
+  "services": [
+    "Code",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Append",
+    "Create",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "UsBaGY83vnyZjRoB",
     "meta": {
@@ -823,36 +849,5 @@
         ]
       }
     }
-  },
-  "title": "Automate LinkedIn Profile Search and Log Results to Google Sheets",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Append",
-    "Create",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 5
+  }
 }

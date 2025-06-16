@@ -1,7 +1,27 @@
 {
   "id": "1408",
-  "filename": "1408_generate_images_via_telegram",
+  "title": "Generate and Send Images via Telegram with Dall-E-3",
   "description": "Listens for Telegram messages, generates images based on user prompts using Dall-E-3, and sends the images back to users for instant sharing.",
+  "filename": "1408_generate_images_via_telegram",
+  "services": [
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Senddocument"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "U8EOTtZvmZPMYc6m",
     "meta": {
@@ -261,30 +281,5 @@
         ]
       }
     }
-  },
-  "title": "Generate and Send Images via Telegram with Dall-E-3",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Senddocument"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 2
+  }
 }

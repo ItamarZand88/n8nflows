@@ -1,7 +1,27 @@
 {
   "id": "1085",
-  "filename": "1085_google_sheets_to_mautic_contacts",
+  "title": "Automate data syncing from Google Sheets to Mautic contacts",
   "description": "Every 5 minutes, this workflow reads data from Google Sheets and automatically updates or adds contacts in Mautic, streamlining your marketing efforts.",
+  "filename": "1085_google_sheets_to_mautic_contacts",
+  "services": [
+    "Cron",
+    "Google Sheets",
+    "Mautic"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Google Sheets API Key",
+    "Mautic API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -108,30 +128,5 @@
         ]
       }
     }
-  },
-  "title": "Automate data syncing from Google Sheets to Mautic contacts",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Cron",
-    "Google Sheets",
-    "Mautic"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "Google Sheets API Key",
-    "Mautic API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,24 @@
 {
   "id": "493",
-  "filename": "493_generate_voice_from_text_elevenlabs",
+  "title": "Generate voice from text using Elevenlabs API",
   "description": "Creates audio from text input via a webhook, validating parameters and responding with generated voice data or an error message.",
+  "filename": "493_generate_voice_from_text_elevenlabs",
+  "services": [
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -187,27 +204,5 @@
         ]
       }
     }
-  },
-  "title": "Generate voice from text using Elevenlabs API",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

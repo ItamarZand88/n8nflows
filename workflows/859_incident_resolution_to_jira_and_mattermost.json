@@ -1,7 +1,30 @@
 {
   "id": "859",
-  "filename": "859_incident_resolution_to_jira_and_mattermost",
+  "title": "Automate incident resolution updates in Jira and Mattermost",
   "description": "Triggers on PagerDuty incident closure, updates Jira status, and sends notifications to Mattermost channels about the resolution.",
+  "filename": "859_incident_resolution_to_jira_and_mattermost",
+  "services": [
+    "Jira Software",
+    "Mattermost",
+    "PagerDuty",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Update"
+  ],
+  "setup_requirements": [
+    "Jira Software API Key",
+    "Mattermost API Key",
+    "PagerDuty API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -135,33 +158,5 @@
         ]
       }
     }
-  },
-  "title": "Automate incident resolution updates in Jira and Mattermost",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Jira Software",
-    "Mattermost",
-    "PagerDuty",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Update"
-  ],
-  "setup_requirements": [
-    "Jira Software API Key",
-    "Mattermost API Key",
-    "PagerDuty API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

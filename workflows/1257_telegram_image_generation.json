@@ -1,7 +1,27 @@
 {
   "id": "1257",
-  "filename": "1257_telegram_image_generation",
+  "title": "Automate image generation and sharing via Telegram",
   "description": "Listens for messages on Telegram, generates images using Dall-E-3, and sends them back to users, enhancing engagement and creativity.",
+  "filename": "1257_telegram_image_generation",
+  "services": [
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Senddocument"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "U8EOTtZvmZPMYc6m",
     "meta": {
@@ -261,30 +281,5 @@
         ]
       }
     }
-  },
-  "title": "Automate image generation and sharing via Telegram",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Senddocument"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 2
+  }
 }

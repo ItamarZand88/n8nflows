@@ -1,7 +1,25 @@
 {
   "id": "943",
-  "filename": "943_dynamic_dns_updates_namecheap",
+  "title": "Automate Dynamic DNS Updates for Your Domain",
   "description": "Automatically checks for new public IP addresses every 15 minutes and updates your Namecheap dynamic DNS records with the latest IP for specified subdomains.",
+  "filename": "943_dynamic_dns_updates_namecheap",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Function",
+    "HTTP Request"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": 3,
     "name": "NameCheap Dynamic DNS (DDNS)",
@@ -189,28 +207,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Dynamic DNS Updates for Your Domain",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Function",
-    "HTTP Request"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

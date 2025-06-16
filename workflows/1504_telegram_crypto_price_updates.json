@@ -1,7 +1,26 @@
 {
   "id": "1504",
-  "filename": "1504_telegram_crypto_price_updates",
+  "title": "Automate cryptocurrency price updates via Telegram",
   "description": "Triggers on new Telegram messages, fetches cryptocurrency prices from CoinMarketCap, and sends the results back to the user in Telegram.",
+  "filename": "1504_telegram_crypto_price_updates",
+  "services": [
+    "Edit Fields (Set)",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "FQ0Uljxi7aIBdTFX",
     "meta": {
@@ -251,29 +270,5 @@
         ]
       }
     }
-  },
-  "title": "Automate cryptocurrency price updates via Telegram",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 2
+  }
 }

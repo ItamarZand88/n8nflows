@@ -1,7 +1,31 @@
 {
   "id": "1917",
-  "filename": "1917_image_classification_knn_qdrant",
+  "title": "Automate image classification using KNN and Qdrant",
   "description": "Triggers on an image URL, fetches its embedding, queries Qdrant for similar images, and returns the most likely land type classification.",
+  "filename": "1917_image_classification_knn_qdrant",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "If",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "itzURpN5wbUNOXOw",
     "meta": {
@@ -545,34 +569,5 @@
         ]
       }
     }
-  },
-  "title": "Automate image classification using KNN and Qdrant",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "If",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 6
+  }
 }

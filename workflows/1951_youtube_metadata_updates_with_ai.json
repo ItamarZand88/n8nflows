@@ -1,7 +1,41 @@
 {
   "id": "1951",
-  "filename": "1951_youtube_metadata_updates_with_ai",
+  "title": "Automate YouTube Video Metadata Updates with AI",
   "description": "Fetches the latest YouTube videos, generates SEO-optimized titles and descriptions, and schedules them for publishing, enhancing video visibility and engagement.",
+  "filename": "1951_youtube_metadata_updates_with_ai",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Remove Duplicates",
+    "Schedule",
+    "Sticky Note",
+    "YouTube"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Manage video",
+    "Removeitemsseeninpreviousexecutions",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "YouTube Account"
+  ],
   "content": {
     "id": "wLbJ7rE6vQzizCp2",
     "meta": {
@@ -972,44 +1006,5 @@
         ]
       }
     }
-  },
-  "title": "Automate YouTube Video Metadata Updates with AI",
-  "nodes_count": 33,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Remove Duplicates",
-    "Schedule",
-    "Sticky Note",
-    "YouTube"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Manage video",
-    "Removeitemsseeninpreviousexecutions",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "YouTube Account"
-  ],
-  "workflow_complexity": 33,
-  "external_integrations_count": 10
+  }
 }

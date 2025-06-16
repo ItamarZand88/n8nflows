@@ -1,7 +1,23 @@
 {
   "id": "1031",
-  "filename": "1031_json_to_xml_cocktaildb",
+  "title": "Convert JSON data from CocktailDB API to XML format",
   "description": "Triggers on manual execution to fetch random cocktail data from the CocktailDB API and converts it from JSON to XML format for easier integration.",
+  "filename": "1031_json_to_xml_cocktaildb",
+  "services": [
+    "HTTP Request",
+    "Manual",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "55",
     "name": "Convert the JSON data received from the CocktailDB API in XML",
@@ -69,26 +85,5 @@
         ]
       }
     }
-  },
-  "title": "Convert JSON data from CocktailDB API to XML format",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Manual",
-    "XML"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,30 @@
 {
   "id": "94",
-  "filename": "94_github_workflow_backups",
+  "title": "Automate GitHub file updates and backups daily",
   "description": "Daily retrieves workflows from GitHub, edits or creates JSON files, and backs them up to your repository, ensuring version control and data integrity.",
+  "filename": "94_github_workflow_backups",
+  "services": [
+    "Cron",
+    "Function",
+    "GitHub",
+    "HTTP Request",
+    "Merge"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Edit",
+    "Execute Function",
+    "Get",
+    "Manage file"
+  ],
+  "setup_requirements": [
+    "GitHub API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -302,33 +325,5 @@
         ]
       }
     }
-  },
-  "title": "Automate GitHub file updates and backups daily",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Function",
-    "GitHub",
-    "HTTP Request",
-    "Merge"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Edit",
-    "Execute Function",
-    "Get",
-    "Manage file"
-  ],
-  "setup_requirements": [
-    "GitHub API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 5
+  }
 }

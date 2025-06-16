@@ -1,7 +1,39 @@
 {
   "id": "1715",
-  "filename": "1715_woocommerce_order_tracking_support",
+  "title": "Automate WooCommerce Order Tracking and Customer Support",
   "description": "Triggers when a chat message is received, retrieves order details, and provides tracking information, enhancing customer support efficiency.",
+  "filename": "1715_woocommerce_order_tracking_support",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Google Drive",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download",
+    "Get",
+    "Getall",
+    "Manage customer",
+    "Manage fileFolder",
+    "Manage order",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "ODZpSQqCxkISEqv8",
     "meta": {
@@ -942,42 +974,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WooCommerce Order Tracking and Customer Support",
-  "nodes_count": 31,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Google Drive",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download",
-    "Get",
-    "Getall",
-    "Manage customer",
-    "Manage fileFolder",
-    "Manage order",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 31,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,38 @@
 {
   "id": "883",
-  "filename": "883_sustainability_tasks_from_eu_legislation",
+  "title": "Automate sustainability task creation from EU legislative records",
   "description": "Extracts legislative procedures from the EU Parliament, filters for sustainability topics, and creates Google Tasks for follow-up actions.",
+  "filename": "883_sustainability_tasks_from_eu_legislation",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "Google Tasks",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Extracthtmlcontent",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "="
@@ -590,41 +621,5 @@
         ]
       }
     }
-  },
-  "title": "Automate sustainability task creation from EU legislative records",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "Google Tasks",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Extracthtmlcontent",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 9
+  }
 }

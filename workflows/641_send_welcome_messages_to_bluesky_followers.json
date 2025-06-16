@@ -1,7 +1,36 @@
 {
   "id": "641",
-  "filename": "641_send_welcome_messages_to_bluesky_followers",
+  "title": "Send welcome messages to new BlueSky followers",
   "description": "Automatically checks for new followers on BlueSky every hour and sends them a personalized welcome message with a link to your site.",
+  "filename": "641_send_welcome_messages_to_bluesky_followers",
+  "services": [
+    "Code",
+    "Convert to File",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "No Operation, do nothing",
+    "Read/Write Files from Disk",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Fromjson",
+    "Set Data",
+    "Tojson",
+    "Write"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -558,39 +587,5 @@
         ]
       }
     }
-  },
-  "title": "Send welcome messages to new BlueSky followers",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Convert to File",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "No Operation, do nothing",
-    "Read/Write Files from Disk",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Fromjson",
-    "Set Data",
-    "Tojson",
-    "Write"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 19,
-  "external_integrations_count": 11
+  }
 }

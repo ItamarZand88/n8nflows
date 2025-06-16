@@ -1,7 +1,26 @@
 {
   "id": "1822",
-  "filename": "1822_gratitude_reminders_to_line",
+  "title": "Send Daily Gratitude Reminders via LINE",
   "description": "Triggers at 9 PM to remind users to reflect on their day and sends a personalized gratitude message through LINE, enhancing daily positivity.",
+  "filename": "1822_gratitude_reminders_to_line",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "Sebvr1R2t4zkAg1V",
     "meta": {
@@ -240,29 +259,5 @@
         ]
       }
     }
-  },
-  "title": "Send Daily Gratitude Reminders via LINE",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 9,
-  "external_integrations_count": 4
+  }
 }

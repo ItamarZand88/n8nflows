@@ -1,7 +1,36 @@
 {
   "id": "1612",
-  "filename": "1612_retry_failed_executions_in_n8n",
+  "title": "Automate error execution retries in n8n workflows",
   "description": "Schedules hourly checks for failed n8n executions, logs in to retry them automatically, and filters out successful retries for efficiency.",
+  "filename": "1612_retry_failed_executions_in_n8n",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage execution",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "id": "JJKkNnO4PQ12gQdE",
     "meta": {
@@ -457,39 +486,5 @@
         ]
       }
     }
-  },
-  "title": "Automate error execution retries in n8n workflows",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage execution",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 9
+  }
 }

@@ -1,7 +1,33 @@
 {
   "id": "308",
-  "filename": "308_sync_postgres_users_to_sheets",
+  "title": "Sync qualified users from Postgres to Google Sheets",
   "description": "Triggers on user updates in Postgres, filters out specific emails, and saves qualified leads to Google Sheets for easy access and follow-up.",
+  "filename": "308_sync_postgres_users_to_sheets",
+  "services": [
+    "Code",
+    "Filter",
+    "Google Sheets",
+    "Manual",
+    "Postgres",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Postgres Event"
+  ],
+  "actions": [
+    "Appendorupdate"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -286,36 +312,5 @@
         ]
       }
     }
-  },
-  "title": "Sync qualified users from Postgres to Google Sheets",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Filter",
-    "Google Sheets",
-    "Manual",
-    "Postgres",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Postgres Event"
-  ],
-  "actions": [
-    "Appendorupdate"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 6
+  }
 }

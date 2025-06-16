@@ -1,7 +1,34 @@
 {
   "id": "503",
-  "filename": "503_wordpress_blogging_with_airtable",
+  "title": "Automate WordPress blog posting with Airtable content",
   "description": "Triggers on a schedule to fetch blog content from Airtable, converts it to HTML, uploads it to WordPress, and sets a featured image, streamlining your posting process.",
+  "filename": "503_wordpress_blogging_with_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "Markdown",
+    "Schedule",
+    "Sticky Note",
+    "Wordpress"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Search",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -641,37 +668,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WordPress blog posting with Airtable content",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "Markdown",
-    "Schedule",
-    "Sticky Note",
-    "Wordpress"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Search",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 13,
-  "external_integrations_count": 8
+  }
 }

@@ -1,7 +1,26 @@
 {
   "id": "211",
-  "filename": "211_create_short_urls_with_yourls",
+  "title": "Create short URLs and retrieve their statistics",
   "description": "Triggers on manual execution to create a short URL and fetch its statistics using Yourls, streamlining link management and tracking.",
+  "filename": "211_create_short_urls_with_yourls",
+  "services": [
+    "Manual",
+    "Yourls"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Stats"
+  ],
+  "setup_requirements": [
+    "Yourls API Key"
+  ],
   "content": {
     "id": "167",
     "name": "Create a short URL and get the statistics of the URL",
@@ -77,29 +96,5 @@
         ]
       }
     }
-  },
-  "title": "Create short URLs and retrieve their statistics",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Utility"
-  ],
-  "services": [
-    "Manual",
-    "Yourls"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Stats"
-  ],
-  "setup_requirements": [
-    "Yourls API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

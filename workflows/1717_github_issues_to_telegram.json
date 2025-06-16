@@ -1,7 +1,34 @@
 {
   "id": "1717",
-  "filename": "1717_github_issues_to_telegram",
+  "title": "Monitor GitHub for new issues and notify via Telegram",
   "description": "Automatically checks for new GitHub issues every 10 minutes and sends notifications with issue details to your Telegram for quick updates.",
+  "filename": "1717_github_issues_to_telegram",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "GitHub",
+    "Schedule",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Manage repository",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "GitHub API Key",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "okjjim5PVb2dZUgg",
     "meta": {
@@ -273,37 +300,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor GitHub for new issues and notify via Telegram",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "GitHub",
-    "Schedule",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Manage repository",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "GitHub API Key",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 6
+  }
 }

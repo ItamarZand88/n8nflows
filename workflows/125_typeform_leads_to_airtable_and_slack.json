@@ -1,7 +1,40 @@
 {
   "id": "125",
-  "filename": "125_typeform_leads_to_airtable_and_slack",
+  "title": "Automate lead updates and notifications from Typeform to Airtable and Slack",
   "description": "Captures new Typeform submissions, updates existing leads in Airtable, and sends notifications to Slack for new subscriptions.",
+  "filename": "125_typeform_leads_to_airtable_and_slack",
+  "services": [
+    "Airtable",
+    "Dropcontact",
+    "Edit Fields (Set)",
+    "If",
+    "Slack",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "List",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Dropcontact API Key",
+    "Slack API Key",
+    "Typeform API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -405,43 +438,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead updates and notifications from Typeform to Airtable and Slack",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "Airtable",
-    "Dropcontact",
-    "Edit Fields (Set)",
-    "If",
-    "Slack",
-    "Typeform"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "List",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Dropcontact API Key",
-    "Slack API Key",
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,32 @@
 {
   "id": "636",
-  "filename": "636_webflow_form_to_google_sheets",
+  "title": "Automate form submissions from Webflow to Google Sheets",
   "description": "Captures new form submissions from Webflow, processes the data, and appends it to a Google Sheets document for easy tracking and management.",
+  "filename": "636_webflow_form_to_google_sheets",
+  "services": [
+    "Code",
+    "Google Sheets",
+    "Sticky Note",
+    "Webflow"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Webflow Event"
+  ],
+  "actions": [
+    "Append"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Webflow Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -210,35 +235,5 @@
         ]
       }
     }
-  },
-  "title": "Automate form submissions from Webflow to Google Sheets",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Google Sheets",
-    "Sticky Note",
-    "Webflow"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Webflow Event"
-  ],
-  "actions": [
-    "Append"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Webflow Account"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

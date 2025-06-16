@@ -1,7 +1,28 @@
 {
   "id": "718",
-  "filename": "718_gitlab_merge_requests_management",
+  "title": "Automate GitLab merge request management and notifications",
   "description": "Triggers on a schedule to check for existing GitLab merge requests, closes duplicates, and creates new ones with custom notes, enhancing team collaboration.",
+  "filename": "718_gitlab_merge_requests_management",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Schedule"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "templateCredsSetupCompleted": true
@@ -415,31 +436,5 @@
         ]
       }
     }
-  },
-  "title": "Automate GitLab merge request management and notifications",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Schedule"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 5
+  }
 }

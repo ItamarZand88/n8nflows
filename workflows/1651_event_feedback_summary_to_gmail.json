@@ -1,7 +1,36 @@
 {
   "id": "1651",
-  "filename": "1651_event_feedback_summary_to_gmail",
+  "title": "Automate event feedback summary and email report",
   "description": "Triggers on demand to gather Google Sheets responses, summarizes feedback using AI, and sends a formatted report via Gmail.",
+  "filename": "1651_event_feedback_summary_to_gmail",
+  "services": [
+    "Aggregate",
+    "Gmail",
+    "Google Sheets",
+    "Manual",
+    "Markdown",
+    "OpenAI",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage chat"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account",
+    "OpenAI API Key"
+  ],
   "content": {
     "id": "Lwvu2jjMU2irTyAY",
     "meta": {
@@ -286,39 +315,5 @@
         ]
       }
     }
-  },
-  "title": "Automate event feedback summary and email report",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Aggregate",
-    "Gmail",
-    "Google Sheets",
-    "Manual",
-    "Markdown",
-    "OpenAI",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage chat"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account",
-    "OpenAI API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

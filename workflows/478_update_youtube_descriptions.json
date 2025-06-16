@@ -1,7 +1,32 @@
 {
   "id": "478",
-  "filename": "478_update_youtube_descriptions",
+  "title": "Update YouTube Video Descriptions Automatically",
   "description": "Triggers manually to update all YouTube video descriptions with a custom message, ensuring consistent branding and saving time on manual edits.",
+  "filename": "478_update_youtube_descriptions",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Manual",
+    "Sticky Note",
+    "YouTube"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage video",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "YouTube Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -255,35 +280,5 @@
         ]
       }
     }
-  },
-  "title": "Update YouTube Video Descriptions Automatically",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Manual",
-    "Sticky Note",
-    "YouTube"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage video",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "YouTube Account"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 5
+  }
 }

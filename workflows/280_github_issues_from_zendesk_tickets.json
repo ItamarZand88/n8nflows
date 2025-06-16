@@ -1,7 +1,33 @@
 {
   "id": "280",
-  "filename": "280_github_issues_from_zendesk_tickets",
+  "title": "Automate GitHub issue creation from new Zendesk tickets",
   "description": "Triggers on new Zendesk tickets, checks for existing GitHub issues, and creates or comments on issues accordingly, streamlining support and development communication.",
+  "filename": "280_github_issues_from_zendesk_tickets",
+  "services": [
+    "Function",
+    "GitHub",
+    "If",
+    "Webhook",
+    "Zendesk"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Createcomment",
+    "Execute Function",
+    "Filter Data",
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "GitHub API Key",
+    "Zendesk API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "237600ca44303ce91fa31ee72babcdc8493f55ee2c0e8aa2b78b3b4ce6f70bd9"
@@ -221,36 +247,5 @@
         ]
       }
     }
-  },
-  "title": "Automate GitHub issue creation from new Zendesk tickets",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Function",
-    "GitHub",
-    "If",
-    "Webhook",
-    "Zendesk"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Createcomment",
-    "Execute Function",
-    "Filter Data",
-    "Get",
-    "Update"
-  ],
-  "setup_requirements": [
-    "GitHub API Key",
-    "Zendesk API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

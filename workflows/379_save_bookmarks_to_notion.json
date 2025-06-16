@@ -1,7 +1,24 @@
 {
   "id": "379",
-  "filename": "379_save_bookmarks_to_notion",
+  "title": "Save bookmarks to Notion with a single click",
   "description": "Automatically saves URLs to a Notion database when a POST request is triggered, streamlining bookmark management and organization.",
+  "filename": "379_save_bookmarks_to_notion",
+  "services": [
+    "Notion",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Manage databasePage"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833",
@@ -93,27 +110,5 @@
         ]
       }
     }
-  },
-  "title": "Save bookmarks to Notion with a single click",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Notion",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Manage databasePage"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

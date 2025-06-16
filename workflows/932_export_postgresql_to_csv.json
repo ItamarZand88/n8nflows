@@ -1,7 +1,29 @@
 {
   "id": "932",
-  "filename": "932_export_postgresql_to_csv",
+  "title": "Export PostgreSQL Data to CSV File",
   "description": "Triggers a manual execution to fetch all records from the 'booksRead' table in PostgreSQL and exports the data as a CSV file.",
+  "filename": "932_export_postgresql_to_csv",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "Postgres",
+    "Spreadsheet File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Executequery",
+    "Set Data",
+    "Tofile"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "39",
     "meta": {
@@ -203,32 +225,5 @@
         ]
       }
     }
-  },
-  "title": "Export PostgreSQL Data to CSV File",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual",
-    "Postgres",
-    "Spreadsheet File"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Executequery",
-    "Set Data",
-    "Tofile"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

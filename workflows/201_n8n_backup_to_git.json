@@ -1,7 +1,23 @@
 {
   "id": "201",
-  "filename": "201_n8n_backup_to_git",
+  "title": "Automate backup of N8N workflows and credentials to Git",
   "description": "Triggers a backup of N8N workflows and credentials, adds them to Git, commits with a timestamp, and pushes to a remote repository for secure storage.",
+  "filename": "201_n8n_backup_to_git",
+  "services": [
+    "Cron",
+    "Execute Command",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "15",
     "name": "Tools / Backup Gitlab",
@@ -174,26 +190,5 @@
         ]
       }
     }
-  },
-  "title": "Automate backup of N8N workflows and credentials to Git",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Execute Command",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 3
+  }
 }

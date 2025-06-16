@@ -1,7 +1,36 @@
 {
   "id": "1174",
-  "filename": "1174_notify_slack_suspicious_emails",
+  "title": "Notify Slack for New Contacts with Suspicious Emails",
   "description": "Triggers when a new contact is created in HubSpot, validates their email, and sends an alert to Slack if the email is suspicious.",
+  "filename": "1174_notify_slack_suspicious_emails",
+  "services": [
+    "HubSpot",
+    "If",
+    "One Simple",
+    "Slack"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Sales",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New HubSpot Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Manage contact",
+    "Manage utility"
+  ],
+  "setup_requirements": [
+    "HubSpot API Key",
+    "One Simple API Key",
+    "Slack API Key"
+  ],
   "content": {
     "id": 88,
     "name": "Check for valid Hubspot contact email",
@@ -176,39 +205,5 @@
         ]
       }
     }
-  },
-  "title": "Notify Slack for New Contacts with Suspicious Emails",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Sales",
-    "Utility"
-  ],
-  "services": [
-    "HubSpot",
-    "If",
-    "One Simple",
-    "Slack"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New HubSpot Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Manage contact",
-    "Manage utility"
-  ],
-  "setup_requirements": [
-    "HubSpot API Key",
-    "One Simple API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

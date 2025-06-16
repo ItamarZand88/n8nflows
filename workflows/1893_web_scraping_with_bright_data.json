@@ -1,7 +1,31 @@
 {
   "id": "1893",
-  "filename": "1893_web_scraping_with_bright_data",
+  "title": "Automate web scraping and data storage using Bright Data",
   "description": "Triggers web scraping of a specified URL, processes the content with AI, and saves the results to disk for easy access and analysis.",
+  "filename": "1893_web_scraping_with_bright_data",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "HTTP Request",
+    "Manual",
+    "Read/Write Files from Disk",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Executetool",
+    "Set Data",
+    "Write"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "U6cY7PPR0vaRl1I0",
     "meta": {
@@ -553,34 +577,5 @@
         ]
       }
     }
-  },
-  "title": "Automate web scraping and data storage using Bright Data",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "HTTP Request",
-    "Manual",
-    "Read/Write Files from Disk",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Executetool",
-    "Set Data",
-    "Write"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 19,
-  "external_integrations_count": 6
+  }
 }

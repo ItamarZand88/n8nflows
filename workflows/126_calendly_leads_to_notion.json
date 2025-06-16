@@ -1,7 +1,29 @@
 {
   "id": "126",
-  "filename": "126_calendly_leads_to_notion",
+  "title": "Automate lead capture from Calendly to Notion database",
   "description": "Triggers on new Calendly invitees, retrieves their details using Dropcontact, and logs them into a Notion database for easy management.",
+  "filename": "126_calendly_leads_to_notion",
+  "services": [
+    "Calendly",
+    "Dropcontact",
+    "Notion"
+  ],
+  "categories": [
+    "Productivity",
+    "Sales",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Calendly Event"
+  ],
+  "actions": [
+    "Manage databasePage"
+  ],
+  "setup_requirements": [
+    "Dropcontact API Key",
+    "Notion API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -130,32 +152,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead capture from Calendly to Notion database",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Productivity",
-    "Sales",
-    "Utility"
-  ],
-  "services": [
-    "Calendly",
-    "Dropcontact",
-    "Notion"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Calendly Event"
-  ],
-  "actions": [
-    "Manage databasePage"
-  ],
-  "setup_requirements": [
-    "Dropcontact API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

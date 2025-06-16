@@ -1,7 +1,26 @@
 {
   "id": "128",
-  "filename": "128_set_close_date_automation",
+  "title": "Set Close Date Automatically Based on Conditions",
   "description": "Triggers on demand to check a close date, setting it to either a specific date or three weeks later based on validation, streamlining date management.",
+  "filename": "128_set_close_date_automation",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Manual",
+    "No Operation, do nothing"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -172,29 +191,5 @@
         ]
       }
     }
-  },
-  "title": "Set Close Date Automatically Based on Conditions",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Manual",
-    "No Operation, do nothing"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

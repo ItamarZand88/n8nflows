@@ -1,7 +1,25 @@
 {
   "id": "132",
-  "filename": "132_unsplash_image_to_twitter_banner",
+  "title": "Download Unsplash Image and Update Twitter Banner",
   "description": "Triggers on manual execution to download an image from Unsplash and updates the Twitter profile banner with the downloaded image.",
+  "filename": "132_unsplash_image_to_twitter_banner",
+  "services": [
+    "HTTP Request",
+    "Manual",
+    "Start"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -90,28 +108,5 @@
         ]
       }
     }
-  },
-  "title": "Download Unsplash Image and Update Twitter Banner",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Manual",
-    "Start"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,23 @@
 {
   "id": "233",
-  "filename": "233_google_search_url_from_webhook",
+  "title": "Create a Google Search URL from Webhook Input",
   "description": "Creates a Google search URL based on first and last name received via a webhook, providing instant access to search results.",
+  "filename": "233_google_search_url_from_webhook",
+  "services": [
+    "Edit Fields (Set)",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd"
@@ -115,26 +131,5 @@
         ]
       }
     }
-  },
-  "title": "Create a Google Search URL from Webhook Input",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 3
+  }
 }

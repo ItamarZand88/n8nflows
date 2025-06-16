@@ -1,7 +1,33 @@
 {
   "id": "887",
-  "filename": "887_telegram_refunds_to_freshdesk_monday",
+  "title": "Automate Telegram refund requests to Freshdesk and Monday.com",
   "description": "Triggers on new Telegram messages about refunds, logs them in Freshdesk, and updates Monday.com boards for tracking.",
+  "filename": "887_telegram_refunds_to_freshdesk_monday",
+  "services": [
+    "Freshdesk",
+    "If",
+    "Monday.com",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage boardItem"
+  ],
+  "setup_requirements": [
+    "Freshdesk API Key",
+    "Monday.com API Key",
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -229,36 +255,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Telegram refund requests to Freshdesk and Monday.com",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Freshdesk",
-    "If",
-    "Monday.com",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage boardItem"
-  ],
-  "setup_requirements": [
-    "Freshdesk API Key",
-    "Monday.com API Key",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 4
+  }
 }

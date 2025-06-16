@@ -1,7 +1,37 @@
 {
   "id": "469",
-  "filename": "469_wordpress_post_creation_with_ai",
+  "title": "Automate WordPress Post Creation with AI Content Generation",
   "description": "Triggers on form submission to generate and draft a WordPress post using AI, including title, chapters, and a featured image, streamlining content creation.",
+  "filename": "469_wordpress_post_creation_with_ai",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Split Out",
+    "Sticky Note",
+    "Wordpress",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage image",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Wordpress API Key"
+  ],
   "content": {
     "id": "mKGMYXJottl0PDtM",
     "meta": {
@@ -989,40 +1019,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WordPress Post Creation with AI Content Generation",
-  "nodes_count": 37,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Split Out",
-    "Sticky Note",
-    "Wordpress",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage image",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Wordpress API Key"
-  ],
-  "workflow_complexity": 37,
-  "external_integrations_count": 9
+  }
 }

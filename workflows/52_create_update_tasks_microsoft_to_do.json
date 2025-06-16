@@ -1,7 +1,27 @@
 {
   "id": "52",
-  "filename": "52_create_update_tasks_microsoft_to_do",
+  "title": "Create and Update Tasks in Microsoft To Do Automatically",
   "description": "Triggers task creation in Microsoft To Do and updates its status to in progress, streamlining task management and enhancing productivity.",
+  "filename": "52_create_update_tasks_microsoft_to_do",
+  "services": [
+    "Manual",
+    "Microsoft To Do"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Microsoft To Do Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -106,30 +126,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Update Tasks in Microsoft To Do Automatically",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Manual",
-    "Microsoft To Do"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Microsoft To Do Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

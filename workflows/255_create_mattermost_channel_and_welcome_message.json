@@ -1,7 +1,27 @@
 {
   "id": "255",
-  "filename": "255_create_mattermost_channel_and_welcome_message",
+  "title": "Create Mattermost channel, add a member, and post welcome message",
   "description": "Triggers a new Mattermost channel creation, adds a specified user, and posts a welcome message to enhance team collaboration.",
+  "filename": "255_create_mattermost_channel_and_welcome_message",
+  "services": [
+    "Manual",
+    "Mattermost"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Adduser",
+    "Manage channel"
+  ],
+  "setup_requirements": [
+    "Mattermost API Key"
+  ],
   "content": {
     "id": "178",
     "name": "Create a channel, add a member, and post a message to the channel",
@@ -108,30 +128,5 @@
         ]
       }
     }
-  },
-  "title": "Create Mattermost channel, add a member, and post welcome message",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Manual",
-    "Mattermost"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Adduser",
-    "Manage channel"
-  ],
-  "setup_requirements": [
-    "Mattermost API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

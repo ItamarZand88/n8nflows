@@ -1,7 +1,35 @@
 {
   "id": "583",
-  "filename": "583_pdf_processing_adobe_dropbox",
+  "title": "Automate PDF processing with Adobe API and Dropbox",
   "description": "Triggers on manual input to upload a PDF from Dropbox, processes it via Adobe API, and retrieves the results for further use.",
+  "filename": "583_pdf_processing_adobe_dropbox",
+  "services": [
+    "Dropbox",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Dropbox Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "cd478e616d2616186f4f92b70cfe0c2ed95b5b209f749f2b873b38bdc56c47c9"
@@ -654,38 +682,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PDF processing with Adobe API and Dropbox",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Dropbox",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Dropbox Account"
-  ],
-  "workflow_complexity": 20,
-  "external_integrations_count": 8
+  }
 }

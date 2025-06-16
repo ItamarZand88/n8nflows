@@ -1,7 +1,30 @@
 {
   "id": "1245",
-  "filename": "1245_telegram_files_to_gdrive",
+  "title": "Automate file uploads from Telegram to Google Drive",
   "description": "Triggers on new Telegram messages, checks for file attachments, and automatically uploads them to a specified Google Drive folder.",
+  "filename": "1245_telegram_files_to_gdrive",
+  "services": [
+    "Google Drive",
+    "If",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "HITL"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "a4GTp998ENMMfuqK",
     "meta": {
@@ -131,33 +154,5 @@
         ]
       }
     }
-  },
-  "title": "Automate file uploads from Telegram to Google Drive",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "HITL"
-  ],
-  "services": [
-    "Google Drive",
-    "If",
-    "Telegram"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,34 @@
 {
   "id": "476",
-  "filename": "476_google_analytics_report_to_email",
+  "title": "Automate Google Analytics Reporting and Email Insights",
   "description": "Automatically gathers and compares weekly Google Analytics data, then formats and emails a comprehensive report to track website performance.",
+  "filename": "476_google_analytics_report_to_email",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Analytics",
+    "Manual",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Analytics Account"
+  ],
   "content": {
     "id": "21IdmArlNT9LlaFf",
     "meta": {
@@ -922,37 +949,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Analytics Reporting and Email Insights",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Analytics",
-    "Manual",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Analytics Account"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 7
+  }
 }

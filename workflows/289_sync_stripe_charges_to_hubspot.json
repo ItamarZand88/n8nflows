@@ -1,7 +1,46 @@
 {
   "id": "289",
-  "filename": "289_sync_stripe_charges_to_hubspot",
+  "title": "Sync Stripe charges to HubSpot contacts",
   "description": "Automatically retrieves charges from Stripe, aggregates total amounts by customer, and updates or creates corresponding properties in HubSpot for better financial tracking.",
+  "filename": "289_sync_stripe_charges_to_hubspot",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "HubSpot",
+    "If",
+    "Item Lists",
+    "Merge",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note",
+    "Stripe"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Finance & Accounting",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Aggregateitems",
+    "Filter Data",
+    "Getall",
+    "Manage charge",
+    "Manage contact",
+    "Manage customer",
+    "Removeduplicates",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account",
+    "HubSpot Account",
+    "Stripe API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "a2434c94d549548a685cca39cc4614698e94f527bcea84eefa363f1037ae14cd"
@@ -666,49 +705,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Stripe charges to HubSpot contacts",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Finance & Accounting",
-    "Sales"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "HubSpot",
-    "If",
-    "Item Lists",
-    "Merge",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note",
-    "Stripe"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Aggregateitems",
-    "Filter Data",
-    "Getall",
-    "Manage charge",
-    "Manage contact",
-    "Manage customer",
-    "Removeduplicates",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account",
-    "HubSpot Account",
-    "Stripe API Key"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 11
+  }
 }

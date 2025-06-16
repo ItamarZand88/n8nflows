@@ -1,7 +1,27 @@
 {
   "id": "1525",
-  "filename": "1525_seo_keywords_generation_ai",
+  "title": "Generate SEO Seed Keywords Using AI for B2B SaaS",
   "description": "Triggers a workflow to generate 15-20 SEO seed keywords based on your ideal customer profile, leveraging AI for tailored keyword suggestions.",
+  "filename": "1525_seo_keywords_generation_ai",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Manual",
+    "No Operation, do nothing",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833",
@@ -339,30 +359,5 @@
         ]
       }
     }
-  },
-  "title": "Generate SEO Seed Keywords Using AI for B2B SaaS",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Manual",
-    "No Operation, do nothing",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 15,
-  "external_integrations_count": 6
+  }
 }

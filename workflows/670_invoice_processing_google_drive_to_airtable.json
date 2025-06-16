@@ -1,7 +1,36 @@
 {
   "id": "670",
-  "filename": "670_invoice_processing_google_drive_to_airtable",
+  "title": "Automate invoice processing from Google Drive to Airtable",
   "description": "Monitors a Google Drive folder for new invoices, processes them using LlamaParse, and stores the extracted data in Airtable for easy tracking.",
+  "filename": "670_invoice_processing_google_drive_to_airtable",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "HTTP Request",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Create",
+    "Download",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Google Drive Account",
+    "HTTP Request API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -602,39 +631,5 @@
         ]
       }
     }
-  },
-  "title": "Automate invoice processing from Google Drive to Airtable",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "HTTP Request",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Create",
-    "Download",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Google Drive Account",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 7
+  }
 }

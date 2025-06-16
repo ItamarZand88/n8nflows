@@ -1,7 +1,40 @@
 {
   "id": "1147",
-  "filename": "1147_daily_sms_top_words_hacker_news",
+  "title": "Automate daily SMS with top translated words from Hacker News",
   "description": "Triggers daily to fetch top articles from Hacker News, extracts unique words, translates them to German, and sends an SMS with the results.",
+  "filename": "1147_daily_sms_top_words_hacker_news",
+  "services": [
+    "Airtable",
+    "Cron",
+    "Edit Fields (Set)",
+    "Function",
+    "Hacker News",
+    "LingvaNex",
+    "Vonage"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing",
+    "Miscellaneous"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Cron Event"
+  ],
+  "actions": [
+    "Append",
+    "Execute Function",
+    "Manage all",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "LingvaNex API Key",
+    "Vonage API Key"
+  ],
   "content": {
     "id": "7",
     "name": "Daily Language Learning",
@@ -220,43 +253,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily SMS with top translated words from Hacker News",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Airtable",
-    "Cron",
-    "Edit Fields (Set)",
-    "Function",
-    "Hacker News",
-    "LingvaNex",
-    "Vonage"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Cron Event"
-  ],
-  "actions": [
-    "Append",
-    "Execute Function",
-    "Manage all",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "LingvaNex API Key",
-    "Vonage API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 7
+  }
 }

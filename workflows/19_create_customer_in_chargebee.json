@@ -1,7 +1,26 @@
 {
   "id": "19",
-  "filename": "19_create_customer_in_chargebee",
+  "title": "Create new customers in Chargebee with a manual trigger",
   "description": "Manually triggers the creation of a new customer in Chargebee by entering their first and last names, streamlining customer onboarding.",
+  "filename": "19_create_customer_in_chargebee",
+  "services": [
+    "Chargebee",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Finance & Accounting"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage customer"
+  ],
+  "setup_requirements": [
+    "Chargebee API Key"
+  ],
   "content": {
     "id": "103",
     "name": "Create a new customer in Chargebee",
@@ -51,29 +70,5 @@
         ]
       }
     }
-  },
-  "title": "Create new customers in Chargebee with a manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Finance & Accounting"
-  ],
-  "services": [
-    "Chargebee",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage customer"
-  ],
-  "setup_requirements": [
-    "Chargebee API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

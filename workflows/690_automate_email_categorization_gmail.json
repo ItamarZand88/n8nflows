@@ -1,7 +1,29 @@
 {
   "id": "690",
-  "filename": "690_automate_email_categorization_gmail",
+  "title": "Automate email categorization and labeling in Gmail",
   "description": "Triggers on new Gmail messages, analyzes content, and automatically assigns or creates labels for better organization.",
+  "filename": "690_automate_email_categorization_gmail",
+  "services": [
+    "Gmail",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Addlabels",
+    "Create",
+    "Get",
+    "Manage label"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -347,32 +369,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email categorization and labeling in Gmail",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Gmail",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Addlabels",
-    "Create",
-    "Get",
-    "Manage label"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 2
+  }
 }

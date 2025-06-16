@@ -1,7 +1,31 @@
 {
   "id": "2045",
-  "filename": "2045_daily_financial_news_summary_email",
+  "title": "Automate daily financial news summaries via email",
   "description": "Triggers daily at 7 AM to extract and summarize financial news, sending a structured email recap to keep investors informed.",
+  "filename": "2045_daily_financial_news_summary_email",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Microsoft Outlook",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Extracthtmlcontent",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Microsoft Outlook Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "6045c639951d83c8706b0dd8d6330164bda01fe58f103cedc2c276bf1f9c11f1"
@@ -264,34 +288,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily financial news summaries via email",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Microsoft Outlook",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Extracthtmlcontent",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Microsoft Outlook Account"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 5
+  }
 }

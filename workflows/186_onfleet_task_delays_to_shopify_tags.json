@@ -1,7 +1,25 @@
 {
   "id": "186",
-  "filename": "186_onfleet_task_delays_to_shopify_tags",
+  "title": "Update Shopify tags based on Onfleet task delays",
   "description": "Automatically updates product tags in Shopify when a task is delayed in Onfleet, ensuring accurate inventory management and timely responses.",
+  "filename": "186_onfleet_task_delays_to_shopify_tags",
+  "services": [
+    "Onfleet",
+    "Shopify"
+  ],
+  "categories": [
+    "Miscellaneous",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Onfleet Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "name": "Updating Shopify tags on Onfleet events",
     "nodes": [
@@ -50,28 +68,5 @@
         ]
       }
     }
-  },
-  "title": "Update Shopify tags based on Onfleet task delays",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Miscellaneous",
-    "Sales"
-  ],
-  "services": [
-    "Onfleet",
-    "Shopify"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Onfleet Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

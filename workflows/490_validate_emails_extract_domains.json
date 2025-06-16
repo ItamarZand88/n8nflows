@@ -1,7 +1,26 @@
 {
   "id": "490",
-  "filename": "490_validate_emails_extract_domains",
+  "title": "Validate Emails and Extract Domains Automatically",
   "description": "Triggers on demand to validate email addresses and extract their domains, helping ensure data accuracy and streamline email management.",
+  "filename": "490_validate_emails_extract_domains",
+  "services": [
+    "DebugHelper",
+    "Edit Fields (Set)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "8eadf351d49a11e77d3a57adf374670f06c5294af8b1b7c86a1123340397e728"
@@ -166,29 +185,5 @@
         ]
       }
     }
-  },
-  "title": "Validate Emails and Extract Domains Automatically",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "DebugHelper",
-    "Edit Fields (Set)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

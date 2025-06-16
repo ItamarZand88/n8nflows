@@ -1,7 +1,25 @@
 {
   "id": "1782",
-  "filename": "1782_ai_web_search_and_summarization",
+  "title": "Automate AI-Powered Web Searches and Summarization",
   "description": "Triggers a search query via chat, retrieves results from Tavily API, and summarizes the top content using AI for quick insights.",
+  "filename": "1782_ai_web_search_and_summarization",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "QqbYH25we4JDZrZD",
     "meta": {
@@ -399,28 +417,5 @@
         ]
       }
     }
-  },
-  "title": "Automate AI-Powered Web Searches and Summarization",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 17,
-  "external_integrations_count": 3
+  }
 }

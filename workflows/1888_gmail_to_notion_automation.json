@@ -1,7 +1,41 @@
 {
   "id": "1888",
-  "filename": "1888_gmail_to_notion_automation",
+  "title": "Automate email processing from Gmail to Notion",
   "description": "Triggers on new Gmail messages, processes them for actionable tasks, and creates corresponding pages in Notion while managing routes and errors.",
+  "filename": "1888_gmail_to_notion_automation",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "HTTP Request",
+    "Manual",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Gmail Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Addlabels",
+    "Get",
+    "Manage label",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Gmail Account"
+  ],
   "content": {
     "id": "30r9acI1XVIIwAMi",
     "meta": {
@@ -1177,44 +1211,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email processing from Gmail to Notion",
-  "nodes_count": 38,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "HTTP Request",
-    "Manual",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Gmail Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Addlabels",
-    "Get",
-    "Manage label",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Gmail Account"
-  ],
-  "workflow_complexity": 38,
-  "external_integrations_count": 9
+  }
 }

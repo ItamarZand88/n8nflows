@@ -1,7 +1,36 @@
 {
   "id": "1510",
-  "filename": "1510_daily_ai_product_updates_to_slack",
+  "title": "Automate daily Slack updates for new AI product launches",
   "description": "Triggers daily at 6 AM to check for new AI product launches on Product Hunt and sends a summary to Slack if relevant products are found.",
+  "filename": "1510_daily_ai_product_updates_to_slack",
+  "services": [
+    "Airtop",
+    "Edit Fields (Set)",
+    "If",
+    "Schedule",
+    "Slack"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage extraction",
+    "Query",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtop API Key",
+    "Slack API Key"
+  ],
   "content": {
     "id": "fvYgcG9s1pqP5cQ6",
     "meta": {
@@ -198,39 +227,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily Slack updates for new AI product launches",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Airtop",
-    "Edit Fields (Set)",
-    "If",
-    "Schedule",
-    "Slack"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage extraction",
-    "Query",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtop API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

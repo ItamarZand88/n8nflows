@@ -1,7 +1,29 @@
 {
   "id": "320",
-  "filename": "320_gmail_appointment_scheduling",
+  "title": "Automate appointment scheduling responses from Gmail",
   "description": "Triggers on new unread emails in Gmail, checks for appointment requests, and automatically replies with available times based on calendar data.",
+  "filename": "320_gmail_appointment_scheduling",
+  "services": [
+    "Gmail",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Markasread",
+    "Reply"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -304,32 +326,5 @@
         ]
       }
     }
-  },
-  "title": "Automate appointment scheduling responses from Gmail",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Gmail",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Markasread",
-    "Reply"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 2
+  }
 }

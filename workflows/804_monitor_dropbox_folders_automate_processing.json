@@ -1,7 +1,36 @@
 {
   "id": "804",
-  "filename": "804_monitor_dropbox_folders_automate_processing",
+  "title": "Monitor Dropbox folders and automate file processing",
   "description": "Watches specified Dropbox folders for changes, processes new files, and logs them in NocoDB for further actions, enhancing file management efficiency.",
+  "filename": "804_monitor_dropbox_folders_automate_processing",
+  "services": [
+    "Dropbox",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Merge",
+    "NocoDB",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Getall",
+    "List",
+    "Manage folder",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Dropbox Account",
+    "NocoDB API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "4e8285376decaea86c34202e3f6f0900c15ccf72a22e44fbb5cd9851bb3fd11f",
@@ -796,39 +825,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor Dropbox folders and automate file processing",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Dropbox",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Merge",
-    "NocoDB",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Getall",
-    "List",
-    "Manage folder",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Dropbox Account",
-    "NocoDB API Key"
-  ],
-  "workflow_complexity": 20,
-  "external_integrations_count": 8
+  }
 }

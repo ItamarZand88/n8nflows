@@ -1,7 +1,26 @@
 {
   "id": "916",
-  "filename": "916_email_open_tracking_webhook",
+  "title": "Track Email Opens with a Transparent Image Webhook",
   "description": "Serves a 1x1 transparent PNG image via a webhook to track when an email is opened, capturing user identification for analytics.",
+  "filename": "916_email_open_tracking_webhook",
+  "services": [
+    "Convert to File",
+    "Edit Fields (Set)",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data",
+    "Tobinary"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "854c212d3baca2d6108faeb1187a4f6d9a3e60117068e7e872ad5e663327af93"
@@ -146,29 +165,5 @@
         ]
       }
     }
-  },
-  "title": "Track Email Opens with a Transparent Image Webhook",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Convert to File",
-    "Edit Fields (Set)",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data",
-    "Tobinary"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 5
+  }
 }

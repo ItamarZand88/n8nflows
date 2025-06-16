@@ -1,7 +1,28 @@
 {
   "id": "1297",
-  "filename": "1297_podcast_summary_to_gmail",
+  "title": "Summarize Podcast Episodes and Email Digest",
   "description": "Triggers on manual execution, processes podcast transcripts into summaries, topics, and questions, and sends a formatted email digest via Gmail.",
+  "filename": "1297_podcast_summary_to_gmail",
+  "services": [
+    "Code",
+    "Gmail",
+    "Item Lists",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "id": "zFxUMqgvTXGIMzvh",
     "meta": {
@@ -464,31 +485,5 @@
         ]
       }
     }
-  },
-  "title": "Summarize Podcast Episodes and Email Digest",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Gmail",
-    "Item Lists",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 5
+  }
 }

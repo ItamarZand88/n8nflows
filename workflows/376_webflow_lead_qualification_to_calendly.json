@@ -1,7 +1,25 @@
 {
   "id": "376",
-  "filename": "376_webflow_lead_qualification_to_calendly",
+  "title": "Automate lead qualification and routing from Webflow to Calendly",
   "description": "Captures form submissions from Webflow, verifies email domains, qualifies leads based on company size, and routes them to appropriate Calendly links for demos.",
+  "filename": "376_webflow_lead_qualification_to_calendly",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "f0a68da631efd4ed052a324b63ff90f7a844426af0398a68338f44245d1dd9e5"
@@ -326,28 +344,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead qualification and routing from Webflow to Calendly",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 5
+  }
 }

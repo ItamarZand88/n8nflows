@@ -1,7 +1,30 @@
 {
   "id": "216",
-  "filename": "216_typeform_requests_to_clickup_tasks",
+  "title": "Automate ClickUp task creation from Typeform requests",
   "description": "Captures new requests from Typeform, categorizes them, and automatically creates tasks in ClickUp for efficient project management.",
+  "filename": "216_typeform_requests_to_clickup_tasks",
+  "services": [
+    "ClickUp",
+    "Edit Fields (Set)",
+    "Switch",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "ClickUp Account",
+    "Typeform API Key"
+  ],
   "content": {
     "id": "16",
     "name": "User Request Management",
@@ -250,33 +273,5 @@
         ]
       }
     }
-  },
-  "title": "Automate ClickUp task creation from Typeform requests",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "ClickUp",
-    "Edit Fields (Set)",
-    "Switch",
-    "Typeform"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "ClickUp Account",
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

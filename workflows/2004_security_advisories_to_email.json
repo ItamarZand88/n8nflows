@@ -1,7 +1,40 @@
 {
   "id": "2004",
-  "filename": "2004_security_advisories_to_email",
+  "title": "Automate security advisory notifications to your team",
   "description": "Fetches Palo Alto security advisories, filters relevant alerts, and emails updates to your team, ensuring timely awareness of security issues.",
+  "filename": "2004_security_advisories_to_email",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "If",
+    "Jira Software",
+    "Manual",
+    "No Operation, do nothing",
+    "RSS Read",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getallpeople",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Jira Software API Key"
+  ],
   "content": {
     "id": "YSjQ7TVCNY9v1F2A",
     "meta": {
@@ -457,43 +490,5 @@
         ]
       }
     }
-  },
-  "title": "Automate security advisory notifications to your team",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "If",
-    "Jira Software",
-    "Manual",
-    "No Operation, do nothing",
-    "RSS Read",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getallpeople",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Jira Software API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 10
+  }
 }

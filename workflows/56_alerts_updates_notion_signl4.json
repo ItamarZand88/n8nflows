@@ -1,7 +1,36 @@
 {
   "id": "56",
-  "filename": "56_alerts_updates_notion_signl4",
+  "title": "Automate alerts and updates between Notion and SIGNL4",
   "description": "Triggers on new Notion database entries, processes alert statuses, and sends notifications to SIGNL4, ensuring timely updates and resolutions.",
+  "filename": "56_alerts_updates_notion_signl4",
+  "services": [
+    "Function",
+    "Interval",
+    "Notion",
+    "SIGNL4",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Notion Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Getall",
+    "Manage databasePage",
+    "Resolve",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Notion API Key",
+    "SIGNL4 API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -402,39 +431,5 @@
         ]
       }
     }
-  },
-  "title": "Automate alerts and updates between Notion and SIGNL4",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Function",
-    "Interval",
-    "Notion",
-    "SIGNL4",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Notion Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Getall",
-    "Manage databasePage",
-    "Resolve",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Notion API Key",
-    "SIGNL4 API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 5
+  }
 }

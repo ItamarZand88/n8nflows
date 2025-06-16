@@ -1,7 +1,28 @@
 {
   "id": "1427",
-  "filename": "1427_daily_meeting_summaries_to_slack",
+  "title": "Automate daily meeting summaries to Slack from Google Calendar",
   "description": "Triggers daily at 9 AM to fetch today's meetings from Google Calendar, summarizes them using AI, and sends the summary to a designated Slack channel.",
+  "filename": "1427_daily_meeting_summaries_to_slack",
+  "services": [
+    "Schedule",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Slack API Key"
+  ],
   "content": {
     "id": "jAML9xW28lOdsObH",
     "meta": {
@@ -246,31 +267,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily meeting summaries to Slack from Google Calendar",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Schedule",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall"
-  ],
-  "setup_requirements": [
-    "Slack API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 3
+  }
 }

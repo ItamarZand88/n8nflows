@@ -1,7 +1,37 @@
 {
   "id": "950",
-  "filename": "950_daily_churn_checks_win_back_offers",
+  "title": "Automate Daily Customer Churn Checks and Win-Back Offers",
   "description": "Triggers daily to fetch customer data, identifies high churn risks, and sends personalized win-back offers via email, improving customer retention.",
+  "filename": "950_daily_churn_checks_win_back_offers",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "Google Sheets",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "02e782574ebb30fbddb2c3fd832c946466d718819d25f6fe4b920124ff3fc2c1",
@@ -607,40 +637,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Daily Customer Churn Checks and Win-Back Offers",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "Google Sheets",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 8
+  }
 }

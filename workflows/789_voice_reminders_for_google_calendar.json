@@ -1,7 +1,32 @@
 {
   "id": "789",
-  "filename": "789_voice_reminders_for_google_calendar",
+  "title": "Automate Voice Reminders for Google Calendar Appointments",
   "description": "Triggers voice reminders for upcoming Google Calendar appointments, generating personalized messages and sending them via Gmail to attendees.",
+  "filename": "789_voice_reminders_for_google_calendar",
+  "services": [
+    "Code",
+    "Gmail",
+    "Google Calendar",
+    "HTTP Request",
+    "Manual",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "4a11afdb3c52fd098e3eae9fad4b39fdf1bbcde142f596adda46c795e366b326"
@@ -327,35 +352,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Voice Reminders for Google Calendar Appointments",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Gmail",
-    "Google Calendar",
-    "HTTP Request",
-    "Manual",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 7
+  }
 }

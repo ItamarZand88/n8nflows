@@ -1,7 +1,35 @@
 {
   "id": "1556",
-  "filename": "1556_job_application_cv_upload_ai_processing",
+  "title": "Automate Job Application Submission with CV Upload and AI Processing",
   "description": "Facilitates job applications by allowing users to upload CVs, which are then validated and processed using AI to extract relevant information and store it in Airtable.",
+  "filename": "1556_job_application_cv_upload_ai_processing",
+  "services": [
+    "Airtable",
+    "Extract from File",
+    "HTTP Request",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Create",
+    "Filter Data",
+    "Pdf",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -1037,38 +1065,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Job Application Submission with CV Upload and AI Processing",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Extract from File",
-    "HTTP Request",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Create",
-    "Filter Data",
-    "Pdf",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 5
+  }
 }

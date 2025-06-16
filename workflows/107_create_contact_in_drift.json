@@ -1,7 +1,26 @@
 {
   "id": "107",
-  "filename": "107_create_contact_in_drift",
+  "title": "Create a contact in Drift from manual trigger",
   "description": "Manually triggers the creation of a new contact in Drift, streamlining your customer engagement process and enhancing lead management.",
+  "filename": "107_create_contact_in_drift",
+  "services": [
+    "Drift",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Drift API Key"
+  ],
   "content": {
     "id": "125",
     "name": "Create a contact in Drift",
@@ -48,29 +67,5 @@
         ]
       }
     }
-  },
-  "title": "Create a contact in Drift from manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Sales"
-  ],
-  "services": [
-    "Drift",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Drift API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

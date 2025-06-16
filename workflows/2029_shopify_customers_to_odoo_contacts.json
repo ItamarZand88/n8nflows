@@ -1,7 +1,33 @@
 {
   "id": "2029",
-  "filename": "2029_shopify_customers_to_odoo_contacts",
+  "title": "Automate contact creation in Odoo from new Shopify customers",
   "description": "Triggers on new Shopify customer creation, checks for existing contacts in Odoo, and creates a new contact if none exists, streamlining customer management.",
+  "filename": "2029_shopify_customers_to_odoo_contacts",
+  "services": [
+    "Code",
+    "Filter",
+    "Odoo",
+    "Shopify"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Shopify Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage custom"
+  ],
+  "setup_requirements": [
+    "Odoo API Key",
+    "Shopify API Key"
+  ],
   "content": {
     "id": "Zp0R3I1dUjZOIz2l",
     "meta": {
@@ -203,36 +229,5 @@
         ]
       }
     }
-  },
-  "title": "Automate contact creation in Odoo from new Shopify customers",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Code",
-    "Filter",
-    "Odoo",
-    "Shopify"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Shopify Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage custom"
-  ],
-  "setup_requirements": [
-    "Odoo API Key",
-    "Shopify API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

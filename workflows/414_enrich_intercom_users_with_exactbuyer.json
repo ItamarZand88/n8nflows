@@ -1,7 +1,33 @@
 {
   "id": "414",
-  "filename": "414_enrich_intercom_users_with_exactbuyer",
+  "title": "Enrich Intercom users with ExactBuyer contact details",
   "description": "Triggers on new user creation in Intercom, enriches user data from ExactBuyer, and updates the Intercom profile with enhanced contact information.",
+  "filename": "414_enrich_intercom_users_with_exactbuyer",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Intercom",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Intercom API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -508,36 +534,5 @@
         ]
       }
     }
-  },
-  "title": "Enrich Intercom users with ExactBuyer contact details",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Intercom",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Intercom API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 8
+  }
 }

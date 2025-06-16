@@ -1,7 +1,30 @@
 {
   "id": "1274",
-  "filename": "1274_qa_from_pdf_using_openai",
+  "title": "Automate Q&A from Google Drive PDF using OpenAI",
   "description": "Triggers on new chat messages, retrieves data from a PDF in Google Drive, and provides AI-generated answers using OpenAI's language model.",
+  "filename": "1274_qa_from_pdf_using_openai",
+  "services": [
+    "Google Drive",
+    "Manual",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "tMiRJYDrXzpKysTX",
     "meta": {
@@ -440,33 +463,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Q&A from Google Drive PDF using OpenAI",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Google Drive",
-    "Manual",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 4
+  }
 }

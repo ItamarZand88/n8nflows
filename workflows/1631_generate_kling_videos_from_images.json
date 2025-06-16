@@ -1,7 +1,28 @@
 {
   "id": "1631",
-  "filename": "1631_generate_kling_videos_from_images",
+  "title": "Generate and Retrieve Animated Kling Videos from Images",
   "description": "Triggers video generation from images, retrieves the final animated Kling videos, and ensures successful processing for seamless content creation.",
+  "filename": "1631_generate_kling_videos_from_images",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "KWFLpcJytH7qjheD",
     "meta": {
@@ -475,31 +496,5 @@
         ]
       }
     }
-  },
-  "title": "Generate and Retrieve Animated Kling Videos from Images",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 13,
-  "external_integrations_count": 5
+  }
 }

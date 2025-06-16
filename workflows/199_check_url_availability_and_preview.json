@@ -1,7 +1,29 @@
 {
   "id": "199",
-  "filename": "199_check_url_availability_and_preview",
+  "title": "Check URL availability and retrieve link previews",
   "description": "Triggers on demand to check if a URL is available and retrieves its preview if it is, providing instant insights for content sharing.",
+  "filename": "199_check_url_availability_and_preview",
+  "services": [
+    "If",
+    "Manual",
+    "No Operation, do nothing",
+    "Peekalink"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Isavailable"
+  ],
+  "setup_requirements": [
+    "Peekalink API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -118,32 +140,5 @@
         ]
       }
     }
-  },
-  "title": "Check URL availability and retrieve link previews",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "If",
-    "Manual",
-    "No Operation, do nothing",
-    "Peekalink"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Isavailable"
-  ],
-  "setup_requirements": [
-    "Peekalink API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,26 @@
 {
   "id": "2024",
-  "filename": "2024_identify_affected_expressions_in_n8n",
+  "title": "Identify Affected Expressions in Active n8n Workflows",
   "description": "Triggers manually to find all parameters in active workflows that use expressions affected by n8n v1 changes, ensuring workflows function correctly post-upgrade.",
+  "filename": "2024_identify_affected_expressions_in_n8n",
+  "services": [
+    "Code",
+    "Manual",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "id": "zlHbtHIcCZ9enKwg",
     "meta": {
@@ -99,29 +118,5 @@
         ]
       }
     }
-  },
-  "title": "Identify Affected Expressions in Active n8n Workflows",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Manual",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

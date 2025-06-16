@@ -1,7 +1,24 @@
 {
   "id": "1974",
-  "filename": "1974_line_messaging_with_groq_ai",
+  "title": "Automate Line Messaging with Groq AI Responses",
   "description": "Handles incoming messages from Line Messaging API, processes them with Groq AI, and replies automatically, enhancing customer interaction.",
+  "filename": "1974_line_messaging_with_groq_ai",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "xibc6WDU53isYN1o",
     "meta": {
@@ -223,27 +240,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Line Messaging with Groq AI Responses",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 9,
-  "external_integrations_count": 4
+  }
 }

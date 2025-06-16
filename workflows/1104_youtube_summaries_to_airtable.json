@@ -1,7 +1,33 @@
 {
   "id": "1104",
-  "filename": "1104_youtube_summaries_to_airtable",
+  "title": "Automate YouTube video summaries to Airtable",
   "description": "Scans Airtable for new YouTube video links every 5 minutes, extracts transcripts, summarizes content, and updates Airtable with insights.",
+  "filename": "1104_youtube_summaries_to_airtable",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Search",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "6bMVzmrbPexvBe6q",
     "meta": {
@@ -610,36 +636,5 @@
         ]
       }
     }
-  },
-  "title": "Automate YouTube video summaries to Airtable",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Search",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 6
+  }
 }

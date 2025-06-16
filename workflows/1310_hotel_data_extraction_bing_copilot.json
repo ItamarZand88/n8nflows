@@ -1,7 +1,28 @@
 {
   "id": "1310",
-  "filename": "1310_hotel_data_extraction_bing_copilot",
+  "title": "Automate hotel data extraction from Bing Copilot to webhook",
   "description": "Triggers a Bing Copilot request for hotel information, processes the data, and sends structured results to a specified webhook for further use.",
+  "filename": "1310_hotel_data_extraction_bing_copilot",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "AnbedV2Ntx97sfed",
     "meta": {
@@ -626,31 +647,5 @@
         ]
       }
     }
-  },
-  "title": "Automate hotel data extraction from Bing Copilot to webhook",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 19,
-  "external_integrations_count": 5
+  }
 }

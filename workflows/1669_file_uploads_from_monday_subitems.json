@@ -1,7 +1,35 @@
 {
   "id": "1669",
-  "filename": "1669_file_uploads_from_monday_subitems",
+  "title": "Automate file uploads from Monday.com subitems",
   "description": "Triggers file uploads for subitems in Monday.com when a workflow is manually initiated, streamlining project management and document handling.",
+  "filename": "1669_file_uploads_from_monday_subitems",
+  "services": [
+    "Code",
+    "Convert to File",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "Monday.com",
+    "Split Out"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Manage boardItem",
+    "Tojson"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account",
+    "Monday.com API Key"
+  ],
   "content": {
     "id": "MmfWpcIegNgBjBpL",
     "meta": {
@@ -396,38 +424,5 @@
         ]
       }
     }
-  },
-  "title": "Automate file uploads from Monday.com subitems",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Convert to File",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "Monday.com",
-    "Split Out"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Manage boardItem",
-    "Tojson"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account",
-    "Monday.com API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 7
+  }
 }

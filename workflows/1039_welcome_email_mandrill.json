@@ -1,7 +1,25 @@
 {
   "id": "1039",
-  "filename": "1039_welcome_email_mandrill",
+  "title": "Send a welcome email using Mandrill on manual trigger",
   "description": "Triggers a welcome email to a specified address via Mandrill when executed manually, streamlining the onboarding process for new users.",
+  "filename": "1039_welcome_email_mandrill",
+  "services": [
+    "Mandrill",
+    "Manual"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mandrill API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -46,28 +64,5 @@
         ]
       }
     }
-  },
-  "title": "Send a welcome email using Mandrill on manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Mandrill",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Mandrill API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

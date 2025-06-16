@@ -1,7 +1,36 @@
 {
   "id": "1704",
-  "filename": "1704_linkedin_companies_to_airtable",
+  "title": "Automate LinkedIn Company Data Collection to Airtable",
   "description": "Triggers on demand to search for LinkedIn companies, filters valid entries, and adds new companies to Airtable for CRM management.",
+  "filename": "1704_linkedin_companies_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "NOycL25YOISt8OLU",
     "meta": {
@@ -888,39 +917,5 @@
         ]
       }
     }
-  },
-  "title": "Automate LinkedIn Company Data Collection to Airtable",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 8
+  }
 }

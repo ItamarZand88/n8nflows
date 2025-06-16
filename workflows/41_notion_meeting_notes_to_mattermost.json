@@ -1,7 +1,30 @@
 {
   "id": "41",
-  "filename": "41_notion_meeting_notes_to_mattermost",
+  "title": "Notify Marketing Team of New Notion Meeting Notes",
   "description": "Triggers when new meeting notes are added in Notion, filters for the Marketing team, and sends a notification to Mattermost with meeting details.",
+  "filename": "41_notion_meeting_notes_to_mattermost",
+  "services": [
+    "If",
+    "Mattermost",
+    "No Operation, do nothing",
+    "Notion"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Notion Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Mattermost API Key",
+    "Notion API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -106,33 +129,5 @@
         ]
       }
     }
-  },
-  "title": "Notify Marketing Team of New Notion Meeting Notes",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "If",
-    "Mattermost",
-    "No Operation, do nothing",
-    "Notion"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Notion Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Mattermost API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

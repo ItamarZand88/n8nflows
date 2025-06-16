@@ -1,7 +1,28 @@
 {
   "id": "348",
-  "filename": "348_mailchimp_subscribers_from_airtable",
+  "title": "Create Mailchimp subscribers from Airtable user data",
   "description": "Automatically retrieves user information from Airtable and adds them as subscribers to a Mailchimp list, streamlining email marketing efforts.",
+  "filename": "348_mailchimp_subscribers_from_airtable",
+  "services": [
+    "Airtable",
+    "Cron",
+    "Mailchimp"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "List"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Mailchimp API Key"
+  ],
   "content": {
     "id": "1",
     "name": "Create entry in Mailchimp from Airtable",
@@ -101,31 +122,5 @@
         ]
       }
     }
-  },
-  "title": "Create Mailchimp subscribers from Airtable user data",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing"
-  ],
-  "services": [
-    "Airtable",
-    "Cron",
-    "Mailchimp"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "List"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Mailchimp API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

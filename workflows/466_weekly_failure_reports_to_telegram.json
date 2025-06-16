@@ -1,7 +1,32 @@
 {
   "id": "466",
-  "filename": "466_weekly_failure_reports_to_telegram",
+  "title": "Automate weekly failure reports to Telegram",
   "description": "Triggers weekly to check for workflow failures, compiles a report, and sends it to Telegram for quick visibility and action.",
+  "filename": "466_weekly_failure_reports_to_telegram",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Filter",
+    "Schedule",
+    "Sticky Note",
+    "Telegram",
+    "n8n"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Manage execution",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -273,35 +298,5 @@
         ]
       }
     }
-  },
-  "title": "Automate weekly failure reports to Telegram",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Filter",
-    "Schedule",
-    "Sticky Note",
-    "Telegram",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Manage execution",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

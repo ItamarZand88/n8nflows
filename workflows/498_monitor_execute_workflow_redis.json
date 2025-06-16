@@ -1,7 +1,35 @@
 {
   "id": "498",
-  "filename": "498_monitor_execute_workflow_redis",
+  "title": "Monitor and Execute Workflow with Redis Status Check",
   "description": "Automatically checks workflow status every 5 seconds, executes a sub-workflow if idle, and updates the status in Redis to track running and idle states.",
+  "filename": "498_monitor_execute_workflow_redis",
+  "services": [
+    "Execute Sub-workflow",
+    "Filter",
+    "If",
+    "Manual",
+    "No Operation, do nothing",
+    "Redis",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Set"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "378c072a34d9e63949fd9cf26b8d28ff276a486e303f0d8963f23e1d74169c1b"
@@ -427,38 +455,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor and Execute Workflow with Redis Status Check",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Execute Sub-workflow",
-    "Filter",
-    "If",
-    "Manual",
-    "No Operation, do nothing",
-    "Redis",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Set"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 17,
-  "external_integrations_count": 8
+  }
 }

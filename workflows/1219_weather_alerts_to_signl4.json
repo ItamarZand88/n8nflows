@@ -1,7 +1,34 @@
 {
   "id": "1219",
-  "filename": "1219_weather_alerts_to_signl4",
+  "title": "Send weather alerts via SIGNL4 for low temperatures",
   "description": "Triggers at 6:15 AM daily, checks Berlin's temperature, and sends a SIGNL4 alert if it's below 25°C, ensuring timely weather notifications.",
+  "filename": "1219_weather_alerts_to_signl4",
+  "services": [
+    "If",
+    "Manual",
+    "OpenWeatherMap",
+    "SIGNL4",
+    "Schedule"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "OpenWeatherMap API Key",
+    "SIGNL4 API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "4e19bc4d542ebb7cc77dcbf34c0c6dca5062ae1e34fd327b055beb054230d539"
@@ -166,37 +193,5 @@
         ]
       }
     }
-  },
-  "title": "Send weather alerts via SIGNL4 for low temperatures",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Miscellaneous",
-    "Utility"
-  ],
-  "services": [
-    "If",
-    "Manual",
-    "OpenWeatherMap",
-    "SIGNL4",
-    "Schedule"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "OpenWeatherMap API Key",
-    "SIGNL4 API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

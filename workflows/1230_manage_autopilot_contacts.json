@@ -1,7 +1,24 @@
 {
   "id": "1230",
-  "filename": "1230_manage_autopilot_contacts",
+  "title": "Manage Autopilot contact lists and add new contacts",
   "description": "Automatically retrieves a contact list from Autopilot and adds new contacts to it, streamlining your marketing efforts and saving time.",
+  "filename": "1230_manage_autopilot_contacts",
+  "services": [
+    "Autopilot"
+  ],
+  "categories": [
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Getall",
+    "Manage contactList",
+    "Manage list"
+  ],
+  "setup_requirements": [
+    "Autopilot API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -110,27 +127,5 @@
         ]
       }
     }
-  },
-  "title": "Manage Autopilot contact lists and add new contacts",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Marketing"
-  ],
-  "services": [
-    "Autopilot"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Getall",
-    "Manage contactList",
-    "Manage list"
-  ],
-  "setup_requirements": [
-    "Autopilot API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 1
+  }
 }

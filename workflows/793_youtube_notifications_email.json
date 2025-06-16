@@ -1,7 +1,39 @@
 {
   "id": "793",
-  "filename": "793_youtube_notifications_email",
+  "title": "Automate email notifications for new YouTube videos",
   "description": "Triggers hourly to check for new videos from your YouTube subscriptions and sends email notifications for unwatched videos.",
+  "filename": "793_youtube_notifications_email",
+  "services": [
+    "Filter",
+    "HTTP Request",
+    "If",
+    "RSS Read",
+    "Schedule",
+    "Send Email",
+    "Split Out",
+    "Sticky Note",
+    "Stop and Error",
+    "YouTube"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Manage video"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account",
+    "YouTube Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "4a8c4d3ed2f4423694f8ac022d1c321551900c7ab47e0c03549acecec1ab4a89",
@@ -588,42 +620,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email notifications for new YouTube videos",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Marketing",
-    "Utility"
-  ],
-  "services": [
-    "Filter",
-    "HTTP Request",
-    "If",
-    "RSS Read",
-    "Schedule",
-    "Send Email",
-    "Split Out",
-    "Sticky Note",
-    "Stop and Error",
-    "YouTube"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Manage video"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account",
-    "YouTube Account"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 10
+  }
 }

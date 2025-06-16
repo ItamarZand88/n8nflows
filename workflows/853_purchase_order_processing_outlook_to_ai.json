@@ -1,7 +1,35 @@
 {
   "id": "853",
-  "filename": "853_purchase_order_processing_outlook_to_ai",
+  "title": "Automate Purchase Order Processing from Outlook to AI Extraction",
   "description": "Monitors a shared Outlook inbox for new purchase orders, extracts details from XLSX attachments, and validates the data using AI for efficient processing.",
+  "filename": "853_purchase_order_processing_outlook_to_ai",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "If",
+    "Microsoft Outlook",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Microsoft Outlook Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Reply",
+    "Set Data",
+    "Xlsx"
+  ],
+  "setup_requirements": [
+    "Microsoft Outlook Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -691,38 +719,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Purchase Order Processing from Outlook to AI Extraction",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "If",
-    "Microsoft Outlook",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Microsoft Outlook Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Reply",
-    "Set Data",
-    "Xlsx"
-  ],
-  "setup_requirements": [
-    "Microsoft Outlook Account"
-  ],
-  "workflow_complexity": 22,
-  "external_integrations_count": 7
+  }
 }

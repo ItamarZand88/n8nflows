@@ -1,7 +1,42 @@
 {
   "id": "454",
-  "filename": "454_slack_command_handling_notifications",
+  "title": "Automate Slack command handling and user notifications",
   "description": "Processes Slack commands, validates requests, and sends user notifications while executing corresponding workflows for efficient task management.",
+  "filename": "454_slack_command_handling_notifications",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Postgres",
+    "Slack",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Edit Fields (Set) Event",
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Deletetable",
+    "Filter Data",
+    "Select",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Slack API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -1102,45 +1137,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack command handling and user notifications",
-  "nodes_count": 34,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Postgres",
-    "Slack",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Edit Fields (Set) Event",
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Deletetable",
-    "Filter Data",
-    "Select",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Slack API Key"
-  ],
-  "workflow_complexity": 34,
-  "external_integrations_count": 12
+  }
 }

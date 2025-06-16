@@ -1,7 +1,35 @@
 {
   "id": "1123",
-  "filename": "1123_social_media_analysis_to_email",
+  "title": "Automate Social Media Analysis and Email Outreach",
   "description": "Triggers on new leads in Google Sheets, fetches their LinkedIn and Twitter posts, and generates personalized email outreach using AI, saving time and enhancing engagement.",
+  "filename": "1123_social_media_analysis_to_email",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Send Email",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -694,38 +722,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Social Media Analysis and Email Outreach",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Send Email",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 7
+  }
 }

@@ -1,7 +1,36 @@
 {
   "id": "1758",
-  "filename": "1758_random_user_data_to_csv",
+  "title": "Generate and Save Random User Data as CSV Files",
   "description": "Triggers a workflow to create random user profiles using OpenAI, processes the data, and saves it as CSV files for easy access and use.",
+  "filename": "1758_random_user_data_to_csv",
+  "services": [
+    "Convert to/from binary data",
+    "Edit Fields (Set)",
+    "Item Lists",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "OpenAI",
+    "Spreadsheet File",
+    "Sticky Note",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage chat",
+    "Set Data",
+    "Tofile"
+  ],
+  "setup_requirements": [
+    "OpenAI API Key"
+  ],
   "content": {
     "id": "6FSx5OMVxp8Ldg8A",
     "meta": {
@@ -357,39 +386,5 @@
         ]
       }
     }
-  },
-  "title": "Generate and Save Random User Data as CSV Files",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Utility"
-  ],
-  "services": [
-    "Convert to/from binary data",
-    "Edit Fields (Set)",
-    "Item Lists",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "OpenAI",
-    "Spreadsheet File",
-    "Sticky Note",
-    "Write Binary File"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage chat",
-    "Set Data",
-    "Tofile"
-  ],
-  "setup_requirements": [
-    "OpenAI API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 9
+  }
 }

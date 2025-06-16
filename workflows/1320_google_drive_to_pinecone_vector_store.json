@@ -1,7 +1,30 @@
 {
   "id": "1320",
-  "filename": "1320_google_drive_to_pinecone_vector_store",
+  "title": "Automate data extraction from Google Drive to Pinecone vector store",
   "description": "Downloads a file from Google Drive, splits it into chunks, and inserts the data into a Pinecone vector store for efficient retrieval and chat-based querying.",
+  "filename": "1320_google_drive_to_pinecone_vector_store",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "62b3b6db4f4d3641a1fa1da6dfb9699a19380a1f60cbc18fc75d6d145f35552b"
@@ -409,33 +432,5 @@
         ]
       }
     }
-  },
-  "title": "Automate data extraction from Google Drive to Pinecone vector store",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 4
+  }
 }

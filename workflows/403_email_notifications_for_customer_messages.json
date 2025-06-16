@@ -1,7 +1,35 @@
 {
   "id": "403",
-  "filename": "403_email_notifications_for_customer_messages",
+  "title": "Automate email notifications for customer messages in Google Sheets",
   "description": "Triggers every minute to check Google Sheets for new customer messages, filters by status, and sends emails while updating the message status.",
+  "filename": "403_email_notifications_for_customer_messages",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "Google Sheets",
+    "Merge",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833",
@@ -503,38 +531,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email notifications for customer messages in Google Sheets",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "Google Sheets",
-    "Merge",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 7
+  }
 }

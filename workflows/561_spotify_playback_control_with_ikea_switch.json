@@ -1,7 +1,45 @@
 {
   "id": "561",
-  "filename": "561_spotify_playback_control_with_ikea_switch",
+  "title": "Control Spotify Playback with IKEA Remote Switch",
   "description": "Triggers Spotify playback actions based on an IKEA remote switch, allowing users to play, pause, change volume, and skip tracks seamlessly.",
+  "filename": "561_spotify_playback_control_with_ikea_switch",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "MQTT",
+    "No Operation, do nothing",
+    "Split Out",
+    "Spotify",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Miscellaneous"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New MQTT Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getuserplaylists",
+    "Manage playlist",
+    "Nextsong",
+    "Pause",
+    "Previoussong",
+    "Resume",
+    "Set Data",
+    "Startmusic"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account",
+    "Spotify Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -1042,48 +1080,5 @@
         ]
       }
     }
-  },
-  "title": "Control Spotify Playback with IKEA Remote Switch",
-  "nodes_count": 26,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "MQTT",
-    "No Operation, do nothing",
-    "Split Out",
-    "Spotify",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New MQTT Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getuserplaylists",
-    "Manage playlist",
-    "Nextsong",
-    "Pause",
-    "Previoussong",
-    "Resume",
-    "Set Data",
-    "Startmusic"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account",
-    "Spotify Account"
-  ],
-  "workflow_complexity": 26,
-  "external_integrations_count": 10
+  }
 }

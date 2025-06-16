@@ -1,7 +1,26 @@
 {
   "id": "737",
-  "filename": "737_text_case_transformation_and_replacement",
+  "title": "Transform Text Case and Replace Words in a Message",
   "description": "Triggers manually to convert a message to lowercase, uppercase, and replace specific words, providing formatted outputs for further use.",
+  "filename": "737_text_case_transformation_and_replacement",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Command",
+    "Manual",
+    "Merge"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "29",
     "name": "N8N Español - Ejemplos",
@@ -187,29 +206,5 @@
         ]
       }
     }
-  },
-  "title": "Transform Text Case and Replace Words in a Message",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Command",
-    "Manual",
-    "Merge"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

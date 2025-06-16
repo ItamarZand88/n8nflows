@@ -1,7 +1,29 @@
 {
   "id": "1082",
-  "filename": "1082_download_image_to_nextcloud",
+  "title": "Download and Upload Image to NextCloud Automatically",
   "description": "Triggers a download of an image from a URL and uploads it to a specified folder in NextCloud, streamlining file management.",
+  "filename": "1082_download_image_to_nextcloud",
+  "services": [
+    "HTTP Request",
+    "Manual",
+    "Nextcloud"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "List",
+    "Manage folder"
+  ],
+  "setup_requirements": [
+    "Nextcloud API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -124,32 +146,5 @@
         ]
       }
     }
-  },
-  "title": "Download and Upload Image to NextCloud Automatically",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Manual",
-    "Nextcloud"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "List",
-    "Manage folder"
-  ],
-  "setup_requirements": [
-    "Nextcloud API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 3
+  }
 }

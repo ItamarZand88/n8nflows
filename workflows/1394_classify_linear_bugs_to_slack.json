@@ -1,7 +1,40 @@
 {
   "id": "1394",
-  "filename": "1394_classify_linear_bugs_to_slack",
+  "title": "Classify Linear bug tickets and notify teams in Slack",
   "description": "Automates the classification of bug tickets in Linear based on specific criteria and notifies the relevant team in Slack for prompt action.",
+  "filename": "1394_classify_linear_bugs_to_slack",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Linear",
+    "Merge",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Linear Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account",
+    "Linear API Key",
+    "Linear Account",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -538,43 +571,5 @@
         ]
       }
     }
-  },
-  "title": "Classify Linear bug tickets and notify teams in Slack",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Linear",
-    "Merge",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Linear Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account",
-    "Linear API Key",
-    "Linear Account",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 8
+  }
 }

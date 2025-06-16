@@ -1,7 +1,22 @@
 {
   "id": "408",
-  "filename": "408_ai_chat_memory_and_calculator",
+  "title": "Automate AI chat interactions with memory and calculations",
   "description": "Triggers on new chat messages, processes them with OpenAI, and utilizes memory for context, enhancing user interactions with AI.",
+  "filename": "408_ai_chat_memory_and_calculator",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Manage assistant"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -150,25 +165,5 @@
         ]
       }
     }
-  },
-  "title": "Automate AI chat interactions with memory and calculations",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Manage assistant"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 1
+  }
 }

@@ -1,7 +1,35 @@
 {
   "id": "940",
-  "filename": "940_sync_clockify_to_sheets_and_syncro",
+  "title": "Sync Clockify time entries with Google Sheets and Syncro",
   "description": "Automatically captures Clockify time entries via a webhook, checks for existing records, and syncs new or updated entries to Google Sheets and Syncro for project management.",
+  "filename": "940_sync_clockify_to_sheets_and_syncro",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "No Operation, do nothing",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Append",
+    "Execute Function",
+    "Filter Data",
+    "Lookup",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets API Key"
+  ],
   "content": {
     "id": "3",
     "name": "Clockify to Syncro",
@@ -432,38 +460,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Clockify time entries with Google Sheets and Syncro",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "No Operation, do nothing",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Append",
-    "Execute Function",
-    "Filter Data",
-    "Lookup",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 7
+  }
 }

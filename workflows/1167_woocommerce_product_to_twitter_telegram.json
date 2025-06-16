@@ -1,7 +1,29 @@
 {
   "id": "1167",
-  "filename": "1167_woocommerce_product_to_twitter_telegram",
+  "title": "Automate new WooCommerce product announcements to Twitter and Telegram",
   "description": "Triggers when a new product is created in WooCommerce and automatically posts announcements to Twitter and Telegram, enhancing product visibility.",
+  "filename": "1167_woocommerce_product_to_twitter_telegram",
+  "services": [
+    "Telegram",
+    "WooCommerce",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Communication",
+    "HITL",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New WooCommerce Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Telegram API Key",
+    "WooCommerce API Key",
+    "X (Formerly Twitter) API Key"
+  ],
   "content": {
     "id": 85,
     "name": "New WooCommerce Product to Twitter and Telegram",
@@ -85,32 +107,5 @@
         ]
       }
     }
-  },
-  "title": "Automate new WooCommerce product announcements to Twitter and Telegram",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "HITL",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "Telegram",
-    "WooCommerce",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New WooCommerce Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Telegram API Key",
-    "WooCommerce API Key",
-    "X (Formerly Twitter) API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

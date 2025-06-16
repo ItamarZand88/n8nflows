@@ -1,7 +1,25 @@
 {
   "id": "50",
-  "filename": "50_audio_transcription_from_s3_to_transcribe",
+  "title": "Automate audio transcription from AWS S3 using AWS Transcribe",
   "description": "Triggers audio file retrieval from AWS S3 and automatically sends it to AWS Transcribe for transcription, streamlining audio content processing.",
+  "filename": "50_audio_transcription_from_s3_to_transcribe",
+  "services": [
+    "AWS S3",
+    "AWS Transcribe",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -75,28 +93,5 @@
         ]
       }
     }
-  },
-  "title": "Automate audio transcription from AWS S3 using AWS Transcribe",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "AWS S3",
-    "AWS Transcribe",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getall"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

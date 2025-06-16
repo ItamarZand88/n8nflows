@@ -1,7 +1,29 @@
 {
   "id": "1897",
-  "filename": "1897_file_sharing_logging_google_drive_airtable",
+  "title": "Automate file sharing and logging with Google Drive and Airtable",
   "description": "Automatically fetches new files from Google Drive, shares them via email, and logs their metadata in Airtable for efficient tracking.",
+  "filename": "1897_file_sharing_logging_google_drive_airtable",
+  "services": [
+    "Airtable",
+    "Google Drive",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Create",
+    "Share"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Google Drive Account"
+  ],
   "content": {
     "id": "uLHpFu2ndN6ZKClZ",
     "meta": {
@@ -292,32 +314,5 @@
         ]
       }
     }
-  },
-  "title": "Automate file sharing and logging with Google Drive and Airtable",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Airtable",
-    "Google Drive",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Create",
-    "Share"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 3
+  }
 }

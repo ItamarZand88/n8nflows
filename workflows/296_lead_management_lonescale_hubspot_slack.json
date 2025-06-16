@@ -1,7 +1,42 @@
 {
   "id": "296",
-  "filename": "296_lead_management_lonescale_hubspot_slack",
+  "title": "Automate lead management from Lonescale to HubSpot and Slack",
   "description": "Captures new job intent leads from Lonescale, adds them to Lemlist campaigns, updates HubSpot records, and notifies the sales and customer success teams via Slack.",
+  "filename": "296_lead_management_lonescale_hubspot_slack",
+  "services": [
+    "Dropcontact",
+    "HubSpot",
+    "If",
+    "Lemlist",
+    "Slack",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Manage company",
+    "Manage contact",
+    "Manage engagement",
+    "Manage lead",
+    "Search",
+    "Searchbydomain",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Dropcontact API Key",
+    "HubSpot Account",
+    "Lemlist API Key",
+    "Slack Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "f0a68da631efd4ed052a324b63ff90f7a844426af0398a68338f44245d1dd9e5"
@@ -649,45 +684,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead management from Lonescale to HubSpot and Slack",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "Dropcontact",
-    "HubSpot",
-    "If",
-    "Lemlist",
-    "Slack",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Manage company",
-    "Manage contact",
-    "Manage engagement",
-    "Manage lead",
-    "Search",
-    "Searchbydomain",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Dropcontact API Key",
-    "HubSpot Account",
-    "Lemlist API Key",
-    "Slack Account"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 6
+  }
 }

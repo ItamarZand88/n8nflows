@@ -1,7 +1,40 @@
 {
   "id": "91",
-  "filename": "91_airtable_record_updates_inserts",
+  "title": "Automate record updates and inserts in Airtable",
   "description": "Triggers on manual input to update or insert records in Airtable based on specified conditions, ensuring efficient data management.",
+  "filename": "91_airtable_record_updates_inserts",
+  "services": [
+    "Aggregate",
+    "Code",
+    "DebugHelper",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "Split Out",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "121pu6oiTjzkJ8OT",
     "meta": {
@@ -1218,43 +1251,5 @@
         ]
       }
     }
-  },
-  "title": "Automate record updates and inserts in Airtable",
-  "nodes_count": 35,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "DebugHelper",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "Split Out",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 35,
-  "external_integrations_count": 14
+  }
 }

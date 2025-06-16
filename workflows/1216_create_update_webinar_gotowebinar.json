@@ -1,7 +1,24 @@
 {
   "id": "1216",
-  "filename": "1216_create_update_webinar_gotowebinar",
+  "title": "Automate webinar creation and updates in GoToWebinar",
   "description": "Creates a new webinar in GoToWebinar and automatically updates its description, streamlining your webinar management process.",
+  "filename": "1216_create_update_webinar_gotowebinar",
+  "services": [
+    "GoToWebinar"
+  ],
+  "categories": [
+    "Communication"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Manage webinar",
+    "Update"
+  ],
+  "setup_requirements": [
+    "GoToWebinar Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -91,27 +108,5 @@
         ]
       }
     }
-  },
-  "title": "Automate webinar creation and updates in GoToWebinar",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication"
-  ],
-  "services": [
-    "GoToWebinar"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Manage webinar",
-    "Update"
-  ],
-  "setup_requirements": [
-    "GoToWebinar Account"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 1
+  }
 }

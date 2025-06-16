@@ -1,7 +1,23 @@
 {
   "id": "2048",
-  "filename": "2048_chat_responses_with_ollama",
+  "title": "Automate chat responses using Ollama LLM",
   "description": "Processes incoming chat messages with the Ollama LLM and returns structured responses, enhancing user interaction and support.",
+  "filename": "2048_chat_responses_with_ollama",
+  "services": [
+    "Edit Fields (Set)",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "Telr6HU0ltH7s9f7",
     "meta": {
@@ -315,26 +331,5 @@
         ]
       }
     }
-  },
-  "title": "Automate chat responses using Ollama LLM",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 2
+  }
 }

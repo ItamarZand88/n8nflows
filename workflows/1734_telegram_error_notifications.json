@@ -1,7 +1,30 @@
 {
   "id": "1734",
-  "filename": "1734_telegram_error_notifications",
+  "title": "Send Telegram notifications for workflow errors",
   "description": "Automatically sends detailed error notifications to Telegram when a workflow fails, including error details and execution context.",
+  "filename": "1734_telegram_error_notifications",
+  "services": [
+    "Edit Fields (Set)",
+    "Error",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Error Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "ozo5jlbwPHgaMnVt",
     "meta": {
@@ -117,33 +140,5 @@
         ]
       }
     }
-  },
-  "title": "Send Telegram notifications for workflow errors",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Error",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Error Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,32 @@
 {
   "id": "1388",
-  "filename": "1388_file_processing_chat_openai",
+  "title": "Automate file processing and chat responses with OpenAI",
   "description": "Triggers on manual execution to fetch a file from Google Drive, processes it into chunks, and enables chat-based queries with citations using OpenAI.",
+  "filename": "1388_file_processing_chat_openai",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7",
@@ -599,35 +624,5 @@
         ]
       }
     }
-  },
-  "title": "Automate file processing and chat responses with OpenAI",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 22,
-  "external_integrations_count": 5
+  }
 }

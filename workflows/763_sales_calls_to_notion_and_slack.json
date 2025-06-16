@@ -1,7 +1,41 @@
 {
   "id": "763",
-  "filename": "763_sales_calls_to_notion_and_slack",
+  "title": "Automate Sales Call Data Processing in Notion and Slack",
   "description": "Triggers on new sales calls, processes data, and logs summaries in Notion while updating Slack with progress and completion alerts.",
+  "filename": "763_sales_calls_to_notion_and_slack",
+  "services": [
+    "Aggregate",
+    "Compare Datasets",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "No Operation, do nothing",
+    "Notion",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage databasePage",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Notion API Key",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7",
@@ -740,44 +774,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Sales Call Data Processing in Notion and Slack",
-  "nodes_count": 25,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Compare Datasets",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "No Operation, do nothing",
-    "Notion",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage databasePage",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Notion API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 25,
-  "external_integrations_count": 11
+  }
 }

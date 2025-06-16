@@ -1,7 +1,23 @@
 {
   "id": "985",
-  "filename": "985_send_email_notifications_aws_ses",
+  "title": "Send email notifications via AWS SES on manual trigger",
   "description": "Manually triggers an email notification using AWS SES to specified recipients with a sample message body and subject.",
+  "filename": "985_send_email_notifications_aws_ses",
+  "services": [
+    "AWS SES",
+    "Manual"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -50,26 +66,5 @@
         ]
       }
     }
-  },
-  "title": "Send email notifications via AWS SES on manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "AWS SES",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

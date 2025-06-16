@@ -1,7 +1,32 @@
 {
   "id": "753",
-  "filename": "753_signl4_alerts_management",
+  "title": "Automate SIGNL4 alerts and resolutions based on JSON data",
   "description": "Triggers every hour to read alert data, send notifications via SIGNL4, and resolve alerts based on conditions, improving incident management efficiency.",
+  "filename": "753_signl4_alerts_management",
+  "services": [
+    "Convert to/from binary data",
+    "Cron",
+    "Function",
+    "If",
+    "Read Binary File",
+    "SIGNL4",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Filter Data",
+    "Resolve"
+  ],
+  "setup_requirements": [
+    "SIGNL4 API Key"
+  ],
   "content": {
     "id": "2",
     "name": "SIGNL4 Alert",
@@ -235,35 +260,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SIGNL4 alerts and resolutions based on JSON data",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Convert to/from binary data",
-    "Cron",
-    "Function",
-    "If",
-    "Read Binary File",
-    "SIGNL4",
-    "Write Binary File"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Filter Data",
-    "Resolve"
-  ],
-  "setup_requirements": [
-    "SIGNL4 API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 7
+  }
 }

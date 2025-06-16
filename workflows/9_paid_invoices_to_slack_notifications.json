@@ -1,7 +1,36 @@
 {
   "id": "9",
-  "filename": "9_paid_invoices_to_slack_notifications",
+  "title": "Automate Slack notifications for paid invoices in Stripe",
   "description": "Triggers when an invoice is paid in Stripe, updates the deal status in HubSpot, and sends notifications to Slack about the payment status.",
+  "filename": "9_paid_invoices_to_slack_notifications",
+  "services": [
+    "HubSpot",
+    "If",
+    "Slack",
+    "Stripe"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Finance & Accounting",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Stripe Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Search",
+    "Update"
+  ],
+  "setup_requirements": [
+    "HubSpot API Key",
+    "HubSpot Account",
+    "Slack API Key",
+    "Stripe API Key"
+  ],
   "content": {
     "id": 100,
     "name": "On new Stripe Invoice Payment update Hubspot and notify the team in Slack",
@@ -377,39 +406,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack notifications for paid invoices in Stripe",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Finance & Accounting",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "HubSpot",
-    "If",
-    "Slack",
-    "Stripe"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Stripe Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Search",
-    "Update"
-  ],
-  "setup_requirements": [
-    "HubSpot API Key",
-    "HubSpot Account",
-    "Slack API Key",
-    "Stripe API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 4
+  }
 }

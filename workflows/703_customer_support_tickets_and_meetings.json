@@ -1,7 +1,38 @@
 {
   "id": "703",
-  "filename": "703_customer_support_tickets_and_meetings",
+  "title": "Automate customer support ticket creation and scheduling",
   "description": "Automatically checks for customer details, creates support tickets in Zendesk, and schedules meetings in Google Calendar based on availability.",
+  "filename": "703_customer_support_tickets_and_meetings",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Google Calendar",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Manage calendar",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Google Calendar Account",
+    "Google Sheets Account",
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7",
@@ -1160,41 +1191,5 @@
         ]
       }
     }
-  },
-  "title": "Automate customer support ticket creation and scheduling",
-  "nodes_count": 33,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Google Calendar",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Manage calendar",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Google Calendar Account",
-    "Google Sheets Account",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 33,
-  "external_integrations_count": 8
+  }
 }

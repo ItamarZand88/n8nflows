@@ -1,7 +1,25 @@
 {
   "id": "836",
-  "filename": "836_line_messages_to_calendar_events",
+  "title": "Automate responses and calendar events from LINE messages",
   "description": "Captures messages from LINE, processes them with AI, and creates Google Calendar events or replies based on user input, enhancing productivity and communication.",
+  "filename": "836_line_messages_to_calendar_events",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "Z5OgwYfK4reCTv9y",
     "meta": {
@@ -552,28 +570,5 @@
         ]
       }
     }
-  },
-  "title": "Automate responses and calendar events from LINE messages",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,42 @@
 {
   "id": "686",
-  "filename": "686_slack_incident_search_servicenow",
+  "title": "Automate Slack incident searches with ServiceNow integration",
   "description": "Captures Slack modal submissions to search ServiceNow for incidents based on user-defined criteria and sends results back to Slack channels or users.",
+  "filename": "686_slack_incident_search_servicenow",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Limit",
+    "Loop Over Items (Split in Batches)",
+    "ServiceNow",
+    "Slack",
+    "Sort",
+    "Sticky Note",
+    "Summarize",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage incident",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "ServiceNow API Key",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "03e9d14e9196363fe7191ce21dc0bb17387a6e755dcc9acc4f5904752919dca8"
@@ -921,45 +956,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack incident searches with ServiceNow integration",
-  "nodes_count": 29,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Limit",
-    "Loop Over Items (Split in Batches)",
-    "ServiceNow",
-    "Slack",
-    "Sort",
-    "Sticky Note",
-    "Summarize",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage incident",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "ServiceNow API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 29,
-  "external_integrations_count": 12
+  }
 }

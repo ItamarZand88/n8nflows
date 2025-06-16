@@ -1,7 +1,33 @@
 {
   "id": "1862",
-  "filename": "1862_telegram_ai_responses",
+  "title": "Automate Telegram interactions with AI responses",
   "description": "Listens for incoming Telegram messages, processes text or voice, and replies with AI-generated responses, enhancing user engagement and support.",
+  "filename": "1862_telegram_ai_responses",
+  "services": [
+    "Edit Fields (Set)",
+    "Sticky Note",
+    "Switch",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Manage audio",
+    "Manage file",
+    "Sendchataction",
+    "Set Data",
+    "Transcribe"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "HJwTWtzlhK8Q5SOv",
     "meta": {
@@ -503,36 +529,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Telegram interactions with AI responses",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Sticky Note",
-    "Switch",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Manage audio",
-    "Manage file",
-    "Sendchataction",
-    "Set Data",
-    "Transcribe"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,39 @@
 {
   "id": "1937",
-  "filename": "1937_gumroad_sales_to_crm_and_telegram",
+  "title": "Automate CRM updates and Telegram notifications for Gumroad sales",
   "description": "Triggers on new Gumroad sales, logs details to Google Sheets, subscribes customers to Beehiiv, and notifies your team via Telegram.",
+  "filename": "1937_gumroad_sales_to_crm_and_telegram",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "Gumroad",
+    "HTTP Request",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gumroad Event"
+  ],
+  "actions": [
+    "Append",
+    "Manage sale",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Gumroad API Key",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "W1xEzKKEd1qV2D7V",
     "meta": {
@@ -369,42 +401,5 @@
         ]
       }
     }
-  },
-  "title": "Automate CRM updates and Telegram notifications for Gumroad sales",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity",
-    "Sales"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "Gumroad",
-    "HTTP Request",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gumroad Event"
-  ],
-  "actions": [
-    "Append",
-    "Manage sale",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Gumroad API Key",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,37 @@
 {
   "id": "1330",
-  "filename": "1330_wordpress_content_creation_with_google_sheets",
+  "title": "Automate WordPress content creation with Google Sheets and DeepSeek",
   "description": "Triggers content generation from Google Sheets, creates SEO-friendly articles in WordPress, and uploads cover images automatically, streamlining your blogging process.",
+  "filename": "1330_wordpress_content_creation_with_google_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note",
+    "Wordpress"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage image",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "HTTP Request API Key",
+    "Wordpress API Key"
+  ],
   "content": {
     "id": "p5bfwpcRy6LK33Io",
     "meta": {
@@ -569,40 +599,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WordPress content creation with Google Sheets and DeepSeek",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note",
-    "Wordpress"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage image",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "HTTP Request API Key",
-    "Wordpress API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 6
+  }
 }

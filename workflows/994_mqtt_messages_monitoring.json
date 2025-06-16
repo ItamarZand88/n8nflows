@@ -1,7 +1,21 @@
 {
   "id": "994",
-  "filename": "994_mqtt_messages_monitoring",
+  "title": "Monitor MQTT messages for real-time updates",
   "description": "Listens for new messages on an MQTT queue, enabling real-time data processing and notifications for connected applications.",
+  "filename": "994_mqtt_messages_monitoring",
+  "services": [
+    "MQTT"
+  ],
+  "categories": [
+    "Communication",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New MQTT Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "51",
     "name": "Receive messages for a MQTT queue",
@@ -25,24 +39,5 @@
     "active": false,
     "settings": {},
     "connections": {}
-  },
-  "title": "Monitor MQTT messages for real-time updates",
-  "nodes_count": 1,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Development"
-  ],
-  "services": [
-    "MQTT"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New MQTT Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 1,
-  "external_integrations_count": 1
+  }
 }

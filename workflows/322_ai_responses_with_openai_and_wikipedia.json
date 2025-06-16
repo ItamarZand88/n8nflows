@@ -1,7 +1,24 @@
 {
   "id": "322",
-  "filename": "322_ai_responses_with_openai_and_wikipedia",
+  "title": "Automate AI Responses with OpenAI and Wikipedia Queries",
   "description": "Triggers on manual execution to set up queries for jokes and historical facts, utilizing OpenAI for responses and Wikipedia for additional information.",
+  "filename": "322_ai_responses_with_openai_and_wikipedia",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -284,27 +301,5 @@
         ]
       }
     }
-  },
-  "title": "Automate AI Responses with OpenAI and Wikipedia Queries",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 3
+  }
 }

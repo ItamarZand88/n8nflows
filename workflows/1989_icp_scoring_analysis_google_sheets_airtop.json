@@ -1,7 +1,33 @@
 {
   "id": "1989",
-  "filename": "1989_icp_scoring_analysis_google_sheets_airtop",
+  "title": "Automate ICP scoring analysis from Google Sheets to Airtop",
   "description": "Triggers on demand to fetch company data from Google Sheets, analyzes it using Airtop, and updates the ICP score back to the sheet for easy tracking.",
+  "filename": "1989_icp_scoring_analysis_google_sheets_airtop",
+  "services": [
+    "Airtop",
+    "Code",
+    "Google Sheets",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage extraction",
+    "Query",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtop API Key",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "xyLfWaqdIoZmbTfv",
     "meta": {
@@ -279,36 +305,5 @@
         ]
       }
     }
-  },
-  "title": "Automate ICP scoring analysis from Google Sheets to Airtop",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Airtop",
-    "Code",
-    "Google Sheets",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage extraction",
-    "Query",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtop API Key",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

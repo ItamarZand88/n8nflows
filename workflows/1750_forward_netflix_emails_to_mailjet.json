@@ -1,7 +1,31 @@
 {
   "id": "1750",
-  "filename": "1750_forward_netflix_emails_to_mailjet",
+  "title": "Forward Netflix emails to multiple recipients via Mailjet",
   "description": "Automatically monitors your Gmail for Netflix emails and forwards them to a list of recipients using Mailjet, ensuring everyone stays updated.",
+  "filename": "1750_forward_netflix_emails_to_mailjet",
+  "services": [
+    "Edit Fields (Set)",
+    "Gmail",
+    "Mailjet",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Mailjet API Key"
+  ],
   "content": {
     "id": "pkw1vY5q1p2nNfNC",
     "meta": {
@@ -202,34 +226,5 @@
         ]
       }
     }
-  },
-  "title": "Forward Netflix emails to multiple recipients via Mailjet",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Gmail",
-    "Mailjet",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Mailjet API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

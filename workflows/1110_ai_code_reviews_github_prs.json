@@ -1,7 +1,32 @@
 {
   "id": "1110",
-  "filename": "1110_ai_code_reviews_github_prs",
+  "title": "Automate AI Code Reviews for GitHub Pull Requests",
   "description": "Triggers on new GitHub pull requests, fetches code diffs, and posts AI-generated review comments directly on the PR, enhancing code quality and collaboration.",
+  "filename": "1110_ai_code_reviews_github_prs",
+  "services": [
+    "Code",
+    "GitHub",
+    "Github",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Github Event"
+  ],
+  "actions": [
+    "Edit",
+    "Manage review"
+  ],
+  "setup_requirements": [
+    "GitHub API Key",
+    "GitHub Account",
+    "Github Account"
+  ],
   "content": {
     "id": "AMQub0Da16qevkJS",
     "meta": {
@@ -401,35 +426,5 @@
         ]
       }
     }
-  },
-  "title": "Automate AI Code Reviews for GitHub Pull Requests",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "GitHub",
-    "Github",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Github Event"
-  ],
-  "actions": [
-    "Edit",
-    "Manage review"
-  ],
-  "setup_requirements": [
-    "GitHub API Key",
-    "GitHub Account",
-    "Github Account"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 5
+  }
 }

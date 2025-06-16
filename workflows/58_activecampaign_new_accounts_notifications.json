@@ -1,7 +1,22 @@
 {
   "id": "58",
-  "filename": "58_activecampaign_new_accounts_notifications",
+  "title": "Receive notifications for new ActiveCampaign accounts added by admins",
   "description": "Triggers a notification whenever a new account is added by an admin in ActiveCampaign, keeping your team informed of new client additions.",
+  "filename": "58_activecampaign_new_accounts_notifications",
+  "services": [
+    "ActiveCampaign"
+  ],
+  "categories": [
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New ActiveCampaign Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "ActiveCampaign API Key"
+  ],
   "content": {
     "id": "112",
     "name": "Receive updates when a new account is added by an admin in ActiveCampaign",
@@ -30,25 +45,5 @@
     "active": false,
     "settings": {},
     "connections": {}
-  },
-  "title": "Receive notifications for new ActiveCampaign accounts added by admins",
-  "nodes_count": 1,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Marketing"
-  ],
-  "services": [
-    "ActiveCampaign"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New ActiveCampaign Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "ActiveCampaign API Key"
-  ],
-  "workflow_complexity": 1,
-  "external_integrations_count": 1
+  }
 }

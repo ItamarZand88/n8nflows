@@ -1,7 +1,36 @@
 {
   "id": "1358",
-  "filename": "1358_interview_scheduling_with_ai_google_calendar",
+  "title": "Automate interview scheduling with AI and Google Calendar",
   "description": "Facilitates interview scheduling by using an AI chatbot to check Google Calendar availability and propose suitable time slots for meetings.",
+  "filename": "1358_interview_scheduling_with_ai_google_calendar",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Google Calendar",
+    "If",
+    "Merge",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Calendar Account"
+  ],
   "content": {
     "id": "bh3H2b654RSYgIm9",
     "meta": {
@@ -722,39 +751,5 @@
         ]
       }
     }
-  },
-  "title": "Automate interview scheduling with AI and Google Calendar",
-  "nodes_count": 25,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Google Calendar",
-    "If",
-    "Merge",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Calendar Account"
-  ],
-  "workflow_complexity": 25,
-  "external_integrations_count": 8
+  }
 }

@@ -1,7 +1,30 @@
 {
   "id": "1594",
-  "filename": "1594_it_support_slack_ai_responses",
+  "title": "Automate IT Support Responses in Slack with AI",
   "description": "Captures Slack messages to the IT department, verifies senders, and uses AI to generate relevant responses, enhancing support efficiency.",
+  "filename": "1594_it_support_slack_ai_responses",
+  "services": [
+    "If",
+    "No Operation, do nothing",
+    "Slack",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Delete",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -514,33 +537,5 @@
         ]
       }
     }
-  },
-  "title": "Automate IT Support Responses in Slack with AI",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "If",
-    "No Operation, do nothing",
-    "Slack",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Delete",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Slack API Key"
-  ],
-  "workflow_complexity": 20,
-  "external_integrations_count": 5
+  }
 }

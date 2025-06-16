@@ -1,7 +1,32 @@
 {
   "id": "471",
-  "filename": "471_email_verification_to_google_sheets",
+  "title": "Automate email verification and update Google Sheets records",
   "description": "Triggers on new Google Sheets entries, removes duplicates, verifies email addresses, and updates the sheet with valid emails for accurate data management.",
+  "filename": "471_email_verification_to_google_sheets",
+  "services": [
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Remove Duplicates",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "8eadf351d49a11e77d3a57adf374670f06c5294af8b1b7c86a1123340397e728"
@@ -246,35 +271,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email verification and update Google Sheets records",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Remove Duplicates",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 5
+  }
 }

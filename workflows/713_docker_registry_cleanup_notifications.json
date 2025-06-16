@@ -1,7 +1,31 @@
 {
   "id": "713",
-  "filename": "713_docker_registry_cleanup_notifications",
+  "title": "Automate Docker Registry Cleanup and Notifications",
   "description": "Scheduled automation that cleans up old Docker image tags, removing untagged images, and sends notifications for removed tags and errors.",
+  "filename": "713_docker_registry_cleanup_notifications",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "SSH",
+    "Schedule",
+    "Send Email",
+    "Sort",
+    "Split Out"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -516,34 +540,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Docker Registry Cleanup and Notifications",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "SSH",
-    "Schedule",
-    "Send Email",
-    "Sort",
-    "Split Out"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 16,
-  "external_integrations_count": 9
+  }
 }

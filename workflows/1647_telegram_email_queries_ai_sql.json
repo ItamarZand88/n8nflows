@@ -1,7 +1,35 @@
 {
   "id": "1647",
-  "filename": "1647_telegram_email_queries_ai_sql",
+  "title": "Automate email queries via Telegram using AI and SQL",
   "description": "Triggers on new Telegram messages, processes queries with AI, and retrieves email information from structured and vector databases for instant responses.",
+  "filename": "1647_telegram_email_queries_ai_sql",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Telegram Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "LPQsiqt476n7ne7f",
     "meta": {
@@ -584,38 +612,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email queries via Telegram using AI and SQL",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Telegram Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 20,
-  "external_integrations_count": 7
+  }
 }

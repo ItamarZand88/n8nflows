@@ -1,7 +1,36 @@
 {
   "id": "1916",
-  "filename": "1916_upload_crop_images_to_qdrant",
+  "title": "Upload and Embed Crop Images to Qdrant from Google Cloud Storage",
   "description": "Triggers on demand to fetch crop images from Google Cloud Storage, create embeddings, and upload them to Qdrant for efficient image classification and anomaly detection.",
+  "filename": "1916_upload_crop_images_to_qdrant",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "Google Cloud Storage",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage object",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Cloud Storage Account",
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "pPtCy6qPfEv1qNRn",
     "meta": {
@@ -689,39 +718,5 @@
         ]
       }
     }
-  },
-  "title": "Upload and Embed Crop Images to Qdrant from Google Cloud Storage",
-  "nodes_count": 25,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "Google Cloud Storage",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage object",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Cloud Storage Account",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 25,
-  "external_integrations_count": 8
+  }
 }

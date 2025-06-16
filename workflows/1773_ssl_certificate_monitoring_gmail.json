@@ -1,7 +1,35 @@
 {
   "id": "1773",
-  "filename": "1773_ssl_certificate_monitoring_gmail",
+  "title": "Monitor SSL Certificates and Send Expiry Alerts via Gmail",
   "description": "Automates weekly checks of SSL certificates for specified URLs and sends email alerts if any are expiring within 7 days, ensuring website security.",
+  "filename": "1773_ssl_certificate_monitoring_gmail",
+  "services": [
+    "Gmail",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "Qj1307oyBx1hZJy5",
     "meta": {
@@ -378,38 +406,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor SSL Certificates and Send Expiry Alerts via Gmail",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Gmail",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,26 @@
 {
   "id": "178",
-  "filename": "178_onfleet_driver_signups_to_slack",
+  "title": "Send Slack notifications for new Onfleet driver signups",
   "description": "Triggers a Slack message whenever a new driver signs up on Onfleet, keeping your team informed in real-time.",
+  "filename": "178_onfleet_driver_signups_to_slack",
+  "services": [
+    "Onfleet",
+    "Slack"
+  ],
+  "categories": [
+    "Communication",
+    "HITL",
+    "Miscellaneous"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Onfleet Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Onfleet API Key",
+    "Slack API Key"
+  ],
   "content": {
     "id": 14,
     "name": "Onfleet Driver signup message in Slack",
@@ -63,29 +82,5 @@
         ]
       }
     }
-  },
-  "title": "Send Slack notifications for new Onfleet driver signups",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "HITL",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Onfleet",
-    "Slack"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Onfleet Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Onfleet API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

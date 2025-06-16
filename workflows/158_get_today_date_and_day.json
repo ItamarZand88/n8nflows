@@ -1,7 +1,24 @@
 {
   "id": "158",
-  "filename": "158_get_today_date_and_day",
+  "title": "Get today's date and day with a simple function",
   "description": "Triggers a manual event to retrieve today's date and day of the week, providing easy access to current date information for further automation.",
+  "filename": "158_get_today_date_and_day",
+  "services": [
+    "Function",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "140",
     "name": "Get today's date and day using the Function node",
@@ -44,27 +61,5 @@
         ]
       }
     }
-  },
-  "title": "Get today's date and day with a simple function",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Function",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

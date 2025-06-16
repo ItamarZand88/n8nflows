@@ -1,7 +1,20 @@
 {
   "id": "326",
-  "filename": "326_chat_responses_with_ai_tools",
+  "title": "Automate responses to chat messages using AI tools",
   "description": "Triggers when a chat message is received, utilizing AI tools and memory to provide informed responses, enhancing user interaction and support.",
+  "filename": "326_chat_responses_with_ai_tools",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -206,23 +219,5 @@
         ]
       }
     }
-  },
-  "title": "Automate responses to chat messages using AI tools",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 9,
-  "external_integrations_count": 1
+  }
 }

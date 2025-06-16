@@ -1,7 +1,33 @@
 {
   "id": "433",
-  "filename": "433_notify_slack_high_value_hubspot_leads",
+  "title": "Notify Slack for New High-Value HubSpot Leads",
   "description": "Triggers every 5 minutes to check for new HubSpot leads, filters those with revenue over $5M, and sends notifications to Slack for immediate sales follow-up.",
+  "filename": "433_notify_slack_high_value_hubspot_leads",
+  "services": [
+    "Filter",
+    "HubSpot",
+    "Schedule",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getrecentlycreatedupdated",
+    "Manage company"
+  ],
+  "setup_requirements": [
+    "HubSpot Account",
+    "Slack Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "70aa73f4d8fa35284109864e170a85d0977ad8121a6294c5c305fbaee0d9e028"
@@ -211,36 +237,5 @@
         ]
       }
     }
-  },
-  "title": "Notify Slack for New High-Value HubSpot Leads",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "Filter",
-    "HubSpot",
-    "Schedule",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getrecentlycreatedupdated",
-    "Manage company"
-  ],
-  "setup_requirements": [
-    "HubSpot Account",
-    "Slack Account"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 5
+  }
 }

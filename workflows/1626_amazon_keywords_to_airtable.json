@@ -1,7 +1,32 @@
 {
   "id": "1626",
-  "filename": "1626_amazon_keywords_to_airtable",
+  "title": "Automate Amazon keyword suggestions and save to Airtable",
   "description": "Receives a keyword via webhook, fetches suggestions from Amazon, and updates them in Airtable for easy access and management.",
+  "filename": "1626_amazon_keywords_to_airtable",
+  "services": [
+    "Aggregate",
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Split Out",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "kJMoiGRorIlsTYZv",
     "meta": {
@@ -385,35 +410,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Amazon keyword suggestions and save to Airtable",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Split Out",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 8
+  }
 }

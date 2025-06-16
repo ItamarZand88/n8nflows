@@ -1,7 +1,21 @@
 {
   "id": "1365",
-  "filename": "1365_nft_data_retrieval_opensea",
+  "title": "Automate NFT Data Retrieval from OpenSea Marketplace",
   "description": "Triggers on user input to fetch NFT listings, offers, and orders from OpenSea, providing valuable insights for traders and collectors.",
+  "filename": "1365_nft_data_retrieval_opensea",
+  "services": [
+    "Execute Workflow",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "brRSLvIkYp3mLq0K",
     "meta": {
@@ -786,24 +800,5 @@
         ]
       }
     }
-  },
-  "title": "Automate NFT Data Retrieval from OpenSea Marketplace",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Execute Workflow",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 17,
-  "external_integrations_count": 2
+  }
 }

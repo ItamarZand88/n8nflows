@@ -1,7 +1,43 @@
 {
   "id": "1276",
-  "filename": "1276_pdf_data_extraction_to_airtable",
+  "title": "Automate PDF data extraction and update Airtable records",
   "description": "Triggers on updates in Airtable, extracts data from uploaded PDFs using dynamic prompts, and updates corresponding records in Airtable for streamlined data management.",
+  "filename": "1276_pdf_data_extraction_to_airtable",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Filter",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getschema",
+    "Manage base",
+    "Pdf",
+    "Search",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "HTTP Request API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -1624,46 +1660,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PDF data extraction and update Airtable records",
-  "nodes_count": 51,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Filter",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getschema",
-    "Manage base",
-    "Pdf",
-    "Search",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 51,
-  "external_integrations_count": 12
+  }
 }

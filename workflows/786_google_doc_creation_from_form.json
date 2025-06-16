@@ -1,7 +1,31 @@
 {
   "id": "786",
-  "filename": "786_google_doc_creation_from_form",
+  "title": "Automate Google Doc creation from form submissions",
   "description": "Triggers on new form submissions, copies a Google Doc template, and replaces placeholders with submitted data for easy document generation.",
+  "filename": "786_google_doc_creation_from_form",
+  "services": [
+    "Code",
+    "Google Drive",
+    "HTTP Request",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Copy"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "HTTP Request Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "7614f731d9ac88c16c6149bd495fa54d325e3f79ab527ffc7e3b1b1f42dbf884",
@@ -215,34 +239,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Doc creation from form submissions",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Google Drive",
-    "HTTP Request",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Copy"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 5
+  }
 }

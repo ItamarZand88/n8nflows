@@ -1,7 +1,30 @@
 {
   "id": "231",
-  "filename": "231_customer_approval_requests_messaging",
+  "title": "Automate customer approval requests via messaging",
   "description": "Triggers a customer approval process by sending a URL via messaging, waits for approval, and sends follow-up messages to clients, streamlining communication.",
+  "filename": "231_customer_approval_requests_messaging",
+  "services": [
+    "Customer Messenger (n8n training)",
+    "Edit Fields (Set)",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getallpeople",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -295,33 +318,5 @@
         ]
       }
     }
-  },
-  "title": "Automate customer approval requests via messaging",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Customer Messenger (n8n training)",
-    "Edit Fields (Set)",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getallpeople",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 13,
-  "external_integrations_count": 7
+  }
 }

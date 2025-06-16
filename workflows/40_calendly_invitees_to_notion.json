@@ -1,7 +1,27 @@
 {
   "id": "40",
-  "filename": "40_calendly_invitees_to_notion",
+  "title": "Automate Notion entries for new Calendly invitees",
   "description": "Triggers when a new invitee is created in Calendly and automatically adds their details to a Notion database for easy tracking and management.",
+  "filename": "40_calendly_invitees_to_notion",
+  "services": [
+    "Calendly",
+    "Notion"
+  ],
+  "categories": [
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Calendly Event"
+  ],
+  "actions": [
+    "Manage databasePage"
+  ],
+  "setup_requirements": [
+    "Calendly API Key",
+    "Notion API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -86,30 +106,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Notion entries for new Calendly invitees",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Calendly",
-    "Notion"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Calendly Event"
-  ],
-  "actions": [
-    "Manage databasePage"
-  ],
-  "setup_requirements": [
-    "Calendly API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

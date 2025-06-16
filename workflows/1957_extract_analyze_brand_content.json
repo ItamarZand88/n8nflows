@@ -1,7 +1,30 @@
 {
   "id": "1957",
-  "filename": "1957_extract_analyze_brand_content",
+  "title": "Extract and Analyze Brand Content from Web Pages",
   "description": "Triggers on manual input to extract brand content from a specified URL, perform sentiment analysis, and summarize the findings for easy review.",
+  "filename": "1957_extract_analyze_brand_content",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "HTTP Request",
+    "Manual",
+    "Read/Write Files from Disk",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Set Data",
+    "Write"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "wTI77cpLkbxsRQat",
     "meta": {
@@ -640,33 +663,5 @@
         ]
       }
     }
-  },
-  "title": "Extract and Analyze Brand Content from Web Pages",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "HTTP Request",
-    "Manual",
-    "Read/Write Files from Disk",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Set Data",
-    "Write"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 23,
-  "external_integrations_count": 6
+  }
 }

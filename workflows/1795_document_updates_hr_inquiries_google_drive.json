@@ -1,7 +1,27 @@
 {
   "id": "1795",
-  "filename": "1795_document_updates_hr_inquiries_google_drive",
+  "title": "Automate document updates and HR inquiries with Google Drive and AI",
   "description": "Triggers on new or updated documents in Google Drive, processes them for HR inquiries, and retrieves relevant information using AI for employee support.",
+  "filename": "1795_document_updates_hr_inquiries_google_drive",
+  "services": [
+    "Google Drive",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Google Drive Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "7cXvgkl9170QXzT2",
     "meta": {
@@ -526,30 +546,5 @@
         ]
       }
     }
-  },
-  "title": "Automate document updates and HR inquiries with Google Drive and AI",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Google Drive",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Google Drive Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 2
+  }
 }

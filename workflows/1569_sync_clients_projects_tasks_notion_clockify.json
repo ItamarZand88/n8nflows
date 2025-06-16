@@ -1,7 +1,49 @@
 {
   "id": "1569",
-  "filename": "1569_sync_clients_projects_tasks_notion_clockify",
+  "title": "Sync Clients, Projects, and Tasks between Notion and Clockify",
   "description": "Automates the synchronization of clients, projects, and tasks between Notion and Clockify based on scheduled triggers and webhook events, ensuring data consistency across platforms.",
+  "filename": "1569_sync_clients_projects_tasks_notion_clockify",
+  "services": [
+    "Clockify",
+    "Compare Datasets",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Limit",
+    "Merge",
+    "No Operation, do nothing",
+    "Notion",
+    "Schedule",
+    "Sticky Note",
+    "Stop and Error",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Delete",
+    "Filter Data",
+    "Getall",
+    "Manage client",
+    "Manage databasePage",
+    "Manage task",
+    "Manage workspace",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Clockify API Key",
+    "HTTP Request API Key",
+    "Notion API Key"
+  ],
   "content": {
     "id": "HpjjgJm3Ulnl1cJQ",
     "meta": {
@@ -2334,52 +2376,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Clients, Projects, and Tasks between Notion and Clockify",
-  "nodes_count": 68,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Clockify",
-    "Compare Datasets",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Limit",
-    "Merge",
-    "No Operation, do nothing",
-    "Notion",
-    "Schedule",
-    "Sticky Note",
-    "Stop and Error",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Delete",
-    "Filter Data",
-    "Getall",
-    "Manage client",
-    "Manage databasePage",
-    "Manage task",
-    "Manage workspace",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Clockify API Key",
-    "HTTP Request API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 68,
-  "external_integrations_count": 13
+  }
 }

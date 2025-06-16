@@ -1,7 +1,27 @@
 {
   "id": "226",
-  "filename": "226_create_update_twist_channel_notify_users",
+  "title": "Create and update a Twist channel, then notify users",
   "description": "Triggers a channel creation in Twist, updates its description, and sends a notification to users about the new channel with a link to documentation.",
+  "filename": "226_create_update_twist_channel_notify_users",
+  "services": [
+    "Manual",
+    "Twist"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage channel",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Twist Account"
+  ],
   "content": {
     "id": "173",
     "name": "Create and update a channel, and send a message on Twist",
@@ -125,30 +145,5 @@
         ]
       }
     }
-  },
-  "title": "Create and update a Twist channel, then notify users",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Manual",
-    "Twist"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage channel",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Twist Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

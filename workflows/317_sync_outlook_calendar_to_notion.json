@@ -1,7 +1,37 @@
 {
   "id": "317",
-  "filename": "317_sync_outlook_calendar_to_notion",
+  "title": "Sync Outlook Calendar events to Notion database",
   "description": "Automatically retrieves upcoming Outlook Calendar events and syncs them to a Notion database, creating or updating entries as needed.",
+  "filename": "317_sync_outlook_calendar_to_notion",
+  "services": [
+    "Date & Time",
+    "HTTP Request",
+    "If",
+    "Item Lists",
+    "Merge",
+    "Notion",
+    "Schedule"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Addtodate",
+    "Filter Data",
+    "Getall",
+    "Manage databasePage",
+    "Update"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Notion API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "a2434c94d549548a685cca39cc4614698e94f527bcea84eefa363f1037ae14cd"
@@ -360,40 +390,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Outlook Calendar events to Notion database",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Date & Time",
-    "HTTP Request",
-    "If",
-    "Item Lists",
-    "Merge",
-    "Notion",
-    "Schedule"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Addtodate",
-    "Filter Data",
-    "Getall",
-    "Manage databasePage",
-    "Update"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 7
+  }
 }

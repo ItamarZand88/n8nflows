@@ -1,7 +1,38 @@
 {
   "id": "1628",
-  "filename": "1628_sync_entra_users_to_zammad",
+  "title": "Sync Entra Users with Zammad for Active Management",
   "description": "Triggers on manual request to sync active Entra users to Zammad, updating existing records or creating new ones, ensuring up-to-date user management.",
+  "filename": "1628_sync_entra_users_to_zammad",
+  "services": [
+    "Compare Datasets",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Merge",
+    "Split Out",
+    "Sticky Note",
+    "Zammad"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account",
+    "Zammad API Key"
+  ],
   "content": {
     "id": "KKCfXEpBjjhp1LC8",
     "meta": {
@@ -648,41 +679,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Entra Users with Zammad for Active Management",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Compare Datasets",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Merge",
-    "Split Out",
-    "Sticky Note",
-    "Zammad"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account",
-    "Zammad API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 9
+  }
 }

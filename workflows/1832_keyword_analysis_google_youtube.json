@@ -1,7 +1,40 @@
 {
   "id": "1832",
-  "filename": "1832_keyword_analysis_google_youtube",
+  "title": "Automate keyword analysis and search volume tracking for Google and YouTube",
   "description": "Triggers every 4 hours to gather keywords, fetch search volumes, and update NocoDB with the latest data for Google and YouTube keywords, enhancing SEO strategies.",
+  "filename": "1832_keyword_analysis_google_youtube",
+  "services": [
+    "Code",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "NocoDB",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Getall",
+    "Update"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "NocoDB API Key"
+  ],
   "content": {
     "id": "SHgOqN3ednIo5gNu",
     "meta": {
@@ -1391,43 +1424,5 @@
         ]
       }
     }
-  },
-  "title": "Automate keyword analysis and search volume tracking for Google and YouTube",
-  "nodes_count": 35,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "NocoDB",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Getall",
-    "Update"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "NocoDB API Key"
-  ],
-  "workflow_complexity": 35,
-  "external_integrations_count": 10
+  }
 }

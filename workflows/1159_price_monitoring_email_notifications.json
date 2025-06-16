@@ -1,7 +1,31 @@
 {
   "id": "1159",
-  "filename": "1159_price_monitoring_email_notifications",
+  "title": "Monitor product prices and notify on changes via email",
   "description": "Automatically checks product prices every 15 minutes and sends email alerts for price drops or issues with price extraction.",
+  "filename": "1159_price_monitoring_email_notifications",
+  "services": [
+    "Convert to/from binary data",
+    "Cron",
+    "Execute Command",
+    "Function Item",
+    "HTML Extract",
+    "HTTP Request",
+    "If",
+    "Read Binary File",
+    "Send Email",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -676,34 +700,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor product prices and notify on changes via email",
-  "nodes_count": 25,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Convert to/from binary data",
-    "Cron",
-    "Execute Command",
-    "Function Item",
-    "HTML Extract",
-    "HTTP Request",
-    "If",
-    "Read Binary File",
-    "Send Email",
-    "Write Binary File"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 25,
-  "external_integrations_count": 10
+  }
 }

@@ -1,7 +1,33 @@
 {
   "id": "336",
-  "filename": "336_telegram_commands_to_n8n_workflows",
+  "title": "Control N8N Workflows via Telegram Commands",
   "description": "Enables users to activate or deactivate N8N workflows by sending commands through Telegram, ensuring quick response to workflow issues.",
+  "filename": "336_telegram_commands_to_n8n_workflows",
+  "services": [
+    "Filter",
+    "Sticky Note",
+    "Switch",
+    "Telegram",
+    "n8n"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Activate",
+    "Deactivate"
+  ],
+  "setup_requirements": [
+    "Telegram API Key",
+    "n8n API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "82a17fa4a0b8e81bf77e5ab999d980f392150f2a9541fde626dc5f74857b1f54"
@@ -356,36 +382,5 @@
         ]
       }
     }
-  },
-  "title": "Control N8N Workflows via Telegram Commands",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Filter",
-    "Sticky Note",
-    "Switch",
-    "Telegram",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Activate",
-    "Deactivate"
-  ],
-  "setup_requirements": [
-    "Telegram API Key",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 5
+  }
 }

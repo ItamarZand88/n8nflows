@@ -1,7 +1,48 @@
 {
   "id": "507",
-  "filename": "507_notion_blog_posts_to_webflow",
+  "title": "Sync Notion blog posts to Webflow automatically",
   "description": "Automatically syncs blog posts from Notion to Webflow, creating new posts or updating existing ones based on a scheduled trigger and user-defined settings.",
+  "filename": "507_notion_blog_posts_to_webflow",
+  "services": [
+    "Code",
+    "Compare Datasets",
+    "Edit Fields (Set)",
+    "Filter",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "No Operation, do nothing",
+    "Notion",
+    "Schedule",
+    "Slack",
+    "Sticky Note",
+    "Webflow"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Create",
+    "Get",
+    "Getall",
+    "Manage block",
+    "Manage databasePage",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Notion API Key",
+    "Slack Account",
+    "Webflow Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -942,51 +983,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Notion blog posts to Webflow automatically",
-  "nodes_count": 29,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Compare Datasets",
-    "Edit Fields (Set)",
-    "Filter",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "No Operation, do nothing",
-    "Notion",
-    "Schedule",
-    "Slack",
-    "Sticky Note",
-    "Webflow"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Create",
-    "Get",
-    "Getall",
-    "Manage block",
-    "Manage databasePage",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Notion API Key",
-    "Slack Account",
-    "Webflow Account"
-  ],
-  "workflow_complexity": 29,
-  "external_integrations_count": 12
+  }
 }

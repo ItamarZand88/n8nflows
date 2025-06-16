@@ -1,7 +1,41 @@
 {
   "id": "821",
-  "filename": "821_auto_assign_stale_jira_issues",
+  "title": "Automate assignment of stale JIRA issues to team members",
   "description": "Monitors JIRA for unassigned issues older than 5 days and automatically assigns them to the most suitable team member based on similar resolved issues.",
+  "filename": "821_auto_assign_stale_jira_issues",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Jira Software",
+    "Loop Over Items (Split in Batches)",
+    "No Operation, do nothing",
+    "Remove Duplicates",
+    "Schedule",
+    "Sort",
+    "Split Out",
+    "Sticky Note",
+    "Summarize"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage issueComment",
+    "Removeitemsseeninpreviousexecutions",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Jira Software API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -1093,44 +1127,5 @@
         ]
       }
     }
-  },
-  "title": "Automate assignment of stale JIRA issues to team members",
-  "nodes_count": 36,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Jira Software",
-    "Loop Over Items (Split in Batches)",
-    "No Operation, do nothing",
-    "Remove Duplicates",
-    "Schedule",
-    "Sort",
-    "Split Out",
-    "Sticky Note",
-    "Summarize"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage issueComment",
-    "Removeitemsseeninpreviousexecutions",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Jira Software API Key"
-  ],
-  "workflow_complexity": 36,
-  "external_integrations_count": 11
+  }
 }

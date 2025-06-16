@@ -1,7 +1,26 @@
 {
   "id": "515",
-  "filename": "515_merge_pdfs_and_save",
+  "title": "Merge multiple PDF files and save to disk",
   "description": "Triggers a manual request to download two PDF files, merges them using an API, and saves the result as a new PDF file on disk.",
+  "filename": "515_merge_pdfs_and_save",
+  "services": [
+    "HTTP Request",
+    "Manual",
+    "Read/Write Files from Disk",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Write"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "do4h6jnTGWDjCXV7",
     "meta": {
@@ -205,29 +224,5 @@
         ]
       }
     }
-  },
-  "title": "Merge multiple PDF files and save to disk",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Manual",
-    "Read/Write Files from Disk",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Write"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

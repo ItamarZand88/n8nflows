@@ -1,7 +1,46 @@
 {
   "id": "1118",
-  "filename": "1118_attendee_registration_onboarding",
+  "title": "Automate attendee registration and onboarding for events",
   "description": "Captures new registrations from Typeform, creates user accounts in Mattermost, and sends welcome emails with session details and calendar invites.",
+  "filename": "1118_attendee_registration_onboarding",
+  "services": [
+    "Function",
+    "Gmail",
+    "Google Calendar",
+    "Google Sheets",
+    "Mattermost",
+    "Merge",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Adduser",
+    "Append",
+    "Create",
+    "Execute Function",
+    "Invite",
+    "Manage channel",
+    "Manage message",
+    "Manage user",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Calendar Account",
+    "Google Sheets Account",
+    "Mattermost API Key",
+    "Typeform API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -287,49 +326,5 @@
         ]
       }
     }
-  },
-  "title": "Automate attendee registration and onboarding for events",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Function",
-    "Gmail",
-    "Google Calendar",
-    "Google Sheets",
-    "Mattermost",
-    "Merge",
-    "Typeform"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Adduser",
-    "Append",
-    "Create",
-    "Execute Function",
-    "Invite",
-    "Manage channel",
-    "Manage message",
-    "Manage user",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Calendar Account",
-    "Google Sheets Account",
-    "Mattermost API Key",
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

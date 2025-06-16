@@ -1,7 +1,30 @@
 {
   "id": "147",
-  "filename": "147_torrent_downloads_to_telegram",
+  "title": "Automate torrent downloads and notifications via Telegram",
   "description": "Listens for film title requests, searches for torrents, initiates downloads, and notifies users on Telegram about the status.",
+  "filename": "147_torrent_downloads_to_telegram",
+  "services": [
+    "Function Item",
+    "HTTP Request",
+    "If",
+    "Telegram",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -231,33 +254,5 @@
         ]
       }
     }
-  },
-  "title": "Automate torrent downloads and notifications via Telegram",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Function Item",
-    "HTTP Request",
-    "If",
-    "Telegram",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,37 @@
 {
   "id": "1436",
-  "filename": "1436_email_filtering_deletion_gmail_telegram",
+  "title": "Automate email filtering and deletion with Gmail and Telegram",
   "description": "Triggers on manual request, filters emails for unwanted content, deletes them, and sends notifications via Telegram for actions taken.",
+  "filename": "1436_email_filtering_deletion_gmail_telegram",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Gmail",
+    "If",
+    "Manual",
+    "No Operation, do nothing",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Addlabels",
+    "Delete",
+    "Filter Data",
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "dgBdnnnY0622JwGy",
     "tags": [],
@@ -640,40 +670,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email filtering and deletion with Gmail and Telegram",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Gmail",
-    "If",
-    "Manual",
-    "No Operation, do nothing",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Addlabels",
-    "Delete",
-    "Filter Data",
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 7
+  }
 }

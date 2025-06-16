@@ -1,7 +1,49 @@
 {
   "id": "1823",
-  "filename": "1823_email_replies_to_google_sheets",
+  "title": "Automate email replies and log responses in Google Sheets",
   "description": "Triggers on new emails, generates replies using OpenAI, and logs both the email and response in Google Sheets for tracking and feedback.",
+  "filename": "1823_email_replies_to_google_sheets",
+  "services": [
+    "Code",
+    "Crypto",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Sheets",
+    "If",
+    "No Operation, do nothing",
+    "OpenAI",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Edit Fields (Set) Event",
+    "New Gmail Event",
+    "New Switch Event"
+  ],
+  "actions": [
+    "Append",
+    "Appendorupdate",
+    "Filter Data",
+    "Manage spreadsheet",
+    "Reply",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account",
+    "OpenAI API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "a2434c94d549548a685cca39cc4614698e94f527bcea84eefa363f1037ae14cd"
@@ -1338,52 +1380,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email replies and log responses in Google Sheets",
-  "nodes_count": 49,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Crypto",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Sheets",
-    "If",
-    "No Operation, do nothing",
-    "OpenAI",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Edit Fields (Set) Event",
-    "New Gmail Event",
-    "New Switch Event"
-  ],
-  "actions": [
-    "Append",
-    "Appendorupdate",
-    "Filter Data",
-    "Manage spreadsheet",
-    "Reply",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account",
-    "OpenAI API Key"
-  ],
-  "workflow_complexity": 49,
-  "external_integrations_count": 11
+  }
 }

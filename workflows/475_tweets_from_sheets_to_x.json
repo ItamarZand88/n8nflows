@@ -1,7 +1,31 @@
 {
   "id": "475",
-  "filename": "475_tweets_from_sheets_to_x",
+  "title": "Automate posting tweets from Google Sheets every 6 hours",
   "description": "Triggers every 6 hours to fetch tweets from Google Sheets and posts them on X (formerly Twitter), streamlining social media updates.",
+  "filename": "475_tweets_from_sheets_to_x",
+  "services": [
+    "Google Sheets",
+    "Schedule",
+    "Sticky Note",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Delete"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "X (Formerly Twitter) Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "8418cffce8d48086ec0a73fd90aca708aa07591f2fefa6034d87fe12a09de26e"
@@ -184,34 +208,5 @@
         ]
       }
     }
-  },
-  "title": "Automate posting tweets from Google Sheets every 6 hours",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "Schedule",
-    "Sticky Note",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Delete"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "X (Formerly Twitter) Account"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

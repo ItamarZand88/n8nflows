@@ -1,7 +1,26 @@
 {
   "id": "1312",
-  "filename": "1312_website_change_notifications_via_gmail",
+  "title": "Automate website change notifications via Gmail",
   "description": "Triggers on new espionage assignments, scrapes website changes, and sends email updates to notify relevant parties about changes.",
+  "filename": "1312_website_change_notifications_via_gmail",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "aOP0D1cAqzGv7Xa8",
     "meta": {
@@ -394,29 +413,5 @@
         ]
       }
     }
-  },
-  "title": "Automate website change notifications via Gmail",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,30 @@
 {
   "id": "1157",
-  "filename": "1157_woocommerce_refunds_to_slack",
+  "title": "Notify Slack on WooCommerce Refunds Over $100",
   "description": "Triggers when a WooCommerce order is updated to refunded status and sends a detailed notification to Slack for refunds exceeding $100.",
+  "filename": "1157_woocommerce_refunds_to_slack",
+  "services": [
+    "If",
+    "Slack",
+    "WooCommerce"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New WooCommerce Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Slack API Key",
+    "WooCommerce API Key"
+  ],
   "content": {
     "id": 82,
     "name": "New WooCommerce refund to Slack",
@@ -131,33 +154,5 @@
         ]
       }
     }
-  },
-  "title": "Notify Slack on WooCommerce Refunds Over $100",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "If",
-    "Slack",
-    "WooCommerce"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New WooCommerce Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Slack API Key",
-    "WooCommerce API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

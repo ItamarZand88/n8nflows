@@ -1,7 +1,26 @@
 {
   "id": "1742",
-  "filename": "1742_environmental_health_updates_email",
+  "title": "Automate environmental health updates via email",
   "description": "Triggers daily at 7 AM to fetch air quality and pollen data, then sends a personalized email with health recommendations based on user profile.",
+  "filename": "1742_environmental_health_updates_email",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "PcVz6j5XLU7Z9MPN",
     "meta": {
@@ -388,29 +407,5 @@
         ]
       }
     }
-  },
-  "title": "Automate environmental health updates via email",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 4
+  }
 }

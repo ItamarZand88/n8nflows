@@ -1,7 +1,25 @@
 {
   "id": "1195",
-  "filename": "1195_iss_position_to_mqtt",
+  "title": "Automate ISS position updates to MQTT broker",
   "description": "Fetches the current position of the International Space Station every minute and publishes the data to an MQTT topic for real-time tracking.",
+  "filename": "1195_iss_position_to_mqtt",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "MQTT"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -128,28 +146,5 @@
         ]
       }
     }
-  },
-  "title": "Automate ISS position updates to MQTT broker",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "MQTT"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

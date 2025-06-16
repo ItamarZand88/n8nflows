@@ -1,7 +1,24 @@
 {
   "id": "1496",
-  "filename": "1496_netsuite_suiteql_webhook",
+  "title": "Run NetSuite SuiteQL queries via Webhook",
   "description": "Triggers a NetSuite SuiteQL query execution through a webhook, allowing seamless data retrieval and integration for automated workflows.",
+  "filename": "1496_netsuite_suiteql_webhook",
+  "services": [
+    "Manual",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Runsuiteql"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "FDl4Ho3KYiA7MIxR",
     "meta": {
@@ -95,27 +112,5 @@
         ]
       }
     }
-  },
-  "title": "Run NetSuite SuiteQL queries via Webhook",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Manual",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Runsuiteql"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

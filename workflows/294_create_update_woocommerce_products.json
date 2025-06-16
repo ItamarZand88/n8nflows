@@ -1,7 +1,27 @@
 {
   "id": "294",
-  "filename": "294_create_update_woocommerce_products",
+  "title": "Create and Update WooCommerce Products Automatically",
   "description": "Triggers product creation in WooCommerce, updates stock quantity, and retrieves product details, streamlining inventory management and sales processes.",
+  "filename": "294_create_update_woocommerce_products",
+  "services": [
+    "Manual",
+    "WooCommerce"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "WooCommerce API Key"
+  ],
   "content": {
     "id": "187",
     "name": "Create, update and get a product from WooCommerce",
@@ -114,30 +134,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Update WooCommerce Products Automatically",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Sales"
-  ],
-  "services": [
-    "Manual",
-    "WooCommerce"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Update"
-  ],
-  "setup_requirements": [
-    "WooCommerce API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

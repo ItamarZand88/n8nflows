@@ -1,7 +1,39 @@
 {
   "id": "1493",
-  "filename": "1493_telegram_song_requests_to_spotify",
+  "title": "Automate Telegram song requests to Spotify",
   "description": "Triggers on new Telegram messages, queries OpenAI for song details, and manages playback on Spotify, enhancing music discovery and enjoyment.",
+  "filename": "1493_telegram_song_requests_to_spotify",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Merge",
+    "Spotify",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Miscellaneous"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Currentlyplaying",
+    "Filter Data",
+    "Manage track",
+    "Nextsong",
+    "Resume",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Spotify Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "F7CfIF10XjXhqbGb",
     "meta": {
@@ -493,42 +525,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Telegram song requests to Spotify",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Merge",
-    "Spotify",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Currentlyplaying",
-    "Filter Data",
-    "Manage track",
-    "Nextsong",
-    "Resume",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Spotify Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 6
+  }
 }

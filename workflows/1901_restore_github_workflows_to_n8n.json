@@ -1,7 +1,38 @@
 {
   "id": "1901",
-  "filename": "1901_restore_github_workflows_to_n8n",
+  "title": "Restore GitHub Workflows to n8n Automatically",
   "description": "Triggers on demand to restore workflows from a GitHub repository to n8n, ensuring no duplicates are created in the process.",
+  "filename": "1901_restore_github_workflows_to_n8n",
+  "services": [
+    "Edit Fields (Set)",
+    "GitHub",
+    "If",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Get",
+    "List",
+    "Manage file",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "GitHub API Key",
+    "n8n API Key"
+  ],
   "content": {
     "id": "uoBZx3eMvLMxlHCS",
     "meta": {
@@ -506,41 +537,5 @@
         ]
       }
     }
-  },
-  "title": "Restore GitHub Workflows to n8n Automatically",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "GitHub",
-    "If",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Get",
-    "List",
-    "Manage file",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "GitHub API Key",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 8
+  }
 }

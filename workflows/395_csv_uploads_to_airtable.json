@@ -1,7 +1,34 @@
 {
   "id": "395",
-  "filename": "395_csv_uploads_to_airtable",
+  "title": "Automate CSV Uploads to Airtable and Update Status",
   "description": "Triggers on new file uploads to Airtable, processes CSV data, and updates record statuses automatically, streamlining lead management.",
+  "filename": "395_csv_uploads_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Spreadsheet File",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Airtable Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833",
@@ -530,37 +557,5 @@
         ]
       }
     }
-  },
-  "title": "Automate CSV Uploads to Airtable and Update Status",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Spreadsheet File",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Airtable Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 6
+  }
 }

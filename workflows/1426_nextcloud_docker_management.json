@@ -1,7 +1,29 @@
 {
   "id": "1426",
-  "filename": "1426_nextcloud_docker_management",
+  "title": "Automate NextCloud deployment and management with Docker",
   "description": "Handles NextCloud container deployment, management, and DNS updates automatically based on API commands, ensuring efficient cloud service operations.",
+  "filename": "1426_nextcloud_docker_management",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "SSH",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "d3xtaER6gl4aqLZR",
     "meta": {
@@ -2494,32 +2516,5 @@
         ]
       }
     }
-  },
-  "title": "Automate NextCloud deployment and management with Docker",
-  "nodes_count": 44,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "SSH",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 44,
-  "external_integrations_count": 8
+  }
 }

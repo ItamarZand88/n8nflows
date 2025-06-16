@@ -1,7 +1,27 @@
 {
   "id": "1045",
-  "filename": "1045_daily_cocktail_recipes_telegram",
+  "title": "Send daily cocktail recipes via Telegram",
   "description": "Automatically fetches a random cocktail recipe daily and sends it as a photo with instructions to a Telegram chat, enhancing user engagement and creativity.",
+  "filename": "1045_daily_cocktail_recipes_telegram",
+  "services": [
+    "Cron",
+    "HTTP Request",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Sendphoto"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "57",
     "name": "Send a cocktail recipe every day via a Telegram",
@@ -84,30 +104,5 @@
         ]
       }
     }
-  },
-  "title": "Send daily cocktail recipes via Telegram",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Cron",
-    "HTTP Request",
-    "Telegram"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Sendphoto"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

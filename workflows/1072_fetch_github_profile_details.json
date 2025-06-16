@@ -1,7 +1,27 @@
 {
   "id": "1072",
-  "filename": "1072_fetch_github_profile_details",
+  "title": "Fetch GitHub repository profile details",
   "description": "Triggers on manual execution to retrieve and display profile information of the n8n GitHub repository, streamlining access to essential repository data.",
+  "filename": "1072_fetch_github_profile_details",
+  "services": [
+    "GitHub",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getprofile",
+    "Manage repository"
+  ],
+  "setup_requirements": [
+    "GitHub API Key"
+  ],
   "content": {
     "id": "5",
     "name": "new",
@@ -50,30 +70,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch GitHub repository profile details",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "GitHub",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getprofile",
-    "Manage repository"
-  ],
-  "setup_requirements": [
-    "GitHub API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

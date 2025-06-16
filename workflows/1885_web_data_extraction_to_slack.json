@@ -1,7 +1,42 @@
 {
   "id": "1885",
-  "filename": "1885_web_data_extraction_to_slack",
+  "title": "Automate web data extraction and Slack notifications",
   "description": "Captures user prompts to extract data from web pages, manages browser sessions, and sends results to Slack for easy access and collaboration.",
+  "filename": "1885_web_data_extraction_to_slack",
+  "services": [
+    "Airtop",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Slack",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Load",
+    "Manage extraction",
+    "Manage interaction",
+    "Manage window",
+    "Query",
+    "Set Data",
+    "Terminate",
+    "Type"
+  ],
+  "setup_requirements": [
+    "Airtop API Key",
+    "Slack Account"
+  ],
   "content": {
     "id": "TS1wT16JCcy1Dt9Q",
     "meta": {
@@ -682,45 +717,5 @@
         ]
       }
     }
-  },
-  "title": "Automate web data extraction and Slack notifications",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Airtop",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Slack",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Load",
-    "Manage extraction",
-    "Manage interaction",
-    "Manage window",
-    "Query",
-    "Set Data",
-    "Terminate",
-    "Type"
-  ],
-  "setup_requirements": [
-    "Airtop API Key",
-    "Slack Account"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 6
+  }
 }

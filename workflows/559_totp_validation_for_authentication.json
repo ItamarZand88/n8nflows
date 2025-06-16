@@ -1,7 +1,28 @@
 {
   "id": "559",
-  "filename": "559_totp_validation_for_authentication",
+  "title": "Validate TOTP Codes for Secure Authentication",
   "description": "Triggers manual testing of a TOTP code against a secret, ensuring secure two-factor authentication for user accounts.",
+  "filename": "559_totp_validation_for_authentication",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "If",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "name": "TOTP VALIDATION (WITHOUT CREATING CREDENTIAL)",
     "nodes": [
@@ -147,31 +168,5 @@
         ]
       }
     }
-  },
-  "title": "Validate TOTP Codes for Secure Authentication",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "If",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

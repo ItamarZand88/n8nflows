@@ -1,7 +1,24 @@
 {
   "id": "607",
-  "filename": "607_create_masked_email_fastmail",
+  "title": "Create masked email addresses using Fastmail API",
   "description": "Triggers on a webhook to generate a masked email address via Fastmail, enhancing privacy for users and simplifying email management.",
+  "filename": "607_create_masked_email_fastmail",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "04ab549d8bbb435ec33b81e4e29965c46cf6f0f9e7afe631018b5e34c8eead58"
@@ -229,27 +246,5 @@
         ]
       }
     }
-  },
-  "title": "Create masked email addresses using Fastmail API",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

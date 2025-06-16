@@ -1,7 +1,33 @@
 {
   "id": "1146",
-  "filename": "1146_coffee_chat_groups_and_invites",
+  "title": "Automate weekly coffee chat group creation and invites",
   "description": "Triggers every Monday to randomly group employees for virtual coffee chats and sends calendar invites with group details via Google Calendar.",
+  "filename": "1146_coffee_chat_groups_and_invites",
+  "services": [
+    "Cron",
+    "Function",
+    "Google Calendar",
+    "Mattermost"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Cron Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Getall",
+    "Manage user"
+  ],
+  "setup_requirements": [
+    "Google Calendar Account",
+    "Mattermost API Key"
+  ],
   "content": {
     "id": "7",
     "name": "Coffee Bot (Mattermost)",
@@ -175,36 +201,5 @@
         ]
       }
     }
-  },
-  "title": "Automate weekly coffee chat group creation and invites",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Cron",
-    "Function",
-    "Google Calendar",
-    "Mattermost"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Cron Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Getall",
-    "Manage user"
-  ],
-  "setup_requirements": [
-    "Google Calendar Account",
-    "Mattermost API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,30 @@
 {
   "id": "304",
-  "filename": "304_export_sql_table_to_csv",
+  "title": "Export SQL Table Data to CSV File",
   "description": "Triggers a manual workflow to extract data from a Microsoft SQL table and save it as a CSV file for easy sharing and storage.",
+  "filename": "304_export_sql_table_to_csv",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "Microsoft SQL",
+    "Spreadsheet File",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Executequery",
+    "Set Data",
+    "Tofile"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "dfdeafd1c3ed2ee08eeab8c2fa0c3f522066931ed8138ccd35dc20a1e69decd3"
@@ -127,33 +150,5 @@
         ]
       }
     }
-  },
-  "title": "Export SQL Table Data to CSV File",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual",
-    "Microsoft SQL",
-    "Spreadsheet File",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Executequery",
-    "Set Data",
-    "Tofile"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

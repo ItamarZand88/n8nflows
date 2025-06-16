@@ -1,7 +1,30 @@
 {
   "id": "1906",
-  "filename": "1906_todoist_task_prioritization_with_ai",
+  "title": "Automate Todoist task prioritization using AI categorization",
   "description": "Triggers on a schedule to fetch inbox tasks, categorizes them using AI, and updates their priority in Todoist for better task management.",
+  "filename": "1906_todoist_task_prioritization_with_ai",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "Schedule",
+    "Sticky Note",
+    "Todoist"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Todoist API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -342,33 +365,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Todoist task prioritization using AI categorization",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "Schedule",
-    "Sticky Note",
-    "Todoist"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Todoist API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 5
+  }
 }

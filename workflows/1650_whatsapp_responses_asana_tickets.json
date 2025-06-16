@@ -1,7 +1,28 @@
 {
   "id": "1650",
-  "filename": "1650_whatsapp_responses_asana_tickets",
+  "title": "Automate WhatsApp responses and Asana ticket creation from form submissions",
   "description": "Captures new form submissions, sends a confirmation message via WhatsApp, and creates a support ticket in Asana for efficient issue management.",
+  "filename": "1650_whatsapp_responses_asana_tickets",
+  "services": [
+    "Asana",
+    "Sticky Note",
+    "WhatsApp Business Cloud",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Send"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "lWfWe93aNGuNPLBz",
     "meta": {
@@ -162,31 +183,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WhatsApp responses and Asana ticket creation from form submissions",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Asana",
-    "Sticky Note",
-    "WhatsApp Business Cloud",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Send"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

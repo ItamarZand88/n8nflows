@@ -1,7 +1,28 @@
 {
   "id": "1376",
-  "filename": "1376_wordpress_post_categorization_ai",
+  "title": "Automate WordPress Post Categorization with AI",
   "description": "Triggers on demand to fetch all WordPress posts, uses AI to categorize them, and updates each post with the assigned category, streamlining content organization.",
+  "filename": "1376_wordpress_post_categorization_ai",
+  "services": [
+    "Manual",
+    "Sticky Note",
+    "Wordpress"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Wordpress API Key"
+  ],
   "content": {
     "id": "caaf1WFANPKAikiH",
     "meta": {
@@ -215,31 +236,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WordPress Post Categorization with AI",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Manual",
-    "Sticky Note",
-    "Wordpress"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getall",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Wordpress API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 3
+  }
 }

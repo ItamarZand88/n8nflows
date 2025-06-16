@@ -1,7 +1,39 @@
 {
   "id": "817",
-  "filename": "817_human_handoff_telegram_support",
+  "title": "Automate Human Handoff for Telegram Customer Support",
   "description": "Facilitates seamless handoff from a bot to a human agent in Telegram, capturing customer details and ensuring smooth communication.",
+  "filename": "817_human_handoff_telegram_support",
+  "services": [
+    "Code",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "If",
+    "Redis",
+    "Sticky Note",
+    "Switch",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Sendandwait",
+    "Set"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -1319,42 +1351,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Human Handoff for Telegram Customer Support",
-  "nodes_count": 39,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "If",
-    "Redis",
-    "Sticky Note",
-    "Switch",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Sendandwait",
-    "Set"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 39,
-  "external_integrations_count": 8
+  }
 }

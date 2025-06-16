@@ -1,7 +1,30 @@
 {
   "id": "980",
-  "filename": "980_telegram_replies_to_google_sheets",
+  "title": "Save Telegram replies as journal entries in Google Sheets",
   "description": "Captures replies to a Telegram bot and logs them as journal entries in Google Sheets for easy tracking and organization.",
+  "filename": "980_telegram_replies_to_google_sheets",
+  "services": [
+    "Function Item",
+    "Google Sheets",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Append",
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": 4,
     "name": "Save Telegram reply to journal spreadsheet",
@@ -77,33 +100,5 @@
         ]
       }
     }
-  },
-  "title": "Save Telegram replies as journal entries in Google Sheets",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Function Item",
-    "Google Sheets",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Append",
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

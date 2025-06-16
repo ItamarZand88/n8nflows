@@ -1,7 +1,42 @@
 {
   "id": "639",
-  "filename": "639_ai_interviews_to_google_sheets",
+  "title": "Automate AI-Powered User Interviews with Google Sheets",
   "description": "Starts an AI-driven interview process through a form, captures responses, and saves the transcript to Google Sheets for analysis.",
+  "filename": "639_ai_interviews_to_google_sheets",
+  "services": [
+    "Crypto",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "If",
+    "Redis",
+    "Split Out",
+    "Sticky Note",
+    "Webhook",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append",
+    "Completion",
+    "Filter Data",
+    "Get",
+    "Push",
+    "Set",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -1255,45 +1290,5 @@
         ]
       }
     }
-  },
-  "title": "Automate AI-Powered User Interviews with Google Sheets",
-  "nodes_count": 40,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Crypto",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "If",
-    "Redis",
-    "Split Out",
-    "Sticky Note",
-    "Webhook",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append",
-    "Completion",
-    "Filter Data",
-    "Get",
-    "Push",
-    "Set",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 40,
-  "external_integrations_count": 9
+  }
 }

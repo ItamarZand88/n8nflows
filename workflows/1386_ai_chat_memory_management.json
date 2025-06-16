@@ -1,7 +1,25 @@
 {
   "id": "1386",
-  "filename": "1386_ai_chat_memory_management",
+  "title": "Automate AI Chat Conversations with Memory Management",
   "description": "Triggers a chat session with an AI assistant, manages conversation history, and returns responses while maintaining context for improved interactions.",
+  "filename": "1386_ai_chat_memory_management",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Limit",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -336,28 +354,5 @@
         ]
       }
     }
-  },
-  "title": "Automate AI Chat Conversations with Memory Management",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Limit",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 4
+  }
 }

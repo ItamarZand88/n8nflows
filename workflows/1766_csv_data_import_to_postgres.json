@@ -1,7 +1,25 @@
 {
   "id": "1766",
-  "filename": "1766_csv_data_import_to_postgres",
+  "title": "Automate CSV Data Import to Postgres Database",
   "description": "Triggers on manual execution to read a CSV file and automatically converts and imports the data into a Postgres database for easy access and management.",
+  "filename": "1766_csv_data_import_to_postgres",
+  "services": [
+    "Manual",
+    "Postgres",
+    "Read Binary File",
+    "Spreadsheet File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "q8GNbRhjQDwDpXoo",
     "meta": {
@@ -152,28 +170,5 @@
         ]
       }
     }
-  },
-  "title": "Automate CSV Data Import to Postgres Database",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Manual",
-    "Postgres",
-    "Read Binary File",
-    "Spreadsheet File"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

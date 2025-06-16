@@ -1,7 +1,28 @@
 {
   "id": "1421",
-  "filename": "1421_docker_management_api_integration",
+  "title": "Automate Docker container management and API integration",
   "description": "Handles Docker container operations like start, stop, and mount while providing an API for WHMCS/WISECP integration, ensuring efficient server management.",
+  "filename": "1421_docker_management_api_integration",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "If",
+    "SSH",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "cY8OVKzHS0ScRhP9",
     "meta": {
@@ -1827,31 +1848,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Docker container management and API integration",
-  "nodes_count": 34,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "If",
-    "SSH",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 34,
-  "external_integrations_count": 7
+  }
 }

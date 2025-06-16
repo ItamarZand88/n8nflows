@@ -1,7 +1,32 @@
 {
   "id": "1819",
-  "filename": "1819_cv_submission_to_hr_and_confirmation",
+  "title": "Automate CV Submission Confirmation and HR Notification",
   "description": "Triggers on new CV submissions, analyzes candidates with AI, and notifies HR while confirming receipt to applicants via Gmail.",
+  "filename": "1819_cv_submission_to_hr_and_confirmation",
+  "services": [
+    "Extract from File",
+    "Gmail",
+    "Google Sheets",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append",
+    "Pdf"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "ES4TSw9HacxoNhLZ",
     "meta": {
@@ -332,35 +357,5 @@
         ]
       }
     }
-  },
-  "title": "Automate CV Submission Confirmation and HR Notification",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Extract from File",
-    "Gmail",
-    "Google Sheets",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append",
-    "Pdf"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,39 @@
 {
   "id": "445",
-  "filename": "445_todoist_task_management",
+  "title": "Automate task management by snoozing and restoring Todoist tasks",
   "description": "Triggers at 5 AM and every 5 minutes to manage snoozed tasks in Todoist, moving them back to inbox based on due dates for better task organization.",
+  "filename": "445_todoist_task_management",
+  "services": [
+    "Crypto",
+    "Date & Time",
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Item Lists",
+    "Schedule",
+    "Sticky Note",
+    "Todoist"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Concatenateitems",
+    "Filter Data",
+    "Getall",
+    "Set Data",
+    "Subtractfromdate"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Todoist API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -554,42 +586,5 @@
         ]
       }
     }
-  },
-  "title": "Automate task management by snoozing and restoring Todoist tasks",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Crypto",
-    "Date & Time",
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Item Lists",
-    "Schedule",
-    "Sticky Note",
-    "Todoist"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Concatenateitems",
-    "Filter Data",
-    "Getall",
-    "Set Data",
-    "Subtractfromdate"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Todoist API Key"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 10
+  }
 }

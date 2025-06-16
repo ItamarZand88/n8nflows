@@ -1,7 +1,33 @@
 {
   "id": "370",
-  "filename": "370_phantombuster_outputs_to_airtable",
+  "title": "Store Phantombuster Outputs in Airtable Automatically",
   "description": "Triggers manually to fetch data from Phantombuster and appends the results, including names and emails, to an Airtable table for easy access and organization.",
+  "filename": "370_phantombuster_outputs_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Manual",
+    "Phantombuster"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Getoutput",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Phantombuster API Key"
+  ],
   "content": {
     "id": "201",
     "name": "Store the output of a phantom in Airtable",
@@ -118,36 +144,5 @@
         ]
       }
     }
-  },
-  "title": "Store Phantombuster Outputs in Airtable Automatically",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Manual",
-    "Phantombuster"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Getoutput",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Phantombuster API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

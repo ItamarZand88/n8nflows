@@ -1,7 +1,31 @@
 {
   "id": "141",
-  "filename": "141_telegram_notifications_for_package_cleanup",
+  "title": "Automate Telegram notifications for old package cleanup",
   "description": "Triggers daily to clean up old package records in MySQL and sends Telegram notifications confirming the actions taken.",
+  "filename": "141_telegram_notifications_for_package_cleanup",
+  "services": [
+    "Cron",
+    "Manual",
+    "MySQL",
+    "Telegram",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Executequery"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -198,34 +222,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Telegram notifications for old package cleanup",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Cron",
-    "Manual",
-    "MySQL",
-    "Telegram",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Executequery"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

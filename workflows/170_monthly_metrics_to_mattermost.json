@@ -1,7 +1,25 @@
 {
   "id": "170",
-  "filename": "170_monthly_metrics_to_mattermost",
+  "title": "Send monthly financial metrics to Mattermost",
   "description": "Automatically retrieves monthly financial metrics from ProfitWell and sends a formatted message to Mattermost for team visibility and tracking.",
+  "filename": "170_monthly_metrics_to_mattermost",
+  "services": [
+    "Cron",
+    "Mattermost",
+    "ProfitWell"
+  ],
+  "categories": [
+    "Analytics",
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Mattermost API Key",
+    "ProfitWell API Key"
+  ],
   "content": {
     "id": "146",
     "name": "Send financial metrics monthly to Mattermost",
@@ -86,28 +104,5 @@
         ]
       }
     }
-  },
-  "title": "Send monthly financial metrics to Mattermost",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Analytics",
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Cron",
-    "Mattermost",
-    "ProfitWell"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "Mattermost API Key",
-    "ProfitWell API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,37 @@
 {
   "id": "1526",
-  "filename": "1526_database_schema_to_chat_queries",
+  "title": "Automate database schema extraction and chat queries",
   "description": "Triggers on user chat input, extracts database schema, and enables AI-driven SQL query generation for efficient data retrieval.",
+  "filename": "1526_database_schema_to_chat_queries",
+  "services": [
+    "Convert to File",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "If",
+    "Manual",
+    "Merge",
+    "MySQL",
+    "No Operation, do nothing",
+    "Read/Write Files from Disk",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Executequery",
+    "Filter Data",
+    "Fromjson",
+    "Set Data",
+    "Tojson",
+    "Write"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "P307QnrxpA1ddsM5",
     "meta": {
@@ -759,40 +789,5 @@
         ]
       }
     }
-  },
-  "title": "Automate database schema extraction and chat queries",
-  "nodes_count": 29,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Convert to File",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "If",
-    "Manual",
-    "Merge",
-    "MySQL",
-    "No Operation, do nothing",
-    "Read/Write Files from Disk",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Executequery",
-    "Filter Data",
-    "Fromjson",
-    "Set Data",
-    "Tojson",
-    "Write"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 29,
-  "external_integrations_count": 10
+  }
 }

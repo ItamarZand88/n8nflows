@@ -1,7 +1,30 @@
 {
   "id": "390",
-  "filename": "390_google_analytics_to_airtable",
+  "title": "Automate Google Analytics data storage in Airtable",
   "description": "Triggers on manual execution to fetch website analytics from Google Analytics and appends the data to Airtable for easy access and tracking.",
+  "filename": "390_google_analytics_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Google Analytics",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Google Analytics Account"
+  ],
   "content": {
     "id": "205",
     "name": "Get analytics of a website and store it Airtable",
@@ -137,33 +160,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Analytics data storage in Airtable",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Google Analytics",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Google Analytics Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,36 @@
 {
   "id": "371",
-  "filename": "371_g2_reviews_to_slack_and_sheets",
+  "title": "Monitor G2 reviews and notify via Slack",
   "description": "Automatically checks G2 for new reviews daily, sends notifications to Slack, and logs them in Google Sheets for easy tracking.",
+  "filename": "371_g2_reviews_to_slack_and_sheets",
+  "services": [
+    "Code",
+    "Google Sheets",
+    "HTTP Request",
+    "Item Lists",
+    "Markdown",
+    "Merge",
+    "Schedule",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Extracthtmlcontent"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -493,39 +522,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor G2 reviews and notify via Slack",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Google Sheets",
-    "HTTP Request",
-    "Item Lists",
-    "Markdown",
-    "Merge",
-    "Schedule",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Extracthtmlcontent"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 13,
-  "external_integrations_count": 9
+  }
 }

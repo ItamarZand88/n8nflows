@@ -1,7 +1,34 @@
 {
   "id": "734",
-  "filename": "734_bulk_file_uploads_to_google_drive",
+  "title": "Automate bulk file uploads to Google Drive with folder creation",
   "description": "Triggers on form submissions to upload multiple files to a specified Google Drive folder, creating the folder if it doesn't exist, streamlining file organization.",
+  "filename": "734_bulk_file_uploads_to_google_drive",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "If",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage fileFolder",
+    "Manage folder",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "d4d7965840e96e50a3e02959a8487c692901dfa8d5cc294134442c67ce1622d3",
@@ -392,37 +419,5 @@
         ]
       }
     }
-  },
-  "title": "Automate bulk file uploads to Google Drive with folder creation",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "If",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage fileFolder",
-    "Manage folder",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 6
+  }
 }

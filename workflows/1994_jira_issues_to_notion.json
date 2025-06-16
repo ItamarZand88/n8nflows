@@ -1,7 +1,36 @@
 {
   "id": "1994",
-  "filename": "1994_jira_issues_to_notion",
+  "title": "Automate Jira issue updates and archiving in Notion",
   "description": "Triggers on new Jira issues, updates their status in Notion, and archives deleted issues, streamlining project management.",
+  "filename": "1994_jira_issues_to_notion",
+  "services": [
+    "Code",
+    "If",
+    "Jira",
+    "Notion",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Jira Event"
+  ],
+  "actions": [
+    "Archive",
+    "Filter Data",
+    "Getall",
+    "Manage databasePage",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Jira API Key",
+    "Notion API Key"
+  ],
   "content": {
     "id": "YCQFaJdmJc6Rx4o7",
     "meta": {
@@ -339,39 +368,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Jira issue updates and archiving in Notion",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "If",
-    "Jira",
-    "Notion",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Jira Event"
-  ],
-  "actions": [
-    "Archive",
-    "Filter Data",
-    "Getall",
-    "Manage databasePage",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Jira API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 6
+  }
 }

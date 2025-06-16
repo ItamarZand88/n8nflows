@@ -1,7 +1,20 @@
 {
   "id": "814",
-  "filename": "814_screenshots_from_sheets_to_drive",
+  "title": "Automate website screenshots from new Google Sheets entries",
   "description": "Triggers on new rows in Google Sheets, captures website screenshots, and stores them in Google Drive for easy access and organization.",
+  "filename": "814_screenshots_from_sheets_to_drive",
+  "services": [
+    "Google Drive"
+  ],
+  "categories": [
+    "Data & Storage"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "b503899dfd9ae32bbf8e1f446a1f2c9b3c59f80c79b274c49b1606b7ae9579e1"
@@ -107,23 +120,5 @@
         ]
       }
     }
-  },
-  "title": "Automate website screenshots from new Google Sheets entries",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Data & Storage"
-  ],
-  "services": [
-    "Google Drive"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 1
+  }
 }

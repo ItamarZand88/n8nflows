@@ -1,7 +1,32 @@
 {
   "id": "1727",
-  "filename": "1727_generate_tweets_to_airtable",
+  "title": "Generate and Save Tweets with Hashtags to Airtable",
   "description": "Triggers manually to generate a tweet including a random hashtag and saves it to Airtable for easy tracking and management.",
+  "filename": "1727_generate_tweets_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Function Item",
+    "HTTP Request",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -136,35 +161,5 @@
         ]
       }
     }
-  },
-  "title": "Generate and Save Tweets with Hashtags to Airtable",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Function Item",
-    "HTTP Request",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

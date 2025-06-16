@@ -1,7 +1,33 @@
 {
   "id": "1743",
-  "filename": "1743_track_work_hours_breaks_notion",
+  "title": "Track Work Hours and Breaks in Notion Automatically",
   "description": "Automates tracking of work start, end times, and breaks in Notion based on webhook triggers, ensuring accurate time management and reporting.",
+  "filename": "1743_track_work_hours_breaks_notion",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Notion",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage databasePage",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Notion API Key"
+  ],
   "content": {
     "id": "pdgNdag49lwoTxUP",
     "meta": {
@@ -1169,36 +1195,5 @@
         ]
       }
     }
-  },
-  "title": "Track Work Hours and Breaks in Notion Automatically",
-  "nodes_count": 30,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Notion",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage databasePage",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Notion API Key"
-  ],
-  "workflow_complexity": 30,
-  "external_integrations_count": 6
+  }
 }

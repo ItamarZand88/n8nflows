@@ -1,7 +1,37 @@
 {
   "id": "538",
-  "filename": "538_document_processing_to_notes",
+  "title": "Automate document processing and note generation from local files",
   "description": "Monitors a local folder for new documents, extracts content, summarizes it, and generates structured notes for efficient study and review.",
+  "filename": "538_document_processing_to_notes",
+  "services": [
+    "Aggregate",
+    "Convert to File",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Local File",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "Read/Write Files from Disk",
+    "Split Out",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Local File Event"
+  ],
+  "actions": [
+    "Ods",
+    "Pdf",
+    "Set Data",
+    "Text",
+    "Totext",
+    "Write"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "26ba763460b97c249b82942b23b6384876dfeb9327513332e743c5f6219c2b8e"
@@ -1261,40 +1291,5 @@
         ]
       }
     }
-  },
-  "title": "Automate document processing and note generation from local files",
-  "nodes_count": 42,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Aggregate",
-    "Convert to File",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Local File",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "Read/Write Files from Disk",
-    "Split Out",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Local File Event"
-  ],
-  "actions": [
-    "Ods",
-    "Pdf",
-    "Set Data",
-    "Text",
-    "Totext",
-    "Write"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 42,
-  "external_integrations_count": 11
+  }
 }

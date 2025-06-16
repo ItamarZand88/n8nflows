@@ -1,7 +1,29 @@
 {
   "id": "2006",
-  "filename": "2006_echo_whatsapp_messages",
+  "title": "Echo WhatsApp messages back to users automatically",
   "description": "Automatically verifies incoming WhatsApp messages and echoes them back to users, enhancing communication and engagement.",
+  "filename": "2006_echo_whatsapp_messages",
+  "services": [
+    "If",
+    "Sticky Note",
+    "Webhook",
+    "WhatsApp Business Cloud"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Send"
+  ],
+  "setup_requirements": [
+    "WhatsApp Business Cloud API Key"
+  ],
   "content": {
     "id": "yxv7OYbDEnqsqfa9",
     "meta": {
@@ -206,32 +228,5 @@
         ]
       }
     }
-  },
-  "title": "Echo WhatsApp messages back to users automatically",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "If",
-    "Sticky Note",
-    "Webhook",
-    "WhatsApp Business Cloud"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Send"
-  ],
-  "setup_requirements": [
-    "WhatsApp Business Cloud API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 4
+  }
 }

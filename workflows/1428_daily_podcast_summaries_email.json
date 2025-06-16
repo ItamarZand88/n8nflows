@@ -1,7 +1,39 @@
 {
   "id": "1428",
-  "filename": "1428_daily_podcast_summaries_email",
+  "title": "Automate Daily Podcast Summaries via Email",
   "description": "Triggers daily to fetch top podcasts in a selected genre, transcribes audio, summarizes content, and sends an email with the summaries.",
+  "filename": "1428_daily_podcast_summaries_email",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Gmail",
+    "HTTP Request",
+    "If",
+    "OpenAI",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage chat",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "HTTP Request API Key",
+    "OpenAI API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "7858a8e25b8fc4dae485c1ef345e6fe74effb1f5060433ef500b4c186c965c18"
@@ -666,42 +698,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Daily Podcast Summaries via Email",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Gmail",
-    "HTTP Request",
-    "If",
-    "OpenAI",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage chat",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "HTTP Request API Key",
-    "OpenAI API Key"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 9
+  }
 }

@@ -1,7 +1,35 @@
 {
   "id": "179",
-  "filename": "179_portfolio_value_updates_with_coingecko_airtable",
+  "title": "Automate Portfolio Value Updates with CoinGecko and Airtable",
   "description": "Runs hourly to fetch current cryptocurrency prices from CoinGecko, updates portfolio records in Airtable, and logs total portfolio value for tracking.",
+  "filename": "179_portfolio_value_updates_with_coingecko_airtable",
+  "services": [
+    "Airtable",
+    "CoinGecko",
+    "Cron",
+    "Edit Fields (Set)",
+    "Function"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Finance & Accounting",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Append",
+    "Execute Function",
+    "Get",
+    "List",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "14",
     "name": "Update Crypto Values",
@@ -249,38 +277,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Portfolio Value Updates with CoinGecko and Airtable",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Finance & Accounting",
-    "Productivity"
-  ],
-  "services": [
-    "Airtable",
-    "CoinGecko",
-    "Cron",
-    "Edit Fields (Set)",
-    "Function"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Append",
-    "Execute Function",
-    "Get",
-    "List",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 5
+  }
 }

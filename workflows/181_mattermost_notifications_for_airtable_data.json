@@ -1,7 +1,25 @@
 {
   "id": "181",
-  "filename": "181_mattermost_notifications_for_airtable_data",
+  "title": "Send Mattermost notifications for new Airtable data",
   "description": "Automatically notifies a Mattermost channel when new data is added to Airtable, ensuring your team stays updated in real-time.",
+  "filename": "181_mattermost_notifications_for_airtable_data",
+  "services": [
+    "Airtable",
+    "Mattermost"
+  ],
+  "categories": [
+    "Communication",
+    "Data & Storage"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Airtable Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Mattermost API Key"
+  ],
   "content": {
     "id": "151",
     "name": "Receive a Mattermost message when new data gets added to Airtable",
@@ -65,28 +83,5 @@
         ]
       }
     }
-  },
-  "title": "Send Mattermost notifications for new Airtable data",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Data & Storage"
-  ],
-  "services": [
-    "Airtable",
-    "Mattermost"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Airtable Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Mattermost API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

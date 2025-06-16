@@ -1,7 +1,32 @@
 {
   "id": "484",
-  "filename": "484_xml_to_json_conversion_with_slack_notifications",
+  "title": "Convert XML files to JSON and notify on errors",
   "description": "Automates the conversion of XML files to JSON format via a webhook, sending success or error notifications to Slack for immediate awareness.",
+  "filename": "484_xml_to_json_conversion_with_slack_notifications",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Slack",
+    "Sticky Note",
+    "Switch",
+    "Webhook",
+    "XML"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data",
+    "Xml"
+  ],
+  "setup_requirements": [
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833",
@@ -441,35 +466,5 @@
         ]
       }
     }
-  },
-  "title": "Convert XML files to JSON and notify on errors",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Slack",
-    "Sticky Note",
-    "Switch",
-    "Webhook",
-    "XML"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data",
-    "Xml"
-  ],
-  "setup_requirements": [
-    "Slack API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 7
+  }
 }

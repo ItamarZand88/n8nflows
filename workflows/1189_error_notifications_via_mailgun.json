@@ -1,7 +1,25 @@
 {
   "id": "1189",
-  "filename": "1189_error_notifications_via_mailgun",
+  "title": "Automate error notifications via Mailgun on workflow failures",
   "description": "Triggers an email alert through Mailgun whenever an error occurs in the workflow, providing detailed error information for quick resolution.",
+  "filename": "1189_error_notifications_via_mailgun",
+  "services": [
+    "Error",
+    "Mailgun"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Error Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mailgun API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -46,28 +64,5 @@
         ]
       }
     }
-  },
-  "title": "Automate error notifications via Mailgun on workflow failures",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Error",
-    "Mailgun"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Error Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Mailgun API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

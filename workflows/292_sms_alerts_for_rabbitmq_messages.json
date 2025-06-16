@@ -1,7 +1,29 @@
 {
   "id": "292",
-  "filename": "292_sms_alerts_for_rabbitmq_messages",
+  "title": "Send SMS alerts for high RabbitMQ queue messages",
   "description": "Triggers when a new message is received in RabbitMQ, checks if the value exceeds 50, and sends an SMS alert via Vonage if true.",
+  "filename": "292_sms_alerts_for_rabbitmq_messages",
+  "services": [
+    "If",
+    "No Operation, do nothing",
+    "RabbitMQ",
+    "Vonage"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New RabbitMQ Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Vonage API Key"
+  ],
   "content": {
     "id": "186",
     "name": "Receive messages from a queue via RabbitMQ and send an SMS",
@@ -105,32 +127,5 @@
         ]
       }
     }
-  },
-  "title": "Send SMS alerts for high RabbitMQ queue messages",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "If",
-    "No Operation, do nothing",
-    "RabbitMQ",
-    "Vonage"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New RabbitMQ Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Vonage API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

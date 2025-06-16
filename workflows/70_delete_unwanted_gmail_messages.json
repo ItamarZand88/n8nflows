@@ -1,7 +1,29 @@
 {
   "id": "70",
-  "filename": "70_delete_unwanted_gmail_messages",
+  "title": "Delete Unwanted Gmail Messages in Batches",
   "description": "Triggers a manual execution to retrieve and delete unwanted Gmail messages in batches, helping to keep your inbox organized and clutter-free.",
+  "filename": "70_delete_unwanted_gmail_messages",
+  "services": [
+    "Gmail",
+    "Loop Over Items (Split in Batches)",
+    "Manual"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Delete",
+    "Getall",
+    "Manage message"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -112,32 +134,5 @@
         ]
       }
     }
-  },
-  "title": "Delete Unwanted Gmail Messages in Batches",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Gmail",
-    "Loop Over Items (Split in Batches)",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Delete",
-    "Getall",
-    "Manage message"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

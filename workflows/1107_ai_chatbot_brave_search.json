@@ -1,7 +1,22 @@
 {
   "id": "1107",
-  "filename": "1107_ai_chatbot_brave_search",
+  "title": "Automate AI Chatbot Responses Using Brave Search",
   "description": "Triggers on incoming chat messages, processes them with AI, retrieves tools, and executes searches to provide intelligent responses.",
+  "filename": "1107_ai_chatbot_brave_search",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Executetool"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "6MRJ2tfl8c2f3AuE",
     "meta": {
@@ -312,25 +327,5 @@
         ]
       }
     }
-  },
-  "title": "Automate AI Chatbot Responses Using Brave Search",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Executetool"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 15,
-  "external_integrations_count": 1
+  }
 }

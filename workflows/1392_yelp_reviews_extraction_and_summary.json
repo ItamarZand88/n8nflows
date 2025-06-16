@@ -1,7 +1,27 @@
 {
   "id": "1392",
-  "filename": "1392_yelp_reviews_extraction_and_summary",
+  "title": "Extract and Summarize Yelp Business Reviews Automatically",
   "description": "Triggers on demand to extract Yelp business reviews, processes them with an AI model, and sends a summarized report via webhook for easy analysis.",
+  "filename": "1392_yelp_reviews_extraction_and_summary",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "cKFPrgXstN3JgdJs",
     "meta": {
@@ -386,30 +406,5 @@
         ]
       }
     }
-  },
-  "title": "Extract and Summarize Yelp Business Reviews Automatically",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 5
+  }
 }

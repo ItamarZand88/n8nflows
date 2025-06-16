@@ -1,7 +1,33 @@
 {
   "id": "298",
-  "filename": "298_reddit_analysis_for_n8n_mentions",
+  "title": "Automate Reddit post analysis for n8n mentions",
   "description": "Triggers on demand to search Reddit for posts about n8n, filters relevant content, and summarizes findings for easy review.",
+  "filename": "298_reddit_analysis_for_n8n_mentions",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Manual",
+    "Merge",
+    "OpenAI",
+    "Reddit",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Edit",
+    "Filter Data",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -447,36 +473,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Reddit post analysis for n8n mentions",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Utility"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Manual",
-    "Merge",
-    "OpenAI",
-    "Reddit",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Edit",
-    "Filter Data",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 15,
-  "external_integrations_count": 7
+  }
 }

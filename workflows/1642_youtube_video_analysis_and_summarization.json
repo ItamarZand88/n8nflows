@@ -1,7 +1,38 @@
 {
   "id": "1642",
-  "filename": "1642_youtube_video_analysis_and_summarization",
+  "title": "Automate YouTube Video Analysis and Summarization",
   "description": "Extracts key metadata and generates summaries, transcripts, or scene descriptions from YouTube videos, sending results to Google Drive and Gmail.",
+  "filename": "1642_youtube_video_analysis_and_summarization",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Drive",
+    "HTTP Request",
+    "Markdown",
+    "Merge",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Createfromtext",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account"
+  ],
   "content": {
     "id": "LIAes1kWVZAWZBX2",
     "meta": {
@@ -819,41 +850,5 @@
         ]
       }
     }
-  },
-  "title": "Automate YouTube Video Analysis and Summarization",
-  "nodes_count": 33,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Drive",
-    "HTTP Request",
-    "Markdown",
-    "Merge",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Createfromtext",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 33,
-  "external_integrations_count": 9
+  }
 }

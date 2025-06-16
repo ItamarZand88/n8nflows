@@ -1,7 +1,30 @@
 {
   "id": "357",
-  "filename": "357_send_sms_from_airtable_to_twilio",
+  "title": "Send SMS notifications from Airtable using Twilio",
   "description": "Triggers SMS messages to phone numbers stored in Airtable, personalizing each message with the recipient's name for effective communication.",
+  "filename": "357_send_sms_from_airtable_to_twilio",
+  "services": [
+    "Airtable",
+    "Manual",
+    "Twilio"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "List"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Twilio API Key"
+  ],
   "content": {
     "id": "1",
     "name": "Send SMS to numbers stored in Airtable with Twilio",
@@ -83,33 +106,5 @@
         ]
       }
     }
-  },
-  "title": "Send SMS notifications from Airtable using Twilio",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Manual",
-    "Twilio"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "List"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Twilio API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

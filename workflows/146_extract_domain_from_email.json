@@ -1,7 +1,26 @@
 {
   "id": "146",
-  "filename": "146_extract_domain_from_email",
+  "title": "Extract domain name from email addresses",
   "description": "Triggers manually to extract and return the domain name from a specified email address for easy data processing.",
+  "filename": "146_extract_domain_from_email",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -72,29 +91,5 @@
         ]
       }
     }
-  },
-  "title": "Extract domain name from email addresses",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

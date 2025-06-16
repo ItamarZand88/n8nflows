@@ -1,7 +1,27 @@
 {
   "id": "875",
-  "filename": "875_postgresql_records_management",
+  "title": "Manage PostgreSQL Database Records with MCP Server",
   "description": "Automates database operations by managing PostgreSQL records through an MCP server, allowing for secure reading, inserting, and updating of data.",
+  "filename": "875_postgresql_records_management",
+  "services": [
+    "Execute Workflow",
+    "Postgres",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Executequery"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -643,30 +663,5 @@
         ]
       }
     }
-  },
-  "title": "Manage PostgreSQL Database Records with MCP Server",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Execute Workflow",
-    "Postgres",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Executequery"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 15,
-  "external_integrations_count": 4
+  }
 }

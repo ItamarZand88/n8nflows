@@ -1,7 +1,30 @@
 {
   "id": "733",
-  "filename": "733_youtube_metadata_updates_from_form",
+  "title": "Automate YouTube Video Metadata Updates with Form Submissions",
   "description": "Captures YouTube video details from form submissions, generates SEO-optimized metadata, and updates the video on YouTube automatically.",
+  "filename": "733_youtube_metadata_updates_from_form",
+  "services": [
+    "Edit Fields (Set)",
+    "Sticky Note",
+    "YouTube",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Get",
+    "Manage video",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "dd130a849d7b29e5541b05d2f7f86a4acd4f1ec598c1c9438783f56bc4f0ff80",
@@ -317,33 +340,5 @@
         ]
       }
     }
-  },
-  "title": "Automate YouTube Video Metadata Updates with Form Submissions",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Sticky Note",
-    "YouTube",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Get",
-    "Manage video",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 11,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,24 @@
 {
   "id": "400",
-  "filename": "400_youtube_video_summary_with_langchain",
+  "title": "Summarize YouTube Videos Using LangChain and OpenAI",
   "description": "Triggers on manual execution to fetch a YouTube video's transcript, summarize it, and generate related questions using LangChain and OpenAI.",
+  "filename": "400_youtube_video_summary_with_langchain",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -171,27 +188,5 @@
         ]
       }
     }
-  },
-  "title": "Summarize YouTube Videos Using LangChain and OpenAI",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 3
+  }
 }

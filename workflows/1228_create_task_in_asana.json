@@ -1,7 +1,24 @@
 {
   "id": "1228",
-  "filename": "1228_create_task_in_asana",
+  "title": "Create new tasks in Asana with a manual trigger",
   "description": "Manually trigger the creation of a new task in Asana, allowing for easy task management and organization directly from N8N.",
+  "filename": "1228_create_task_in_asana",
+  "services": [
+    "Asana",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Asana API Key"
+  ],
   "content": {
     "id": "98",
     "name": "Create a new task in Asana",
@@ -49,27 +66,5 @@
         ]
       }
     }
-  },
-  "title": "Create new tasks in Asana with a manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Asana",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Asana API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

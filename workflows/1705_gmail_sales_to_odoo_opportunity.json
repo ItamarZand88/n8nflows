@@ -1,7 +1,29 @@
 {
   "id": "1705",
-  "filename": "1705_gmail_sales_to_odoo_opportunity",
+  "title": "Automate sales opportunity creation from Gmail inquiries",
   "description": "Triggers on new sales-related emails in Gmail, summarizes the content, and creates an opportunity in Odoo for streamlined sales management.",
+  "filename": "1705_gmail_sales_to_odoo_opportunity",
+  "services": [
+    "Gmail",
+    "Odoo",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Manage opportunity"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Odoo API Key"
+  ],
   "content": {
     "id": "NPGAfBzz4nv8lTpl",
     "meta": {
@@ -228,32 +250,5 @@
         ]
       }
     }
-  },
-  "title": "Automate sales opportunity creation from Gmail inquiries",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Gmail",
-    "Odoo",
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Manage opportunity"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Odoo API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 3
+  }
 }

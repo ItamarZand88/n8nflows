@@ -1,7 +1,43 @@
 {
   "id": "1331",
-  "filename": "1331_jira_issue_resolution_with_ai",
+  "title": "Automate resolution of long-lived JIRA issues with AI",
   "description": "Triggers daily to identify unresolved JIRA issues, uses AI to classify and resolve them, and sends updates via Slack for improved customer support.",
+  "filename": "1331_jira_issue_resolution_with_ai",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "If",
+    "Jira Software",
+    "Schedule",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage issueComment",
+    "Search",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Jira Software API Key",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -1117,46 +1153,5 @@
         ]
       }
     }
-  },
-  "title": "Automate resolution of long-lived JIRA issues with AI",
-  "nodes_count": 36,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "If",
-    "Jira Software",
-    "Schedule",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage issueComment",
-    "Search",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Jira Software API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 36,
-  "external_integrations_count": 9
+  }
 }

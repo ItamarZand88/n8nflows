@@ -1,7 +1,26 @@
 {
   "id": "1887",
-  "filename": "1887_voice_message_transcription_to_audio",
+  "title": "Automate voice message transcription and audio response",
   "description": "Transcribes voice messages using OpenAI, processes them with a language model, and generates audio responses via ElevenLabs for seamless communication.",
+  "filename": "1887_voice_message_transcription_to_audio",
+  "services": [
+    "Aggregate",
+    "HTTP Request",
+    "Limit",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Manage audio",
+    "Transcribe"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "TtoDcjgthgA4NTkU",
     "meta": {
@@ -424,29 +443,5 @@
         ]
       }
     }
-  },
-  "title": "Automate voice message transcription and audio response",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "HTTP Request",
-    "Limit",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Manage audio",
-    "Transcribe"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 15,
-  "external_integrations_count": 5
+  }
 }

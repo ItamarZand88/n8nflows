@@ -1,7 +1,41 @@
 {
   "id": "1934",
-  "filename": "1934_markdown_documentation_for_n8n_workflows",
+  "title": "Automate Markdown Documentation for n8n Workflows",
   "description": "Generates, edits, and saves Markdown documentation for n8n workflows, providing a streamlined way to manage workflow descriptions and visualizations.",
+  "filename": "1934_markdown_documentation_for_n8n_workflows",
+  "services": [
+    "Code",
+    "Convert to File",
+    "Edit Fields (Set)",
+    "Execute Command",
+    "Extract from File",
+    "If",
+    "Merge",
+    "No Operation, do nothing",
+    "Read/Write Files from Disk",
+    "Sort",
+    "Sticky Note",
+    "Switch",
+    "Webhook",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Set Data",
+    "Text",
+    "Totext",
+    "Write"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "id": "VY4TXYGmqth57Een",
     "meta": {
@@ -2004,44 +2038,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Markdown Documentation for n8n Workflows",
-  "nodes_count": 60,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Convert to File",
-    "Edit Fields (Set)",
-    "Execute Command",
-    "Extract from File",
-    "If",
-    "Merge",
-    "No Operation, do nothing",
-    "Read/Write Files from Disk",
-    "Sort",
-    "Sticky Note",
-    "Switch",
-    "Webhook",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Set Data",
-    "Text",
-    "Totext",
-    "Write"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 60,
-  "external_integrations_count": 14
+  }
 }

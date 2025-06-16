@@ -1,7 +1,26 @@
 {
   "id": "1187",
-  "filename": "1187_rss_feed_updates_to_image_extraction",
+  "title": "Automate RSS feed updates every 5 minutes with image extraction",
   "description": "Fetches new articles from The Verge RSS feed every 5 minutes, extracts images, and filters relevant data for further processing.",
+  "filename": "1187_rss_feed_updates_to_image_extraction",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Function",
+    "HTML Extract",
+    "RSS Read"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": 8,
     "name": "Get only new RSS with Photo",
@@ -169,29 +188,5 @@
         ]
       }
     }
-  },
-  "title": "Automate RSS feed updates every 5 minutes with image extraction",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Function",
-    "HTML Extract",
-    "RSS Read"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

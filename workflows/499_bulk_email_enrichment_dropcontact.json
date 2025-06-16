@@ -1,7 +1,36 @@
 {
   "id": "499",
-  "filename": "499_bulk_email_enrichment_dropcontact",
+  "title": "Automate bulk email enrichment requests with Dropcontact",
   "description": "Triggers a scheduled query to gather profiles, sends bulk enrichment requests to Dropcontact, and updates the database with enriched data.",
+  "filename": "499_bulk_email_enrichment_dropcontact",
+  "services": [
+    "Aggregate",
+    "Code",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Postgres",
+    "Schedule",
+    "Slack",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Executequery",
+    "Update"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "a2435d996b378e3a6fdef0468d70285e3aa0fbd0004de817bfc80e80afee4e7b"
@@ -523,39 +552,5 @@
         ]
       }
     }
-  },
-  "title": "Automate bulk email enrichment requests with Dropcontact",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Postgres",
-    "Schedule",
-    "Slack",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Executequery",
-    "Update"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 9
+  }
 }

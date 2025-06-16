@@ -1,7 +1,48 @@
 {
   "id": "669",
-  "filename": "669_api_documentation_research_extraction",
+  "title": "Automate API Documentation Research and Extraction",
   "description": "Triggers a search for API documentation, scrapes relevant web pages, extracts API operations, and stores results in Google Sheets for easy access.",
+  "filename": "669_api_documentation_research_extraction",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Execution Data",
+    "Filter",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Remove Duplicates",
+    "Split Out",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Createfromtext",
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -3778,51 +3819,5 @@
         ]
       }
     }
-  },
-  "title": "Automate API Documentation Research and Extraction",
-  "nodes_count": 88,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Execution Data",
-    "Filter",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Remove Duplicates",
-    "Split Out",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Createfromtext",
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 88,
-  "external_integrations_count": 17
+  }
 }

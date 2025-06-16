@@ -1,7 +1,33 @@
 {
   "id": "1479",
-  "filename": "1479_scrape_save_leads_to_airtable",
+  "title": "Scrape and Save Enriched Leads to Airtable",
   "description": "Triggers lead scraping on demand, filters out entries without emails, and saves enriched lead data to Airtable for streamlined sales follow-up.",
+  "filename": "1479_scrape_save_leads_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "EWIrJ8e9z7AijmTu",
     "meta": {
@@ -435,36 +461,5 @@
         ]
       }
     }
-  },
-  "title": "Scrape and Save Enriched Leads to Airtable",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 6
+  }
 }

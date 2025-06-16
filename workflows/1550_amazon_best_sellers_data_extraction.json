@@ -1,7 +1,26 @@
 {
   "id": "1550",
-  "filename": "1550_amazon_best_sellers_data_extraction",
+  "title": "Extract Amazon Best Seller Data Using Bright Data",
   "description": "Triggers on manual request to fetch and extract structured data of Amazon's best-selling electronics, streamlining product insights for analysis.",
+  "filename": "1550_amazon_best_sellers_data_extraction",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "H95uJY2gjSOsxRps",
     "meta": {
@@ -267,29 +286,5 @@
         ]
       }
     }
-  },
-  "title": "Extract Amazon Best Seller Data Using Bright Data",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 4
+  }
 }

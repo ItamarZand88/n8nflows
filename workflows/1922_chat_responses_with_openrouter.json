@@ -1,7 +1,23 @@
 {
   "id": "1922",
-  "filename": "1922_chat_responses_with_openrouter",
+  "title": "Automate chat responses using OpenRouter AI model",
   "description": "Triggers on new chat messages, processes input with an AI model, and maintains session memory for personalized interactions.",
+  "filename": "1922_chat_responses_with_openrouter",
+  "services": [
+    "Edit Fields (Set)",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "VhN3CX6QPBkX77pZ",
     "meta": {
@@ -215,26 +231,5 @@
         ]
       }
     }
-  },
-  "title": "Automate chat responses using OpenRouter AI model",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 2
+  }
 }

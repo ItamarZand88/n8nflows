@@ -1,7 +1,37 @@
 {
   "id": "1608",
-  "filename": "1608_ssl_monitoring_alerts",
+  "title": "Monitor SSL Certificates and Send Alerts via Email and Telegram",
   "description": "Automates weekly checks of SSL certificates from a Google Sheet, sending alerts for expiring or invalid certificates via Gmail and Telegram.",
+  "filename": "1608_ssl_monitoring_alerts",
+  "services": [
+    "Gmail",
+    "Google Sheets",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note",
+    "Switch",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Appendorupdate"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "JH0OhDnJCwPxBJZX",
     "meta": {
@@ -710,40 +740,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor SSL Certificates and Send Alerts via Email and Telegram",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Gmail",
-    "Google Sheets",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note",
-    "Switch",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Appendorupdate"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 7
+  }
 }

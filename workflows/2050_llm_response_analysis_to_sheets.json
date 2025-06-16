@@ -1,7 +1,35 @@
 {
   "id": "2050",
-  "filename": "2050_llm_response_analysis_to_sheets",
+  "title": "Analyze LLM Responses and Log Metrics to Google Sheets",
   "description": "Triggers on new chat messages, analyzes LLM responses for readability and metrics, and logs results to Google Sheets for easy tracking and review.",
+  "filename": "2050_llm_response_analysis_to_sheets",
+  "services": [
+    "Code",
+    "Date & Time",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Append",
+    "Gettimebetweendates",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "WulUYgcXvako9hBy",
     "meta": {
@@ -679,38 +707,5 @@
         ]
       }
     }
-  },
-  "title": "Analyze LLM Responses and Log Metrics to Google Sheets",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Date & Time",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Append",
-    "Gettimebetweendates",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 7
+  }
 }

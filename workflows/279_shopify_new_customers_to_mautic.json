@@ -1,7 +1,30 @@
 {
   "id": "279",
-  "filename": "279_shopify_new_customers_to_mautic",
+  "title": "Automate contact creation in Mautic for new Shopify customers",
   "description": "Triggers on new customer creation in Shopify and automatically adds their details to Mautic for streamlined marketing follow-up.",
+  "filename": "279_shopify_new_customers_to_mautic",
+  "services": [
+    "Mautic",
+    "Shopify",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Shopify Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Mautic API Key",
+    "Shopify API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "237600ca44303ce91fa31ee72babcdc8493f55ee2c0e8aa2b78b3b4ce6f70bd9"
@@ -80,33 +103,5 @@
         ]
       }
     }
-  },
-  "title": "Automate contact creation in Mautic for new Shopify customers",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "Mautic",
-    "Shopify",
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Shopify Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Mautic API Key",
-    "Shopify API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

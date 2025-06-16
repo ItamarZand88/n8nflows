@@ -1,7 +1,39 @@
 {
   "id": "1777",
-  "filename": "1777_lead_qualification_calls_twilio_sheets",
+  "title": "Automate lead qualification calls with Twilio and Google Sheets",
   "description": "Triggers when a new lead is added in Google Sheets, sends an SMS reminder, and schedules an automated call using RetellAI, updating records and sending summaries.",
+  "filename": "1777_lead_qualification_calls_twilio_sheets",
+  "services": [
+    "Filter",
+    "Gmail",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Twilio",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage call",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account",
+    "Twilio API Key"
+  ],
   "content": {
     "id": "QO4Mg23JvVfNCICy",
     "meta": {
@@ -651,42 +683,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead qualification calls with Twilio and Google Sheets",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Filter",
-    "Gmail",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Twilio",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage call",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account",
-    "Twilio API Key"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 8
+  }
 }

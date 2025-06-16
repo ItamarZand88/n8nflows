@@ -1,7 +1,43 @@
 {
   "id": "439",
-  "filename": "439_notion_tasks_to_linear_issues",
+  "title": "Automate issue creation in Linear from Notion tasks",
   "description": "Triggers on new form submissions, fetches tasks from Notion, and creates corresponding issues in Linear with relevant details and links.",
+  "filename": "439_notion_tasks_to_linear_issues",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "GraphQL",
+    "HTTP Request",
+    "If",
+    "Linear",
+    "Loop Over Items (Split in Batches)",
+    "Notion",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage block",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Linear API Key",
+    "Notion API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -797,46 +833,5 @@
         ]
       }
     }
-  },
-  "title": "Automate issue creation in Linear from Notion tasks",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "GraphQL",
-    "HTTP Request",
-    "If",
-    "Linear",
-    "Loop Over Items (Split in Batches)",
-    "Notion",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage block",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Linear API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 12
+  }
 }

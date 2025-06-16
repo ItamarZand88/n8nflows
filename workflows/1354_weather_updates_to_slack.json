@@ -1,7 +1,25 @@
 {
   "id": "1354",
-  "filename": "1354_weather_updates_to_slack",
+  "title": "Send weather updates to Slack based on location input",
   "description": "Automatically retrieves weather forecasts based on a location provided via a webhook and sends formatted updates to a specified Slack channel.",
+  "filename": "1354_weather_updates_to_slack",
+  "services": [
+    "HTTP Request",
+    "Slack",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Slack Account"
+  ],
   "content": {
     "id": "B6UHILmjPWa7ViQ4",
     "meta": {
@@ -227,28 +245,5 @@
         ]
       }
     }
-  },
-  "title": "Send weather updates to Slack based on location input",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "HTTP Request",
-    "Slack",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "Slack Account"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,30 @@
 {
   "id": "1348",
-  "filename": "1348_download_tiktok_videos_to_drive",
+  "title": "Download TikTok videos without watermark and save to Google Drive",
   "description": "Triggers on manual request to download a TikTok video without a watermark, extracts the video URL, and uploads it to Google Drive for easy access.",
+  "filename": "1348_download_tiktok_videos_to_drive",
+  "services": [
+    "Code",
+    "Google Drive",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Share"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "aVienX696oMCH1DR",
     "meta": {
@@ -306,33 +329,5 @@
         ]
       }
     }
-  },
-  "title": "Download TikTok videos without watermark and save to Google Drive",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Google Drive",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Share"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 5
+  }
 }

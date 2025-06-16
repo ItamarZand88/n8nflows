@@ -1,7 +1,35 @@
 {
   "id": "426",
-  "filename": "426_lead_verification_to_telegram",
+  "title": "Automate lead verification and notifications via Telegram",
   "description": "Captures form submissions for business emails, verifies their validity, scores leads, and sends notifications to Telegram for qualified leads.",
+  "filename": "426_lead_verification_to_telegram",
+  "services": [
+    "HTTP Request",
+    "Hunter",
+    "If",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Telegram",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Emailverifier",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -398,38 +426,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead verification and notifications via Telegram",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "HTTP Request",
-    "Hunter",
-    "If",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Telegram",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Emailverifier",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 7
+  }
 }

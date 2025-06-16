@@ -1,7 +1,28 @@
 {
   "id": "1637",
-  "filename": "1637_lead_qualification_followup_crm",
+  "title": "Automate Lead Qualification and Follow-up for CRM",
   "description": "Triggers on new CRM leads, fetches property data, scores leads, and creates follow-up tasks for high-value opportunities, enhancing sales efficiency.",
+  "filename": "1637_lead_qualification_followup_crm",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "If",
+    "Slack",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "0uon02fOzPkLcG6G",
     "meta": {
@@ -458,31 +479,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Lead Qualification and Follow-up for CRM",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "If",
-    "Slack",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 17,
-  "external_integrations_count": 6
+  }
 }

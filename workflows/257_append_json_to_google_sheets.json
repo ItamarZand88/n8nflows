@@ -1,7 +1,26 @@
 {
   "id": "257",
-  "filename": "257_append_json_to_google_sheets",
+  "title": "Append user data from JSON file to Google Sheets",
   "description": "Reads user data from a JSON file and appends it to a specified Google Sheets document for easy tracking and management.",
+  "filename": "257_append_json_to_google_sheets",
+  "services": [
+    "Convert to/from binary data",
+    "Google Sheets",
+    "Read Binary File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Append"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -79,29 +98,5 @@
         ]
       }
     }
-  },
-  "title": "Append user data from JSON file to Google Sheets",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Convert to/from binary data",
-    "Google Sheets",
-    "Read Binary File"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Append"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

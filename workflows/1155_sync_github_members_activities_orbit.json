@@ -1,7 +1,31 @@
 {
   "id": "1155",
-  "filename": "1155_sync_github_members_activities_orbit",
+  "title": "Sync GitHub members and activities with Orbit",
   "description": "Automatically retrieves GitHub member data and activities, syncing them to Orbit for streamlined team management and activity tracking.",
+  "filename": "1155_sync_github_members_activities_orbit",
+  "services": [
+    "Google Sheets",
+    "Merge",
+    "Orbit"
+  ],
+  "categories": [
+    "Analytics",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Getall",
+    "Lookup",
+    "Manage activity",
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Orbit API Key"
+  ],
   "content": {
     "name": "Moving metrics from Google Sheets to Orbit",
     "nodes": [
@@ -189,34 +213,5 @@
         ]
       }
     }
-  },
-  "title": "Sync GitHub members and activities with Orbit",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Analytics",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "Merge",
-    "Orbit"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Getall",
-    "Lookup",
-    "Manage activity",
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Orbit API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 3
+  }
 }

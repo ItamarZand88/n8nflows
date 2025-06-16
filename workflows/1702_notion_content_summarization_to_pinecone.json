@@ -1,7 +1,28 @@
 {
   "id": "1702",
-  "filename": "1702_notion_content_summarization_to_pinecone",
+  "title": "Automate content summarization and storage from Notion",
   "description": "Triggers on new Notion pages, retrieves text content, filters non-text, summarizes it, and stores embeddings in Pinecone for easy access.",
+  "filename": "1702_notion_content_summarization_to_pinecone",
+  "services": [
+    "Filter",
+    "Notion",
+    "Summarize"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Notion Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage block"
+  ],
+  "setup_requirements": [
+    "Notion API Key"
+  ],
   "content": {
     "id": "vOSQYz747gtzj1zF",
     "meta": {
@@ -320,31 +341,5 @@
         ]
       }
     }
-  },
-  "title": "Automate content summarization and storage from Notion",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Filter",
-    "Notion",
-    "Summarize"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Notion Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage block"
-  ],
-  "setup_requirements": [
-    "Notion API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 3
+  }
 }

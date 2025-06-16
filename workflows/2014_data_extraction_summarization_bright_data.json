@@ -1,7 +1,28 @@
 {
   "id": "2014",
-  "filename": "2014_data_extraction_summarization_bright_data",
+  "title": "Automate data extraction and summarization using Bright Data",
   "description": "Triggers a data extraction from Perplexity, processes it through Google Gemini for summarization, and sends results via webhook notification.",
+  "filename": "2014_data_extraction_summarization_bright_data",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "ZCAkUSpaxzoRPbse",
     "meta": {
@@ -567,31 +588,5 @@
         ]
       }
     }
-  },
-  "title": "Automate data extraction and summarization using Bright Data",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 17,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,27 @@
 {
   "id": "800",
-  "filename": "800_merge_pdfs_from_urls",
+  "title": "Merge multiple PDFs from URLs into a single file",
   "description": "Triggers a manual workflow to fetch PDF files from specified URLs, merges them, and saves the final document to disk for easy access.",
+  "filename": "800_merge_pdfs_from_urls",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "Manual",
+    "Read/Write Files from Disk",
+    "Split Out"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Write"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "b503899dfd9ae32bbf8e1f446a1f2c9b3c59f80c79b274c49b1606b7ae9579e1",
@@ -176,30 +196,5 @@
         ]
       }
     }
-  },
-  "title": "Merge multiple PDFs from URLs into a single file",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "Manual",
-    "Read/Write Files from Disk",
-    "Split Out"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Write"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

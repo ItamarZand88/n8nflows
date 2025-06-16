@@ -1,7 +1,33 @@
 {
   "id": "1856",
-  "filename": "1856_telegram_reminders_for_google_calendar",
+  "title": "Send Telegram reminders for upcoming Google Calendar events",
   "description": "Triggers every minute to check for upcoming Google Calendar events and sends friendly reminders via Telegram one hour before they start.",
+  "filename": "1856_telegram_reminders_for_google_calendar",
+  "services": [
+    "Google Calendar",
+    "Remove Duplicates",
+    "Schedule",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall",
+    "Removeitemsseeninpreviousexecutions"
+  ],
+  "setup_requirements": [
+    "Google Calendar Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "SvYHgLmzosuLAe4A",
     "meta": {
@@ -253,36 +279,5 @@
         ]
       }
     }
-  },
-  "title": "Send Telegram reminders for upcoming Google Calendar events",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Google Calendar",
-    "Remove Duplicates",
-    "Schedule",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall",
-    "Removeitemsseeninpreviousexecutions"
-  ],
-  "setup_requirements": [
-    "Google Calendar Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 5
+  }
 }

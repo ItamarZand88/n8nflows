@@ -1,7 +1,27 @@
 {
   "id": "545",
-  "filename": "545_gmail_attachments_to_drive",
+  "title": "Automate file uploads from Gmail to Google Drive",
   "description": "Monitors Gmail for new emails with attachments and automatically uploads those files to Google Drive for easy access and storage.",
+  "filename": "545_gmail_attachments_to_drive",
+  "services": [
+    "Function",
+    "Gmail",
+    "Google Drive"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "1a23006df50de49624f69e85993be557d137b6efe723a867a7d68a84e0b32704"
@@ -102,30 +122,5 @@
         ]
       }
     }
-  },
-  "title": "Automate file uploads from Gmail to Google Drive",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Function",
-    "Gmail",
-    "Google Drive"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

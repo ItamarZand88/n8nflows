@@ -1,7 +1,39 @@
 {
   "id": "2031",
-  "filename": "2031_youtube_video_statistics_storage",
+  "title": "Fetch and Store YouTube Video Statistics Automatically",
   "description": "Triggers on demand to retrieve and store YouTube video statistics for a specified channel, filtering out shorts and ensuring data is up-to-date.",
+  "filename": "2031_youtube_video_statistics_storage",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Postgres",
+    "Sticky Note",
+    "YouTube"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Executequery",
+    "Filter Data",
+    "Manage video",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "YouTube Account"
+  ],
   "content": {
     "id": "Zrd98BnbmN1Px9an",
     "meta": {
@@ -672,42 +704,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch and Store YouTube Video Statistics Automatically",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Postgres",
-    "Sticky Note",
-    "YouTube"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Executequery",
-    "Filter Data",
-    "Manage video",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "YouTube Account"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 10
+  }
 }

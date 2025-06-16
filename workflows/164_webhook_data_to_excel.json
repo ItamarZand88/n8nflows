@@ -1,7 +1,24 @@
 {
   "id": "164",
-  "filename": "164_webhook_data_to_excel",
+  "title": "Export data from webhook to Excel file",
   "description": "Receives data via a webhook, processes it into a structured list, and exports it as an Excel file for easy sharing and analysis.",
+  "filename": "164_webhook_data_to_excel",
+  "services": [
+    "Item Lists",
+    "Spreadsheet File",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Tofile"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -105,27 +122,5 @@
         ]
       }
     }
-  },
-  "title": "Export data from webhook to Excel file",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Item Lists",
-    "Spreadsheet File",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Tofile"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

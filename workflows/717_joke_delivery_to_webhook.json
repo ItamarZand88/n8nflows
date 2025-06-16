@@ -1,7 +1,29 @@
 {
   "id": "717",
-  "filename": "717_joke_delivery_to_webhook",
+  "title": "Automate Joke Delivery from External Process to Webhook",
   "description": "Triggers a workflow to fetch a random programming joke and deliver it via a webhook, allowing seamless integration with external systems.",
+  "filename": "717_joke_delivery_to_webhook",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Edit Fields (Set) Event",
+    "New HTTP Request Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "37c9b6d3ee04c3e15f526d799209783b3fa8da2950c0e8241dc8ad516d7eb4df"
@@ -556,32 +578,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Joke Delivery from External Process to Webhook",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Edit Fields (Set) Event",
-    "New HTTP Request Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 23,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,23 @@
 {
   "id": "967",
-  "filename": "967_paypal_billing_updates",
+  "title": "Receive notifications for activated PayPal billing plans",
   "description": "Monitors PayPal for activated billing plans and sends real-time updates, helping businesses stay informed about subscription changes.",
+  "filename": "967_paypal_billing_updates",
+  "services": [
+    "PayPal"
+  ],
+  "categories": [
+    "Finance & Accounting",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New PayPal Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "PayPal API Key"
+  ],
   "content": {
     "id": "46",
     "name": "Receive updates when a billing plan is activated in PayPal",
@@ -28,26 +44,5 @@
     "active": false,
     "settings": {},
     "connections": {}
-  },
-  "title": "Receive notifications for activated PayPal billing plans",
-  "nodes_count": 1,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Finance & Accounting",
-    "Sales"
-  ],
-  "services": [
-    "PayPal"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New PayPal Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "PayPal API Key"
-  ],
-  "workflow_complexity": 1,
-  "external_integrations_count": 1
+  }
 }

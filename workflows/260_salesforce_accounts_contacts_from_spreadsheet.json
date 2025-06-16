@@ -1,7 +1,43 @@
 {
   "id": "260",
-  "filename": "260_salesforce_accounts_contacts_from_spreadsheet",
+  "title": "Automate Salesforce account and contact creation from spreadsheet",
   "description": "Triggers on manual execution to download a spreadsheet, searches Salesforce for existing accounts, and creates new accounts and contacts as needed.",
+  "filename": "260_salesforce_accounts_contacts_from_spreadsheet",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Item Lists",
+    "Manual",
+    "Merge",
+    "Rename Keys",
+    "Salesforce",
+    "Spreadsheet File",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage account",
+    "Manage contact",
+    "Manage search",
+    "Removeduplicates",
+    "Set Data",
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Salesforce Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -417,46 +453,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Salesforce account and contact creation from spreadsheet",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Item Lists",
-    "Manual",
-    "Merge",
-    "Rename Keys",
-    "Salesforce",
-    "Spreadsheet File",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage account",
-    "Manage contact",
-    "Manage search",
-    "Removeduplicates",
-    "Set Data",
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Salesforce Account"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 10
+  }
 }

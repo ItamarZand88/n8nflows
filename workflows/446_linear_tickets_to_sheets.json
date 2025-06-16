@@ -1,7 +1,36 @@
 {
   "id": "446",
-  "filename": "446_linear_tickets_to_sheets",
+  "title": "Automate ticket retrieval from Linear to Google Sheets",
   "description": "Triggers daily at 06:00 to fetch all tickets from the Adore team in Linear and logs them into Google Sheets for easy tracking and management.",
+  "filename": "446_linear_tickets_to_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "GraphQL",
+    "If",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -415,39 +444,5 @@
         ]
       }
     }
-  },
-  "title": "Automate ticket retrieval from Linear to Google Sheets",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "GraphQL",
-    "If",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 8
+  }
 }

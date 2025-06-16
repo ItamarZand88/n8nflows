@@ -1,7 +1,45 @@
 {
   "id": "1438",
-  "filename": "1438_google_sheets_to_mysql_sync",
+  "title": "Automate Google Sheets to MySQL Data Sync and Document Updates",
   "description": "Triggers on Google Drive document updates, syncs data from Google Sheets to MySQL, and updates Google Docs for seamless information management.",
+  "filename": "1438_google_sheets_to_mysql_sync",
+  "services": [
+    "Code",
+    "Cron",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Google Docs",
+    "Google Drive",
+    "Google Sheets",
+    "If",
+    "MySQL",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Miscellaneous",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Deletetable",
+    "Download",
+    "Executequery",
+    "Filter Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Docs API Key",
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "dLKIZxM6c0lRVbjb",
     "meta": {
@@ -1434,48 +1472,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Sheets to MySQL Data Sync and Document Updates",
-  "nodes_count": 53,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Miscellaneous",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Cron",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Google Docs",
-    "Google Drive",
-    "Google Sheets",
-    "If",
-    "MySQL",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Deletetable",
-    "Download",
-    "Executequery",
-    "Filter Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Docs API Key",
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 53,
-  "external_integrations_count": 11
+  }
 }

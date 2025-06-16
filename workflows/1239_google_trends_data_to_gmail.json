@@ -1,7 +1,34 @@
 {
   "id": "1239",
-  "filename": "1239_google_trends_data_to_gmail",
+  "title": "Extract and Summarize Google Trends Data to Gmail",
   "description": "Triggers on demand to extract Google Trends data, summarizes it, and sends the summary via Gmail for easy access and analysis.",
+  "filename": "1239_google_trends_data_to_gmail",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "Gmail",
+    "HTTP Request",
+    "Manual",
+    "Read/Write Files from Disk",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Set Data",
+    "Write"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "id": "9Or3kzIEI2tskRyR",
     "meta": {
@@ -491,37 +518,5 @@
         ]
       }
     }
-  },
-  "title": "Extract and Summarize Google Trends Data to Gmail",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "Gmail",
-    "HTTP Request",
-    "Manual",
-    "Read/Write Files from Disk",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Set Data",
-    "Write"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 7
+  }
 }

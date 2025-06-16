@@ -1,7 +1,30 @@
 {
   "id": "506",
-  "filename": "506_verify_emails_create_leads_suitecrm_brevo",
+  "title": "Verify Emails and Create Leads in SuiteCRM and Brevo",
   "description": "Automates email verification upon form submission, creates leads in SuiteCRM, and notifies via NextCloud about invalid emails or low credits.",
+  "filename": "506_verify_emails_create_leads_suitecrm_brevo",
+  "services": [
+    "Brevo",
+    "Execute Workflow",
+    "HTTP Request",
+    "If",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage contact"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "2490ba08907e49e216e6667acbe7f8867d372c76c9bd95e87bb8d210bd552e80"
@@ -571,33 +594,5 @@
         ]
       }
     }
-  },
-  "title": "Verify Emails and Create Leads in SuiteCRM and Brevo",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Brevo",
-    "Execute Workflow",
-    "HTTP Request",
-    "If",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage contact"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 22,
-  "external_integrations_count": 5
+  }
 }

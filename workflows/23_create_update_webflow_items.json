@@ -1,7 +1,27 @@
 {
   "id": "23",
-  "filename": "23_create_update_webflow_items",
+  "title": "Create and Update Webflow Items Automatically",
   "description": "Triggers on manual execution to create a new item in Webflow and updates it with specific details, streamlining content management.",
+  "filename": "23_create_update_webflow_items",
+  "services": [
+    "Manual",
+    "Webflow"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Webflow API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -146,30 +166,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Update Webflow Items Automatically",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Manual",
-    "Webflow"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Webflow API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

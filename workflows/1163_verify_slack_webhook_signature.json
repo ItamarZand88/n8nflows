@@ -1,7 +1,32 @@
 {
   "id": "1163",
-  "filename": "1163_verify_slack_webhook_signature",
+  "title": "Verify Slack Webhook Signature for Secure Messaging",
   "description": "Validates incoming Slack Webhook messages by verifying their signatures, ensuring secure communication and preventing unauthorized access.",
+  "filename": "1163_verify_slack_webhook_signature",
+  "services": [
+    "Code",
+    "Crypto",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "If",
+    "Merge",
+    "Sticky Note",
+    "Stop and Error"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "84dT8cFL0FV8ZGPx",
     "meta": {
@@ -273,35 +298,5 @@
         ]
       }
     }
-  },
-  "title": "Verify Slack Webhook Signature for Secure Messaging",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Crypto",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "If",
-    "Merge",
-    "Sticky Note",
-    "Stop and Error"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 8
+  }
 }

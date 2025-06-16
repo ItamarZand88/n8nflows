@@ -1,7 +1,45 @@
 {
   "id": "1980",
-  "filename": "1980_gmail_invoices_to_sheets",
+  "title": "Automate invoice processing from Gmail to Google Sheets",
   "description": "Triggers on new unread Gmail invoices, extracts data, uploads PDFs to Google Drive, and appends details to a Google Sheets reconciliation sheet.",
+  "filename": "1980_gmail_invoices_to_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Gmail",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Append",
+    "Download",
+    "Filter Data",
+    "Markasread",
+    "Move",
+    "Pdf",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "Google Sheets Account",
+    "HTTP Request Account"
+  ],
   "content": {
     "id": "XnGZZfT5u0Cw1X3p",
     "meta": {
@@ -623,48 +661,5 @@
         ]
       }
     }
-  },
-  "title": "Automate invoice processing from Gmail to Google Sheets",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Gmail",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Append",
-    "Download",
-    "Filter Data",
-    "Markasread",
-    "Move",
-    "Pdf",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "Google Sheets Account",
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 8
+  }
 }

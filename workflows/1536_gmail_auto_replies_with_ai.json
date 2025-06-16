@@ -1,7 +1,28 @@
 {
   "id": "1536",
-  "filename": "1536_gmail_auto_replies_with_ai",
+  "title": "Automate email replies in Gmail using AI",
   "description": "Monitors Gmail for incoming emails that need a response and generates draft replies using AI, saving time on email management.",
+  "filename": "1536_gmail_auto_replies_with_ai",
+  "services": [
+    "Gmail",
+    "If",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage draft"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "id": "aOQANirVMuWrH0ZD",
     "meta": {
@@ -342,31 +363,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email replies in Gmail using AI",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Gmail",
-    "If",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage draft"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 3
+  }
 }

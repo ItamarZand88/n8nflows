@@ -1,7 +1,33 @@
 {
   "id": "494",
-  "filename": "494_address_verification_for_keap_contacts",
+  "title": "Automate address verification for new Keap contacts",
   "description": "Triggers on new contacts in Keap, verifies their mailing address, and updates their status based on deliverability for better data accuracy.",
+  "filename": "494_address_verification_for_keap_contacts",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Keap",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Webhook Event"
+  ],
+  "actions": [
+    "Manage contactTag",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Keap Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "041bccf206a3546a759ec4c0a3bf1256e62051945bb270c48f91f3acb13dc080"
@@ -309,36 +335,5 @@
         ]
       }
     }
-  },
-  "title": "Automate address verification for new Keap contacts",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Keap",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Webhook Event"
-  ],
-  "actions": [
-    "Manage contactTag",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Keap Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 6
+  }
 }

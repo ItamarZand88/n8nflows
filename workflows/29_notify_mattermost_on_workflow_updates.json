@@ -1,7 +1,29 @@
 {
   "id": "29",
-  "filename": "29_notify_mattermost_on_workflow_updates",
+  "title": "Notify Mattermost on Workflow Updates",
   "description": "Triggers a notification in Mattermost whenever a workflow is updated, ensuring team members stay informed about changes and improvements.",
+  "filename": "29_notify_mattermost_on_workflow_updates",
+  "services": [
+    "Edit Fields (Set)",
+    "Mattermost",
+    "Webhook",
+    "Workflow"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Workflow Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Mattermost API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -96,32 +118,5 @@
         ]
       }
     }
-  },
-  "title": "Notify Mattermost on Workflow Updates",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Mattermost",
-    "Webhook",
-    "Workflow"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Workflow Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Mattermost API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

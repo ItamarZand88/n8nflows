@@ -1,7 +1,38 @@
 {
   "id": "1337",
-  "filename": "1337_cybersecurity_updates_to_zendesk",
+  "title": "Automate cybersecurity incident response updates in Zendesk",
   "description": "Triggers on new chat messages, processes SIEM alerts, and updates Zendesk tickets with actionable cybersecurity insights and remediation steps.",
+  "filename": "1337_cybersecurity_updates_to_zendesk",
+  "services": [
+    "Extract from File",
+    "Google Drive",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "No Operation, do nothing",
+    "Split Out",
+    "Sticky Note",
+    "Zendesk"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download",
+    "Fromjson",
+    "Getall",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Zendesk API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7",
@@ -744,41 +775,5 @@
         ]
       }
     }
-  },
-  "title": "Automate cybersecurity incident response updates in Zendesk",
-  "nodes_count": 26,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Extract from File",
-    "Google Drive",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "No Operation, do nothing",
-    "Split Out",
-    "Sticky Note",
-    "Zendesk"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download",
-    "Fromjson",
-    "Getall",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Zendesk API Key"
-  ],
-  "workflow_complexity": 26,
-  "external_integrations_count": 8
+  }
 }

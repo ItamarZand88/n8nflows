@@ -1,7 +1,42 @@
 {
   "id": "88",
-  "filename": "88_weekly_shopify_order_summary_to_slack",
+  "title": "Automate weekly Shopify order summaries to Slack and Google Sheets",
   "description": "Triggers weekly to gather Shopify order data, calculates totals, and sends a summary to Slack while logging the data in Google Sheets.",
+  "filename": "88_weekly_shopify_order_summary_to_slack",
+  "services": [
+    "Cron",
+    "Date & Time",
+    "Edit Fields (Set)",
+    "Function",
+    "Google Sheets",
+    "If",
+    "No Operation, do nothing",
+    "Shopify",
+    "Slack"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Append",
+    "Execute Function",
+    "Filter Data",
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Shopify API Key",
+    "Slack API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -232,45 +267,5 @@
         ]
       }
     }
-  },
-  "title": "Automate weekly Shopify order summaries to Slack and Google Sheets",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity",
-    "Sales"
-  ],
-  "services": [
-    "Cron",
-    "Date & Time",
-    "Edit Fields (Set)",
-    "Function",
-    "Google Sheets",
-    "If",
-    "No Operation, do nothing",
-    "Shopify",
-    "Slack"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Append",
-    "Execute Function",
-    "Filter Data",
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Shopify API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 9
+  }
 }

@@ -1,7 +1,47 @@
 {
   "id": "87",
-  "filename": "87_shopify_orders_to_zoho_trello",
+  "title": "Automate order processing from Shopify to Zoho and Trello",
   "description": "Triggers on new Shopify orders, updates Zoho CRM contacts, creates Trello cards, and sends thank-you emails, enhancing customer engagement and order management.",
+  "filename": "87_shopify_orders_to_zoho_trello",
+  "services": [
+    "Edit Fields (Set)",
+    "Gmail",
+    "Harvest",
+    "If",
+    "Mailchimp",
+    "Shopify",
+    "Trello",
+    "Zoho CRM"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing",
+    "Productivity",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Shopify Event"
+  ],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Manage contact",
+    "Manage invoice",
+    "Manage memberTag",
+    "Manage message",
+    "Set Data",
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Harvest API Key",
+    "Mailchimp API Key",
+    "Shopify API Key",
+    "Trello API Key",
+    "Zoho CRM Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -311,50 +351,5 @@
         ]
       }
     }
-  },
-  "title": "Automate order processing from Shopify to Zoho and Trello",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Marketing",
-    "Productivity",
-    "Sales"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Gmail",
-    "Harvest",
-    "If",
-    "Mailchimp",
-    "Shopify",
-    "Trello",
-    "Zoho CRM"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Shopify Event"
-  ],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Manage contact",
-    "Manage invoice",
-    "Manage memberTag",
-    "Manage message",
-    "Set Data",
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Harvest API Key",
-    "Mailchimp API Key",
-    "Shopify API Key",
-    "Trello API Key",
-    "Zoho CRM Account"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 8
+  }
 }

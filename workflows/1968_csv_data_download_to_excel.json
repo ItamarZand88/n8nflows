@@ -1,7 +1,27 @@
 {
   "id": "1968",
-  "filename": "1968_csv_data_download_to_excel",
+  "title": "Automate CSV Data Download and Conversion to Excel",
   "description": "Triggers a download of CSV data from a web source, imports it, and converts it to an Excel (.xlsx) file for easy access and analysis.",
+  "filename": "1968_csv_data_download_to_excel",
+  "services": [
+    "HTTP Request",
+    "Manual",
+    "Spreadsheet File",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Tofile"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "xcl8D1sukz9Rak69",
     "meta": {
@@ -153,30 +173,5 @@
         ]
       }
     }
-  },
-  "title": "Automate CSV Data Download and Conversion to Excel",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Manual",
-    "Spreadsheet File",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Tofile"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

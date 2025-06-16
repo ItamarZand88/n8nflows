@@ -1,7 +1,26 @@
 {
   "id": "1130",
-  "filename": "1130_extract_receipt_data_mindee",
+  "title": "Extract receipt data using Mindee API",
   "description": "Triggers a manual execution to download an image of a receipt and extracts relevant information using the Mindee API for easy processing.",
+  "filename": "1130_extract_receipt_data_mindee",
+  "services": [
+    "HTTP Request",
+    "Manual",
+    "Mindee"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mindee API Key"
+  ],
   "content": {
     "id": "77",
     "name": "Extract information from an image of a receipt",
@@ -70,29 +89,5 @@
         ]
       }
     }
-  },
-  "title": "Extract receipt data using Mindee API",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "HTTP Request",
-    "Manual",
-    "Mindee"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Mindee API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,31 @@
 {
   "id": "1380",
-  "filename": "1380_daily_activation_deactivation_n8n_workflow",
+  "title": "Automate daily activation and deactivation of n8n workflows",
   "description": "Automatically activates a specified n8n workflow at 08:00 and deactivates it at 20:00 daily, ensuring efficient workflow management.",
+  "filename": "1380_daily_activation_deactivation_n8n_workflow",
+  "services": [
+    "Edit Fields (Set)",
+    "Merge",
+    "Schedule",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Activate",
+    "Deactivate",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "id": "cGqPi5Uy2u1ShmoO",
     "meta": {
@@ -335,34 +359,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily activation and deactivation of n8n workflows",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Merge",
-    "Schedule",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Activate",
-    "Deactivate",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 5
+  }
 }

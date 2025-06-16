@@ -1,7 +1,30 @@
 {
   "id": "1663",
-  "filename": "1663_generate_images_and_videos_midjourney_kling",
+  "title": "Generate and Combine Images into Videos Using Midjourney and Kling",
   "description": "Triggers a process to create three images using Midjourney based on user-defined parameters, then generates corresponding videos and combines them into a final video output.",
+  "filename": "1663_generate_images_and_videos_midjourney_kling",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "MfKB97VVSuXMo3Fm",
     "meta": {
@@ -1860,33 +1883,5 @@
         ]
       }
     }
-  },
-  "title": "Generate and Combine Images into Videos Using Midjourney and Kling",
-  "nodes_count": 51,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 51,
-  "external_integrations_count": 7
+  }
 }

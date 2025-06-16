@@ -1,7 +1,40 @@
 {
   "id": "831",
-  "filename": "831_appointment_management_voice_ai_google_calendar",
+  "title": "Automate Appointment Management with Voice AI and Google Calendar",
   "description": "Streamlines appointment scheduling by checking availability, booking, rescheduling, or canceling appointments using a voice AI assistant integrated with Google Calendar and Airtable.",
+  "filename": "831_appointment_management_voice_ai_google_calendar",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "Google Calendar",
+    "If",
+    "Item Lists",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Concatenateitems",
+    "Create",
+    "Delete",
+    "Filter Data",
+    "Getall",
+    "Manage calendar",
+    "Search",
+    "Set Data",
+    "Sort",
+    "Update",
+    "Upsert"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "1954c8c806bedb8f0628725b26b786028ade16c78a82bc25deb9dd961e036832"
@@ -3504,43 +3537,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Appointment Management with Voice AI and Google Calendar",
-  "nodes_count": 92,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "Google Calendar",
-    "If",
-    "Item Lists",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Concatenateitems",
-    "Create",
-    "Delete",
-    "Filter Data",
-    "Getall",
-    "Manage calendar",
-    "Search",
-    "Set Data",
-    "Sort",
-    "Update",
-    "Upsert"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 92,
-  "external_integrations_count": 8
+  }
 }

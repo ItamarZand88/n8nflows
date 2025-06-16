@@ -1,7 +1,35 @@
 {
   "id": "846",
-  "filename": "846_linkedin_posts_from_ghost_blog",
+  "title": "Automate LinkedIn Post Creation from Ghost Blog Articles",
   "description": "Triggers on demand to extract blog posts from Ghost, cleans content, and generates LinkedIn promotional messages using AI, saving time on social media marketing.",
+  "filename": "846_linkedin_posts_from_ghost_blog",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Ghost",
+    "Google Sheets",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "=",
@@ -478,38 +506,5 @@
         ]
       }
     }
-  },
-  "title": "Automate LinkedIn Post Creation from Ghost Blog Articles",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Ghost",
-    "Google Sheets",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 8
+  }
 }

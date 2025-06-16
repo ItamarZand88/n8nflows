@@ -1,7 +1,31 @@
 {
   "id": "245",
-  "filename": "245_sync_mailchimp_contacts_to_hubspot",
+  "title": "Sync Mailchimp contacts with HubSpot daily at 07:00",
   "description": "Automatically retrieves updated Mailchimp members every day at 07:00 and syncs them as contacts in HubSpot, ensuring your sales team has the latest information.",
+  "filename": "245_sync_mailchimp_contacts_to_hubspot",
+  "services": [
+    "Cron",
+    "Function Item",
+    "HubSpot",
+    "Mailchimp"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Getall",
+    "Manage contact"
+  ],
+  "setup_requirements": [
+    "Mailchimp API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "237600ca44303ce91fa31ee72babcdc8493f55ee2c0e8aa2b78b3b4ce6f70bd9"
@@ -148,34 +172,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Mailchimp contacts with HubSpot daily at 07:00",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "Cron",
-    "Function Item",
-    "HubSpot",
-    "Mailchimp"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Getall",
-    "Manage contact"
-  ],
-  "setup_requirements": [
-    "Mailchimp API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

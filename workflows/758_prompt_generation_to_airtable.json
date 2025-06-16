@@ -1,7 +1,26 @@
 {
   "id": "758",
-  "filename": "758_prompt_generation_to_airtable",
+  "title": "Automate prompt generation and categorization in Airtable",
   "description": "Triggers on chat messages, generates structured prompts, categorizes them, and saves to Airtable for easy management.",
+  "filename": "758_prompt_generation_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)"
+  ],
+  "categories": [
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Create",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "db80165df40cb07c0377167c050b3f9ab0b0fb04f0e8cae0dc53f5a8527103ca",
@@ -435,29 +454,5 @@
         ]
       }
     }
-  },
-  "title": "Automate prompt generation and categorization in Airtable",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Data & Storage"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Create",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 2
+  }
 }

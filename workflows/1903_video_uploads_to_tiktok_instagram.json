@@ -1,7 +1,40 @@
 {
   "id": "1903",
-  "filename": "1903_video_uploads_to_tiktok_instagram",
+  "title": "Automate video uploads to TikTok and Instagram from Google Drive",
   "description": "Triggers on new video files in Google Drive, transcribes audio, generates descriptions, and uploads to TikTok and Instagram automatically.",
+  "filename": "1903_video_uploads_to_tiktok_instagram",
+  "services": [
+    "Error",
+    "Google Drive",
+    "HTTP Request",
+    "If",
+    "Read Binary File",
+    "Sticky Note",
+    "Telegram",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Error Event",
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Download",
+    "Filter Data",
+    "Manage audio",
+    "Transcribe"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "cZPEH5aMMZNy61xs",
     "meta": {
@@ -475,43 +508,5 @@
         ]
       }
     }
-  },
-  "title": "Automate video uploads to TikTok and Instagram from Google Drive",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Error",
-    "Google Drive",
-    "HTTP Request",
-    "If",
-    "Read Binary File",
-    "Sticky Note",
-    "Telegram",
-    "Write Binary File"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Error Event",
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Download",
-    "Filter Data",
-    "Manage audio",
-    "Transcribe"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 8
+  }
 }

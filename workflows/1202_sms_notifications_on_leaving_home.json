@@ -1,7 +1,26 @@
 {
   "id": "1202",
-  "filename": "1202_sms_notifications_on_leaving_home",
+  "title": "Send SMS notifications when leaving home using Pushcut and Twilio",
   "description": "Automatically sends an SMS via Twilio whenever you trigger a 'Leaving Home' event in Pushcut, keeping your contacts informed effortlessly.",
+  "filename": "1202_sms_notifications_on_leaving_home",
+  "services": [
+    "Pushcut",
+    "Twilio"
+  ],
+  "categories": [
+    "Communication",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Pushcut Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Pushcut API Key",
+    "Twilio API Key"
+  ],
   "content": {
     "id": "92",
     "name": "Send an SMS to a number whenever you go out",
@@ -55,29 +74,5 @@
         ]
       }
     }
-  },
-  "title": "Send SMS notifications when leaving home using Pushcut and Twilio",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Pushcut",
-    "Twilio"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Pushcut Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Pushcut API Key",
-    "Twilio API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

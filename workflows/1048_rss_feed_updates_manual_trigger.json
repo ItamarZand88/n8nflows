@@ -1,7 +1,21 @@
 {
   "id": "1048",
-  "filename": "1048_rss_feed_updates_manual_trigger",
+  "title": "Read RSS Feed Updates on Manual Trigger",
   "description": "Manually triggers the reading of an RSS feed to fetch updates from a specified URL, allowing users to stay informed about new content.",
+  "filename": "1048_rss_feed_updates_manual_trigger",
+  "services": [
+    "Manual",
+    "RSS Read"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -40,24 +54,5 @@
         ]
       }
     }
-  },
-  "title": "Read RSS Feed Updates on Manual Trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Manual",
-    "RSS Read"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

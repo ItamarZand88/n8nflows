@@ -1,7 +1,28 @@
 {
   "id": "2023",
-  "filename": "2023_lead_capture_forms_ai_question_filtering",
+  "title": "Automate Lead Capture Forms with AI-Driven Question Filtering",
   "description": "Captures user information through a form, analyzes responses with AI, and dynamically generates follow-up questions based on previous answers to optimize data collection.",
+  "filename": "2023_lead_capture_forms_ai_question_filtering",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Filter",
+    "Split Out",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "ZkIH2ygj2BNSfMOh",
     "meta": {
@@ -507,31 +528,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Lead Capture Forms with AI-Driven Question Filtering",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Filter",
-    "Split Out",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 19,
-  "external_integrations_count": 6
+  }
 }

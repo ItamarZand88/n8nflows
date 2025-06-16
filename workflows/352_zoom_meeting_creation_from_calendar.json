@@ -1,7 +1,33 @@
 {
   "id": "352",
-  "filename": "352_zoom_meeting_creation_from_calendar",
+  "title": "Automate Zoom meeting creation from Google Calendar events",
   "description": "Triggers daily to check Google Calendar for upcoming events, creates Zoom meetings for valid entries, and ensures no conflicts with existing meetings.",
+  "filename": "352_zoom_meeting_creation_from_calendar",
+  "services": [
+    "Cron",
+    "Date & Time",
+    "Google Calendar",
+    "If",
+    "Manual",
+    "Zoom"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Google Calendar Account",
+    "Zoom Account"
+  ],
   "content": {
     "id": 1,
     "name": "Google Cal to Zoom meeting",
@@ -197,36 +223,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Zoom meeting creation from Google Calendar events",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Cron",
-    "Date & Time",
-    "Google Calendar",
-    "If",
-    "Manual",
-    "Zoom"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall"
-  ],
-  "setup_requirements": [
-    "Google Calendar Account",
-    "Zoom Account"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 6
+  }
 }

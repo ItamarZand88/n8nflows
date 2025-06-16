@@ -1,7 +1,40 @@
 {
   "id": "1560",
-  "filename": "1560_video_creation_to_social_platforms",
+  "title": "Automate Video Creation and Distribution to Multiple Platforms",
   "description": "Triggers from a Telegram message to create a video using AI, then automatically uploads and shares it across Instagram, YouTube, TikTok, and more.",
+  "filename": "1560_video_creation_to_social_platforms",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Manage file",
+    "Sendvideo",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "hiCTcf6srJl3Xsxh",
     "meta": {
@@ -1407,43 +1440,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Video Creation and Distribution to Multiple Platforms",
-  "nodes_count": 42,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Manage file",
-    "Sendvideo",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 42,
-  "external_integrations_count": 7
+  }
 }

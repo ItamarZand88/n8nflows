@@ -1,7 +1,24 @@
 {
   "id": "748",
-  "filename": "748_add_task_to_google_tasks",
+  "title": "Add tasks to Google Tasks with a manual trigger",
   "description": "Allows users to manually add a task to Google Tasks, streamlining task management and improving productivity.",
+  "filename": "748_add_task_to_google_tasks",
+  "services": [
+    "Google Tasks",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Google Tasks Account"
+  ],
   "content": {
     "id": "2",
     "name": "Add task to tasklist",
@@ -48,27 +65,5 @@
         ]
       }
     }
-  },
-  "title": "Add tasks to Google Tasks with a manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Google Tasks",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Google Tasks Account"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

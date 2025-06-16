@@ -1,7 +1,29 @@
 {
   "id": "387",
-  "filename": "387_monitor_trc20_wallet_transactions",
+  "title": "Monitor TRC20 Wallet Transactions and Aggregate Data",
   "description": "Automatically checks your TRC20 wallet every 15 minutes for new transactions, filters relevant transfers, and aggregates the results for easy tracking.",
+  "filename": "387_monitor_trc20_wallet_transactions",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "dbd43d88d26a9e30d8aadc002c9e77f1400c683dd34efe3778d43d27250dde50"
@@ -377,32 +399,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor TRC20 Wallet Transactions and Aggregate Data",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 7
+  }
 }

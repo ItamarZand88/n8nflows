@@ -1,7 +1,44 @@
 {
   "id": "1815",
-  "filename": "1815_bamboohr_new_employees_to_slack",
+  "title": "Automate Slack notifications for new BambooHR employees",
   "description": "Triggers when new employees are added in BambooHR, creating a webhook to capture data and sending a welcome message to a Slack channel.",
+  "filename": "1815_bamboohr_new_employees_to_slack",
+  "services": [
+    "Aggregate",
+    "DebugHelper",
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "PostBin",
+    "Rename Keys",
+    "Slack",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Manage request",
+    "Removefirst",
+    "Send",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Slack API Key"
+  ],
   "content": {
     "id": "sB6dC0GZ7zZHuMGF",
     "meta": {
@@ -1446,47 +1483,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack notifications for new BambooHR employees",
-  "nodes_count": 58,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "DebugHelper",
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "PostBin",
-    "Rename Keys",
-    "Slack",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Manage request",
-    "Removefirst",
-    "Send",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Slack API Key"
-  ],
-  "workflow_complexity": 58,
-  "external_integrations_count": 13
+  }
 }

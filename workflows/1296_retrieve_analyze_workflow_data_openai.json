@@ -1,7 +1,24 @@
 {
   "id": "1296",
-  "filename": "1296_retrieve_analyze_workflow_data_openai",
+  "title": "Retrieve and Analyze Workflow Data with OpenAI",
   "description": "Triggers a data retrieval process for a specified workflow, analyzes the data using OpenAI's chat model, and provides insights based on user queries.",
+  "filename": "1296_retrieve_analyze_workflow_data_openai",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "mjCQV12PbF6fw8hR",
     "meta": {
@@ -175,27 +192,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve and Analyze Workflow Data with OpenAI",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 3
+  }
 }

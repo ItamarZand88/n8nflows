@@ -1,7 +1,36 @@
 {
   "id": "1964",
-  "filename": "1964_time_tracking_to_google_sheets",
+  "title": "Automate Time Tracking with Google Sheets and Webhooks",
   "description": "Automatically logs check-in and check-out times to Google Sheets using webhooks triggered by location-based shortcuts on your iPhone.",
+  "filename": "1964_time_tracking_to_google_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Google Sheets",
+    "If",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Manage fileFolder",
+    "Manage spreadsheet",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "x2kgOnBLtqAjqUVS",
     "meta": {
@@ -344,39 +373,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Time Tracking with Google Sheets and Webhooks",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Google Sheets",
-    "If",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Manage fileFolder",
-    "Manage spreadsheet",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

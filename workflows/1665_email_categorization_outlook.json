@@ -1,7 +1,46 @@
 {
   "id": "1665",
-  "filename": "1665_email_categorization_outlook",
+  "title": "Automate email categorization and prioritization in Outlook",
   "description": "Triggers every 15 minutes to analyze and categorize unread Outlook emails using AI, updating their importance and categories based on predefined rules.",
+  "filename": "1665_email_categorization_outlook",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Markdown",
+    "Merge",
+    "Microsoft Outlook",
+    "Monday.com",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage boardItem",
+    "Search",
+    "Set Data",
+    "Update",
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Microsoft Outlook Account",
+    "Monday.com API Key"
+  ],
   "content": {
     "id": "reQhibpNwU63Y8sn",
     "meta": {
@@ -975,49 +1014,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email categorization and prioritization in Outlook",
-  "nodes_count": 28,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Markdown",
-    "Merge",
-    "Microsoft Outlook",
-    "Monday.com",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage boardItem",
-    "Search",
-    "Set Data",
-    "Update",
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Microsoft Outlook Account",
-    "Monday.com API Key"
-  ],
-  "workflow_complexity": 28,
-  "external_integrations_count": 11
+  }
 }

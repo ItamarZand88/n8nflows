@@ -1,7 +1,28 @@
 {
   "id": "730",
-  "filename": "730_monitor_vps_usage_alerts",
+  "title": "Monitor VPS resource usage and send alerts via email",
   "description": "Checks CPU, RAM, and Disk usage every 15 minutes, and sends an email alert if any resource exceeds 80%, ensuring optimal server performance.",
+  "filename": "730_monitor_vps_usage_alerts",
+  "services": [
+    "If",
+    "Merge",
+    "SSH",
+    "Schedule",
+    "Send Email",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -279,31 +300,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor VPS resource usage and send alerts via email",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "If",
-    "Merge",
-    "SSH",
-    "Schedule",
-    "Send Email",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 6
+  }
 }

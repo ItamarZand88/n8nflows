@@ -1,7 +1,29 @@
 {
   "id": "1517",
-  "filename": "1517_crop_anomaly_detection_image_analysis",
+  "title": "Automate crop anomaly detection using image analysis",
   "description": "Triggers on receiving an image URL, analyzes it against a crop dataset, and identifies if the crop is anomalous or known, enhancing agricultural monitoring.",
+  "filename": "1517_crop_anomaly_detection_image_analysis",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "G8jRDBvwsMkkMiLN",
     "meta": {
@@ -462,32 +484,5 @@
         ]
       }
     }
-  },
-  "title": "Automate crop anomaly detection using image analysis",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 5
+  }
 }

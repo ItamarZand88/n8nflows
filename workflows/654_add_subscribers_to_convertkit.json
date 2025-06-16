@@ -1,7 +1,29 @@
 {
   "id": "654",
-  "filename": "654_add_subscribers_to_convertkit",
+  "title": "Add subscribers to ConvertKit forms and manage tags",
   "description": "Automatically adds new subscribers to a ConvertKit form, creates a tag, and assigns the subscriber to that tag for better audience segmentation.",
+  "filename": "654_add_subscribers_to_convertkit",
+  "services": [
+    "ConvertKit",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Add",
+    "Manage tag",
+    "Manage tagSubscriber"
+  ],
+  "setup_requirements": [
+    "ConvertKit API Key"
+  ],
   "content": {
     "id": "25",
     "name": "Add subscriber to form, create tag and subscriber to the tag",
@@ -110,32 +132,5 @@
         ]
       }
     }
-  },
-  "title": "Add subscribers to ConvertKit forms and manage tags",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "ConvertKit",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Add",
-    "Manage tag",
-    "Manage tagSubscriber"
-  ],
-  "setup_requirements": [
-    "ConvertKit API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

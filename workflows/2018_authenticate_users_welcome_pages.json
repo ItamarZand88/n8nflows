@@ -1,7 +1,27 @@
 {
   "id": "2018",
-  "filename": "2018_authenticate_users_welcome_pages",
+  "title": "Authenticate users and display personalized welcome pages",
   "description": "Handles user authentication via a webhook, retrieves user info, and displays a personalized welcome page or login form based on authentication status.",
+  "filename": "2018_authenticate_users_welcome_pages",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "zeyTmqqmXaQIFWzV",
     "meta": {
@@ -462,30 +482,5 @@
         ]
       }
     }
-  },
-  "title": "Authenticate users and display personalized welcome pages",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 15,
-  "external_integrations_count": 6
+  }
 }

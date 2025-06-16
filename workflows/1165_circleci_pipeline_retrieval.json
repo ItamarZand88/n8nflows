@@ -1,7 +1,24 @@
 {
   "id": "1165",
-  "filename": "1165_circleci_pipeline_retrieval",
+  "title": "Retrieve CircleCI pipeline details on demand",
   "description": "Triggers a manual request to fetch specific pipeline information from CircleCI, streamlining project management and monitoring.",
+  "filename": "1165_circleci_pipeline_retrieval",
+  "services": [
+    "CircleCI",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "CircleCI API Key"
+  ],
   "content": {
     "id": "84",
     "name": "Get a pipeline in CircleCI",
@@ -48,27 +65,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve CircleCI pipeline details on demand",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "CircleCI",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "CircleCI API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

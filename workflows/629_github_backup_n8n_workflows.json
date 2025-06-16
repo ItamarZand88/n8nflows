@@ -1,7 +1,37 @@
 {
   "id": "629",
-  "filename": "629_github_backup_n8n_workflows",
+  "title": "Automate GitHub Backup for n8n Workflows",
   "description": "Triggers a scheduled backup of n8n workflows to a GitHub repository, creating or updating JSON files based on changes detected.",
+  "filename": "629_github_backup_n8n_workflows",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "GitHub",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Schedule",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Edit",
+    "Filter Data",
+    "Get",
+    "Manage file",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "GitHub API Key",
+    "n8n API Key"
+  ],
   "content": {
     "name": "Backup workflows to git repository",
     "nodes": [
@@ -470,40 +500,5 @@
         ]
       }
     }
-  },
-  "title": "Automate GitHub Backup for n8n Workflows",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "GitHub",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Schedule",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Edit",
-    "Filter Data",
-    "Get",
-    "Manage file",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "GitHub API Key",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 8
+  }
 }

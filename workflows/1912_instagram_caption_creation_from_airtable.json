@@ -1,7 +1,28 @@
 {
   "id": "1912",
-  "filename": "1912_instagram_caption_creation_from_airtable",
+  "title": "Automate Instagram Caption Creation from Airtable Briefings",
   "description": "Triggers on new Airtable records, retrieves briefing details, and generates engaging Instagram captions using AI, enhancing social media strategy.",
+  "filename": "1912_instagram_caption_creation_from_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Airtable Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "V8ypWn7oaOVS3zH0",
     "meta": {
@@ -1120,31 +1141,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Instagram Caption Creation from Airtable Briefings",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Airtable Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 3
+  }
 }

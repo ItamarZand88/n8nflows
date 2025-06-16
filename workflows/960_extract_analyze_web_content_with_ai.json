@@ -1,7 +1,31 @@
 {
   "id": "960",
-  "filename": "960_extract_analyze_web_content_with_ai",
+  "title": "Extract and Analyze Web Page Content with AI",
   "description": "Triggers on demand to fetch content from a webpage, analyzes it with AI, and generates structured insights and jokes for better engagement.",
+  "filename": "960_extract_analyze_web_content_with_ai",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Markdown",
+    "Merge",
+    "No Operation, do nothing",
+    "Split Out",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "43gMd18arOcxqDcC",
     "meta": {
@@ -1043,34 +1067,5 @@
         ]
       }
     }
-  },
-  "title": "Extract and Analyze Web Page Content with AI",
-  "nodes_count": 38,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Markdown",
-    "Merge",
-    "No Operation, do nothing",
-    "Split Out",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 38,
-  "external_integrations_count": 9
+  }
 }

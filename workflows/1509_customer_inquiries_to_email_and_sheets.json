@@ -1,7 +1,34 @@
 {
   "id": "1509",
-  "filename": "1509_customer_inquiries_to_email_and_sheets",
+  "title": "Automate Customer Inquiry Responses from WordPress Forms",
   "description": "Captures inquiries from WordPress contact forms, classifies them, drafts personalized email responses, and logs details in Google Sheets for efficient follow-up.",
+  "filename": "1509_customer_inquiries_to_email_and_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Sheets",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Manage draft",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "fvgP264GysfRJXdr",
     "meta": {
@@ -1017,37 +1044,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Customer Inquiry Responses from WordPress Forms",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Sheets",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Manage draft",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,38 @@
 {
   "id": "416",
-  "filename": "416_daily_news_updates_for_meetings",
+  "title": "Automate daily news updates for upcoming meetings",
   "description": "Triggers every morning to fetch and email the latest news about companies related to today's meetings, keeping you informed and prepared.",
+  "filename": "416_daily_news_updates_for_meetings",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Calendar",
+    "HTTP Request",
+    "If",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Calendar Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "3c58c896c9089c8fb4d7f2b069bf3119193f239a1f538829758e2f4d6b5f5b24"
@@ -345,41 +376,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily news updates for upcoming meetings",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Calendar",
-    "HTTP Request",
-    "If",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Calendar Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 9
+  }
 }

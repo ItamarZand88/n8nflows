@@ -1,7 +1,35 @@
 {
   "id": "1933",
-  "filename": "1933_extract_influencers_to_sheets",
+  "title": "Extract and Log Influencer Data from Google Search",
   "description": "Triggers on demand to search for top influencers in a specified category, extracts their details, and logs the results into Google Sheets for easy access.",
+  "filename": "1933_extract_influencers_to_sheets",
+  "services": [
+    "Airtop",
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Manage extraction",
+    "Query",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtop API Key",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "VwU1zMhcgzgPS9ak",
     "meta": {
@@ -315,38 +343,5 @@
         ]
       }
     }
-  },
-  "title": "Extract and Log Influencer Data from Google Search",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Airtop",
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "Manual"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Manage extraction",
-    "Query",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtop API Key",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

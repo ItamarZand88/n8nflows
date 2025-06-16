@@ -1,7 +1,38 @@
 {
   "id": "1352",
-  "filename": "1352_google_sheets_to_wordpress",
+  "title": "Automate blog post publishing from Google Sheets to WordPress",
   "description": "Triggers on a schedule or manually to publish blog posts from Google Sheets to WordPress, updating the status and logging actions in the sheet for tracking.",
+  "filename": "1352_google_sheets_to_wordpress",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "b0KRVIuuUxE5afHo",
     "meta": {
@@ -1623,41 +1654,5 @@
         ]
       }
     }
-  },
-  "title": "Automate blog post publishing from Google Sheets to WordPress",
-  "nodes_count": 35,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 35,
-  "external_integrations_count": 8
+  }
 }

@@ -1,7 +1,37 @@
 {
   "id": "272",
-  "filename": "272_xml_data_to_google_sheets",
+  "title": "Automate XML Data Extraction to Google Sheets",
   "description": "Triggers on manual execution, downloads XML data, parses it, and saves structured food items to a new Google Sheets file for easy access and analysis.",
+  "filename": "272_xml_data_to_google_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Item Lists",
+    "Manual",
+    "Merge",
+    "Sticky Note",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Manage spreadsheet",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -270,40 +300,5 @@
         ]
       }
     }
-  },
-  "title": "Automate XML Data Extraction to Google Sheets",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Item Lists",
-    "Manual",
-    "Merge",
-    "Sticky Note",
-    "XML"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Manage spreadsheet",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 8
+  }
 }

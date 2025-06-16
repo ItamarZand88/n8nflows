@@ -1,7 +1,41 @@
 {
   "id": "1597",
-  "filename": "1597_webflow_submissions_to_airtable",
+  "title": "Automate Webflow form submissions to Airtable tables",
   "description": "Captures new submissions from Webflow forms, creates corresponding Airtable tables, and logs each submission as a record for easy management.",
+  "filename": "1597_webflow_submissions_to_airtable",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Webflow"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Webflow Event"
+  ],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Getschema",
+    "Manage base",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "HTTP Request API Key",
+    "HTTP Request Account",
+    "Webflow API Key"
+  ],
   "content": {
     "id": "IvIzphIxPj1rZ3az",
     "meta": {
@@ -682,44 +716,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Webflow form submissions to Airtable tables",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Webflow"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Webflow Event"
-  ],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Getschema",
-    "Manage base",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "HTTP Request API Key",
-    "HTTP Request Account",
-    "Webflow API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 7
+  }
 }

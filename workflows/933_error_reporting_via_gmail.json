@@ -1,7 +1,36 @@
 {
   "id": "933",
-  "filename": "933_error_reporting_via_gmail",
+  "title": "Automate Error Reporting via Gmail for n8n Workflows",
   "description": "Triggers on workflow errors, analyzes the error details, and automatically sends a formatted report via Gmail to specified recipients.",
+  "filename": "933_error_reporting_via_gmail",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Error",
+    "Gmail",
+    "If",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Error Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Manage execution",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "n8n API Key"
+  ],
   "content": {
     "id": "3b1q6ZJTxeONrpUV",
     "meta": {
@@ -470,39 +499,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Error Reporting via Gmail for n8n Workflows",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Error",
-    "Gmail",
-    "If",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Error Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Manage execution",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 7
+  }
 }

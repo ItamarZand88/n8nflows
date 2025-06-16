@@ -1,7 +1,34 @@
 {
   "id": "633",
-  "filename": "633_call_transcription_analysis_assemblyai_openai",
+  "title": "Automate call transcription and analysis with AssemblyAI and OpenAI",
   "description": "Transcribes sales calls using AssemblyAI, analyzes them with OpenAI, and stores insights in Supabase for improved sales strategies.",
+  "filename": "633_call_transcription_analysis_assemblyai_openai",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note",
+    "Supabase",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Supabase API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -11010,37 +11037,5 @@
         ]
       }
     }
-  },
-  "title": "Automate call transcription and analysis with AssemblyAI and OpenAI",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note",
-    "Supabase",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Supabase API Key"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 7
+  }
 }

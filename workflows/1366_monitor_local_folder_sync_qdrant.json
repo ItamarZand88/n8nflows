@@ -1,7 +1,35 @@
 {
   "id": "1366",
-  "filename": "1366_monitor_local_folder_sync_qdrant",
+  "title": "Monitor Local Folder for File Changes and Sync with Qdrant",
   "description": "Automatically tracks changes in a specified local folder, updating or deleting corresponding vector points in Qdrant for efficient data management and AI integration.",
+  "filename": "1366_monitor_local_folder_sync_qdrant",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Local File",
+    "Manual",
+    "Read/Write Files from Disk",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Local File Event",
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "26ba763460b97c249b82942b23b6384876dfeb9327513332e743c5f6219c2b8e"
@@ -941,38 +969,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor Local Folder for File Changes and Sync with Qdrant",
-  "nodes_count": 29,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Local File",
-    "Manual",
-    "Read/Write Files from Disk",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Local File Event",
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 29,
-  "external_integrations_count": 8
+  }
 }

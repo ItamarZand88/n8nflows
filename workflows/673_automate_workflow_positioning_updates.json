@@ -1,7 +1,37 @@
 {
   "id": "673",
-  "filename": "673_automate_workflow_positioning_updates",
+  "title": "Automate Workflow Positioning Updates with n8n API",
   "description": "Triggers workflow positioning updates in n8n via a manual or scheduled event, enhancing workflow organization and usability with real-time adjustments.",
+  "filename": "673_automate_workflow_positioning_updates",
+  "services": [
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note",
+    "Switch",
+    "Webhook",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -954,40 +984,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Workflow Positioning Updates with n8n API",
-  "nodes_count": 34,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note",
-    "Switch",
-    "Webhook",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Update"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 34,
-  "external_integrations_count": 10
+  }
 }

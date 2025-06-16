@@ -1,7 +1,37 @@
 {
   "id": "721",
-  "filename": "721_google_drive_backups_automation",
+  "title": "Automate Google Drive folder backups every 4 hours",
   "description": "Creates a new folder in Google Drive every 4 hours, backs up workflow data as JSON files, and deletes old backups for efficient storage management.",
+  "filename": "721_google_drive_backups_automation",
+  "services": [
+    "Convert to File",
+    "Filter",
+    "Google Drive",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Schedule",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Deletefolder",
+    "Manage fileFolder",
+    "Manage folder",
+    "Tojson"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "n8n API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "db80165df40cb07c0377167c050b3f9ab0b0fb04f0e8cae0dc53f5a8527103ca",
@@ -362,40 +392,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Drive folder backups every 4 hours",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Convert to File",
-    "Filter",
-    "Google Drive",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Schedule",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Deletefolder",
-    "Manage fileFolder",
-    "Manage folder",
-    "Tojson"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

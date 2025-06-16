@@ -1,7 +1,23 @@
 {
   "id": "185",
-  "filename": "185_filemaker_contacts_extraction",
+  "title": "Extract and Return Contact Data from FileMaker API",
   "description": "Fetches contact data from the FileMaker Data API and extracts relevant fields for further processing or integration with other applications.",
+  "filename": "185_filemaker_contacts_extraction",
+  "services": [
+    "Function",
+    "Function Item",
+    "Item Lists"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -66,26 +82,5 @@
         ]
       }
     }
-  },
-  "title": "Extract and Return Contact Data from FileMaker API",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Function",
-    "Function Item",
-    "Item Lists"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

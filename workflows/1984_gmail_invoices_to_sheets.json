@@ -1,7 +1,46 @@
 {
   "id": "1984",
-  "filename": "1984_gmail_invoices_to_sheets",
+  "title": "Automate invoice processing from Gmail to Google Sheets",
   "description": "Triggers on new Gmail emails with ZIP attachments, extracts invoice data, and updates Google Sheets for easy tracking and management.",
+  "filename": "1984_gmail_invoices_to_sheets",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Compression",
+    "Extract from File",
+    "Filter",
+    "Gmail",
+    "Google Drive",
+    "Google Sheets",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Switch",
+    "XML"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Pdf",
+    "Update",
+    "Xml"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "Xs7x61YMFsbpB4vg",
     "meta": {
@@ -877,49 +916,5 @@
         ]
       }
     }
-  },
-  "title": "Automate invoice processing from Gmail to Google Sheets",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Compression",
-    "Extract from File",
-    "Filter",
-    "Gmail",
-    "Google Drive",
-    "Google Sheets",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Switch",
-    "XML"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Pdf",
-    "Update",
-    "Xml"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 14
+  }
 }

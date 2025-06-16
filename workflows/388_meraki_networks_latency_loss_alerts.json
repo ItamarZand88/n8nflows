@@ -1,7 +1,37 @@
 {
   "id": "388",
-  "filename": "388_meraki_networks_latency_loss_alerts",
+  "title": "Monitor Meraki Networks for Latency and Loss Alerts",
   "description": "Automatically checks Meraki networks every 5 minutes for latency and loss issues, notifying the tech team via Microsoft Teams if problems are detected.",
+  "filename": "388_meraki_networks_latency_loss_alerts",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "Microsoft Teams",
+    "Redis",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Get",
+    "Manage chatMessage",
+    "Set",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833",
@@ -709,40 +739,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor Meraki Networks for Latency and Loss Alerts",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "Microsoft Teams",
-    "Redis",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Get",
-    "Manage chatMessage",
-    "Set",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 23,
-  "external_integrations_count": 9
+  }
 }

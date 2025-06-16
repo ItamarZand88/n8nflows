@@ -1,7 +1,26 @@
 {
   "id": "1005",
-  "filename": "1005_get_all_invoices_from_invoice_ninja",
+  "title": "Retrieve all invoices from Invoice Ninja",
   "description": "Triggers manually to fetch all invoices from Invoice Ninja, helping you keep track of your billing and financial records efficiently.",
+  "filename": "1005_get_all_invoices_from_invoice_ninja",
+  "services": [
+    "Invoice Ninja",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Finance & Accounting"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Invoice Ninja API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -44,29 +63,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve all invoices from Invoice Ninja",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Finance & Accounting"
-  ],
-  "services": [
-    "Invoice Ninja",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getall"
-  ],
-  "setup_requirements": [
-    "Invoice Ninja API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

@@ -1,7 +1,27 @@
 {
   "id": "890",
-  "filename": "890_paypal_payment_confirmation_email",
+  "title": "Automate PayPal payment confirmations and email delivery",
   "description": "Captures PayPal payment events, retrieves order details, and automatically sends a confirmation email with the purchased product and attachment.",
+  "filename": "890_paypal_payment_confirmation_email",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Send Email",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "4359279a248a64f23ddf72d3bc2de4dead8a687e643e9296f8a007dd65120396"
@@ -406,30 +426,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PayPal payment confirmations and email delivery",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Send Email",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 15,
-  "external_integrations_count": 7
+  }
 }

@@ -1,7 +1,34 @@
 {
   "id": "649",
-  "filename": "649_newsletter_signups_to_sheets",
+  "title": "Automate newsletter signups and user feedback collection",
   "description": "Captures newsletter signups via a multi-step form, collects user insights, and logs data to Google Sheets while notifying via Slack.",
+  "filename": "649_newsletter_signups_to_sheets",
+  "services": [
+    "Google Sheets",
+    "Slack",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append",
+    "Completion",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -738,37 +765,5 @@
         ]
       }
     }
-  },
-  "title": "Automate newsletter signups and user feedback collection",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "Slack",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append",
-    "Completion",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 4
+  }
 }

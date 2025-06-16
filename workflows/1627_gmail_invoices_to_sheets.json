@@ -1,7 +1,50 @@
 {
   "id": "1627",
-  "filename": "1627_gmail_invoices_to_sheets",
+  "title": "Automate invoice processing from Gmail to Google Sheets",
   "description": "Monitors Gmail for incoming email attachments, processes invoices using LlamaParse, and logs structured data to Google Sheets for easy tracking.",
+  "filename": "1627_gmail_invoices_to_sheets",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Limit",
+    "Merge",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Telegram",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Createfromtext",
+    "Filter Data",
+    "Get",
+    "Getall",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "Google Sheets Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "kjyWJWfDlyXkKL3m",
     "meta": {
@@ -2018,53 +2061,5 @@
         ]
       }
     }
-  },
-  "title": "Automate invoice processing from Gmail to Google Sheets",
-  "nodes_count": 54,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Limit",
-    "Merge",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Telegram",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Createfromtext",
-    "Filter Data",
-    "Get",
-    "Getall",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "Google Sheets Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 54,
-  "external_integrations_count": 13
+  }
 }

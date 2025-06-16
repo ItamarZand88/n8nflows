@@ -1,7 +1,30 @@
 {
   "id": "441",
-  "filename": "441_slack_ideas_to_notion",
+  "title": "Capture Slack ideas and log them in Notion",
   "description": "Automatically logs new ideas submitted via Slack commands into a Notion database, enhancing team collaboration and idea management.",
+  "filename": "441_slack_ideas_to_notion",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Notion",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Manage databasePage",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Notion API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -294,33 +317,5 @@
         ]
       }
     }
-  },
-  "title": "Capture Slack ideas and log them in Notion",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Notion",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Manage databasePage",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Notion API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,31 @@
 {
   "id": "1279",
-  "filename": "1279_extract_book_data_to_sheets",
+  "title": "Extract Book Data and Save to Google Sheets",
   "description": "Triggers a web scraping process to fetch book details and automatically saves the extracted data to Google Sheets for easy tracking and analysis.",
+  "filename": "1279_extract_book_data_to_sheets",
+  "services": [
+    "Google Sheets",
+    "HTTP Request",
+    "Manual",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -258,34 +282,5 @@
         ]
       }
     }
-  },
-  "title": "Extract Book Data and Save to Google Sheets",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "HTTP Request",
-    "Manual",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

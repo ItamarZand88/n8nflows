@@ -1,7 +1,22 @@
 {
   "id": "193",
-  "filename": "193_get_synonyms_open_thesaurus",
+  "title": "Get synonyms for a German word using OpenThesaurus",
   "description": "Triggers a search for synonyms of the German word 'Hallo' using OpenThesaurus, providing quick language assistance for users.",
+  "filename": "193_get_synonyms_open_thesaurus",
+  "services": [
+    "Manual",
+    "OpenThesaurus"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "157",
     "name": "Get synonyms of a German word",
@@ -45,25 +60,5 @@
         ]
       }
     }
-  },
-  "title": "Get synonyms for a German word using OpenThesaurus",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Utility"
-  ],
-  "services": [
-    "Manual",
-    "OpenThesaurus"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

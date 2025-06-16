@@ -1,7 +1,28 @@
 {
   "id": "60",
-  "filename": "60_twitter_message_on_manual_trigger",
+  "title": "Send a Twitter message on manual trigger with condition",
   "description": "Triggers a Twitter message when executed manually, sending a greeting if the execution index equals 4, otherwise does nothing.",
+  "filename": "60_twitter_message_on_manual_trigger",
+  "services": [
+    "If",
+    "Manual",
+    "No Operation, do nothing",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "X (Formerly Twitter) API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -102,31 +123,5 @@
         ]
       }
     }
-  },
-  "title": "Send a Twitter message on manual trigger with condition",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "If",
-    "Manual",
-    "No Operation, do nothing",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "X (Formerly Twitter) API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

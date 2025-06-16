@@ -1,7 +1,39 @@
 {
   "id": "1811",
-  "filename": "1811_telegram_ai_responses_memory",
+  "title": "Automate Telegram interactions with AI responses and memory",
   "description": "Listens for Telegram messages, validates users, and responds intelligently using AI while saving user memories for personalized interactions.",
+  "filename": "1811_telegram_ai_responses_memory",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Docs",
+    "If",
+    "Merge",
+    "Sticky Note",
+    "Switch",
+    "Telegram",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Miscellaneous"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Docs Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "rtsvydad1MOCryia",
     "meta": {
@@ -711,42 +743,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Telegram interactions with AI responses and memory",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Docs",
-    "If",
-    "Merge",
-    "Sticky Note",
-    "Switch",
-    "Telegram",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Docs Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 8
+  }
 }

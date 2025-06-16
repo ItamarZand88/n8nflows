@@ -1,7 +1,31 @@
 {
   "id": "787",
-  "filename": "787_social_media_posts_from_sheets",
+  "title": "Automate Social Media Posts from Google Sheets Ideas",
   "description": "Fetches content ideas from Google Sheets, generates engaging posts with OpenAI, and posts them to Twitter, updating the sheet with the status.",
+  "filename": "787_social_media_posts_from_sheets",
+  "services": [
+    "Google Sheets",
+    "If",
+    "OpenAI",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "OpenAI API Key",
+    "X (Formerly Twitter) API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -132,34 +156,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Social Media Posts from Google Sheets Ideas",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Google Sheets",
-    "If",
-    "OpenAI",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "OpenAI API Key",
-    "X (Formerly Twitter) API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

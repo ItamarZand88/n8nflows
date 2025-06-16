@@ -1,7 +1,29 @@
 {
   "id": "1080",
-  "filename": "1080_download_and_organize_files_dropbox",
+  "title": "Download and Organize Files from Dropbox Automatically",
   "description": "Triggers a file download from a URL and saves it to a specified Dropbox folder, ensuring your files are organized and accessible.",
+  "filename": "1080_download_and_organize_files_dropbox",
+  "services": [
+    "Dropbox",
+    "HTTP Request",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "List",
+    "Manage folder"
+  ],
+  "setup_requirements": [
+    "Dropbox API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -124,32 +146,5 @@
         ]
       }
     }
-  },
-  "title": "Download and Organize Files from Dropbox Automatically",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Dropbox",
-    "HTTP Request",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "List",
-    "Manage folder"
-  ],
-  "setup_requirements": [
-    "Dropbox API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 3
+  }
 }

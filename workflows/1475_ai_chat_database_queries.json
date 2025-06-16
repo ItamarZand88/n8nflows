@@ -1,7 +1,22 @@
 {
   "id": "1475",
-  "filename": "1475_ai_chat_database_queries",
+  "title": "Automate database queries with AI chat assistance",
   "description": "Triggers when a chat message is received, allowing users to query a PostgreSQL database using AI for instant data retrieval and analysis.",
+  "filename": "1475_ai_chat_database_queries",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Executequery"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "eOUewYsEzJmQixI6",
     "meta": {
@@ -284,25 +299,5 @@
         ]
       }
     }
-  },
-  "title": "Automate database queries with AI chat assistance",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Executequery"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 11,
-  "external_integrations_count": 1
+  }
 }

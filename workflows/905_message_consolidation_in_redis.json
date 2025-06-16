@@ -1,7 +1,40 @@
 {
   "id": "905",
-  "filename": "905_message_consolidation_in_redis",
+  "title": "Automate message consolidation and response handling in Redis",
   "description": "Triggers on new chat messages, consolidates them into a single response, and manages message buffers in Redis for efficient processing.",
+  "filename": "905_message_consolidation_in_redis",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "If",
+    "Manual",
+    "No Operation, do nothing",
+    "Redis",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Delete",
+    "Filter Data",
+    "Get",
+    "Incr",
+    "Push",
+    "Set",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "d1b9b74c805fea7fca1b903ee192d1d4090b516d3c254da86beb2f13b7c2ed2e",
@@ -967,43 +1000,5 @@
         ]
       }
     }
-  },
-  "title": "Automate message consolidation and response handling in Redis",
-  "nodes_count": 30,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "If",
-    "Manual",
-    "No Operation, do nothing",
-    "Redis",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Delete",
-    "Filter Data",
-    "Get",
-    "Incr",
-    "Push",
-    "Set",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 30,
-  "external_integrations_count": 8
+  }
 }

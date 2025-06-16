@@ -1,7 +1,28 @@
 {
   "id": "1997",
-  "filename": "1997_image_data_extraction_api",
+  "title": "Automate image data extraction using AI-powered OCR",
   "description": "Creates an API endpoint that extracts structured data from images by processing image URLs and returning relevant details in JSON format.",
+  "filename": "1997_image_data_extraction_api",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "HTTP Request",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Binarytopropery",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "YKZBEx4DTf0KGEBR",
     "meta": {
@@ -230,31 +251,5 @@
         ]
       }
     }
-  },
-  "title": "Automate image data extraction using AI-powered OCR",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "HTTP Request",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Binarytopropery",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 5
+  }
 }

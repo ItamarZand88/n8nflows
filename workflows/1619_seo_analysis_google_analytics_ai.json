@@ -1,7 +1,33 @@
 {
   "id": "1619",
-  "filename": "1619_seo_analysis_google_analytics_ai",
+  "title": "Automate SEO Analysis with Google Analytics and A.I.",
   "description": "Triggers weekly to analyze Google Analytics data, compares metrics, and sends insights to A.I. for SEO improvement suggestions, saving time on manual reporting.",
+  "filename": "1619_seo_analysis_google_analytics_ai",
+  "services": [
+    "Baserow",
+    "Code",
+    "Google Analytics",
+    "HTTP Request",
+    "Manual",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Create"
+  ],
+  "setup_requirements": [
+    "Google Analytics Account"
+  ],
   "content": {
     "id": "K3uf8aY8wipScEay",
     "meta": {
@@ -854,36 +880,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SEO Analysis with Google Analytics and A.I.",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Baserow",
-    "Code",
-    "Google Analytics",
-    "HTTP Request",
-    "Manual",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Create"
-  ],
-  "setup_requirements": [
-    "Google Analytics Account"
-  ],
-  "workflow_complexity": 22,
-  "external_integrations_count": 7
+  }
 }

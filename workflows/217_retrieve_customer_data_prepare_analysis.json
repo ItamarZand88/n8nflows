@@ -1,7 +1,25 @@
 {
   "id": "217",
-  "filename": "217_retrieve_customer_data_prepare_analysis",
+  "title": "Retrieve Customer Data and Prepare for Analysis",
   "description": "Triggers on demand to fetch all customer data, extracts key details, and prepares it for further processing or analysis, streamlining data management tasks.",
+  "filename": "217_retrieve_customer_data_prepare_analysis",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getallpeople",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "name": "Very quick quickstart",
     "nodes": [
@@ -141,28 +159,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve Customer Data and Prepare for Analysis",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getallpeople",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 3
+  }
 }

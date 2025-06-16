@@ -1,7 +1,23 @@
 {
   "id": "902",
-  "filename": "902_retell_booking_confirmation",
+  "title": "Automate booking confirmations from Retell Voice Agent",
   "description": "Captures booking requests from Retell's Voice Agent via a webhook and responds with a confirmation message, streamlining customer interactions.",
+  "filename": "902_retell_booking_confirmation",
+  "services": [
+    "Edit Fields (Set)",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "f4f5d195bb2162a0972f737368404b18be694648d365d6c6771d7b4909d28167"
@@ -1583,26 +1599,5 @@
         ]
       }
     }
-  },
-  "title": "Automate booking confirmations from Retell Voice Agent",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 3
+  }
 }

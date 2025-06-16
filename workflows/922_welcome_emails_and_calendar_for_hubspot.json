@@ -1,7 +1,46 @@
 {
   "id": "922",
-  "filename": "922_welcome_emails_and_calendar_for_hubspot",
+  "title": "Automate Welcome Emails and Calendar Scheduling for New HubSpot Contacts",
   "description": "Triggers on new HubSpot contacts, sends personalized welcome emails, and schedules a welcome call using Google Calendar to enhance customer onboarding.",
+  "filename": "922_welcome_emails_and_calendar_for_hubspot",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Filter",
+    "Gmail",
+    "HTTP Request",
+    "HubSpot",
+    "If",
+    "Markdown",
+    "Split Out",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New HubSpot Event"
+  ],
+  "actions": [
+    "Delete",
+    "Filter Data",
+    "Get",
+    "Getall",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "HTTP Request Account",
+    "HubSpot API Key",
+    "HubSpot Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -952,49 +991,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Welcome Emails and Calendar Scheduling for New HubSpot Contacts",
-  "nodes_count": 31,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Filter",
-    "Gmail",
-    "HTTP Request",
-    "HubSpot",
-    "If",
-    "Markdown",
-    "Split Out",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New HubSpot Event"
-  ],
-  "actions": [
-    "Delete",
-    "Filter Data",
-    "Get",
-    "Getall",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "HTTP Request Account",
-    "HubSpot API Key",
-    "HubSpot Account"
-  ],
-  "workflow_complexity": 31,
-  "external_integrations_count": 11
+  }
 }

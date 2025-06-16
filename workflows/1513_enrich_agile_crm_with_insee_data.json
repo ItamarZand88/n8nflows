@@ -1,7 +1,39 @@
 {
   "id": "1513",
-  "filename": "1513_enrich_agile_crm_with_insee_data",
+  "title": "Enrich Agile CRM Data with INSEE Company Information",
   "description": "Triggers on demand or schedule to enrich Agile CRM company data with official addresses and SIREN numbers from the INSEE database, improving data accuracy.",
+  "filename": "1513_enrich_agile_crm_with_insee_data",
+  "services": [
+    "Agile CRM",
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage company",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Agile CRM API Key"
+  ],
   "content": {
     "id": "G0hO05fypS8n8uYu",
     "meta": {
@@ -398,42 +430,5 @@
         ]
       }
     }
-  },
-  "title": "Enrich Agile CRM Data with INSEE Company Information",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "Agile CRM",
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage company",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Agile CRM API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 9
+  }
 }

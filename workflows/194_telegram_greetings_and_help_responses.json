@@ -1,7 +1,39 @@
 {
   "id": "194",
-  "filename": "194_telegram_greetings_and_help_responses",
+  "title": "Automate user greetings and help responses in Telegram",
   "description": "Triggers on new Telegram messages, checks user status, and sends personalized greetings or help information based on user language.",
+  "filename": "194_telegram_greetings_and_help_responses",
+  "services": [
+    "Function",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "NocoDB",
+    "Sticky Note",
+    "Switch",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Create",
+    "Execute Function",
+    "Filter Data",
+    "Getall",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -564,42 +596,5 @@
         ]
       }
     }
-  },
-  "title": "Automate user greetings and help responses in Telegram",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Function",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "NocoDB",
-    "Sticky Note",
-    "Switch",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Create",
-    "Execute Function",
-    "Filter Data",
-    "Getall",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 8
+  }
 }

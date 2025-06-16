@@ -1,7 +1,25 @@
 {
   "id": "1630",
-  "filename": "1630_social_media_management_with_airtable",
+  "title": "Automate social media content management with Airtable",
   "description": "Triggers on new chat messages, processes content with AI, and manages social media posts in Airtable for efficient content updates.",
+  "filename": "1630_social_media_management_with_airtable",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Create",
+    "Deleterecord",
+    "Search",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "kS9EfgZeaK3QV6Mw",
     "meta": {
@@ -898,28 +916,5 @@
         ]
       }
     }
-  },
-  "title": "Automate social media content management with Airtable",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Create",
-    "Deleterecord",
-    "Search",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 13,
-  "external_integrations_count": 1
+  }
 }

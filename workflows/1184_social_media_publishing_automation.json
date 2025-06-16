@@ -1,7 +1,34 @@
 {
   "id": "1184",
-  "filename": "1184_social_media_publishing_automation",
+  "title": "Automate Social Media Publishing Across Multiple Platforms",
   "description": "Triggers a manual event to upload media and publish posts on Instagram, Facebook, LinkedIn, TikTok, YouTube, Threads, Twitter, Bluesky, and Pinterest, streamlining content distribution.",
+  "filename": "1184_social_media_publishing_automation",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "8Sbrzc7Au3ZGf62p",
     "meta": {
@@ -1632,37 +1659,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Social Media Publishing Across Multiple Platforms",
-  "nodes_count": 30,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 30,
-  "external_integrations_count": 7
+  }
 }

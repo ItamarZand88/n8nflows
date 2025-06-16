@@ -1,7 +1,23 @@
 {
   "id": "114",
-  "filename": "114_notify_email_new_google_drive_files",
+  "title": "Notify via Email for New Google Drive Files",
   "description": "Automatically sends an email notification when a new file is created in a specified Google Drive folder, keeping you informed of updates.",
+  "filename": "114_notify_email_new_google_drive_files",
+  "services": [
+    "Google Drive",
+    "Send Email"
+  ],
+  "categories": [
+    "Data & Storage"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -61,26 +77,5 @@
         ]
       }
     }
-  },
-  "title": "Notify via Email for New Google Drive Files",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Data & Storage"
-  ],
-  "services": [
-    "Google Drive",
-    "Send Email"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Google Drive Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

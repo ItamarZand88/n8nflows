@@ -1,7 +1,28 @@
 {
   "id": "17",
-  "filename": "17_google_slides_thumbnails_retrieval",
+  "title": "Automate Google Slides thumbnail retrieval on demand",
   "description": "Triggers on manual execution to fetch all slides from a Google Slides presentation and retrieves thumbnails for each slide, streamlining visual content management.",
+  "filename": "17_google_slides_thumbnails_retrieval",
+  "services": [
+    "Google Slides",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getslides",
+    "Getthumbnail",
+    "Manage page"
+  ],
+  "setup_requirements": [
+    "Google Slides Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -77,31 +98,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Slides thumbnail retrieval on demand",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Google Slides",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getslides",
-    "Getthumbnail",
-    "Manage page"
-  ],
-  "setup_requirements": [
-    "Google Slides Account"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

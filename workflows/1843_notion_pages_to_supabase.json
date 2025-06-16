@@ -1,7 +1,27 @@
 {
   "id": "1843",
-  "filename": "1843_notion_pages_to_supabase",
+  "title": "Store Notion Pages as Vector Documents in Supabase",
   "description": "Automates the storage of new Notion pages as vector documents in Supabase, enhancing data retrieval and analysis capabilities.",
+  "filename": "1843_notion_pages_to_supabase",
+  "services": [
+    "Filter",
+    "Notion",
+    "Sticky Note",
+    "Summarize"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Notion Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage block"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "DvP6IHWymTIVg8Up",
     "meta": {
@@ -303,30 +323,5 @@
         ]
       }
     }
-  },
-  "title": "Store Notion Pages as Vector Documents in Supabase",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Filter",
-    "Notion",
-    "Sticky Note",
-    "Summarize"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Notion Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage block"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 9,
-  "external_integrations_count": 4
+  }
 }

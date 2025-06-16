@@ -1,7 +1,36 @@
 {
   "id": "847",
-  "filename": "847_retell_transcripts_to_airtable_sheets_notion",
+  "title": "Automate Retell call transcripts to Airtable, Google Sheets, and Notion",
   "description": "Triggers on analyzed Retell calls, extracts key data, and automatically saves transcripts and analytics to Airtable, Google Sheets, and Notion for easy access and management.",
+  "filename": "847_retell_transcripts_to_airtable_sheets_notion",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Filter",
+    "Google Sheets",
+    "Notion",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Append",
+    "Create",
+    "Manage databasePage",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Google Sheets Account",
+    "Notion API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "f4f5d195bb2162a0972f737368404b18be694648d365d6c6771d7b4909d28167",
@@ -3436,39 +3465,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Retell call transcripts to Airtable, Google Sheets, and Notion",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Filter",
-    "Google Sheets",
-    "Notion",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Append",
-    "Create",
-    "Manage databasePage",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Google Sheets Account",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 7
+  }
 }

@@ -1,7 +1,35 @@
 {
   "id": "1602",
-  "filename": "1602_pipedrive_token_refresh_automation",
+  "title": "Automate Pipedrive OAuth 2.0 Token Refresh Process",
   "description": "Automatically refreshes access tokens for Pipedrive API integration when they expire, ensuring uninterrupted access to user data and seamless API interactions.",
+  "filename": "1602_pipedrive_token_refresh_automation",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Stop and Error",
+    "Supabase",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Supabase API Key"
+  ],
   "content": {
     "id": "IYgbtNpyB4E6Jbxo",
     "meta": {
@@ -934,38 +962,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Pipedrive OAuth 2.0 Token Refresh Process",
-  "nodes_count": 29,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Stop and Error",
-    "Supabase",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Supabase API Key"
-  ],
-  "workflow_complexity": 29,
-  "external_integrations_count": 8
+  }
 }

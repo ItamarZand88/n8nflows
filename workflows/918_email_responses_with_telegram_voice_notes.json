@@ -1,7 +1,37 @@
 {
   "id": "918",
-  "filename": "918_email_responses_with_telegram_voice_notes",
+  "title": "Automate Email Responses with Voice Notes via Telegram",
   "description": "Triggers on new Gmail emails, checks if a response is needed, and allows users to reply with voice notes via Telegram, creating polished email drafts automatically.",
+  "filename": "918_email_responses_with_telegram_voice_notes",
+  "services": [
+    "Edit Fields (Set)",
+    "Gmail",
+    "If",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event",
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage audio",
+    "Manage draft",
+    "Manage file",
+    "Set Data",
+    "Transcribe"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Telegram API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "45e293393b5dd8437fb351e5b1ef5511ef67e6e0826a1c10b9b68be850b67593",
@@ -761,40 +791,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Email Responses with Voice Notes via Telegram",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Gmail",
-    "If",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event",
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage audio",
-    "Manage draft",
-    "Manage file",
-    "Set Data",
-    "Transcribe"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 5
+  }
 }

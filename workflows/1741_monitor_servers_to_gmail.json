@@ -1,7 +1,33 @@
 {
   "id": "1741",
-  "filename": "1741_monitor_servers_to_gmail",
+  "title": "Monitor server availability and notify via Gmail",
   "description": "Automatically checks server status every minute, logs results in Google Sheets, and sends email alerts for any downtime.",
+  "filename": "1741_monitor_servers_to_gmail",
+  "services": [
+    "Gmail",
+    "Google Sheets",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "pcLi17oUJK9pSaee",
     "meta": {
@@ -324,36 +350,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor server availability and notify via Gmail",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Gmail",
-    "Google Sheets",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

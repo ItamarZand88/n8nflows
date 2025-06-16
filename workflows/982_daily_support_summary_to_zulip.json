@@ -1,7 +1,34 @@
 {
   "id": "982",
-  "filename": "982_daily_support_summary_to_zulip",
+  "title": "Automate daily support ticket summaries to Zulip",
   "description": "Triggers daily to gather and summarize support ticket statuses, then sends a formatted update to a Zulip stream for team visibility.",
+  "filename": "982_daily_support_summary_to_zulip",
+  "services": [
+    "Cron",
+    "Function",
+    "Manual",
+    "Zammad",
+    "Zulip"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Getall",
+    "Manage ticket",
+    "Sendstream"
+  ],
+  "setup_requirements": [
+    "Zammad API Key",
+    "Zulip API Key"
+  ],
   "content": {
     "id": 4,
     "name": "Zammad Open Tickets",
@@ -148,37 +175,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily support ticket summaries to Zulip",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Function",
-    "Manual",
-    "Zammad",
-    "Zulip"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Getall",
-    "Manage ticket",
-    "Sendstream"
-  ],
-  "setup_requirements": [
-    "Zammad API Key",
-    "Zulip API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

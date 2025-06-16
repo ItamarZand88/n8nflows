@@ -1,7 +1,27 @@
 {
   "id": "492",
-  "filename": "492_replace_images_in_google_slides",
+  "title": "Dynamically Replace Images in Google Slides Presentations",
   "description": "Automates the replacement of images in Google Slides by sending a POST request with image details, streamlining presentation updates.",
+  "filename": "492_replace_images_in_google_slides",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -248,30 +268,5 @@
         ]
       }
     }
-  },
-  "title": "Dynamically Replace Images in Google Slides Presentations",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 5
+  }
 }

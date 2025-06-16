@@ -1,7 +1,33 @@
 {
   "id": "746",
-  "filename": "746_ai_video_generation_to_airtable",
+  "title": "Generate AI Videos with Random Camera Motion and Log to Airtable",
   "description": "Triggers video generation based on a prompt, applies random camera motion, and logs the video details to Airtable for easy tracking.",
+  "filename": "746_ai_video_generation_to_airtable",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "Execution Data",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "2pMoIW58KP6ZeGir",
     "meta": {
@@ -457,36 +483,5 @@
         ]
       }
     }
-  },
-  "title": "Generate AI Videos with Random Camera Motion and Log to Airtable",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "Execution Data",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 7
+  }
 }

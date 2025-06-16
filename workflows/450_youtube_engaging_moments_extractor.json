@@ -1,7 +1,30 @@
 {
   "id": "450",
-  "filename": "450_youtube_engaging_moments_extractor",
+  "title": "Extract engaging moments from YouTube videos",
   "description": "Fetches YouTube video data, identifies engaging moments based on intensity, and returns a list of timestamps for user engagement.",
+  "filename": "450_youtube_engaging_moments_extractor",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "No Operation, do nothing",
+    "Split Out",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "dbd43d88d26a9e30d8aadc002c9e77f1400c683dd34efe3778d43d27250dde50"
@@ -518,33 +541,5 @@
         ]
       }
     }
-  },
-  "title": "Extract engaging moments from YouTube videos",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "No Operation, do nothing",
-    "Split Out",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 18,
-  "external_integrations_count": 9
+  }
 }

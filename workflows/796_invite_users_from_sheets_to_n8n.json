@@ -1,7 +1,36 @@
 {
   "id": "796",
-  "filename": "796_invite_users_from_sheets_to_n8n",
+  "title": "Invite new users from Google Sheets to n8n",
   "description": "Triggers on demand or schedule to invite new users listed in Google Sheets, comparing against existing n8n users and sending invitation emails.",
+  "filename": "796_invite_users_from_sheets_to_n8n",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "e634e668fe1fc93a75c4f2a7fc0dad807ca318b79654157eadb9578496acbc76",
@@ -368,39 +397,5 @@
         ]
       }
     }
-  },
-  "title": "Invite new users from Google Sheets to n8n",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 8
+  }
 }

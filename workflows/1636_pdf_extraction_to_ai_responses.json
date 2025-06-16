@@ -1,7 +1,30 @@
 {
   "id": "1636",
-  "filename": "1636_pdf_extraction_to_ai_responses",
+  "title": "Automate PDF content extraction and AI responses from Google Drive",
   "description": "Monitors a Google Drive folder for new PDF files, extracts their content, and generates AI responses based on user queries using relevant document context.",
+  "filename": "1636_pdf_extraction_to_ai_responses",
+  "services": [
+    "Code",
+    "Extract from File",
+    "Google Drive"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Google Drive Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download",
+    "Pdf"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "lC8xkfCSTjIiUhpk",
     "meta": {
@@ -420,33 +443,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PDF content extraction and AI responses from Google Drive",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Extract from File",
-    "Google Drive"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Google Drive Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download",
-    "Pdf"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 3
+  }
 }

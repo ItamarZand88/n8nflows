@@ -1,7 +1,31 @@
 {
   "id": "1577",
-  "filename": "1577_voice_responses_with_elevenlabs_google_drive",
+  "title": "Automate voice responses using ElevenLabs and Google Drive",
   "description": "Triggers on voice messages, processes questions through an AI agent, and retrieves answers from a vector database, responding via ElevenLabs for seamless voice interaction.",
+  "filename": "1577_voice_responses_with_elevenlabs_google_drive",
+  "services": [
+    "Google Drive",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download",
+    "Manage fileFolder"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "ibiHg6umCqvcTF4g",
     "meta": {
@@ -639,34 +663,5 @@
         ]
       }
     }
-  },
-  "title": "Automate voice responses using ElevenLabs and Google Drive",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Google Drive",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download",
-    "Manage fileFolder"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 5
+  }
 }

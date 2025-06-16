@@ -1,7 +1,29 @@
 {
   "id": "1891",
-  "filename": "1891_video_captioning_with_json2video",
+  "title": "Automate video captioning with json2video API",
   "description": "Triggers video captioning by sending a video URL to json2video, waits for processing, and retrieves the final video link with captions for easy access.",
+  "filename": "1891_video_captioning_with_json2video",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "Tygtx1aZi9pLdtUo",
     "meta": {
@@ -416,32 +438,5 @@
         ]
       }
     }
-  },
-  "title": "Automate video captioning with json2video API",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 6
+  }
 }

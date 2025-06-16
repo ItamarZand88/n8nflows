@@ -1,7 +1,32 @@
 {
   "id": "1700",
-  "filename": "1700_generate_ai_assistant_workflows_notion",
+  "title": "Generate AI Assistant Workflows for Notion Databases",
   "description": "Creates a customized AI assistant workflow for querying Notion databases based on user-provided URLs, enhancing productivity and data access.",
+  "filename": "1700_generate_ai_assistant_workflows_notion",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Notion",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage database",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Notion API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -718,35 +743,5 @@
         ]
       }
     }
-  },
-  "title": "Generate AI Assistant Workflows for Notion Databases",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Notion",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage database",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Notion API Key"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 5
+  }
 }

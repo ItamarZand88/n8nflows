@@ -1,7 +1,28 @@
 {
   "id": "399",
-  "filename": "399_email_to_telegram_with_html_preview",
+  "title": "Automate email notifications to Telegram with HTML previews",
   "description": "Triggers on new emails, creates HTML previews in GitHub Gist, and sends Telegram notifications with links to the previews.",
+  "filename": "399_email_to_telegram_with_html_preview",
+  "services": [
+    "Email Trigger (IMAP)",
+    "HTTP Request",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Email Trigger (IMAP) Event"
+  ],
+  "actions": [
+    "Deletemessage"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "dbd43d88d26a9e30d8aadc002c9e77f1400c683dd34efe3778d43d27250dde50"
@@ -233,31 +254,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email notifications to Telegram with HTML previews",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Email Trigger (IMAP)",
-    "HTTP Request",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Email Trigger (IMAP) Event"
-  ],
-  "actions": [
-    "Deletemessage"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

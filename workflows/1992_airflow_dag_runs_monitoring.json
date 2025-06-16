@@ -1,7 +1,31 @@
 {
   "id": "1992",
-  "filename": "1992_airflow_dag_runs_monitoring",
+  "title": "Monitor Airflow DAG Runs and Handle States Automatically",
   "description": "Automates the monitoring of Airflow DAG runs, checking their states and handling queued, running, or failed states with appropriate actions and notifications.",
+  "filename": "1992_airflow_dag_runs_monitoring",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "If",
+    "Stop and Error",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "Y5URlIlbX4HDzWKA",
     "meta": {
@@ -541,34 +565,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor Airflow DAG Runs and Handle States Automatically",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "If",
-    "Stop and Error",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 7
+  }
 }

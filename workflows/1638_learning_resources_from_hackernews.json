@@ -1,7 +1,32 @@
 {
   "id": "1638",
-  "filename": "1638_learning_resources_from_hackernews",
+  "title": "Automate resource recommendations for learning via email",
   "description": "Captures user learning interests through a form, fetches relevant HackerNews comments, and emails top resource recommendations categorized by type and difficulty.",
+  "filename": "1638_learning_resources_from_hackernews",
+  "services": [
+    "Aggregate",
+    "HTTP Request",
+    "Hacker News",
+    "Markdown",
+    "No Operation, do nothing",
+    "Send Email",
+    "Split Out",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Manage all"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -296,35 +321,5 @@
         ]
       }
     }
-  },
-  "title": "Automate resource recommendations for learning via email",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Aggregate",
-    "HTTP Request",
-    "Hacker News",
-    "Markdown",
-    "No Operation, do nothing",
-    "Send Email",
-    "Split Out",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Manage all"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 8
+  }
 }

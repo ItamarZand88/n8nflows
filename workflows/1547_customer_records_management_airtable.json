@@ -1,7 +1,29 @@
 {
   "id": "1547",
-  "filename": "1547_customer_records_management_airtable",
+  "title": "Manage Customer Records in Airtable via Webhooks",
   "description": "Automates customer record management by creating, retrieving, updating, and deleting records in Airtable through webhook triggers.",
+  "filename": "1547_customer_records_management_airtable",
+  "services": [
+    "Airtable",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Deleterecord",
+    "Search",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "GWXjIqENWvx6OqvX",
     "meta": {
@@ -706,32 +728,5 @@
         ]
       }
     }
-  },
-  "title": "Manage Customer Records in Airtable via Webhooks",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Deleterecord",
-    "Search",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 3
+  }
 }

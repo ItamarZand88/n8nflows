@@ -1,7 +1,33 @@
 {
   "id": "1002",
-  "filename": "1002_brave_searches_via_telegram",
+  "title": "Automate Brave Searches via Telegram Commands",
   "description": "Triggers on new Telegram messages, processes search queries, and returns results from the Brave search engine directly in chat.",
+  "filename": "1002_brave_searches_via_telegram",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "If",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Executetool",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "52pBJt8swWgtdY54",
     "meta": {
@@ -346,36 +372,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Brave Searches via Telegram Commands",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "If",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Executetool",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,27 @@
 {
   "id": "984",
-  "filename": "984_insert_data_to_mongodb",
+  "title": "Insert Data into MongoDB on Manual Trigger",
   "description": "Manually triggers the insertion of predefined data into a MongoDB collection, streamlining data entry tasks for users.",
+  "filename": "984_insert_data_to_mongodb",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "MongoDB"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Insert",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -76,30 +96,5 @@
         ]
       }
     }
-  },
-  "title": "Insert Data into MongoDB on Manual Trigger",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual",
-    "MongoDB"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Insert",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

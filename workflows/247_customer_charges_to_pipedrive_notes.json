@@ -1,7 +1,40 @@
 {
   "id": "247",
-  "filename": "247_customer_charges_to_pipedrive_notes",
+  "title": "Automate customer charge notes from Stripe to Pipedrive",
   "description": "Every day at 8 am, retrieves customer charges from Stripe, enriches data with organization info, and creates notes in Pipedrive for easy tracking.",
+  "filename": "247_customer_charges_to_pipedrive_notes",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Function Item",
+    "HTTP Request",
+    "Item Lists",
+    "Merge",
+    "Pipedrive",
+    "Stripe"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Finance & Accounting",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Getall",
+    "Manage customer",
+    "Manage note",
+    "Manage organization",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Pipedrive API Key",
+    "Stripe API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd"
@@ -337,43 +370,5 @@
         ]
       }
     }
-  },
-  "title": "Automate customer charge notes from Stripe to Pipedrive",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Finance & Accounting",
-    "Sales"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Function Item",
-    "HTTP Request",
-    "Item Lists",
-    "Merge",
-    "Pipedrive",
-    "Stripe"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Getall",
-    "Manage customer",
-    "Manage note",
-    "Manage organization",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Pipedrive API Key",
-    "Stripe API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 8
+  }
 }

@@ -1,7 +1,35 @@
 {
   "id": "359",
-  "filename": "359_twitter_mentions_to_rocketchat",
+  "title": "Monitor Twitter mentions and send alerts to RocketChat",
   "description": "Automatically checks for new mentions of @n8n_io on Twitter every minute and sends alerts to RocketChat with tweet details and links.",
+  "filename": "359_twitter_mentions_to_rocketchat",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Function",
+    "Manual",
+    "RocketChat",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "RocketChat API Key",
+    "X (Formerly Twitter) API Key"
+  ],
   "content": {
     "id": "1",
     "name": "TwitterWorkflow",
@@ -167,38 +195,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor Twitter mentions and send alerts to RocketChat",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Function",
-    "Manual",
-    "RocketChat",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "RocketChat API Key",
-    "X (Formerly Twitter) API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 6
+  }
 }

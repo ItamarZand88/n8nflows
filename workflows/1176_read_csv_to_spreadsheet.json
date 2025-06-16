@@ -1,7 +1,23 @@
 {
   "id": "1176",
-  "filename": "1176_read_csv_to_spreadsheet",
+  "title": "Read CSV File and Process Spreadsheet Data",
   "description": "Triggers on manual execution to read a CSV file and process its data for further use in spreadsheet applications, streamlining data management tasks.",
+  "filename": "1176_read_csv_to_spreadsheet",
+  "services": [
+    "Manual",
+    "Read Binary File",
+    "Spreadsheet File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -63,26 +79,5 @@
         ]
       }
     }
-  },
-  "title": "Read CSV File and Process Spreadsheet Data",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Manual",
-    "Read Binary File",
-    "Spreadsheet File"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

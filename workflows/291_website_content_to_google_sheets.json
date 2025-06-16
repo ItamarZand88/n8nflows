@@ -1,7 +1,36 @@
 {
   "id": "291",
-  "filename": "291_website_content_to_google_sheets",
+  "title": "Automate website content extraction and update Google Sheets",
   "description": "Triggers on manual execution to extract website content, analyze it with OpenAI, and update Google Sheets with key business insights.",
+  "filename": "291_website_content_to_google_sheets",
+  "services": [
+    "Code",
+    "Google Sheets",
+    "HTML Extract",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "OpenAI"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "OpenAI API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "f0a68da631efd4ed052a324b63ff90f7a844426af0398a68338f44245d1dd9e5"
@@ -377,39 +406,5 @@
         ]
       }
     }
-  },
-  "title": "Automate website content extraction and update Google Sheets",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Google Sheets",
-    "HTML Extract",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "OpenAI"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "OpenAI API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 8
+  }
 }

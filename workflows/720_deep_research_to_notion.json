@@ -1,7 +1,52 @@
 {
   "id": "720",
-  "filename": "720_deep_research_to_notion",
+  "title": "Automate deep research and report generation in Notion",
   "description": "Captures user research requests via a form, conducts extensive web searches, and compiles findings into a detailed report saved in Notion.",
+  "filename": "720_deep_research_to_notion",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Execution Data",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Markdown",
+    "Merge",
+    "No Operation, do nothing",
+    "Notion",
+    "Split Out",
+    "Sticky Note",
+    "Stop and Error",
+    "Switch",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Filter Data",
+    "Getall",
+    "Manage databasePage",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Notion API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -2864,55 +2909,5 @@
         ]
       }
     }
-  },
-  "title": "Automate deep research and report generation in Notion",
-  "nodes_count": 85,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Execution Data",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Markdown",
-    "Merge",
-    "No Operation, do nothing",
-    "Notion",
-    "Split Out",
-    "Sticky Note",
-    "Stop and Error",
-    "Switch",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Filter Data",
-    "Getall",
-    "Manage databasePage",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 85,
-  "external_integrations_count": 19
+  }
 }

@@ -1,7 +1,27 @@
 {
   "id": "1575",
-  "filename": "1575_pdf_invoice_generation_to_gmail",
+  "title": "Automate PDF Invoice Generation and Email Delivery",
   "description": "Captures billing information from a form, generates a PDF invoice using JSReport, and automatically sends it via Gmail to the specified recipient.",
+  "filename": "1575_pdf_invoice_generation_to_gmail",
+  "services": [
+    "Gmail",
+    "HTTP Request",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "id": "i8nBvPOtFYWk5eoq",
     "meta": {
@@ -196,30 +216,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PDF Invoice Generation and Email Delivery",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Gmail",
-    "HTTP Request",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

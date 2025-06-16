@@ -1,7 +1,31 @@
 {
   "id": "1656",
-  "filename": "1656_crop_analysis_anomaly_detection",
+  "title": "Automate crop cluster analysis and anomaly detection setup",
   "description": "Triggers analysis of agricultural crop data, calculates cluster centers, and sets threshold scores for anomaly detection using Qdrant and Voyage AI.",
+  "filename": "1656_crop_analysis_anomaly_detection",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "m9aACcHqydEbH4nR",
     "meta": {
@@ -1251,34 +1275,5 @@
         ]
       }
     }
-  },
-  "title": "Automate crop cluster analysis and anomaly detection setup",
-  "nodes_count": 48,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 48,
-  "external_integrations_count": 7
+  }
 }

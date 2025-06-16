@@ -1,7 +1,28 @@
 {
   "id": "152",
-  "filename": "152_sync_gdrive_files_to_aws_s3",
+  "title": "Sync updated Google Drive files to AWS S3 automatically",
   "description": "Triggers when a file is updated in Google Drive, retrieves existing files from AWS S3, and uploads the updated file, ensuring your storage is always current.",
+  "filename": "152_sync_gdrive_files_to_aws_s3",
+  "services": [
+    "AWS S3",
+    "Google Drive",
+    "Merge"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Getall",
+    "Upload"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -127,31 +148,5 @@
         ]
       }
     }
-  },
-  "title": "Sync updated Google Drive files to AWS S3 automatically",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "AWS S3",
-    "Google Drive",
-    "Merge"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Getall",
-    "Upload"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,28 @@
 {
   "id": "1090",
-  "filename": "1090_upload_and_list_files_ftp",
+  "title": "Upload and List Files on FTP from HTTP Source",
   "description": "Triggers file download from a URL, uploads it to FTP, and lists existing files in the upload directory for easy management.",
+  "filename": "1090_upload_and_list_files_ftp",
+  "services": [
+    "FTP",
+    "HTTP Request",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "List",
+    "Upload"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -96,31 +117,5 @@
         ]
       }
     }
-  },
-  "title": "Upload and List Files on FTP from HTTP Source",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "FTP",
-    "HTTP Request",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "List",
-    "Upload"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,23 @@
 {
   "id": "1667",
-  "filename": "1667_youtube_video_summary_with_openai",
+  "title": "Summarize YouTube Videos Automatically with OpenAI",
   "description": "Triggers on manual input, fetches YouTube video data, and generates concise summaries using OpenAI's language model for quick insights.",
+  "filename": "1667_youtube_video_summary_with_openai",
+  "services": [
+    "Manual",
+    "Split Out",
+    "Sticky Note",
+    "Summarize"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "MkZ77sIELEO2kQx1",
     "meta": {
@@ -228,26 +244,5 @@
         ]
       }
     }
-  },
-  "title": "Summarize YouTube Videos Automatically with OpenAI",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Manual",
-    "Split Out",
-    "Sticky Note",
-    "Summarize"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 9,
-  "external_integrations_count": 4
+  }
 }

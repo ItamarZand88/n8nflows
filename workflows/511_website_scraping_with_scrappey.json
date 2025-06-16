@@ -1,7 +1,26 @@
 {
   "id": "511",
-  "filename": "511_website_scraping_with_scrappey",
+  "title": "Automate website scraping with Scrappey API on schedule",
   "description": "Triggers a scheduled scraping of a specified website using Scrappey's API, allowing for automated data collection without manual intervention.",
+  "filename": "511_website_scraping_with_scrappey",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "1dd912a1610cd0376bae7bb8f1b5838d2b601f42ac66a48e012166bb954fed5a",
@@ -150,29 +169,5 @@
         ]
       }
     }
-  },
-  "title": "Automate website scraping with Scrappey API on schedule",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

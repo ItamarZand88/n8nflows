@@ -1,7 +1,25 @@
 {
   "id": "187",
-  "filename": "187_quickbooks_invoices_for_onfleet_tasks",
+  "title": "Create QuickBooks invoices for new Onfleet tasks",
   "description": "Automatically generates invoices in QuickBooks Online whenever a new task is created in Onfleet, streamlining your billing process.",
+  "filename": "187_quickbooks_invoices_for_onfleet_tasks",
+  "services": [
+    "Onfleet",
+    "QuickBooks Online"
+  ],
+  "categories": [
+    "Finance & Accounting",
+    "Miscellaneous"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Onfleet Event"
+  ],
+  "actions": [
+    "Create",
+    "Manage invoice"
+  ],
+  "setup_requirements": [],
   "content": {
     "name": "Create a QuickBooks invoice on a new Onfleet Task creation",
     "nodes": [
@@ -55,28 +73,5 @@
         ]
       }
     }
-  },
-  "title": "Create QuickBooks invoices for new Onfleet tasks",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Finance & Accounting",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Onfleet",
-    "QuickBooks Online"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Onfleet Event"
-  ],
-  "actions": [
-    "Create",
-    "Manage invoice"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

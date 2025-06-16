@@ -1,7 +1,35 @@
 {
   "id": "886",
-  "filename": "886_email_categorization_telegram",
+  "title": "Automate email categorization and archiving via Telegram",
   "description": "Triggers on Telegram messages to retrieve Gmail inbox emails, categorizes them as necessary or unnecessary, and archives or labels them accordingly.",
+  "filename": "886_email_categorization_telegram",
+  "services": [
+    "Aggregate",
+    "Filter",
+    "Gmail",
+    "Manual",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Addlabels",
+    "Getall",
+    "Removelabels"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Telegram API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "6af2f94153ea0551e6264b16187490bd4c4739c7f5f3d7adab90c5cf186e22a1",
@@ -472,38 +500,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email categorization and archiving via Telegram",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "Filter",
-    "Gmail",
-    "Manual",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Addlabels",
-    "Getall",
-    "Removelabels"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 6
+  }
 }

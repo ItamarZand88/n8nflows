@@ -1,7 +1,38 @@
 {
   "id": "1144",
-  "filename": "1144_restore_n8n_workflows_from_github",
+  "title": "Restore n8n Workflows from GitHub Backups",
   "description": "Triggers a restoration process to retrieve and recreate n8n workflows from a specified GitHub repository, ensuring seamless workflow management and backup recovery.",
+  "filename": "1144_restore_n8n_workflows_from_github",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "GitHub",
+    "HTTP Request",
+    "Manual",
+    "Split Out",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Fromjson",
+    "Get",
+    "Manage file",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "GitHub API Key",
+    "HTTP Request API Key",
+    "n8n API Key"
+  ],
   "content": {
     "id": "XYz1JYUXFHFVdlLj",
     "meta": {
@@ -274,41 +305,5 @@
         ]
       }
     }
-  },
-  "title": "Restore n8n Workflows from GitHub Backups",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "GitHub",
-    "HTTP Request",
-    "Manual",
-    "Split Out",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Fromjson",
-    "Get",
-    "Manage file",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "GitHub API Key",
-    "HTTP Request API Key",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 8
+  }
 }

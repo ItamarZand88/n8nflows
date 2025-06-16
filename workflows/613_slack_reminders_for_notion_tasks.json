@@ -1,7 +1,35 @@
 {
   "id": "613",
-  "filename": "613_slack_reminders_for_notion_tasks",
+  "title": "Automate Slack reminders for incomplete Notion tasks",
   "description": "Triggers every weekday at 9 AM to fetch incomplete tasks from Notion and sends reminders via Slack to the assigned users, enhancing productivity.",
+  "filename": "613_slack_reminders_for_notion_tasks",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Filter",
+    "Notion",
+    "Slack",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Getall",
+    "Manage databasePage",
+    "Manage user",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Notion API Key",
+    "Slack Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "38d37c49298b42c645e6a7693766d7c3522b24e54454034f955422b5d7af611c"
@@ -661,38 +689,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack reminders for incomplete Notion tasks",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Filter",
-    "Notion",
-    "Slack",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Getall",
-    "Manage databasePage",
-    "Manage user",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Notion API Key",
-    "Slack Account"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 7
+  }
 }

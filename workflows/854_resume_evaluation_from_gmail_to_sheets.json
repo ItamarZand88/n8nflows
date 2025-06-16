@@ -1,7 +1,32 @@
 {
   "id": "854",
-  "filename": "854_resume_evaluation_from_gmail_to_sheets",
+  "title": "Automate resume evaluation from Gmail to Google Sheets",
   "description": "Triggers on new emails with attachments, extracts resume data, evaluates it using AI, and logs results in Google Sheets for easy tracking.",
+  "filename": "854_resume_evaluation_from_gmail_to_sheets",
+  "services": [
+    "Extract from File",
+    "Gmail",
+    "Google Sheets",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Append",
+    "Pdf"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "ddc2592f2c048b3a9255de9457632cead183ed1f8d682593ea74c5b20f968a76",
@@ -287,35 +312,5 @@
         ]
       }
     }
-  },
-  "title": "Automate resume evaluation from Gmail to Google Sheets",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Extract from File",
-    "Gmail",
-    "Google Sheets",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Append",
-    "Pdf"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

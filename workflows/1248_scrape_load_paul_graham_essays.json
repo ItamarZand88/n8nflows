@@ -1,7 +1,28 @@
 {
   "id": "1248",
-  "filename": "1248_scrape_load_paul_graham_essays",
+  "title": "Scrape and Load Paul Graham Essays into Milvus Database",
   "description": "Triggers a manual execution to scrape the latest essays from Paul Graham's website, extracts their content, and loads it into a Milvus vector database for AI processing.",
+  "filename": "1248_scrape_load_paul_graham_essays",
+  "services": [
+    "HTTP Request",
+    "Limit",
+    "Manual",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Extracthtmlcontent"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "A5R7XYSzrCJKlw9k",
     "meta": {
@@ -550,31 +571,5 @@
         ]
       }
     }
-  },
-  "title": "Scrape and Load Paul Graham Essays into Milvus Database",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Limit",
-    "Manual",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Extracthtmlcontent"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 21,
-  "external_integrations_count": 5
+  }
 }

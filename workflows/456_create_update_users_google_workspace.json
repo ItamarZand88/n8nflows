@@ -1,7 +1,27 @@
 {
   "id": "456",
-  "filename": "456_create_update_users_google_workspace",
+  "title": "Create and update users in Google Workspace Admin",
   "description": "Triggers user creation in Google Workspace, updates their last name, and retrieves user details for verification.",
+  "filename": "456_create_update_users_google_workspace",
+  "services": [
+    "Google Workspace Admin",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Workspace Admin Account"
+  ],
   "content": {
     "id": "215",
     "name": "Create, update, and get a user using the G Suite Admin node",
@@ -110,30 +130,5 @@
         ]
       }
     }
-  },
-  "title": "Create and update users in Google Workspace Admin",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Utility"
-  ],
-  "services": [
-    "Google Workspace Admin",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Workspace Admin Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

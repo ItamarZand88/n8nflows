@@ -1,7 +1,48 @@
 {
   "id": "899",
-  "filename": "899_google_drive_backups_for_n8n_workflows",
+  "title": "Automate Google Drive backups for n8n workflows",
   "description": "Triggers daily to backup all n8n workflows to Google Drive, ensuring data safety and easy access, while notifying via email and Discord on success or failure.",
+  "filename": "899_google_drive_backups_for_n8n_workflows",
+  "services": [
+    "Code",
+    "Discord",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Execution Data",
+    "Gmail",
+    "Google Drive",
+    "If",
+    "Limit",
+    "Loop Over Items (Split in Batches)",
+    "Schedule",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage fileFolder",
+    "Manage message",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Discord API Key",
+    "Gmail Account",
+    "Google Drive Account",
+    "n8n API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "937602287d3b666a0823bdd18262071b517e6d94e73b786e71216e87cc17b79b",
@@ -770,51 +811,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Drive backups for n8n workflows",
-  "nodes_count": 29,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Discord",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Execution Data",
-    "Gmail",
-    "Google Drive",
-    "If",
-    "Limit",
-    "Loop Over Items (Split in Batches)",
-    "Schedule",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage fileFolder",
-    "Manage message",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Discord API Key",
-    "Gmail Account",
-    "Google Drive Account",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 29,
-  "external_integrations_count": 14
+  }
 }

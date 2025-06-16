@@ -1,7 +1,39 @@
 {
   "id": "1988",
-  "filename": "1988_monitor_pricing_changes_to_slack",
+  "title": "Monitor pricing changes and notify via Slack",
   "description": "Triggers on demand to check pricing URLs, summarize changes, and notify Slack channels about significant updates, enhancing pricing strategy awareness.",
+  "filename": "1988_monitor_pricing_changes_to_slack",
+  "services": [
+    "Airtop",
+    "Code",
+    "Filter",
+    "Google Sheets",
+    "Manual",
+    "Merge",
+    "Slack"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage extraction",
+    "Query",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtop API Key",
+    "Google Sheets Account",
+    "Slack API Key"
+  ],
   "content": {
     "id": "XY0cZQwrhzOkisSt",
     "meta": {
@@ -351,42 +383,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor pricing changes and notify via Slack",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Airtop",
-    "Code",
-    "Filter",
-    "Google Sheets",
-    "Manual",
-    "Merge",
-    "Slack"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage extraction",
-    "Query",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtop API Key",
-    "Google Sheets Account",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 7
+  }
 }

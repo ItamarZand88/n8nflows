@@ -1,7 +1,29 @@
 {
   "id": "1243",
-  "filename": "1243_email_responses_with_ai_summarization",
+  "title": "Automate email responses with AI summarization and approval",
   "description": "Triggers on new emails, summarizes their content, generates replies, and sends for approval before responding, enhancing email management efficiency.",
+  "filename": "1243_email_responses_with_ai_summarization",
+  "services": [
+    "Edit Fields (Set)",
+    "Email Trigger (IMAP)",
+    "If",
+    "Markdown",
+    "Send Email",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Email Trigger (IMAP) Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Sendandwait",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "Nvn78tMRNnKji7Fg",
     "meta": {
@@ -437,32 +459,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email responses with AI summarization and approval",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Email Trigger (IMAP)",
-    "If",
-    "Markdown",
-    "Send Email",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Email Trigger (IMAP) Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Sendandwait",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 16,
-  "external_integrations_count": 6
+  }
 }

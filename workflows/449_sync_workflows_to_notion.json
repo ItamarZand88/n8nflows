@@ -1,7 +1,37 @@
 {
   "id": "449",
-  "filename": "449_sync_workflows_to_notion",
+  "title": "Sync new workflows to Notion every 15 minutes",
   "description": "Automatically retrieves workflows tagged 'sync-to-notion' every 15 minutes and updates or adds them to a Notion database for easy tracking.",
+  "filename": "449_sync_workflows_to_notion",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Notion",
+    "Schedule",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage databasePage",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Notion API Key",
+    "n8n API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -415,40 +445,5 @@
         ]
       }
     }
-  },
-  "title": "Sync new workflows to Notion every 15 minutes",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Notion",
-    "Schedule",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage databasePage",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Notion API Key",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

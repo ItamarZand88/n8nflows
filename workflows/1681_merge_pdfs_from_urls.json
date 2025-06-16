@@ -1,7 +1,26 @@
 {
   "id": "1681",
-  "filename": "1681_merge_pdfs_from_urls",
+  "title": "Merge PDF files from multiple URLs into one document",
   "description": "Triggers a manual workflow to download two PDF files from specified URLs, merges them into a single PDF, and saves the result to disk.",
+  "filename": "1681_merge_pdfs_from_urls",
+  "services": [
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "Read/Write Files from Disk"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Write"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "MVPlLz3CiQok6rXy",
     "meta": {
@@ -187,29 +206,5 @@
         ]
       }
     }
-  },
-  "title": "Merge PDF files from multiple URLs into one document",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "Read/Write Files from Disk"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Write"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

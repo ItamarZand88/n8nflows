@@ -1,7 +1,40 @@
 {
   "id": "299",
-  "filename": "299_gmail_pdfs_to_google_drive",
+  "title": "Automate PDF uploads from Gmail to Google Drive using OpenAI",
   "description": "Triggers on new Gmail emails, filters PDF attachments using OpenAI, and uploads matched files to a specified Google Drive folder.",
+  "filename": "299_gmail_pdfs_to_google_drive",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Drive",
+    "If",
+    "Merge",
+    "No Operation, do nothing",
+    "OpenAI",
+    "Read PDF",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "OpenAI API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "a2434c94d549548a685cca39cc4614698e94f527bcea84eefa363f1037ae14cd"
@@ -488,43 +521,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PDF uploads from Gmail to Google Drive using OpenAI",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Drive",
-    "If",
-    "Merge",
-    "No Operation, do nothing",
-    "OpenAI",
-    "Read PDF",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "OpenAI API Key"
-  ],
-  "workflow_complexity": 18,
-  "external_integrations_count": 10
+  }
 }

@@ -1,7 +1,43 @@
 {
   "id": "579",
-  "filename": "579_visual_regression_testing_apify",
+  "title": "Automate Visual Regression Testing with Google Sheets and Apify",
   "description": "Triggers weekly to capture webpage screenshots, compares them using AI, and logs changes in Linear for visual regression testing.",
+  "filename": "579_visual_regression_testing_apify",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Filter",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "Linear",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Download",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Google Sheets Account",
+    "Linear API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -1002,46 +1038,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Visual Regression Testing with Google Sheets and Apify",
-  "nodes_count": 34,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Filter",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "Linear",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Download",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Google Sheets Account",
-    "Linear API Key"
-  ],
-  "workflow_complexity": 34,
-  "external_integrations_count": 12
+  }
 }

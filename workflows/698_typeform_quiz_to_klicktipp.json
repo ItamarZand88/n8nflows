@@ -1,7 +1,36 @@
 {
   "id": "698",
-  "filename": "698_typeform_quiz_to_klicktipp",
+  "title": "Automate quiz response handling from Typeform to KlickTipp",
   "description": "Captures new quiz submissions from Typeform, processes the data, and subscribes contacts to KlickTipp with accurate information and tags.",
+  "filename": "698_typeform_quiz_to_klicktipp",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "If",
+    "Merge",
+    "Split Out",
+    "Sticky Note",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Manage contact-tagging",
+    "Manage subscriber",
+    "Set Data",
+    "Subscribe"
+  ],
+  "setup_requirements": [
+    "Typeform API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "95b3ab5a70ab1c8c1906357a367f1b236ef12a1409406fd992f60255f0f95f85"
@@ -509,39 +538,5 @@
         ]
       }
     }
-  },
-  "title": "Automate quiz response handling from Typeform to KlickTipp",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "If",
-    "Merge",
-    "Split Out",
-    "Sticky Note",
-    "Typeform"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Manage contact-tagging",
-    "Manage subscriber",
-    "Set Data",
-    "Subscribe"
-  ],
-  "setup_requirements": [
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 7
+  }
 }

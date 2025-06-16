@@ -1,7 +1,32 @@
 {
   "id": "173",
-  "filename": "173_sync_phone_call_timers_to_syncro",
+  "title": "Sync phone call timers to Syncro from Google Sheets",
   "description": "Automatically adds phone call timer entries to Syncro based on data from Google Sheets when a webhook receives call details.",
+  "filename": "173_sync_phone_call_timers_to_syncro",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "No Operation, do nothing",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Lookup",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd"
@@ -195,35 +220,5 @@
         ]
       }
     }
-  },
-  "title": "Sync phone call timers to Syncro from Google Sheets",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "No Operation, do nothing",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Lookup",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,41 @@
 {
   "id": "1458",
-  "filename": "1458_lead_management_google_drive_sheets",
+  "title": "Automate Lead Management with Google Drive and Sheets",
   "description": "Triggers when new leads are added to Google Drive, extracts data from CSV files, and updates Google Sheets with lead information and presentation IDs.",
+  "filename": "1458_lead_management_google_drive_sheets",
+  "services": [
+    "Extract from File",
+    "Google Drive",
+    "Google Sheets",
+    "Google Slides",
+    "Merge",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Append",
+    "Copy",
+    "Download",
+    "Manage spreadsheet",
+    "Move",
+    "Replacetext",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Google Sheets Account",
+    "Google Slides Account"
+  ],
   "content": {
     "id": "eF84e2NyJWTCVClW",
     "meta": {
@@ -886,44 +920,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Lead Management with Google Drive and Sheets",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Extract from File",
-    "Google Drive",
-    "Google Sheets",
-    "Google Slides",
-    "Merge",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Append",
-    "Copy",
-    "Download",
-    "Manage spreadsheet",
-    "Move",
-    "Replacetext",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Google Sheets Account",
-    "Google Slides Account"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 7
+  }
 }

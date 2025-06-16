@@ -1,7 +1,30 @@
 {
   "id": "2005",
-  "filename": "2005_stripe_payment_data_extraction",
+  "title": "Automate customer data extraction from Stripe payments",
   "description": "Triggers on completed Stripe checkout sessions, extracts customer details, and filters key information for easy access and follow-up.",
+  "filename": "2005_stripe_payment_data_extraction",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Stripe"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Finance & Accounting",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Stripe Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Stripe API Key"
+  ],
   "content": {
     "id": "YVNJOltj0jMQatGz",
     "meta": {
@@ -134,33 +157,5 @@
         ]
       }
     }
-  },
-  "title": "Automate customer data extraction from Stripe payments",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Finance & Accounting",
-    "Sales"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Stripe"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Stripe Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Stripe API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

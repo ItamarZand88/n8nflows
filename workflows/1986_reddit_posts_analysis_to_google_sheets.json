@@ -1,7 +1,40 @@
 {
   "id": "1986",
-  "filename": "1986_reddit_posts_analysis_to_google_sheets",
+  "title": "Analyze Reddit Posts for Business Solutions and Insights",
   "description": "Triggers on demand to fetch Reddit posts, analyzes sentiment, and drafts responses while summarizing insights into Google Sheets for business opportunities.",
+  "filename": "1986_reddit_posts_analysis_to_google_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Sheets",
+    "If",
+    "Manual",
+    "Merge",
+    "Reddit",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Manage draft",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account",
+    "Reddit Account"
+  ],
   "content": {
     "id": "Xx4zOjRFLI8W9PiC",
     "meta": {
@@ -1096,43 +1129,5 @@
         ]
       }
     }
-  },
-  "title": "Analyze Reddit Posts for Business Solutions and Insights",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Sheets",
-    "If",
-    "Manual",
-    "Merge",
-    "Reddit",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Manage draft",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account",
-    "Reddit Account"
-  ],
-  "workflow_complexity": 22,
-  "external_integrations_count": 8
+  }
 }

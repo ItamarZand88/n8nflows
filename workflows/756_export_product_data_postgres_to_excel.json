@@ -1,7 +1,25 @@
 {
   "id": "756",
-  "filename": "756_export_product_data_postgres_to_excel",
+  "title": "Export product data from Postgres to Excel spreadsheet",
   "description": "Fetches product names and EANs from a Postgres database and exports the data to an Excel spreadsheet for easy sharing and analysis.",
+  "filename": "756_export_product_data_postgres_to_excel",
+  "services": [
+    "Postgres",
+    "Spreadsheet File",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Executequery",
+    "Tofile"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -69,28 +87,5 @@
         ]
       }
     }
-  },
-  "title": "Export product data from Postgres to Excel spreadsheet",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Postgres",
-    "Spreadsheet File",
-    "Write Binary File"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Executequery",
-    "Tofile"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

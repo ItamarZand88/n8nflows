@@ -1,7 +1,42 @@
 {
   "id": "1982",
-  "filename": "1982_suspicious_logins_to_gmail_slack",
+  "title": "Monitor Suspicious Logins and Notify Users via Gmail and Slack",
   "description": "Detects suspicious login attempts, analyzes user behavior, and sends alerts via Gmail and Slack to enhance security and user awareness.",
+  "filename": "1982_suspicious_logins_to_gmail_slack",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Gmail",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "Postgres",
+    "Slack",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Executequery",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Slack API Key"
+  ],
   "content": {
     "id": "xQHiKDTkezDY5lFu",
     "meta": {
@@ -1229,45 +1264,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor Suspicious Logins and Notify Users via Gmail and Slack",
-  "nodes_count": 43,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Gmail",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "Postgres",
-    "Slack",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Executequery",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 43,
-  "external_integrations_count": 13
+  }
 }

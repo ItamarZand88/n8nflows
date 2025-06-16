@@ -1,7 +1,30 @@
 {
   "id": "1395",
-  "filename": "1395_sync_baserow_video_descriptions",
+  "title": "Sync Baserow video descriptions with Markdown conversion",
   "description": "Automatically syncs video descriptions in Baserow by converting Markdown to HTML, updating records based on single or multiple entries.",
+  "filename": "1395_sync_baserow_video_descriptions",
+  "services": [
+    "Baserow",
+    "If",
+    "Markdown",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Baserow API Key"
+  ],
   "content": {
     "id": "cMccNWyyvptrhRt6",
     "meta": {
@@ -292,33 +315,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Baserow video descriptions with Markdown conversion",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Baserow",
-    "If",
-    "Markdown",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Baserow API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 5
+  }
 }

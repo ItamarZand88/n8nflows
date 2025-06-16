@@ -1,7 +1,43 @@
 {
   "id": "1521",
-  "filename": "1521_sync_spotify_liked_songs_with_playlist",
+  "title": "Sync Spotify Liked Songs with Target Playlist",
   "description": "Automatically syncs your Spotify Liked Songs with a specified playlist, adding new tracks and removing those no longer liked, ensuring your playlist stays updated.",
+  "filename": "1521_sync_spotify_liked_songs_with_playlist",
+  "services": [
+    "Compare Datasets",
+    "Edit Fields (Set)",
+    "Filter",
+    "Gotify",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sort",
+    "Spotify",
+    "Sticky Note",
+    "Summarize"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Miscellaneous"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Delete",
+    "Filter Data",
+    "Gettracks",
+    "Getuserplaylists",
+    "Manage library",
+    "Manage playlist",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "gemC8tYGZk3LtBHG",
     "meta": {
@@ -1005,46 +1041,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Spotify Liked Songs with Target Playlist",
-  "nodes_count": 40,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Compare Datasets",
-    "Edit Fields (Set)",
-    "Filter",
-    "Gotify",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sort",
-    "Spotify",
-    "Sticky Note",
-    "Summarize"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Delete",
-    "Filter Data",
-    "Gettracks",
-    "Getuserplaylists",
-    "Manage library",
-    "Manage playlist",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 40,
-  "external_integrations_count": 13
+  }
 }

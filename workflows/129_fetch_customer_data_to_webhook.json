@@ -1,7 +1,26 @@
 {
   "id": "129",
-  "filename": "129_fetch_customer_data_to_webhook",
+  "title": "Fetch Customer Data and Send to Webhook",
   "description": "Triggers on manual execution, retrieves all customer data, and sends it to a specified webhook for further processing.",
+  "filename": "129_fetch_customer_data_to_webhook",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getallpeople",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -114,29 +133,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch Customer Data and Send to Webhook",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getallpeople",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,31 @@
 {
   "id": "318",
-  "filename": "318_random_products_to_xml",
+  "title": "Generate XML files for random product listings from MySQL",
   "description": "Triggers a manual execution to fetch 16 random products from MySQL, formats them into XML, and saves the files for easy access and integration.",
+  "filename": "318_random_products_to_xml",
+  "services": [
+    "Convert to/from binary data",
+    "Edit Fields (Set)",
+    "Item Lists",
+    "Manual",
+    "MySQL",
+    "Sticky Note",
+    "Write Binary File",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Concatenateitems",
+    "Executequery",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "fb924c73af8f703905bc09c9ee8076f48c17b596ed05b18c0ff86915ef8a7c4a"
@@ -384,34 +408,5 @@
         ]
       }
     }
-  },
-  "title": "Generate XML files for random product listings from MySQL",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Convert to/from binary data",
-    "Edit Fields (Set)",
-    "Item Lists",
-    "Manual",
-    "MySQL",
-    "Sticky Note",
-    "Write Binary File",
-    "XML"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Concatenateitems",
-    "Executequery",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 13,
-  "external_integrations_count": 8
+  }
 }

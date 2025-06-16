@@ -1,7 +1,28 @@
 {
   "id": "2000",
-  "filename": "2000_json_embedding_to_qdrant",
+  "title": "Automate JSON File Embedding into Qdrant Vector Store",
   "description": "Triggers on demand to list JSON files, download them, and embed their content into Qdrant for efficient semantic retrieval and analysis.",
+  "filename": "2000_json_embedding_to_qdrant",
+  "services": [
+    "FTP",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "List"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "YoUP55V241b9F2ze",
     "meta": {
@@ -325,31 +346,5 @@
         ]
       }
     }
-  },
-  "title": "Automate JSON File Embedding into Qdrant Vector Store",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "FTP",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "List"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 13,
-  "external_integrations_count": 4
+  }
 }

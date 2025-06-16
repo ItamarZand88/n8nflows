@@ -1,7 +1,22 @@
 {
   "id": "1353",
-  "filename": "1353_extract_license_plate_from_image",
+  "title": "Extract license plate numbers from uploaded images",
   "description": "Triggers when a user uploads an image, analyzes it to extract the license plate number, and displays the result on a completion page.",
+  "filename": "1353_extract_license_plate_from_image",
+  "services": [
+    "Edit Fields (Set)",
+    "n8n Form"
+  ],
+  "categories": [],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "B37wvB0tdKgjuabw",
     "meta": {
@@ -183,25 +198,5 @@
         ]
       }
     }
-  },
-  "title": "Extract license plate numbers from uploaded images",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [],
-  "services": [
-    "Edit Fields (Set)",
-    "n8n Form"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 2
+  }
 }

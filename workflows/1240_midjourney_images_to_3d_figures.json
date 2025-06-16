@@ -1,7 +1,26 @@
 {
   "id": "1240",
-  "filename": "1240_midjourney_images_to_3d_figures",
+  "title": "Generate 3D Figurine Concepts from Midjourney Images",
   "description": "Triggers image generation via Midjourney, retrieves the image URL, and creates 3D figurine views for design visualization.",
+  "filename": "1240_midjourney_images_to_3d_figures",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "If",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "9r4T5kELOXAV8L1F",
     "meta": {
@@ -356,29 +375,5 @@
         ]
       }
     }
-  },
-  "title": "Generate 3D Figurine Concepts from Midjourney Images",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "If",
-    "Manual"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 4
+  }
 }

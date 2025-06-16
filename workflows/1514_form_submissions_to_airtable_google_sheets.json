@@ -1,7 +1,38 @@
 {
   "id": "1514",
-  "filename": "1514_form_submissions_to_airtable_google_sheets",
+  "title": "Automate form submissions to Airtable and Google Sheets",
   "description": "Captures new form submissions, extracts date and time, and saves the data to Airtable and Google Sheets while sending confirmation emails to users.",
+  "filename": "1514_form_submissions_to_airtable_google_sheets",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Sheets",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append",
+    "Create",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Gmail Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "g25bM3Hj71T3ZVVe",
     "meta": {
@@ -444,41 +475,5 @@
         ]
       }
     }
-  },
-  "title": "Automate form submissions to Airtable and Google Sheets",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Sheets",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append",
-    "Create",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Gmail Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

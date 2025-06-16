@@ -1,7 +1,35 @@
 {
   "id": "1833",
-  "filename": "1833_slack_ai_responses",
+  "title": "Automate Slack responses using AI and company documents",
   "description": "Triggers on Slack mentions, retrieves relevant company information, and sends concise AI-generated responses to team members for quick support.",
+  "filename": "1833_slack_ai_responses",
+  "services": [
+    "Google Drive",
+    "HTTP Request",
+    "Manual",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Slack Event"
+  ],
+  "actions": [
+    "Download",
+    "Manage fileFolder"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Slack API Key"
+  ],
   "content": {
     "id": "SHpLY12UobbcWRnl",
     "meta": {
@@ -636,38 +664,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack responses using AI and company documents",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Google Drive",
-    "HTTP Request",
-    "Manual",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Slack Event"
-  ],
-  "actions": [
-    "Download",
-    "Manage fileFolder"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 5
+  }
 }

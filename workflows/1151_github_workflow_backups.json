@@ -1,7 +1,38 @@
 {
   "id": "1151",
-  "filename": "1151_github_workflow_backups",
+  "title": "Automate GitHub workflow backups and updates",
   "description": "Triggers daily to check for changes in N8N workflows, updating or creating backup files in GitHub as needed, ensuring version control and data safety.",
+  "filename": "1151_github_workflow_backups",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Function",
+    "GitHub",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "No Operation, do nothing",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Edit",
+    "Execute Function",
+    "Get",
+    "Manage file",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "GitHub API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -453,41 +484,5 @@
         ]
       }
     }
-  },
-  "title": "Automate GitHub workflow backups and updates",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Function",
-    "GitHub",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "No Operation, do nothing",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Edit",
-    "Execute Function",
-    "Get",
-    "Manage file",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "GitHub API Key"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 10
+  }
 }

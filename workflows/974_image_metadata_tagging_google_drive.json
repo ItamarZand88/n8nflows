@@ -1,7 +1,32 @@
 {
   "id": "974",
-  "filename": "974_image_metadata_tagging_google_drive",
+  "title": "Automate image metadata tagging from Google Drive uploads",
   "description": "Triggers when a new image is added to Google Drive, analyzes its content, and writes relevant keywords back into the image metadata.",
+  "filename": "974_image_metadata_tagging_google_drive",
+  "services": [
+    "Google Drive",
+    "Merge",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Analyze",
+    "Download",
+    "Filter Data",
+    "Manage image",
+    "Update",
+    "Write"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "4nBQyhwqDqmXY2AL",
     "meta": {
@@ -252,35 +277,5 @@
         ]
       }
     }
-  },
-  "title": "Automate image metadata tagging from Google Drive uploads",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Google Drive",
-    "Merge",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Analyze",
-    "Download",
-    "Filter Data",
-    "Manage image",
-    "Update",
-    "Write"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 3
+  }
 }

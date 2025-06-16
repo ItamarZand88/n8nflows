@@ -1,7 +1,24 @@
 {
   "id": "303",
-  "filename": "303_retrieve_customer_data_count",
+  "title": "Retrieve Customer Data and Count Records",
   "description": "Triggers on manual execution to fetch all customer data and counts the total number of records for easy management and analysis.",
+  "filename": "303_retrieve_customer_data_count",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getallpeople",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -79,27 +96,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve Customer Data and Count Records",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getallpeople",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

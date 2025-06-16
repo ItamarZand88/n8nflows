@@ -1,7 +1,22 @@
 {
   "id": "1674",
-  "filename": "1674_movie_recommendations_with_ai",
+  "title": "Automate movie recommendations and favorites storage with AI",
   "description": "Triggers on chat messages to recommend movies using AI, queries MongoDB for data, and stores user favorites back to the database.",
+  "filename": "1674_movie_recommendations_with_ai",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Aggregate"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "22PddLUgcjSJbT1w",
     "meta": {
@@ -211,25 +226,5 @@
         ]
       }
     }
-  },
-  "title": "Automate movie recommendations and favorites storage with AI",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Aggregate"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 1
+  }
 }

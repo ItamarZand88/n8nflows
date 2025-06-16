@@ -1,7 +1,25 @@
 {
   "id": "1936",
-  "filename": "1936_validate_seatable_webhooks",
+  "title": "Validate Seatable Webhooks with HMAC SHA256 Authentication",
   "description": "Secures Seatable webhook requests by verifying HMAC SHA256 signatures, ensuring data integrity before processing further actions.",
+  "filename": "1936_validate_seatable_webhooks",
+  "services": [
+    "Crypto",
+    "If",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "W1ugowsjzt1SC4hH",
     "meta": {
@@ -177,28 +195,5 @@
         ]
       }
     }
-  },
-  "title": "Validate Seatable Webhooks with HMAC SHA256 Authentication",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Crypto",
-    "If",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

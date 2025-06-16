@@ -1,7 +1,42 @@
 {
   "id": "1549",
-  "filename": "1549_instagram_content_creation_trending_posts",
+  "title": "Automate Instagram Content Creation from Trending Posts",
   "description": "Automatically scrapes trending Instagram posts, generates engaging captions, and publishes content to your account while sending updates via Telegram.",
+  "filename": "1549_instagram_content_creation_trending_posts",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Facebook Graph",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "Postgres",
+    "Schedule",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Analyze",
+    "Filter Data",
+    "Manage image",
+    "Select",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Facebook Graph API Key",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "H7porcmXYj7StO23",
     "meta": {
@@ -1435,45 +1470,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Instagram Content Creation from Trending Posts",
-  "nodes_count": 44,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Facebook Graph",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "Postgres",
-    "Schedule",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Analyze",
-    "Filter Data",
-    "Manage image",
-    "Select",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Facebook Graph API Key",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 44,
-  "external_integrations_count": 11
+  }
 }

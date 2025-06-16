@@ -1,7 +1,27 @@
 {
   "id": "990",
-  "filename": "990_download_google_drive_file",
+  "title": "Download a file from Google Drive to local storage",
   "description": "Triggers a manual execution to download a specified file from Google Drive and saves it as a binary file locally for easy access.",
+  "filename": "990_download_google_drive_file",
+  "services": [
+    "Google Drive",
+    "Manual",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download"
+  ],
+  "setup_requirements": [
+    "Google Drive API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -68,30 +88,5 @@
         ]
       }
     }
-  },
-  "title": "Download a file from Google Drive to local storage",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Google Drive",
-    "Manual",
-    "Write Binary File"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download"
-  ],
-  "setup_requirements": [
-    "Google Drive API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,42 @@
 {
   "id": "96",
-  "filename": "96_hubspot_deals_to_tickets_and_slack",
+  "title": "Automate ticket creation and notifications for HubSpot deals",
   "description": "Triggers on new HubSpot deals, categorizes them by stage, and creates high or low-priority tickets while notifying via Slack for closed deals.",
+  "filename": "96_hubspot_deals_to_tickets_and_slack",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Google Slides",
+    "HubSpot",
+    "If",
+    "Slack",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "HITL",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New HubSpot Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Get",
+    "Manage ticket",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Google Slides Account",
+    "HubSpot API Key",
+    "Slack API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -331,45 +366,5 @@
         ]
       }
     }
-  },
-  "title": "Automate ticket creation and notifications for HubSpot deals",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "HITL",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Google Slides",
-    "HubSpot",
-    "If",
-    "Slack",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New HubSpot Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Get",
-    "Manage ticket",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Google Slides Account",
-    "HubSpot API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

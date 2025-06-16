@@ -1,7 +1,38 @@
 {
   "id": "646",
-  "filename": "646_linear_to_productboard_sync",
+  "title": "Sync Linear project updates to Productboard and notify on Slack",
   "description": "Automates the process of syncing project status and timeframe updates from Linear to Productboard, while sending notifications to Slack for team awareness.",
+  "filename": "646_linear_to_productboard_sync",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Linear",
+    "Merge",
+    "Slack",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Linear Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Linear API Key",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "21b41c2deb1c9e3f543253a0aa6a6e2c7bd7ef6bab90ffd478aa947c17d3b352",
@@ -654,41 +685,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Linear project updates to Productboard and notify on Slack",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Linear",
-    "Merge",
-    "Slack",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Linear Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Linear API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 9
+  }
 }

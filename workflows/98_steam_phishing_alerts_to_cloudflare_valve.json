@@ -1,7 +1,27 @@
 {
   "id": "98",
-  "filename": "98_steam_phishing_alerts_to_cloudflare_valve",
+  "title": "Automate phishing alerts for Steam domains to Cloudflare and Valve",
   "description": "Captures Steam domain queries via webhook, checks for phishing indicators, and sends alerts to Cloudflare and Valve if threats are detected.",
+  "filename": "98_steam_phishing_alerts_to_cloudflare_valve",
+  "services": [
+    "Execute Command",
+    "If",
+    "Mailgun",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Mailgun API Key"
+  ],
   "content": {
     "name": "Steam + CF Report",
     "nodes": [
@@ -258,30 +278,5 @@
         ]
       }
     }
-  },
-  "title": "Automate phishing alerts for Steam domains to Cloudflare and Valve",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Execute Command",
-    "If",
-    "Mailgun",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Mailgun API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 4
+  }
 }

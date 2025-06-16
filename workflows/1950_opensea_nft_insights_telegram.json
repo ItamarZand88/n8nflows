@@ -1,7 +1,29 @@
 {
   "id": "1950",
-  "filename": "1950_opensea_nft_insights_telegram",
+  "title": "Automate OpenSea NFT Insights via Telegram",
   "description": "Triggers on new Telegram messages, processes NFT queries using AI, and sends real-time insights about OpenSea market trends and listings back to users.",
+  "filename": "1950_opensea_nft_insights_telegram",
+  "services": [
+    "Edit Fields (Set)",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "wi2ZWKN9XPR0jkvn",
     "meta": {
@@ -457,32 +479,5 @@
         ]
       }
     }
-  },
-  "title": "Automate OpenSea NFT Insights via Telegram",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 3
+  }
 }

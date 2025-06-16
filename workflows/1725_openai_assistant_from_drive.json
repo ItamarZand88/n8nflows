@@ -1,7 +1,31 @@
 {
   "id": "1725",
-  "filename": "1725_openai_assistant_from_drive",
+  "title": "Create an OpenAI Assistant from Google Drive Files",
   "description": "Triggers a manual workflow to download a Google Drive file, upload it to OpenAI, and create a specialized assistant for the Summer Eclectic Marathon Festival.",
+  "filename": "1725_openai_assistant_from_drive",
+  "services": [
+    "Google Drive",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Create",
+    "Download",
+    "Manage assistant",
+    "Manage file"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "InzSAe2cnTJImvLm",
     "meta": {
@@ -245,34 +269,5 @@
         ]
       }
     }
-  },
-  "title": "Create an OpenAI Assistant from Google Drive Files",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Google Drive",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Create",
-    "Download",
-    "Manage assistant",
-    "Manage file"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 3
+  }
 }

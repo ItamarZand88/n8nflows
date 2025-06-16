@@ -1,7 +1,29 @@
 {
   "id": "769",
-  "filename": "769_transaction_analysis_with_google_sheets",
+  "title": "Automate transaction data analysis with Google Sheets and AI",
   "description": "Triggers on chat messages to analyze transaction data from Google Sheets, filtering by date and status, and providing insights through an AI agent.",
+  "filename": "769_transaction_analysis_with_google_sheets",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Execute Workflow",
+    "Filter",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "HTTP Request Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "d6b502dfa4d9dd072cdc5c2bb763558661053f651289291352a84403e01b3d1b",
@@ -771,32 +793,5 @@
         ]
       }
     }
-  },
-  "title": "Automate transaction data analysis with Google Sheets and AI",
-  "nodes_count": 30,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Execute Workflow",
-    "Filter",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 30,
-  "external_integrations_count": 6
+  }
 }

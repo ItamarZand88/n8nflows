@@ -1,7 +1,30 @@
 {
   "id": "483",
-  "filename": "483_youtube_rss_feeds_generation",
+  "title": "Generate YouTube RSS Feeds from Channel IDs or Usernames",
   "description": "Captures YouTube channel or video inputs, retrieves channel data, and generates multiple RSS feed formats for videos and community posts.",
+  "filename": "483_youtube_rss_feeds_generation",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Merge",
+    "Sticky Note",
+    "Switch",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {},
     "name": "[n8n] YouTube Channel Advanced RSS Feeds Generator",
@@ -904,33 +927,5 @@
         ]
       }
     }
-  },
-  "title": "Generate YouTube RSS Feeds from Channel IDs or Usernames",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Merge",
-    "Sticky Note",
-    "Switch",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 20,
-  "external_integrations_count": 8
+  }
 }

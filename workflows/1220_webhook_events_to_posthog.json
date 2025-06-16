@@ -1,7 +1,23 @@
 {
   "id": "1220",
-  "filename": "1220_webhook_events_to_posthog",
+  "title": "Track events in PostHog via Webhook integration",
   "description": "Captures event data sent to a Webhook and logs it in PostHog for analytics and tracking purposes.",
+  "filename": "1220_webhook_events_to_posthog",
+  "services": [
+    "PostHog",
+    "Webhook"
+  ],
+  "categories": [
+    "Analytics",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "PostHog API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -49,26 +65,5 @@
         ]
       }
     }
-  },
-  "title": "Track events in PostHog via Webhook integration",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Analytics",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "PostHog",
-    "Webhook"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "PostHog API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

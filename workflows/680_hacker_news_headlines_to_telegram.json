@@ -1,7 +1,35 @@
 {
   "id": "680",
-  "filename": "680_hacker_news_headlines_to_telegram",
+  "title": "Automate daily Hacker News headline summaries to Telegram",
   "description": "Triggers daily at 9 PM, fetches top Hacker News headlines from multiple years, and sends a categorized summary to a Telegram chat for easy review.",
+  "filename": "680_hacker_news_headlines_to_telegram",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Merge",
+    "Schedule",
+    "Split Out",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Extracthtmlcontent",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -405,38 +433,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily Hacker News headline summaries to Telegram",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Merge",
-    "Schedule",
-    "Split Out",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Extracthtmlcontent",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 8
+  }
 }

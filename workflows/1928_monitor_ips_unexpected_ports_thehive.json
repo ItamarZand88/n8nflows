@@ -1,7 +1,34 @@
 {
   "id": "1928",
-  "filename": "1928_monitor_ips_unexpected_ports_thehive",
+  "title": "Monitor IPs for Unexpected Open Ports and Alert TheHive",
   "description": "Automates weekly checks of monitored IPs for unexpected open ports using Shodan, formatting results, and creating alerts in TheHive for incident response.",
+  "filename": "1928_monitor_ips_unexpected_ports_thehive",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "Item Lists",
+    "Loop Over Items (Split in Batches)",
+    "Markdown",
+    "Schedule",
+    "Sticky Note",
+    "TheHive"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Converttohtmltable",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "TheHive API Key"
+  ],
   "content": {
     "id": "VoLT6Omw9KMQgPum",
     "meta": {
@@ -1471,37 +1498,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor IPs for Unexpected Open Ports and Alert TheHive",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "Item Lists",
-    "Loop Over Items (Split in Batches)",
-    "Markdown",
-    "Schedule",
-    "Sticky Note",
-    "TheHive"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Converttohtmltable",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "TheHive API Key"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 9
+  }
 }

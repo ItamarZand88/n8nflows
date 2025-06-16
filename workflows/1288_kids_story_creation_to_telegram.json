@@ -1,7 +1,31 @@
 {
   "id": "1288",
-  "filename": "1288_kids_story_creation_to_telegram",
+  "title": "Automate Kids' Story Creation and Distribution in Arabic",
   "description": "Triggers every 12 hours to create, translate, and send engaging kids' stories with images and audio to a Telegram channel, enhancing educational content delivery.",
+  "filename": "1288_kids_story_creation_to_telegram",
+  "services": [
+    "Schedule",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Manage audio",
+    "Manage image",
+    "Sendaudio",
+    "Sendphoto"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "84ba6d895254e080ac2b4916d987aa66b000f88d4d919a6b9c76848f9b8a7616",
@@ -432,34 +456,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Kids' Story Creation and Distribution in Arabic",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Schedule",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Manage audio",
-    "Manage image",
-    "Sendaudio",
-    "Sendphoto"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 3
+  }
 }

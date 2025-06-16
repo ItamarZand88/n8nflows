@@ -1,7 +1,28 @@
 {
   "id": "1153",
-  "filename": "1153_hard_disk_monitor_twilio_alert",
+  "title": "Monitor hard disk usage and alert via Twilio SMS",
   "description": "Checks hard disk memory usage twice daily and sends an SMS alert through Twilio if usage exceeds 80%, helping maintain system performance.",
+  "filename": "1153_hard_disk_monitor_twilio_alert",
+  "services": [
+    "Cron",
+    "Execute Command",
+    "If",
+    "No Operation, do nothing",
+    "Twilio"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Twilio API Key"
+  ],
   "content": {
     "id": "81",
     "name": "Execute a command that gives the hard disk memory used on the host machine",
@@ -132,31 +153,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor hard disk usage and alert via Twilio SMS",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Execute Command",
-    "If",
-    "No Operation, do nothing",
-    "Twilio"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Twilio API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

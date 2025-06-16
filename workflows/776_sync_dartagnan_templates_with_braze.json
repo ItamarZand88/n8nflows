@@ -1,7 +1,31 @@
 {
   "id": "776",
-  "filename": "776_sync_dartagnan_templates_with_braze",
+  "title": "Sync Dartagnan email templates with Braze",
   "description": "Automates the retrieval of email templates from Dartagnan, compares them with existing templates in Braze, and updates or creates templates as needed.",
+  "filename": "776_sync_dartagnan_templates_with_braze",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "4bcdfa475d937e8c2fc1d40936bca36ec49bdb2525076e1bd53cc12fc6c8756d"
@@ -988,34 +1012,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Dartagnan email templates with Braze",
-  "nodes_count": 28,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 28,
-  "external_integrations_count": 8
+  }
 }

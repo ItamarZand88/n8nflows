@@ -1,7 +1,16 @@
 {
   "id": "1068",
-  "filename": "1068_pizza_ordering_chatbot",
+  "title": "Automate pizza ordering and status updates via chat",
   "description": "Triggers when a chat message is received, allowing users to order pizzas and check order status through an AI assistant, enhancing customer service efficiency.",
+  "filename": "1068_pizza_ordering_chatbot",
+  "services": [],
+  "categories": [],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "5Y8QXJ3N67wnmR2R",
     "meta": {
@@ -225,19 +234,5 @@
         ]
       }
     }
-  },
-  "title": "Automate pizza ordering and status updates via chat",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [],
-  "services": [],
-  "difficulty": "Beginner",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 0
+  }
 }

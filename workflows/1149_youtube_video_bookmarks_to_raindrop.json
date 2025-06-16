@@ -1,7 +1,37 @@
 {
   "id": "1149",
-  "filename": "1149_youtube_video_bookmarks_to_raindrop",
+  "title": "Automate YouTube video bookmarking to Raindrop every 30 minutes",
   "description": "Automatically checks for new YouTube playlist videos every 30 minutes and saves them as bookmarks in Raindrop for easy access and organization.",
+  "filename": "1149_youtube_video_bookmarks_to_raindrop",
+  "services": [
+    "Cron",
+    "Function",
+    "Function Item",
+    "Manual",
+    "Raindrop",
+    "YouTube"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Execute Function",
+    "Getall",
+    "Manage bookmark",
+    "Manage playlistItem"
+  ],
+  "setup_requirements": [
+    "Raindrop Account",
+    "YouTube Account"
+  ],
   "content": {
     "id": 7,
     "name": "YouTube to Raindrop",
@@ -163,40 +193,5 @@
         ]
       }
     }
-  },
-  "title": "Automate YouTube video bookmarking to Raindrop every 30 minutes",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Cron",
-    "Function",
-    "Function Item",
-    "Manual",
-    "Raindrop",
-    "YouTube"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Execute Function",
-    "Getall",
-    "Manage bookmark",
-    "Manage playlistItem"
-  ],
-  "setup_requirements": [
-    "Raindrop Account",
-    "YouTube Account"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 6
+  }
 }

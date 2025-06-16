@@ -1,7 +1,35 @@
 {
   "id": "1774",
-  "filename": "1774_ai_chat_responses_memory_google_docs",
+  "title": "Automate AI Chat Responses with Memory Storage in Google Docs",
   "description": "Triggers on new chat messages, retrieves past memories and notes, and sends AI-generated responses while saving relevant information to Google Docs.",
+  "filename": "1774_ai_chat_responses_memory_google_docs",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Google Docs",
+    "Merge",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Miscellaneous"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Get",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Docs Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "QJZLBn9L6NbmjmLK",
     "meta": {
@@ -539,38 +567,5 @@
         ]
       }
     }
-  },
-  "title": "Automate AI Chat Responses with Memory Storage in Google Docs",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Google Docs",
-    "Merge",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Get",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Docs Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 6
+  }
 }

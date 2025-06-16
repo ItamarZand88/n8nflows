@@ -1,7 +1,31 @@
 {
   "id": "816",
-  "filename": "816_gmail_order_processing_to_sheets",
+  "title": "Automate order processing from Gmail to Google Sheets",
   "description": "Triggers on new inbound order emails in Gmail, extracts order details, and appends them to a Google Sheet for easy tracking.",
+  "filename": "816_gmail_order_processing_to_sheets",
+  "services": [
+    "Code",
+    "Gmail",
+    "Google Sheets",
+    "If",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Gmail Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "6a5e68bcca67c4cdb3e0b698d01739aea084e1ec06e551db64aeff43d174cb23",
@@ -352,34 +376,5 @@
         ]
       }
     }
-  },
-  "title": "Automate order processing from Gmail to Google Sheets",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Gmail",
-    "Google Sheets",
-    "If",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Gmail Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 5
+  }
 }

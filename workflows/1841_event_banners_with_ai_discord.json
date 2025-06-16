@@ -1,7 +1,34 @@
 {
   "id": "1841",
-  "filename": "1841_event_banners_with_ai_discord",
+  "title": "Create and Share Event Banners with AI and Discord",
   "description": "Captures event details via a form, generates an AI image, creates a banner using Bannerbear, and posts it to Discord for community engagement.",
+  "filename": "1841_event_banners_with_ai_discord",
+  "services": [
+    "Bannerbear",
+    "Discord",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Manage image",
+    "Manage message",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Bannerbear API Key",
+    "Discord API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "26ba763460b97c249b82942b23b6384876dfeb9327513332e743c5f6219c2b8e"
@@ -485,37 +512,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Share Event Banners with AI and Discord",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Bannerbear",
-    "Discord",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Manage image",
-    "Manage message",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Bannerbear API Key",
-    "Discord API Key"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 6
+  }
 }

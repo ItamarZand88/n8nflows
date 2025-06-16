@@ -1,7 +1,26 @@
 {
   "id": "754",
-  "filename": "754_sync_clockify_time_entries_from_webhook",
+  "title": "Sync Clockify time entries from Webhook data",
   "description": "Automatically creates time entries in Clockify based on incoming data from a Webhook, streamlining time tracking for projects.",
+  "filename": "754_sync_clockify_time_entries_from_webhook",
+  "services": [
+    "Clockify",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Clockify API Key"
+  ],
   "content": {
     "id": "2",
     "name": "Syncro to Clockify",
@@ -56,29 +75,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Clockify time entries from Webhook data",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Clockify",
-    "Webhook"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Clockify API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

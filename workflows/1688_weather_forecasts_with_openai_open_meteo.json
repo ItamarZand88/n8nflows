@@ -1,7 +1,20 @@
 {
   "id": "1688",
-  "filename": "1688_weather_forecasts_with_openai_open_meteo",
+  "title": "Automate weather forecasts using OpenAI and Open-Meteo",
   "description": "Triggers on chat messages to provide accurate weather forecasts based on user-inputted city names, leveraging OpenAI and Open-Meteo APIs.",
+  "filename": "1688_weather_forecasts_with_openai_open_meteo",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "Nfh274NHoDy7pB4M",
     "meta": {
@@ -335,23 +348,5 @@
         ]
       }
     }
-  },
-  "title": "Automate weather forecasts using OpenAI and Open-Meteo",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 1
+  }
 }

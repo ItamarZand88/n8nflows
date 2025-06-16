@@ -1,7 +1,29 @@
 {
   "id": "1336",
-  "filename": "1336_screenshot_analysis_with_openai",
+  "title": "Automate website screenshot analysis with OpenAI",
   "description": "Triggers a screenshot capture of a specified website, analyzes the image content using OpenAI, and merges the results with the website's name and URL.",
+  "filename": "1336_screenshot_analysis_with_openai",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Merge",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Analyze",
+    "Manage image",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "wDD4XugmHIvx3KMT",
     "meta": {
@@ -234,32 +256,5 @@
         ]
       }
     }
-  },
-  "title": "Automate website screenshot analysis with OpenAI",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Merge",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Analyze",
-    "Manage image",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 9,
-  "external_integrations_count": 5
+  }
 }

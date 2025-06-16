@@ -1,7 +1,27 @@
 {
   "id": "755",
-  "filename": "755_telegram_weather_updates",
+  "title": "Fetch and Send Weather Updates via Telegram",
   "description": "Triggers on new Telegram messages, fetches current weather for Berlin, and sends a formatted weather update back to the user.",
+  "filename": "755_telegram_weather_updates",
+  "services": [
+    "OpenWeatherMap",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "HITL",
+    "Miscellaneous",
+    "Utility"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "OpenWeatherMap API Key",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "2",
     "name": "Telegram Weather Workflow",
@@ -82,30 +102,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch and Send Weather Updates via Telegram",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "HITL",
-    "Miscellaneous",
-    "Utility"
-  ],
-  "services": [
-    "OpenWeatherMap",
-    "Telegram"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "OpenWeatherMap API Key",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

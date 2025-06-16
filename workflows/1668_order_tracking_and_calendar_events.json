@@ -1,7 +1,36 @@
 {
   "id": "1668",
-  "filename": "1668_order_tracking_and_calendar_events",
+  "title": "Automate event scheduling and order tracking with Google Calendar",
   "description": "Triggers on new orders, schedules events in Google Calendar, and tracks order status updates, enhancing customer communication and organization.",
+  "filename": "1668_order_tracking_and_calendar_events",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Calendar",
+    "Google Drive",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download",
+    "Manage fileFolder",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Calendar Account",
+    "Google Drive Account"
+  ],
   "content": {
     "id": "MMDt8lGtac2oU8nI",
     "meta": {
@@ -955,39 +984,5 @@
         ]
       }
     }
-  },
-  "title": "Automate event scheduling and order tracking with Google Calendar",
-  "nodes_count": 34,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Calendar",
-    "Google Drive",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download",
-    "Manage fileFolder",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Calendar Account",
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 34,
-  "external_integrations_count": 7
+  }
 }

@@ -1,7 +1,23 @@
 {
   "id": "1309",
-  "filename": "1309_analyze_charts_with_openai",
+  "title": "Analyze stock or crypto charts with OpenAI insights",
   "description": "Receives stock or crypto chart data via a webhook, analyzes it using OpenAI, and returns simplified market insights for novice traders.",
+  "filename": "1309_analyze_charts_with_openai",
+  "services": [
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Analyze",
+    "Manage image"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "Q8On8rR6BkmPzDUd",
     "meta": {
@@ -132,26 +148,5 @@
         ]
       }
     }
-  },
-  "title": "Analyze stock or crypto charts with OpenAI insights",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Analyze",
-    "Manage image"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 2
+  }
 }

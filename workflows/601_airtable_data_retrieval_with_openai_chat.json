@@ -1,7 +1,39 @@
 {
   "id": "601",
-  "filename": "601_airtable_data_retrieval_with_openai_chat",
+  "title": "Automate Airtable data retrieval with OpenAI chat",
   "description": "Triggers on new chat messages, allowing users to interactively query Airtable data and receive responses, enhancing data accessibility and analysis.",
+  "filename": "601_airtable_data_retrieval_with_openai_chat",
+  "services": [
+    "Aggregate",
+    "Airtable",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getschema",
+    "Manage base",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "HTTP Request API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -1398,42 +1430,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Airtable data retrieval with OpenAI chat",
-  "nodes_count": 41,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Airtable",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getschema",
-    "Manage base",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 41,
-  "external_integrations_count": 9
+  }
 }

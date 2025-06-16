@@ -1,7 +1,37 @@
 {
   "id": "1573",
-  "filename": "1573_clear_sheets_save_workflow_data",
+  "title": "Clear Google Sheets and Save Workflow Data Automatically",
   "description": "Triggers on manual input to clear specified Google Sheets data, processes workflows, and saves relevant node information for easy tracking.",
+  "filename": "1573_clear_sheets_save_workflow_data",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "Google Sheets",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Split Out",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Clear",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "n8n API Key"
+  ],
   "content": {
     "id": "I2qMAcQET7isaqYD",
     "meta": {
@@ -494,40 +524,5 @@
         ]
       }
     }
-  },
-  "title": "Clear Google Sheets and Save Workflow Data Automatically",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "Google Sheets",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Split Out",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Clear",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 8
+  }
 }

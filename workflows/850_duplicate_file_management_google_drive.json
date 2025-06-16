@@ -1,7 +1,37 @@
 {
   "id": "850",
-  "filename": "850_duplicate_file_management_google_drive",
+  "title": "Automate duplicate file management in Google Drive",
   "description": "Triggers on new file uploads in Google Drive, identifies duplicates, and either flags or deletes them based on user-defined settings for efficient file organization.",
+  "filename": "850_duplicate_file_management_google_drive",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "Google Drive",
+    "If",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Deletefile",
+    "Filter Data",
+    "Manage fileFolder",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "5e2cdd86a9e1ca2fc82cc63db38d1710d5d6a5c6fe352258a6f7112815bcd512",
@@ -720,40 +750,5 @@
         ]
       }
     }
-  },
-  "title": "Automate duplicate file management in Google Drive",
-  "nodes_count": 20,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "Google Drive",
-    "If",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Deletefile",
-    "Filter Data",
-    "Manage fileFolder",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 20,
-  "external_integrations_count": 8
+  }
 }

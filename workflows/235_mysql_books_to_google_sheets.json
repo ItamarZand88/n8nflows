@@ -1,7 +1,27 @@
 {
   "id": "235",
-  "filename": "235_mysql_books_to_google_sheets",
+  "title": "Automate weekly book data export from MySQL to Google Sheets",
   "description": "Runs every week to fetch book records from MySQL and appends them to a Google Sheets document for easy access and reporting.",
+  "filename": "235_mysql_books_to_google_sheets",
+  "services": [
+    "Cron",
+    "Google Sheets",
+    "MySQL"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Append",
+    "Executequery"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -88,30 +108,5 @@
         ]
       }
     }
-  },
-  "title": "Automate weekly book data export from MySQL to Google Sheets",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Cron",
-    "Google Sheets",
-    "MySQL"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Append",
-    "Executequery"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

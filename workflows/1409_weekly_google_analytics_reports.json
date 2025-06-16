@@ -1,7 +1,35 @@
 {
   "id": "1409",
-  "filename": "1409_weekly_google_analytics_reports",
+  "title": "Automate Weekly Google Analytics Reports via Email and Telegram",
   "description": "Triggers every Monday at 7 a.m., retrieves Google Analytics data for the last week, summarizes it, and sends the report via email and Telegram.",
+  "filename": "1409_weekly_google_analytics_reports",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Analytics",
+    "Schedule",
+    "Send Email",
+    "Sticky Note",
+    "Summarize",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Analytics Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "AAjX1BuwhyXpo8xP",
     "meta": {
@@ -691,38 +719,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Weekly Google Analytics Reports via Email and Telegram",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Analytics",
-    "Schedule",
-    "Send Email",
-    "Sticky Note",
-    "Summarize",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Analytics Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 8
+  }
 }

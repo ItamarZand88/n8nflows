@@ -1,7 +1,39 @@
 {
   "id": "1785",
-  "filename": "1785_appointment_scheduling_gmail_google_calendar",
+  "title": "Automate Appointment Scheduling with Gmail and Google Calendar",
   "description": "Captures appointment requests via a form, qualifies inquiries using AI, and manages approvals, sending confirmations through Gmail and scheduling events in Google Calendar.",
+  "filename": "1785_appointment_scheduling_gmail_google_calendar",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Gmail",
+    "Google Calendar",
+    "If",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Sub-workflow Event",
+    "New Execute Workflow Event",
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Filter Data",
+    "Sendandwait",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Calendar Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -738,42 +770,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Appointment Scheduling with Gmail and Google Calendar",
-  "nodes_count": 25,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Gmail",
-    "Google Calendar",
-    "If",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Sub-workflow Event",
-    "New Execute Workflow Event",
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Filter Data",
-    "Sendandwait",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Calendar Account"
-  ],
-  "workflow_complexity": 25,
-  "external_integrations_count": 8
+  }
 }

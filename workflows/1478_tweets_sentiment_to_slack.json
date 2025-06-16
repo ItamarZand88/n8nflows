@@ -1,7 +1,41 @@
 {
   "id": "1478",
-  "filename": "1478_tweets_sentiment_to_slack",
+  "title": "Automate daily sentiment analysis of tweets to Slack",
   "description": "Searches for tweets with #OnThisDay, analyzes sentiment, and sends notifications to Slack for positive scores, logging data in Postgres and MongoDB.",
+  "filename": "1478_tweets_sentiment_to_slack",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Google Cloud Natural Language",
+    "If",
+    "MongoDB",
+    "No Operation, do nothing",
+    "Postgres",
+    "Slack",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Analytics",
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Insert",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Cloud Natural Language Account",
+    "Slack API Key",
+    "X (Formerly Twitter) API Key"
+  ],
   "content": {
     "id": "6",
     "name": "ETL pipeline",
@@ -259,44 +293,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily sentiment analysis of tweets to Slack",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Analytics",
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Marketing"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Google Cloud Natural Language",
-    "If",
-    "MongoDB",
-    "No Operation, do nothing",
-    "Postgres",
-    "Slack",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Insert",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Cloud Natural Language Account",
-    "Slack API Key",
-    "X (Formerly Twitter) API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 9
+  }
 }

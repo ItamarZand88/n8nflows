@@ -1,7 +1,29 @@
 {
   "id": "1075",
-  "filename": "1075_append_data_to_google_sheets",
+  "title": "Append data to Google Sheets with manual trigger",
   "description": "Manually triggers a workflow to set data and append it to a specified Google Sheets document for easy record-keeping.",
+  "filename": "1075_append_data_to_google_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -113,32 +135,5 @@
         ]
       }
     }
-  },
-  "title": "Append data to Google Sheets with manual trigger",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

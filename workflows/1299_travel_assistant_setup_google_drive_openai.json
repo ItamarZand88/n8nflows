@@ -1,7 +1,32 @@
 {
   "id": "1299",
-  "filename": "1299_travel_assistant_setup_google_drive_openai",
+  "title": "Automate Travel Assistant Setup with Google Drive and OpenAI",
   "description": "Triggers a setup for a travel assistant by downloading a document from Google Drive, creating an AI assistant, and enabling chat interactions for user inquiries.",
+  "filename": "1299_travel_assistant_setup_google_drive_openai",
+  "services": [
+    "Google Drive",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Create",
+    "Download",
+    "Manage assistant",
+    "Manage file",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "AjJ7O98qjw8XVirk",
     "meta": {
@@ -335,35 +360,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Travel Assistant Setup with Google Drive and OpenAI",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Google Drive",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Create",
-    "Download",
-    "Manage assistant",
-    "Manage file",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 3
+  }
 }

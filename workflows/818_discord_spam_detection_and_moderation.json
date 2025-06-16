@@ -1,7 +1,46 @@
 {
   "id": "818",
-  "filename": "818_discord_spam_detection_and_moderation",
+  "title": "Automate Discord Spam Detection and Moderation",
   "description": "Monitors Discord channels for spam messages, flags them using AI, and notifies moderators for action, ensuring a clean community environment.",
+  "filename": "818_discord_spam_detection_and_moderation",
+  "services": [
+    "Code",
+    "Discord",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Filter",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "No Operation, do nothing",
+    "Remove Duplicates",
+    "Schedule",
+    "Split Out",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Deletemessage",
+    "Filter Data",
+    "Getall",
+    "Manage message",
+    "Removeitemsseeninpreviousexecutions",
+    "Sendandwait",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Discord API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -999,49 +1038,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Discord Spam Detection and Moderation",
-  "nodes_count": 30,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Discord",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Filter",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "No Operation, do nothing",
-    "Remove Duplicates",
-    "Schedule",
-    "Split Out",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Deletemessage",
-    "Filter Data",
-    "Getall",
-    "Manage message",
-    "Removeitemsseeninpreviousexecutions",
-    "Sendandwait",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Discord API Key"
-  ],
-  "workflow_complexity": 30,
-  "external_integrations_count": 15
+  }
 }

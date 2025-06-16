@@ -1,7 +1,39 @@
 {
   "id": "562",
-  "filename": "562_sync_gitlab_workflow_files",
+  "title": "Sync GitLab workflow files and track changes",
   "description": "Triggers on demand to retrieve and compare workflow files from GitLab, updating or creating new versions based on changes detected.",
+  "filename": "562_sync_gitlab_workflow_files",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "GitLab",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Switch",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Edit",
+    "Fromjson",
+    "Get",
+    "Manage file",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "GitLab API Key",
+    "n8n API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "d53e56b8545e15a14aa4da6d83ec1d0183c6196323c9b6f7c0a36af8ff413264",
@@ -753,42 +785,5 @@
         ]
       }
     }
-  },
-  "title": "Sync GitLab workflow files and track changes",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "GitLab",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Switch",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Edit",
-    "Fromjson",
-    "Get",
-    "Manage file",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "GitLab API Key",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 10
+  }
 }

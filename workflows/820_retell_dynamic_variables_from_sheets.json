@@ -1,7 +1,25 @@
 {
   "id": "820",
-  "filename": "820_retell_dynamic_variables_from_sheets",
+  "title": "Automate dynamic variable population for Retell agents",
   "description": "Processes inbound webhooks from Retell, retrieves user data from Google Sheets, and returns dynamic variables for personalized voice interactions.",
+  "filename": "820_retell_dynamic_variables_from_sheets",
+  "services": [
+    "Google Sheets",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "f4f5d195bb2162a0972f737368404b18be694648d365d6c6771d7b4909d28167",
@@ -173,28 +191,5 @@
         ]
       }
     }
-  },
-  "title": "Automate dynamic variable population for Retell agents",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 3
+  }
 }

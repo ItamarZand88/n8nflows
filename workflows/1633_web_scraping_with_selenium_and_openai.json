@@ -1,7 +1,33 @@
 {
   "id": "1633",
-  "filename": "1633_web_scraping_with_selenium_and_openai",
+  "title": "Automate web scraping and data extraction with Selenium and OpenAI",
   "description": "Collects data from specified websites using Selenium, processes it with OpenAI for analysis, and returns structured results based on user-defined parameters.",
+  "filename": "1633_web_scraping_with_selenium_and_openai",
+  "services": [
+    "Code",
+    "Convert to File",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Limit",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Analyze",
+    "Extracthtmlcontent",
+    "Filter Data",
+    "Manage image",
+    "Set Data",
+    "Tobinary"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "kZ3aL4r7xc96Q7lp",
     "meta": {
@@ -1972,36 +1998,5 @@
         ]
       }
     }
-  },
-  "title": "Automate web scraping and data extraction with Selenium and OpenAI",
-  "nodes_count": 63,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Convert to File",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Limit",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Analyze",
-    "Extracthtmlcontent",
-    "Filter Data",
-    "Manage image",
-    "Set Data",
-    "Tobinary"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 63,
-  "external_integrations_count": 8
+  }
 }

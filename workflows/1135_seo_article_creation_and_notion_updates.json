@@ -1,7 +1,28 @@
 {
   "id": "1135",
-  "filename": "1135_seo_article_creation_and_notion_updates",
+  "title": "Automate SEO Article Creation and Notion Updates",
   "description": "Watches for updates in Notion, generates SEO articles using AI, publishes them on WordPress, and updates Notion with article details.",
+  "filename": "1135_seo_article_creation_and_notion_updates",
+  "services": [
+    "Edit Fields (Set)",
+    "Notion",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Notion Event"
+  ],
+  "actions": [
+    "Executetool",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Notion API Key"
+  ],
   "content": {
     "id": "7eyNPahKcCuqK39V",
     "meta": {
@@ -321,31 +342,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SEO Article Creation and Notion Updates",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Notion",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Notion Event"
-  ],
-  "actions": [
-    "Executetool",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Notion API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 3
+  }
 }

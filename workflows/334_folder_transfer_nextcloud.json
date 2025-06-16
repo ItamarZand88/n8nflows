@@ -1,7 +1,43 @@
 {
   "id": "334",
-  "filename": "334_folder_transfer_nextcloud",
+  "title": "Automate folder transfer with files and subfolders in Nextcloud",
   "description": "Triggers on manual execution or webhook, recursively transfers a folder and its contents in Nextcloud, ensuring structure is maintained and files are moved efficiently.",
+  "filename": "334_folder_transfer_nextcloud",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Nextcloud",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Stop and Error",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Delete",
+    "Filter Data",
+    "List",
+    "Manage folder",
+    "Move",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Nextcloud API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "9ca813d4011eeb6a3cfcfbfac1efbb98641b1341a64a5cad70c430777ffd407e"
@@ -815,46 +851,5 @@
         ]
       }
     }
-  },
-  "title": "Automate folder transfer with files and subfolders in Nextcloud",
-  "nodes_count": 32,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Nextcloud",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Stop and Error",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Delete",
-    "Filter Data",
-    "List",
-    "Manage folder",
-    "Move",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Nextcloud API Key"
-  ],
-  "workflow_complexity": 32,
-  "external_integrations_count": 11
+  }
 }

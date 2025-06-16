@@ -1,7 +1,40 @@
 {
   "id": "624",
-  "filename": "624_sync_youtube_tracks_to_spotify",
+  "title": "Sync YouTube Playlist Tracks to Spotify Without Duplicates",
   "description": "Triggers on manual start to fetch tracks from a YouTube playlist, compares them with a Spotify playlist, and adds new tracks without duplicates.",
+  "filename": "624_sync_youtube_tracks_to_spotify",
+  "services": [
+    "Compare Datasets",
+    "Edit Fields (Set)",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Spotify",
+    "Sticky Note",
+    "YouTube"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing",
+    "Miscellaneous"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Gettracks",
+    "Manage playlist",
+    "Manage playlistItem",
+    "Manage track",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Spotify Account",
+    "YouTube Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "6045c639951d83c8706b0dd8d6330164bda01fe58f103cedc2c276bf1f9c11f1"
@@ -346,43 +379,5 @@
         ]
       }
     }
-  },
-  "title": "Sync YouTube Playlist Tracks to Spotify Without Duplicates",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Compare Datasets",
-    "Edit Fields (Set)",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Spotify",
-    "Sticky Note",
-    "YouTube"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Gettracks",
-    "Manage playlist",
-    "Manage playlistItem",
-    "Manage track",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Spotify Account",
-    "YouTube Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 7
+  }
 }

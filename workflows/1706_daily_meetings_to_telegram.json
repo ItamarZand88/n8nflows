@@ -1,7 +1,35 @@
 {
   "id": "1706",
-  "filename": "1706_daily_meetings_to_telegram",
+  "title": "Automate daily meeting reminders via Telegram",
   "description": "Triggers every morning at 6 AM, retrieves today's meetings from Google Calendar, and sends a formatted message to Telegram with meeting details.",
+  "filename": "1706_daily_meetings_to_telegram",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "Google Calendar",
+    "Schedule",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Calendar Account"
+  ],
   "content": {
     "id": "nV1xFcF5HWJcD6w7",
     "meta": {
@@ -233,38 +261,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily meeting reminders via Telegram",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "Google Calendar",
-    "Schedule",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Calendar Account"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 6
+  }
 }

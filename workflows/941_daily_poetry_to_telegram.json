@@ -1,7 +1,28 @@
 {
   "id": "941",
-  "filename": "941_daily_poetry_to_telegram",
+  "title": "Send daily poetry updates to Telegram",
   "description": "Automatically fetches a random poem daily and sends it to a specified Telegram chat, providing users with a daily dose of inspiration.",
+  "filename": "941_daily_poetry_to_telegram",
+  "services": [
+    "Cron",
+    "HTTP Request",
+    "LingvaNex",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Miscellaneous"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "LingvaNex API Key",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "3",
     "name": "Daily poems in Telegram",
@@ -109,31 +130,5 @@
         ]
       }
     }
-  },
-  "title": "Send daily poetry updates to Telegram",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Cron",
-    "HTTP Request",
-    "LingvaNex",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "LingvaNex API Key",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

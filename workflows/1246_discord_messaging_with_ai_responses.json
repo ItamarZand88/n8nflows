@@ -1,7 +1,25 @@
 {
   "id": "1246",
-  "filename": "1246_discord_messaging_with_ai_responses",
+  "title": "Automate Discord messaging with AI responses",
   "description": "Triggers on new chat messages or workflow executions to generate and send AI-crafted responses in Discord channels, enhancing communication efficiency.",
+  "filename": "1246_discord_messaging_with_ai_responses",
+  "services": [
+    "Execute Workflow",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Getall",
+    "Manage message"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "A4hqQNFLymCRKnYK",
     "meta": {
@@ -381,28 +399,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Discord messaging with AI responses",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Execute Workflow",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Getall",
-    "Manage message"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 13,
-  "external_integrations_count": 2
+  }
 }

@@ -1,7 +1,28 @@
 {
   "id": "64",
-  "filename": "64_get_dns_records_for_domain",
+  "title": "Retrieve DNS records for a specified domain",
   "description": "Triggers a manual execution to fetch DNS records for the domain 'n8n.io', providing essential data for internet management tasks.",
+  "filename": "64_get_dns_records_for_domain",
+  "services": [
+    "Function Item",
+    "Manual",
+    "uProc"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [
+    "uProc API Key"
+  ],
   "content": {
     "id": "113",
     "name": "Get DNS entries",
@@ -73,31 +94,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve DNS records for a specified domain",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Function Item",
-    "Manual",
-    "uProc"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [
-    "uProc API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

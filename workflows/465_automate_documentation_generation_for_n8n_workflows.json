@@ -1,7 +1,27 @@
 {
   "id": "465",
-  "filename": "465_automate_documentation_generation_for_n8n_workflows",
+  "title": "Automate documentation generation for n8n workflows",
   "description": "Automatically generates concise documentation for n8n workflows based on user input, enhancing clarity and accessibility for future reference.",
+  "filename": "465_automate_documentation_generation_for_n8n_workflows",
+  "services": [
+    "Edit Fields (Set)",
+    "OpenAI",
+    "n8n Form"
+  ],
+  "categories": [
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Manage chat",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "OpenAI API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "96cab4456c8d5d47ff3acba57e93f1f3750005103b819e4580442bcd2bb6cc4d"
@@ -179,30 +199,5 @@
         ]
       }
     }
-  },
-  "title": "Automate documentation generation for n8n workflows",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Utility"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "OpenAI",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Manage chat",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "OpenAI API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,38 @@
 {
   "id": "715",
-  "filename": "715_siem_alert_analysis_to_zendesk",
+  "title": "Automate SIEM Alert Analysis and Update Zendesk Tickets",
   "description": "Triggers on new chat messages, analyzes SIEM alerts for TTPs, and updates Zendesk tickets with actionable insights and historical context.",
+  "filename": "715_siem_alert_analysis_to_zendesk",
+  "services": [
+    "Extract from File",
+    "Google Drive",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "No Operation, do nothing",
+    "Split Out",
+    "Sticky Note",
+    "Zendesk"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download",
+    "Fromjson",
+    "Getall",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Zendesk API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7",
@@ -744,41 +775,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SIEM Alert Analysis and Update Zendesk Tickets",
-  "nodes_count": 26,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Extract from File",
-    "Google Drive",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "No Operation, do nothing",
-    "Split Out",
-    "Sticky Note",
-    "Zendesk"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download",
-    "Fromjson",
-    "Getall",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Zendesk API Key"
-  ],
-  "workflow_complexity": 26,
-  "external_integrations_count": 8
+  }
 }

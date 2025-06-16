@@ -1,7 +1,28 @@
 {
   "id": "594",
-  "filename": "594_download_compress_s3_files",
+  "title": "Download and Compress Files from AWS S3 Bucket",
   "description": "Triggers a download of all files from a specified AWS S3 folder and compresses them into a ZIP file for easy access and sharing.",
+  "filename": "594_download_compress_s3_files",
+  "services": [
+    "AWS S3",
+    "Aggregate",
+    "Compression",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Compress",
+    "Getall"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "9e331a89ae45a204c6dee51c77131d32a8c962ec20ccf002135ea60bd285dba9"
@@ -144,31 +165,5 @@
         ]
       }
     }
-  },
-  "title": "Download and Compress Files from AWS S3 Bucket",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "AWS S3",
-    "Aggregate",
-    "Compression",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Compress",
-    "Getall"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 5
+  }
 }

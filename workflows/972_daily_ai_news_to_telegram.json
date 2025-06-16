@@ -1,7 +1,32 @@
 {
   "id": "972",
-  "filename": "972_daily_ai_news_to_telegram",
+  "title": "Automate daily AI news summaries to Telegram",
   "description": "Triggers daily at 8am to fetch and summarize the latest AI news from GNews and NewsAPI, then sends the summary to your Telegram chat.",
+  "filename": "972_daily_ai_news_to_telegram",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Merge",
+    "Schedule",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "4AG83ybt0S3WQbkS",
     "meta": {
@@ -378,35 +403,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily AI news summaries to Telegram",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Merge",
-    "Schedule",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 6
+  }
 }

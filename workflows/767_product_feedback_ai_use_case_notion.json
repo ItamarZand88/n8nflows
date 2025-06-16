@@ -1,7 +1,34 @@
 {
   "id": "767",
-  "filename": "767_product_feedback_ai_use_case_notion",
+  "title": "Automate Product Feedback and AI Use Case Logging in Notion",
   "description": "Triggers on new workflow events, checks for product data and AI mentions, and logs feedback and use cases in Notion for streamlined tracking.",
+  "filename": "767_product_feedback_ai_use_case_notion",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "If",
+    "Notion",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage databasePage",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Notion API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7",
@@ -642,37 +669,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Product Feedback and AI Use Case Logging in Notion",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "If",
-    "Notion",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage databasePage",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Notion API Key"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 7
+  }
 }

@@ -1,7 +1,32 @@
 {
   "id": "335",
-  "filename": "335_customer_feedback_to_google_sheets",
+  "title": "Automate customer feedback collection and sentiment analysis",
   "description": "Captures customer feedback via a form, analyzes sentiment using OpenAI, and logs results in Google Sheets for easy tracking and insights.",
+  "filename": "335_customer_feedback_to_google_sheets",
+  "services": [
+    "Google Sheets",
+    "Merge",
+    "OpenAI",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "OpenAI API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "82a17fa4a0b8e81bf77e5ab999d980f392150f2a9541fde626dc5f74857b1f54"
@@ -331,35 +356,5 @@
         ]
       }
     }
-  },
-  "title": "Automate customer feedback collection and sentiment analysis",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Google Sheets",
-    "Merge",
-    "OpenAI",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "OpenAI API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 5
+  }
 }

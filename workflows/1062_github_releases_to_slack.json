@@ -1,7 +1,26 @@
 {
   "id": "1062",
-  "filename": "1062_github_releases_to_slack",
+  "title": "Send Slack notifications for new GitHub releases",
   "description": "Monitors a GitHub repository for new releases and automatically sends formatted notifications to Slack with release details and links.",
+  "filename": "1062_github_releases_to_slack",
+  "services": [
+    "Github",
+    "Slack"
+  ],
+  "categories": [
+    "Communication",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Github Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Github API Key",
+    "Slack API Key"
+  ],
   "content": {
     "id": "5ec2322573f7590007802e1f",
     "name": "Extranet Releases",
@@ -60,29 +79,5 @@
         ]
       }
     }
-  },
-  "title": "Send Slack notifications for new GitHub releases",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Github",
-    "Slack"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Github Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Github API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

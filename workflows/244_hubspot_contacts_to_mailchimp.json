@@ -1,7 +1,29 @@
 {
   "id": "244",
-  "filename": "244_hubspot_contacts_to_mailchimp",
+  "title": "Automate new HubSpot contacts to Mailchimp subscriptions",
   "description": "Every day at 07:00, this workflow retrieves new contacts from HubSpot and automatically adds them to a Mailchimp list, streamlining your marketing efforts.",
+  "filename": "244_hubspot_contacts_to_mailchimp",
+  "services": [
+    "Cron",
+    "HubSpot",
+    "Mailchimp"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Manage contact",
+    "Search"
+  ],
+  "setup_requirements": [
+    "HubSpot Account",
+    "Mailchimp Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "4eea70f6789129b82c5f438f374db25affb0eba28902cc3663e308cff7659044"
@@ -128,32 +150,5 @@
         ]
       }
     }
-  },
-  "title": "Automate new HubSpot contacts to Mailchimp subscriptions",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "Cron",
-    "HubSpot",
-    "Mailchimp"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Manage contact",
-    "Search"
-  ],
-  "setup_requirements": [
-    "HubSpot Account",
-    "Mailchimp Account"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,60 @@
 {
   "id": "2",
-  "filename": "2_social_media_content_creation",
+  "title": "Automate Social Media Content Creation and Publishing",
   "description": "Triggers on chat messages to generate and publish tailored posts across Twitter, Instagram, Facebook, LinkedIn, Threads, and YouTube Shorts, enhancing engagement and efficiency.",
+  "filename": "2_social_media_content_creation",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Extract from File",
+    "Facebook Graph",
+    "Gmail",
+    "Google Docs",
+    "Google Drive",
+    "HTTP Request",
+    "If",
+    "LinkedIn",
+    "Merge",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Switch",
+    "Telegram",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Marketing",
+    "Miscellaneous"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Createfromtext",
+    "Download",
+    "Filter Data",
+    "Fromjson",
+    "Get",
+    "Sendandwait",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Facebook Graph API Key",
+    "Gmail Account",
+    "Google Docs Account",
+    "Google Drive Account",
+    "HTTP Request API Key",
+    "LinkedIn Account",
+    "Telegram API Key",
+    "X (Formerly Twitter) Account"
+  ],
   "content": {
     "id": "0KZs18Ti2KXKoLIr",
     "meta": {
@@ -2873,63 +2926,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Social Media Content Creation and Publishing",
-  "nodes_count": 100,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Marketing",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Extract from File",
-    "Facebook Graph",
-    "Gmail",
-    "Google Docs",
-    "Google Drive",
-    "HTTP Request",
-    "If",
-    "LinkedIn",
-    "Merge",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Switch",
-    "Telegram",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Createfromtext",
-    "Download",
-    "Filter Data",
-    "Fromjson",
-    "Get",
-    "Sendandwait",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Facebook Graph API Key",
-    "Gmail Account",
-    "Google Docs Account",
-    "Google Drive Account",
-    "HTTP Request API Key",
-    "LinkedIn Account",
-    "Telegram API Key",
-    "X (Formerly Twitter) Account"
-  ],
-  "workflow_complexity": 100,
-  "external_integrations_count": 17
+  }
 }

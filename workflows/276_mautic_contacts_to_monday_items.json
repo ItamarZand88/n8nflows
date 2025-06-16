@@ -1,7 +1,30 @@
 {
   "id": "276",
-  "filename": "276_mautic_contacts_to_monday_items",
+  "title": "Create new Monday.com items from Mautic contact submissions",
   "description": "Triggers when a new contact is created in Mautic, automatically adding their name and email as a new item in Monday.com for streamlined lead management.",
+  "filename": "276_mautic_contacts_to_monday_items",
+  "services": [
+    "Mautic",
+    "Monday.com",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Mautic Event"
+  ],
+  "actions": [
+    "Manage boardItem"
+  ],
+  "setup_requirements": [
+    "Mautic API Key",
+    "Monday.com API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "237600ca44303ce91fa31ee72babcdc8493f55ee2c0e8aa2b78b3b4ce6f70bd9"
@@ -83,33 +106,5 @@
         ]
       }
     }
-  },
-  "title": "Create new Monday.com items from Mautic contact submissions",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Mautic",
-    "Monday.com",
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Mautic Event"
-  ],
-  "actions": [
-    "Manage boardItem"
-  ],
-  "setup_requirements": [
-    "Mautic API Key",
-    "Monday.com API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

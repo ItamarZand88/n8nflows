@@ -1,7 +1,50 @@
 {
   "id": "1749",
-  "filename": "1749_linkedin_lead_generation_engagement",
+  "title": "Automate LinkedIn Lead Generation and Engagement",
   "description": "Triggers on chat messages to find and manage leads on LinkedIn, enriching data and sending connection requests automatically, saving time and enhancing outreach.",
+  "filename": "1749_linkedin_lead_generation_engagement",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Google Sheets",
+    "If",
+    "Limit",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Schedule",
+    "Sort",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Filter Data",
+    "Getcompanyposts",
+    "Getconnections",
+    "Getposts",
+    "Googlesearch",
+    "Manage chat",
+    "Manage company",
+    "Manage google",
+    "Manage search",
+    "Map",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "piapgd2e6zmzFxAq",
     "meta": {
@@ -5531,53 +5574,5 @@
         ]
       }
     }
-  },
-  "title": "Automate LinkedIn Lead Generation and Engagement",
-  "nodes_count": 92,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Google Sheets",
-    "If",
-    "Limit",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Schedule",
-    "Sort",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Filter Data",
-    "Getcompanyposts",
-    "Getconnections",
-    "Getposts",
-    "Googlesearch",
-    "Manage chat",
-    "Manage company",
-    "Manage google",
-    "Manage search",
-    "Map",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 92,
-  "external_integrations_count": 11
+  }
 }

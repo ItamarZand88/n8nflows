@@ -1,7 +1,28 @@
 {
   "id": "153",
-  "filename": "153_onfleet_tasks_for_shopify_fulfillments",
+  "title": "Create Onfleet Tasks for New Shopify Fulfillments",
   "description": "Automatically generates Onfleet delivery tasks whenever a new fulfillment is created in Shopify, streamlining order processing and delivery management.",
+  "filename": "153_onfleet_tasks_for_shopify_fulfillments",
+  "services": [
+    "Onfleet",
+    "Shopify"
+  ],
+  "categories": [
+    "Miscellaneous",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Shopify Event"
+  ],
+  "actions": [
+    "Create",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Onfleet API Key",
+    "Shopify API Key"
+  ],
   "content": {
     "id": 13,
     "name": "Creating an Onfleet Task for a new Shopify Fulfillment",
@@ -60,31 +81,5 @@
         ]
       }
     }
-  },
-  "title": "Create Onfleet Tasks for New Shopify Fulfillments",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Miscellaneous",
-    "Sales"
-  ],
-  "services": [
-    "Onfleet",
-    "Shopify"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Shopify Event"
-  ],
-  "actions": [
-    "Create",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Onfleet API Key",
-    "Shopify API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

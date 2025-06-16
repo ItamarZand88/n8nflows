@@ -1,7 +1,28 @@
 {
   "id": "1503",
-  "filename": "1503_image_optimization_gdrive_tinypng",
+  "title": "Automate image optimization from Google Drive to TinyPNG",
   "description": "Monitors a Google Drive folder for new images, downloads them, optimizes their size using TinyPNG, and saves the optimized images back to Google Drive.",
+  "filename": "1503_image_optimization_gdrive_tinypng",
+  "services": [
+    "Google Drive",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Download"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "FpZJ8jaNQ3j2DO1L",
     "meta": {
@@ -281,31 +302,5 @@
         ]
       }
     }
-  },
-  "title": "Automate image optimization from Google Drive to TinyPNG",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Google Drive",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Download"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 3
+  }
 }

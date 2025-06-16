@@ -1,7 +1,33 @@
 {
   "id": "963",
-  "filename": "963_sync_shopify_products_to_odoo",
+  "title": "Sync new Shopify products to Odoo inventory",
   "description": "Automatically updates Odoo with new product details from Shopify when a product is created, ensuring inventory is always current and accurate.",
+  "filename": "963_sync_shopify_products_to_odoo",
+  "services": [
+    "Code",
+    "Filter",
+    "Odoo",
+    "Shopify"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Shopify Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage custom"
+  ],
+  "setup_requirements": [
+    "Odoo API Key",
+    "Shopify API Key"
+  ],
   "content": {
     "id": "44PIIGwPzUe9dGfb",
     "meta": {
@@ -190,36 +216,5 @@
         ]
       }
     }
-  },
-  "title": "Sync new Shopify products to Odoo inventory",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Code",
-    "Filter",
-    "Odoo",
-    "Shopify"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Shopify Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage custom"
-  ],
-  "setup_requirements": [
-    "Odoo API Key",
-    "Shopify API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

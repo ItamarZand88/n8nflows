@@ -1,7 +1,30 @@
 {
   "id": "104",
-  "filename": "104_netlify_submissions_to_airtable",
+  "title": "Automate form submissions from Netlify to Airtable",
   "description": "Captures new form submissions from Netlify and automatically appends the data to Airtable for easy management and tracking.",
+  "filename": "104_netlify_submissions_to_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Netlify"
+  ],
+  "categories": [
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Netlify Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Netlify API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -94,33 +117,5 @@
         ]
       }
     }
-  },
-  "title": "Automate form submissions from Netlify to Airtable",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Netlify"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Netlify Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Netlify API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,26 @@
 {
   "id": "117",
-  "filename": "117_discord_updates_top_product_hunt_projects",
+  "title": "Automate Discord updates for top Product Hunt projects",
   "description": "Every hour, fetches the top 5 ranked Product Hunt projects and sends their details to a Discord channel for instant updates.",
+  "filename": "117_discord_updates_top_product_hunt_projects",
+  "services": [
+    "Cron",
+    "Discord",
+    "Edit Fields (Set)",
+    "GraphQL",
+    "Item Lists"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -150,29 +169,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Discord updates for top Product Hunt projects",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Discord",
-    "Edit Fields (Set)",
-    "GraphQL",
-    "Item Lists"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

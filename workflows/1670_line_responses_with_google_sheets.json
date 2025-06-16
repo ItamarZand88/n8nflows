@@ -1,7 +1,31 @@
 {
   "id": "1670",
-  "filename": "1670_line_responses_with_google_sheets",
+  "title": "Automate responses in LINE using Google Sheets history",
   "description": "Captures user messages from LINE, retrieves chat history from Google Sheets, and generates AI responses, saving the conversation back to Sheets for future reference.",
+  "filename": "1670_line_responses_with_google_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Appendorupdate",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "[CENSORED]",
     "meta": {
@@ -565,34 +589,5 @@
         ]
       }
     }
-  },
-  "title": "Automate responses in LINE using Google Sheets history",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Appendorupdate",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 6
+  }
 }

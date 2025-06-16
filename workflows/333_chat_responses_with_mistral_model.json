@@ -1,7 +1,20 @@
 {
   "id": "333",
-  "filename": "333_chat_responses_with_mistral_model",
+  "title": "Automate chat responses using Mistral-7B model",
   "description": "Triggers when a chat message is received, processes it through a language model, and generates polite responses with emojis for user engagement.",
+  "filename": "333_chat_responses_with_mistral_model",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -106,23 +119,5 @@
         ]
       }
     }
-  },
-  "title": "Automate chat responses using Mistral-7B model",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 1
+  }
 }

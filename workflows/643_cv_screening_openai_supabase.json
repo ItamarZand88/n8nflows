@@ -1,7 +1,30 @@
 {
   "id": "643",
-  "filename": "643_cv_screening_openai_supabase",
+  "title": "Automate CV Screening with OpenAI Analysis and Storage",
   "description": "Triggers CV download, extracts data, analyzes with OpenAI, and stores results in Supabase for efficient recruitment.",
+  "filename": "643_cv_screening_openai_supabase",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Pdf",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "6a2a7715680b8313f7cb4676321c5baa46680adfb913072f089f2766f42e43bd"
@@ -274,33 +297,5 @@
         ]
       }
     }
-  },
-  "title": "Automate CV Screening with OpenAI Analysis and Storage",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Pdf",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 5
+  }
 }

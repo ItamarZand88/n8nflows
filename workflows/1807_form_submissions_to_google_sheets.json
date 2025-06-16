@@ -1,7 +1,37 @@
 {
   "id": "1807",
-  "filename": "1807_form_submissions_to_google_sheets",
+  "title": "Automate form submissions with Google Sheets dropdown updates",
   "description": "Triggers on form submissions, updates dropdown values from Google Sheets, and refreshes the form for seamless data collection.",
+  "filename": "1807_form_submissions_to_google_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Google Sheets",
+    "Sticky Note",
+    "n8n",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Get",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "n8n API Key"
+  ],
   "content": {
     "id": "RKbQHfblpcvMGZ4w",
     "meta": {
@@ -451,40 +481,5 @@
         ]
       }
     }
-  },
-  "title": "Automate form submissions with Google Sheets dropdown updates",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Google Sheets",
-    "Sticky Note",
-    "n8n",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Get",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 7
+  }
 }

@@ -1,7 +1,27 @@
 {
   "id": "1098",
-  "filename": "1098_post_image_to_linkedin",
+  "title": "Post an Image to LinkedIn from a URL",
   "description": "Triggers a manual execution to fetch an image from a URL and posts it as an image update on LinkedIn, enhancing your social media presence.",
+  "filename": "1098_post_image_to_linkedin",
+  "services": [
+    "HTTP Request",
+    "LinkedIn",
+    "Manual"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "LinkedIn Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -72,30 +92,5 @@
         ]
       }
     }
-  },
-  "title": "Post an Image to LinkedIn from a URL",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "HTTP Request",
-    "LinkedIn",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "LinkedIn Account"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,30 @@
 {
   "id": "1319",
-  "filename": "1319_user_inquiries_to_slack_support",
+  "title": "Automate user inquiries and escalate to Slack support",
   "description": "Triggers on user chat input, checks for email, and escalates unresolved queries to Slack for human support, enhancing customer service efficiency.",
+  "filename": "1319_user_inquiries_to_slack_support",
+  "services": [
+    "Code",
+    "Execute Workflow",
+    "If",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "name": "Ask a human",
     "nodes": [
@@ -369,33 +392,5 @@
         ]
       }
     }
-  },
-  "title": "Automate user inquiries and escalate to Slack support",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Execute Workflow",
-    "If",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 17,
-  "external_integrations_count": 5
+  }
 }

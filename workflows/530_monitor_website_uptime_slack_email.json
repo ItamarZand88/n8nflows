@@ -1,7 +1,41 @@
 {
   "id": "530",
-  "filename": "530_monitor_website_uptime_slack_email",
+  "title": "Monitor website uptime and send alerts via Slack and Email",
   "description": "Automatically checks website status every 6 hours, logs results in Google Sheets, and sends alerts to Slack and Email if any site is down.",
+  "filename": "530_monitor_website_uptime_slack_email",
+  "services": [
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Sheets",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Schedule",
+    "Slack",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Appendorupdate",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Sheets Account",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "26ba763460b97c249b82942b23b6384876dfeb9327513332e743c5f6219c2b8e"
@@ -707,44 +741,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor website uptime and send alerts via Slack and Email",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Sheets",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Schedule",
-    "Slack",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Appendorupdate",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Sheets Account",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 9
+  }
 }

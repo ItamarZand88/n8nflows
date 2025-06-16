@@ -1,7 +1,22 @@
 {
   "id": "11",
-  "filename": "11_create_json_data_file",
+  "title": "Create and Save JSON Data as a File",
   "description": "Generates example JSON data and saves it as a binary file, streamlining data handling for development purposes.",
+  "filename": "11_create_json_data_file",
+  "services": [
+    "Function",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -65,25 +80,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Save JSON Data as a File",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Function",
-    "Write Binary File"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

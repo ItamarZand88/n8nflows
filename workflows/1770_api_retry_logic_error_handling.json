@@ -1,7 +1,29 @@
 {
   "id": "1770",
-  "filename": "1770_api_retry_logic_error_handling",
+  "title": "Automate retry logic for error handling in API requests",
   "description": "Triggers a retry mechanism for API requests, handling known errors and limiting attempts to ensure successful data retrieval or processing.",
+  "filename": "1770_api_retry_logic_error_handling",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Manual",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Stop and Error"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "qAzZekQuABuH8uho",
     "meta": {
@@ -440,32 +462,5 @@
         ]
       }
     }
-  },
-  "title": "Automate retry logic for error handling in API requests",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Utility"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Manual",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Stop and Error"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 19,
-  "external_integrations_count": 6
+  }
 }

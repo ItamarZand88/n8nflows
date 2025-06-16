@@ -1,7 +1,24 @@
 {
   "id": "180",
-  "filename": "180_calculate_total_usd_amounts",
+  "title": "Calculate total USD amounts from manual input",
   "description": "Triggers on manual execution, generates mock USD amounts, and calculates the total for easy financial tracking.",
+  "filename": "180_calculate_total_usd_amounts",
+  "services": [
+    "Function",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -63,27 +80,5 @@
         ]
       }
     }
-  },
-  "title": "Calculate total USD amounts from manual input",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Function",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

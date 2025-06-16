@@ -1,7 +1,32 @@
 {
   "id": "1300",
-  "filename": "1300_monitor_usdt_wallet_balance_telegram",
+  "title": "Monitor USDT Wallet Balance and Notify via Telegram",
   "description": "Checks your USDT wallet balance every 5 minutes and sends notifications to Telegram if the balance changes, ensuring you stay updated on your funds.",
+  "filename": "1300_monitor_usdt_wallet_balance_telegram",
+  "services": [
+    "Code",
+    "Cron",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "id": "AlEVIPHR3dMJkYWt",
     "meta": {
@@ -277,35 +302,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor USDT Wallet Balance and Notify via Telegram",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Cron",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 7
+  }
 }

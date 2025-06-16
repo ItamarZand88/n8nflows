@@ -1,7 +1,28 @@
 {
   "id": "704",
-  "filename": "704_create_and_retrieve_releases_sentry",
+  "title": "Create and retrieve releases in Sentry.io",
   "description": "Triggers a release creation in Sentry.io and retrieves all existing releases, streamlining release management for development teams.",
+  "filename": "704_create_and_retrieve_releases_sentry",
+  "services": [
+    "Manual",
+    "Sentry.io"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Getall",
+    "Manage release"
+  ],
+  "setup_requirements": [
+    "Sentry.io API Key"
+  ],
   "content": {
     "id": "27",
     "name": "Create a release and get all releases",
@@ -85,31 +106,5 @@
         ]
       }
     }
-  },
-  "title": "Create and retrieve releases in Sentry.io",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Manual",
-    "Sentry.io"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Getall",
-    "Manage release"
-  ],
-  "setup_requirements": [
-    "Sentry.io API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

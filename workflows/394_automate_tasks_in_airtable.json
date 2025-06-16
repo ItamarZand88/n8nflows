@@ -1,7 +1,32 @@
 {
   "id": "394",
-  "filename": "394_automate_tasks_in_airtable",
+  "title": "Automate task creation and notifications in Airtable",
   "description": "Triggers on new updates in Airtable, creates tasks based on templates, and notifies assignees via Slack, streamlining project management.",
+  "filename": "394_automate_tasks_in_airtable",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Airtable Event"
+  ],
+  "actions": [
+    "Get",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833",
@@ -438,35 +463,5 @@
         ]
       }
     }
-  },
-  "title": "Automate task creation and notifications in Airtable",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Airtable Event"
-  ],
-  "actions": [
-    "Get",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 6
+  }
 }

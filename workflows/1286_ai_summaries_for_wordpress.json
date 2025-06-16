@@ -1,7 +1,52 @@
 {
   "id": "1286",
-  "filename": "1286_ai_summaries_for_wordpress",
+  "title": "Automate AI Summaries for WordPress Posts",
   "description": "Automatically generates and updates AI summaries for new WordPress posts, logging details to Google Sheets and notifying a Slack channel.",
+  "filename": "1286_ai_summaries_for_wordpress",
+  "services": [
+    "Date & Time",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Markdown",
+    "No Operation, do nothing",
+    "Schedule",
+    "Slack",
+    "Sticky Note",
+    "Webhook",
+    "Wordpress"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Marketing",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Get",
+    "Getall",
+    "Set Data",
+    "Subtractfromdate"
+  ],
+  "setup_requirements": [
+    "Google Sheets API Key",
+    "HTTP Request API Key",
+    "Slack Account",
+    "Wordpress API Key"
+  ],
   "content": {
     "id": "AhP1Fgv0eCrh9Jxs",
     "meta": {
@@ -1035,55 +1080,5 @@
         ]
       }
     }
-  },
-  "title": "Automate AI Summaries for WordPress Posts",
-  "nodes_count": 32,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Marketing",
-    "Productivity"
-  ],
-  "services": [
-    "Date & Time",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Markdown",
-    "No Operation, do nothing",
-    "Schedule",
-    "Slack",
-    "Sticky Note",
-    "Webhook",
-    "Wordpress"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Get",
-    "Getall",
-    "Set Data",
-    "Subtractfromdate"
-  ],
-  "setup_requirements": [
-    "Google Sheets API Key",
-    "HTTP Request API Key",
-    "Slack Account",
-    "Wordpress API Key"
-  ],
-  "workflow_complexity": 32,
-  "external_integrations_count": 14
+  }
 }

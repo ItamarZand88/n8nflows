@@ -1,7 +1,26 @@
 {
   "id": "827",
-  "filename": "827_send_logs_to_betterstack",
+  "title": "Send log messages to BetterStack for monitoring",
   "description": "Automatically sends log messages to BetterStack when triggered, allowing for efficient monitoring and error tracking in applications.",
+  "filename": "827_send_logs_to_betterstack",
+  "services": [
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "568298fde06d3db80a2eea77fe5bf45f0c7bb898dea20b769944e9ac7c6c5a80"
@@ -205,29 +224,5 @@
         ]
       }
     }
-  },
-  "title": "Send log messages to BetterStack for monitoring",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 5
+  }
 }

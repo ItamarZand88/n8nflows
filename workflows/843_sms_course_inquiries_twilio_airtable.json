@@ -1,7 +1,35 @@
 {
   "id": "843",
-  "filename": "843_sms_course_inquiries_twilio_airtable",
+  "title": "Automate SMS Course Inquiries with Twilio and Airtable",
   "description": "Receives SMS inquiries about courses, queries an Airtable database for information, and sends back relevant course details to users via SMS.",
+  "filename": "843_sms_course_inquiries_twilio_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Sticky Note",
+    "Twilio"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Twilio Event"
+  ],
+  "actions": [
+    "Create",
+    "Getschema",
+    "Manage base",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Twilio API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -503,38 +531,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SMS Course Inquiries with Twilio and Airtable",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Sticky Note",
-    "Twilio"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Twilio Event"
-  ],
-  "actions": [
-    "Create",
-    "Getschema",
-    "Manage base",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Twilio API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 4
+  }
 }

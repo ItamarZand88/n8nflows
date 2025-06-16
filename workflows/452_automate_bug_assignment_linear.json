@@ -1,7 +1,40 @@
 {
   "id": "452",
-  "filename": "452_automate_bug_assignment_linear",
+  "title": "Automate team assignment for bug tickets in Linear",
   "description": "Triggers on new bug tickets in Linear, classifies them using AI, and assigns the appropriate team while notifying via Slack.",
+  "filename": "452_automate_bug_assignment_linear",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Linear",
+    "Merge",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Linear Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account",
+    "Linear API Key",
+    "Linear Account",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -538,43 +571,5 @@
         ]
       }
     }
-  },
-  "title": "Automate team assignment for bug tickets in Linear",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Linear",
-    "Merge",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Linear Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account",
-    "Linear API Key",
-    "Linear Account",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 8
+  }
 }

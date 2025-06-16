@@ -1,7 +1,24 @@
 {
   "id": "229",
-  "filename": "229_merge_ingredients_and_super_band",
+  "title": "Merge ingredient lists and create a super band",
   "description": "Triggers manually to combine ingredient lists, filter available items, and merge band members from two famous groups into one super band.",
+  "filename": "229_merge_ingredients_and_super_band",
+  "services": [
+    "Code",
+    "Manual",
+    "Merge",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd"
@@ -360,27 +377,5 @@
         ]
       }
     }
-  },
-  "title": "Merge ingredient lists and create a super band",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Manual",
-    "Merge",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 17,
-  "external_integrations_count": 4
+  }
 }

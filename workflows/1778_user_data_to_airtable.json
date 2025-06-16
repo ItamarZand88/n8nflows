@@ -1,7 +1,27 @@
 {
   "id": "1778",
-  "filename": "1778_user_data_to_airtable",
+  "title": "Automate user data collection from forms to Airtable",
   "description": "Captures user information from a form submission and automatically stores it in Airtable for easy access and management.",
+  "filename": "1778_user_data_to_airtable",
+  "services": [
+    "Airtable",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Create"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "QObDE85a2ArfJkxV",
     "meta": {
@@ -244,30 +264,5 @@
         ]
       }
     }
-  },
-  "title": "Automate user data collection from forms to Airtable",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Airtable",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Create"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

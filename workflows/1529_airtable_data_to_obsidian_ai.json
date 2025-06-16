@@ -1,7 +1,22 @@
 {
   "id": "1529",
-  "filename": "1529_airtable_data_to_obsidian_ai",
+  "title": "Automate Airtable data retrieval with AI responses in Obsidian",
   "description": "Sets up a webhook in Obsidian to send queries about Airtable data, processes them with an AI agent, and returns insightful responses for easy access.",
+  "filename": "1529_airtable_data_to_obsidian_ai",
+  "services": [
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Search"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "aZSJ2BZQhNduZZ8w",
     "meta": {
@@ -203,25 +218,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Airtable data retrieval with AI responses in Obsidian",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Search"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 2
+  }
 }

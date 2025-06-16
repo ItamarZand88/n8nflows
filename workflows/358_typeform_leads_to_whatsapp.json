@@ -1,7 +1,28 @@
 {
   "id": "358",
-  "filename": "358_typeform_leads_to_whatsapp",
+  "title": "Send Typeform leads via WhatsApp using Twilio",
   "description": "Captures new leads from Typeform submissions and sends their details via WhatsApp for immediate follow-up using Twilio.",
+  "filename": "358_typeform_leads_to_whatsapp",
+  "services": [
+    "Edit Fields (Set)",
+    "Twilio",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Twilio API Key",
+    "Typeform Account"
+  ],
   "content": {
     "id": 1,
     "name": "Send Typeforms leads via Whatsapp (Twilio)",
@@ -101,31 +122,5 @@
         ]
       }
     }
-  },
-  "title": "Send Typeform leads via WhatsApp using Twilio",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Twilio",
-    "Typeform"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Twilio API Key",
-    "Typeform Account"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

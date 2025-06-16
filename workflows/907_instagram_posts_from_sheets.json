@@ -1,7 +1,34 @@
 {
   "id": "907",
-  "filename": "907_instagram_posts_from_sheets",
+  "title": "Automate Instagram Post Creation from Google Sheets Ideas",
   "description": "Triggers on a schedule to fetch new post ideas from Google Sheets, generates content concepts, images, and captions, then publishes to Instagram.",
+  "filename": "907_instagram_posts_from_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Facebook Graph",
+    "Google Sheets",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Facebook Graph API Key",
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "02e782574ebb30fbddb2c3fd832c946466d718819d25f6fe4b920124ff3fc2c1",
@@ -914,37 +941,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Instagram Post Creation from Google Sheets Ideas",
-  "nodes_count": 26,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Facebook Graph",
-    "Google Sheets",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Facebook Graph API Key",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 26,
-  "external_integrations_count": 6
+  }
 }

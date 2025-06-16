@@ -1,7 +1,38 @@
 {
   "id": "1431",
-  "filename": "1431_logo_sheet_analysis_to_airtable",
+  "title": "Automate logo sheet analysis and Airtable updates",
   "description": "Captures logo sheet images via form submission, extracts product details using AI, and updates Airtable with tools and attributes for easy management.",
+  "filename": "1431_logo_sheet_analysis_to_airtable",
+  "services": [
+    "Airtable",
+    "Code",
+    "Crypto",
+    "Edit Fields (Set)",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "No Operation, do nothing",
+    "Split Out",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Getschema",
+    "Manage base",
+    "Set Data",
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "dDAqkobn2pqgdl2N",
     "meta": {
@@ -1993,41 +2024,5 @@
         ]
       }
     }
-  },
-  "title": "Automate logo sheet analysis and Airtable updates",
-  "nodes_count": 44,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Crypto",
-    "Edit Fields (Set)",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "No Operation, do nothing",
-    "Split Out",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Getschema",
-    "Manage base",
-    "Set Data",
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 44,
-  "external_integrations_count": 10
+  }
 }

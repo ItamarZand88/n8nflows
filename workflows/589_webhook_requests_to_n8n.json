@@ -1,7 +1,31 @@
 {
   "id": "589",
-  "filename": "589_webhook_requests_to_n8n",
+  "title": "Relay webhook requests from webhook.site to local n8n workflow",
   "description": "Automatically retrieves new POST requests from webhook.site every 10 seconds and relays them to a specified local n8n workflow for processing.",
+  "filename": "589_webhook_requests_to_n8n",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Read",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "7858a8e25b8fc4dae485c1ef345e6fe74effb1f5060433ef500b4c186c965c18"
@@ -459,34 +483,5 @@
         ]
       }
     }
-  },
-  "title": "Relay webhook requests from webhook.site to local n8n workflow",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Read",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 18,
-  "external_integrations_count": 7
+  }
 }

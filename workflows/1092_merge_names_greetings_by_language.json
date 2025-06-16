@@ -1,7 +1,23 @@
 {
   "id": "1092",
-  "filename": "1092_merge_names_greetings_by_language",
+  "title": "Merge names and greetings based on language preference",
   "description": "Triggers on manual input, combines names and greetings by language, providing a personalized greeting output for different users.",
+  "filename": "1092_merge_names_greetings_by_language",
+  "services": [
+    "Code",
+    "Manual",
+    "Merge"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833"
@@ -101,26 +117,5 @@
         ]
       }
     }
-  },
-  "title": "Merge names and greetings based on language preference",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Manual",
-    "Merge"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

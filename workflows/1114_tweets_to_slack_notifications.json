@@ -1,7 +1,41 @@
 {
   "id": "1114",
-  "filename": "1114_tweets_to_slack_notifications",
+  "title": "Automate Slack notifications for trending tweets with sentiment analysis",
   "description": "Searches for tweets tagged #OnThisDay daily, analyzes sentiment, and sends notifications to Slack for tweets with positive scores.",
+  "filename": "1114_tweets_to_slack_notifications",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Google Cloud Natural Language",
+    "If",
+    "MongoDB",
+    "No Operation, do nothing",
+    "Postgres",
+    "Slack",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Analytics",
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Insert",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Cloud Natural Language Account",
+    "Slack API Key",
+    "X (Formerly Twitter) API Key"
+  ],
   "content": {
     "id": "6",
     "name": "ETL pipeline",
@@ -259,44 +293,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack notifications for trending tweets with sentiment analysis",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Analytics",
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Marketing"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Google Cloud Natural Language",
-    "If",
-    "MongoDB",
-    "No Operation, do nothing",
-    "Postgres",
-    "Slack",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Insert",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Cloud Natural Language Account",
-    "Slack API Key",
-    "X (Formerly Twitter) API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 9
+  }
 }

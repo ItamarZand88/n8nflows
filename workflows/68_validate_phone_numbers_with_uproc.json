@@ -1,7 +1,30 @@
 {
   "id": "68",
-  "filename": "68_validate_phone_numbers_with_uproc",
+  "title": "Validate phone numbers with uProc API",
   "description": "Triggers manual execution to validate a specified phone number using the uProc API, ensuring accurate contact information for your database.",
+  "filename": "68_validate_phone_numbers_with_uproc",
+  "services": [
+    "Function Item",
+    "If",
+    "Manual",
+    "uProc"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "uProc API Key"
+  ],
   "content": {
     "id": "114",
     "name": "Verify phone numbers",
@@ -102,33 +125,5 @@
         ]
       }
     }
-  },
-  "title": "Validate phone numbers with uProc API",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Function Item",
-    "If",
-    "Manual",
-    "uProc"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "uProc API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

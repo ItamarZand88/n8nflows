@@ -1,7 +1,25 @@
 {
   "id": "1232",
-  "filename": "1232_currency_transfer_automation_wise",
+  "title": "Automate currency transfers using Wise API",
   "description": "Creates a currency transfer quote, executes the transfer, and manages the process automatically using Wise API for efficient financial transactions.",
+  "filename": "1232_currency_transfer_automation_wise",
+  "services": [
+    "Wise"
+  ],
+  "categories": [
+    "Finance & Accounting"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Execute",
+    "Manage quote",
+    "Manage transfer"
+  ],
+  "setup_requirements": [
+    "Wise API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -117,28 +135,5 @@
         ]
       }
     }
-  },
-  "title": "Automate currency transfers using Wise API",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Finance & Accounting"
-  ],
-  "services": [
-    "Wise"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Execute",
-    "Manage quote",
-    "Manage transfer"
-  ],
-  "setup_requirements": [
-    "Wise API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 1
+  }
 }

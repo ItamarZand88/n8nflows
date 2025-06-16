@@ -1,7 +1,25 @@
 {
   "id": "961",
-  "filename": "961_send_test_alerts_to_signl4",
+  "title": "Send test alerts to SIGNL4 on manual trigger",
   "description": "Triggers a test alert to SIGNL4 when executed manually, allowing users to verify alert configurations and communication setup.",
+  "filename": "961_send_test_alerts_to_signl4",
+  "services": [
+    "Manual",
+    "SIGNL4"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "SIGNL4 API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -46,28 +64,5 @@
         ]
       }
     }
-  },
-  "title": "Send test alerts to SIGNL4 on manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Manual",
-    "SIGNL4"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "SIGNL4 API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

@@ -1,7 +1,32 @@
 {
   "id": "1183",
-  "filename": "1183_calendar_event_management_with_ai",
+  "title": "Automate Calendar Event Management with AI Assistance",
   "description": "Triggers on chat messages to manage Google Calendar events, including creating, updating, and deleting events based on user requests.",
+  "filename": "1183_calendar_event_management_with_ai",
+  "services": [
+    "DebugHelper",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Delete",
+    "Getall",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "8n0VYmvJgISwezyz",
     "meta": {
@@ -1013,35 +1038,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Calendar Event Management with AI Assistance",
-  "nodes_count": 32,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "DebugHelper",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Delete",
-    "Getall",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 32,
-  "external_integrations_count": 6
+  }
 }

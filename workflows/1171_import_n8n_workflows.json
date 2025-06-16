@@ -1,7 +1,46 @@
 {
   "id": "1171",
-  "filename": "1171_import_n8n_workflows",
+  "title": "Import n8n Workflows from File or Remote Instance",
   "description": "Facilitates the import of n8n workflows either from a JSON file or a remote n8n instance, ensuring necessary credentials are mapped and updated accordingly.",
+  "filename": "1171_import_n8n_workflows",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Command",
+    "Extract from File",
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "No Operation, do nothing",
+    "Read/Write Files from Disk",
+    "Remove Duplicates",
+    "Rename Keys",
+    "Sort",
+    "Split Out",
+    "Sticky Note",
+    "n8n",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Create",
+    "Filter Data",
+    "Fromjson",
+    "Manage credential",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "id": "87FUCRVFV07sNlbM",
     "meta": {
@@ -1463,49 +1502,5 @@
         ]
       }
     }
-  },
-  "title": "Import n8n Workflows from File or Remote Instance",
-  "nodes_count": 58,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Command",
-    "Extract from File",
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "No Operation, do nothing",
-    "Read/Write Files from Disk",
-    "Remove Duplicates",
-    "Rename Keys",
-    "Sort",
-    "Split Out",
-    "Sticky Note",
-    "n8n",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Create",
-    "Filter Data",
-    "Fromjson",
-    "Manage credential",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 58,
-  "external_integrations_count": 17
+  }
 }

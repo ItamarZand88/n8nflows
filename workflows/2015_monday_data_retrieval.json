@@ -1,7 +1,36 @@
 {
   "id": "2015",
-  "filename": "2015_monday_data_retrieval",
+  "title": "Automate data retrieval from Monday.com board items",
   "description": "Triggers on a new workflow event, retrieves all columns and subitems from a specified Monday.com board item, and aggregates the data for easy access.",
+  "filename": "2015_monday_data_retrieval",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Merge",
+    "Monday.com",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Get",
+    "Manage boardItem",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Monday.com API Key"
+  ],
   "content": {
     "id": "ZdGZh4qmOqTQe1oq",
     "meta": {
@@ -671,39 +700,5 @@
         ]
       }
     }
-  },
-  "title": "Automate data retrieval from Monday.com board items",
-  "nodes_count": 26,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Merge",
-    "Monday.com",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Get",
-    "Manage boardItem",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Monday.com API Key"
-  ],
-  "workflow_complexity": 26,
-  "external_integrations_count": 9
+  }
 }

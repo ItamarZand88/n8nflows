@@ -1,7 +1,34 @@
 {
   "id": "168",
-  "filename": "168_notify_slack_suspicious_domains",
+  "title": "Notify Slack for New Companies with Suspicious Domains",
   "description": "Triggers when a new company is created in HubSpot, checks the domain, and sends a warning message to Slack if the domain is suspicious.",
+  "filename": "168_notify_slack_suspicious_domains",
+  "services": [
+    "HTTP Request",
+    "HubSpot",
+    "If",
+    "Slack"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New HubSpot Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Manage company"
+  ],
+  "setup_requirements": [
+    "HubSpot API Key",
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd"
@@ -170,37 +197,5 @@
         ]
       }
     }
-  },
-  "title": "Notify Slack for New Companies with Suspicious Domains",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "HTTP Request",
-    "HubSpot",
-    "If",
-    "Slack"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New HubSpot Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Manage company"
-  ],
-  "setup_requirements": [
-    "HubSpot API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

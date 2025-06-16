@@ -1,7 +1,32 @@
 {
   "id": "1614",
-  "filename": "1614_wordpress_forms_to_mautic_contacts",
+  "title": "Create Mautic Contacts from WordPress Form Submissions",
   "description": "Automatically processes WordPress form submissions, validates email addresses, and creates contacts in Mautic for effective marketing follow-up.",
+  "filename": "1614_wordpress_forms_to_mautic_contacts",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Mautic",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Editdonotcontactlist",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Mautic API Key"
+  ],
   "content": {
     "id": "jOI7FRhG1FkeqBLG",
     "meta": {
@@ -319,35 +344,5 @@
         ]
       }
     }
-  },
-  "title": "Create Mautic Contacts from WordPress Form Submissions",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Mautic",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Editdonotcontactlist",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Mautic API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 6
+  }
 }

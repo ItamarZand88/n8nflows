@@ -1,7 +1,26 @@
 {
   "id": "24",
-  "filename": "24_iss_position_to_bigquery",
+  "title": "Automate satellite position logging to Google BigQuery",
   "description": "Automatically retrieves the current position of the ISS every minute and logs the data, including latitude, longitude, and timestamp, to Google BigQuery for analysis.",
+  "filename": "24_iss_position_to_bigquery",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Google BigQuery",
+    "HTTP Request"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google BigQuery Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -133,29 +152,5 @@
         ]
       }
     }
-  },
-  "title": "Automate satellite position logging to Google BigQuery",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Google BigQuery",
-    "HTTP Request"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google BigQuery Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

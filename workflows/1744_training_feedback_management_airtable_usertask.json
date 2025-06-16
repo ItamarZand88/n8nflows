@@ -1,7 +1,33 @@
 {
   "id": "1744",
-  "filename": "1744_training_feedback_management_airtable_usertask",
+  "title": "Automate Training Feedback Management with Airtable and Usertask",
   "description": "Captures new training feedback from Airtable, creates tasks for poor ratings, and sends notifications to improve training programs efficiently.",
+  "filename": "1744_training_feedback_management_airtable_usertask",
+  "services": [
+    "Airtable",
+    "HTTP Request",
+    "LinkedIn",
+    "Send Email",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Airtable Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Airtable Account",
+    "LinkedIn Account"
+  ],
   "content": {
     "id": "pDLtBJkNSXXWSvB0",
     "meta": {
@@ -679,36 +705,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Training Feedback Management with Airtable and Usertask",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Airtable",
-    "HTTP Request",
-    "LinkedIn",
-    "Send Email",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Airtable Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Airtable Account",
-    "LinkedIn Account"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 7
+  }
 }

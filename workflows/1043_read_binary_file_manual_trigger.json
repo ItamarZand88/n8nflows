@@ -1,7 +1,21 @@
 {
   "id": "1043",
-  "filename": "1043_read_binary_file_manual_trigger",
+  "title": "Read and Process a Binary File on Manual Trigger",
   "description": "Triggers a manual execution to read a binary file from a specified path, allowing users to easily access and utilize file data.",
+  "filename": "1043_read_binary_file_manual_trigger",
+  "services": [
+    "Manual",
+    "Read Binary File"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -40,24 +54,5 @@
         ]
       }
     }
-  },
-  "title": "Read and Process a Binary File on Manual Trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Manual",
-    "Read Binary File"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

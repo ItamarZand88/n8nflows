@@ -1,7 +1,38 @@
 {
   "id": "1253",
-  "filename": "1253_typeform_feedback_to_notion_slack",
+  "title": "Automate feedback management from Typeform to Notion and Slack",
   "description": "Captures new feedback submissions from Typeform, analyzes sentiment, and logs positive responses in Notion while notifying the team on Slack.",
+  "filename": "1253_typeform_feedback_to_notion_slack",
+  "services": [
+    "Google Cloud Natural Language",
+    "If",
+    "Notion",
+    "Slack",
+    "Trello",
+    "Typeform"
+  ],
+  "categories": [
+    "Analytics",
+    "Communication",
+    "Core Nodes",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Manage databasePage"
+  ],
+  "setup_requirements": [
+    "Google Cloud Natural Language Account",
+    "Notion API Key",
+    "Slack API Key",
+    "Trello API Key",
+    "Typeform API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -180,41 +211,5 @@
         ]
       }
     }
-  },
-  "title": "Automate feedback management from Typeform to Notion and Slack",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Analytics",
-    "Communication",
-    "Core Nodes",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Google Cloud Natural Language",
-    "If",
-    "Notion",
-    "Slack",
-    "Trello",
-    "Typeform"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Manage databasePage"
-  ],
-  "setup_requirements": [
-    "Google Cloud Natural Language Account",
-    "Notion API Key",
-    "Slack API Key",
-    "Trello API Key",
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,24 @@
 {
   "id": "195",
-  "filename": "195_adobe_sign_webhook_processing",
+  "title": "Automate webhook data processing with Adobe Sign",
   "description": "Processes incoming webhook requests from Adobe Sign, extracts key agreement details, and responds with client ID for further actions.",
+  "filename": "195_adobe_sign_webhook_processing",
+  "services": [
+    "Edit Fields (Set)",
+    "Function",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -148,27 +165,5 @@
         ]
       }
     }
-  },
-  "title": "Automate webhook data processing with Adobe Sign",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 3
+  }
 }

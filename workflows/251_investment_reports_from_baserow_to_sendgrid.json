@@ -1,7 +1,38 @@
 {
   "id": "251",
-  "filename": "251_investment_reports_from_baserow_to_sendgrid",
+  "title": "Automate investment reports from Baserow to SendGrid",
   "description": "Triggers daily to fetch stock data from Tradegate, processes investment details from Baserow, and sends a formatted report via SendGrid email.",
+  "filename": "251_investment_reports_from_baserow_to_sendgrid",
+  "services": [
+    "Baserow",
+    "Cron",
+    "Edit Fields (Set)",
+    "Function",
+    "HTML Extract",
+    "HTTP Request",
+    "Manual",
+    "SendGrid"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Manage mail",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Baserow API Key",
+    "SendGrid API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -312,41 +343,5 @@
         ]
       }
     }
-  },
-  "title": "Automate investment reports from Baserow to SendGrid",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Baserow",
-    "Cron",
-    "Edit Fields (Set)",
-    "Function",
-    "HTML Extract",
-    "HTTP Request",
-    "Manual",
-    "SendGrid"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Manage mail",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Baserow API Key",
-    "SendGrid API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 8
+  }
 }

@@ -1,7 +1,39 @@
 {
   "id": "1400",
-  "filename": "1400_email_replies_with_openai_gmail",
+  "title": "Automate email replies using OpenAI Assistant and Gmail",
   "description": "Triggers every minute to check for specific labeled emails, generates replies using OpenAI Assistant, and saves drafts in Gmail while removing trigger labels.",
+  "filename": "1400_email_replies_with_openai_gmail",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Gmail",
+    "HTTP Request",
+    "Limit",
+    "Loop Over Items (Split in Batches)",
+    "Markdown",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Get",
+    "Manage assistant",
+    "Manage thread",
+    "Removelabels",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "HTTP Request Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -595,42 +627,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email replies using OpenAI Assistant and Gmail",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Gmail",
-    "HTTP Request",
-    "Limit",
-    "Loop Over Items (Split in Batches)",
-    "Markdown",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Get",
-    "Manage assistant",
-    "Manage thread",
-    "Removelabels",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 9
+  }
 }

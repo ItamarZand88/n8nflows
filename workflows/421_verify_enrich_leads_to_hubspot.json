@@ -1,7 +1,35 @@
 {
   "id": "421",
-  "filename": "421_verify_enrich_leads_to_hubspot",
+  "title": "Verify and Enrich Leads from Web Form to HubSpot",
   "description": "Captures form submissions, verifies email validity, enriches lead data, and adds qualified leads to HubSpot for effective sales follow-up.",
+  "filename": "421_verify_enrich_leads_to_hubspot",
+  "services": [
+    "Clearbit",
+    "HubSpot",
+    "Hunter",
+    "If",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Emailverifier",
+    "Filter Data",
+    "Manage person"
+  ],
+  "setup_requirements": [
+    "Clearbit API Key",
+    "HubSpot Account",
+    "Hunter API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "257476b1ef58bf3cb6a46e65fac7ee34a53a5e1a8492d5c6e4da5f87c9b82833"
@@ -546,38 +574,5 @@
         ]
       }
     }
-  },
-  "title": "Verify and Enrich Leads from Web Form to HubSpot",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Sales"
-  ],
-  "services": [
-    "Clearbit",
-    "HubSpot",
-    "Hunter",
-    "If",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Emailverifier",
-    "Filter Data",
-    "Manage person"
-  ],
-  "setup_requirements": [
-    "Clearbit API Key",
-    "HubSpot Account",
-    "Hunter API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 7
+  }
 }

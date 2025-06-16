@@ -1,7 +1,37 @@
 {
   "id": "1860",
-  "filename": "1860_bitrix24_bot_registration_and_message_handling",
+  "title": "Automate Bitrix24 bot registration and message handling",
   "description": "Handles Bitrix24 bot events, processes messages, and registers the bot, ensuring seamless communication and interaction with users.",
+  "filename": "1860_bitrix24_bot_registration_and_message_handling",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Filter",
+    "Function",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "No Operation, do nothing",
+    "Split Out",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "TBiW9x7O4ijo4yOX",
     "meta": {
@@ -1221,40 +1251,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Bitrix24 bot registration and message handling",
-  "nodes_count": 34,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Filter",
-    "Function",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "No Operation, do nothing",
-    "Split Out",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 34,
-  "external_integrations_count": 13
+  }
 }

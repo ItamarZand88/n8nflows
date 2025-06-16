@@ -1,7 +1,35 @@
 {
   "id": "1978",
-  "filename": "1978_update_n8n_workflows_and_notify_gmail",
+  "title": "Update Outdated n8n Workflows and Notify via Gmail",
   "description": "Automatically identifies outdated nodes in n8n workflows, updates them, and sends a summary email through Gmail to keep users informed.",
+  "filename": "1978_update_n8n_workflows_and_notify_gmail",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Gmail",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Get",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "n8n API Key"
+  ],
   "content": {
     "id": "xlMrGt0c1eFi4J1U",
     "meta": {
@@ -399,38 +427,5 @@
         ]
       }
     }
-  },
-  "title": "Update Outdated n8n Workflows and Notify via Gmail",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Gmail",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Get",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 16,
-  "external_integrations_count": 7
+  }
 }

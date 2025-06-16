@@ -1,7 +1,16 @@
 {
   "id": "72",
-  "filename": "72_monitor_pipedrive_updates",
+  "title": "Monitor Pipedrive for updates on all changes",
   "description": "Automatically receives updates for any changes made in Pipedrive, ensuring you stay informed about your sales pipeline in real-time.",
+  "filename": "72_monitor_pipedrive_updates",
+  "services": [],
+  "categories": [],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "115",
     "name": "Receive updates for all changes in Pipedrive",
@@ -23,19 +32,5 @@
     "active": false,
     "settings": {},
     "connections": {}
-  },
-  "title": "Monitor Pipedrive for updates on all changes",
-  "nodes_count": 1,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [],
-  "services": [],
-  "difficulty": "Beginner",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 1,
-  "external_integrations_count": 0
+  }
 }

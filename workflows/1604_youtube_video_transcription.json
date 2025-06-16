@@ -1,7 +1,28 @@
 {
   "id": "1604",
-  "filename": "1604_youtube_video_transcription",
+  "title": "Transcribe YouTube Videos into Text Automatically",
   "description": "Triggers when a YouTube video URL is received, validates the URL, and retrieves the transcription, providing a text output for easy reading.",
+  "filename": "1604_youtube_video_transcription",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "Iz8TMdlc6JhaKkd9",
     "meta": {
@@ -397,31 +418,5 @@
         ]
       }
     }
-  },
-  "title": "Transcribe YouTube Videos into Text Automatically",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 14,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,29 @@
 {
   "id": "679",
-  "filename": "679_monitor_twitch_user_status",
+  "title": "Monitor Twitch user status and notify if online",
   "description": "Checks if a specified Twitch user is online and retrieves their stream details, providing real-time updates for engagement.",
+  "filename": "679_monitor_twitch_user_status",
+  "services": [
+    "Edit Fields (Set)",
+    "GraphQL",
+    "If",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -172,32 +194,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor Twitch user status and notify if online",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "GraphQL",
-    "If",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

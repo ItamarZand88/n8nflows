@@ -1,7 +1,32 @@
 {
   "id": "360",
-  "filename": "360_twitter_updates_to_mattermost",
+  "title": "Automate Twitter updates to Mattermost for team notifications",
   "description": "Fetches recent tweets mentioning 'n8n_io' every minute and sends formatted notifications to Mattermost with tweet details and author information.",
+  "filename": "360_twitter_updates_to_mattermost",
+  "services": [
+    "Cron",
+    "Edit Fields (Set)",
+    "Function",
+    "Mattermost",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Mattermost API Key",
+    "X (Formerly Twitter) API Key"
+  ],
   "content": {
     "id": "1",
     "name": "Twitter notifications",
@@ -178,35 +203,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Twitter updates to Mattermost for team notifications",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Cron",
-    "Edit Fields (Set)",
-    "Function",
-    "Mattermost",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Mattermost API Key",
-    "X (Formerly Twitter) API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

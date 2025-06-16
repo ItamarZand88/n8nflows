@@ -1,7 +1,37 @@
 {
   "id": "1522",
-  "filename": "1522_video_content_creation_from_airtable",
+  "title": "Automate video content creation from Airtable data",
   "description": "Triggers on demand to retrieve brand guidelines and blog posts, generates short video scripts, and creates associated images for social media sharing.",
+  "filename": "1522_video_content_creation_from_airtable",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "Filter",
+    "HTTP Request",
+    "Limit",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Remove Duplicates",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Create",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "id": "VlCgU5K9SYQbdxTa",
     "meta": {
@@ -1976,40 +2006,5 @@
         ]
       }
     }
-  },
-  "title": "Automate video content creation from Airtable data",
-  "nodes_count": 39,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "Filter",
-    "HTTP Request",
-    "Limit",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Remove Duplicates",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Create",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 39,
-  "external_integrations_count": 10
+  }
 }

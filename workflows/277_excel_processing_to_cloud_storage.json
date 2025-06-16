@@ -1,7 +1,40 @@
 {
   "id": "277",
-  "filename": "277_excel_processing_to_cloud_storage",
+  "title": "Automate Excel file processing and upload to cloud storage",
   "description": "Triggers on manual execution to load, manipulate, and optionally save Excel files, uploading results to Google Drive, OneDrive, or SFTP.",
+  "filename": "277_excel_processing_to_cloud_storage",
+  "services": [
+    "Edit Fields (Set)",
+    "FTP",
+    "Google Drive",
+    "HTTP Request",
+    "Manual",
+    "Microsoft OneDrive",
+    "Read Binary File",
+    "Spreadsheet File",
+    "Sticky Note",
+    "Write Binary File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download",
+    "Set Data",
+    "Tofile",
+    "Upload"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Microsoft OneDrive Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd"
@@ -536,43 +569,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Excel file processing and upload to cloud storage",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "FTP",
-    "Google Drive",
-    "HTTP Request",
-    "Manual",
-    "Microsoft OneDrive",
-    "Read Binary File",
-    "Spreadsheet File",
-    "Sticky Note",
-    "Write Binary File"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download",
-    "Set Data",
-    "Tofile",
-    "Upload"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Microsoft OneDrive Account"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 10
+  }
 }

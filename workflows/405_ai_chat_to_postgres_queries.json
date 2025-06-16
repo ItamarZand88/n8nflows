@@ -1,7 +1,22 @@
 {
   "id": "405",
-  "filename": "405_ai_chat_to_postgres_queries",
+  "title": "Automate SQL queries with AI chat for Postgres database",
   "description": "Triggers on chat messages to process SQL queries using an AI agent, retrieving data from a Postgres database for instant responses.",
+  "filename": "405_ai_chat_to_postgres_queries",
+  "services": [
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Executequery"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -168,25 +183,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SQL queries with AI chat for Postgres database",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Sticky Note"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Executequery"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 1
+  }
 }

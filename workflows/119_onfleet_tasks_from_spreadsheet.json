@@ -1,7 +1,26 @@
 {
   "id": "119",
-  "filename": "119_onfleet_tasks_from_spreadsheet",
+  "title": "Create Onfleet tasks from spreadsheet data",
   "description": "Automates the creation of delivery tasks in Onfleet by extracting address and recipient details from a specified spreadsheet file, streamlining logistics management.",
+  "filename": "119_onfleet_tasks_from_spreadsheet",
+  "services": [
+    "Onfleet",
+    "Read Binary File",
+    "Spreadsheet File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Miscellaneous"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Create"
+  ],
+  "setup_requirements": [
+    "Onfleet API Key"
+  ],
   "content": {
     "id": 12,
     "name": "Create Onfleet tasks from Spreadsheets",
@@ -93,29 +112,5 @@
         ]
       }
     }
-  },
-  "title": "Create Onfleet tasks from spreadsheet data",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Onfleet",
-    "Read Binary File",
-    "Spreadsheet File"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Create"
-  ],
-  "setup_requirements": [
-    "Onfleet API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

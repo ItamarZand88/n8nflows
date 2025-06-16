@@ -1,7 +1,32 @@
 {
   "id": "726",
-  "filename": "726_fact_checking_and_summarization",
+  "title": "Automate fact-checking and summarization of articles",
   "description": "Triggers on new inputs, splits text into sentences, analyzes for factual accuracy, and generates a summary of errors for review.",
+  "filename": "726_fact_checking_and_summarization",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Filter",
+    "Manual",
+    "Merge",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "6e361bfcd1e8378c9b07774b22409c7eaea7080f01d5248da45077c0c6108b99",
@@ -479,35 +504,5 @@
         ]
       }
     }
-  },
-  "title": "Automate fact-checking and summarization of articles",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Filter",
-    "Manual",
-    "Merge",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 18,
-  "external_integrations_count": 9
+  }
 }

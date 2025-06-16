@@ -1,7 +1,35 @@
 {
   "id": "274",
-  "filename": "274_sync_zendesk_tickets_to_slack",
+  "title": "Sync Zendesk tickets to Slack threads",
   "description": "Automatically creates or replies to Slack threads for new Zendesk tickets, ensuring timely communication and updates within your team.",
+  "filename": "274_sync_zendesk_tickets_to_slack",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "If",
+    "Slack",
+    "Sticky Note",
+    "Webhook",
+    "Zendesk"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Slack Account",
+    "Zendesk API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "237600ca44303ce91fa31ee72babcdc8493f55ee2c0e8aa2b78b3b4ce6f70bd9"
@@ -261,38 +289,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Zendesk tickets to Slack threads",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "If",
-    "Slack",
-    "Sticky Note",
-    "Webhook",
-    "Zendesk"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Slack Account",
-    "Zendesk API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 7
+  }
 }

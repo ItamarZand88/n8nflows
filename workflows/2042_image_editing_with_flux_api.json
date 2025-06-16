@@ -1,7 +1,28 @@
 {
   "id": "2042",
-  "filename": "2042_image_editing_with_flux_api",
+  "title": "Automate image editing and processing with FLUX API",
   "description": "Captures user input via a webhook, processes images using the FLUX API, and returns the edited images for user review, streamlining image editing workflows.",
+  "filename": "2042_image_editing_with_flux_api",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "OvuZIXwt9mdU2JGK",
     "meta": {
@@ -519,31 +540,5 @@
         ]
       }
     }
-  },
-  "title": "Automate image editing and processing with FLUX API",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 18,
-  "external_integrations_count": 7
+  }
 }

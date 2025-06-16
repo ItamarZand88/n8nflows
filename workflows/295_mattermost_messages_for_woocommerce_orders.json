@@ -1,7 +1,25 @@
 {
   "id": "295",
-  "filename": "295_mattermost_messages_for_woocommerce_orders",
+  "title": "Send Mattermost messages for new WooCommerce orders",
   "description": "Triggers a message in Mattermost whenever a new order is created in WooCommerce, keeping your team updated on sales activity.",
+  "filename": "295_mattermost_messages_for_woocommerce_orders",
+  "services": [
+    "Mattermost",
+    "WooCommerce"
+  ],
+  "categories": [
+    "Communication",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New WooCommerce Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Mattermost API Key",
+    "WooCommerce API Key"
+  ],
   "content": {
     "id": "188",
     "name": "Send a message on Mattermost when an order is created in WooCommerce",
@@ -56,28 +74,5 @@
         ]
       }
     }
-  },
-  "title": "Send Mattermost messages for new WooCommerce orders",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Sales"
-  ],
-  "services": [
-    "Mattermost",
-    "WooCommerce"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New WooCommerce Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Mattermost API Key",
-    "WooCommerce API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

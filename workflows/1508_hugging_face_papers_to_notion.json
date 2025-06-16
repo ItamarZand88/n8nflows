@@ -1,7 +1,34 @@
 {
   "id": "1508",
-  "filename": "1508_hugging_face_papers_to_notion",
+  "title": "Automate paper abstract extraction and analysis from Hugging Face",
   "description": "Triggers weekly to fetch new research papers from Hugging Face, extracts abstracts, analyzes them with OpenAI, and stores results in Notion for easy access.",
+  "filename": "1508_hugging_face_papers_to_notion",
+  "services": [
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Notion",
+    "Schedule",
+    "Split Out"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Extracthtmlcontent",
+    "Filter Data",
+    "Getall",
+    "Manage databasePage"
+  ],
+  "setup_requirements": [
+    "Notion API Key"
+  ],
   "content": {
     "id": "FU3MrLkaTHmfdG4n",
     "meta": {
@@ -471,37 +498,5 @@
         ]
       }
     }
-  },
-  "title": "Automate paper abstract extraction and analysis from Hugging Face",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Notion",
-    "Schedule",
-    "Split Out"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Extracthtmlcontent",
-    "Filter Data",
-    "Getall",
-    "Manage databasePage"
-  ],
-  "setup_requirements": [
-    "Notion API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 6
+  }
 }

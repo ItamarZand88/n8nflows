@@ -1,7 +1,24 @@
 {
   "id": "1148",
-  "filename": "1148_publish_to_medium",
+  "title": "Publish posts to Medium publications with a click",
   "description": "Triggers post publishing to Medium publications with a manual click, streamlining content distribution for writers and marketers.",
+  "filename": "1148_publish_to_medium",
+  "services": [
+    "Manual",
+    "Medium"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Medium API Key"
+  ],
   "content": {
     "id": "7",
     "name": "Publish post to a publication",
@@ -52,27 +69,5 @@
         ]
       }
     }
-  },
-  "title": "Publish posts to Medium publications with a click",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Manual",
-    "Medium"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Medium API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

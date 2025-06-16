@@ -1,7 +1,30 @@
 {
   "id": "1641",
-  "filename": "1641_contact_form_to_email_and_sheets",
+  "title": "Automate contact form submissions to email and Google Sheets",
   "description": "Captures new submissions from a contact form, classifies messages, and sends relevant emails while logging details to Google Sheets for easy tracking.",
+  "filename": "1641_contact_form_to_email_and_sheets",
+  "services": [
+    "Google Sheets",
+    "Send Email",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "LGpVLWPpNZSt9ISM",
     "meta": {
@@ -899,33 +922,5 @@
         ]
       }
     }
-  },
-  "title": "Automate contact form submissions to email and Google Sheets",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Google Sheets",
-    "Send Email",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 4
+  }
 }

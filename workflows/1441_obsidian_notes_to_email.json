@@ -1,7 +1,35 @@
 {
   "id": "1441",
-  "filename": "1441_obsidian_notes_to_email",
+  "title": "Automate Emailing Obsidian Notes with Attachments",
   "description": "Triggers email sending from Obsidian notes, including attachments, using YAML metadata for customization and automatic responses.",
+  "filename": "1441_obsidian_notes_to_email",
+  "services": [
+    "Aggregate",
+    "Convert to File",
+    "Date & Time",
+    "Edit Fields (Set)",
+    "Gmail",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Split Out",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data",
+    "Tobinary"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "id": "DNqCvzBvS7GAFWm4",
     "meta": {
@@ -542,38 +570,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Emailing Obsidian Notes with Attachments",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Convert to File",
-    "Date & Time",
-    "Edit Fields (Set)",
-    "Gmail",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Split Out",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data",
-    "Tobinary"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 10
+  }
 }

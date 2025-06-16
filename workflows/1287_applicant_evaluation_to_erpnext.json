@@ -1,7 +1,47 @@
 {
   "id": "1287",
-  "filename": "1287_applicant_evaluation_to_erpnext",
+  "title": "Automate Applicant Evaluation and Notifications in ERPNext",
   "description": "Triggers on new job applications, evaluates resumes using AI, updates applicant status in ERPNext, and notifies candidates via email or WhatsApp.",
+  "filename": "1287_applicant_evaluation_to_erpnext",
+  "services": [
+    "Code",
+    "ERPNext",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Microsoft Outlook",
+    "Sticky Note",
+    "Switch",
+    "Webhook",
+    "WhatsApp Business Cloud"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Finance & Accounting",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Pdf",
+    "Send",
+    "Set Data",
+    "Text",
+    "Update"
+  ],
+  "setup_requirements": [
+    "ERPNext API Key",
+    "HTTP Request API Key",
+    "Microsoft Outlook Account",
+    "WhatsApp Business Cloud API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "e4f78845dfed9ddcfba1945ae00d12e9a7d76eab052afd19299228ce02349d86"
@@ -1079,50 +1119,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Applicant Evaluation and Notifications in ERPNext",
-  "nodes_count": 39,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Finance & Accounting",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "ERPNext",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Microsoft Outlook",
-    "Sticky Note",
-    "Switch",
-    "Webhook",
-    "WhatsApp Business Cloud"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Pdf",
-    "Send",
-    "Set Data",
-    "Text",
-    "Update"
-  ],
-  "setup_requirements": [
-    "ERPNext API Key",
-    "HTTP Request API Key",
-    "Microsoft Outlook Account",
-    "WhatsApp Business Cloud API Key"
-  ],
-  "workflow_complexity": 39,
-  "external_integrations_count": 12
+  }
 }

@@ -1,7 +1,33 @@
 {
   "id": "1699",
-  "filename": "1699_nostr_threads_analysis_to_email_telegram",
+  "title": "Analyze and Report Nostr Threads with #damus via Email and Telegram",
   "description": "Triggers on demand to read Nostr threads with #damus, analyzes themes, and sends detailed reports via Gmail and Telegram for community insights.",
+  "filename": "1699_nostr_threads_analysis_to_email_telegram",
+  "services": [
+    "Aggregate",
+    "Gmail",
+    "Manual",
+    "Markdown",
+    "Merge",
+    "Schedule",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Gmail Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "02GdRzvsuHmSSgBw",
     "meta": {
@@ -609,36 +635,5 @@
         ]
       }
     }
-  },
-  "title": "Analyze and Report Nostr Threads with #damus via Email and Telegram",
-  "nodes_count": 24,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "Gmail",
-    "Manual",
-    "Markdown",
-    "Merge",
-    "Schedule",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Gmail Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 24,
-  "external_integrations_count": 8
+  }
 }

@@ -1,7 +1,30 @@
 {
   "id": "283",
-  "filename": "283_sync_clickup_tasks_with_notion",
+  "title": "Sync ClickUp task updates with Notion database",
   "description": "Automatically updates Notion database entries when ClickUp task statuses change, ensuring seamless project management across platforms.",
+  "filename": "283_sync_clickup_tasks_with_notion",
+  "services": [
+    "ClickUp",
+    "Notion"
+  ],
+  "categories": [
+    "Communication",
+    "Productivity"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New ClickUp Event",
+    "New Notion Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage databasePage",
+    "Update"
+  ],
+  "setup_requirements": [
+    "ClickUp API Key",
+    "Notion API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "237600ca44303ce91fa31ee72babcdc8493f55ee2c0e8aa2b78b3b4ce6f70bd9"
@@ -181,33 +204,5 @@
         ]
       }
     }
-  },
-  "title": "Sync ClickUp task updates with Notion database",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Productivity"
-  ],
-  "services": [
-    "ClickUp",
-    "Notion"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New ClickUp Event",
-    "New Notion Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage databasePage",
-    "Update"
-  ],
-  "setup_requirements": [
-    "ClickUp API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 2
+  }
 }

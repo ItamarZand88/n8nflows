@@ -1,7 +1,27 @@
 {
   "id": "1574",
-  "filename": "1574_indeed_job_search_summaries",
+  "title": "Automate Indeed job search summaries and notifications",
   "description": "Triggers a job search on Indeed, summarizes the results using AI, and sends formatted notifications via webhook for easy access.",
+  "filename": "1574_indeed_job_search_summaries",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Markdown",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "i89dNLYeOVdTwtcL",
     "meta": {
@@ -482,30 +502,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Indeed job search summaries and notifications",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Markdown",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 15,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,40 @@
 {
   "id": "851",
-  "filename": "851_extract_google_keep_to_sheets",
+  "title": "Extract and Log Google Keep Notes to Google Sheets",
   "description": "Triggers on demand to extract Google Keep notes, processes relevant data, and logs it into Google Sheets for easy tracking and analysis.",
+  "filename": "851_extract_google_keep_to_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Filter",
+    "Google Drive",
+    "Google Sheets",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Download",
+    "Filter Data",
+    "Fromjson",
+    "Manage fileFolder",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -623,43 +656,5 @@
         ]
       }
     }
-  },
-  "title": "Extract and Log Google Keep Notes to Google Sheets",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Filter",
-    "Google Drive",
-    "Google Sheets",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Download",
-    "Filter Data",
-    "Fromjson",
-    "Manage fileFolder",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 9
+  }
 }

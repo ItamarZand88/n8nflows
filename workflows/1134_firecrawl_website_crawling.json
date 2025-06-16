@@ -1,7 +1,26 @@
 {
   "id": "1134",
-  "filename": "1134_firecrawl_website_crawling",
+  "title": "Automate website crawling and data extraction with FireCrawl",
   "description": "Triggers a website crawl via FireCrawl API, extracts markdown data, and prepares it for reuse in AI applications or workspaces.",
+  "filename": "1134_firecrawl_website_crawling",
+  "services": [
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "7DPLpEkww5Uctcml",
     "meta": {
@@ -139,29 +158,5 @@
         ]
       }
     }
-  },
-  "title": "Automate website crawling and data extraction with FireCrawl",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }

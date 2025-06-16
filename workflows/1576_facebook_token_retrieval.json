@@ -1,7 +1,26 @@
 {
   "id": "1576",
-  "filename": "1576_facebook_token_retrieval",
+  "title": "Automate Facebook Token Retrieval for User and Page",
   "description": "Triggers a process to retrieve long-lived Facebook user and page tokens using provided credentials, streamlining access for Facebook API integrations.",
+  "filename": "1576_facebook_token_retrieval",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "iA0rm7IWi7xmY5sQ",
     "meta": {
@@ -191,29 +210,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Facebook Token Retrieval for User and Page",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

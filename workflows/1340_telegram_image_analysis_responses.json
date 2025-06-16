@@ -1,7 +1,29 @@
 {
   "id": "1340",
-  "filename": "1340_telegram_image_analysis_responses",
+  "title": "Automate image analysis and responses via Telegram",
   "description": "Triggers on new images sent in Telegram, analyzes them, and sends back insightful responses, enhancing communication efficiency.",
+  "filename": "1340_telegram_image_analysis_responses",
+  "services": [
+    "Sticky Note",
+    "Switch",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Analyze",
+    "Manage image"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "84ba6d895254e080ac2b4916d987aa66b000f88d4d919a6b9c76848f9b8a7616"
@@ -264,32 +286,5 @@
         ]
       }
     }
-  },
-  "title": "Automate image analysis and responses via Telegram",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Sticky Note",
-    "Switch",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Analyze",
-    "Manage image"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 3
+  }
 }

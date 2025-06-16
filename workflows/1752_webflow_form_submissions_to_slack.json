@@ -1,7 +1,37 @@
 {
   "id": "1752",
-  "filename": "1752_webflow_form_submissions_to_slack",
+  "title": "Automate Slack channel creation for Webflow form submissions",
   "description": "Triggers on new Webflow form submissions, checks for existing Slack channels, creates a new channel if needed, and sends submission details to Slack.",
+  "filename": "1752_webflow_form_submissions_to_slack",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "If",
+    "Slack",
+    "Sticky Note",
+    "Webflow"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Webflow Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage channel",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Slack API Key",
+    "Webflow API Key"
+  ],
   "content": {
     "id": "pmJUJj7FAnrOS6Jc",
     "meta": {
@@ -396,40 +426,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack channel creation for Webflow form submissions",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Marketing"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "If",
-    "Slack",
-    "Sticky Note",
-    "Webflow"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Webflow Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage channel",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Slack API Key",
-    "Webflow API Key"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 6
+  }
 }

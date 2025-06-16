@@ -1,7 +1,36 @@
 {
   "id": "240",
-  "filename": "240_typeform_leads_to_pipedrive",
+  "title": "Automate lead creation from Typeform submissions to Pipedrive",
   "description": "Captures new submissions from Typeform, maps company size, and automatically creates leads, organizations, and notes in Pipedrive for efficient sales follow-up.",
+  "filename": "240_typeform_leads_to_pipedrive",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Pipedrive",
+    "Sticky Note",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Manage lead",
+    "Manage note",
+    "Manage organization",
+    "Manage person",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Pipedrive API Key",
+    "Typeform API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd"
@@ -270,39 +299,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead creation from Typeform submissions to Pipedrive",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Pipedrive",
-    "Sticky Note",
-    "Typeform"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Manage lead",
-    "Manage note",
-    "Manage organization",
-    "Manage person",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Pipedrive API Key",
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 5
+  }
 }

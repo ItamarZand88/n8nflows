@@ -1,7 +1,35 @@
 {
   "id": "708",
-  "filename": "708_stripe_payments_to_quickbooks",
+  "title": "Automate Stripe payments and create QuickBooks sales receipts",
   "description": "Triggers on successful Stripe payments, retrieves customer data, and creates corresponding sales receipts in QuickBooks for streamlined accounting.",
+  "filename": "708_stripe_payments_to_quickbooks",
+  "services": [
+    "HTTP Request",
+    "If",
+    "Merge",
+    "QuickBooks Online",
+    "Stripe"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Finance & Accounting",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Stripe Event"
+  ],
+  "actions": [
+    "Create",
+    "Filter Data",
+    "Manage customer"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account",
+    "QuickBooks Online Account",
+    "Stripe API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "6f3fb2495ae05d668c93cbf9e1649128d6e08178f8a900941cf97e588f18fdfc",
@@ -471,38 +499,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Stripe payments and create QuickBooks sales receipts",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Finance & Accounting",
-    "Sales"
-  ],
-  "services": [
-    "HTTP Request",
-    "If",
-    "Merge",
-    "QuickBooks Online",
-    "Stripe"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Stripe Event"
-  ],
-  "actions": [
-    "Create",
-    "Filter Data",
-    "Manage customer"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account",
-    "QuickBooks Online Account",
-    "Stripe API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 5
+  }
 }

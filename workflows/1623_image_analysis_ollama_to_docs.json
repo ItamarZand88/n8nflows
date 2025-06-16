@@ -1,7 +1,39 @@
 {
   "id": "1623",
-  "filename": "1623_image_analysis_ollama_to_docs",
+  "title": "Automate Image Analysis with Ollama Models and Save to Google Docs",
   "description": "Triggers image download from Google Drive, processes it with Ollama Vision Models, and saves detailed analysis to Google Docs for easy sharing.",
+  "filename": "1623_image_analysis_ollama_to_docs",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Google Docs",
+    "Google Drive",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Miscellaneous"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Binarytopropery",
+    "Download",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Docs Account",
+    "Google Drive Account"
+  ],
   "content": {
     "id": "keFEBUqHOrsib60G",
     "meta": {
@@ -522,42 +554,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Image Analysis with Ollama Models and Save to Google Docs",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Google Docs",
-    "Google Drive",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Binarytopropery",
-    "Download",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Docs Account",
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 9
+  }
 }

@@ -1,7 +1,36 @@
 {
   "id": "572",
-  "filename": "572_daily_order_summaries_airtable_to_gmail",
+  "title": "Automate Daily Order Summaries from Airtable to Gmail",
   "description": "Triggers every day at 7 PM, collects today's orders from Airtable, and sends a formatted summary email to streamline order management.",
+  "filename": "572_daily_order_summaries_airtable_to_gmail",
+  "services": [
+    "Airtable",
+    "Code",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Schedule",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Create",
+    "Search",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Gmail Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "bb6a1286a4ce98dce786d6c2748b867c1252d53458c87d87fbf6824b862d4c9c"
@@ -412,39 +441,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Daily Order Summaries from Airtable to Gmail",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Schedule",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Create",
-    "Search",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Gmail Account"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 7
+  }
 }

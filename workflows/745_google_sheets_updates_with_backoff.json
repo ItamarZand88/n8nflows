@@ -1,7 +1,34 @@
 {
   "id": "745",
-  "filename": "745_google_sheets_updates_with_backoff",
+  "title": "Automate Google Sheets updates with exponential backoff retries",
   "description": "Triggers updates to Google Sheets, implementing exponential backoff for retries in case of API limits, ensuring smooth data processing.",
+  "filename": "745_google_sheets_updates_with_backoff",
+  "services": [
+    "Code",
+    "Google Sheets",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Sticky Note",
+    "Stop and Error"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets API Key"
+  ],
   "content": {
     "id": "2NhqmUqW3KruEkaE",
     "meta": {
@@ -257,37 +284,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Sheets updates with exponential backoff retries",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Google Sheets",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Sticky Note",
-    "Stop and Error"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 7
+  }
 }

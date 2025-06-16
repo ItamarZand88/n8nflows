@@ -1,7 +1,31 @@
 {
   "id": "49",
-  "filename": "49_add_links_to_notion_from_webhook",
+  "title": "Add Links to Notion from Webhook Data",
   "description": "Automatically captures data from a webhook, extracts the title from a URL, and adds it as a link to a Notion database, streamlining information management.",
+  "filename": "49_add_links_to_notion_from_webhook",
+  "services": [
+    "Edit Fields (Set)",
+    "HTML Extract",
+    "HTTP Request",
+    "If",
+    "Notion",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Manage databasePage",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Notion API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -216,34 +240,5 @@
         ]
       }
     }
-  },
-  "title": "Add Links to Notion from Webhook Data",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTML Extract",
-    "HTTP Request",
-    "If",
-    "Notion",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Manage databasePage",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Notion API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 6
+  }
 }

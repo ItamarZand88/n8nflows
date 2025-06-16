@@ -1,7 +1,33 @@
 {
   "id": "1643",
-  "filename": "1643_linkedin_url_extraction_google_sheets",
+  "title": "Automate LinkedIn URL extraction from Google Sheets",
   "description": "Triggers on demand to extract LinkedIn profile URLs from Google Sheets entries, updating the sheet with the found URLs for easy access.",
+  "filename": "1643_linkedin_url_extraction_google_sheets",
+  "services": [
+    "Airtop",
+    "Code",
+    "Google Sheets",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage extraction",
+    "Query",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtop API Key",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "lifB7iUXlDzr5dmI",
     "meta": {
@@ -238,36 +264,5 @@
         ]
       }
     }
-  },
-  "title": "Automate LinkedIn URL extraction from Google Sheets",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Airtop",
-    "Code",
-    "Google Sheets",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage extraction",
-    "Query",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtop API Key",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

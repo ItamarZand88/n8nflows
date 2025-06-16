@@ -1,7 +1,38 @@
 {
   "id": "762",
-  "filename": "762_gong_calls_to_salesforce_enrichment",
+  "title": "Automate Gong Call Data Retrieval and Enrichment",
   "description": "Triggers on new Gong calls, retrieves detailed call data and transcripts, enriches with Salesforce info, and formats for analysis, saving time for sales teams.",
+  "filename": "762_gong_calls_to_salesforce_enrichment",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "Merge",
+    "Salesforce",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Get",
+    "Manage account",
+    "Manage opportunity",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Salesforce Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7",
@@ -762,41 +793,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Gong Call Data Retrieval and Enrichment",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Sales"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "Merge",
-    "Salesforce",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Get",
-    "Manage account",
-    "Manage opportunity",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Salesforce Account"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 9
+  }
 }

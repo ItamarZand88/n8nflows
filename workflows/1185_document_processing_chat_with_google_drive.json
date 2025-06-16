@@ -1,7 +1,50 @@
 {
   "id": "1185",
-  "filename": "1185_document_processing_chat_with_google_drive",
+  "title": "Automate Document Processing and Chat with Google Drive Data",
   "description": "Retrieves documents from Google Drive, processes them for metadata extraction, and enables an AI chatbot to interact with the data for user queries.",
+  "filename": "1185_document_processing_chat_with_google_drive",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Google Docs",
+    "Google Drive",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Merge",
+    "Sticky Note",
+    "Summarize",
+    "Telegram",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Miscellaneous"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Createfromtext",
+    "Download",
+    "Filter Data",
+    "Manage fileFolder",
+    "Sendandwait",
+    "Set Data",
+    "Text",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Docs Account",
+    "Google Drive Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "8tusZTTtcyaiznEG",
     "meta": {
@@ -1441,53 +1484,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Document Processing and Chat with Google Drive Data",
-  "nodes_count": 50,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Google Docs",
-    "Google Drive",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Merge",
-    "Sticky Note",
-    "Summarize",
-    "Telegram",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Createfromtext",
-    "Download",
-    "Filter Data",
-    "Manage fileFolder",
-    "Sendandwait",
-    "Set Data",
-    "Text",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Docs Account",
-    "Google Drive Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 50,
-  "external_integrations_count": 12
+  }
 }

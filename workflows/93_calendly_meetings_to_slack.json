@@ -1,7 +1,33 @@
 {
   "id": "93",
-  "filename": "93_calendly_meetings_to_slack",
+  "title": "Automate Slack notifications for new Calendly meetings",
   "description": "Triggers on new Calendly invitees, logs activities in Pipedrive, and sends reminders to Slack for follow-up notes.",
+  "filename": "93_calendly_meetings_to_slack",
+  "services": [
+    "Calendly",
+    "Date & Time",
+    "Pipedrive",
+    "Slack"
+  ],
+  "categories": [
+    "Communication",
+    "HITL",
+    "Productivity",
+    "Sales",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Calendly Event"
+  ],
+  "actions": [
+    "Manage activity"
+  ],
+  "setup_requirements": [
+    "Calendly API Key",
+    "Pipedrive API Key",
+    "Slack API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -133,36 +159,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack notifications for new Calendly meetings",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "HITL",
-    "Productivity",
-    "Sales",
-    "Utility"
-  ],
-  "services": [
-    "Calendly",
-    "Date & Time",
-    "Pipedrive",
-    "Slack"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Calendly Event"
-  ],
-  "actions": [
-    "Manage activity"
-  ],
-  "setup_requirements": [
-    "Calendly API Key",
-    "Pipedrive API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

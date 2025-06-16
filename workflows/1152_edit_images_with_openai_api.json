@@ -1,7 +1,27 @@
 {
   "id": "1152",
-  "filename": "1152_edit_images_with_openai_api",
+  "title": "Edit Images with OpenAI API from Chat Inputs",
   "description": "Triggers when a chat message is received, sends an image edit request to OpenAI, and converts the edited image for further use.",
+  "filename": "1152_edit_images_with_openai_api",
+  "services": [
+    "Convert to File",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Set Data",
+    "Tobinary"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "81aN6oJGMho5kCvQ",
     "meta": {
@@ -199,30 +219,5 @@
         ]
       }
     }
-  },
-  "title": "Edit Images with OpenAI API from Chat Inputs",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Convert to File",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Set Data",
-    "Tobinary"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

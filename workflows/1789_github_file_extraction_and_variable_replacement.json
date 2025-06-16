@@ -1,7 +1,37 @@
 {
   "id": "1789",
-  "filename": "1789_github_file_extraction_and_variable_replacement",
+  "title": "Automate GitHub file extraction and variable replacement",
   "description": "Triggers on demand to fetch a file from GitHub, checks for required variables, and processes the content for AI usage, ensuring all variables are present.",
+  "filename": "1789_github_file_extraction_and_variable_replacement",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "GitHub",
+    "If",
+    "Manual",
+    "Sticky Note",
+    "Stop and Error"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Manage file",
+    "Set Data",
+    "Text"
+  ],
+  "setup_requirements": [
+    "GitHub API Key"
+  ],
   "content": {
     "id": "QyMyf3zraY0wxXDf",
     "meta": {
@@ -504,40 +534,5 @@
         ]
       }
     }
-  },
-  "title": "Automate GitHub file extraction and variable replacement",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "GitHub",
-    "If",
-    "Manual",
-    "Sticky Note",
-    "Stop and Error"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Manage file",
-    "Set Data",
-    "Text"
-  ],
-  "setup_requirements": [
-    "GitHub API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 8
+  }
 }

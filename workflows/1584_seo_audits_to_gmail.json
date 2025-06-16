@@ -1,7 +1,30 @@
 {
   "id": "1584",
-  "filename": "1584_seo_audits_to_gmail",
+  "title": "Automate SEO Audits and Email Reports for Landing Pages",
   "description": "Captures landing page URLs, performs SEO content and technical audits, and sends detailed reports via Gmail for optimization insights.",
+  "filename": "1584_seo_audits_to_gmail",
+  "services": [
+    "Aggregate",
+    "Gmail",
+    "HTTP Request",
+    "Markdown",
+    "Merge",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "id": "iLpBIRuhpWToO22N",
     "meta": {
@@ -352,33 +375,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SEO Audits and Email Reports for Landing Pages",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Gmail",
-    "HTTP Request",
-    "Markdown",
-    "Merge",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 7
+  }
 }

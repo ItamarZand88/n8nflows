@@ -1,7 +1,29 @@
 {
   "id": "1634",
-  "filename": "1634_activate_deactivated_workflows",
+  "title": "Automate activation of deactivated workflows every 4 hours",
   "description": "Triggers every 4 hours to find and activate deactivated workflows tagged for auto-resume, ensuring continuous automation.",
+  "filename": "1634_activate_deactivated_workflows",
+  "services": [
+    "Filter",
+    "Manual",
+    "Schedule",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Activate"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "id": "kZarev2IMUaKHhCI",
     "meta": {
@@ -188,32 +210,5 @@
         ]
       }
     }
-  },
-  "title": "Automate activation of deactivated workflows every 4 hours",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Filter",
-    "Manual",
-    "Schedule",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Activate"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,24 @@
 {
   "id": "118",
-  "filename": "118_uplead_company_info_retrieval",
+  "title": "Retrieve company information from UpLead on demand",
   "description": "Triggers a request to UpLead to fetch detailed information about the company 'Apple' when executed manually, streamlining data retrieval for sales teams.",
+  "filename": "118_uplead_company_info_retrieval",
+  "services": [
+    "Manual",
+    "Uplead"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Uplead API Key"
+  ],
   "content": {
     "id": "129",
     "name": "Get information about a company with UpLead",
@@ -47,27 +64,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve company information from UpLead on demand",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Sales"
-  ],
-  "services": [
-    "Manual",
-    "Uplead"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Uplead API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

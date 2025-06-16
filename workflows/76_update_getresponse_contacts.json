@@ -1,7 +1,31 @@
 {
   "id": "76",
-  "filename": "76_update_getresponse_contacts",
+  "title": "Update GetResponse contacts based on campaign criteria",
   "description": "Triggers manually to retrieve all contacts from GetResponse, filters them, and updates those not in the 'n8n' campaign with a new campaign ID.",
+  "filename": "76_update_getresponse_contacts",
+  "services": [
+    "GetResponse",
+    "If",
+    "Manual",
+    "No Operation, do nothing"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Update"
+  ],
+  "setup_requirements": [
+    "GetResponse API Key"
+  ],
   "content": {
     "id": "116",
     "name": "Get all the contacts from GetResponse and update them",
@@ -127,34 +151,5 @@
         ]
       }
     }
-  },
-  "title": "Update GetResponse contacts based on campaign criteria",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "GetResponse",
-    "If",
-    "Manual",
-    "No Operation, do nothing"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Update"
-  ],
-  "setup_requirements": [
-    "GetResponse API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

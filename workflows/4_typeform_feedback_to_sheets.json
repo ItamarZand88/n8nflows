@@ -1,7 +1,33 @@
 {
   "id": "4",
-  "filename": "4_typeform_feedback_to_sheets",
+  "title": "Log Typeform feedback to Google Sheets based on usefulness",
   "description": "Captures new Typeform submissions, evaluates usefulness ratings, and logs positive feedback to one Google Sheet and negative feedback to another for easy analysis.",
+  "filename": "4_typeform_feedback_to_sheets",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "If",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Typeform API Key"
+  ],
   "content": {
     "id": "1001",
     "name": "typeform feedback workflow",
@@ -166,36 +192,5 @@
         ]
       }
     }
-  },
-  "title": "Log Typeform feedback to Google Sheets based on usefulness",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "If",
-    "Typeform"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

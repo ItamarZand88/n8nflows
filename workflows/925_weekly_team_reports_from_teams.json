@@ -1,7 +1,35 @@
 {
   "id": "925",
-  "filename": "925_weekly_team_reports_from_teams",
+  "title": "Automate Weekly Team Reports from Microsoft Teams Messages",
   "description": "Triggers every Monday to fetch and summarize team messages from Microsoft Teams, generating and posting a comprehensive weekly report for the team.",
+  "filename": "925_weekly_team_reports_from_teams",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Markdown",
+    "Microsoft Teams",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage channelMessage",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Microsoft Teams Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -460,38 +488,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Weekly Team Reports from Microsoft Teams Messages",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Markdown",
-    "Microsoft Teams",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage channelMessage",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Microsoft Teams Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 8
+  }
 }

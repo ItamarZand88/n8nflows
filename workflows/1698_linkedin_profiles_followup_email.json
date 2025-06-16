@@ -1,7 +1,32 @@
 {
   "id": "1698",
-  "filename": "1698_linkedin_profiles_followup_email",
+  "title": "Automate LinkedIn Profile Retrieval and Follow-Up Email",
   "description": "Captures user form submissions, searches LinkedIn for profiles, and sends personalized follow-up emails with insights and outreach steps.",
+  "filename": "1698_linkedin_profiles_followup_email",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "If",
+    "Limit",
+    "Merge",
+    "Send Email",
+    "Split Out",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Extracthtmlcontent",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "nmVATBvrztDxZX6z",
     "meta": {
@@ -721,35 +746,5 @@
         ]
       }
     }
-  },
-  "title": "Automate LinkedIn Profile Retrieval and Follow-Up Email",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "If",
-    "Limit",
-    "Merge",
-    "Send Email",
-    "Split Out",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Extracthtmlcontent",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 19,
-  "external_integrations_count": 8
+  }
 }

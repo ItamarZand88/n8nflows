@@ -1,7 +1,28 @@
 {
   "id": "1545",
-  "filename": "1545_whatsapp_updates_with_supabase_gemini",
+  "title": "Automate WhatsApp message updates with Supabase and Gemini",
   "description": "Triggers on manual input to set sample data, processes chat input with Gemini, and updates user details in Supabase for efficient message management.",
+  "filename": "1545_whatsapp_updates_with_supabase_gemini",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "Supabase"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Supabase API Key"
+  ],
   "content": {
     "id": "gUx6hY0bOoReluxE",
     "meta": {
@@ -230,31 +251,5 @@
         ]
       }
     }
-  },
-  "title": "Automate WhatsApp message updates with Supabase and Gemini",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual",
-    "Supabase"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Supabase API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 3
+  }
 }

@@ -1,7 +1,29 @@
 {
   "id": "1221",
-  "filename": "1221_copper_person_updates",
+  "title": "Automate person updates in Copper CRM",
   "description": "Triggers a person creation in Copper, updates their phone number, and retrieves their details for seamless CRM management.",
+  "filename": "1221_copper_person_updates",
+  "services": [
+    "Copper",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Manage person",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Copper API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -120,32 +142,5 @@
         ]
       }
     }
-  },
-  "title": "Automate person updates in Copper CRM",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "Copper",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Manage person",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Copper API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

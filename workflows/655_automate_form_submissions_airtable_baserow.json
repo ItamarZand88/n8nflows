@@ -1,7 +1,37 @@
 {
   "id": "655",
-  "filename": "655_automate_form_submissions_airtable_baserow",
+  "title": "Automate form submissions between Airtable and Baserow",
   "description": "Captures form submissions from Airtable and Baserow, processes the data, and updates records automatically, streamlining data management across platforms.",
+  "filename": "655_automate_form_submissions_airtable_baserow",
+  "services": [
+    "Aggregate",
+    "Airtable",
+    "Code",
+    "Filter",
+    "HTTP Request",
+    "Split Out",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Completion",
+    "Create",
+    "Getschema",
+    "Manage base"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -1176,40 +1206,5 @@
         ]
       }
     }
-  },
-  "title": "Automate form submissions between Airtable and Baserow",
-  "nodes_count": 34,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Airtable",
-    "Code",
-    "Filter",
-    "HTTP Request",
-    "Split Out",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Completion",
-    "Create",
-    "Getschema",
-    "Manage base"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 34,
-  "external_integrations_count": 8
+  }
 }

@@ -1,7 +1,26 @@
 {
   "id": "829",
-  "filename": "829_parse_email_content_extract_details",
+  "title": "Parse email content and extract key details",
   "description": "Triggers manually to extract specified details from an email body and formats them for easy access and use in further automations.",
+  "filename": "829_parse_email_content_extract_details",
+  "services": [
+    "Edit Fields (Set)",
+    "Function Item",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Execute Function",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "340",
     "name": "Email body parser by aprenden8n.com",
@@ -80,29 +99,5 @@
         ]
       }
     }
-  },
-  "title": "Parse email content and extract key details",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Function Item",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Execute Function",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

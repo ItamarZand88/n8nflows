@@ -1,7 +1,26 @@
 {
   "id": "375",
-  "filename": "375_fetch_unread_emails_fastmail",
+  "title": "Fetch and List Unread Emails from Fastmail",
   "description": "Triggers on manual execution to retrieve and display the three most recent unread emails from your Fastmail inbox, enhancing email management.",
+  "filename": "375_fetch_unread_emails_fastmail",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -215,29 +234,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch and List Unread Emails from Fastmail",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 4
+  }
 }

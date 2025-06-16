@@ -1,7 +1,29 @@
 {
   "id": "1249",
-  "filename": "1249_line_message_replies_and_push_notifications",
+  "title": "Automate LINE message replies and push notifications",
   "description": "Captures incoming messages from LINE, replies with the same text, and allows for sending push notifications to users, enhancing engagement and responsiveness.",
+  "filename": "1249_line_message_replies_and_push_notifications",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "a5tCsfMzJPd8WDUj",
     "meta": {
@@ -230,32 +252,5 @@
         ]
       }
     }
-  },
-  "title": "Automate LINE message replies and push notifications",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 6
+  }
 }

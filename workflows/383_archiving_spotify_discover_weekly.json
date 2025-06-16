@@ -1,7 +1,33 @@
 {
   "id": "383",
-  "filename": "383_archiving_spotify_discover_weekly",
+  "title": "Automate archiving of Spotify Discover Weekly tracks",
   "description": "Triggers weekly to archive unique tracks from your Spotify Discover Weekly playlist into a separate archive playlist, preventing duplicates.",
+  "filename": "383_archiving_spotify_discover_weekly",
+  "services": [
+    "If",
+    "Merge",
+    "Schedule",
+    "Spotify",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Miscellaneous"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Gettracks",
+    "Getuserplaylists",
+    "Manage playlist"
+  ],
+  "setup_requirements": [
+    "Spotify Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "dbd383feb42b0206c833e3d762df280d0cce35cf96037fb2d6f3533c171dc540"
@@ -338,36 +364,5 @@
         ]
       }
     }
-  },
-  "title": "Automate archiving of Spotify Discover Weekly tracks",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Miscellaneous"
-  ],
-  "services": [
-    "If",
-    "Merge",
-    "Schedule",
-    "Spotify",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Gettracks",
-    "Getuserplaylists",
-    "Manage playlist"
-  ],
-  "setup_requirements": [
-    "Spotify Account"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 6
+  }
 }

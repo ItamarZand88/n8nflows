@@ -1,7 +1,30 @@
 {
   "id": "434",
-  "filename": "434_euro_exchange_rates_webhook_response",
+  "title": "Fetch and Respond with Latest Euro Exchange Rates",
   "description": "Triggers on a webhook, retrieves the latest Euro exchange rates, and responds with all rates or a specific currency based on user query.",
+  "filename": "434_euro_exchange_rates_webhook_response",
+  "services": [
+    "Filter",
+    "HTTP Request",
+    "If",
+    "Split Out",
+    "Sticky Note",
+    "Webhook",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New If Event",
+    "New Webhook Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "29aba5a622661908a48f94e4ff4983d5d88a33ca233b57cebe114886a24f3172"
@@ -249,33 +272,5 @@
         ]
       }
     }
-  },
-  "title": "Fetch and Respond with Latest Euro Exchange Rates",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Filter",
-    "HTTP Request",
-    "If",
-    "Split Out",
-    "Sticky Note",
-    "Webhook",
-    "XML"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New If Event",
-    "New Webhook Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 9,
-  "external_integrations_count": 7
+  }
 }

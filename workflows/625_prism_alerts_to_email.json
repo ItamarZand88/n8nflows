@@ -1,7 +1,27 @@
 {
   "id": "625",
-  "filename": "625_prism_alerts_to_email",
+  "title": "Automate email alerts for new PRISM Elastic notifications",
   "description": "Triggers on a schedule to fetch new alerts from PRISM Elastic and sends email notifications with alert details to specified recipients.",
+  "filename": "625_prism_alerts_to_email",
+  "services": [
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "No Operation, do nothing",
+    "Schedule"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -176,30 +196,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email alerts for new PRISM Elastic notifications",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "No Operation, do nothing",
-    "Schedule"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 7,
-  "external_integrations_count": 5
+  }
 }

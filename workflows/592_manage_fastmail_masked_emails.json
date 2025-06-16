@@ -1,7 +1,25 @@
 {
   "id": "592",
-  "filename": "592_manage_fastmail_masked_emails",
+  "title": "Manage Fastmail Masked Emails with Automated Workflow",
   "description": "Automates the management of Fastmail masked email addresses by creating, updating, and deleting them based on webhook triggers, providing a user-friendly HTML interface for interaction.",
+  "filename": "592_manage_fastmail_masked_emails",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "04ab549d8bbb435ec33b81e4e29965c46cf6f0f9e7afe631018b5e34c8eead58"
@@ -518,28 +536,5 @@
         ]
       }
     }
-  },
-  "title": "Manage Fastmail Masked Emails with Automated Workflow",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 11,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,24 @@
 {
   "id": "212",
-  "filename": "212_smart_factory_data_to_amqp",
+  "title": "Generate and Send Smart Factory Data via AMQP",
   "description": "Automatically generates random machine data, including temperature and uptime, and sends it to an AMQP server for real-time monitoring of factory operations.",
+  "filename": "212_smart_factory_data_to_amqp",
+  "services": [
+    "AMQP Sender",
+    "Edit Fields (Set)",
+    "Interval"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "167",
     "name": "Smart Factory Data Generator",
@@ -95,27 +112,5 @@
         ]
       }
     }
-  },
-  "title": "Generate and Send Smart Factory Data via AMQP",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "AMQP Sender",
-    "Edit Fields (Set)",
-    "Interval"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

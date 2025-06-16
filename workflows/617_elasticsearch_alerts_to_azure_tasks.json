@@ -1,7 +1,28 @@
 {
   "id": "617",
-  "filename": "617_elasticsearch_alerts_to_azure_tasks",
+  "title": "Automate task creation in Azure DevOps for Elasticsearch alerts",
   "description": "Triggers daily at 12:15 PM, checks Elasticsearch for alerts, and creates a task in Azure DevOps if alerts are found.",
+  "filename": "617_elasticsearch_alerts_to_azure_tasks",
+  "services": [
+    "Cron",
+    "Elasticsearch",
+    "HTTP Request",
+    "If",
+    "No Operation, do nothing"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Cron Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "43da491ee7afc3232a99276a123dc774d0498da8891013b60e82828d6f1f40c7"
@@ -138,31 +159,5 @@
         ]
       }
     }
-  },
-  "title": "Automate task creation in Azure DevOps for Elasticsearch alerts",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Elasticsearch",
-    "HTTP Request",
-    "If",
-    "No Operation, do nothing"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Cron Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,31 @@
 {
   "id": "1896",
-  "filename": "1896_splunk_alerts_to_jira_tickets",
+  "title": "Automate Jira ticket creation and comments from Splunk alerts",
   "description": "Triggers on Splunk alerts, searches for existing Jira tickets, and creates new tickets or adds comments as needed, streamlining incident management.",
+  "filename": "1896_splunk_alerts_to_jira_tickets",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Jira Software",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage issueComment",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Jira Software API Key"
+  ],
   "content": {
     "id": "uD31xU0VYjogxWoY",
     "meta": {
@@ -365,34 +389,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Jira ticket creation and comments from Splunk alerts",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Jira Software",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage issueComment",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Jira Software API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 5
+  }
 }

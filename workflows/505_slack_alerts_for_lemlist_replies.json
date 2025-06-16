@@ -1,7 +1,33 @@
 {
   "id": "505",
-  "filename": "505_slack_alerts_for_lemlist_replies",
+  "title": "Automate Slack alerts for new Lemlist email replies",
   "description": "Triggers on new email replies in Lemlist, categorizes them using OpenAI, and sends formatted alerts to a designated Slack channel.",
+  "filename": "505_slack_alerts_for_lemlist_replies",
+  "services": [
+    "HTTP Request",
+    "Lemlist",
+    "Markdown",
+    "Merge",
+    "Slack",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Lemlist Event"
+  ],
+  "actions": [
+    "Manage lead",
+    "Unsubscribe"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "2b1cc1a8b0a2fb9caab11ab2d5eb3712f9973066051b2e898cf4041a1f2a7757",
@@ -473,36 +499,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Slack alerts for new Lemlist email replies",
-  "nodes_count": 18,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Marketing"
-  ],
-  "services": [
-    "HTTP Request",
-    "Lemlist",
-    "Markdown",
-    "Merge",
-    "Slack",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Lemlist Event"
-  ],
-  "actions": [
-    "Manage lead",
-    "Unsubscribe"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 18,
-  "external_integrations_count": 7
+  }
 }

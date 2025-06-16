@@ -1,7 +1,39 @@
 {
   "id": "785",
-  "filename": "785_follow_up_emails_for_meetings",
+  "title": "Automate Follow-Up Emails for Past Meetings with Google Calendar",
   "description": "Triggers daily to check for past meetings, identifies if follow-up emails were sent, and suggests available slots for re-engagement with leads via Gmail.",
+  "filename": "785_follow_up_emails_for_meetings",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "Google Calendar",
+    "Loop Over Items (Split in Batches)",
+    "Remove Duplicates",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage calendar",
+    "Manage thread",
+    "Removeitemsseeninpreviousexecutions",
+    "Sendandwait",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Calendar Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -637,42 +669,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Follow-Up Emails for Past Meetings with Google Calendar",
-  "nodes_count": 22,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Productivity"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "Google Calendar",
-    "Loop Over Items (Split in Batches)",
-    "Remove Duplicates",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage calendar",
-    "Manage thread",
-    "Removeitemsseeninpreviousexecutions",
-    "Sendandwait",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Calendar Account"
-  ],
-  "workflow_complexity": 22,
-  "external_integrations_count": 8
+  }
 }

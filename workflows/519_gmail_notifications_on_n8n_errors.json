@@ -1,7 +1,36 @@
 {
   "id": "519",
-  "filename": "519_gmail_notifications_on_n8n_errors",
+  "title": "Notify via Gmail on Workflow Errors in n8n",
   "description": "Triggers an email notification through Gmail whenever a workflow error occurs in n8n, ensuring timely awareness and response to issues.",
+  "filename": "519_gmail_notifications_on_n8n_errors",
+  "services": [
+    "Code",
+    "Error",
+    "Gmail",
+    "If",
+    "Schedule",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Error Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "n8n API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "78ab5e476ecaa1f377d804637c3e86d3fd449c31126b69159de63d266513b694"
@@ -309,39 +338,5 @@
         ]
       }
     }
-  },
-  "title": "Notify via Gmail on Workflow Errors in n8n",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Error",
-    "Gmail",
-    "If",
-    "Schedule",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Error Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Get",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 7
+  }
 }

@@ -1,7 +1,27 @@
 {
   "id": "924",
-  "filename": "924_secure_webhook_validation",
+  "title": "Securely Validate Webhook Requests with Bearer Token",
   "description": "Validates incoming POST requests to a secure webhook by checking for a valid Bearer token and required fields, returning appropriate JSON responses.",
+  "filename": "924_secure_webhook_validation",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "If",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "dfb8aefc80b77b230bd90d6a6e5210eb7a28e6e1d2a8b1d27d54942b54eb9e7a",
@@ -399,30 +419,5 @@
         ]
       }
     }
-  },
-  "title": "Securely Validate Webhook Requests with Bearer Token",
-  "nodes_count": 16,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "If",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 16,
-  "external_integrations_count": 6
+  }
 }

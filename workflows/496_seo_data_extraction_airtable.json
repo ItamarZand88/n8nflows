@@ -1,7 +1,31 @@
 {
   "id": "496",
-  "filename": "496_seo_data_extraction_airtable",
+  "title": "Automate SEO data extraction from URLs in Airtable",
   "description": "Triggers on demand to fetch URLs from Airtable, extracts title tags and meta descriptions, and updates the records for SEO optimization.",
+  "filename": "496_seo_data_extraction_airtable",
+  "services": [
+    "Airtable",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Extracthtmlcontent",
+    "Search",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "9890889b6220dd611ebaa1144286714cf45b0e89f22a3c881f9e9d30deb831db"
@@ -272,34 +296,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SEO data extraction from URLs in Airtable",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Extracthtmlcontent",
-    "Search",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

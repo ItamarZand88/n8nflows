@@ -1,7 +1,26 @@
 {
   "id": "1013",
-  "filename": "1013_retrieve_xero_data",
+  "title": "Retrieve all Xero organization data with a manual trigger",
   "description": "Manually triggers the retrieval of all data from your Xero organization, streamlining financial data access for reporting and analysis.",
+  "filename": "1013_retrieve_xero_data",
+  "services": [
+    "Manual",
+    "Xero"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Finance & Accounting"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Xero Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -45,29 +64,5 @@
         ]
       }
     }
-  },
-  "title": "Retrieve all Xero organization data with a manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Finance & Accounting"
-  ],
-  "services": [
-    "Manual",
-    "Xero"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getall"
-  ],
-  "setup_requirements": [
-    "Xero Account"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

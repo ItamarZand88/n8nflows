@@ -1,7 +1,36 @@
 {
   "id": "1093",
-  "filename": "1093_typeform_feedback_to_airtable_trello",
+  "title": "Automate Typeform feedback logging to Airtable and Trello",
   "description": "Captures new Typeform feedback submissions, logs them in Airtable, and creates Trello cards for scores above 7 for better tracking and management.",
+  "filename": "1093_typeform_feedback_to_airtable_trello",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "If",
+    "No Operation, do nothing",
+    "Trello",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Trello API Key",
+    "Typeform API Key"
+  ],
   "content": {
     "id": "65",
     "name": "Get Product Feedback",
@@ -178,39 +207,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Typeform feedback logging to Airtable and Trello",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Productivity"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "If",
-    "No Operation, do nothing",
-    "Trello",
-    "Typeform"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Trello API Key",
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 6
+  }
 }

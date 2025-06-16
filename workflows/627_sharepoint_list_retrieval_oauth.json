@@ -1,7 +1,26 @@
 {
   "id": "627",
-  "filename": "627_sharepoint_list_retrieval_oauth",
+  "title": "Automate SharePoint List Retrieval with OAuth Authentication",
   "description": "Triggers on a schedule to generate an OAuth token and fetch items from a specified SharePoint list, streamlining data access for reporting or integration.",
+  "filename": "627_sharepoint_list_retrieval_oauth",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -162,29 +181,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SharePoint List Retrieval with OAuth Authentication",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

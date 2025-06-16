@@ -1,7 +1,36 @@
 {
   "id": "838",
-  "filename": "838_rss_feed_updates_to_google_sheets",
+  "title": "Automate RSS feed updates and manage Google Sheets entries",
   "description": "Triggers daily to read RSS links from Google Sheets, processes recent news articles, and updates the sheet with new entries while removing outdated ones.",
+  "filename": "838_rss_feed_updates_to_google_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "Loop Over Items (Split in Batches)",
+    "Markdown",
+    "RSS Read",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Delete",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "27b4a6a8d6961d7c3fc76935cbb847cc60b06fde7d9f2077fe73e1a9efa7a010"
@@ -754,39 +783,5 @@
         ]
       }
     }
-  },
-  "title": "Automate RSS feed updates and manage Google Sheets entries",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "Loop Over Items (Split in Batches)",
-    "Markdown",
-    "RSS Read",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Delete",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 8
+  }
 }

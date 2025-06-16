@@ -1,7 +1,29 @@
 {
   "id": "1754",
-  "filename": "1754_youtube_promotions_to_x",
+  "title": "Automate YouTube Video Promotions on X",
   "description": "Checks for new YouTube videos every 30 minutes and automatically generates and posts engaging updates on X to promote them.",
+  "filename": "1754_youtube_promotions_to_x",
+  "services": [
+    "Schedule",
+    "Sticky Note",
+    "X (Formerly Twitter)",
+    "YouTube"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Manage video"
+  ],
+  "setup_requirements": [
+    "X (Formerly Twitter) Account",
+    "YouTube Account"
+  ],
   "content": {
     "id": "O9FXr8iXzhSgYKaL",
     "meta": {
@@ -180,32 +202,5 @@
         ]
       }
     }
-  },
-  "title": "Automate YouTube Video Promotions on X",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Marketing"
-  ],
-  "services": [
-    "Schedule",
-    "Sticky Note",
-    "X (Formerly Twitter)",
-    "YouTube"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Manage video"
-  ],
-  "setup_requirements": [
-    "X (Formerly Twitter) Account",
-    "YouTube Account"
-  ],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

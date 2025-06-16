@@ -1,7 +1,42 @@
 {
   "id": "1829",
-  "filename": "1829_monitor_linear_issues_sentiment_alerts",
+  "title": "Monitor Linear Issues and Alert on Negative Sentiment",
   "description": "Continuously tracks active Linear issues, analyzes sentiment of comments, and sends Slack notifications when sentiment turns negative, ensuring timely responses.",
+  "filename": "1829_monitor_linear_issues_sentiment_alerts",
+  "services": [
+    "Airtable",
+    "Edit Fields (Set)",
+    "GraphQL",
+    "Loop Over Items (Split in Batches)",
+    "Remove Duplicates",
+    "Schedule",
+    "Slack",
+    "Split Out",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Airtable Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Removeitemsseeninpreviousexecutions",
+    "Search",
+    "Set Data",
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Slack API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -753,45 +788,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor Linear Issues and Alert on Negative Sentiment",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Airtable",
-    "Edit Fields (Set)",
-    "GraphQL",
-    "Loop Over Items (Split in Batches)",
-    "Remove Duplicates",
-    "Schedule",
-    "Slack",
-    "Split Out",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Airtable Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Removeitemsseeninpreviousexecutions",
-    "Search",
-    "Set Data",
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 10
+  }
 }

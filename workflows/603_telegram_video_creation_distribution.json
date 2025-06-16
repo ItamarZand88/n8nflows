@@ -1,7 +1,38 @@
 {
   "id": "603",
-  "filename": "603_telegram_video_creation_distribution",
+  "title": "Automate Video Creation and Distribution from Telegram Prompts",
   "description": "Triggers on new Telegram messages to create AI-generated videos, add voice-overs, captions, and automatically publish to multiple social platforms.",
+  "filename": "603_telegram_video_creation_distribution",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Append",
+    "Manage audio",
+    "Sendvideo",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "Telegram API Key"
+  ],
   "content": {
     "id": "SvZQB2gsI57KlfvO",
     "meta": {
@@ -1281,41 +1312,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Video Creation and Distribution from Telegram Prompts",
-  "nodes_count": 38,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Append",
-    "Manage audio",
-    "Sendvideo",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 38,
-  "external_integrations_count": 6
+  }
 }

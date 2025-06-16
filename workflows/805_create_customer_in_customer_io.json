@@ -1,7 +1,27 @@
 {
   "id": "805",
-  "filename": "805_create_customer_in_customer_io",
+  "title": "Create and segment customers in Customer.io",
   "description": "Triggers on manual execution to create a customer in Customer.io and automatically adds them to a specified segment, streamlining customer management.",
+  "filename": "805_create_customer_in_customer_io",
+  "services": [
+    "Customer.io",
+    "Manual"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage segment"
+  ],
+  "setup_requirements": [
+    "Customer.io API Key"
+  ],
   "content": {
     "id": "32",
     "name": "Create a customer and add them to a segment in Customer.io",
@@ -84,30 +104,5 @@
         ]
       }
     }
-  },
-  "title": "Create and segment customers in Customer.io",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Customer.io",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage segment"
-  ],
-  "setup_requirements": [
-    "Customer.io API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

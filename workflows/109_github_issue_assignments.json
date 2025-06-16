@@ -1,7 +1,32 @@
 {
   "id": "109",
-  "filename": "109_github_issue_assignments",
+  "title": "Automate GitHub issue assignments based on comments",
   "description": "Monitors GitHub issues for comments and automatically assigns the issue creator or commenter if they express interest, enhancing collaboration.",
+  "filename": "109_github_issue_assignments",
+  "services": [
+    "GitHub",
+    "Github",
+    "If",
+    "No Operation, do nothing",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Github Event"
+  ],
+  "actions": [
+    "Createcomment",
+    "Edit",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "GitHub Account",
+    "Github Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -327,35 +352,5 @@
         ]
       }
     }
-  },
-  "title": "Automate GitHub issue assignments based on comments",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "GitHub",
-    "Github",
-    "If",
-    "No Operation, do nothing",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Github Event"
-  ],
-  "actions": [
-    "Createcomment",
-    "Edit",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "GitHub Account",
-    "Github Account"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 5
+  }
 }

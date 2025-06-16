@@ -1,7 +1,27 @@
 {
   "id": "1666",
-  "filename": "1666_techcrunch_articles_extraction",
+  "title": "Automate extraction of latest TechCrunch articles",
   "description": "Triggers on demand to fetch and parse the latest articles from TechCrunch, extracting key details for easy access and review.",
+  "filename": "1666_techcrunch_articles_extraction",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Split Out"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Extracthtmlcontent",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "MKGrRFnUuMZMAxNf",
     "meta": {
@@ -342,30 +362,5 @@
         ]
       }
     }
-  },
-  "title": "Automate extraction of latest TechCrunch articles",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Split Out"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Extracthtmlcontent",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 9,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,38 @@
 {
   "id": "1572",
-  "filename": "1572_daily_reports_from_nocodb_to_gmail",
+  "title": "Automate Daily Conversation Reports from Google Drive to Gmail",
   "description": "Triggers daily to gather conversation data from NocoDB and sends a summarized report via Gmail, enhancing communication and record-keeping.",
+  "filename": "1572_daily_reports_from_nocodb_to_gmail",
+  "services": [
+    "Code",
+    "Gmail",
+    "Google Drive",
+    "NocoDB",
+    "Schedule",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Google Drive Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Create",
+    "Download",
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "NocoDB API Key"
+  ],
   "content": {
     "id": "hzwyrm761fxBLiG8",
     "meta": {
@@ -932,41 +963,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Daily Conversation Reports from Google Drive to Gmail",
-  "nodes_count": 35,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Gmail",
-    "Google Drive",
-    "NocoDB",
-    "Schedule",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Google Drive Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Create",
-    "Download",
-    "Getall"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "NocoDB API Key"
-  ],
-  "workflow_complexity": 35,
-  "external_integrations_count": 7
+  }
 }

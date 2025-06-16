@@ -1,7 +1,26 @@
 {
   "id": "711",
-  "filename": "711_perplexity_qa_with_custom_prompts",
+  "title": "Automate Q&A with Perplexity AI using Custom Prompts",
   "description": "Triggers a Q&A session with Perplexity AI, using custom prompts to compare n8n and Make, and retrieves formatted responses for easy reference.",
+  "filename": "711_perplexity_qa_with_custom_prompts",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -177,29 +196,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Q&A with Perplexity AI using Custom Prompts",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,24 @@
 {
   "id": "1211",
-  "filename": "1211_create_and_send_invoices_quickbooks",
+  "title": "Automate invoice creation and sending in QuickBooks",
   "description": "Creates a new invoice for a customer in QuickBooks and automatically sends it via email, streamlining billing processes and improving cash flow.",
+  "filename": "1211_create_and_send_invoices_quickbooks",
+  "services": [
+    "QuickBooks Online"
+  ],
+  "categories": [
+    "Finance & Accounting"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Manage invoice",
+    "Send"
+  ],
+  "setup_requirements": [
+    "QuickBooks Online Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -92,27 +109,5 @@
         ]
       }
     }
-  },
-  "title": "Automate invoice creation and sending in QuickBooks",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Finance & Accounting"
-  ],
-  "services": [
-    "QuickBooks Online"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Manage invoice",
-    "Send"
-  ],
-  "setup_requirements": [
-    "QuickBooks Online Account"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 1
+  }
 }

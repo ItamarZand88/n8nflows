@@ -1,7 +1,30 @@
 {
   "id": "577",
-  "filename": "577_generate_ai_art_from_prompts",
+  "title": "Generate AI Art from User Prompts and Styles",
   "description": "Captures user prompts and selected styles via a form, generates AI images using Hugging Face, and serves the results on a webpage for easy access.",
+  "filename": "577_generate_ai_art_from_prompts",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "S3",
+    "Sticky Note",
+    "Switch",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Set Data",
+    "Upload"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -717,33 +740,5 @@
         ]
       }
     }
-  },
-  "title": "Generate AI Art from User Prompts and Styles",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "S3",
-    "Sticky Note",
-    "Switch",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Set Data",
-    "Upload"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 19,
-  "external_integrations_count": 6
+  }
 }

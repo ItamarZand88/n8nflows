@@ -1,7 +1,27 @@
 {
   "id": "1208",
-  "filename": "1208_affiliate_updates_in_tapfiliate",
+  "title": "Automate affiliate metadata updates in Tapfiliate",
   "description": "Triggers a process to create a new affiliate in Tapfiliate, updates their metadata, and manages program affiliation seamlessly.",
+  "filename": "1208_affiliate_updates_in_tapfiliate",
+  "services": [
+    "Manual",
+    "Tapfiliate"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage affiliateMetadata",
+    "Manage programAffiliate"
+  ],
+  "setup_requirements": [
+    "Tapfiliate API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -110,30 +130,5 @@
         ]
       }
     }
-  },
-  "title": "Automate affiliate metadata updates in Tapfiliate",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Sales"
-  ],
-  "services": [
-    "Manual",
-    "Tapfiliate"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage affiliateMetadata",
-    "Manage programAffiliate"
-  ],
-  "setup_requirements": [
-    "Tapfiliate API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

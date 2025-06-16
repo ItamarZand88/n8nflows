@@ -1,7 +1,24 @@
 {
   "id": "1217",
-  "filename": "1217_create_email_campaign_with_emelia",
+  "title": "Create and Manage Email Campaigns with Emelia",
   "description": "Automates the creation of an email campaign and adds a contact with their details, streamlining your marketing efforts using Emelia.",
+  "filename": "1217_create_email_campaign_with_emelia",
+  "services": [
+    "Emelia"
+  ],
+  "categories": [
+    "Communication",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [
+    "Addcontact",
+    "Create"
+  ],
+  "setup_requirements": [
+    "Emelia API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -80,27 +97,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Manage Email Campaigns with Emelia",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Marketing"
-  ],
-  "services": [
-    "Emelia"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [
-    "Addcontact",
-    "Create"
-  ],
-  "setup_requirements": [
-    "Emelia API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 1
+  }
 }

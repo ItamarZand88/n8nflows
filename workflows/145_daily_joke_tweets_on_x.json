@@ -1,7 +1,24 @@
 {
   "id": "145",
-  "filename": "145_daily_joke_tweets_on_x",
+  "title": "Automate daily image joke tweets at 5 PM",
   "description": "Fetches a random image joke daily at 5 PM and tweets it with the joke text and image attachment on X.",
+  "filename": "145_daily_joke_tweets_on_x",
+  "services": [
+    "Cron",
+    "HTTP Request",
+    "X (Formerly Twitter)"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [
+    "X (Formerly Twitter) API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -107,27 +124,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily image joke tweets at 5 PM",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Marketing"
-  ],
-  "services": [
-    "Cron",
-    "HTTP Request",
-    "X (Formerly Twitter)"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [
-    "X (Formerly Twitter) API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

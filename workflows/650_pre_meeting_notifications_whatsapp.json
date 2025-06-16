@@ -1,7 +1,49 @@
 {
   "id": "650",
-  "filename": "650_pre_meeting_notifications_whatsapp",
+  "title": "Automate pre-meeting notifications via WhatsApp",
   "description": "Triggers hourly to check for upcoming meetings, gathers attendee details, and sends a summary notification via WhatsApp to help users prepare.",
+  "filename": "650_pre_meeting_notifications_whatsapp",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Gmail",
+    "Google Calendar",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Schedule",
+    "Split Out",
+    "Sticky Note",
+    "Switch",
+    "WhatsApp Business Cloud"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Extracthtmlcontent",
+    "Filter Data",
+    "Get",
+    "Getall",
+    "Send",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Calendar Account",
+    "WhatsApp Business Cloud API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -1860,52 +1902,5 @@
         ]
       }
     }
-  },
-  "title": "Automate pre-meeting notifications via WhatsApp",
-  "nodes_count": 61,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Gmail",
-    "Google Calendar",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Schedule",
-    "Split Out",
-    "Sticky Note",
-    "Switch",
-    "WhatsApp Business Cloud"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Extracthtmlcontent",
-    "Filter Data",
-    "Get",
-    "Getall",
-    "Send",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Calendar Account",
-    "WhatsApp Business Cloud API Key"
-  ],
-  "workflow_complexity": 61,
-  "external_integrations_count": 14
+  }
 }

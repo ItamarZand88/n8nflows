@@ -1,7 +1,34 @@
 {
   "id": "1311",
-  "filename": "1311_telegram_ai_assistant_email_updates",
+  "title": "Automate Telegram responses with AI Assistant and Email updates",
   "description": "Listens for new Telegram messages, processes voice or text input, fetches unread emails, and responds with AI-generated summaries and calendar events.",
+  "filename": "1311_telegram_ai_assistant_email_updates",
+  "services": [
+    "Edit Fields (Set)",
+    "If",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Getall",
+    "Manage audio",
+    "Manage file",
+    "Set Data",
+    "Transcribe"
+  ],
+  "setup_requirements": [
+    "Telegram API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "2723a3a635131edfcb16103f3d4dbaadf3658e386b4762989cbf49528dccbdbd"
@@ -477,37 +504,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Telegram responses with AI Assistant and Email updates",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "If",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Getall",
-    "Manage audio",
-    "Manage file",
-    "Set Data",
-    "Transcribe"
-  ],
-  "setup_requirements": [
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 4
+  }
 }

@@ -1,7 +1,37 @@
 {
   "id": "428",
-  "filename": "428_url_indexing_from_sitemap",
+  "title": "Automate URL indexing with Google Indexing API from Sitemap",
   "description": "Triggers to fetch a sitemap, processes URLs, and automatically updates Google Indexing API for SEO optimization.",
+  "filename": "428_url_indexing_from_sitemap",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Schedule",
+    "Split Out",
+    "Sticky Note",
+    "Stop and Error",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "2edac0e72822bb0462c05ce3b5a939f685ded652d02e9a767d1afa775988460e"
@@ -344,40 +374,5 @@
         ]
       }
     }
-  },
-  "title": "Automate URL indexing with Google Indexing API from Sitemap",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Schedule",
-    "Split Out",
-    "Sticky Note",
-    "Stop and Error",
-    "XML"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 10
+  }
 }

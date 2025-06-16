@@ -1,7 +1,33 @@
 {
   "id": "687",
-  "filename": "687_csv_to_json_with_error_notifications",
+  "title": "Convert CSV files to JSON and notify on errors",
   "description": "Automates the conversion of CSV files to JSON format via a webhook, handling errors gracefully and sending notifications to Slack for any issues encountered.",
+  "filename": "687_csv_to_json_with_error_notifications",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "HTTP Request",
+    "If",
+    "Slack",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -576,36 +602,5 @@
         ]
       }
     }
-  },
-  "title": "Convert CSV files to JSON and notify on errors",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "HTTP Request",
-    "If",
-    "Slack",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 17,
-  "external_integrations_count": 10
+  }
 }

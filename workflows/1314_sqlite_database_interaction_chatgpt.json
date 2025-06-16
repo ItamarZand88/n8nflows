@@ -1,7 +1,31 @@
 {
   "id": "1314",
-  "filename": "1314_sqlite_database_interaction_chatgpt",
+  "title": "Automate SQLite Database Interaction with ChatGPT",
   "description": "Triggers a workflow to download, extract, and interact with a SQLite database using ChatGPT for data queries and insights.",
+  "filename": "1314_sqlite_database_interaction_chatgpt",
+  "services": [
+    "Compression",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Manual",
+    "Read/Write Files from Disk",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Set Data",
+    "Write"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "AQJ6QnF2yVdCWMnx",
     "meta": {
@@ -298,34 +322,5 @@
         ]
       }
     }
-  },
-  "title": "Automate SQLite Database Interaction with ChatGPT",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Compression",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Manual",
-    "Read/Write Files from Disk",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Set Data",
-    "Write"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 13,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,23 @@
 {
   "id": "82",
-  "filename": "82_json_to_xml_webhook_response",
+  "title": "Convert JSON data to XML and respond via Webhook",
   "description": "Transforms incoming JSON data into XML format and sends the response through a webhook, enabling seamless data integration for applications.",
+  "filename": "82_json_to_xml_webhook_response",
+  "services": [
+    "Edit Fields (Set)",
+    "Webhook",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd"
@@ -125,26 +141,5 @@
         ]
       }
     }
-  },
-  "title": "Convert JSON data to XML and respond via Webhook",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Webhook",
-    "XML"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 4,
-  "external_integrations_count": 3
+  }
 }

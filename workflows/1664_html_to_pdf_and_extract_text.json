@@ -1,7 +1,24 @@
 {
   "id": "1664",
-  "filename": "1664_html_to_pdf_and_extract_text",
+  "title": "Convert HTML to PDF and Extract Text from PDF",
   "description": "Triggers manually to convert HTML content into a PDF and extracts text from a specified PDF URL for easy access and processing.",
+  "filename": "1664_html_to_pdf_and_extract_text",
+  "services": [
+    "Code",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage url"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "MIA4ozGH71fC3KCe",
     "meta": {
@@ -137,27 +154,5 @@
         ]
       }
     }
-  },
-  "title": "Convert HTML to PDF and Extract Text from PDF",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Manual"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage url"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 2
+  }
 }

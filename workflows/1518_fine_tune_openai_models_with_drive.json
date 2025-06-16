@@ -1,7 +1,31 @@
 {
   "id": "1518",
-  "filename": "1518_fine_tune_openai_models_with_drive",
+  "title": "Automate fine-tuning OpenAI models with Google Drive files",
   "description": "Triggers a fine-tuning process for OpenAI models by downloading a training file from Google Drive and creating a fine-tuning job, enhancing AI capabilities.",
+  "filename": "1518_fine_tune_openai_models_with_drive",
+  "services": [
+    "Google Drive",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download",
+    "Manage file"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "gAzsjTGbfWuvAObi",
     "meta": {
@@ -268,34 +292,5 @@
         ]
       }
     }
-  },
-  "title": "Automate fine-tuning OpenAI models with Google Drive files",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Google Drive",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download",
-    "Manage file"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 4
+  }
 }

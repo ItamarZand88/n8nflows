@@ -1,7 +1,14 @@
 {
   "id": "1568",
-  "filename": "1568_no_automation_available",
+  "title": "No Automation Available",
   "description": "This workflow does not contain any nodes or actions, making it inactive and unable to perform any automation tasks.",
+  "filename": "1568_no_automation_available",
+  "services": [],
+  "categories": [],
+  "difficulty": "Unknown",
+  "triggers": [],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "\"meta\"": "{",
     "\"instanceId\"": "\"408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9\",",
@@ -202,17 +209,5 @@
     "\"Structured Output Parser1\"": "{",
     "\"Structured Output Parser2\"": "{",
     "\"Structured Output Parser4\"": "{"
-  },
-  "title": "No Automation Available",
-  "nodes_count": 0,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [],
-  "services": [],
-  "difficulty": "Unknown",
-  "triggers": [],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 0,
-  "external_integrations_count": 0
+  }
 }

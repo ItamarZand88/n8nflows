@@ -1,7 +1,28 @@
 {
   "id": "136",
-  "filename": "136_github_release_tracking_to_gitlab_issues",
+  "title": "Automate GitHub release tracking and issue creation in GitLab",
   "description": "Triggers weekly to check for new GitHub releases and creates GitLab issues if no corresponding issues exist, streamlining project management.",
+  "filename": "136_github_release_tracking_to_gitlab_issues",
+  "services": [
+    "Cron",
+    "Function",
+    "GitHub",
+    "GitLab",
+    "Merge"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Execute Function",
+    "Getall",
+    "Manage release",
+    "Manage repository"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -170,31 +191,5 @@
         ]
       }
     }
-  },
-  "title": "Automate GitHub release tracking and issue creation in GitLab",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cron",
-    "Function",
-    "GitHub",
-    "GitLab",
-    "Merge"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Execute Function",
-    "Getall",
-    "Manage release",
-    "Manage repository"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 5
+  }
 }

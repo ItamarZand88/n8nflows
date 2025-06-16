@@ -1,7 +1,38 @@
 {
   "id": "881",
-  "filename": "881_manage_employee_data_paycaptain",
+  "title": "Manage Employee Data with PayCaptain MCP Server",
   "description": "Automates employee data management by searching, updating, and logging actions via a PayCaptain MCP server, enhancing productivity and data accuracy.",
+  "filename": "881_manage_employee_data_paycaptain",
+  "services": [
+    "Aggregate",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Filter",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9",
@@ -1348,41 +1379,5 @@
         ]
       }
     }
-  },
-  "title": "Manage Employee Data with PayCaptain MCP Server",
-  "nodes_count": 25,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Aggregate",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Filter",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 25,
-  "external_integrations_count": 9
+  }
 }

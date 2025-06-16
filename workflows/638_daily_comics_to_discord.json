@@ -1,7 +1,31 @@
 {
   "id": "638",
-  "filename": "638_daily_comics_to_discord",
+  "title": "Automate Daily Comic Posts with Translations to Discord",
   "description": "Retrieves daily Calvin and Hobbes comics, translates dialogues to English and Korean, and posts them to Discord at 9 AM every day.",
+  "filename": "638_daily_comics_to_discord",
+  "services": [
+    "Discord",
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Analyze",
+    "Manage image",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Discord API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -249,34 +273,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Daily Comic Posts with Translations to Discord",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Discord",
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Analyze",
-    "Manage image",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Discord API Key"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 5
+  }
 }

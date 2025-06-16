@@ -1,7 +1,48 @@
 {
   "id": "1407",
-  "filename": "1407_google_maps_scraping_to_sheets",
+  "title": "Automate Google Maps data scraping and logging to Sheets",
   "description": "Triggers every 15 minutes to scrape Google Maps for places based on zip codes and subcategories, logging results to Google Sheets for easy access.",
+  "filename": "1407_google_maps_scraping_to_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Filter",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Limit",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "Remove Duplicates",
+    "Schedule",
+    "Split Out",
+    "Sticky Note",
+    "Stop and Error"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "HTTP Request Account"
+  ],
   "content": {
     "id": "cQAILffOajE9n2cf",
     "meta": {
@@ -1850,51 +1891,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Maps data scraping and logging to Sheets",
-  "nodes_count": 42,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Filter",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Limit",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "Remove Duplicates",
-    "Schedule",
-    "Split Out",
-    "Sticky Note",
-    "Stop and Error"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 42,
-  "external_integrations_count": 15
+  }
 }

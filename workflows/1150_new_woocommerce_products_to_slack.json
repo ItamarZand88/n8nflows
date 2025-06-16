@@ -1,7 +1,26 @@
 {
   "id": "1150",
-  "filename": "1150_new_woocommerce_products_to_slack",
+  "title": "Notify Slack of New WooCommerce Products",
   "description": "Triggers a Slack notification whenever a new product is created in WooCommerce, providing details like name, price, and link for quick access.",
+  "filename": "1150_new_woocommerce_products_to_slack",
+  "services": [
+    "Slack",
+    "WooCommerce"
+  ],
+  "categories": [
+    "Communication",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New WooCommerce Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Slack API Key",
+    "WooCommerce API Key"
+  ],
   "content": {
     "id": 80,
     "name": "New WooCommerce product to Slack",
@@ -94,29 +113,5 @@
         ]
       }
     }
-  },
-  "title": "Notify Slack of New WooCommerce Products",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "Slack",
-    "WooCommerce"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New WooCommerce Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Slack API Key",
-    "WooCommerce API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

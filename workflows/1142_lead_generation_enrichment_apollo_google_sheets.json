@@ -1,7 +1,42 @@
 {
   "id": "1142",
-  "filename": "1142_lead_generation_enrichment_apollo_google_sheets",
+  "title": "Automate lead generation and enrichment with Apollo.io and Google Sheets",
   "description": "Captures form submissions for lead searches, retrieves data from Apollo.io, validates emails, and logs enriched profiles to Google Sheets for streamlined follow-up.",
+  "filename": "1142_lead_generation_enrichment_apollo_google_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Schedule",
+    "Split Out",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event",
+    "New n8n Form Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Append",
+    "Appendorupdate",
+    "Filter Data",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "7wwY8wfZdNpL83QQ",
     "meta": {
@@ -4550,45 +4585,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead generation and enrichment with Apollo.io and Google Sheets",
-  "nodes_count": 66,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Schedule",
-    "Split Out",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event",
-    "New n8n Form Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Append",
-    "Appendorupdate",
-    "Filter Data",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 66,
-  "external_integrations_count": 10
+  }
 }

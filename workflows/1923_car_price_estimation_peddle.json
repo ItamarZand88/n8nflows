@@ -1,7 +1,37 @@
 {
   "id": "1923",
-  "filename": "1923_car_price_estimation_peddle",
+  "title": "Automate car price estimation using Peddle",
   "description": "Triggers a session to estimate car value by submitting VIN details to Peddle, capturing offers, and automating responses based on user interactions.",
+  "filename": "1923_car_price_estimation_peddle",
+  "services": [
+    "Airtop",
+    "Code",
+    "Edit Fields (Set)",
+    "Manual",
+    "Switch"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage extraction",
+    "Manage interaction",
+    "Manage window",
+    "Query",
+    "Set Data",
+    "Takescreenshot",
+    "Terminate",
+    "Type"
+  ],
+  "setup_requirements": [
+    "Airtop API Key"
+  ],
   "content": {
     "id": "ViCY8FzVGcRsxVcK",
     "meta": {
@@ -549,40 +579,5 @@
         ]
       }
     }
-  },
-  "title": "Automate car price estimation using Peddle",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Airtop",
-    "Code",
-    "Edit Fields (Set)",
-    "Manual",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage extraction",
-    "Manage interaction",
-    "Manage window",
-    "Query",
-    "Set Data",
-    "Takescreenshot",
-    "Terminate",
-    "Type"
-  ],
-  "setup_requirements": [
-    "Airtop API Key"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 5
+  }
 }

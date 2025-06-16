@@ -1,7 +1,29 @@
 {
   "id": "1791",
-  "filename": "1791_compress_files_into_zip",
+  "title": "Compress multiple files into a single ZIP archive",
   "description": "Triggers on new workflow events, processes multiple input files, and compresses them into a single ZIP file for easy sharing and storage.",
+  "filename": "1791_compress_files_into_zip",
+  "services": [
+    "Code",
+    "Compression",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Compress",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "r3qHlCVCczqTw3pP",
     "meta": {
@@ -129,32 +151,5 @@
         ]
       }
     }
-  },
-  "title": "Compress multiple files into a single ZIP archive",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Compression",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Compress",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

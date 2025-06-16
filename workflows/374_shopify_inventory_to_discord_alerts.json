@@ -1,7 +1,29 @@
 {
   "id": "374",
-  "filename": "374_shopify_inventory_to_discord_alerts",
+  "title": "Monitor Shopify inventory and send Discord alerts",
   "description": "Listens for inventory updates from Shopify, checks stock levels, and sends alerts to Discord when items are low or out of stock.",
+  "filename": "374_shopify_inventory_to_discord_alerts",
+  "services": [
+    "Code",
+    "GraphQL",
+    "HTTP Request",
+    "If",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "dbd43d88d26a9e30d8aadc002c9e77f1400c683dd34efe3778d43d27250dde50"
@@ -344,32 +366,5 @@
         ]
       }
     }
-  },
-  "title": "Monitor Shopify inventory and send Discord alerts",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "GraphQL",
-    "HTTP Request",
-    "If",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 6
+  }
 }

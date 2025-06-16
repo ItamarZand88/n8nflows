@@ -1,7 +1,41 @@
 {
   "id": "1292",
-  "filename": "1292_article_monitoring_to_slack",
+  "title": "Automate article monitoring and summaries to Slack",
   "description": "Monitors RSS feeds for new articles, classifies relevance, summarizes content, and posts formatted summaries to a Slack channel for easy access.",
+  "filename": "1292_article_monitoring_to_slack",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "No Operation, do nothing",
+    "RSS Read",
+    "Schedule",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets API Key",
+    "Slack Account"
+  ],
   "content": {
     "id": "Xk0W98z9DVrNHeku",
     "meta": {
@@ -1025,44 +1059,5 @@
         ]
       }
     }
-  },
-  "title": "Automate article monitoring and summaries to Slack",
-  "nodes_count": 31,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "No Operation, do nothing",
-    "RSS Read",
-    "Schedule",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets API Key",
-    "Slack Account"
-  ],
-  "workflow_complexity": 31,
-  "external_integrations_count": 10
+  }
 }

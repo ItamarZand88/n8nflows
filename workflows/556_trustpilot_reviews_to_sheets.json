@@ -1,7 +1,42 @@
 {
   "id": "556",
-  "filename": "556_trustpilot_reviews_to_sheets",
+  "title": "Automate Trustpilot Review Insights and Export to Google Sheets",
   "description": "Scrapes Trustpilot reviews for a specified company, analyzes sentiment and clusters, then exports insights to Google Sheets for easy access and reporting.",
+  "filename": "556_trustpilot_reviews_to_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Filter",
+    "Google Sheets",
+    "HTTP Request",
+    "Manual",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Edit Fields (Set) Event",
+    "New Execute Sub-workflow Event",
+    "New Execute Workflow Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Append",
+    "Extracthtmlcontent",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account",
+    "HTTP Request API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "408f9fb9940c3cb18ffdef0e0150fe342d6e655c3a9fac21f0f644e8bedabcd9"
@@ -1151,45 +1186,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Trustpilot Review Insights and Export to Google Sheets",
-  "nodes_count": 37,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Filter",
-    "Google Sheets",
-    "HTTP Request",
-    "Manual",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Edit Fields (Set) Event",
-    "New Execute Sub-workflow Event",
-    "New Execute Workflow Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Append",
-    "Extracthtmlcontent",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 37,
-  "external_integrations_count": 10
+  }
 }

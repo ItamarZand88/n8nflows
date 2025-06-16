@@ -1,7 +1,30 @@
 {
   "id": "502",
-  "filename": "502_send_html_emails_with_embedded_images",
+  "title": "Send HTML emails with embedded images via Gmail",
   "description": "Triggers on manual input to send an HTML email with an embedded image, utilizing Gmail's API for seamless communication.",
+  "filename": "502_send_html_emails_with_embedded_images",
+  "services": [
+    "Edit Fields (Set)",
+    "Extract from File",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Binarytopropery",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "cb484ba7b742928a2048bf8829668bed5b5ad9787579adea888f05980292a4a7"
@@ -259,33 +282,5 @@
         ]
       }
     }
-  },
-  "title": "Send HTML emails with embedded images via Gmail",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Extract from File",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Binarytopropery",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 5
+  }
 }

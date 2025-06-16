@@ -1,7 +1,27 @@
 {
   "id": "410",
-  "filename": "410_create_update_contacts_google_contacts",
+  "title": "Create and update contacts in Google Contacts",
   "description": "Triggers contact creation in Google Contacts, updates company information, and retrieves organization details for efficient contact management.",
+  "filename": "410_create_update_contacts_google_contacts",
+  "services": [
+    "Google Contacts",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Miscellaneous "
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Contacts Account"
+  ],
   "content": {
     "id": "20",
     "name": "Create, update and get a contact in Google Contacts",
@@ -119,30 +139,5 @@
         ]
       }
     }
-  },
-  "title": "Create and update contacts in Google Contacts",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Miscellaneous "
-  ],
-  "services": [
-    "Google Contacts",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Contacts Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

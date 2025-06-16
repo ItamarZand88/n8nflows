@@ -1,7 +1,34 @@
 {
   "id": "1472",
-  "filename": "1472_pipedrive_organization_notes_to_slack",
+  "title": "Automate Pipedrive Organization Notes with GPT-4 and Slack",
   "description": "Triggers when a new organization is created in Pipedrive, enriches its data using GPT-4, and sends a formatted note to Slack for team visibility.",
+  "filename": "1472_pipedrive_organization_notes_to_slack",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "Markdown",
+    "Pipedrive",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Manage note"
+  ],
+  "setup_requirements": [
+    "Pipedrive API Key",
+    "Slack Account"
+  ],
   "content": {
     "id": "",
     "meta": {
@@ -267,37 +294,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Pipedrive Organization Notes with GPT-4 and Slack",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Sales"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "Markdown",
-    "Pipedrive",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Manage note"
-  ],
-  "setup_requirements": [
-    "Pipedrive API Key",
-    "Slack Account"
-  ],
-  "workflow_complexity": 8,
-  "external_integrations_count": 6
+  }
 }

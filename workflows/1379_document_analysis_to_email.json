@@ -1,7 +1,35 @@
 {
   "id": "1379",
-  "filename": "1379_document_analysis_to_email",
+  "title": "Automate document analysis and email summaries using Google Gemini",
   "description": "Triggers on form submissions with document uploads, analyzes content, and sends detailed email summaries to users with insights and links for further interaction.",
+  "filename": "1379_document_analysis_to_email",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Convert to File",
+    "Gmail",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Markdown",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New n8n Form Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Filter Data",
+    "Totext"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "cGNK44mkCzIh4113",
     "meta": {
@@ -1013,38 +1041,5 @@
         ]
       }
     }
-  },
-  "title": "Automate document analysis and email summaries using Google Gemini",
-  "nodes_count": 36,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Convert to File",
-    "Gmail",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Markdown",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New n8n Form Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Filter Data",
-    "Totext"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 36,
-  "external_integrations_count": 10
+  }
 }

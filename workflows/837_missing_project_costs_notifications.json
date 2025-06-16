@@ -1,7 +1,26 @@
 {
   "id": "837",
-  "filename": "837_missing_project_costs_notifications",
+  "title": "Automate email notifications for missing project costs",
   "description": "Triggers weekly to check for open external projects missing budgeted costs and sends notifications to relevant teams via Outlook.",
+  "filename": "837_missing_project_costs_notifications",
+  "services": [
+    "Microsoft Outlook",
+    "MySQL",
+    "Schedule",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Executequery"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "4359279a248a64f23ddf72d3bc2de4dead8a687e643e9296f8a007dd65120396"
@@ -267,29 +286,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email notifications for missing project costs",
-  "nodes_count": 6,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Microsoft Outlook",
-    "MySQL",
-    "Schedule",
-    "Switch"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Executequery"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 6,
-  "external_integrations_count": 4
+  }
 }

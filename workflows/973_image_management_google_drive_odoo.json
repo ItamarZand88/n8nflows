@@ -1,7 +1,47 @@
 {
   "id": "973",
-  "filename": "973_image_management_google_drive_odoo",
+  "title": "Automate image management and updates in Google Drive and Odoo",
   "description": "Triggers every 10 minutes to find new images in Google Drive, filters them, and updates product and template images in Odoo, ensuring your inventory is always current.",
+  "filename": "973_image_management_google_drive_odoo",
+  "services": [
+    "Code",
+    "Extract from File",
+    "Filter",
+    "Google Chat",
+    "Google Drive",
+    "Manual",
+    "Odoo",
+    "Schedule",
+    "Summarize",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Binarytopropery",
+    "Deletefile",
+    "Download",
+    "Getall",
+    "Manage custom",
+    "Manage fileFolder",
+    "Move",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Google Chat Account",
+    "Google Drive Account",
+    "Odoo API Key"
+  ],
   "content": {
     "id": "4aKofiCShqdDSsIS",
     "meta": {
@@ -775,50 +815,5 @@
         ]
       }
     }
-  },
-  "title": "Automate image management and updates in Google Drive and Odoo",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Extract from File",
-    "Filter",
-    "Google Chat",
-    "Google Drive",
-    "Manual",
-    "Odoo",
-    "Schedule",
-    "Summarize",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Binarytopropery",
-    "Deletefile",
-    "Download",
-    "Getall",
-    "Manage custom",
-    "Manage fileFolder",
-    "Move",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Google Chat Account",
-    "Google Drive Account",
-    "Odoo API Key"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 10
+  }
 }

@@ -1,7 +1,30 @@
 {
   "id": "448",
-  "filename": "448_slack_alerts_for_workflow_errors",
+  "title": "Send Slack alerts for workflow errors automatically",
   "description": "Triggers on workflow errors and sends formatted alert messages to a Slack channel, ensuring timely notifications for quick resolution.",
+  "filename": "448_slack_alerts_for_workflow_errors",
+  "services": [
+    "Edit Fields (Set)",
+    "Error",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Error Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Slack API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -120,33 +143,5 @@
         ]
       }
     }
-  },
-  "title": "Send Slack alerts for workflow errors automatically",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Error",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Error Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Slack API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 4
+  }
 }

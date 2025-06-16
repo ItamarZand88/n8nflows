@@ -1,7 +1,33 @@
 {
   "id": "1084",
-  "filename": "1084_email_responses_to_slack",
+  "title": "Automate email responses with personalized excuses in Slack",
   "description": "Reads emails from Harvey, generates a humorous excuse, and sends a reply via email and Slack to Louis, enhancing communication efficiency.",
+  "filename": "1084_email_responses_to_slack",
+  "services": [
+    "Email Trigger (IMAP)",
+    "Function",
+    "Merge",
+    "Read Binary File",
+    "Send Email",
+    "Slack",
+    "Spreadsheet File",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Execute Function"
+  ],
+  "setup_requirements": [
+    "Slack API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -234,36 +260,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email responses with personalized excuses in Slack",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Email Trigger (IMAP)",
-    "Function",
-    "Merge",
-    "Read Binary File",
-    "Send Email",
-    "Slack",
-    "Spreadsheet File",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Execute Function"
-  ],
-  "setup_requirements": [
-    "Slack API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 8
+  }
 }

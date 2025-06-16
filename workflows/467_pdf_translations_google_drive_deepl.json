@@ -1,7 +1,35 @@
 {
   "id": "467",
-  "filename": "467_pdf_translations_google_drive_deepl",
+  "title": "Automate PDF translations from Google Drive using DeepL",
   "description": "Triggers manual execution to fetch PDF files from Google Drive, translates them using DeepL, and uploads the translated documents back to the original folder.",
+  "filename": "467_pdf_translations_google_drive_deepl",
+  "services": [
+    "Edit Fields (Set)",
+    "Filter",
+    "Google Drive",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download",
+    "Filter Data",
+    "Manage fileFolder",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -509,38 +537,5 @@
         ]
       }
     }
-  },
-  "title": "Automate PDF translations from Google Drive using DeepL",
-  "nodes_count": 14,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Filter",
-    "Google Drive",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download",
-    "Filter Data",
-    "Manage fileFolder",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 14,
-  "external_integrations_count": 7
+  }
 }

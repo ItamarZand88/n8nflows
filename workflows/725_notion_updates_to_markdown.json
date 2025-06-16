@@ -1,7 +1,32 @@
 {
   "id": "725",
-  "filename": "725_notion_updates_to_markdown",
+  "title": "Automate Notion block updates to Markdown format",
   "description": "Triggers on updates in a Notion database, converts block content to Markdown, and adds it back to Notion for enhanced formatting and organization.",
+  "filename": "725_notion_updates_to_markdown",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "Notion",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Notion Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage block"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key",
+    "Notion API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "ce110ceecbd52a55e2f86f58f176c40bfe61a2a2c6b384a681009bc6b9ef0dd4",
@@ -314,35 +339,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Notion block updates to Markdown format",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "Notion",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Notion Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage block"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key",
-    "Notion API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 5
+  }
 }

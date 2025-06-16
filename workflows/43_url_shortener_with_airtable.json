@@ -1,7 +1,34 @@
 {
   "id": "43",
-  "filename": "43_url_shortener_with_airtable",
+  "title": "Shorten URLs and Track Clicks with Airtable Integration",
   "description": "Automatically shortens URLs received via webhook, stores them in Airtable, and tracks click statistics for each short link, providing valuable insights.",
+  "filename": "43_url_shortener_with_airtable",
+  "services": [
+    "Airtable",
+    "Crypto",
+    "Edit Fields (Set)",
+    "Function",
+    "If",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Append",
+    "Execute Function",
+    "Filter Data",
+    "List",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Airtable API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -793,37 +820,5 @@
         ]
       }
     }
-  },
-  "title": "Shorten URLs and Track Clicks with Airtable Integration",
-  "nodes_count": 26,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Crypto",
-    "Edit Fields (Set)",
-    "Function",
-    "If",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Append",
-    "Execute Function",
-    "Filter Data",
-    "List",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Airtable API Key"
-  ],
-  "workflow_complexity": 26,
-  "external_integrations_count": 6
+  }
 }

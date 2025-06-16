@@ -1,7 +1,40 @@
 {
   "id": "1489",
-  "filename": "1489_google_trends_to_sheets",
+  "title": "Automate Google Trends keyword scraping to Google Sheets",
   "description": "Automatically scrapes trending keywords from Google Trends every hour and saves relevant data to Google Sheets for easy tracking and analysis.",
+  "filename": "1489_google_trends_to_sheets",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Manual",
+    "No Operation, do nothing",
+    "Schedule",
+    "Sticky Note",
+    "XML"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event",
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "Eyh4jc7RK7rCTh4z",
     "meta": {
@@ -988,43 +1021,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Trends keyword scraping to Google Sheets",
-  "nodes_count": 26,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Manual",
-    "No Operation, do nothing",
-    "Schedule",
-    "Sticky Note",
-    "XML"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event",
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 26,
-  "external_integrations_count": 11
+  }
 }

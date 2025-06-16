@@ -1,7 +1,40 @@
 {
   "id": "252",
-  "filename": "252_google_drive_to_pipedrive_leads",
+  "title": "Automate lead creation from new Google Drive files to Pipedrive",
   "description": "Triggers on new files in Google Drive, extracts lead information, and creates corresponding organizations and leads in Pipedrive for streamlined sales follow-up.",
+  "filename": "252_google_drive_to_pipedrive_leads",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Drive",
+    "If",
+    "Merge",
+    "Pipedrive",
+    "Spreadsheet File"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Google Drive Event"
+  ],
+  "actions": [
+    "Download",
+    "Filter Data",
+    "Get",
+    "Getall",
+    "Manage lead",
+    "Manage note",
+    "Manage organization",
+    "Manage person",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "Pipedrive API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "4eea70f6789129b82c5f438f374db25affb0eba28902cc3663e308cff7659044"
@@ -415,43 +448,5 @@
         ]
       }
     }
-  },
-  "title": "Automate lead creation from new Google Drive files to Pipedrive",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Sales"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Drive",
-    "If",
-    "Merge",
-    "Pipedrive",
-    "Spreadsheet File"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Google Drive Event"
-  ],
-  "actions": [
-    "Download",
-    "Filter Data",
-    "Get",
-    "Getall",
-    "Manage lead",
-    "Manage note",
-    "Manage organization",
-    "Manage person",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "Pipedrive API Key"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 6
+  }
 }

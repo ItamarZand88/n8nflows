@@ -1,7 +1,31 @@
 {
   "id": "1282",
-  "filename": "1282_voice_responses_with_elevenlabs_and_drive",
+  "title": "Automate voice responses using ElevenLabs and Google Drive",
   "description": "Triggers voice responses from an AI agent based on user questions, utilizing Google Drive for document management and Qdrant for data storage.",
+  "filename": "1282_voice_responses_with_elevenlabs_and_drive",
+  "services": [
+    "Google Drive",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download",
+    "Manage fileFolder"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "ibiHg6umCqvcTF4g",
     "meta": {
@@ -639,34 +663,5 @@
         ]
       }
     }
-  },
-  "title": "Automate voice responses using ElevenLabs and Google Drive",
-  "nodes_count": 23,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Google Drive",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download",
-    "Manage fileFolder"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 23,
-  "external_integrations_count": 5
+  }
 }

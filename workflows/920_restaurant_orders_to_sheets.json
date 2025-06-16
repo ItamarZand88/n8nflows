@@ -1,7 +1,35 @@
 {
   "id": "920",
-  "filename": "920_restaurant_orders_to_sheets",
+  "title": "Automate restaurant order processing with Google Sheets",
   "description": "Triggers on customer chat messages, extracts order details, and logs them into Google Sheets for efficient order management.",
+  "filename": "920_restaurant_orders_to_sheets",
+  "services": [
+    "Code",
+    "Execute Workflow",
+    "Google Sheets",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Append",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "d73282515b90623d4a8783919a2d772c706425d649e1512792f37ac51e07e4a8"
@@ -541,38 +569,5 @@
         ]
       }
     }
-  },
-  "title": "Automate restaurant order processing with Google Sheets",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Execute Workflow",
-    "Google Sheets",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Append",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 7
+  }
 }

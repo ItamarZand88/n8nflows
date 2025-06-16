@@ -1,7 +1,32 @@
 {
   "id": "1307",
-  "filename": "1307_mattermost_alerts_for_negative_feedback",
+  "title": "Send Mattermost alerts for negative Typeform feedback",
   "description": "Captures new feedback from Typeform, detects negative sentiment, and sends alerts to Mattermost channels for immediate attention.",
+  "filename": "1307_mattermost_alerts_for_negative_feedback",
+  "services": [
+    "AWS Comprehend",
+    "If",
+    "Mattermost",
+    "No Operation, do nothing",
+    "Typeform"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Typeform Event"
+  ],
+  "actions": [
+    "Detectsentiment",
+    "Filter Data"
+  ],
+  "setup_requirements": [
+    "Mattermost API Key",
+    "Typeform API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -127,35 +152,5 @@
         ]
       }
     }
-  },
-  "title": "Send Mattermost alerts for negative Typeform feedback",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "AWS Comprehend",
-    "If",
-    "Mattermost",
-    "No Operation, do nothing",
-    "Typeform"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Typeform Event"
-  ],
-  "actions": [
-    "Detectsentiment",
-    "Filter Data"
-  ],
-  "setup_requirements": [
-    "Mattermost API Key",
-    "Typeform API Key"
-  ],
-  "workflow_complexity": 5,
-  "external_integrations_count": 5
+  }
 }

@@ -1,7 +1,40 @@
 {
   "id": "429",
-  "filename": "429_daily_updates_linkedin_twitter",
+  "title": "Automate daily email updates with LinkedIn and Twitter activity",
   "description": "Triggers every morning at 7 AM to gather today's meetings, fetches recent LinkedIn posts and tweets, and sends a summary email to attendees.",
+  "filename": "429_daily_updates_linkedin_twitter",
+  "services": [
+    "Clearbit",
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "Gmail",
+    "Google Calendar",
+    "HTTP Request",
+    "Merge",
+    "Schedule",
+    "Split Out",
+    "Sticky Note",
+    "Switch"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Productivity",
+    "Sales"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "meta": {
       "instanceId": "3c58c896c9089c8fb4d7f2b069bf3119193f239a1f538829758e2f4d6b5f5b24"
@@ -681,43 +714,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily email updates with LinkedIn and Twitter activity",
-  "nodes_count": 19,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Productivity",
-    "Sales"
-  ],
-  "services": [
-    "Clearbit",
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "Gmail",
-    "Google Calendar",
-    "HTTP Request",
-    "Merge",
-    "Schedule",
-    "Split Out",
-    "Sticky Note",
-    "Switch"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 19,
-  "external_integrations_count": 12
+  }
 }

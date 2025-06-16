@@ -1,7 +1,35 @@
 {
   "id": "338",
-  "filename": "338_email_verification_to_sendgrid",
+  "title": "Automate email verification and list building with Hunter and SendGrid",
   "description": "Captures email submissions from a form, verifies their validity, and adds valid emails to a SendGrid contact list for efficient marketing.",
+  "filename": "338_email_verification_to_sendgrid",
+  "services": [
+    "Hunter",
+    "If",
+    "No Operation, do nothing",
+    "SendGrid",
+    "Sticky Note",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Marketing",
+    "Sales"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Emailverifier",
+    "Filter Data",
+    "Manage contact"
+  ],
+  "setup_requirements": [
+    "Hunter API Key",
+    "SendGrid API Key"
+  ],
   "content": {
     "id": "1blBTEfOEjamDB0N",
     "meta": {
@@ -208,38 +236,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email verification and list building with Hunter and SendGrid",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Marketing",
-    "Sales"
-  ],
-  "services": [
-    "Hunter",
-    "If",
-    "No Operation, do nothing",
-    "SendGrid",
-    "Sticky Note",
-    "n8n Form"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Emailverifier",
-    "Filter Data",
-    "Manage contact"
-  ],
-  "setup_requirements": [
-    "Hunter API Key",
-    "SendGrid API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 6
+  }
 }

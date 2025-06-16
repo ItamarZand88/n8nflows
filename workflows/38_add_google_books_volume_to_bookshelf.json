@@ -1,7 +1,28 @@
 {
   "id": "38",
-  "filename": "38_add_google_books_volume_to_bookshelf",
+  "title": "Add Google Books volumes to your bookshelf automatically",
   "description": "Triggers on manual execution to fetch a Google Books volume and adds it to a specified bookshelf, streamlining your reading list management.",
+  "filename": "38_add_google_books_volume_to_bookshelf",
+  "services": [
+    "Google Books",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Miscellaneous"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Add",
+    "Manage bookshelfVolume",
+    "Manage volume"
+  ],
+  "setup_requirements": [
+    "Google Books Account"
+  ],
   "content": {
     "id": "107",
     "name": "Get a volume and add it to your bookshelf",
@@ -108,31 +129,5 @@
         ]
       }
     }
-  },
-  "title": "Add Google Books volumes to your bookshelf automatically",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Miscellaneous"
-  ],
-  "services": [
-    "Google Books",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Add",
-    "Manage bookshelfVolume",
-    "Manage volume"
-  ],
-  "setup_requirements": [
-    "Google Books Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

@@ -1,7 +1,31 @@
 {
   "id": "444",
-  "filename": "444_gmail_starred_emails_archiving",
+  "title": "Automate Gmail to Keep Starred Emails and Archive Others",
   "description": "Triggers at midnight on workdays to filter and archive non-starred emails from the last day, keeping only important messages in your inbox.",
+  "filename": "444_gmail_starred_emails_archiving",
+  "services": [
+    "Filter",
+    "Gmail",
+    "Item Lists",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Get",
+    "Manage thread",
+    "Removelabels"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "nodes": [
       {
@@ -262,34 +286,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Gmail to Keep Starred Emails and Archive Others",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Filter",
-    "Gmail",
-    "Item Lists",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Get",
-    "Manage thread",
-    "Removelabels"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 5
+  }
 }

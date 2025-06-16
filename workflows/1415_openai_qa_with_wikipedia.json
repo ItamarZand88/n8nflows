@@ -1,7 +1,24 @@
 {
   "id": "1415",
-  "filename": "1415_openai_qa_with_wikipedia",
+  "title": "Automate Q&A with OpenAI and Wikipedia Insights",
   "description": "Triggers on manual execution to ask OpenAI for jokes and historical facts, integrating Wikipedia for enriched responses.",
+  "filename": "1415_openai_qa_with_wikipedia",
+  "services": [
+    "Edit Fields (Set)",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "q2MJWAqpKF2BCJkq",
     "meta": {
@@ -291,27 +308,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Q&A with OpenAI and Wikipedia Insights",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 10,
-  "external_integrations_count": 3
+  }
 }

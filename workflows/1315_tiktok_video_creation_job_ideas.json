@@ -1,7 +1,41 @@
 {
   "id": "1315",
-  "filename": "1315_tiktok_video_creation_job_ideas",
+  "title": "Automate TikTok Video Creation from Job Ideas",
   "description": "Triggers daily to generate engaging TikTok videos from job-seeking ideas, combining AI-generated captions, images, and voiceovers for a complete production workflow.",
+  "filename": "1315_tiktok_video_creation_job_ideas",
+  "services": [
+    "Code",
+    "Discord",
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data",
+    "Share",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Discord API Key",
+    "Google Drive Account",
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "aqLL3BAXqQIjeJDt",
     "meta": {
@@ -1739,44 +1773,5 @@
         ]
       }
     }
-  },
-  "title": "Automate TikTok Video Creation from Job Ideas",
-  "nodes_count": 41,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Discord",
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data",
-    "Share",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Discord API Key",
-    "Google Drive Account",
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 41,
-  "external_integrations_count": 10
+  }
 }

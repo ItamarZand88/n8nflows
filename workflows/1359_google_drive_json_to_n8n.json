@@ -1,7 +1,37 @@
 {
   "id": "1359",
-  "filename": "1359_google_drive_json_to_n8n",
+  "title": "Automate Google Drive JSON Workflow Imports to n8n",
   "description": "Triggers on new JSON files in Google Drive, cleans the data, and imports workflows into n8n, streamlining your automation setup.",
+  "filename": "1359_google_drive_json_to_n8n",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Extract from File",
+    "Google Drive",
+    "HTTP Request",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Google Drive Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Download",
+    "Fromjson",
+    "Move",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "bhWsUxipJ9wuTA5K",
     "meta": {
@@ -573,40 +603,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Drive JSON Workflow Imports to n8n",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Extract from File",
-    "Google Drive",
-    "HTTP Request",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Google Drive Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Download",
-    "Fromjson",
-    "Move",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 21,
-  "external_integrations_count": 7
+  }
 }

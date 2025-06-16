@@ -1,7 +1,35 @@
 {
   "id": "1278",
-  "filename": "1278_strava_activity_analysis_to_email",
+  "title": "Automate Strava Activity Analysis and Email Coaching Insights",
   "description": "Triggers on new Strava activity updates, analyzes performance data, and sends personalized coaching feedback via email.",
+  "filename": "1278_strava_activity_analysis_to_email",
+  "services": [
+    "Code",
+    "Gmail",
+    "Send Email",
+    "Sticky Note",
+    "Strava",
+    "WhatsApp Business Cloud"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Strava Event"
+  ],
+  "actions": [
+    "Send"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Strava Account",
+    "WhatsApp Business Cloud API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "32d80f55a35a7b57f8e47a2ac19558d9f5bcec983a5519d9c29ba713ff4f12c7",
@@ -355,38 +383,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Strava Activity Analysis and Email Coaching Insights",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Gmail",
-    "Send Email",
-    "Sticky Note",
-    "Strava",
-    "WhatsApp Business Cloud"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Strava Event"
-  ],
-  "actions": [
-    "Send"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Strava Account",
-    "WhatsApp Business Cloud API Key"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 6
+  }
 }

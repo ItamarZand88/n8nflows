@@ -1,7 +1,28 @@
 {
   "id": "546",
-  "filename": "546_error_capture_execution_data",
+  "title": "Capture and Process Errors with Execution Data Retrieval",
   "description": "Triggers on new errors, retrieves execution data, and extracts relevant webhook information for troubleshooting and analysis.",
+  "filename": "546_error_capture_execution_data",
+  "services": [
+    "Code",
+    "Error",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Error Event"
+  ],
+  "actions": [
+    "Get",
+    "Manage execution"
+  ],
+  "setup_requirements": [
+    "n8n API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "84ba6d895254e080ac2b4916d987aa66b000f88d4d919a6b9c76848f9b8a7616",
@@ -84,31 +105,5 @@
         ]
       }
     }
-  },
-  "title": "Capture and Process Errors with Execution Data Retrieval",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Error",
-    "n8n"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Error Event"
-  ],
-  "actions": [
-    "Get",
-    "Manage execution"
-  ],
-  "setup_requirements": [
-    "n8n API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 3
+  }
 }

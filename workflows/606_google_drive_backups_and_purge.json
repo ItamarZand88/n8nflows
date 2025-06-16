@@ -1,7 +1,41 @@
 {
   "id": "606",
-  "filename": "606_google_drive_backups_and_purge",
+  "title": "Automate Google Drive backups and purging of old files",
   "description": "Triggers nightly to back up n8n workflows to Google Drive, moves older backups to an archive folder, and deletes backups older than 30 days for efficient storage management.",
+  "filename": "606_google_drive_backups_and_purge",
+  "services": [
+    "Code",
+    "Convert to/from binary data",
+    "Filter",
+    "Google Drive",
+    "If",
+    "Item Lists",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "Schedule",
+    "Sticky Note",
+    "n8n"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Deletefile",
+    "Filter Data",
+    "Manage fileFolder",
+    "Manage folder",
+    "Move"
+  ],
+  "setup_requirements": [
+    "Google Drive Account",
+    "n8n API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -995,44 +1029,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Google Drive backups and purging of old files",
-  "nodes_count": 33,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Convert to/from binary data",
-    "Filter",
-    "Google Drive",
-    "If",
-    "Item Lists",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "Schedule",
-    "Sticky Note",
-    "n8n"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Deletefile",
-    "Filter Data",
-    "Manage fileFolder",
-    "Manage folder",
-    "Move"
-  ],
-  "setup_requirements": [
-    "Google Drive Account",
-    "n8n API Key"
-  ],
-  "workflow_complexity": 33,
-  "external_integrations_count": 11
+  }
 }

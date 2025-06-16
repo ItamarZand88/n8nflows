@@ -1,7 +1,28 @@
 {
   "id": "1854",
-  "filename": "1854_qa_from_how_to_transform_your_life",
+  "title": "Automate Q&A from 'How To Transform Your Life' Book",
   "description": "Triggers on chat messages to provide instant answers from a Supabase vector database containing insights from the book, enhancing user engagement and learning.",
+  "filename": "1854_qa_from_how_to_transform_your_life",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Drive",
+    "Sticky Note",
+    "Supabase"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Download",
+    "Getall",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "1a23006df50de49624f69e85993be557d137b6efe723a867a7d68a84e0b32704"
@@ -484,31 +505,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Q&A from 'How To Transform Your Life' Book",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Drive",
-    "Sticky Note",
-    "Supabase"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Download",
-    "Getall",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 21,
-  "external_integrations_count": 4
+  }
 }

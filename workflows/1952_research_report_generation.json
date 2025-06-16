@@ -1,7 +1,24 @@
 {
   "id": "1952",
-  "filename": "1952_research_report_generation",
+  "title": "Automate Research Report Generation from User Queries",
   "description": "Triggers on user chat messages, generates search queries, fetches data, and compiles a comprehensive research report for informed decision-making.",
+  "filename": "1952_research_report_generation",
+  "services": [
+    "Code",
+    "HTTP Request",
+    "Loop Over Items (Split in Batches)",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [],
+  "setup_requirements": [],
   "content": {
     "id": "WLSqXECfQF7rOj2A",
     "meta": {
@@ -469,27 +486,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Research Report Generation from User Queries",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "HTTP Request",
-    "Loop Over Items (Split in Batches)",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [],
-  "setup_requirements": [],
-  "workflow_complexity": 17,
-  "external_integrations_count": 4
+  }
 }

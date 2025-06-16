@@ -1,7 +1,37 @@
 {
   "id": "712",
-  "filename": "712_upwork_job_scraping_to_slack",
+  "title": "Automate job scraping from Upwork and notify on Slack",
   "description": "Triggers every 10 minutes to scrape new job posts from Upwork, checks for existing entries, and sends notifications to Slack with job details.",
+  "filename": "712_upwork_job_scraping_to_slack",
+  "services": [
+    "Edit Fields (Set)",
+    "HTTP Request",
+    "If",
+    "Merge",
+    "MongoDB",
+    "Schedule",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Insert",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Slack API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "2f9460831fcdb0e9a4494f0630367cfe2968282072e2d27c6ee6ab0a4c165a36",
@@ -317,40 +347,5 @@
         ]
       }
     }
-  },
-  "title": "Automate job scraping from Upwork and notify on Slack",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "HTTP Request",
-    "If",
-    "Merge",
-    "MongoDB",
-    "Schedule",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Insert",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Slack API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 8
+  }
 }

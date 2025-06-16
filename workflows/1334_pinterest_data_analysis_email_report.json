@@ -1,7 +1,33 @@
 {
   "id": "1334",
-  "filename": "1334_pinterest_data_analysis_email_report",
+  "title": "Automate Pinterest Data Analysis and Reporting via Email",
   "description": "Triggers weekly at 8:00 AM to gather Pinterest pin data, analyze trends, and email insights to the marketing manager for content strategy.",
+  "filename": "1334_pinterest_data_analysis_email_report",
+  "services": [
+    "Airtable",
+    "Code",
+    "Gmail",
+    "HTTP Request",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Upsert"
+  ],
+  "setup_requirements": [
+    "Airtable API Key",
+    "Gmail Account"
+  ],
   "content": {
     "id": "gP9EsxKN5agUGzDS",
     "meta": {
@@ -528,36 +554,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Pinterest Data Analysis and Reporting via Email",
-  "nodes_count": 13,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Airtable",
-    "Code",
-    "Gmail",
-    "HTTP Request",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Upsert"
-  ],
-  "setup_requirements": [
-    "Airtable API Key",
-    "Gmail Account"
-  ],
-  "workflow_complexity": 13,
-  "external_integrations_count": 6
+  }
 }

@@ -1,7 +1,32 @@
 {
   "id": "1692",
-  "filename": "1692_generate_images_to_google_drive",
+  "title": "Generate and Save AI-Generated Images to Google Drive",
   "description": "Triggers image generation based on a user-defined prompt, checks the status, and saves the resulting image to Google Drive for easy access.",
+  "filename": "1692_generate_images_to_google_drive",
+  "services": [
+    "Edit Fields (Set)",
+    "Google Drive",
+    "HTTP Request",
+    "If",
+    "Manual",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Drive Account"
+  ],
   "content": {
     "id": "nJwkSOrJIFvutw1n",
     "meta": {
@@ -381,35 +406,5 @@
         ]
       }
     }
-  },
-  "title": "Generate and Save AI-Generated Images to Google Drive",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Google Drive",
-    "HTTP Request",
-    "If",
-    "Manual",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Drive Account"
-  ],
-  "workflow_complexity": 12,
-  "external_integrations_count": 6
+  }
 }

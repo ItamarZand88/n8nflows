@@ -1,7 +1,37 @@
 {
   "id": "389",
-  "filename": "389_telegram_interest_requests_to_facebook",
+  "title": "Automate Telegram requests for Facebook ad interests",
   "description": "Triggers on Telegram messages starting with #interest, fetches related Facebook ad interests, and sends a CSV report back to Telegram.",
+  "filename": "389_telegram_interest_requests_to_facebook",
+  "services": [
+    "Code",
+    "Facebook Graph",
+    "If",
+    "No Operation, do nothing",
+    "Spreadsheet File",
+    "Sticky Note",
+    "Telegram"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Telegram Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Senddocument",
+    "Tofile"
+  ],
+  "setup_requirements": [
+    "Facebook Graph API Key",
+    "Telegram API Key"
+  ],
   "content": {
     "meta": {
       "instanceId": "ac9d33c4ed758aeca18fdf8990bc14f18826f99beb38fb06a023fa013ee39a0b"
@@ -296,40 +326,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Telegram requests for Facebook ad interests",
-  "nodes_count": 11,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL"
-  ],
-  "services": [
-    "Code",
-    "Facebook Graph",
-    "If",
-    "No Operation, do nothing",
-    "Spreadsheet File",
-    "Sticky Note",
-    "Telegram"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Telegram Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Senddocument",
-    "Tofile"
-  ],
-  "setup_requirements": [
-    "Facebook Graph API Key",
-    "Telegram API Key"
-  ],
-  "workflow_complexity": 11,
-  "external_integrations_count": 7
+  }
 }

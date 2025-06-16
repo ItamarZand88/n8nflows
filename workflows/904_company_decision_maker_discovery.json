@@ -1,7 +1,40 @@
 {
   "id": "904",
-  "filename": "904_company_decision_maker_discovery",
+  "title": "Automate Company Decision Maker Discovery and Enrichment",
   "description": "Triggers on new Google Sheets entries, enriches company and contact data from Apollo, and logs verified decision makers into a structured database.",
+  "filename": "904_company_decision_maker_discovery",
+  "services": [
+    "Code",
+    "Filter",
+    "Google Sheets",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "Schedule",
+    "Slack",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event",
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Appendorupdate",
+    "Filter Data",
+    "Sendandwait"
+  ],
+  "setup_requirements": [],
   "content": {
     "meta": {
       "instanceId": "d8e4f3f201a1625c886024ee1cbb0c5fff4e0aa0b0514f20e2bd021193dc5fed"
@@ -1759,43 +1792,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Company Decision Maker Discovery and Enrichment",
-  "nodes_count": 35,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Filter",
-    "Google Sheets",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "Schedule",
-    "Slack",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event",
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Appendorupdate",
-    "Filter Data",
-    "Sendandwait"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 35,
-  "external_integrations_count": 11
+  }
 }

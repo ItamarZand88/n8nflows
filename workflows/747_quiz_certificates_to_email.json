@@ -1,7 +1,39 @@
 {
   "id": "747",
-  "filename": "747_quiz_certificates_to_email",
+  "title": "Automate certificate generation and email delivery for quiz results",
   "description": "Triggers on new Google Sheets entries, checks scores, generates personalized certificates, and emails them to respondents.",
+  "filename": "747_quiz_certificates_to_email",
+  "services": [
+    "Edit Fields (Set)",
+    "Gmail",
+    "Google Drive",
+    "Google Slides",
+    "If",
+    "No Operation, do nothing",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "Workflow Trigger"
+  ],
+  "actions": [
+    "Copy",
+    "Download",
+    "Filter Data",
+    "Replacetext",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Google Drive Account",
+    "Google Slides Account"
+  ],
   "content": {
     "id": "2qIFnWXdHJJs4oBk",
     "meta": {
@@ -474,42 +506,5 @@
         ]
       }
     }
-  },
-  "title": "Automate certificate generation and email delivery for quiz results",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "Gmail",
-    "Google Drive",
-    "Google Slides",
-    "If",
-    "No Operation, do nothing",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "Workflow Trigger"
-  ],
-  "actions": [
-    "Copy",
-    "Download",
-    "Filter Data",
-    "Replacetext",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Google Drive Account",
-    "Google Slides Account"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 7
+  }
 }

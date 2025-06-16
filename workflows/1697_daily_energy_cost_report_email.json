@@ -1,7 +1,35 @@
 {
   "id": "1697",
-  "filename": "1697_daily_energy_cost_report_email",
+  "title": "Automate daily energy cost reports via email",
   "description": "Triggers daily to log into PG&E, extracts energy costs, and sends a formatted email report to the user for easy tracking.",
+  "filename": "1697_daily_energy_cost_report_email",
+  "services": [
+    "Airtop",
+    "Edit Fields (Set)",
+    "Gmail",
+    "Schedule",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Manage extraction",
+    "Manage interaction",
+    "Manage window",
+    "Query",
+    "Set Data",
+    "Terminate",
+    "Type"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "NMGsDLoVZ7DUukGs",
     "meta": {
@@ -445,38 +473,5 @@
         ]
       }
     }
-  },
-  "title": "Automate daily energy cost reports via email",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Airtop",
-    "Edit Fields (Set)",
-    "Gmail",
-    "Schedule",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Manage extraction",
-    "Manage interaction",
-    "Manage window",
-    "Query",
-    "Set Data",
-    "Terminate",
-    "Type"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 15,
-  "external_integrations_count": 5
+  }
 }

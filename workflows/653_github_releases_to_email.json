@@ -1,7 +1,29 @@
 {
   "id": "653",
-  "filename": "653_github_releases_to_email",
+  "title": "Automate email notifications for new GitHub releases",
   "description": "Triggers daily to check for new releases in a GitHub repository and sends formatted email notifications if a new release is found.",
+  "filename": "653_github_releases_to_email",
+  "services": [
+    "HTTP Request",
+    "If",
+    "Markdown",
+    "Schedule",
+    "Send Email",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Filter Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -215,32 +237,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email notifications for new GitHub releases",
-  "nodes_count": 8,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "HTTP Request",
-    "If",
-    "Markdown",
-    "Schedule",
-    "Send Email",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Filter Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 8,
-  "external_integrations_count": 7
+  }
 }

@@ -1,7 +1,27 @@
 {
   "id": "1204",
-  "filename": "1204_create_update_discourse_posts",
+  "title": "Create and Update Discourse Posts Automatically",
   "description": "Triggers a new Discourse post creation, updates it, and retrieves the post details, streamlining community engagement.",
+  "filename": "1204_create_update_discourse_posts",
+  "services": [
+    "Discourse",
+    "Manual"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Get",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Discourse API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -103,30 +123,5 @@
         ]
       }
     }
-  },
-  "title": "Create and Update Discourse Posts Automatically",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Discourse",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Get",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Discourse API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

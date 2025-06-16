@@ -1,7 +1,22 @@
 {
   "id": "1009",
-  "filename": "1009_eventbrite_order_updates",
+  "title": "Automate order updates from Eventbrite",
   "description": "Triggers notifications for new, updated, or refunded orders on Eventbrite, streamlining event management and enhancing customer communication.",
+  "filename": "1009_eventbrite_order_updates",
+  "services": [
+    "Eventbrite"
+  ],
+  "categories": [
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Eventbrite Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Eventbrite API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -28,25 +43,5 @@
       }
     ],
     "connections": {}
-  },
-  "title": "Automate order updates from Eventbrite",
-  "nodes_count": 1,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Sales"
-  ],
-  "services": [
-    "Eventbrite"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Eventbrite Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Eventbrite API Key"
-  ],
-  "workflow_complexity": 1,
-  "external_integrations_count": 1
+  }
 }

@@ -1,7 +1,31 @@
 {
   "id": "1965",
-  "filename": "1965_upload_campaign_images_to_shopify",
+  "title": "Upload Campaign Images and Update Shopify Theme Assets",
   "description": "Automatically uploads campaign images from Baserow, checks for updates, and saves changes to the Shopify theme assets for seamless marketing integration.",
+  "filename": "1965_upload_campaign_images_to_shopify",
+  "services": [
+    "Edit Fields (Set)",
+    "GraphQL",
+    "HTTP Request",
+    "If",
+    "No Operation, do nothing",
+    "Sticky Note",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Filter Data",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "x2VUvhqV1YTJCIN0",
     "meta": {
@@ -386,34 +410,5 @@
         ]
       }
     }
-  },
-  "title": "Upload Campaign Images and Update Shopify Theme Assets",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development"
-  ],
-  "services": [
-    "Edit Fields (Set)",
-    "GraphQL",
-    "HTTP Request",
-    "If",
-    "No Operation, do nothing",
-    "Sticky Note",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Filter Data",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 7
+  }
 }

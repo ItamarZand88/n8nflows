@@ -1,7 +1,29 @@
 {
   "id": "241",
-  "filename": "241_gmail_label_management",
+  "title": "Automate Gmail message label management for better organization",
   "description": "Triggers on demand to retrieve messages with a specific label, removes that label, and adds a new one for improved email organization.",
+  "filename": "241_gmail_label_management",
+  "services": [
+    "Gmail",
+    "Manual"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall",
+    "Manage message",
+    "Manage messageLabel",
+    "Remove"
+  ],
+  "setup_requirements": [
+    "Gmail Account"
+  ],
   "content": {
     "id": "175",
     "name": "Get messages with a certain label, remove the label, and add a new one",
@@ -115,32 +137,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Gmail message label management for better organization",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes"
-  ],
-  "services": [
-    "Gmail",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getall",
-    "Manage message",
-    "Manage messageLabel",
-    "Remove"
-  ],
-  "setup_requirements": [
-    "Gmail Account"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 2
+  }
 }

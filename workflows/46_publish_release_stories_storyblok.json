@@ -1,7 +1,28 @@
 {
   "id": "46",
-  "filename": "46_publish_release_stories_storyblok",
+  "title": "Automate publishing of stories starting with 'release' in Storyblok",
   "description": "Triggers manually to fetch all stories that start with 'release' from Storyblok and publishes them automatically, streamlining content management.",
+  "filename": "46_publish_release_stories_storyblok",
+  "services": [
+    "Manual",
+    "Storyblok"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Marketing"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Getall",
+    "Publish"
+  ],
+  "setup_requirements": [
+    "Storyblok API Key"
+  ],
   "content": {
     "id": "110",
     "name": "Get all the stories starting with `release` and publish them",
@@ -82,31 +103,5 @@
         ]
       }
     }
-  },
-  "title": "Automate publishing of stories starting with 'release' in Storyblok",
-  "nodes_count": 3,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Marketing"
-  ],
-  "services": [
-    "Manual",
-    "Storyblok"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Getall",
-    "Publish"
-  ],
-  "setup_requirements": [
-    "Storyblok API Key"
-  ],
-  "workflow_complexity": 3,
-  "external_integrations_count": 2
+  }
 }

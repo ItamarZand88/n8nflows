@@ -1,7 +1,26 @@
 {
   "id": "53",
-  "filename": "53_git_readme_commit_push",
+  "title": "Automate Git commits and pushes for README updates",
   "description": "Triggers a manual execution to add, commit, and push updates to the README.md file in a Git repository, streamlining version control tasks.",
+  "filename": "53_git_readme_commit_push",
+  "services": [
+    "Git",
+    "Manual"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Add",
+    "Commit",
+    "Push"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -117,29 +136,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Git commits and pushes for README updates",
-  "nodes_count": 5,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Git",
-    "Manual"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Add",
-    "Commit",
-    "Push"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 5,
-  "external_integrations_count": 2
+  }
 }

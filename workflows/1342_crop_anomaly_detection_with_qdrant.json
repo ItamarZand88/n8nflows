@@ -1,7 +1,29 @@
 {
   "id": "1342",
-  "filename": "1342_crop_anomaly_detection_with_qdrant",
+  "title": "Detect Crop Anomalies Using Image Analysis and Qdrant",
   "description": "Triggers on image URL input, analyzes it against a crop dataset, and identifies if the crop is anomalous or known, enhancing agricultural monitoring.",
+  "filename": "1342_crop_anomaly_detection_with_qdrant",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Execute Workflow",
+    "HTTP Request",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "HTTP Request API Key"
+  ],
   "content": {
     "id": "G8jRDBvwsMkkMiLN",
     "meta": {
@@ -462,32 +484,5 @@
         ]
       }
     }
-  },
-  "title": "Detect Crop Anomalies Using Image Analysis and Qdrant",
-  "nodes_count": 17,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Execute Workflow",
-    "HTTP Request",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "HTTP Request API Key"
-  ],
-  "workflow_complexity": 17,
-  "external_integrations_count": 5
+  }
 }

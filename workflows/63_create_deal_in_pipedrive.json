@@ -1,7 +1,24 @@
 {
   "id": "63",
-  "filename": "63_create_deal_in_pipedrive",
+  "title": "Create a deal in Pipedrive with a manual trigger",
   "description": "Manually initiate the creation of a new deal in Pipedrive, streamlining your sales process and ensuring no opportunities are missed.",
+  "filename": "63_create_deal_in_pipedrive",
+  "services": [
+    "Manual",
+    "Pipedrive"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Sales"
+  ],
+  "difficulty": "Beginner",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [],
+  "setup_requirements": [
+    "Pipedrive API Key"
+  ],
   "content": {
     "id": "113",
     "name": "Create an deal in Pipedrive",
@@ -48,27 +65,5 @@
         ]
       }
     }
-  },
-  "title": "Create a deal in Pipedrive with a manual trigger",
-  "nodes_count": 2,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Sales"
-  ],
-  "services": [
-    "Manual",
-    "Pipedrive"
-  ],
-  "difficulty": "Beginner",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [],
-  "setup_requirements": [
-    "Pipedrive API Key"
-  ],
-  "workflow_complexity": 2,
-  "external_integrations_count": 2
+  }
 }

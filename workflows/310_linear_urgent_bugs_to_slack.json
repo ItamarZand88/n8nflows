@@ -1,7 +1,36 @@
 {
   "id": "310",
-  "filename": "310_linear_urgent_bugs_to_slack",
+  "title": "Notify Slack for New Urgent Bugs in Linear",
   "description": "Triggers on new urgent bug events in Linear, filters the data, and sends a notification to the Slack #important-bugs channel with details.",
+  "filename": "310_linear_urgent_bugs_to_slack",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Filter",
+    "Linear",
+    "Manual",
+    "Slack",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Linear Event",
+    "New Manual Event"
+  ],
+  "actions": [
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Linear API Key",
+    "Slack API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -257,39 +286,5 @@
         ]
       }
     }
-  },
-  "title": "Notify Slack for New Urgent Bugs in Linear",
-  "nodes_count": 10,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Filter",
-    "Linear",
-    "Manual",
-    "Slack",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Linear Event",
-    "New Manual Event"
-  ],
-  "actions": [
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Linear API Key",
-    "Slack API Key"
-  ],
-  "workflow_complexity": 10,
-  "external_integrations_count": 7
+  }
 }

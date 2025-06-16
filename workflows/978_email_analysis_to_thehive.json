@@ -1,7 +1,36 @@
 {
   "id": "978",
-  "filename": "978_email_analysis_to_thehive",
+  "title": "Automate email analysis and case management in TheHive",
   "description": "Automatically processes incoming emails, extracts attachments, and creates cases in TheHive for further analysis, enhancing incident response efficiency.",
+  "filename": "978_email_analysis_to_thehive",
+  "services": [
+    "Cortex",
+    "Email Trigger (IMAP)",
+    "If",
+    "TheHive"
+  ],
+  "categories": [
+    "Analytics",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [],
+  "actions": [
+    "Create",
+    "Executeanalyzer",
+    "Filter Data",
+    "Get",
+    "Manage case",
+    "Manage job",
+    "Manage observable",
+    "Promote",
+    "Report"
+  ],
+  "setup_requirements": [
+    "Cortex API Key",
+    "TheHive API Key"
+  ],
   "content": {
     "id": 4,
     "name": "Email",
@@ -513,39 +542,5 @@
         ]
       }
     }
-  },
-  "title": "Automate email analysis and case management in TheHive",
-  "nodes_count": 15,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Analytics",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Cortex",
-    "Email Trigger (IMAP)",
-    "If",
-    "TheHive"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [],
-  "actions": [
-    "Create",
-    "Executeanalyzer",
-    "Filter Data",
-    "Get",
-    "Manage case",
-    "Manage job",
-    "Manage observable",
-    "Promote",
-    "Report"
-  ],
-  "setup_requirements": [
-    "Cortex API Key",
-    "TheHive API Key"
-  ],
-  "workflow_complexity": 15,
-  "external_integrations_count": 4
+  }
 }

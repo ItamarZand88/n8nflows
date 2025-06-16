@@ -1,7 +1,34 @@
 {
   "id": "742",
-  "filename": "742_daily_yoga_reminders_to_line",
+  "title": "Automate Daily Yoga Pose Reminders via Line Messaging",
   "description": "Triggers daily at 21:30 to fetch yoga poses from Google Sheets, formats them, and sends a reminder message with images to users on Line.",
+  "filename": "742_daily_yoga_reminders_to_line",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Google Sheets",
+    "HTTP Request",
+    "Schedule",
+    "Split Out",
+    "Sticky Note"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Append",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "Google Sheets Account"
+  ],
   "content": {
     "id": "2DzQ1FH11S3Gp6wn",
     "meta": {
@@ -1023,37 +1050,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Daily Yoga Pose Reminders via Line Messaging",
-  "nodes_count": 31,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Google Sheets",
-    "HTTP Request",
-    "Schedule",
-    "Split Out",
-    "Sticky Note"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Append",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "Google Sheets Account"
-  ],
-  "workflow_complexity": 31,
-  "external_integrations_count": 7
+  }
 }

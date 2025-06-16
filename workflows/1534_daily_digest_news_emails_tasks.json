@@ -1,7 +1,32 @@
 {
   "id": "1534",
-  "filename": "1534_daily_digest_news_emails_tasks",
+  "title": "Automate Daily Digest of News, Emails, and Tasks",
   "description": "Triggers daily to gather top news from Times of India, latest emails, and tasks from Todoist, sending a formatted digest via Gmail for easy review.",
+  "filename": "1534_daily_digest_news_emails_tasks",
+  "services": [
+    "Code",
+    "Gmail",
+    "Merge",
+    "RSS Read",
+    "Schedule",
+    "Todoist"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Schedule Event"
+  ],
+  "actions": [
+    "Getall"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "Todoist API Key"
+  ],
   "content": {
     "id": "Glb4VNoQI44GT0p9",
     "meta": {
@@ -218,35 +243,5 @@
         ]
       }
     }
-  },
-  "title": "Automate Daily Digest of News, Emails, and Tasks",
-  "nodes_count": 7,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Code",
-    "Gmail",
-    "Merge",
-    "RSS Read",
-    "Schedule",
-    "Todoist"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Schedule Event"
-  ],
-  "actions": [
-    "Getall"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "Todoist API Key"
-  ],
-  "workflow_complexity": 7,
-  "external_integrations_count": 6
+  }
 }

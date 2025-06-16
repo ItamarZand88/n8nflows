@@ -1,7 +1,33 @@
 {
   "id": "271",
-  "filename": "271_user_feedback_to_discord_notifications",
+  "title": "Automate user feedback categorization and notifications",
   "description": "Triggers on user feedback submission, analyzes the feedback, categorizes it, and sends notifications to relevant departments via Discord.",
+  "filename": "271_user_feedback_to_discord_notifications",
+  "services": [
+    "Discord",
+    "Edit Fields (Set)",
+    "Manual",
+    "No Operation, do nothing",
+    "OpenAI",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Manual Event"
+  ],
+  "actions": [
+    "Manage chat",
+    "Set Data"
+  ],
+  "setup_requirements": [
+    "OpenAI API Key"
+  ],
   "content": {
     "id": "180",
     "meta": {
@@ -266,36 +292,5 @@
         ]
       }
     }
-  },
-  "title": "Automate user feedback categorization and notifications",
-  "nodes_count": 9,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development",
-    "Utility"
-  ],
-  "services": [
-    "Discord",
-    "Edit Fields (Set)",
-    "Manual",
-    "No Operation, do nothing",
-    "OpenAI",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Manual Event"
-  ],
-  "actions": [
-    "Manage chat",
-    "Set Data"
-  ],
-  "setup_requirements": [
-    "OpenAI API Key"
-  ],
-  "workflow_complexity": 9,
-  "external_integrations_count": 7
+  }
 }

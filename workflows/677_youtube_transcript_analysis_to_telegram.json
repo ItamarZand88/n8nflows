@@ -1,7 +1,32 @@
 {
   "id": "677",
-  "filename": "677_youtube_transcript_analysis_to_telegram",
+  "title": "Automate YouTube video transcript analysis and Telegram notifications",
   "description": "Captures YouTube video URLs via a webhook, analyzes transcripts, and sends structured summaries to Telegram for easy sharing.",
+  "filename": "677_youtube_transcript_analysis_to_telegram",
+  "services": [
+    "Code",
+    "Edit Fields (Set)",
+    "Split Out",
+    "Summarize",
+    "Telegram",
+    "Webhook",
+    "YouTube"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Development",
+    "HITL",
+    "Marketing"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Get",
+    "Manage video",
+    "Set Data"
+  ],
+  "setup_requirements": [],
   "content": {
     "nodes": [
       {
@@ -327,35 +352,5 @@
         ]
       }
     }
-  },
-  "title": "Automate YouTube video transcript analysis and Telegram notifications",
-  "nodes_count": 12,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Development",
-    "HITL",
-    "Marketing"
-  ],
-  "services": [
-    "Code",
-    "Edit Fields (Set)",
-    "Split Out",
-    "Summarize",
-    "Telegram",
-    "Webhook",
-    "YouTube"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Get",
-    "Manage video",
-    "Set Data"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 12,
-  "external_integrations_count": 7
+  }
 }

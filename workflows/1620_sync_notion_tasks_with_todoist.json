@@ -1,7 +1,72 @@
 {
   "id": "1620",
-  "filename": "1620_sync_notion_tasks_with_todoist",
+  "title": "Sync Notion tasks with Todoist for seamless project management",
   "description": "Automates the synchronization of tasks between Notion and Todoist, ensuring updates in one platform reflect in the other, enhancing productivity and task tracking.",
+  "filename": "1620_sync_notion_tasks_with_todoist",
+  "services": [
+    "Aggregate",
+    "Code",
+    "Compare Datasets",
+    "Crypto",
+    "Edit Fields (Set)",
+    "Execute Sub-workflow",
+    "Execute Workflow",
+    "Execution Data",
+    "Filter",
+    "Gmail",
+    "HTTP Request",
+    "If",
+    "Loop Over Items (Split in Batches)",
+    "Merge",
+    "No Operation, do nothing",
+    "Notion",
+    "Redis",
+    "Schedule",
+    "Split Out",
+    "Sticky Note",
+    "Stop and Error",
+    "Switch",
+    "Todoist",
+    "Webhook",
+    "n8n Form"
+  ],
+  "categories": [
+    "Communication",
+    "Core Nodes",
+    "Data & Storage",
+    "Development",
+    "Productivity",
+    "Utility"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [
+    "New Execute Workflow Event",
+    "New No Operation, do nothing Event",
+    "New Schedule Event",
+    "New n8n Form Event"
+  ],
+  "actions": [
+    "Close",
+    "Completion",
+    "Converttohtmltable",
+    "Delete",
+    "Filter Data",
+    "Get",
+    "Getall",
+    "Manage block",
+    "Manage database",
+    "Manage databasePage",
+    "Reopen",
+    "Set",
+    "Set Data",
+    "Update"
+  ],
+  "setup_requirements": [
+    "Gmail Account",
+    "HTTP Request API Key",
+    "Notion API Key",
+    "Todoist API Key"
+  ],
   "content": {
     "id": "k9abwUyVzl7OCsAl",
     "meta": {
@@ -7615,75 +7680,5 @@
         ]
       }
     }
-  },
-  "title": "Sync Notion tasks with Todoist for seamless project management",
-  "nodes_count": 246,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Communication",
-    "Core Nodes",
-    "Data & Storage",
-    "Development",
-    "Productivity",
-    "Utility"
-  ],
-  "services": [
-    "Aggregate",
-    "Code",
-    "Compare Datasets",
-    "Crypto",
-    "Edit Fields (Set)",
-    "Execute Sub-workflow",
-    "Execute Workflow",
-    "Execution Data",
-    "Filter",
-    "Gmail",
-    "HTTP Request",
-    "If",
-    "Loop Over Items (Split in Batches)",
-    "Merge",
-    "No Operation, do nothing",
-    "Notion",
-    "Redis",
-    "Schedule",
-    "Split Out",
-    "Sticky Note",
-    "Stop and Error",
-    "Switch",
-    "Todoist",
-    "Webhook",
-    "n8n Form"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [
-    "New Execute Workflow Event",
-    "New No Operation, do nothing Event",
-    "New Schedule Event",
-    "New n8n Form Event"
-  ],
-  "actions": [
-    "Close",
-    "Completion",
-    "Converttohtmltable",
-    "Delete",
-    "Filter Data",
-    "Get",
-    "Getall",
-    "Manage block",
-    "Manage database",
-    "Manage databasePage",
-    "Reopen",
-    "Set",
-    "Set Data",
-    "Update"
-  ],
-  "setup_requirements": [
-    "Gmail Account",
-    "HTTP Request API Key",
-    "Notion API Key",
-    "Todoist API Key"
-  ],
-  "workflow_complexity": 246,
-  "external_integrations_count": 25
+  }
 }

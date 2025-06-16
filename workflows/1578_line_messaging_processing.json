@@ -1,7 +1,25 @@
 {
   "id": "1578",
-  "filename": "1578_line_messaging_processing",
+  "title": "Automate LINE messaging with image and text processing",
   "description": "Triggers on LINE webhook events, processes text and images, and replies with translations or error messages, enhancing user interaction and support.",
+  "filename": "1578_line_messaging_processing",
+  "services": [
+    "Extract from File",
+    "HTTP Request",
+    "Sticky Note",
+    "Switch",
+    "Webhook"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Advanced",
+  "triggers": [],
+  "actions": [
+    "Binarytopropery"
+  ],
+  "setup_requirements": [],
   "content": {
     "id": "iFkGAiVn3yBlykIG",
     "meta": {
@@ -656,28 +674,5 @@
         ]
       }
     }
-  },
-  "title": "Automate LINE messaging with image and text processing",
-  "nodes_count": 21,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Extract from File",
-    "HTTP Request",
-    "Sticky Note",
-    "Switch",
-    "Webhook"
-  ],
-  "difficulty": "Advanced",
-  "triggers": [],
-  "actions": [
-    "Binarytopropery"
-  ],
-  "setup_requirements": [],
-  "workflow_complexity": 21,
-  "external_integrations_count": 5
+  }
 }

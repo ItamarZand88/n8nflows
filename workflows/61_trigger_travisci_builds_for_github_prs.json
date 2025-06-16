@@ -1,7 +1,30 @@
 {
   "id": "61",
-  "filename": "61_trigger_travisci_builds_for_github_prs",
+  "title": "Trigger TravisCI builds for new GitHub pull requests",
   "description": "Monitors a GitHub repository for new pull requests and triggers a build in TravisCI, ensuring continuous integration for code changes.",
+  "filename": "61_trigger_travisci_builds_for_github_prs",
+  "services": [
+    "Github",
+    "If",
+    "No Operation, do nothing",
+    "TravisCI"
+  ],
+  "categories": [
+    "Core Nodes",
+    "Development"
+  ],
+  "difficulty": "Intermediate",
+  "triggers": [
+    "New Github Event"
+  ],
+  "actions": [
+    "Filter Data",
+    "Trigger"
+  ],
+  "setup_requirements": [
+    "Github Account",
+    "TravisCI API Key"
+  ],
   "content": {
     "nodes": [
       {
@@ -110,33 +133,5 @@
         ]
       }
     }
-  },
-  "title": "Trigger TravisCI builds for new GitHub pull requests",
-  "nodes_count": 4,
-  "created_at": "2025-06-14T17:34:01.150895Z",
-  "updated_at": "2025-06-14T17:34:01.150895Z",
-  "categories": [
-    "Core Nodes",
-    "Development"
-  ],
-  "services": [
-    "Github",
-    "If",
-    "No Operation, do nothing",
-    "TravisCI"
-  ],
-  "difficulty": "Intermediate",
-  "triggers": [
-    "New Github Event"
-  ],
-  "actions": [
-    "Filter Data",
-    "Trigger"
-  ],
-  "setup_requirements": [
-    "Github Account",
-    "TravisCI API Key"
-  ],
-  "workflow_complexity": 4,
-  "external_integrations_count": 4
+  }
 }
