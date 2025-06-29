@@ -1,7 +1,7 @@
 # 🔄 N8N Workflows Library
 
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/n8nflows?style=flat-square)](https://github.com/yourusername/n8nflows/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/yourusername/n8nflows?style=flat-square)](https://github.com/yourusername/n8nflows/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/yourusername/n8nflows?style=flat-square)](https://github.com/ItamarZand88/n8nflows/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/yourusername/n8nflows?style=flat-square)](https://github.com/ItamarZand88/n8nflows/network/members)
 
 A comprehensive collection of **2000+ N8N workflows**. This repository serves as an automation library for various business processes, integrations, and workflows.
 
