@@ -1,4 +1,4 @@
-# 🔄 N8N Workflows Library
+# 🔄 n8nFlows - N8N Workflows Library
 
 [![GitHub Stars](https://img.shields.io/github/stars/ItamarZand88/n8nflows?style=flat-square)](https://github.com/ItamarZand88/n8nflows/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/ItamarZand88/n8nflows?style=flat-square)](https://github.com/ItamarZand88/n8nflows/network/members)
